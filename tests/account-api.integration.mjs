@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import {emptyState} from "../lib/study.ts";
-const base="http://127.0.0.1:5173";
+const base=process.env.STUDY_TEST_URL||"http://127.0.0.1:5173";
+const testOrigin=new URL(base);
+if(testOrigin.origin!==base||(testOrigin.protocol!=="https:"&&testOrigin.hostname!=="127.0.0.1"))throw Error("Use an HTTPS origin or localhost for integration checks.");
 console.log("Ready for account test JSON on stdin (input hidden).");
 const accounts=await new Promise((resolve,reject)=>{let value="";const raw=process.stdin.isTTY;if(raw)process.stdin.setRawMode(true);const receive=chunk=>{value+=chunk.toString();if(value.includes("\n")||value.includes("\r")){process.stdin.off("data",receive);if(raw)process.stdin.setRawMode(false);process.stdin.pause();try{resolve(JSON.parse(value.trim()));}catch{reject(Error("Invalid input"));}}};process.stdin.on("data",receive);process.stdin.resume();});
 const headers=(cookie,user)=>({"Origin":base,...(cookie?{Cookie:cookie}:{}),...(user?{"X-Study-User":user}:{}),"Content-Type":"application/json"});
@@ -46,5 +48,5 @@ for(const session of sessions){
 const video=catalog.resources.find(r=>r.ext==="mp4");
 const range=await send("/api/materials/"+video.id,{headers:{...headers(han.cookie),Range:"bytes=0-31"}});assert.equal(range.status,206);assert.equal((await range.arrayBuffer()).byteLength,32);
 for(const session of sessions){assert.equal((await send("/api/auth/logout",{method:"POST",headers:headers(session.cookie,session.user.userId)})).status,200);assert.equal((await send("/api/auth/me",{headers:headers(session.cookie)})).status,401);}
-await fs.writeFile("outputs/account-integration-report.json",JSON.stringify({passed:true,accounts:sessions.map(s=>s.user.displayName),sharedResources:catalog.resources.length,checks:["anonymous denied","wrong password denied","origin denied","both login","workspace isolation","image isolation","stale tab write denied","stale tab logout denied","both users all materials accessible","video range","logout revoked"],testImage:{id:image.id,owner:han.user.userId},completedAt:new Date().toISOString()},null,2));
+await fs.writeFile((process.env.STUDY_TEST_URL?"outputs/production-account-integration-report.json":"outputs/account-integration-report.json"),JSON.stringify({passed:true,accounts:sessions.map(s=>s.user.displayName),sharedResources:catalog.resources.length,checks:["anonymous denied","wrong password denied","origin denied","both login","workspace isolation","image isolation","stale tab write denied","stale tab logout denied","both users all materials accessible","video range","logout revoked"],testImage:{id:image.id,owner:han.user.userId},completedAt:new Date().toISOString()},null,2));
 console.log("PASS: both accounts, workspace/image isolation, all 48 shared resources, video range, stale tabs, and logout. Test note restored.");

@@ -1,6 +1,11 @@
 # 知习 · USM Study Studio
 
-为六门 USM 课程准备的个人学习系统。当前交付为本地可交互预览，尚未推送用户 GitHub 仓库或部署到生产环境。
+为六门 USM 课程准备的学习系统，支持两位用户独立保存笔记与学习记录。
+
+- 正式网站：[知习学习空间](https://usm-study-studio.famous-map-1116.chatgpt.site)
+- 公开源码：[Hbw1201/usm-study-studio](https://github.com/Hbw1201/usm-study-studio)
+
+网站入口公开可访问，课程资料和个人记录仍需应用账号登录。GitHub 保存源码；后端、D1 数据库与 R2 文件存储由 Sites 托管。
 
 ## 功能
 
@@ -36,9 +41,9 @@ npm run dev -- --port 5173 --hostname 127.0.0.1
 node scripts/run-framework.mjs dev --port 5173 --hostname 127.0.0.1
 ~~~
 
-本地预览现在使用独立账号登录，入口为 http://127.0.0.1:5173/login。已开通 Han Bowen 与 Cao Chengwei 两个账号。账号创建脚本从隐藏标准输入读取一行 JSON 数组，每项包含 id、displayName、password；口令不写入源码、命令参数或日志。已有同 ID 账号会跳过，不重置口令。数据库只保存带随机盐的 PBKDF2 哈希；会话为随机令牌的哈希，Cookie 使用 HttpOnly、SameSite=Lax，HTTPS 下启用 Secure，7 天到期。登录接口包含账号/IP 限流、同源校验和输入大小限制。
+本地预览现在使用独立账号登录，入口为 [本地登录页](http://127.0.0.1:5173/login)。已开通 Han Bowen 与 Cao Chengwei 两个账号。账号创建脚本从隐藏标准输入读取一行 JSON 数组，每项包含 id、displayName、password；口令不写入源码、命令参数或日志。已有同 ID 账号会跳过，不重置口令。数据库只保存带随机盐的 PBKDF2 哈希；会话为随机令牌的哈希，Cookie 使用 HttpOnly、SameSite=Lax，HTTPS 下启用 Secure，7 天到期。登录接口包含账号/IP 限流、同源校验和输入大小限制。
 
-旧 local_seedy 试用记录原样保留，并另存于 outputs/legacy-preview-workspace.json，没有自动归属给任一新账号。新账号各自从空白个人记录开始；六门课程和全部课件保持共享。本地数据与未来生产数据独立。课程二进制不在 Git 中；新环境需重新准备素材并导入。Sites 平台本身的私有访问限制保留，与应用内账号是独立的访问层。
+旧 local_seedy 试用记录原样保留，并另存于 outputs/legacy-preview-workspace.json，没有自动归属给任一新账号。新账号各自从空白个人记录开始；六门课程和全部课件保持共享。本地数据与生产数据独立。课程二进制不在 Git 中；新环境需重新准备素材并导入。Sites 平台访问范围为 public，应用内账号仍控制课程和个人数据访问。
 
 ## 素材准备
 
@@ -63,7 +68,7 @@ npm run build
 
 覆盖口令哈希、会话 Cookie、同源校验、登录输入边界和限流窗口，以及间隔复习、备份结构、课程来源、图片格式与限额、用户图片隔离、视频/PDF Range、Unicode 下载文件名、Markdown 安全处理、中文 PDF 和图片嵌入。
 
-本地接口集成验证可运行 node --experimental-strip-types tests/account-api.integration.mjs，按隐藏标准输入提示提供两组 username/password。测试验证两个账号登录、笔记和图片隔离、旧窗口保护、全部 48 份共享课件、视频 Range 和退出后的会话撤销；测试笔记会恢复为原状态。报告只记录检查结果，不包含口令和 Cookie。
+接口集成验证可运行 node --experimental-strip-types tests/account-api.integration.mjs，按隐藏标准输入提示提供两组 username/password。测试验证两个账号登录、笔记和图片隔离、旧窗口保护、全部 48 份共享课件、视频 Range 和退出后的会话撤销；测试笔记会恢复为原状态。报告只记录检查结果，不包含口令和 Cookie。设置 STUDY_TEST_URL 为正式站点 origin 可执行线上验证；不设置时测试 localhost。
 
 浏览器验证：登录与退出、账号显示、课程隔离、Markdown 编辑和自动保存、图片上传与 PDF 预览、带图 PDF 下载、Markdown 图片包下载、原版 PPT 翻页与页码边界、PDF 连续阅读、手机布局。
 
@@ -78,4 +83,8 @@ npm run build
 
 ## 发布状态
 
-保留 .openai/hosting.json 中已有 Sites project_id 和 owner-private 状态。尚未保存或部署生产版本。正式上线需要使用 Sites 原生源同步与发布流程，并将课程文件迁移到生产存储；本地 seed 不会上传外网。GitHub 源码仓库仍待创建及推送。
+2026-10-21 已发布到上方正式地址，源码同步到 Hbw1201/usm-study-studio 的 main 分支。更新网站时仍需执行 Sites 原生源码同步、保存版本和部署流程；向 GitHub 推送代码不会自动修改线上版本。
+
+生产初始化使用 scripts/provision-production.mjs，通过隐藏 stdin 接收 {baseUrl,token,users}；users 只包含两个约定身份及密码哈希，不传明文密码。课件严格按照 74 个白名单对象导入，大文件按 16 MiB 分块，校验本地 SHA256、远端文件大小与摘要元数据。已存在的账号不会重置密码。
+
+初始化接口默认返回 404；只有配置强随机 STUDY_PROVISION_TOKEN 运行时秘密后才临时启用。数据导入后删除该秘密并重新部署即可关闭入口。所有本地原课件和旧试用记录继续保留，源码仓库不包含数据库、会话、密码或课程二进制。
