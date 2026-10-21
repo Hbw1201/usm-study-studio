@@ -1,0 +1,5051 @@
+{
+  "courseId": "AKP202W",
+  "overview": {
+    "zh": "从组织行为的分析框架，进入个体差异，再解释态度如何影响工作结果。用情境、证据与层次分析代替对人的简单归类。",
+    "en": "Begin with the organizational-behavior framework, examine individual differences, and explain how attitudes relate to work outcomes. Use context, evidence, and levels of analysis rather than simple labels for people."
+  },
+  "pathway": [
+    {
+      "resourceId": "material-0",
+      "reason": {
+        "zh": "先确认考核范围；当前下载的前三章只是第一阶段资料。",
+        "en": "Confirm assessment scope first; the three downloaded chapters cover only the initial stage."
+      }
+    },
+    {
+      "resourceId": "material-43",
+      "reason": {
+        "zh": "先建立三层次 IPO 模型，用证据与情境分析组织行为。",
+        "en": "Establish the three-level IPO model and analyze OB through evidence and context."
+      }
+    },
+    {
+      "resourceId": "material-44",
+      "reason": {
+        "zh": "把多样性与能力作为个体输入，理解为何同一措施对不同人效果不同。",
+        "en": "Treat diversity and ability as individual inputs explaining different responses to the same practice."
+      }
+    },
+    {
+      "resourceId": "material-45",
+      "reason": {
+        "zh": "从个体输入进一步研究态度与满意度，连接绩效、OCB 和退出等结果。",
+        "en": "Extend individual inputs to attitudes and satisfaction, connecting them to performance, OCB, and withdrawal."
+      }
+    }
+  ],
+  "materials": [
+    {
+      "resourceId": "material-0",
+      "overview": {
+        "zh": "明确课程目标、测验范围、成绩结构及学习责任；这份教学计划是复习安排的索引。",
+        "en": "Identify course outcomes, assessment coverage, grading structure, and study responsibilities; the teaching plan indexes revision priorities."
+      },
+      "groups": [
+        {
+          "id": "material-0-g1",
+          "title": {
+            "zh": "目标与考核",
+            "en": "Course outcomes and assessment"
+          },
+          "concepts": [
+            {
+              "id": "material-0-outcomes",
+              "title": {
+                "zh": "知识、分析与问题解决",
+                "en": "Knowledge, analysis, and problem solving"
+              },
+              "explanation": {
+                "zh": "课程要求把组织行为知识联系到组织事件，分析管理者作用，并用个人与群体互动解释绩效问题；案例答案需要从描述走向分析与建议。",
+                "en": "The course asks students to connect OB knowledge to organizational events, analyze managerial roles, and solve performance issues involving individuals and groups. Case answers should progress from description to analysis and recommendations."
+              },
+              "pages": [
+                1,
+                2
+              ]
+            },
+            {
+              "id": "material-0-weights",
+              "title": {
+                "zh": "成绩结构",
+                "en": "Assessment structure"
+              },
+              "explanation": {
+                "zh": "教学计划将平时考核设为40%，由两次各20%的测验组成；期末考试占60%。复习投入应覆盖两部分。",
+                "en": "Coursework contributes 40%, comprising two tests worth 20% each; the final examination contributes 60%. Revision should cover both components."
+              },
+              "pages": [
+                1,
+                3,
+                4
+              ]
+            },
+            {
+              "id": "material-0-testscope",
+              "title": {
+                "zh": "两次测验范围",
+                "en": "Test coverage"
+              },
+              "explanation": {
+                "zh": "Test 1 覆盖第1–4章，Test 2 覆盖第5–8章；各为60道选择题、1小时。当前资料库仅有前三章讲义，后续章节需随课程更新补齐。",
+                "en": "Test 1 covers Chapters 1–4 and Test 2 covers Chapters 5–8, each with 60 MCQs in one hour. The current collection contains only the first three chapter decks; later chapters require subsequent course updates."
+              },
+              "pages": [
+                2,
+                3
+              ]
+            },
+            {
+              "id": "material-0-finalscope",
+              "title": {
+                "zh": "期末复习主线",
+                "en": "Final-exam revision map"
+              },
+              "explanation": {
+                "zh": "期末120道选择题涵盖群体行为、权力与政治、沟通、领导、组织结构、人力资源政策与实践、冲突与谈判。它把分析从个人层面扩展到群体和组织。",
+                "en": "The 120-question final covers group behavior, power and politics, communication, leadership, organizational structure, HR policies and practices, and conflict and negotiation. It extends analysis from individuals to groups and organizations."
+              },
+              "pages": [
+                3
+              ]
+            },
+            {
+              "id": "material-0-integrity",
+              "title": {
+                "zh": "学习责任与学术诚信",
+                "en": "Study responsibilities and academic integrity"
+              },
+              "explanation": {
+                "zh": "课件要求原创提交、按 eLearning 提交相关作业、定期出席并主动管理时间。课程信息应持续查看，不能只依赖一次资料快照。",
+                "en": "The plan requires original work, relevant submissions through eLearning, regular attendance, and proactive time management. Students must keep checking course information rather than relying on a one-time snapshot."
+              },
+              "pages": [
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-0-outcomes",
+          "to": "material-0-testscope",
+          "relation": {
+            "zh": "把课程成果落实到近期测验准备",
+            "en": "Translate course outcomes into near-term test preparation"
+          }
+        },
+        {
+          "from": "material-0-testscope",
+          "to": "material-0-finalscope",
+          "relation": {
+            "zh": "由个人主题扩展到群体与组织主题",
+            "en": "Extend individual topics to group and organizational topics"
+          }
+        },
+        {
+          "from": "material-0-weights",
+          "to": "material-0-integrity",
+          "relation": {
+            "zh": "考核准备需要合规提交与持续学习",
+            "en": "Assessment preparation requires proper submissions and continuous study"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-0-outcomes-q",
+          "conceptIds": [
+            "material-0-outcomes"
+          ],
+          "prompt": {
+            "zh": "哪种回答最符合课程第三项学习成果？",
+            "en": "Which response best meets the third course outcome?"
+          },
+          "options": [
+            {
+              "zh": "分析团队互动如何影响绩效，并提出解决措施",
+              "en": "Analyze how team interactions affect performance and propose a solution"
+            },
+            {
+              "zh": "正确复述 OB 定义，但不分析案例中的个人与群体互动",
+              "en": "State the OB definition correctly without analyzing individual–group interactions"
+            },
+            {
+              "zh": "只提出建议，不说明组织问题或绩效影响",
+              "en": "Offer recommendations without identifying the organizational problem or performance effect"
+            },
+            {
+              "zh": "只比较两位管理者的职位级别",
+              "en": "Compare only two managers’ hierarchical positions"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "第三项成果要求评价和解决互动相关问题，因此需要把案例证据、分析和措施连接起来；只定义、建议或比较头衔不充分。",
+            "en": "The third outcome requires evaluating and solving interaction-related problems, linking case evidence, analysis, and action; definitions, unsupported recommendations, or titles alone are insufficient."
+          },
+          "pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "material-0-weights-q",
+          "conceptIds": [
+            "material-0-weights"
+          ],
+          "prompt": {
+            "zh": "按该计划，两次测验合计占多少？",
+            "en": "According to the plan, what is the combined weight of the two tests?"
+          },
+          "options": [
+            {
+              "zh": "20%",
+              "en": "20%"
+            },
+            {
+              "zh": "40%",
+              "en": "40%"
+            },
+            {
+              "zh": "60%",
+              "en": "60%"
+            },
+            {
+              "zh": "100%",
+              "en": "100%"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "两次测验各20%，合计40%；60%属于期末考试。",
+            "en": "Each test is worth 20%, totaling 40%; 60% belongs to the final examination."
+          },
+          "pages": [
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "material-0-testscope-q",
+          "conceptIds": [
+            "material-0-testscope"
+          ],
+          "prompt": {
+            "zh": "目前读完前三章后，是否已覆盖 Test 1 全部范围？",
+            "en": "After studying the first three chapters, is the full Test 1 scope covered?"
+          },
+          "options": [
+            {
+              "zh": "是，Test 1 只考前三章",
+              "en": "Yes; Test 1 covers only Chapters 1–3"
+            },
+            {
+              "zh": "没有，还必须读第9–18章全部",
+              "en": "No; all Chapters 9–18 are also required"
+            },
+            {
+              "zh": "没有，还包括第4章",
+              "en": "No; Chapter 4 is also included"
+            },
+            {
+              "zh": "Test 1 只考第5–8章",
+              "en": "Test 1 covers only Chapters 5–8"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "计划明确 Test 1 为第1–4章，不能把当前已下载材料误当成全部考纲。",
+            "en": "The plan explicitly specifies Chapters 1–4; available downloads should not be mistaken for the entire syllabus."
+          },
+          "pages": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "material-0-finalscope-q",
+          "conceptIds": [
+            "material-0-finalscope"
+          ],
+          "prompt": {
+            "zh": "哪一组主题属于计划列出的期末范围？",
+            "en": "Which topic set belongs to the listed final-exam scope?"
+          },
+          "options": [
+            {
+              "zh": "仅前三章",
+              "en": "Only the first three chapters"
+            },
+            {
+              "zh": "仅人格与价值观",
+              "en": "Only personality and values"
+            },
+            {
+              "zh": "仅测验评分规则",
+              "en": "Only test grading rules"
+            },
+            {
+              "zh": "领导、组织结构、冲突与谈判",
+              "en": "Leadership, organizational structure, conflict and negotiation"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "计划第3页列出这些群体和组织主题；前三章不等于期末全部范围。",
+            "en": "Page 3 lists these group and organizational topics; the first three chapters do not define the final-exam scope."
+          },
+          "pages": [
+            3
+          ]
+        },
+        {
+          "id": "material-0-integrity-q",
+          "conceptIds": [
+            "material-0-integrity"
+          ],
+          "prompt": {
+            "zh": "哪种做法符合课程责任？",
+            "en": "Which practice meets the course responsibilities?"
+          },
+          "options": [
+            {
+              "zh": "独立完成并通过指定 eLearning 渠道提交，持续查看通知",
+              "en": "Complete original work, submit through eLearning, and monitor notices"
+            },
+            {
+              "zh": "由组外同学完成初稿，自己只修改表述后当原创提交",
+              "en": "Have an outside classmate draft the work and submit a reworded version as original"
+            },
+            {
+              "zh": "把提交文件发给同学就视为完成 eLearning 提交",
+              "en": "Treat sending a file to a classmate as completing eLearning submission"
+            },
+            {
+              "zh": "只在考试前一次性查看全年通知",
+              "en": "Check all notices only once before the exam"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "原创工作、正式渠道提交和持续查看通知各有独立作用；改写他人作品、非正式传送或拖延查看均不能代替。",
+            "en": "Original work, formal submission, and continuing attention to notices each matter; rewording others’ work, informal transfer, or delayed checking does not replace them."
+          },
+          "pages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "excludedPages": []
+      },
+      "sourceNote": {
+        "zh": "计划中的部分日期和成绩区间存在疑似排版错误，日期以 eLearn 最新通知为准；此整理不擅自纠正或据此安排考试。",
+        "en": "Some dates and grade bands appear inconsistent in the plan. Follow the latest eLearn notice; this guide does not silently correct them or schedule examinations from them."
+      },
+      "sourceSha256": "bf6b1e17922bf8102f5b2794c467deddab0284970ac86804320eeb3b17740efe"
+    },
+    {
+      "resourceId": "material-43",
+      "overview": {
+        "zh": "建立组织行为的完整入门框架：管理者做什么、为什么需要证据、如何从个人—群体—组织三个层次连接输入、过程与结果。",
+        "en": "Build the OB foundation: managerial work, evidence-based reasoning, and an input–process–outcome model at individual, group, and organizational levels."
+      },
+      "groups": [
+        {
+          "id": "material-43-g1",
+          "title": {
+            "zh": "管理者与组织行为",
+            "en": "Managers and organizational behavior"
+          },
+          "concepts": [
+            {
+              "id": "material-43-people",
+              "title": {
+                "zh": "人际技能的价值",
+                "en": "Value of interpersonal skills"
+              },
+              "explanation": {
+                "zh": "工作关系质量与满意度、压力和离职有关。管理者理解、沟通与激励他人的能力，有助于留住优秀员工、吸引求职者和改善组织表现。",
+                "en": "Workplace relationships are associated with satisfaction, stress, and turnover. Understanding, communicating with, and motivating people supports retention, recruitment, and organizational performance."
+              },
+              "pages": [
+                3,
+                24
+              ]
+            },
+            {
+              "id": "material-43-organization",
+              "title": {
+                "zh": "组织与管理职能",
+                "en": "Organization and management functions"
+              },
+              "explanation": {
+                "zh": "组织是持续协调两个或更多人的社会单位，以实现共同目标。管理者通过他人完成工作，主要职能为计划、组织、领导和控制。",
+                "en": "An organization is a continuing, coordinated social unit of two or more people pursuing common goals. Managers accomplish work through others using planning, organizing, leading, and controlling."
+              },
+              "pages": [
+                4
+              ]
+            },
+            {
+              "id": "material-43-interpersonal",
+              "title": {
+                "zh": "人际角色",
+                "en": "Interpersonal roles"
+              },
+              "explanation": {
+                "zh": "代表人物履行象征性或礼仪职责；领导者激励并指导员工；联络者建立外部联系网络。它们都涉及人与人的关系，但行为目的不同。",
+                "en": "The figurehead performs symbolic or ceremonial duties; the leader motivates and directs employees; the liaison maintains external contacts. All concern relationships, with different purposes."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-43-information",
+              "title": {
+                "zh": "信息角色",
+                "en": "Informational roles"
+              },
+              "explanation": {
+                "zh": "监督者获取并汇集信息；传播者向组织内部传递信息；发言人向组织外部传达政策、计划和成果。区分时看信息流向。",
+                "en": "The monitor acquires information, the disseminator distributes it internally, and the spokesperson communicates policies, plans, and results externally. Information direction distinguishes these roles."
+              },
+              "pages": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "material-43-decision",
+              "title": {
+                "zh": "决策职能",
+                "en": "Decision-making functions"
+              },
+              "explanation": {
+                "zh": "决策工作包括寻找机会并推动改变、应对意外问题、决定资源用途以及代表组织谈判。分析案例时，应先识别经理是在改变、纠偏、分配还是协商。",
+                "en": "Decision work includes pursuing opportunities and change, handling unexpected problems, allocating resources, and negotiating for the organization. Identify whether a manager is changing, correcting, allocating, or negotiating."
+              },
+              "pages": [
+                4,
+                6
+              ]
+            },
+            {
+              "id": "material-43-skills",
+              "title": {
+                "zh": "三类管理技能",
+                "en": "Three managerial skills"
+              },
+              "explanation": {
+                "zh": "技术技能用于专业知识与方法；人际技能用于与人合作、理解和激励；概念技能用于诊断复杂整体问题。优秀管理通常需要三者配合。",
+                "en": "Technical skills apply specialized expertise; human skills enable working with, understanding, and motivating others; conceptual skills diagnose complex situations. Effective management combines them."
+              },
+              "pages": [
+                7
+              ]
+            },
+            {
+              "id": "material-43-activities",
+              "title": {
+                "zh": "有效与成功管理活动",
+                "en": "Effective and successful managerial activities"
+              },
+              "explanation": {
+                "zh": "Luthans 将活动分为传统管理、沟通、人力资源管理和社交网络。图中成功管理者在社交网络上的时间占比最大，有效管理者在沟通上最大；两者不应视为相同指标。",
+                "en": "Luthans groups activities into traditional management, communication, HR management, and networking. The chart shows networking dominates successful managers’ time, while communication dominates effective managers’ time; the two profiles differ."
+              },
+              "pages": [
+                8,
+                9
+              ]
+            },
+            {
+              "id": "material-43-ob",
+              "title": {
+                "zh": "组织行为的定义与边界",
+                "en": "Definition and scope of OB"
+              },
+              "explanation": {
+                "zh": "组织行为研究个人、群体和组织结构如何影响组织内的行为，并把发现用于改善组织效能。它既研究个体，也研究人与群体、制度之间的联系。",
+                "en": "OB examines how individuals, groups, and structure influence behavior within organizations, applying findings to improve effectiveness. It includes individuals and their relationships with groups and organizational arrangements."
+              },
+              "pages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-43-g2",
+          "title": {
+            "zh": "证据、学科与情境",
+            "en": "Evidence, disciplines, and context"
+          },
+          "concepts": [
+            {
+              "id": "material-43-evidence",
+              "title": {
+                "zh": "系统研究与循证管理",
+                "en": "Systematic study and evidence-based management"
+              },
+              "explanation": {
+                "zh": "系统研究寻找行为关系并检验证据；循证管理用证据支持决策。直觉可以提供线索，但单靠直觉容易遗漏信息；三者应互补。",
+                "en": "Systematic study examines behavioral relationships using evidence; evidence-based management supports decisions with evidence. Intuition can suggest ideas but may miss information when used alone; the approaches complement one another."
+              },
+              "pages": [
+                11
+              ]
+            },
+            {
+              "id": "material-43-bigdata",
+              "title": {
+                "zh": "大数据的用途与边界",
+                "en": "Uses and limits of big data"
+              },
+              "explanation": {
+                "zh": "管理分析可用于预测事件、评估风险及预防问题，也可帮助理解员工。数据应辅助判断和经验；拥有大量数据不等于自动获得完整解释。",
+                "en": "Management analytics can predict events, assess risks, prevent problems, and help understand employees. Data should inform judgment and experience; volume alone does not guarantee a complete explanation."
+              },
+              "pages": [
+                12
+              ]
+            },
+            {
+              "id": "material-43-psychology",
+              "title": {
+                "zh": "心理学与社会心理学",
+                "en": "Psychology and social psychology"
+              },
+              "explanation": {
+                "zh": "心理学测量、解释并尝试改变行为，贡献学习、人格、动机等个人层面知识。社会心理学结合心理与社会视角，研究态度改变、沟通及群体过程。",
+                "en": "Psychology measures, explains, and sometimes changes behavior, contributing individual-level knowledge about learning, personality, and motivation. Social psychology combines psychological and social perspectives on attitude change, communication, and group processes."
+              },
+              "pages": [
+                13,
+                14,
+                15
+              ]
+            },
+            {
+              "id": "material-43-sociology",
+              "title": {
+                "zh": "社会学与人类学",
+                "en": "Sociology and anthropology"
+              },
+              "explanation": {
+                "zh": "社会学研究人与社会环境、群体和正式组织的关系；人类学比较社会、文化、价值观及活动。两者帮助解释群体行为、组织文化及跨文化差异。",
+                "en": "Sociology studies people in social environments, groups, and formal organizations; anthropology compares societies, cultures, values, and activities. They illuminate group behavior, organizational culture, and cross-cultural differences."
+              },
+              "pages": [
+                14,
+                16
+              ]
+            },
+            {
+              "id": "material-43-contingency",
+              "title": {
+                "zh": "权变变量",
+                "en": "Contingency variables"
+              },
+              "explanation": {
+                "zh": "同一管理措施在不同情境下可能产生不同结果。权变变量是改变自变量与结果变量关系的情境因素，因此 OB 很少存在适用于所有人的绝对规则。",
+                "en": "The same management practice may produce different outcomes in different settings. Contingency variables are situational factors that alter the relationship between a predictor and outcome, so OB has few universal rules."
+              },
+              "pages": [
+                17
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-43-g3",
+          "title": {
+            "zh": "管理挑战与机会",
+            "en": "Management challenges and opportunities"
+          },
+          "concepts": [
+            {
+              "id": "material-43-employment",
+              "title": {
+                "zh": "就业安排与经济压力",
+                "en": "Employment arrangements and economic pressure"
+              },
+              "explanation": {
+                "zh": "就业可从状态、工时类型、地点、任职条件和报酬五个维度描述。经济繁荣时重视激励和留任，困难时压力、决策和应对问题更突出。",
+                "en": "Employment can be described by status, work type, location, conditions, and compensation. Good economic conditions emphasize motivation and retention; difficult conditions bring stress, decisions, and coping to the foreground."
+              },
+              "pages": [
+                18,
+                19
+              ]
+            },
+            {
+              "id": "material-43-global",
+              "title": {
+                "zh": "全球化与劳动力多样性",
+                "en": "Globalization and workforce diversity"
+              },
+              "explanation": {
+                "zh": "全球化涉及跨国任职、跨文化协作、工作转移及文化与监管差异。劳动力多样性指组织成员在年龄、性别、族群等方面的异质性；国际化与组织内部差异相互关联但不相同。",
+                "en": "Globalization involves foreign assignments, cross-cultural work, job relocation, and cultural or regulatory differences. Workforce diversity concerns differences among members such as age, gender, and ethnicity; it relates to but differs from internationalization."
+              },
+              "pages": [
+                20,
+                22
+              ]
+            },
+            {
+              "id": "material-43-customer",
+              "title": {
+                "zh": "服务员工与客户体验",
+                "en": "Service employees and customer experience"
+              },
+              "explanation": {
+                "zh": "服务岗位与客户直接互动，员工态度和行为与客户满意度相关。客户响应文化应支持员工有效回应需求，而非只把服务当作广告任务。",
+                "en": "Service employees interact directly with customers, linking employee attitudes and behavior to customer satisfaction. A customer-responsive culture supports effective responses to needs rather than treating service as advertising alone."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-43-network",
+              "title": {
+                "zh": "网络化工作与社交媒体",
+                "en": "Networked work and social media"
+              },
+              "explanation": {
+                "zh": "跨地点、线上协作使激励与领导方式需要调整。社交媒体政策应明确何时、何地、为何使用，并考虑员工福祉影响。",
+                "en": "Distributed online work requires adapted motivation and leadership. Social-media policies should clarify when, where, and why it is used while considering effects on employee well-being."
+              },
+              "pages": [
+                25,
+                26
+              ]
+            },
+            {
+              "id": "material-43-wellbeing",
+              "title": {
+                "zh": "工作生活平衡与积极组织研究",
+                "en": "Work–life balance and positive organizational scholarship"
+              },
+              "explanation": {
+                "zh": "随时连接的技术和全球协作容易模糊工作生活界限。积极组织研究关注员工优势、活力、韧性和潜能，支持可持续工作体验。",
+                "en": "Always-connected technology and global collaboration can blur work–life boundaries. Positive organizational scholarship emphasizes strengths, vitality, resilience, and potential to support sustainable work experiences."
+              },
+              "pages": [
+                27,
+                28
+              ]
+            },
+            {
+              "id": "material-43-ethics",
+              "title": {
+                "zh": "道德困境与组织氛围",
+                "en": "Ethical dilemmas and organizational climate"
+              },
+              "explanation": {
+                "zh": "道德困境要求个人判断行为的对错，答案未必显然。组织可用道德准则提供指引，管理者还需营造支持道德选择的工作环境。",
+                "en": "Ethical dilemmas require judgments about right and wrong that may not be obvious. Codes offer guidance, while managers must also create a climate supporting ethical choices."
+              },
+              "pages": [
+                29
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-43-g4",
+          "title": {
+            "zh": "三层次输入—过程—结果模型",
+            "en": "Three-level input–process–outcome model"
+          },
+          "concepts": [
+            {
+              "id": "material-43-levels",
+              "title": {
+                "zh": "三个分析层次",
+                "en": "Three levels of analysis"
+              },
+              "explanation": {
+                "zh": "个人层面关注人格、情绪和个体结果；群体层面关注角色、沟通、领导和团队结果；组织层面关注结构、文化、人力资源和整体结果。分析层次与“输入/过程/结果”是两条不同维度。",
+                "en": "The individual level includes personality, emotions, and personal outcomes; the group level covers roles, communication, leadership, and team outcomes; the organizational level includes structure, culture, HR, and overall outcomes. Levels differ from the input–process–outcome dimension."
+              },
+              "pages": [
+                30,
+                40
+              ]
+            },
+            {
+              "id": "material-43-ipo",
+              "title": {
+                "zh": "输入、过程、结果与反馈",
+                "en": "Inputs, processes, outcomes, and feedback"
+              },
+              "explanation": {
+                "zh": "输入是人格、群体结构和文化等条件；过程是情绪、决策、沟通或变革等行动机制；结果是希望解释的绩效与态度等变量。图中结果再反馈到输入，显示系统会随经验改变。",
+                "en": "Inputs include personality, group structure, and culture; processes include emotions, decisions, communication, or change; outcomes are variables such as performance and attitudes to explain. Feedback from outcomes to inputs shows how experience changes the system."
+              },
+              "pages": [
+                30,
+                31,
+                32,
+                33
+              ]
+            },
+            {
+              "id": "material-43-attitudestress",
+              "title": {
+                "zh": "态度与压力",
+                "en": "Attitudes and stress"
+              },
+              "explanation": {
+                "zh": "员工态度是对人、事、物的正负评价；压力是回应环境压力时出现的不愉快心理过程。两者是个人层面的重要结果，不能直接等同于生产率。",
+                "en": "Employee attitudes are positive or negative evaluations of people, objects, or events; stress is an unpleasant psychological process responding to environmental pressures. Both are individual outcomes and are not identical to productivity."
+              },
+              "pages": [
+                34
+              ]
+            },
+            {
+              "id": "material-43-taskocb",
+              "title": {
+                "zh": "任务绩效与组织公民行为",
+                "en": "Task performance and organizational citizenship behavior"
+              },
+              "explanation": {
+                "zh": "任务绩效衡量核心工作完成的效果与效率。组织公民行为是正式职责之外的自愿行为，有助于组织的社会与心理环境，例如主动帮助同事。",
+                "en": "Task performance combines effectiveness and efficiency in core duties. OCB is discretionary behavior beyond formal duties that supports the workplace’s social and psychological environment, such as voluntarily helping colleagues."
+              },
+              "pages": [
+                35,
+                36
+              ]
+            },
+            {
+              "id": "material-43-withdrawal",
+              "title": {
+                "zh": "退出行为",
+                "en": "Withdrawal behavior"
+              },
+              "explanation": {
+                "zh": "退出行为是员工使自己逐渐脱离组织的一组行动。分析时应区分退出倾向与仍积极参与但提出批评的行为。",
+                "en": "Withdrawal behavior consists of actions through which employees separate themselves from the organization. Distinguish withdrawal from active participation that includes criticism."
+              },
+              "pages": [
+                37
+              ]
+            },
+            {
+              "id": "material-43-groupoutcomes",
+              "title": {
+                "zh": "群体凝聚力与群体功能",
+                "en": "Group cohesion and functioning"
+              },
+              "explanation": {
+                "zh": "群体凝聚力是成员互相支持和认同的程度；群体功能是团队工作产出的数量与质量。关系紧密和产出有效是可区分的结果。",
+                "en": "Group cohesion is the extent of mutual support and affirmation; group functioning concerns the quantity and quality of group output. Strong relationships and effective output are distinguishable outcomes."
+              },
+              "pages": [
+                38
+              ]
+            },
+            {
+              "id": "material-43-organizationoutcomes",
+              "title": {
+                "zh": "生产率与组织生存",
+                "en": "Productivity and organizational survival"
+              },
+              "explanation": {
+                "zh": "生产率同时要求有效性（实现目标）与效率（节约投入、成本）。组织生存意味着能够长期存在和成长，因此不能只关注短期低成本。",
+                "en": "Productivity requires both effectiveness in achieving goals and efficiency in using inputs and costs. Organizational survival concerns long-term existence and growth, extending beyond low short-term costs."
+              },
+              "pages": [
+                39
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-43-organization",
+          "to": "material-43-ob",
+          "relation": {
+            "zh": "管理实践需要解释组织中的行为",
+            "en": "Managerial practice needs explanations of organizational behavior"
+          }
+        },
+        {
+          "from": "material-43-people",
+          "to": "material-43-customer",
+          "relation": {
+            "zh": "人际互动影响客户响应",
+            "en": "Interpersonal interaction shapes customer responsiveness"
+          }
+        },
+        {
+          "from": "material-43-interpersonal",
+          "to": "material-43-information",
+          "relation": {
+            "zh": "联系网络提供信息流",
+            "en": "Contact networks support information flows"
+          }
+        },
+        {
+          "from": "material-43-information",
+          "to": "material-43-decision",
+          "relation": {
+            "zh": "信息支持资源与行动选择",
+            "en": "Information supports resource and action choices"
+          }
+        },
+        {
+          "from": "material-43-skills",
+          "to": "material-43-activities",
+          "relation": {
+            "zh": "技能通过具体管理活动发挥作用",
+            "en": "Skills operate through managerial activities"
+          }
+        },
+        {
+          "from": "material-43-ob",
+          "to": "material-43-evidence",
+          "relation": {
+            "zh": "用系统证据研究行为",
+            "en": "Study behavior through systematic evidence"
+          }
+        },
+        {
+          "from": "material-43-evidence",
+          "to": "material-43-bigdata",
+          "relation": {
+            "zh": "数据分析提供可检验线索",
+            "en": "Analytics provides testable evidence"
+          }
+        },
+        {
+          "from": "material-43-psychology",
+          "to": "material-43-levels",
+          "relation": {
+            "zh": "个人与群体知识连接分析层次",
+            "en": "Individual and group knowledge connect analytical levels"
+          }
+        },
+        {
+          "from": "material-43-sociology",
+          "to": "material-43-levels",
+          "relation": {
+            "zh": "文化与结构扩展分析层次",
+            "en": "Culture and structure extend analytical levels"
+          }
+        },
+        {
+          "from": "material-43-contingency",
+          "to": "material-43-global",
+          "relation": {
+            "zh": "文化情境会改变管理效果",
+            "en": "Cultural context can alter managerial effects"
+          }
+        },
+        {
+          "from": "material-43-employment",
+          "to": "material-43-wellbeing",
+          "relation": {
+            "zh": "工作安排影响工作生活边界",
+            "en": "Employment arrangements affect work–life boundaries"
+          }
+        },
+        {
+          "from": "material-43-network",
+          "to": "material-43-wellbeing",
+          "relation": {
+            "zh": "持续在线带来福祉问题",
+            "en": "Persistent connectivity raises well-being concerns"
+          }
+        },
+        {
+          "from": "material-43-ethics",
+          "to": "material-43-decision",
+          "relation": {
+            "zh": "决策还需判断行为对错",
+            "en": "Decisions also require ethical judgment"
+          }
+        },
+        {
+          "from": "material-43-levels",
+          "to": "material-43-ipo",
+          "relation": {
+            "zh": "每个层次都有输入、过程和结果",
+            "en": "Each level contains inputs, processes, and outcomes"
+          }
+        },
+        {
+          "from": "material-43-ipo",
+          "to": "material-43-attitudestress",
+          "relation": {
+            "zh": "个人过程产生心理结果",
+            "en": "Individual processes lead to psychological outcomes"
+          }
+        },
+        {
+          "from": "material-43-ipo",
+          "to": "material-43-taskocb",
+          "relation": {
+            "zh": "个人过程产生职责内外行为",
+            "en": "Individual processes lead to in-role and extra-role behavior"
+          }
+        },
+        {
+          "from": "material-43-ipo",
+          "to": "material-43-withdrawal",
+          "relation": {
+            "zh": "个人结果也包括脱离组织",
+            "en": "Individual outcomes include organizational withdrawal"
+          }
+        },
+        {
+          "from": "material-43-ipo",
+          "to": "material-43-groupoutcomes",
+          "relation": {
+            "zh": "群体过程连接关系与产出",
+            "en": "Group processes connect relationships and output"
+          }
+        },
+        {
+          "from": "material-43-groupoutcomes",
+          "to": "material-43-organizationoutcomes",
+          "relation": {
+            "zh": "团队产出汇入组织绩效",
+            "en": "Team output contributes to organizational performance"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-43-people-q",
+          "conceptIds": [
+            "material-43-people"
+          ],
+          "prompt": {
+            "zh": "减少优秀员工流失时，课件支持优先关注什么？",
+            "en": "When reducing the loss of capable employees, what does the deck support examining?"
+          },
+          "options": [
+            {
+              "zh": "工作关系和管理者的人际技能",
+              "en": "Workplace relationships and managerial interpersonal skills"
+            },
+            {
+              "zh": "只提高短期奖金，不检查工作关系",
+              "en": "Raise short-term bonuses without examining relationships"
+            },
+            {
+              "zh": "仅按离职人数处罚主管，不了解原因",
+              "en": "Penalize supervisors by turnover counts without examining causes"
+            },
+            {
+              "zh": "把招聘数量作为唯一留任指标",
+              "en": "Use recruitment volume as the only retention measure"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "课件将工作关系与满意度、压力和离职联系；奖金或数量指标可能有用，但不足以替代对人际机制的分析。",
+            "en": "The deck links relationships to satisfaction, stress, and turnover; bonuses or counts may help but cannot replace analysis of interpersonal mechanisms."
+          },
+          "pages": [
+            3,
+            24
+          ]
+        },
+        {
+          "id": "material-43-organization-q",
+          "conceptIds": [
+            "material-43-organization"
+          ],
+          "prompt": {
+            "zh": "制定目标、安排职责、激励员工并检查结果，体现哪组职能？",
+            "en": "Setting goals, allocating responsibilities, motivating staff, and checking results illustrates which functions?"
+          },
+          "options": [
+            {
+              "zh": "代表人物、联络者、监督者、发言人",
+              "en": "Figurehead, liaison, monitor, spokesperson"
+            },
+            {
+              "zh": "计划、组织、领导、控制",
+              "en": "Planning, organizing, leading, controlling"
+            },
+            {
+              "zh": "技术技能、人际技能、概念技能、直觉",
+              "en": "Technical skills, human skills, conceptual skills, intuition"
+            },
+            {
+              "zh": "输入、态度、群体结构、输出",
+              "en": "Inputs, attitudes, group structure, outputs"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "题目是目标、职责、激励及检查四项职能；角色、技能和 IPO 模型属于不同分类。",
+            "en": "The actions represent four functions; roles, skills, and the IPO model are different classifications."
+          },
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "material-43-interpersonal-q",
+          "conceptIds": [
+            "material-43-interpersonal"
+          ],
+          "prompt": {
+            "zh": "经理维护跨组织联系，以获得信息与帮助，最符合哪种角色？",
+            "en": "A manager maintains outside contacts to obtain information and assistance. Which role fits best?"
+          },
+          "options": [
+            {
+              "zh": "代表人物",
+              "en": "Figurehead"
+            },
+            {
+              "zh": "监督者（信息收集）",
+              "en": "Monitor"
+            },
+            {
+              "zh": "联络者",
+              "en": "Liaison"
+            },
+            {
+              "zh": "谈判者",
+              "en": "Negotiator"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "维持外部联系是联络角色；礼仪代表、信息监测及谈判各有不同任务。",
+            "en": "Maintaining external contacts is the liaison role; ceremonial representation, monitoring, and negotiating serve different tasks."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-43-information-q",
+          "conceptIds": [
+            "material-43-information"
+          ],
+          "prompt": {
+            "zh": "向公众介绍组织年度成果，属于哪项信息角色？",
+            "en": "Presenting annual organizational results to the public is which informational role?"
+          },
+          "options": [
+            {
+              "zh": "监督者",
+              "en": "Monitor"
+            },
+            {
+              "zh": "内部传播者",
+              "en": "Disseminator"
+            },
+            {
+              "zh": "联络者",
+              "en": "Liaison"
+            },
+            {
+              "zh": "发言人",
+              "en": "Spokesperson"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "发言人对外传达组织信息；监督者获取信息、内部传播者面向成员、联络者维护联系。",
+            "en": "A spokesperson communicates externally; a monitor acquires information, a disseminator addresses members, and a liaison maintains contacts."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-43-decision-q",
+          "conceptIds": [
+            "material-43-decision"
+          ],
+          "prompt": {
+            "zh": "经理决定把预算分给哪两个项目，最直接涉及什么？",
+            "en": "A manager decides which two projects receive a budget. What is most directly involved?"
+          },
+          "options": [
+            {
+              "zh": "资源分配",
+              "en": "Resource allocation"
+            },
+            {
+              "zh": "监督信息与收集报告",
+              "en": "Monitoring information and collecting reports"
+            },
+            {
+              "zh": "谈判已给定合同条款",
+              "en": "Negotiating predefined contract terms"
+            },
+            {
+              "zh": "向员工传播已决定的预算",
+              "en": "Disseminating an already-decided budget to staff"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "关键动作是决定资金去向，所以是资源分配；收集、协商和发布可能发生在周围，但不是题目重点。",
+            "en": "The key action decides where money goes, so it is allocation; collection, bargaining, and announcement may surround it but are not the focal task."
+          },
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "id": "material-43-skills-q",
+          "conceptIds": [
+            "material-43-skills"
+          ],
+          "prompt": {
+            "zh": "分析多个部门相互影响导致的复杂问题，主要需要哪种技能？",
+            "en": "Diagnosing a complex problem involving interactions among departments primarily requires which skill?"
+          },
+          "options": [
+            {
+              "zh": "技术技能，熟练使用某种专业工具",
+              "en": "Technical skills in using a specialized tool"
+            },
+            {
+              "zh": "概念技能",
+              "en": "Conceptual skills"
+            },
+            {
+              "zh": "人际技能，理解与激励员工",
+              "en": "Human skills in understanding and motivating people"
+            },
+            {
+              "zh": "联络角色，维护组织外部关系",
+              "en": "The liaison role maintaining external contacts"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "复杂整体诊断首先对应概念技能；技术与人际技能可能辅助，但任务焦点是跨部门关系分析，角色又是另一分类。",
+            "en": "Whole-system diagnosis primarily calls for conceptual skills; technical and human skills may assist, but the focal task is cross-department analysis, while a role is a different classification."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-43-activities-q",
+          "conceptIds": [
+            "material-43-activities"
+          ],
+          "prompt": {
+            "zh": "依据课件图表，有效管理者时间占比最大的活动是什么？",
+            "en": "In the deck’s chart, which activity occupies the largest share for effective managers?"
+          },
+          "options": [
+            {
+              "zh": "社交网络",
+              "en": "Networking"
+            },
+            {
+              "zh": "传统管理",
+              "en": "Traditional management"
+            },
+            {
+              "zh": "沟通",
+              "en": "Communication"
+            },
+            {
+              "zh": "四类相同",
+              "en": "All four equally"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "有效管理者图中沟通占44%；成功管理者的最大项才是社交网络48%。",
+            "en": "Communication accounts for 44% in the effective-manager chart; networking at 48% leads the successful-manager chart."
+          },
+          "pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "material-43-ob-q",
+          "conceptIds": [
+            "material-43-ob"
+          ],
+          "prompt": {
+            "zh": "哪项研究最符合 OB 的范围？",
+            "en": "Which study best fits the scope of OB?"
+          },
+          "options": [
+            {
+              "zh": "只用财务总额比较公司，不研究其中的人或结构",
+              "en": "Compare financial totals alone without examining people or structure"
+            },
+            {
+              "zh": "只分析设备物理性能，不涉及人的行为",
+              "en": "Analyze equipment physics without human behavior"
+            },
+            {
+              "zh": "只描述个人偏好，不考虑工作组织与效能",
+              "en": "Describe personal preferences without organizational context or effectiveness"
+            },
+            {
+              "zh": "团队结构如何影响沟通与绩效",
+              "en": "How team structure affects communication and performance"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "团队结构、沟通和绩效直接连接 OB 的群体、结构、行为与效能；其余研究未建立完整组织行为联系。",
+            "en": "Team structure, communication, and performance connect groups, structure, behavior, and effectiveness; the other studies do not establish that OB connection."
+          },
+          "pages": [
+            10
+          ]
+        },
+        {
+          "id": "material-43-evidence-q",
+          "conceptIds": [
+            "material-43-evidence"
+          ],
+          "prompt": {
+            "zh": "经理凭感觉提出“排班影响离职”，下一步最合适是什么？",
+            "en": "A manager suspects scheduling affects turnover. What is the best next step?"
+          },
+          "options": [
+            {
+              "zh": "收集相关数据，考虑其他因素并检验判断",
+              "en": "Collect relevant data, consider other factors, and test the judgment"
+            },
+            {
+              "zh": "只访谈一位赞同自己的员工后认定因果",
+              "en": "Interview one agreeing employee and declare causation"
+            },
+            {
+              "zh": "只选择支持直觉的数据，排除反例",
+              "en": "Select only supporting data and exclude counterexamples"
+            },
+            {
+              "zh": "认为直觉与系统研究不能同时使用",
+              "en": "Assume intuition and systematic study cannot coexist"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "直觉可产生假设；系统研究应检验而非选择性确认它，并考虑替代解释。",
+            "en": "Intuition can generate a hypothesis; systematic study should test rather than selectively confirm it and consider alternative explanations."
+          },
+          "pages": [
+            11
+          ]
+        },
+        {
+          "id": "material-43-bigdata-q",
+          "conceptIds": [
+            "material-43-bigdata"
+          ],
+          "prompt": {
+            "zh": "员工分析系统给出预测后，经理应如何使用？",
+            "en": "How should a manager use a prediction from employee analytics?"
+          },
+          "options": [
+            {
+              "zh": "直接把高风险预测当作员工已发生的问题",
+              "en": "Treat a high-risk prediction as an event that already occurred"
+            },
+            {
+              "zh": "把它作为证据之一，结合情境和经验判断",
+              "en": "Use it as one source of evidence alongside context and experience"
+            },
+            {
+              "zh": "只根据模型分数决策，不检查数据与情境",
+              "en": "Decide only by model score without examining data or context"
+            },
+            {
+              "zh": "因为经验丰富而完全不看模型证据",
+              "en": "Ignore model evidence because the manager is experienced"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "预测提供证据而非完整事实或必然因果；管理判断应结合模型、数据限制和具体情境。",
+            "en": "Prediction supplies evidence rather than complete facts or inevitable causation; judgment should combine the model, limitations, and context."
+          },
+          "pages": [
+            12
+          ]
+        },
+        {
+          "id": "material-43-psychology-q",
+          "conceptIds": [
+            "material-43-psychology"
+          ],
+          "prompt": {
+            "zh": "研究群体如何改变成员的态度，最直接连接哪一学科？",
+            "en": "Studying how a group changes members’ attitudes most directly connects to which discipline?"
+          },
+          "options": [
+            {
+              "zh": "只研究组织正式制度的社会学分析",
+              "en": "A sociological analysis focused only on formal institutions"
+            },
+            {
+              "zh": "只比较跨社会文化的人类学研究",
+              "en": "An anthropological comparison focused only on cultures"
+            },
+            {
+              "zh": "社会心理学",
+              "en": "Social psychology"
+            },
+            {
+              "zh": "只研究个体独立学习的心理学实验",
+              "en": "A psychological experiment focused only on isolated individual learning"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "群体影响与态度改变结合个人和社会过程，最直接对应社会心理学；其他学科可能贡献但重点不同。",
+            "en": "Group influence and attitude change combine personal and social processes, most directly matching social psychology; the other disciplines have different focal points."
+          },
+          "pages": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "material-43-sociology-q",
+          "conceptIds": [
+            "material-43-sociology"
+          ],
+          "prompt": {
+            "zh": "比较不同文化中的组织价值观，最直接借助什么？",
+            "en": "Comparing organizational values across cultures most directly draws on what?"
+          },
+          "options": [
+            {
+              "zh": "以个体知觉速度为中心的心理测量",
+              "en": "Psychometrics focused on individual perceptual speed"
+            },
+            {
+              "zh": "以个人态度改变实验为中心的社会心理学",
+              "en": "Social psychology focused on individual attitude-change experiments"
+            },
+            {
+              "zh": "只研究组织内部汇报层级而不比较文化",
+              "en": "Study only internal reporting hierarchy without cultural comparison"
+            },
+            {
+              "zh": "人类学的跨文化分析",
+              "en": "Anthropological cross-cultural analysis"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "跨文化价值比较属于人类学贡献；认知测量、态度实验或汇报层级研究与题目焦点不同。",
+            "en": "Cross-cultural value comparison is an anthropological contribution; cognitive measurement, attitude experiments, and hierarchy analysis have different emphases."
+          },
+          "pages": [
+            14,
+            16
+          ]
+        },
+        {
+          "id": "material-43-contingency-q",
+          "conceptIds": [
+            "material-43-contingency"
+          ],
+          "prompt": {
+            "zh": "同一种奖励在不同团队效果不同，最佳解释是什么？",
+            "en": "Why might the same reward work differently across teams?"
+          },
+          "options": [
+            {
+              "zh": "情境变量改变奖励与结果的关系",
+              "en": "Situational variables alter the reward–outcome relationship"
+            },
+            {
+              "zh": "只要奖励形式相同，结果就应相同",
+              "en": "Identical reward form should produce identical outcomes"
+            },
+            {
+              "zh": "一次无效就证明该奖励在任何地方都无效",
+              "en": "One failure proves the reward never works anywhere"
+            },
+            {
+              "zh": "只需扩大样本，情境差异便可忽略",
+              "en": "A larger sample makes contextual differences irrelevant"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "权变变量改变措施与结果的关系，既反对一例概括，也反对忽略情境。",
+            "en": "Contingency variables alter practice–outcome relationships, challenging both generalization from one case and disregard for context."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-43-employment-q",
+          "conceptIds": [
+            "material-43-employment"
+          ],
+          "prompt": {
+            "zh": "“兼职、在家工作、按小时计酬”分别描述什么？",
+            "en": "“Part-time, working from home, hourly pay” describe which dimensions?"
+          },
+          "options": [
+            {
+              "zh": "地点、工作类型、任职条件",
+              "en": "Location, work type, employment conditions"
+            },
+            {
+              "zh": "工作类型、地点、报酬",
+              "en": "Work type, location, compensation"
+            },
+            {
+              "zh": "就业状态、报酬、工作地点",
+              "en": "Employment status, compensation, work location"
+            },
+            {
+              "zh": "任职条件、报酬、就业状态",
+              "en": "Employment conditions, compensation, employment status"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "兼职是工作类型，在家是工作地点，时薪是报酬方式；选项混淆了五个独立维度。",
+            "en": "Part-time is a type, home is a location, and hourly pay is compensation; the alternatives mix separate dimensions."
+          },
+          "pages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-43-global-q",
+          "conceptIds": [
+            "material-43-global"
+          ],
+          "prompt": {
+            "zh": "同一城市的团队包含不同年龄与文化背景，主要体现什么？",
+            "en": "A team in one city includes different ages and cultural backgrounds. What does this primarily illustrate?"
+          },
+          "options": [
+            {
+              "zh": "海外派遣，因为有文化差异就必然跨国工作",
+              "en": "An expatriate assignment, because cultural difference must mean working abroad"
+            },
+            {
+              "zh": "全球外包，因为成员不同就表示岗位转移",
+              "en": "Global outsourcing, because member differences imply job relocation"
+            },
+            {
+              "zh": "劳动力多样性",
+              "en": "Workforce diversity"
+            },
+            {
+              "zh": "组织生存，因为多样性与长期存在完全相同",
+              "en": "Organizational survival, because diversity is identical to long-term existence"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "组织内部多样性不需要跨境任职或转移岗位，也不是生存结果本身。",
+            "en": "Internal diversity does not require overseas assignments or job relocation, and it is not the survival outcome itself."
+          },
+          "pages": [
+            20,
+            22
+          ]
+        },
+        {
+          "id": "material-43-customer-q",
+          "conceptIds": [
+            "material-43-customer"
+          ],
+          "prompt": {
+            "zh": "改善服务体验时，哪项最贴近课件逻辑？",
+            "en": "Which action best follows the deck’s logic for improving service experience?"
+          },
+          "options": [
+            {
+              "zh": "增加广告投入，同时不调整一线服务条件",
+              "en": "Increase advertising while leaving frontline conditions unchanged"
+            },
+            {
+              "zh": "只考核接听数量，不检查客户问题是否解决",
+              "en": "Measure calls handled without checking issue resolution"
+            },
+            {
+              "zh": "制定客户口号，但不支持员工回应需求",
+              "en": "Set customer slogans without supporting employee responsiveness"
+            },
+            {
+              "zh": "支持一线员工的态度、行为和回应客户能力",
+              "en": "Support frontline attitudes, behavior, and responsiveness"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "课件强调员工互动与文化的机制；广告、数量和口号只有在支持真实回应时才有帮助。",
+            "en": "The deck emphasizes employee interactions and culture; advertising, counts, and slogans help only when they support actual responsiveness."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-43-network-q",
+          "conceptIds": [
+            "material-43-network"
+          ],
+          "prompt": {
+            "zh": "远程团队使用社交平台时，哪项管理安排最完整？",
+            "en": "Which arrangement best addresses social-platform use in a remote team?"
+          },
+          "options": [
+            {
+              "zh": "明确使用目的与边界，并调整线上沟通和领导方式",
+              "en": "Clarify purposes and boundaries and adapt online communication and leadership"
+            },
+            {
+              "zh": "沿用线下所有规则，不考虑异步合作与在线边界",
+              "en": "Reuse all offline rules without considering asynchronous work or online boundaries"
+            },
+            {
+              "zh": "只监测在线时长以代表协作质量",
+              "en": "Use online hours alone as collaboration quality"
+            },
+            {
+              "zh": "允许任何时候使用任何平台而不说明目的",
+              "en": "Allow any platform at any time without clarifying purpose"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "网络化工作需要调整领导和沟通，同时明确社交媒体使用情境与福祉边界。",
+            "en": "Networked work calls for adapted leadership and communication plus clear use contexts and well-being boundaries."
+          },
+          "pages": [
+            25,
+            26
+          ]
+        },
+        {
+          "id": "material-43-wellbeing-q",
+          "conceptIds": [
+            "material-43-wellbeing"
+          ],
+          "prompt": {
+            "zh": "哪种措施同时回应福祉与积极组织研究？",
+            "en": "Which action addresses both well-being and positive organizational scholarship?"
+          },
+          "options": [
+            {
+              "zh": "提供优势培训，但仍默认所有人全天候回应",
+              "en": "Offer strengths training while requiring constant responsiveness"
+            },
+            {
+              "zh": "设定可持续的联络边界，并发挥员工优势",
+              "en": "Set sustainable contact boundaries and develop employee strengths"
+            },
+            {
+              "zh": "缩短工时但只用缺点评价员工",
+              "en": "Reduce hours but evaluate people only by deficits"
+            },
+            {
+              "zh": "只用福利宣传替代工作边界和岗位改进",
+              "en": "Use benefit publicity instead of boundaries and job improvements"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "可持续边界处理工作生活冲突，优势发展体现积极组织研究；仅满足其中一半或只宣传均不完整。",
+            "en": "Sustainable boundaries address work–life conflict, and strengths development reflects positive scholarship; either half alone or publicity is incomplete."
+          },
+          "pages": [
+            27,
+            28
+          ]
+        },
+        {
+          "id": "material-43-ethics-q",
+          "conceptIds": [
+            "material-43-ethics"
+          ],
+          "prompt": {
+            "zh": "组织发出道德准则后，管理者还应做什么？",
+            "en": "After issuing an ethics code, what should managers also do?"
+          },
+          "options": [
+            {
+              "zh": "只在违规后处罚，从不讨论困难情境",
+              "en": "Punish violations without discussing difficult situations"
+            },
+            {
+              "zh": "认为发布准则就足以保证实际行为",
+              "en": "Assume publishing a code guarantees behavior"
+            },
+            {
+              "zh": "营造支持员工做出道德选择的环境",
+              "en": "Create a climate supporting ethical choices"
+            },
+            {
+              "zh": "仅以业绩排名决定所有道德争议",
+              "en": "Resolve every ethical issue solely by performance ranking"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "道德准则需要健康组织氛围与日常支持来落实，文件或业绩指标不能自动解决困境。",
+            "en": "Codes need a healthy climate and everyday support; documents or performance metrics do not automatically resolve dilemmas."
+          },
+          "pages": [
+            29
+          ]
+        },
+        {
+          "id": "material-43-levels-q",
+          "conceptIds": [
+            "material-43-levels"
+          ],
+          "prompt": {
+            "zh": "“组织文化是组织层面的输入”中，哪种理解正确？",
+            "en": "What does “organizational culture is an organizational-level input” mean?"
+          },
+          "options": [
+            {
+              "zh": "文化是输入，所以它只能在个人层面出现",
+              "en": "Because culture is an input, it can only be individual-level"
+            },
+            {
+              "zh": "组织层面只研究结果，不研究输入",
+              "en": "Organizational analysis studies only outcomes, not inputs"
+            },
+            {
+              "zh": "输入、群体、结果是模型的三个并列阶段",
+              "en": "Input, group, and outcome are the model’s three parallel stages"
+            },
+            {
+              "zh": "组织层面说明分析单位，输入说明它在过程中的位置",
+              "en": "Organizational level identifies the unit; input identifies its place in the process"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "分析层次与过程位置是两条轴；每个层次都可识别输入、过程和结果。",
+            "en": "Analytical level and process position are separate axes; each level contains inputs, processes, and outcomes."
+          },
+          "pages": [
+            30,
+            40
+          ]
+        },
+        {
+          "id": "material-43-ipo-q",
+          "conceptIds": [
+            "material-43-ipo"
+          ],
+          "prompt": {
+            "zh": "“团队职责明确→沟通改善→团队完成更多工作”依次属于什么？",
+            "en": "“Clear team responsibilities → better communication → more completed team work” follows which sequence?"
+          },
+          "options": [
+            {
+              "zh": "输入→过程→结果",
+              "en": "Input → process → outcome"
+            },
+            {
+              "zh": "结果→过程→输入",
+              "en": "Outcome → process → input"
+            },
+            {
+              "zh": "过程→输入→结果",
+              "en": "Process → input → outcome"
+            },
+            {
+              "zh": "输入→结果→过程",
+              "en": "Input → outcome → process"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "职责是输入，沟通是过程，工作产出是结果；并非按词语出现顺序任意命名。",
+            "en": "Responsibilities are inputs, communication is a process, and work output is an outcome."
+          },
+          "pages": [
+            30,
+            31,
+            32,
+            33
+          ]
+        },
+        {
+          "id": "material-43-attitudestress-q",
+          "conceptIds": [
+            "material-43-attitudestress"
+          ],
+          "prompt": {
+            "zh": "员工对主管评价消极且因工作压力感到不适，分别体现什么？",
+            "en": "An employee evaluates a supervisor negatively and feels distress under work pressure. What does this illustrate?"
+          },
+          "options": [
+            {
+              "zh": "满意度与组织文化",
+              "en": "Job satisfaction and organizational culture"
+            },
+            {
+              "zh": "态度与压力",
+              "en": "Attitude and stress"
+            },
+            {
+              "zh": "人格与群体功能",
+              "en": "Personality and group functioning"
+            },
+            {
+              "zh": "任务绩效与组织公民行为",
+              "en": "Task performance and organizational citizenship behavior"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "对主管的评价是态度；回应环境压力的不适是压力；文化、人格及行为产出不是这两种现象。",
+            "en": "Evaluation of a supervisor is an attitude; distress responding to pressure is stress, rather than culture, personality, or behavioral output."
+          },
+          "pages": [
+            34
+          ]
+        },
+        {
+          "id": "material-43-taskocb-q",
+          "conceptIds": [
+            "material-43-taskocb"
+          ],
+          "prompt": {
+            "zh": "完成合同规定工作后自愿指导新同事，后一个行为更接近什么？",
+            "en": "After completing assigned duties, an employee voluntarily mentors a newcomer. What is the latter behavior?"
+          },
+          "options": [
+            {
+              "zh": "任务绩效，因为所有有益行为都属于正式任务",
+              "en": "Task performance, because every helpful action is a formal duty"
+            },
+            {
+              "zh": "群体凝聚力，因为个人帮助行为就是团队关系程度",
+              "en": "Group cohesion, because one helpful action equals the team’s relationship level"
+            },
+            {
+              "zh": "组织公民行为",
+              "en": "Organizational citizenship behavior"
+            },
+            {
+              "zh": "组织结构，因为指导一定等同于正式岗位安排",
+              "en": "Organizational structure, because mentoring always means a formal role arrangement"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "题目强调正式职责之外的自愿帮助，符合 OCB；团队凝聚力是群体关系结果而非同一行为分类。",
+            "en": "Voluntary help beyond formal duties fits OCB; group cohesion describes a group relationship outcome, not the same behavioral category."
+          },
+          "pages": [
+            35,
+            36
+          ]
+        },
+        {
+          "id": "material-43-withdrawal-q",
+          "conceptIds": [
+            "material-43-withdrawal"
+          ],
+          "prompt": {
+            "zh": "持续采取行动疏远组织属于哪类结果？",
+            "en": "Repeated actions to distance oneself from the organization are which outcome?"
+          },
+          "options": [
+            {
+              "zh": "任务绩效下降的唯一原因",
+              "en": "The sole cause of lower task performance"
+            },
+            {
+              "zh": "组织公民行为的必要形式",
+              "en": "A necessary form of OCB"
+            },
+            {
+              "zh": "群体凝聚力增强的直接证据",
+              "en": "Direct evidence of increased group cohesion"
+            },
+            {
+              "zh": "退出行为",
+              "en": "Withdrawal behavior"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "主动疏远组织体现退出行为；它不是所有绩效问题的唯一原因，也不能等同帮助或凝聚力。",
+            "en": "Distancing oneself reflects withdrawal; it is neither the sole cause of performance problems nor equivalent to helping or cohesion."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-43-groupoutcomes-q",
+          "conceptIds": [
+            "material-43-groupoutcomes"
+          ],
+          "prompt": {
+            "zh": "成员互相支持但团队交付质量仍差，说明什么？",
+            "en": "Members support each other but deliver poor-quality work. What does this show?"
+          },
+          "options": [
+            {
+              "zh": "凝聚力与群体功能应分别评估",
+              "en": "Cohesion and functioning should be assessed separately"
+            },
+            {
+              "zh": "只要凝聚力高，群体功能就必定高",
+              "en": "High cohesion necessarily means high functioning"
+            },
+            {
+              "zh": "输出质量差就证明成员一定互不支持",
+              "en": "Poor output proves members do not support one another"
+            },
+            {
+              "zh": "两项都只属于个体态度而不能在群体层面研究",
+              "en": "Both concern only individual attitudes, not group analysis"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "支持与认可衡量凝聚力，工作质量与数量衡量群体功能；二者可相关但不等同。",
+            "en": "Support and affirmation measure cohesion; output quality and quantity measure functioning. They may relate without being identical."
+          },
+          "pages": [
+            38
+          ]
+        },
+        {
+          "id": "material-43-organizationoutcomes-q",
+          "conceptIds": [
+            "material-43-organizationoutcomes"
+          ],
+          "prompt": {
+            "zh": "某组织成本很低但一直未实现目标，可以据此说生产率高吗？",
+            "en": "An organization has low costs but consistently misses its goals. Does that establish high productivity?"
+          },
+          "options": [
+            {
+              "zh": "可以，只要投入成本比上期更低",
+              "en": "Yes, if input costs are lower than last period"
+            },
+            {
+              "zh": "不能，还需要有效实现目标",
+              "en": "No; effectiveness in meeting goals is also required"
+            },
+            {
+              "zh": "可以，因为效率自动保证有效性",
+              "en": "Yes, because efficiency automatically ensures effectiveness"
+            },
+            {
+              "zh": "不能，因为生存只能由销售额一个指标判断",
+              "en": "No, because survival can be judged only by sales"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "生产率同时要求有效性与效率；只省成本不实现目标不足，长期生存也不由单一销售指标决定。",
+            "en": "Productivity requires both effectiveness and efficiency; lower costs without goals are insufficient, and survival is not determined by one sales metric."
+          },
+          "pages": [
+            39
+          ]
+        },
+        {
+          "id": "material-43-interpersonal-q2",
+          "conceptIds": [
+            "material-43-interpersonal"
+          ],
+          "prompt": {
+            "zh": "出席公司周年仪式并在之后指导团队，两项行动分别最符合什么？",
+            "en": "Attending a company anniversary ceremony and then directing a team most closely match which roles?"
+          },
+          "options": [
+            {
+              "zh": "联络者；发言人",
+              "en": "Liaison; spokesperson"
+            },
+            {
+              "zh": "监督者；谈判者",
+              "en": "Monitor; negotiator"
+            },
+            {
+              "zh": "代表人物；领导者",
+              "en": "Figurehead; leader"
+            },
+            {
+              "zh": "传播者；资源分配者",
+              "en": "Disseminator; resource allocator"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "礼仪职责属于代表人物，激励和指导员工属于领导者；不是外部信息发布或资源决定。",
+            "en": "Ceremonial duties belong to the figurehead, while motivating and directing staff belongs to the leader, rather than external communication or allocation."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-43-information-q2",
+          "conceptIds": [
+            "material-43-information"
+          ],
+          "prompt": {
+            "zh": "收集行业报告后把重要信息发给内部成员，依次体现什么角色？",
+            "en": "Collecting industry reports and then sharing key information with internal members represents which roles?"
+          },
+          "options": [
+            {
+              "zh": "发言人；联络者",
+              "en": "Spokesperson; liaison"
+            },
+            {
+              "zh": "传播者；发言人",
+              "en": "Disseminator; spokesperson"
+            },
+            {
+              "zh": "代表人物；谈判者",
+              "en": "Figurehead; negotiator"
+            },
+            {
+              "zh": "监督者；传播者",
+              "en": "Monitor; disseminator"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "信息先流入再向内部流出，对应 monitor 和 disseminator；发言人面向外部。",
+            "en": "Information first flows in and then internally out, corresponding to monitor and disseminator; a spokesperson addresses outsiders."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-43-skills-q2",
+          "conceptIds": [
+            "material-43-skills"
+          ],
+          "prompt": {
+            "zh": "熟练操作专业分析工具和耐心激励员工，分别主要需要什么？",
+            "en": "Expert use of a specialized analysis tool and patient motivation of employees primarily require what?"
+          },
+          "options": [
+            {
+              "zh": "技术技能；人际技能",
+              "en": "Technical skills; human skills"
+            },
+            {
+              "zh": "概念技能；技术技能",
+              "en": "Conceptual skills; technical skills"
+            },
+            {
+              "zh": "人际技能；概念技能",
+              "en": "Human skills; conceptual skills"
+            },
+            {
+              "zh": "两项都只属于概念技能",
+              "en": "Both are exclusively conceptual skills"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "专业工具使用体现技术知识；理解并激励人体现人际能力，复杂整体诊断才更突出概念能力。",
+            "en": "Tool use applies expertise; understanding and motivating people uses human skills, while whole-system diagnosis emphasizes conceptual skills."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-43-decision-q2",
+          "conceptIds": [
+            "material-43-decision"
+          ],
+          "prompt": {
+            "zh": "代表组织与供应商协商长期合作条款，最直接是什么决策职能？",
+            "en": "Representing an organization in negotiating long-term terms with a supplier is which decision function?"
+          },
+          "options": [
+            {
+              "zh": "仅收集信息",
+              "en": "Information monitoring only"
+            },
+            {
+              "zh": "谈判",
+              "en": "Negotiation"
+            },
+            {
+              "zh": "对外公布已决定政策",
+              "en": "Announcing an already-decided policy"
+            },
+            {
+              "zh": "履行礼仪职责",
+              "en": "Performing ceremonial duties"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "协商条款需要代表组织进行谈判；它可能使用信息但不只是信息传递。",
+            "en": "Bargaining over terms requires negotiation on the organization’s behalf; it uses information but is not merely transmitting it."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-43-psychology-q2",
+          "conceptIds": [
+            "material-43-psychology"
+          ],
+          "prompt": {
+            "zh": "研究个人学习、人格与工作动机，最直接依托哪门贡献学科？",
+            "en": "Research on individual learning, personality, and work motivation most directly draws on which discipline?"
+          },
+          "options": [
+            {
+              "zh": "人类学的跨社会文化比较",
+              "en": "Anthropological cross-society comparison"
+            },
+            {
+              "zh": "仅正式组织结构的社会学",
+              "en": "Sociology focused only on formal structure"
+            },
+            {
+              "zh": "心理学",
+              "en": "Psychology"
+            },
+            {
+              "zh": "仅国际制度的政治分析",
+              "en": "Political analysis focused only on international institutions"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "课件把学习、人格和动机放在心理学对个人层面的贡献中；文化和组织结构的焦点不同。",
+            "en": "The diagram places learning, personality, and motivation under psychology’s individual-level contributions; culture and structure have different emphases."
+          },
+          "pages": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "material-43-levels-q2",
+          "conceptIds": [
+            "material-43-levels"
+          ],
+          "prompt": {
+            "zh": "“团队角色、沟通、群体凝聚力”在同一分析层次内分别是什么？",
+            "en": "Within one analytical level, “team roles, communication, group cohesion” represent what?"
+          },
+          "options": [
+            {
+              "zh": "个人输入、组织过程、群体结果",
+              "en": "Individual input, organizational process, group outcome"
+            },
+            {
+              "zh": "组织输入、个人过程、组织结果",
+              "en": "Organizational input, individual process, organizational outcome"
+            },
+            {
+              "zh": "三个都是组织层面的结果",
+              "en": "All are organizational outcomes"
+            },
+            {
+              "zh": "群体输入、群体过程、群体结果",
+              "en": "Group input, group process, group outcome"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "三项均属于群体层面，并依次位于条件、机制与结果位置。",
+            "en": "All three are group-level variables, occupying condition, mechanism, and outcome positions respectively."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-43-ipo-q2",
+          "conceptIds": [
+            "material-43-ipo"
+          ],
+          "prompt": {
+            "zh": "IPO 图中从结果返回输入的箭头最合理地表达什么？",
+            "en": "What does the arrow from outcomes back to inputs most reasonably express?"
+          },
+          "options": [
+            {
+              "zh": "已有结果与经验会影响之后的条件",
+              "en": "Existing results and experience influence later conditions"
+            },
+            {
+              "zh": "结果发生在所有输入之前",
+              "en": "Outcomes precede all inputs"
+            },
+            {
+              "zh": "所有结果都只能影响个人，不能影响组织",
+              "en": "Outcomes affect only individuals, never organizations"
+            },
+            {
+              "zh": "一次分析后系统永远不变",
+              "en": "The system never changes after one analysis"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "反馈箭头表示动态学习与变化；它不取消输入—过程—结果的基本逻辑。",
+            "en": "The feedback arrow represents dynamic learning and change without removing the input–process–outcome logic."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-43-taskocb-q2",
+          "conceptIds": [
+            "material-43-taskocb"
+          ],
+          "prompt": {
+            "zh": "员工高效而准确地完成正式岗位任务，主要衡量哪项？",
+            "en": "Completing formal job tasks accurately and efficiently primarily measures what?"
+          },
+          "options": [
+            {
+              "zh": "组织公民行为",
+              "en": "Organizational citizenship behavior"
+            },
+            {
+              "zh": "任务绩效",
+              "en": "Task performance"
+            },
+            {
+              "zh": "退出行为",
+              "en": "Withdrawal behavior"
+            },
+            {
+              "zh": "组织文化",
+              "en": "Organizational culture"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "核心职责的效果与效率属于任务绩效；OCB 特别强调正式职责以外的自愿贡献。",
+            "en": "Effectiveness and efficiency in core duties constitute task performance; OCB emphasizes voluntary contributions beyond formal duties."
+          },
+          "pages": [
+            35,
+            36
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2,
+              21,
+              41,
+              42
+            ],
+            "reason": {
+              "zh": "封面、学习目标、参考资料、行政信息或重复总结；不设独立考点。",
+              "en": "Cover, learning objectives, references, administrative information, or repeated recap; no separate learning objective."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "第6页决策角色表存在标签错位：此整理保留可确认的决策职能，不要求背诵错位标签。图表数据用于理解课件当时的研究示例，不代表当前劳动力统计。",
+        "en": "The decision-role labels on page 6 are misaligned. This guide retains identifiable decision functions without testing the faulty labels. Charts illustrate studies in the deck, not current workforce statistics."
+      },
+      "sourceSha256": "d6978e6cc7cfb9dad32d5d5ce5529acb68be7b959e4d570831e9545370d454ce"
+    },
+    {
+      "resourceId": "material-44",
+      "overview": {
+        "zh": "区分表层与深层多样性，识别歧视，按实际能力匹配工作，并用招聘、团队协作与发展制度把差异转化为组织资源。",
+        "en": "Distinguish surface and deep diversity, recognize discrimination, match work to actual abilities, and support inclusion through recruitment, teamwork, and development."
+      },
+      "groups": [
+        {
+          "id": "material-44-g1",
+          "title": {
+            "zh": "多样性与歧视",
+            "en": "Diversity and discrimination"
+          },
+          "concepts": [
+            {
+              "id": "material-44-diversity",
+              "title": {
+                "zh": "表层与深层多样性",
+                "en": "Surface-level and deep-level diversity"
+              },
+              "explanation": {
+                "zh": "表层多样性涉及较容易观察的人口背景差异；深层多样性涉及需要通过相处才能认识的价值观、态度等差异。有效管理不能停留在外表分类。",
+                "en": "Surface diversity concerns relatively observable demographic differences; deep diversity concerns differences in values and attitudes revealed through interaction. Effective management goes beyond visible categories."
+              },
+              "pages": [
+                3,
+                7,
+                26
+              ]
+            },
+            {
+              "id": "material-44-stereotype",
+              "title": {
+                "zh": "不公平歧视与刻板印象威胁",
+                "en": "Unfair discrimination and stereotype threat"
+              },
+              "explanation": {
+                "zh": "不公平歧视以群体刻板印象代替个人事实。课件把刻板印象威胁联系到对负面群体评价的内化；管理应尊重个人差异，避免把群体标签当作能力证据。",
+                "en": "Unfair discrimination substitutes group stereotypes for individual evidence. The deck connects stereotype threat to internalizing negative group perceptions; management should respect individual differences rather than treat labels as evidence of ability."
+              },
+              "pages": [
+                4,
+                26
+              ]
+            },
+            {
+              "id": "material-44-policies",
+              "title": {
+                "zh": "歧视性政策或惯例",
+                "en": "Discriminatory policies or practices"
+              },
+              "explanation": {
+                "zh": "政策或实践若剥夺平等表现机会，或对同等绩效给予不平等奖励，就可能形成制度层面的歧视。需要检查资源与机会分配，而非只看制度名称。",
+                "en": "Policies or practices can discriminate by denying equal opportunities to perform or rewarding comparable performance unequally. Examine allocations of opportunities and resources rather than policy names alone."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-44-harassment",
+              "title": {
+                "zh": "性骚扰",
+                "en": "Sexual harassment"
+              },
+              "explanation": {
+                "zh": "不受欢迎的性暗示、言语或身体行为若造成敌意或冒犯性的工作环境，属于课件所列性骚扰类型。分析重点是行为是否不受欢迎及其工作环境影响。",
+                "en": "Unwanted sexual advances or sexual verbal or physical conduct that creates a hostile or offensive work environment is the deck’s sexual-harassment category. Focus on unwanted conduct and its environmental impact."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-44-intimidation",
+              "title": {
+                "zh": "威吓与嘲弄",
+                "en": "Intimidation, mockery, and insults"
+              },
+              "explanation": {
+                "zh": "威吓是针对特定群体的明显威胁或霸凌；嘲弄与侮辱可通过笑话或负面标签表现。把行为称为玩笑，不会消除它对员工的影响。",
+                "en": "Intimidation involves overt threats or bullying toward particular groups; mockery and insults include degrading jokes or negative stereotypes. Calling conduct a joke does not remove its effects."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-44-exclusion",
+              "title": {
+                "zh": "排斥与不文明行为",
+                "en": "Exclusion and incivility"
+              },
+              "explanation": {
+                "zh": "排斥使某些人失去工作机会、社交活动、讨论或导师支持；不文明行为包括打断、无视意见等不尊重。歧视可以通过日常互动发生，且排斥未必出于有意识的意图。",
+                "en": "Exclusion denies access to opportunities, social events, discussions, or mentoring; incivility includes disrespect such as interrupting or ignoring views. Discrimination can occur through everyday interactions, including unintentional exclusion."
+              },
+              "pages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-44-g2",
+          "title": {
+            "zh": "背景差异与个体评价",
+            "en": "Background differences and individual assessment"
+          },
+          "concepts": [
+            {
+              "id": "material-44-age",
+              "title": {
+                "zh": "年龄与工作表现",
+                "en": "Age and job performance"
+              },
+              "explanation": {
+                "zh": "课件反对把年龄增加直接等同于生产率下降，并报告较年长员工离职与缺勤较少的研究模式。实际决策仍应看岗位和个人能力。",
+                "en": "The deck challenges equating age with lower productivity and reports patterns of lower turnover and absence among older workers. Decisions should still examine the role and individual ability."
+              },
+              "pages": [
+                7,
+                8
+              ]
+            },
+            {
+              "id": "material-44-sexrace",
+              "title": {
+                "zh": "性别、种族与族群偏差",
+                "en": "Sex, race, and ethnic bias"
+              },
+              "explanation": {
+                "zh": "课件指出男女在多种关键工作能力上没有一致差异，但机会和薪酬可能不平等。族群偏好也可能影响评价、晋升和加薪；经理应检查决策中的偏差。",
+                "en": "The deck finds no consistent sex differences across several core work abilities, despite unequal opportunities and pay. In-group ethnic preferences can also affect evaluation, promotion, and raises; managers should examine decision bias."
+              },
+              "pages": [
+                9,
+                10
+              ]
+            },
+            {
+              "id": "material-44-disability",
+              "title": {
+                "zh": "可见与隐性障碍",
+                "en": "Visible and hidden disabilities"
+              },
+              "explanation": {
+                "zh": "影响重要活动的身体或心理障碍不一定外显；慢性疼痛、学习困难和睡眠等问题可能不容易观察。管理应评估具体支持需要并调整工作与能力的匹配。",
+                "en": "Physical or mental impairments affecting major activities are not necessarily visible; chronic pain, learning difficulties, or sleep-related issues may be hidden. Management should assess support needs and match work to abilities."
+              },
+              "pages": [
+                11,
+                12,
+                26
+              ]
+            },
+            {
+              "id": "material-44-tenure",
+              "title": {
+                "zh": "任职年限",
+                "en": "Tenure"
+              },
+              "explanation": {
+                "zh": "任职年限反映在组织或岗位积累的经验，课件将它与生产率和绩效的正向关系联系起来。它不同于年龄，不能仅从年龄推算工作经验。",
+                "en": "Tenure reflects accumulated experience in an organization or role; the deck associates it positively with productivity and performance. It differs from age and cannot be inferred from age alone."
+              },
+              "pages": [
+                13
+              ]
+            },
+            {
+              "id": "material-44-identity",
+              "title": {
+                "zh": "宗教、性取向、性别认同与文化身份",
+                "en": "Religion, sexual orientation, gender identity, and cultural identity"
+              },
+              "explanation": {
+                "zh": "这些身份影响个人经历与被接纳的感受。课件主张理解并尊重差异、避免以身份代替能力判断；其中历史法律文字需与当前正式规定区分。",
+                "en": "These identities affect experiences and inclusion. The deck supports respecting differences and judging capability rather than identity; historical legal wording must be distinguished from current official rules."
+              },
+              "pages": [
+                13,
+                14,
+                26
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-44-g3",
+          "title": {
+            "zh": "能力与工作匹配",
+            "en": "Abilities and job fit"
+          },
+          "concepts": [
+            {
+              "id": "material-44-ability",
+              "title": {
+                "zh": "智力能力与体能",
+                "en": "Intellectual and physical abilities"
+              },
+              "explanation": {
+                "zh": "能力是当前执行工作任务的本领。智力能力支持思考、推理和解决问题；体能支持力量、灵巧和耐力任务。应按岗位要求选择相关能力，而非笼统比较谁“更优秀”。",
+                "en": "Ability is present capacity to perform job tasks. Intellectual ability supports thought, reasoning, and problem solving; physical ability supports strength, dexterity, and stamina. Evaluate abilities relevant to the role rather than a vague global ranking."
+              },
+              "pages": [
+                15,
+                16,
+                18
+              ]
+            },
+            {
+              "id": "material-44-gma",
+              "title": {
+                "zh": "一般心理能力",
+                "en": "General mental ability"
+              },
+              "explanation": {
+                "zh": "多种具体智力能力之间存在正相关，提示共同的一般心理能力因素。这个共同因素不意味着数理、语言和空间任务完全相同。",
+                "en": "Positive correlations among specific intellectual abilities suggest a general mental-ability factor. A shared factor does not make numerical, verbal, and spatial tasks identical."
+              },
+              "pages": [
+                16
+              ]
+            },
+            {
+              "id": "material-44-numberverbal",
+              "title": {
+                "zh": "数字能力与语言理解",
+                "en": "Number aptitude and verbal comprehension"
+              },
+              "explanation": {
+                "zh": "数字能力强调快速且准确的算术，例如计算税额；语言理解强调理解读到或听到的信息以及词语关系，例如理解招聘政策。",
+                "en": "Number aptitude emphasizes fast, accurate arithmetic, such as calculating tax. Verbal comprehension concerns understanding written or spoken information and word relationships, such as interpreting recruitment policy."
+              },
+              "pages": [
+                17
+              ]
+            },
+            {
+              "id": "material-44-perception",
+              "title": {
+                "zh": "知觉速度",
+                "en": "Perceptual speed"
+              },
+              "explanation": {
+                "zh": "知觉速度是快速、准确识别视觉异同的能力。它不同于长期回忆，也不同于将物体在脑中旋转的空间能力。",
+                "en": "Perceptual speed is fast, accurate identification of visual similarities and differences. It differs from recalling stored information or mentally rotating objects."
+              },
+              "pages": [
+                17
+              ]
+            },
+            {
+              "id": "material-44-reasoning",
+              "title": {
+                "zh": "归纳与演绎推理",
+                "en": "Inductive and deductive reasoning"
+              },
+              "explanation": {
+                "zh": "归纳从已观察的模式识别规律，如根据需求序列预测；演绎依据逻辑分析论证的含义或结论。两者都推理，但信息流向和任务不同。",
+                "en": "Induction identifies patterns from observations, such as forecasting from demand sequences. Deduction uses logic to assess an argument’s implications. Both involve reasoning but differ in direction and task."
+              },
+              "pages": [
+                17
+              ]
+            },
+            {
+              "id": "material-44-spatialmemory",
+              "title": {
+                "zh": "空间想象与记忆",
+                "en": "Spatial visualization and memory"
+              },
+              "explanation": {
+                "zh": "空间想象是在位置改变时想象物体的样子，例如重新布置房间；记忆是保持并提取过去的信息，例如记住客户姓名。",
+                "en": "Spatial visualization imagines objects after changes in position, such as rearranging a room; memory retains and recalls past information, such as customer names."
+              },
+              "pages": [
+                17
+              ]
+            },
+            {
+              "id": "material-44-strength1",
+              "title": {
+                "zh": "动态力量与躯干力量",
+                "en": "Dynamic strength and trunk strength"
+              },
+              "explanation": {
+                "zh": "动态力量是持续或反复施加肌肉力量的能力；躯干力量指使用躯干部位，特别是腹部肌肉发力。一个强调持续方式，另一个强调肌群部位。",
+                "en": "Dynamic strength is repeated or sustained muscular force; trunk strength uses the torso, particularly abdominal muscles. One emphasizes the pattern of exertion, the other the muscle region."
+              },
+              "pages": [
+                19
+              ]
+            },
+            {
+              "id": "material-44-strength2",
+              "title": {
+                "zh": "静态力量与爆发力",
+                "en": "Static and explosive strength"
+              },
+              "explanation": {
+                "zh": "静态力量是对外部物体施力的能力；爆发力是在一次或一组爆发动作中释放最大能量。区分持续抗力与短促强力动作。",
+                "en": "Static strength is the ability to exert force against external objects; explosive strength releases maximum energy in one or a series of explosive acts. Distinguish exerting force from sudden high-energy action."
+              },
+              "pages": [
+                19
+              ]
+            },
+            {
+              "id": "material-44-flexibility",
+              "title": {
+                "zh": "幅度柔韧性与动态柔韧性",
+                "en": "Extent and dynamic flexibility"
+              },
+              "explanation": {
+                "zh": "幅度柔韧性关注躯干和背部能达到多大活动范围；动态柔韧性关注快速、重复弯曲动作。灵活的幅度与动作重复速度需要区分。",
+                "en": "Extent flexibility concerns the range of trunk and back movement; dynamic flexibility concerns rapid, repeated flexing. Range and repeated movement speed are distinct."
+              },
+              "pages": [
+                19
+              ]
+            },
+            {
+              "id": "material-44-physicalother",
+              "title": {
+                "zh": "协调、平衡与耐力",
+                "en": "Coordination, balance, and stamina"
+              },
+              "explanation": {
+                "zh": "身体协调是同时协调身体不同部分的动作；平衡是在外力作用下保持稳定；耐力是持续较长时间维持高强度努力。应选择与工作负荷相符的维度。",
+                "en": "Body coordination synchronizes actions of different body parts; balance maintains equilibrium despite opposing forces; stamina sustains prolonged effort. Select the dimension matching work demands."
+              },
+              "pages": [
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-44-g4",
+          "title": {
+            "zh": "把多样性落实为管理实践",
+            "en": "Putting diversity into practice"
+          },
+          "concepts": [
+            {
+              "id": "material-44-management",
+              "title": {
+                "zh": "多样性管理与人才全周期",
+                "en": "Diversity management and the talent lifecycle"
+              },
+              "explanation": {
+                "zh": "多样性管理通过制度与活动增强对他人差异和需要的敏感度。它涵盖吸引、选拔、发展和留住员工，且应由所有成员共同承担。",
+                "en": "Diversity management uses programs and practices to build sensitivity to others’ differences and needs. It spans attracting, selecting, developing, and retaining people and is everyone’s responsibility."
+              },
+              "pages": [
+                20,
+                21,
+                22
+              ]
+            },
+            {
+              "id": "material-44-team",
+              "title": {
+                "zh": "多样化团队的共同目标",
+                "en": "Shared goals in diverse teams"
+              },
+              "explanation": {
+                "zh": "团队需要对主要任务形成共同理解并保持良好沟通。强调更高层次的共同点能促进合作，但不要求抹去个体差异。",
+                "en": "Teams need shared understanding of major tasks and good communication. Emphasizing higher-level commonalities supports cooperation without erasing individual differences."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-44-expatriate",
+              "title": {
+                "zh": "外派适应与支持",
+                "en": "Expatriate adjustment and support"
+              },
+              "explanation": {
+                "zh": "国际任职应选择具有适应能力的员工，并提供完成任务所需支持。适应是选拔与组织支持共同面对的问题，不只是个人自行承受。",
+                "en": "International assignments require selecting adaptable employees and providing support for the assignment. Adjustment is a selection and organizational-support issue, not merely an individual burden."
+              },
+              "pages": [
+                24
+              ]
+            },
+            {
+              "id": "material-44-programs",
+              "title": {
+                "zh": "有效多样性项目",
+                "en": "Effective diversity programs"
+              },
+              "explanation": {
+                "zh": "有效项目包括平等机会与公平待遇教育、多样化员工服务多样化顾客的业务价值，以及开发所有人技能的个人成长实践。管理者还应反思自身偏见并按能力调整工作。",
+                "en": "Effective programs teach equal opportunity and fairness, explain the business value of serving diverse customers, and develop everyone’s skills. Managers should also challenge their own biases and adapt work to abilities."
+              },
+              "pages": [
+                25,
+                26
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-44-diversity",
+          "to": "material-44-stereotype",
+          "relation": {
+            "zh": "把差异误读为群体定论会造成偏见",
+            "en": "Mistaking differences for group conclusions creates bias"
+          }
+        },
+        {
+          "from": "material-44-stereotype",
+          "to": "material-44-policies",
+          "relation": {
+            "zh": "偏见可进入制度和奖励",
+            "en": "Bias can enter policies and rewards"
+          }
+        },
+        {
+          "from": "material-44-stereotype",
+          "to": "material-44-harassment",
+          "relation": {
+            "zh": "偏见也可体现为敌意互动",
+            "en": "Bias may also manifest in hostile interactions"
+          }
+        },
+        {
+          "from": "material-44-stereotype",
+          "to": "material-44-intimidation",
+          "relation": {
+            "zh": "威胁与侮辱是具体表现",
+            "en": "Threats and insults are concrete forms"
+          }
+        },
+        {
+          "from": "material-44-stereotype",
+          "to": "material-44-exclusion",
+          "relation": {
+            "zh": "排斥与失礼也须识别",
+            "en": "Exclusion and incivility must also be recognized"
+          }
+        },
+        {
+          "from": "material-44-age",
+          "to": "material-44-ability",
+          "relation": {
+            "zh": "年龄标签不能代替能力评价",
+            "en": "Age labels cannot replace ability assessment"
+          }
+        },
+        {
+          "from": "material-44-sexrace",
+          "to": "material-44-ability",
+          "relation": {
+            "zh": "群体归属不能代替岗位匹配",
+            "en": "Group membership cannot replace job fit"
+          }
+        },
+        {
+          "from": "material-44-disability",
+          "to": "material-44-ability",
+          "relation": {
+            "zh": "支持需求影响工作与能力匹配",
+            "en": "Support needs affect job–ability fit"
+          }
+        },
+        {
+          "from": "material-44-tenure",
+          "to": "material-44-ability",
+          "relation": {
+            "zh": "经验与当前能力相关但不同",
+            "en": "Experience relates to but differs from current ability"
+          }
+        },
+        {
+          "from": "material-44-ability",
+          "to": "material-44-gma",
+          "relation": {
+            "zh": "智力能力具有共同与具体维度",
+            "en": "Intellectual ability has shared and specific dimensions"
+          }
+        },
+        {
+          "from": "material-44-gma",
+          "to": "material-44-numberverbal",
+          "relation": {
+            "zh": "共同因素下仍区分数理与语言",
+            "en": "Numerical and verbal dimensions remain distinct"
+          }
+        },
+        {
+          "from": "material-44-gma",
+          "to": "material-44-perception",
+          "relation": {
+            "zh": "视觉辨别是具体认知维度",
+            "en": "Visual discrimination is a specific cognitive dimension"
+          }
+        },
+        {
+          "from": "material-44-gma",
+          "to": "material-44-reasoning",
+          "relation": {
+            "zh": "逻辑推理是具体认知维度",
+            "en": "Logical reasoning is a specific cognitive dimension"
+          }
+        },
+        {
+          "from": "material-44-gma",
+          "to": "material-44-spatialmemory",
+          "relation": {
+            "zh": "空间与记忆提供不同任务能力",
+            "en": "Spatial and memory abilities support different tasks"
+          }
+        },
+        {
+          "from": "material-44-ability",
+          "to": "material-44-strength1",
+          "relation": {
+            "zh": "体能包含不同力量因素",
+            "en": "Physical ability includes strength factors"
+          }
+        },
+        {
+          "from": "material-44-strength1",
+          "to": "material-44-strength2",
+          "relation": {
+            "zh": "力量因素之间需按动作区分",
+            "en": "Distinguish strength factors by exertion"
+          }
+        },
+        {
+          "from": "material-44-ability",
+          "to": "material-44-flexibility",
+          "relation": {
+            "zh": "体能也包含柔韧性",
+            "en": "Physical ability also includes flexibility"
+          }
+        },
+        {
+          "from": "material-44-flexibility",
+          "to": "material-44-physicalother",
+          "relation": {
+            "zh": "动作还依赖协调、稳定和持续",
+            "en": "Movement also depends on coordination, stability, and duration"
+          }
+        },
+        {
+          "from": "material-44-identity",
+          "to": "material-44-management",
+          "relation": {
+            "zh": "尊重差异须落实到人才制度",
+            "en": "Respect must be embodied in talent practices"
+          }
+        },
+        {
+          "from": "material-44-management",
+          "to": "material-44-team",
+          "relation": {
+            "zh": "日常团队协作落实包容",
+            "en": "Daily collaboration puts inclusion into practice"
+          }
+        },
+        {
+          "from": "material-44-management",
+          "to": "material-44-expatriate",
+          "relation": {
+            "zh": "国际任职需要适应与支持",
+            "en": "International work requires adjustment and support"
+          }
+        },
+        {
+          "from": "material-44-team",
+          "to": "material-44-programs",
+          "relation": {
+            "zh": "共同目标与能力发展相互支持",
+            "en": "Shared goals and development reinforce each other"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-44-diversity-q",
+          "conceptIds": [
+            "material-44-diversity"
+          ],
+          "prompt": {
+            "zh": "年龄相近但工作价值观不同的成员，提示经理注意什么？",
+            "en": "Members of similar ages hold different work values. What should a manager recognize?"
+          },
+          "options": [
+            {
+              "zh": "表层相似并不意味着深层相同",
+              "en": "Surface similarity does not imply deep similarity"
+            },
+            {
+              "zh": "共同年龄足以推断相同的价值观",
+              "en": "Shared age is sufficient to infer shared values"
+            },
+            {
+              "zh": "深层多样性只在跨国团队中出现",
+              "en": "Deep diversity occurs only in international teams"
+            },
+            {
+              "zh": "只要忽略所有差异就能保证公平",
+              "en": "Ignoring all differences guarantees fairness"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "外在背景与内在评价是不同维度；深层差异可存在于任何团队，公平也需理解具体需要。",
+            "en": "Visible backgrounds and internal evaluations differ; deep differences can exist in any team, and fairness also requires understanding specific needs."
+          },
+          "pages": [
+            3,
+            7,
+            26
+          ]
+        },
+        {
+          "id": "material-44-stereotype-q",
+          "conceptIds": [
+            "material-44-stereotype"
+          ],
+          "prompt": {
+            "zh": "用“这一类人都不擅长技术”决定录用，问题在哪里？",
+            "en": "What is wrong with hiring based on “people in this group are all poor at technology”?"
+          },
+          "options": [
+            {
+              "zh": "先评估个人能力后再判断岗位匹配",
+              "en": "It evaluates individuals before judging job fit"
+            },
+            {
+              "zh": "用群体刻板印象代替个人能力证据",
+              "en": "It substitutes a group stereotype for individual evidence"
+            },
+            {
+              "zh": "只是描述工作所需技能而未评价任何群体",
+              "en": "It only describes job skills without evaluating groups"
+            },
+            {
+              "zh": "根据个人过往表现进行个别化反馈",
+              "en": "It provides individualized feedback based on past performance"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "题目明确从群体标签推断所有成员能力；其余做法以任务或个人证据为基础，区别正在这里。",
+            "en": "The statement infers every member’s ability from a group label; the alternatives rely on tasks or individual evidence."
+          },
+          "pages": [
+            4,
+            26
+          ]
+        },
+        {
+          "id": "material-44-policies-q",
+          "conceptIds": [
+            "material-44-policies"
+          ],
+          "prompt": {
+            "zh": "相同工作表现却按群体身份给不同奖励，最符合哪类问题？",
+            "en": "Different rewards for comparable performance based on group membership best illustrate what?"
+          },
+          "options": [
+            {
+              "zh": "一般心理能力，反映多个智力维度的相关",
+              "en": "General mental ability reflecting correlations across intellectual dimensions"
+            },
+            {
+              "zh": "岗位匹配，依据个别能力和职责要求分配",
+              "en": "Job fit based on individual abilities and task requirements"
+            },
+            {
+              "zh": "歧视性政策或惯例",
+              "en": "Discriminatory policies or practices"
+            },
+            {
+              "zh": "组织公民行为，正式职责外主动帮助同事",
+              "en": "OCB through voluntary help beyond duties"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "问题在于以群体身份而非绩效给予奖励；能力、匹配与自愿帮助不能为这种不平等提供解释。",
+            "en": "The issue is rewarding group identity rather than performance; ability, fit, and voluntary help do not explain away the inequality."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-44-harassment-q",
+          "conceptIds": [
+            "material-44-harassment"
+          ],
+          "prompt": {
+            "zh": "持续不受欢迎的性言语造成敌意工作环境，最贴近哪项？",
+            "en": "Repeated unwanted sexual comments create a hostile workplace. Which category fits?"
+          },
+          "options": [
+            {
+              "zh": "排斥：未邀请员工参加非正式导师活动",
+              "en": "Exclusion: omitting an employee from informal mentoring"
+            },
+            {
+              "zh": "威吓：不含性内容的明确威胁或霸凌",
+              "en": "Intimidation: explicit nonsexual threats or bullying"
+            },
+            {
+              "zh": "歧视性政策：对同等绩效设置不同奖金",
+              "en": "Discriminatory policy: unequal bonuses for equal performance"
+            },
+            {
+              "zh": "性骚扰",
+              "en": "Sexual harassment"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "不受欢迎的性内容及敌意环境使题目最符合性骚扰；其他选项也是可能的问题，但表现形式不同。",
+            "en": "Unwanted sexual content and a hostile environment make sexual harassment the best fit; other options describe different problematic conduct."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-44-intimidation-q",
+          "conceptIds": [
+            "material-44-intimidation"
+          ],
+          "prompt": {
+            "zh": "公开威胁某群体成员与反复使用羞辱性笑话，分别属于什么？",
+            "en": "Overt threats against a group and repeated degrading jokes correspond to what?"
+          },
+          "options": [
+            {
+              "zh": "威吓；嘲弄与侮辱",
+              "en": "Intimidation; mockery and insults"
+            },
+            {
+              "zh": "排斥；性骚扰",
+              "en": "Exclusion; sexual harassment"
+            },
+            {
+              "zh": "不文明行为；歧视性奖励政策",
+              "en": "Incivility; discriminatory reward policy"
+            },
+            {
+              "zh": "嘲弄与侮辱；威吓",
+              "en": "Mockery and insults; intimidation"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "威胁首先属于威吓，羞辱性笑话属于嘲弄侮辱；交换顺序或换成机会排除都不符合题干。",
+            "en": "Threats indicate intimidation and degrading jokes indicate mockery; reversing them or substituting denied opportunities misreads the case."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-44-exclusion-q",
+          "conceptIds": [
+            "material-44-exclusion"
+          ],
+          "prompt": {
+            "zh": "从不让某成员参加导师活动，且开会总打断她，分别体现什么？",
+            "en": "A member is excluded from mentoring and repeatedly interrupted in meetings. What do these show?"
+          },
+          "options": [
+            {
+              "zh": "不文明行为；排斥",
+              "en": "Incivility; exclusion"
+            },
+            {
+              "zh": "排斥与不文明行为",
+              "en": "Exclusion and incivility"
+            },
+            {
+              "zh": "歧视性薪酬政策；性骚扰",
+              "en": "Discriminatory pay policy; sexual harassment"
+            },
+            {
+              "zh": "威吓；岗位匹配",
+              "en": "Intimidation; job fit"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "失去导师参与机会是排斥，会议中反复打断是不文明行为；顺序不能颠倒。",
+            "en": "Denied mentoring access is exclusion; repeated interruption is incivility. The order matters."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-44-age-q",
+          "conceptIds": [
+            "material-44-age"
+          ],
+          "prompt": {
+            "zh": "只因申请人年长就预测其生产率低，是否符合课件？",
+            "en": "Does predicting low productivity solely from an applicant’s age follow the deck?"
+          },
+          "options": [
+            {
+              "zh": "符合，因为群体平均足以决定每个个体",
+              "en": "Yes; group averages fully determine individuals"
+            },
+            {
+              "zh": "符合，只要岗位有学习要求即可按年龄排除",
+              "en": "Yes; any learning requirement justifies age-based exclusion"
+            },
+            {
+              "zh": "不符合，应评估个体能力和岗位要求",
+              "en": "No; assess individual ability and job requirements"
+            },
+            {
+              "zh": "不符合，所以所有人都不需要能力评估",
+              "en": "No, therefore nobody needs ability assessment"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "不能用年龄代替能力证据，但仍需要岗位相关的个别评估；避免刻板印象不等于取消评价。",
+            "en": "Age cannot substitute for ability evidence, but role-relevant individual assessment remains necessary; avoiding stereotypes does not remove evaluation."
+          },
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "material-44-sexrace-q",
+          "conceptIds": [
+            "material-44-sexrace"
+          ],
+          "prompt": {
+            "zh": "主管总给同族群员工更高评价，却没有绩效依据，应先检查什么？",
+            "en": "A supervisor gives same-group employees higher ratings without performance evidence. What should be examined?"
+          },
+          "options": [
+            {
+              "zh": "员工是否具有完全相同的任职年限，而不看评级证据",
+              "en": "Whether everyone has identical tenure, while ignoring rating evidence"
+            },
+            {
+              "zh": "是否把相同族群视为天然相同绩效",
+              "en": "Whether common ethnicity implies inherently equal performance"
+            },
+            {
+              "zh": "是否应取消所有绩效反馈以免争议",
+              "en": "Whether all performance feedback should be removed to avoid disputes"
+            },
+            {
+              "zh": "群体偏好造成的评价偏差",
+              "en": "Evaluation bias from in-group preference"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "评级缺乏绩效依据却随族群变化，直接提示群体偏好偏差；取消评价不能解决公平评价的问题。",
+            "en": "Ratings varying by ethnicity without performance evidence directly suggest in-group bias; abolishing feedback does not solve fair assessment."
+          },
+          "pages": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "material-44-disability-q",
+          "conceptIds": [
+            "material-44-disability"
+          ],
+          "prompt": {
+            "zh": "员工外表看不出障碍，能否据此否定其支持需求？",
+            "en": "Can an employee’s support needs be dismissed because no disability is visible?"
+          },
+          "options": [
+            {
+              "zh": "不能，隐性障碍需要具体评估",
+              "en": "No; hidden disabilities require individual assessment"
+            },
+            {
+              "zh": "可以，只有外显身体障碍才算支持需要",
+              "en": "Yes; only visible physical impairments justify support"
+            },
+            {
+              "zh": "不能，所以应不评估就把每人调整为完全相同工作",
+              "en": "No, so everyone should receive identical adjustments without assessment"
+            },
+            {
+              "zh": "可以，只要过去没有提出过需求",
+              "en": "Yes, provided no need was reported previously"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "隐性障碍可能未被观察或先前报告；有效调整仍需了解个体需求和岗位任务。",
+            "en": "Hidden disabilities may not have been observed or reported; useful adjustments still require individual and task assessment."
+          },
+          "pages": [
+            11,
+            12,
+            26
+          ]
+        },
+        {
+          "id": "material-44-tenure-q",
+          "conceptIds": [
+            "material-44-tenure"
+          ],
+          "prompt": {
+            "zh": "两人年龄相同但一人在岗位十年、另一人刚入职，差异主要是？",
+            "en": "Two people have the same age, but one has held a role for ten years and one just joined. What differs?"
+          },
+          "options": [
+            {
+              "zh": "一般心理能力",
+              "en": "General mental ability"
+            },
+            {
+              "zh": "任职年限",
+              "en": "Tenure"
+            },
+            {
+              "zh": "工作满意度",
+              "en": "Job satisfaction"
+            },
+            {
+              "zh": "表层年龄差异",
+              "en": "Surface-level age differences"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "题目比较同岗位经历的持续时间，即任职年限；并未测量智力、满意度或年龄差异。",
+            "en": "The case compares duration of role experience—tenure—not intelligence, satisfaction, or age difference."
+          },
+          "pages": [
+            13
+          ]
+        },
+        {
+          "id": "material-44-identity-q",
+          "conceptIds": [
+            "material-44-identity"
+          ],
+          "prompt": {
+            "zh": "哪种管理原则符合本节概念？",
+            "en": "Which management principle fits this section?"
+          },
+          "options": [
+            {
+              "zh": "为所有人安排完全相同方式而不考虑差异需求",
+              "en": "Use identical arrangements without considering different needs"
+            },
+            {
+              "zh": "根据群体身份预先决定谁更适合领导",
+              "en": "Preselect leaders based on group identity"
+            },
+            {
+              "zh": "尊重个体身份并根据能力作决策",
+              "en": "Respect identity and make capability-based decisions"
+            },
+            {
+              "zh": "只关注可见差异而忽略个人价值和文化",
+              "en": "Attend only to visible differences and ignore values and culture"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "个别化的能力判断与尊重身份相容；同一安排未必满足不同需要，标签也不能证明领导能力。",
+            "en": "Individual capability judgments are compatible with identity respect; identical arrangements may miss different needs, and labels do not establish leadership ability."
+          },
+          "pages": [
+            13,
+            14,
+            26
+          ]
+        },
+        {
+          "id": "material-44-ability-q",
+          "conceptIds": [
+            "material-44-ability"
+          ],
+          "prompt": {
+            "zh": "设计岗位筛选时，应如何选择能力指标？",
+            "en": "How should ability measures be selected for a job?"
+          },
+          "options": [
+            {
+              "zh": "把最高一般智力得分作为所有岗位的唯一标准",
+              "en": "Use the highest general-intelligence score as the sole criterion for every role"
+            },
+            {
+              "zh": "只按群体平均体能推断每个人",
+              "en": "Infer each person’s capacity only from group physical averages"
+            },
+            {
+              "zh": "把求职动机直接当作当前能力的充分证明",
+              "en": "Treat motivation as sufficient proof of current capability"
+            },
+            {
+              "zh": "根据任务需要选择相关智力与体能维度",
+              "en": "Select intellectual and physical dimensions relevant to tasks"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "能力需与任务匹配；一般分数、群体平均或动机不能单独证明所有岗位所需能力。",
+            "en": "Ability must fit tasks; a general score, group average, or motivation alone cannot establish every required capability."
+          },
+          "pages": [
+            15,
+            16,
+            18
+          ]
+        },
+        {
+          "id": "material-44-gma-q",
+          "conceptIds": [
+            "material-44-gma"
+          ],
+          "prompt": {
+            "zh": "不同智力测验之间的正相关支持什么观点？",
+            "en": "What does positive correlation across intellectual tests support?"
+          },
+          "options": [
+            {
+              "zh": "存在一般心理能力因素，但具体维度仍可区分",
+              "en": "A general mental factor exists while specific dimensions remain distinct"
+            },
+            {
+              "zh": "各维度可以直接互换，所以不再需要具体测试",
+              "en": "Dimensions are interchangeable, so specific assessment is unnecessary"
+            },
+            {
+              "zh": "只要一个维度高，其他每项都必然同样高",
+              "en": "A high score on one dimension guarantees equal strength on every other one"
+            },
+            {
+              "zh": "智力维度之间一定完全独立",
+              "en": "Intellectual dimensions must be completely independent"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "正相关支持共同因素，但不是完美相关；具体能力差异仍有工作匹配意义。",
+            "en": "Positive correlation supports a shared factor, not perfect correlation; specific differences still matter for job fit."
+          },
+          "pages": [
+            16
+          ]
+        },
+        {
+          "id": "material-44-numberverbal-q",
+          "conceptIds": [
+            "material-44-numberverbal"
+          ],
+          "prompt": {
+            "zh": "快速计算税额和准确理解招聘政策，分别依赖什么？",
+            "en": "Fast tax calculation and accurate interpretation of hiring policy primarily rely on what?"
+          },
+          "options": [
+            {
+              "zh": "语言理解；数字能力",
+              "en": "Verbal comprehension; number aptitude"
+            },
+            {
+              "zh": "数字能力；语言理解",
+              "en": "Number aptitude; verbal comprehension"
+            },
+            {
+              "zh": "知觉速度；记忆",
+              "en": "Perceptual speed; memory"
+            },
+            {
+              "zh": "演绎推理；空间想象",
+              "en": "Deductive reasoning; spatial visualization"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "快速准确算术对应数字能力，理解政策语言对应语言理解；速度本身不让算术变成视觉辨别。",
+            "en": "Fast accurate arithmetic is numerical aptitude, while understanding policy language is verbal comprehension; speed alone does not make arithmetic visual discrimination."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-44-perception-q",
+          "conceptIds": [
+            "material-44-perception"
+          ],
+          "prompt": {
+            "zh": "迅速找出两张图中微小的视觉差异，最需要什么？",
+            "en": "Quickly finding small visual differences between two images primarily requires what?"
+          },
+          "options": [
+            {
+              "zh": "空间想象，在脑中旋转物体",
+              "en": "Spatial visualization through mental rotation"
+            },
+            {
+              "zh": "记忆，提取过去的经历",
+              "en": "Memory through recalling past experience"
+            },
+            {
+              "zh": "知觉速度",
+              "en": "Perceptual speed"
+            },
+            {
+              "zh": "归纳推理，从序列寻找逻辑规律",
+              "en": "Inductive reasoning through finding a logical sequence"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "题目要求快速识别眼前视觉异同；旋转、回忆与推断规律各属不同认知任务。",
+            "en": "The task requires rapid discrimination of present visual differences; rotation, recall, and pattern inference are distinct."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-44-reasoning-q",
+          "conceptIds": [
+            "material-44-reasoning"
+          ],
+          "prompt": {
+            "zh": "从销售序列归纳规律与检查论证逻辑，分别对应什么？",
+            "en": "Finding a pattern in sales sequences and checking an argument’s logic correspond to what?"
+          },
+          "options": [
+            {
+              "zh": "演绎推理；归纳推理",
+              "en": "Deductive reasoning; inductive reasoning"
+            },
+            {
+              "zh": "知觉速度；语言理解",
+              "en": "Perceptual speed; verbal comprehension"
+            },
+            {
+              "zh": "记忆；数字能力",
+              "en": "Memory; number aptitude"
+            },
+            {
+              "zh": "归纳推理；演绎推理",
+              "en": "Inductive reasoning; deductive reasoning"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "从观测数据寻找规律是归纳，评估论证含义是演绎；两者都不只是读取或记住信息。",
+            "en": "Finding regularities in observations is induction; assessing implications is deduction. Neither is just reading or remembering."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-44-spatialmemory-q",
+          "conceptIds": [
+            "material-44-spatialmemory"
+          ],
+          "prompt": {
+            "zh": "想象办公桌旋转后的布局与回忆客户姓名，分别需要什么？",
+            "en": "Imagining a rotated desk layout and recalling customer names require what?"
+          },
+          "options": [
+            {
+              "zh": "空间想象；记忆",
+              "en": "Spatial visualization; memory"
+            },
+            {
+              "zh": "记忆；空间想象",
+              "en": "Memory; spatial visualization"
+            },
+            {
+              "zh": "知觉速度；语言理解",
+              "en": "Perceptual speed; verbal comprehension"
+            },
+            {
+              "zh": "演绎推理；归纳推理",
+              "en": "Deductive reasoning; inductive reasoning"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "旋转布局要求空间变换，姓名回忆要求存储与提取；不是同时呈现图像的速度比较。",
+            "en": "Rotating a layout requires spatial transformation, while recalling names requires storage and retrieval, not visual comparison speed."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-44-strength1-q",
+          "conceptIds": [
+            "material-44-strength1"
+          ],
+          "prompt": {
+            "zh": "反复搬运和腹部肌群发力的区分，最符合什么？",
+            "en": "Repeated exertion versus exertion using abdominal muscles distinguishes what?"
+          },
+          "options": [
+            {
+              "zh": "躯干力量与动态力量",
+              "en": "Trunk strength and dynamic strength"
+            },
+            {
+              "zh": "动态力量与躯干力量",
+              "en": "Dynamic strength and trunk strength"
+            },
+            {
+              "zh": "静态力量与爆发力",
+              "en": "Static strength and explosive strength"
+            },
+            {
+              "zh": "动态柔韧性与幅度柔韧性",
+              "en": "Dynamic flexibility and extent flexibility"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "反复施力属于动态力量，腹部肌群对应躯干力量；柔韧性描述弯曲而非力量类型。",
+            "en": "Repeated force is dynamic strength and abdominal exertion is trunk strength; flexibility concerns bending rather than strength types."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-44-strength2-q",
+          "conceptIds": [
+            "material-44-strength2"
+          ],
+          "prompt": {
+            "zh": "推动外物所需力量与一次跳跃的强烈发力，分别对应什么？",
+            "en": "Force against an external object and a powerful burst in a jump correspond to what?"
+          },
+          "options": [
+            {
+              "zh": "爆发力；静态力量",
+              "en": "Explosive strength; static strength"
+            },
+            {
+              "zh": "动态柔韧性；幅度柔韧性",
+              "en": "Dynamic flexibility; extent flexibility"
+            },
+            {
+              "zh": "静态力量；爆发力",
+              "en": "Static strength; explosive strength"
+            },
+            {
+              "zh": "平衡；身体协调",
+              "en": "Balance; body coordination"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "对外物施力与短促最大能量分别对应静态力量、爆发力；平衡和协调不描述发力类型。",
+            "en": "Force against objects and a brief maximum-energy act correspond to static and explosive strength; balance and coordination are different dimensions."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-44-flexibility-q",
+          "conceptIds": [
+            "material-44-flexibility"
+          ],
+          "prompt": {
+            "zh": "“弯得远”和“快速反复弯曲”分别反映什么？",
+            "en": "“Bending far” and “bending repeatedly and quickly” reflect what?"
+          },
+          "options": [
+            {
+              "zh": "动态柔韧性；幅度柔韧性",
+              "en": "Dynamic flexibility; extent flexibility"
+            },
+            {
+              "zh": "躯干力量；动态力量",
+              "en": "Trunk strength; dynamic strength"
+            },
+            {
+              "zh": "静态力量；爆发力",
+              "en": "Static strength; explosive strength"
+            },
+            {
+              "zh": "幅度柔韧性；动态柔韧性",
+              "en": "Extent flexibility; dynamic flexibility"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "幅度关注活动范围，动态柔韧性关注快速重复弯曲；力量类别虽也涉及动作，但焦点不同。",
+            "en": "Extent concerns range; dynamic flexibility concerns rapid repeated flexing. Strength categories involve motion but emphasize force instead."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-44-physicalother-q",
+          "conceptIds": [
+            "material-44-physicalother"
+          ],
+          "prompt": {
+            "zh": "同步手脚动作、保持稳定、长时间持续用力，正确匹配是？",
+            "en": "Which matching fits synchronized limbs, stability, and prolonged effort?"
+          },
+          "options": [
+            {
+              "zh": "协调、平衡、耐力",
+              "en": "Coordination, balance, stamina"
+            },
+            {
+              "zh": "平衡、协调、爆发力",
+              "en": "Balance, coordination, explosive strength"
+            },
+            {
+              "zh": "协调、耐力、平衡",
+              "en": "Coordination, stamina, balance"
+            },
+            {
+              "zh": "动态力量、静态力量、幅度柔韧性",
+              "en": "Dynamic strength, static strength, extent flexibility"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "同步动作、稳定和长时努力分别对应协调、平衡、耐力；爆发力强调短促能量而非持久。",
+            "en": "Synchronization, equilibrium, and prolonged effort correspond to coordination, balance, and stamina; explosive strength emphasizes brief energy."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-44-management-q",
+          "conceptIds": [
+            "material-44-management"
+          ],
+          "prompt": {
+            "zh": "只扩大招聘来源但不给后续发展机会，缺少什么？",
+            "en": "Recruitment reaches diverse applicants but offers no later development. What is missing?"
+          },
+          "options": [
+            {
+              "zh": "再扩大申请人数，但保持发展机会原样",
+              "en": "Increase applicants further while leaving development unchanged"
+            },
+            {
+              "zh": "覆盖发展与留任的人才全周期管理",
+              "en": "Lifecycle management covering development and retention"
+            },
+            {
+              "zh": "只在录用时宣传公平，之后不再检查",
+              "en": "Promote fairness only at hiring and never review later"
+            },
+            {
+              "zh": "把发展机会只交给同背景的资深员工",
+              "en": "Reserve development for senior employees from the same background"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "人才生命周期包含吸引、选拔、发展与留任；招聘成功不自动保证后续机会公平。",
+            "en": "The lifecycle includes attraction, selection, development, and retention; recruitment success does not guarantee fair later opportunities."
+          },
+          "pages": [
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "id": "material-44-team-q",
+          "conceptIds": [
+            "material-44-team"
+          ],
+          "prompt": {
+            "zh": "多样化团队出现协作困难时，哪项做法最贴合课件？",
+            "en": "What best addresses collaboration difficulties in a diverse team?"
+          },
+          "options": [
+            {
+              "zh": "按人口特征固定分工，不了解个人意见",
+              "en": "Fix roles by demographics without hearing individuals"
+            },
+            {
+              "zh": "只增加成员人数，不讨论任务理解",
+              "en": "Add more members without discussing task understanding"
+            },
+            {
+              "zh": "建立共同任务理解并改善沟通",
+              "en": "Build shared task understanding and communication"
+            },
+            {
+              "zh": "为避免分歧取消跨成员沟通",
+              "en": "Remove cross-member communication to avoid disagreement"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "共同任务理解和沟通能连接差异；人口分工、数量或取消交流不能完成这一机制。",
+            "en": "Shared task understanding and communication connect differences; demographic role assignment, numbers, or silence do not."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-44-expatriate-q",
+          "conceptIds": [
+            "material-44-expatriate"
+          ],
+          "prompt": {
+            "zh": "外派成功最符合哪种安排？",
+            "en": "Which arrangement best supports expatriate success?"
+          },
+          "options": [
+            {
+              "zh": "只按技术成绩选择，忽略适应与支持",
+              "en": "Select only by technical marks, ignoring adjustment and support"
+            },
+            {
+              "zh": "只提供出发前资料，之后不再支持",
+              "en": "Provide predeparture information but no later support"
+            },
+            {
+              "zh": "把适应责任完全交给员工家庭",
+              "en": "Assign adjustment entirely to the employee’s family"
+            },
+            {
+              "zh": "选择能适应的员工并提供必要支持",
+              "en": "Select adaptable employees and provide needed support"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "课件同时要求选择能适应的员工并提供所需支持；一次资料或技术成绩不是完整方案。",
+            "en": "The deck calls for selecting adaptable staff and providing support; a handout or technical marks alone is incomplete."
+          },
+          "pages": [
+            24
+          ]
+        },
+        {
+          "id": "material-44-programs-q",
+          "conceptIds": [
+            "material-44-programs"
+          ],
+          "prompt": {
+            "zh": "哪套方案最完整地对应课件的多样性项目？",
+            "en": "Which program best matches the deck?"
+          },
+          "options": [
+            {
+              "zh": "公平教育＋客户价值理解＋全员能力发展",
+              "en": "Fairness education + customer-value understanding + development for everyone"
+            },
+            {
+              "zh": "公平培训＋人数统计，但不给能力发展机会",
+              "en": "Fairness training and headcounts without development opportunities"
+            },
+            {
+              "zh": "客户营销培训＋招聘目标，但不检查公平待遇",
+              "en": "Customer-marketing training and hiring targets without fair-treatment review"
+            },
+            {
+              "zh": "只依赖员工自行理解文化差异",
+              "en": "Rely solely on employees to understand differences themselves"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "有效项目结合公平、服务多样化客户的价值、个人发展；缺少任何一块都会使方案不完整。",
+            "en": "Effective programs combine fairness, value for diverse customers, and development; omitting a component makes the approach incomplete."
+          },
+          "pages": [
+            25,
+            26
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2
+            ],
+            "reason": {
+              "zh": "封面、学习目标、参考资料、行政信息或重复总结；不设独立考点。",
+              "en": "Cover, learning objectives, references, administrative information, or repeated recap; no separate learning objective."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "本章包含教材当时的美国法律和人口背景，学习整理聚焦管理概念，不把旧课件的法律表述当作当前法律意见。",
+        "en": "This chapter includes US legal and demographic context from the textbook period. The guide focuses on management concepts and does not treat old legal statements as current legal advice."
+      },
+      "sourceSha256": "5425b2ce440d8571e91c292ec2c42f926c65c900bcb4515ae7e13a6f50bdb185"
+    },
+    {
+      "resourceId": "material-45",
+      "overview": {
+        "zh": "从态度的三个成分解释态度—行为关系，区分主要工作态度，衡量满意度，并分析满意或不满意如何影响员工与组织。",
+        "en": "Explain attitudes through their three components, distinguish major job attitudes, measure satisfaction, and analyze employee and organizational consequences."
+      },
+      "groups": [
+        {
+          "id": "material-45-g1",
+          "title": {
+            "zh": "态度如何联系行为",
+            "en": "How attitudes relate to behavior"
+          },
+          "concepts": [
+            {
+              "id": "material-45-components",
+              "title": {
+                "zh": "态度的认知、情感与行为成分",
+                "en": "Cognitive, affective, and behavioral components"
+              },
+              "explanation": {
+                "zh": "态度是对人、事、物的评价。认知成分是判断或信念，情感成分是感受，行为成分是行动倾向或相关行动；三者密切关联，但分析时可区分。",
+                "en": "An attitude is an evaluation of a person, object, or event. Cognition concerns beliefs or judgments, affect concerns feelings, and behavior concerns action tendencies or actions. They are related but analytically distinguishable."
+              },
+              "pages": [
+                3,
+                4
+              ]
+            },
+            {
+              "id": "material-45-dissonance",
+              "title": {
+                "zh": "认知失调与一致性",
+                "en": "Cognitive dissonance and consistency"
+              },
+              "explanation": {
+                "zh": "认知失调是不同态度之间或态度与行为之间被感知的不一致。人通常希望恢复一致，因此行为也可能引发后续态度调整。",
+                "en": "Cognitive dissonance is perceived incompatibility among attitudes or between attitudes and behavior. People tend to seek consistency, so behavior may also prompt later changes in attitudes."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-45-moderators",
+              "title": {
+                "zh": "态度—行为关系的调节因素",
+                "en": "Moderators of the attitude–behavior relationship"
+              },
+              "explanation": {
+                "zh": "态度的重要性、与行为的对应程度、可及性、社会压力及直接经验会影响其预测行为的强度。直接经历相关情境时，两者关系通常更强。",
+                "en": "Importance, correspondence with behavior, accessibility, social pressures, and direct experience affect how strongly attitudes predict behavior. Direct relevant experience generally strengthens the relationship."
+              },
+              "pages": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-45-g2",
+          "title": {
+            "zh": "主要工作态度的区别",
+            "en": "Distinguishing major job attitudes"
+          },
+          "concepts": [
+            {
+              "id": "material-45-satisfaction",
+              "title": {
+                "zh": "工作满意度",
+                "en": "Job satisfaction"
+              },
+              "explanation": {
+                "zh": "工作满意度是评价工作特征后形成的积极感受。它关注“我对这份工作感觉如何”，与是否把工作当作自我价值核心不同。",
+                "en": "Job satisfaction is a positive feeling arising from evaluating job characteristics. It asks how one feels about a job, rather than whether the job defines one’s self-worth."
+              },
+              "pages": [
+                7,
+                13
+              ]
+            },
+            {
+              "id": "material-45-involvement",
+              "title": {
+                "zh": "工作参与度",
+                "en": "Job involvement"
+              },
+              "explanation": {
+                "zh": "工作参与度指认同自己的工作、积极参与，并认为工作表现对自我价值很重要。一个人可以深度认同工作，同时对某些条件不满意。",
+                "en": "Job involvement means identifying with a job, participating actively, and viewing performance as important to self-worth. Strong identification can coexist with dissatisfaction about some conditions."
+              },
+              "pages": [
+                7,
+                11
+              ]
+            },
+            {
+              "id": "material-45-empowerment",
+              "title": {
+                "zh": "心理授权",
+                "en": "Psychological empowerment"
+              },
+              "explanation": {
+                "zh": "心理授权包括对工作影响力、胜任能力、意义与自主性的信念。它是员工对自身工作控制与价值的感知，不只是职位名称。",
+                "en": "Psychological empowerment includes beliefs about influence, competence, meaningfulness, and autonomy at work. It is a perceived relationship with one’s work, not merely a job title."
+              },
+              "pages": [
+                7
+              ]
+            },
+            {
+              "id": "material-45-commitment",
+              "title": {
+                "zh": "组织承诺",
+                "en": "Organizational commitment"
+              },
+              "explanation": {
+                "zh": "组织承诺是认同组织及其目标，并希望维持成员身份。忠诚可能使员工即使暂时不满意，也较少采取退出行为；承诺的对象是组织。",
+                "en": "Organizational commitment is identification with an organization and its goals plus a desire to remain a member. Loyalty may reduce withdrawal even during dissatisfaction; the object of commitment is the organization."
+              },
+              "pages": [
+                8
+              ]
+            },
+            {
+              "id": "material-45-pos",
+              "title": {
+                "zh": "组织支持感",
+                "en": "Perceived organizational support"
+              },
+              "explanation": {
+                "zh": "组织支持感是员工相信组织重视其贡献并关心其福祉的程度。公平奖励、参与决策和支持性主管有助于形成这种感受；课件还指出权力距离是相关情境。",
+                "en": "POS is the belief that the organization values one’s contributions and cares about well-being. Fair rewards, decision participation, and supportive supervisors foster it; the deck also highlights power distance as context."
+              },
+              "pages": [
+                9
+              ]
+            },
+            {
+              "id": "material-45-engagement",
+              "title": {
+                "zh": "员工敬业度与态度重叠",
+                "en": "Employee engagement and overlapping attitudes"
+              },
+              "explanation": {
+                "zh": "敬业度结合工作投入、满意和热情。满意度、参与度、承诺、支持感与敬业度相关但关注点不同，测量时应明确所问对象。",
+                "en": "Engagement combines involvement, satisfaction, and enthusiasm for work. Satisfaction, involvement, commitment, support, and engagement overlap but emphasize different objects, so measurement should specify what is being assessed."
+              },
+              "pages": [
+                10,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-45-g3",
+          "title": {
+            "zh": "测量与满意度来源",
+            "en": "Measurement and sources of satisfaction"
+          },
+          "concepts": [
+            {
+              "id": "material-45-measurement",
+              "title": {
+                "zh": "整体评分与分项汇总",
+                "en": "Global rating and summation of facets"
+              },
+              "explanation": {
+                "zh": "整体评分直接询问总体满意程度；分项汇总分别评价工作内容、薪酬、晋升、主管、同事等方面。分项能揭示总体评分掩盖的具体问题。",
+                "en": "A global rating asks directly about overall satisfaction; facet summation evaluates aspects such as work, pay, promotion, supervision, and coworkers. Facets reveal specific issues hidden by an overall score."
+              },
+              "pages": [
+                13,
+                15
+              ]
+            },
+            {
+              "id": "material-45-variation",
+              "title": {
+                "zh": "满意度的情境差异",
+                "en": "Contextual variation in satisfaction"
+              },
+              "explanation": {
+                "zh": "满意度可能随工作分项、经济背景和文化环境变化。课件图显示各分项与不同国家的平均值不同；这些均值不能直接预测每个个人。",
+                "en": "Satisfaction can vary by job facet, economic context, and culture. The charts show different facet and country averages; such averages do not determine any particular individual’s experience."
+              },
+              "pages": [
+                14,
+                15,
+                16
+              ]
+            },
+            {
+              "id": "material-45-conditions",
+              "title": {
+                "zh": "工作条件与核心自我评价",
+                "en": "Job conditions and core self-evaluations"
+              },
+              "explanation": {
+                "zh": "工作本身、社会互动和主管是满意度与福祉的重要关联因素。积极的核心自我评价——相信自身价值与能力——也与较高满意度相关。",
+                "en": "The work itself, social interactions, and supervision relate to satisfaction and well-being. Positive core self-evaluations—belief in personal worth and competence—are also associated with greater satisfaction."
+              },
+              "pages": [
+                17,
+                24
+              ]
+            },
+            {
+              "id": "material-45-pay",
+              "title": {
+                "zh": "薪酬与满意度的边界",
+                "en": "Limits of pay as an explanation of satisfaction"
+              },
+              "explanation": {
+                "zh": "课件散点图不支持“工资越高就一定越满意”的简单推断。高薪可能重要，但不能独自创造令人满意的工作环境；还要看工作本身及人际因素。",
+                "en": "The scatterplot does not support a simple “higher pay always means higher satisfaction” inference. Pay can matter, but high pay alone does not create a satisfying environment; work and relationships also matter."
+              },
+              "pages": [
+                18,
+                24
+              ]
+            },
+            {
+              "id": "material-45-csr",
+              "title": {
+                "zh": "企业社会责任与满意度",
+                "en": "Corporate social responsibility and satisfaction"
+              },
+              "explanation": {
+                "zh": "本章将 CSR 描述为超出法律最低要求、旨在造福社会或环境的自愿行动，如环保和慈善。员工对这些活动的重视程度不同，因此满意度效果可能不同。",
+                "en": "The chapter describes CSR as voluntary actions beyond legal minimums intended to benefit society or the environment, such as sustainability or charity. Employees value these differently, so satisfaction effects may vary."
+              },
+              "pages": [
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-45-g4",
+          "title": {
+            "zh": "满意与不满的结果",
+            "en": "Consequences of satisfaction and dissatisfaction"
+          },
+          "concepts": [
+            {
+              "id": "material-45-outcomes",
+              "title": {
+                "zh": "满意度的四类关联结果",
+                "en": "Four outcomes associated with satisfaction"
+              },
+              "explanation": {
+                "zh": "较高满意度与工作绩效、组织公民行为、客户满意与忠诚、生活满意度有关。复习时把员工自身、同事/组织及客户结果分开，并避免把相关关系说成必然因果。",
+                "en": "Higher satisfaction relates to performance, OCB, customer satisfaction and loyalty, and life satisfaction. Distinguish employee, organizational, and customer outcomes, and avoid turning association into guaranteed causation."
+              },
+              "pages": [
+                20
+              ]
+            },
+            {
+              "id": "material-45-evln",
+              "title": {
+                "zh": "退出、建言、忠诚、忽视矩阵",
+                "en": "Exit–voice–loyalty–neglect matrix"
+              },
+              "explanation": {
+                "zh": "以主动/被动和建设性/破坏性为两条轴：建言为主动且建设性；退出为主动且破坏性；忠诚为被动且建设性；忽视为被动且破坏性。判断需同时看行动程度与方向。",
+                "en": "The axes are active/passive and constructive/destructive: voice is active–constructive, exit active–destructive, loyalty passive–constructive, and neglect passive–destructive. Classification requires both dimensions."
+              },
+              "pages": [
+                21
+              ]
+            },
+            {
+              "id": "material-45-cwb",
+              "title": {
+                "zh": "反生产工作行为、缺勤与离职",
+                "en": "Counterproductive work behavior, absence, and turnover"
+              },
+              "explanation": {
+                "zh": "CWB 是损害组织的行为，包括偷窃、攻击同事和迟到缺勤。课件把不满与缺勤、退出联系起来，并指出持续下降的满意度有助于预测离职意图。",
+                "en": "CWB harms the organization, including theft, aggression, lateness, or absence. The deck links dissatisfaction with absence and withdrawal and highlights declining satisfaction as a predictor of intent to leave."
+              },
+              "pages": [
+                22,
+                23
+              ]
+            },
+            {
+              "id": "material-45-action",
+              "title": {
+                "zh": "态度测量与工作匹配",
+                "en": "Attitude measurement and job fit"
+              },
+              "explanation": {
+                "zh": "管理者应定期客观测量态度，观察绩效、缺勤和离职趋势，并让工作内在内容更符合员工兴趣、具有挑战与意义。只提高薪水不足以解决所有不满。",
+                "en": "Managers should measure attitudes objectively and regularly, monitor performance, absence, and turnover trends, and align intrinsic work with employee interests, challenge, and meaning. Pay increases alone will not resolve every dissatisfaction."
+              },
+              "pages": [
+                23,
+                24
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-45-components",
+          "to": "material-45-dissonance",
+          "relation": {
+            "zh": "成分或行为不一致可产生失调",
+            "en": "Inconsistency among components or behavior can create dissonance"
+          }
+        },
+        {
+          "from": "material-45-components",
+          "to": "material-45-moderators",
+          "relation": {
+            "zh": "态度预测行为受条件影响",
+            "en": "Attitude-based prediction depends on conditions"
+          }
+        },
+        {
+          "from": "material-45-satisfaction",
+          "to": "material-45-involvement",
+          "relation": {
+            "zh": "积极感受与自我认同需要区分",
+            "en": "Positive feelings differ from self-identification"
+          }
+        },
+        {
+          "from": "material-45-involvement",
+          "to": "material-45-empowerment",
+          "relation": {
+            "zh": "参与工作还涉及自主和影响感",
+            "en": "Involvement also relates to autonomy and influence"
+          }
+        },
+        {
+          "from": "material-45-commitment",
+          "to": "material-45-cwb",
+          "relation": {
+            "zh": "组织认同可能抑制退出",
+            "en": "Organizational identification can reduce withdrawal"
+          }
+        },
+        {
+          "from": "material-45-pos",
+          "to": "material-45-engagement",
+          "relation": {
+            "zh": "被重视的感受与积极投入相联系",
+            "en": "Feeling valued relates to positive engagement"
+          }
+        },
+        {
+          "from": "material-45-engagement",
+          "to": "material-45-measurement",
+          "relation": {
+            "zh": "相近态度需要明确测量对象",
+            "en": "Related attitudes require precise measurement"
+          }
+        },
+        {
+          "from": "material-45-satisfaction",
+          "to": "material-45-measurement",
+          "relation": {
+            "zh": "满意度可整体或分项测量",
+            "en": "Satisfaction can be measured globally or by facets"
+          }
+        },
+        {
+          "from": "material-45-measurement",
+          "to": "material-45-variation",
+          "relation": {
+            "zh": "分项与情境揭示均值之外的差异",
+            "en": "Facets and context reveal differences beyond averages"
+          }
+        },
+        {
+          "from": "material-45-conditions",
+          "to": "material-45-satisfaction",
+          "relation": {
+            "zh": "工作与个体条件关联感受",
+            "en": "Job and individual conditions relate to feelings"
+          }
+        },
+        {
+          "from": "material-45-pay",
+          "to": "material-45-conditions",
+          "relation": {
+            "zh": "薪酬不能替代其他工作条件",
+            "en": "Pay cannot replace other working conditions"
+          }
+        },
+        {
+          "from": "material-45-csr",
+          "to": "material-45-satisfaction",
+          "relation": {
+            "zh": "社会责任价值可能影响满意度",
+            "en": "CSR’s perceived value may affect satisfaction"
+          }
+        },
+        {
+          "from": "material-45-satisfaction",
+          "to": "material-45-outcomes",
+          "relation": {
+            "zh": "满意感联系多种结果",
+            "en": "Satisfaction relates to multiple outcomes"
+          }
+        },
+        {
+          "from": "material-45-satisfaction",
+          "to": "material-45-evln",
+          "relation": {
+            "zh": "不满意可引出不同反应",
+            "en": "Dissatisfaction can produce different responses"
+          }
+        },
+        {
+          "from": "material-45-evln",
+          "to": "material-45-cwb",
+          "relation": {
+            "zh": "破坏性反应可能损害组织",
+            "en": "Destructive responses can harm the organization"
+          }
+        },
+        {
+          "from": "material-45-cwb",
+          "to": "material-45-action",
+          "relation": {
+            "zh": "风险信号提示测量与干预",
+            "en": "Risk signals call for measurement and intervention"
+          }
+        },
+        {
+          "from": "material-45-action",
+          "to": "material-45-measurement",
+          "relation": {
+            "zh": "干预后再次测量形成反馈",
+            "en": "Measure again after intervention to form feedback"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-45-components-q",
+          "conceptIds": [
+            "material-45-components"
+          ],
+          "prompt": {
+            "zh": "“主管不公平；我很生气；我开始找新工作”依次体现什么？",
+            "en": "“My supervisor is unfair; I feel angry; I start job searching” illustrates which sequence?"
+          },
+          "options": [
+            {
+              "zh": "认知、情感、行为",
+              "en": "Cognition, affect, behavior"
+            },
+            {
+              "zh": "情感、行为、认知",
+              "en": "Affect, behavior, cognition"
+            },
+            {
+              "zh": "认知、行为、情感",
+              "en": "Cognition, behavior, affect"
+            },
+            {
+              "zh": "行为、情感、认知",
+              "en": "Behavior, affect, cognition"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "公平判断属于认知，生气属于情感，寻找新工作属于行为；三者有关但分类不能交换。",
+            "en": "A fairness judgment is cognition, anger is affect, and searching is behavior; they relate but cannot be interchanged."
+          },
+          "pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "material-45-dissonance-q",
+          "conceptIds": [
+            "material-45-dissonance"
+          ],
+          "prompt": {
+            "zh": "员工认为诚实重要，却作出不诚实行为后感到冲突，最符合什么？",
+            "en": "An employee values honesty but feels conflict after acting dishonestly. What fits best?"
+          },
+          "options": [
+            {
+              "zh": "组织承诺：希望继续属于组织",
+              "en": "Commitment: wishing to remain in the organization"
+            },
+            {
+              "zh": "认知失调",
+              "en": "Cognitive dissonance"
+            },
+            {
+              "zh": "组织支持感：相信组织关心自己",
+              "en": "POS: believing the organization cares"
+            },
+            {
+              "zh": "工作满意度：对工作特征的积极评价",
+              "en": "Satisfaction: positive evaluation of job characteristics"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "冲突来自态度与行为不一致，正是认知失调；其余态度分别关注组织归属、支持和工作感受。",
+            "en": "Inconsistency between attitude and behavior is dissonance; the other attitudes concern belonging, support, and job feelings."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-45-moderators-q",
+          "conceptIds": [
+            "material-45-moderators"
+          ],
+          "prompt": {
+            "zh": "哪种情形最支持用态度预测行为？",
+            "en": "Which situation best supports predicting behavior from an attitude?"
+          },
+          "options": [
+            {
+              "zh": "态度与目标行为无关，但表达得很强烈",
+              "en": "The attitude is unrelated to the behavior but strongly expressed"
+            },
+            {
+              "zh": "态度虽重要，但强大社会压力被完全忽略",
+              "en": "The attitude is important but strong social pressure is ignored"
+            },
+            {
+              "zh": "态度直接对应行为且来自亲身经验",
+              "en": "The attitude matches the behavior and arises from direct experience"
+            },
+            {
+              "zh": "只因同一群体平均态度一致就预测每个人",
+              "en": "Predict every individual from a common group-average attitude"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "与行为相对应及直接经验会增强关系；强烈表达、忽略压力或群体均值并不能代替这些条件。",
+            "en": "Correspondence and direct experience strengthen the relationship; strong expression, ignored pressure, or group averages cannot replace these conditions."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-45-satisfaction-q",
+          "conceptIds": [
+            "material-45-satisfaction"
+          ],
+          "prompt": {
+            "zh": "“我整体上喜欢这份工作的安排”最直接表达什么？",
+            "en": "“I generally like the conditions of this job” most directly expresses what?"
+          },
+          "options": [
+            {
+              "zh": "组织承诺：希望留在同一组织",
+              "en": "Organizational commitment: wanting to stay in the organization"
+            },
+            {
+              "zh": "工作参与度：把绩效视为自我价值核心",
+              "en": "Job involvement: treating performance as central to self-worth"
+            },
+            {
+              "zh": "组织支持感：相信组织重视贡献",
+              "en": "POS: believing contributions are valued"
+            },
+            {
+              "zh": "工作满意度",
+              "en": "Job satisfaction"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "题目直接评价工作安排是否令人喜欢，最接近满意度；归属、自我价值和支持感关注点不同。",
+            "en": "The statement evaluates liking the job’s conditions, most directly satisfaction; belonging, self-worth, and support have different emphases."
+          },
+          "pages": [
+            7,
+            13
+          ]
+        },
+        {
+          "id": "material-45-involvement-q",
+          "conceptIds": [
+            "material-45-involvement"
+          ],
+          "prompt": {
+            "zh": "员工把做好工作视为自我价值核心，主要体现什么？",
+            "en": "An employee regards doing the job well as central to self-worth. What is most directly shown?"
+          },
+          "options": [
+            {
+              "zh": "工作参与度",
+              "en": "Job involvement"
+            },
+            {
+              "zh": "工作满意度：只评价工作特征是否令人愉快",
+              "en": "Job satisfaction: evaluating whether job characteristics are pleasant"
+            },
+            {
+              "zh": "组织承诺：只强调组织成员身份",
+              "en": "Commitment: emphasizing organizational membership"
+            },
+            {
+              "zh": "组织支持感：只强调组织关心员工",
+              "en": "POS: emphasizing organizational care"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "把工作表现与自我价值连接是参与度；其他态度可能相关，但题目并未直接描述它们。",
+            "en": "Connecting performance to self-worth is involvement; the other attitudes may relate but are not directly described."
+          },
+          "pages": [
+            7,
+            11
+          ]
+        },
+        {
+          "id": "material-45-empowerment-q",
+          "conceptIds": [
+            "material-45-empowerment"
+          ],
+          "prompt": {
+            "zh": "哪一组最符合心理授权的四个要素？",
+            "en": "Which set best matches psychological empowerment?"
+          },
+          "options": [
+            {
+              "zh": "薪酬、晋升、主管、同事",
+              "en": "Pay, promotion, supervision, coworkers"
+            },
+            {
+              "zh": "影响力、胜任力、意义、自主性",
+              "en": "Influence, competence, meaning, autonomy"
+            },
+            {
+              "zh": "认知、情感、行为、失调",
+              "en": "Cognition, affect, behavior, dissonance"
+            },
+            {
+              "zh": "满意度、承诺、支持感、退出",
+              "en": "Satisfaction, commitment, support, withdrawal"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "影响、胜任、意义与自主性是心理授权要素；薪酬等是工作分项，态度成分与结果属于其他分类。",
+            "en": "Influence, competence, meaning, and autonomy are empowerment elements; facets, attitude components, and outcomes are different classifications."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-45-commitment-q",
+          "conceptIds": [
+            "material-45-commitment"
+          ],
+          "prompt": {
+            "zh": "“虽然最近对工作不满，但我认同组织使命并希望留下”更突出什么？",
+            "en": "“I am dissatisfied lately, but identify with the organization’s mission and wish to stay” emphasizes what?"
+          },
+          "options": [
+            {
+              "zh": "工作满意度，因为所有留任者都必然满意",
+              "en": "Satisfaction, because everyone who stays must be satisfied"
+            },
+            {
+              "zh": "组织支持感，因为认同使命必然表示得到公平奖励",
+              "en": "POS, because identifying with a mission guarantees fair rewards"
+            },
+            {
+              "zh": "组织承诺",
+              "en": "Organizational commitment"
+            },
+            {
+              "zh": "工作参与度，因为组织使命与岗位绩效完全相同",
+              "en": "Involvement, because mission identification equals job-performance identity"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "组织使命认同与留任愿望体现承诺；留任不证明满意，认同使命也不自动证明受到支持。",
+            "en": "Mission identification and a wish to stay indicate commitment; staying does not prove satisfaction, nor does mission identification prove support."
+          },
+          "pages": [
+            8
+          ]
+        },
+        {
+          "id": "material-45-pos-q",
+          "conceptIds": [
+            "material-45-pos"
+          ],
+          "prompt": {
+            "zh": "公平奖励、倾听意见并关心福祉，最直接增强什么？",
+            "en": "Fair rewards, listening to employees, and concern for well-being most directly strengthen what?"
+          },
+          "options": [
+            {
+              "zh": "工作参与度，因为奖励自动决定自我价值",
+              "en": "Involvement, because rewards automatically determine self-worth"
+            },
+            {
+              "zh": "组织承诺，因为所有支持行动必然使员工终身留下",
+              "en": "Commitment, because support guarantees lifelong membership"
+            },
+            {
+              "zh": "任务绩效，因为公平待遇直接等于完成核心任务",
+              "en": "Task performance, because fairness equals completing duties"
+            },
+            {
+              "zh": "组织支持感",
+              "en": "Perceived organizational support"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "公平、参与和关怀传达组织重视贡献与福祉的信息，即 POS；它们不自动保证其他结果。",
+            "en": "Fairness, participation, and care signal value and concern, which define POS; they do not guarantee other outcomes."
+          },
+          "pages": [
+            9
+          ]
+        },
+        {
+          "id": "material-45-engagement-q",
+          "conceptIds": [
+            "material-45-engagement"
+          ],
+          "prompt": {
+            "zh": "“对工作和公司充满热情、积极投入”最贴近哪一态度？",
+            "en": "“Enthusiastic about work and the company, and actively involved” best fits which attitude?"
+          },
+          "options": [
+            {
+              "zh": "员工敬业度",
+              "en": "Employee engagement"
+            },
+            {
+              "zh": "组织支持感，重点只在组织是否关心员工",
+              "en": "POS, focused only on organizational care"
+            },
+            {
+              "zh": "认知失调，重点在态度与行为不一致",
+              "en": "Dissonance, focused on attitude–behavior inconsistency"
+            },
+            {
+              "zh": "组织承诺，重点只在保留成员身份",
+              "en": "Commitment, focused only on retaining membership"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "热情、满意和投入的组合最贴近敬业度；支持感、失调与承诺分别强调不同机制。",
+            "en": "The combination of enthusiasm, satisfaction, and involvement best fits engagement; POS, dissonance, and commitment emphasize other mechanisms."
+          },
+          "pages": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "material-45-measurement-q",
+          "conceptIds": [
+            "material-45-measurement"
+          ],
+          "prompt": {
+            "zh": "总体满意分数不错，但想知道员工为何抱怨晋升，应补充什么？",
+            "en": "Overall satisfaction is positive, but employees complain about promotion. What should be added?"
+          },
+          "options": [
+            {
+              "zh": "只重复整体评分，不检查不同工作方面",
+              "en": "Repeat only the global score without examining facets"
+            },
+            {
+              "zh": "对晋升等工作分项的测量",
+              "en": "Measurement of facets such as promotion"
+            },
+            {
+              "zh": "只用整体满意度推定晋升方面也满意",
+              "en": "Infer promotion satisfaction directly from overall satisfaction"
+            },
+            {
+              "zh": "只调查工资以代表所有不满",
+              "en": "Survey only pay to represent every dissatisfaction"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "分项评价可定位晋升问题；总体和工资都不能自动代表所有方面。",
+            "en": "Facet assessment can locate promotion problems; neither overall satisfaction nor pay represents every aspect."
+          },
+          "pages": [
+            13,
+            15
+          ]
+        },
+        {
+          "id": "material-45-variation-q",
+          "conceptIds": [
+            "material-45-variation"
+          ],
+          "prompt": {
+            "zh": "看到国家平均满意度差异后，哪种结论最稳妥？",
+            "en": "After observing country-average differences in satisfaction, which conclusion is most defensible?"
+          },
+          "options": [
+            {
+              "zh": "平均最高的国家中每个员工都最满意",
+              "en": "Every employee in the highest-average country is most satisfied"
+            },
+            {
+              "zh": "只要国家不同，工作分项就无需测量",
+              "en": "Different countries remove the need to measure job facets"
+            },
+            {
+              "zh": "情境值得研究，但不能断定该国每个人都同样满意",
+              "en": "Context merits study, but not everyone in a country has the same satisfaction"
+            },
+            {
+              "zh": "历史图表可以直接证明当前国家因果差异",
+              "en": "A historical chart directly proves current causal differences between countries"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "均值是特定研究的总体模式，不能代表每个人、替代分项，也不能自动证明因果或当前排名。",
+            "en": "A mean is an aggregate pattern from a particular study; it does not describe everyone, replace facets, establish causation, or provide current rankings."
+          },
+          "pages": [
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "id": "material-45-conditions-q",
+          "conceptIds": [
+            "material-45-conditions"
+          ],
+          "prompt": {
+            "zh": "改善满意度时，哪项方案比只改职位名称更贴近课件？",
+            "en": "Which approach fits the deck better than merely renaming a position?"
+          },
+          "options": [
+            {
+              "zh": "仅增加薪酬而不评价工作与关系",
+              "en": "Raise pay without assessing work or relationships"
+            },
+            {
+              "zh": "只筛选积极人格而不改善任何工作条件",
+              "en": "Select positive personalities without improving conditions"
+            },
+            {
+              "zh": "只改善办公室装饰而不处理工作内容",
+              "en": "Improve decoration without addressing job content"
+            },
+            {
+              "zh": "改善工作内容、互动及主管支持，并考虑个体差异",
+              "en": "Improve job content, interactions, and supervision while considering individual differences"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "满意度关联工作本身、互动、主管及个体评价；只关注单一外在因素会遗漏重要来源。",
+            "en": "Satisfaction relates to work, interaction, supervision, and personal evaluations; a single external factor misses important sources."
+          },
+          "pages": [
+            17,
+            24
+          ]
+        },
+        {
+          "id": "material-45-pay-q",
+          "conceptIds": [
+            "material-45-pay"
+          ],
+          "prompt": {
+            "zh": "从薪酬—满意度图表应避免哪种推断？",
+            "en": "Which inference should be avoided from the pay–satisfaction chart?"
+          },
+          "options": [
+            {
+              "zh": "高薪必然让所有员工满意",
+              "en": "High pay guarantees satisfaction for every employee"
+            },
+            {
+              "zh": "薪酬不是唯一相关因素",
+              "en": "Pay is not the only relevant factor"
+            },
+            {
+              "zh": "工作条件也值得评价",
+              "en": "Job conditions also merit evaluation"
+            },
+            {
+              "zh": "个体体验存在差异",
+              "en": "Individual experiences vary"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "图表与管理建议均反对把高薪视为充分条件；这不等于薪酬完全不重要。",
+            "en": "The chart and implications reject high pay as sufficient, without claiming pay never matters."
+          },
+          "pages": [
+            18,
+            24
+          ]
+        },
+        {
+          "id": "material-45-csr-q",
+          "conceptIds": [
+            "material-45-csr"
+          ],
+          "prompt": {
+            "zh": "哪项最符合此处 CSR，同时避免过度推断？",
+            "en": "Which statement fits this chapter’s CSR concept without overgeneralizing?"
+          },
+          "options": [
+            {
+              "zh": "只满足法定最低要求便完整体现本页的“超出要求”定义",
+              "en": "Meeting only legal minimums fully satisfies the page’s beyond-requirements definition"
+            },
+            {
+              "zh": "超出法律最低要求的环保行动，员工未必都同样重视",
+              "en": "Environmental action beyond legal minimums, which employees may value differently"
+            },
+            {
+              "zh": "相同 CSR 活动必然使所有员工获得同样满意度",
+              "en": "Identical CSR necessarily gives every employee the same satisfaction"
+            },
+            {
+              "zh": "CSR 的效果与员工如何评价它无关",
+              "en": "CSR’s effect is independent of how employees value it"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "本页强调超出法律最低要求的社会/环境行动，同时承认员工评价不同，不能保证统一结果。",
+            "en": "The page stresses social/environmental action beyond legal minimums while recognizing different employee valuations and outcomes."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-45-outcomes-q",
+          "conceptIds": [
+            "material-45-outcomes"
+          ],
+          "prompt": {
+            "zh": "哪组结果完整对应本页四类关联？",
+            "en": "Which set matches the four outcomes on this page?"
+          },
+          "options": [
+            {
+              "zh": "绩效、组织结构、年龄、智力",
+              "en": "Performance, structure, age, intelligence"
+            },
+            {
+              "zh": "薪酬、晋升、主管、同事",
+              "en": "Pay, promotion, supervision, coworkers"
+            },
+            {
+              "zh": "绩效、OCB、客户满意、生活满意",
+              "en": "Performance, OCB, customer satisfaction, life satisfaction"
+            },
+            {
+              "zh": "退出、建言、忠诚、忽视",
+              "en": "Exit, voice, loyalty, neglect"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "题目问满意度关联结果；薪酬等是工作分项，EVLN 是不满反应矩阵，年龄和结构是其他变量。",
+            "en": "The question asks about satisfaction outcomes; pay and similar items are facets, EVLN concerns dissatisfaction responses, and age or structure are other variables."
+          },
+          "pages": [
+            20
+          ]
+        },
+        {
+          "id": "material-45-evln-q",
+          "conceptIds": [
+            "material-45-evln"
+          ],
+          "prompt": {
+            "zh": "员工主动提出改善方案；另一人消极放任工作恶化。分别属于什么？",
+            "en": "One employee actively suggests improvements; another passively lets work deteriorate. Which responses are these?"
+          },
+          "options": [
+            {
+              "zh": "忠诚；退出",
+              "en": "Loyalty; exit"
+            },
+            {
+              "zh": "退出；忠诚",
+              "en": "Exit; loyalty"
+            },
+            {
+              "zh": "忽视；建言",
+              "en": "Neglect; voice"
+            },
+            {
+              "zh": "建言；忽视",
+              "en": "Voice; neglect"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "建言主动推动改善，忽视被动允许恶化；忠诚被动但建设性，退出主动但破坏性。",
+            "en": "Voice actively seeks improvement and neglect passively permits deterioration; loyalty is passive–constructive and exit active–destructive."
+          },
+          "pages": [
+            21
+          ]
+        },
+        {
+          "id": "material-45-cwb-q",
+          "conceptIds": [
+            "material-45-cwb"
+          ],
+          "prompt": {
+            "zh": "持续下降的满意度并伴随离职意图，管理者应如何理解？",
+            "en": "How should a manager interpret falling satisfaction accompanied by intent to leave?"
+          },
+          "options": [
+            {
+              "zh": "这是需要调查的退出风险信号",
+              "en": "It is a withdrawal-risk signal worth investigating"
+            },
+            {
+              "zh": "它证明离职已经完成，无需继续了解",
+              "en": "It proves turnover is complete, requiring no further inquiry"
+            },
+            {
+              "zh": "只要未正式辞职就完全没有风险",
+              "en": "There is no risk until formal resignation"
+            },
+            {
+              "zh": "满意度下降只能由薪酬一个因素引起",
+              "en": "Falling satisfaction can only be caused by pay"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "持续下降的满意度提示风险但不是已离职的事实；原因也需调查，不能只假定薪酬。",
+            "en": "Falling satisfaction signals risk rather than completed turnover; causes need investigation rather than assuming pay alone."
+          },
+          "pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "id": "material-45-action-q",
+          "conceptIds": [
+            "material-45-action"
+          ],
+          "prompt": {
+            "zh": "调查发现员工觉得工作乏味，哪项更有针对性？",
+            "en": "A survey finds employees consider their work monotonous. Which response is more targeted?"
+          },
+          "options": [
+            {
+              "zh": "只加薪，之后不再调查工作内容",
+              "en": "Raise pay only and stop investigating job content"
+            },
+            {
+              "zh": "评估兴趣与工作内容匹配，设计有意义的挑战并复测",
+              "en": "Assess interest–job fit, design meaningful challenges, and measure again"
+            },
+            {
+              "zh": "只重写职位名称以改变员工感受",
+              "en": "Rename the role alone to change feelings"
+            },
+            {
+              "zh": "只要求员工积极一点，不调整任务",
+              "en": "Ask employees to be more positive without changing tasks"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "乏味直接涉及工作内在内容与兴趣匹配，应有针对性调整并复测；加薪、改名或劝积极不一定解决来源。",
+            "en": "Monotony concerns intrinsic work and interest fit, calling for targeted redesign and remeasurement; pay, renaming, or encouragement may miss the cause."
+          },
+          "pages": [
+            23,
+            24
+          ]
+        },
+        {
+          "id": "material-45-evln-q2",
+          "conceptIds": [
+            "material-45-evln"
+          ],
+          "prompt": {
+            "zh": "员工主动寻找其他工作；另一人被动等待组织改善但仍支持组织。分别是什么反应？",
+            "en": "An employee actively looks for another job; another passively waits for improvement while remaining supportive. Which responses fit?"
+          },
+          "options": [
+            {
+              "zh": "建言；忽视",
+              "en": "Voice; neglect"
+            },
+            {
+              "zh": "忠诚；建言",
+              "en": "Loyalty; voice"
+            },
+            {
+              "zh": "退出；忠诚",
+              "en": "Exit; loyalty"
+            },
+            {
+              "zh": "忽视；退出",
+              "en": "Neglect; exit"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "退出是主动且破坏性方向，忠诚是被动且建设性；被动不一定表示忽视。",
+            "en": "Exit is active–destructive and loyalty passive–constructive; passivity does not necessarily mean neglect."
+          },
+          "pages": [
+            21
+          ]
+        },
+        {
+          "id": "material-45-moderators-q2",
+          "conceptIds": [
+            "material-45-moderators"
+          ],
+          "prompt": {
+            "zh": "员工个人反对某行为，但团队压力强烈支持它，预测实际行为时应怎样处理？",
+            "en": "An employee opposes an action personally but faces strong team pressure to do it. How should behavior be predicted?"
+          },
+          "options": [
+            {
+              "zh": "只看个人态度，忽略环境",
+              "en": "Use the personal attitude alone and ignore context"
+            },
+            {
+              "zh": "认定态度永远与行为完全无关",
+              "en": "Conclude attitudes never relate to behavior"
+            },
+            {
+              "zh": "把群体压力直接当作满意度",
+              "en": "Treat group pressure as job satisfaction"
+            },
+            {
+              "zh": "考虑社会压力对态度—行为关系的调节",
+              "en": "Consider social pressure moderating the attitude–behavior relationship"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "课件把社会压力列为调节因素；态度相关但不是不受情境影响的机械预测器。",
+            "en": "Social pressure is a listed moderator; attitudes matter but are not context-free mechanical predictors."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-45-outcomes-q2",
+          "conceptIds": [
+            "material-45-outcomes"
+          ],
+          "prompt": {
+            "zh": "研究观察到满意度与绩效正相关，哪种表述最恰当？",
+            "en": "Research observes a positive association between satisfaction and performance. Which statement is best?"
+          },
+          "options": [
+            {
+              "zh": "两者相关，但不能据此保证每位满意员工一定高绩效",
+              "en": "They relate, but this does not guarantee high performance for every satisfied employee"
+            },
+            {
+              "zh": "满意度必然是绩效唯一原因",
+              "en": "Satisfaction must be the sole cause of performance"
+            },
+            {
+              "zh": "任何绩效差异都与满意度无关",
+              "en": "Every performance difference is unrelated to satisfaction"
+            },
+            {
+              "zh": "无需其他信息便能确定每个人的结果",
+              "en": "Individual outcomes can be determined without further information"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "相关模式有管理价值，但不能转化为唯一原因或无例外保证。",
+            "en": "An association is useful but cannot become a sole-cause claim or an exceptionless guarantee."
+          },
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2,
+              12
+            ],
+            "reason": {
+              "zh": "封面、学习目标、参考资料、行政信息或重复总结；不设独立考点。",
+              "en": "Cover, learning objectives, references, administrative information, or repeated recap; no separate learning objective."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "统计图为课件所引历史研究的示例，不用于推断当前国家排名或个体工资与满意度的因果关系。",
+        "en": "Statistical charts illustrate historical studies cited in the deck; they do not establish current country rankings or a causal effect of an individual’s pay on satisfaction."
+      },
+      "sourceSha256": "a1c1a14b4278949b2aa85f2a56ae60c68e4d6b62c8d143baa01ce976d633d9ed"
+    }
+  ]
+}

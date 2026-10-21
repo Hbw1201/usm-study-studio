@@ -6,6 +6,7 @@ const record=<T extends z.ZodTypeAny>(schema:T)=>z.record(id,schema).refine(v=>O
 export const stateSchema=z.object({
   version:z.literal(1),
   progress:record(z.object({status:z.enum(['learning','done']),updatedAt:date})),
+  quizzes:record(z.object({choice:z.number().int().min(0).max(3),attempts:z.number().int().min(1).max(100000),questionHash:z.string().regex(/^[a-f0-9]{1,8}$/),updatedAt:date})).default({}),
   notes:z.array(z.object({id,courseId:course,resourceId:z.string().max(160),title:z.string().min(1).max(200),body:z.string().max(50000),updatedAt:date})).max(1000),
   cards:z.array(z.object({id,courseId:course,question:z.string().min(1).max(2000),answer:z.string().min(1).max(10000),source:z.object({file:z.string().max(500),page:z.number().int().positive(),label:z.string().max(500)}).optional(),tags:z.array(z.string().max(100)).max(20).optional()})).max(2000),
   reviews:record(z.object({dueAt:date,interval:z.number().min(0).max(100000),repetitions:z.number().int().min(0),ease:z.number().min(1.3).max(100),lapses:z.number().int().min(0),lastReview:date,grade:z.number().min(1).max(5)})),

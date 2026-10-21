@@ -2,10 +2,12 @@ export type Review = { dueAt: string; interval: number; repetitions: number; eas
 export type Note = { id: string; courseId: string; resourceId: string; title: string; body: string; updatedAt: string };
 export type Card = { id: string; courseId: string; question: string; answer: string; source?: {file:string;page:number;label:string}; tags?: string[] };
 export type Task = {id:string;courseId:string;title:string;dueAt:string;done:boolean;source?:string};
+export type QuizAnswer = {choice:number;attempts:number;questionHash:string;updatedAt:string};
 export type StudyState = {
   version:1;
   progress:Record<string,{status:"learning"|"done";updatedAt:string}>;
   notes:Note[]; cards:Card[]; reviews:Record<string,Review>; tasks:Task[];
+  quizzes:Record<string,QuizAnswer>;
   sessions:{id:string;courseId:string;minutes:number;endedAt:string}[];
   settings:{dailyMinutes:number};
 };
@@ -19,7 +21,7 @@ export function scheduleReview(previous:Review|undefined, grade:1|3|4|5, now=new
   return {dueAt:new Date(now.getTime()+(grade===1?600000:interval*DAY)).toISOString(),interval,repetitions:reps,ease,lapses,lastReview:now.toISOString(),grade};
 }
 export function isDue(review:Review|undefined, now=Date.now()){return !review||Date.parse(review.dueAt)<=now;}
-export function emptyState():StudyState{return {version:1,progress:{},notes:[],cards:[],reviews:{},tasks:[
+export function emptyState():StudyState{return {version:1,progress:{},notes:[],cards:[],reviews:{},quizzes:{},tasks:[
   {id:"cpc-assignment-1",courseId:"CPC357W",title:"Assignment 1 · 物联网作业",dueAt:"2026-11-13T23:59:00+08:00",done:false,source:"https://elearning.usm.my/sidang2627/mod/assign/view.php?id=48524"},
   {id:"cpc-project",courseId:"CPC357W",title:"IoT Project · 项目提交（上午截止）",dueAt:"2027-01-03T11:59:00+08:00",done:false,source:"https://elearning.usm.my/sidang2627/mod/assign/view.php?id=44026"},
   {id:"cmt-test-1",courseId:"CMT322W",title:"Test 1 · 09:00–10:00 · Exam Hall 1",dueAt:"2026-11-02T09:00:00+08:00",done:false,source:"https://elearning.usm.my/sidang2627/mod/forum/discuss.php?d=3022"},

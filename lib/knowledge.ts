@@ -1,0 +1,16 @@
+import AKP from "../content/knowledge/AKP202W.json";
+import CAT402 from "../content/knowledge/CAT402W.json";
+import CAT405 from "../content/knowledge/CAT405W.json";
+import CMT from "../content/knowledge/CMT322W.json";
+import CPC from "../content/knowledge/CPC357W.json";
+import CST from "../content/knowledge/CST435W.json";
+export type Bilingual={zh:string;en:string};
+export type Concept={id:string;title:Bilingual;explanation:Bilingual;pages:number[];example?:Bilingual;confusion?:Bilingual};
+export type Question={id:string;conceptIds:string[];prompt:Bilingual;options:Bilingual[];answer:number;explanation:Bilingual;pages:number[]};
+export type MaterialKnowledge={resourceId:string;sourceSha256:string;overview:Bilingual;sourceNote?:Bilingual;groups:{id:string;title:Bilingual;concepts:Concept[]}[];links:{from:string;to:string;relation:Bilingual}[];questions:Question[];coverage:{coveredPages:number[];excludedPages:{pages:number[];reason:Bilingual}[]}};
+export type CourseKnowledge={courseId:string;overview:Bilingual;pathway:{resourceId:string;reason:Bilingual}[];materials:MaterialKnowledge[]};
+export const knowledgeCourses=[AKP,CAT402,CAT405,CMT,CPC,CST] as CourseKnowledge[];
+export const knowledgeMaterials=knowledgeCourses.flatMap(c=>c.materials);
+export const knowledgeFor=(id:string)=>knowledgeMaterials.find(m=>m.resourceId===id);
+export const conceptsFor=(m:MaterialKnowledge)=>m.groups.flatMap(g=>g.concepts);
+export const knowledgeStats={materials:knowledgeMaterials.length,concepts:knowledgeMaterials.reduce((n,m)=>n+conceptsFor(m).length,0),questions:knowledgeMaterials.reduce((n,m)=>n+m.questions.length,0)};

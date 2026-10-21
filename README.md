@@ -88,3 +88,28 @@ npm run build
 生产初始化使用 scripts/provision-production.mjs，通过隐藏 stdin 接收 {baseUrl,token,users}；users 只包含两个约定身份及密码哈希，不传明文密码。课件严格按照 74 个白名单对象导入，大文件按 16 MiB 分块，校验本地 SHA256、远端文件大小与摘要元数据。已存在的账号不会重置密码。
 
 初始化接口默认返回 404；只有配置强随机 STUDY_PROVISION_TOKEN 运行时秘密后才临时启用。数据导入后删除该秘密并重新部署即可关闭入口。所有本地原课件和旧试用记录继续保留，源码仓库不包含数据库、会话、密码或课程二进制。
+
+
+## Bilingual knowledge and practice
+
+The shared knowledge library is authored from the downloaded course files in `content/knowledge/{courseCode}.json`. Each material has Chinese/English explanations, grouped concepts, labelled conceptual relationships, source-page citations, and single-answer MCQs with bilingual rationales. Course pathways connect reading with labs and projects. The content is shared by both accounts; it is not stored in either user's personal notes.
+
+The **知识与练习** navigation opens the course library. Each material also exposes **双语知识点**, **知识脉络**, and **选择题** tabs. Learners can switch Chinese/English/bilingual display, search concepts, collapse the tree, open the cited source page, quote a concept into their own Markdown note, or add it as a review card. Quizzes support unanswered/all/wrong-question sessions and an explicit concept-to-question coverage table.
+
+Quiz responses are stored in the existing authenticated, revision-checked workspace under `quizzes`. Old workspaces and JSON backups receive an empty quiz record through schema defaults; notes, progress, tasks, uploaded images and spaced-review records are preserved. A question-content fingerprint invalidates an outdated answer when that question changes. A retry updates only that user's latest response and attempt count. These are practice exercises rather than official assessment submissions.
+
+### Updating knowledge alongside course files
+
+Read `content/knowledge/SCHEMA.md` before editing. Preserve stable material and concept/question IDs when their meaning remains the same. Read every substantive source page, including diagrams. Cover important definitions, framework components, distinctions, processes, calculations and applications without imposing a fixed item limit. Use plausible distractors and one unambiguous best answer. Every knowledge concept must have a relevant question; every cited page must exist and be included in coverage. Explicitly record title, repeated and administrative pages that need no independent concept. Mark conflicts, historical statistics, non-paginated sources and any limits of video analysis honestly.
+
+When source content changes, update its bilingual explanations, links, MCQs, course pathway, coverage decisions and `sourceSha256` together. Merely changing the fingerprint does not update teaching content. Retain originals and existing user data.
+
+Validation:
+
+```text
+node node_modules/typescript/bin/tsc --noEmit
+node --experimental-strip-types --test tests/*.test.mjs
+node --experimental-strip-types tests/knowledge-api.integration.mjs
+```
+
+The integration script takes the two login objects only through hidden stdin; optional `STUDY_TEST_URL` selects the deployed origin. It checks shared UI availability, durable quiz writes, user isolation, stale-account rejection, and preservation of existing notes/progress. It restores its test response using revision checks.

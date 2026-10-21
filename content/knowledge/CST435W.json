@@ -1,0 +1,5344 @@
+{
+  "courseId": "CST435W",
+  "overview": {
+    "zh": "从硬件并行化的原因出发，学习云服务的组织方式，再用性能指标、存储体系和互连网络解释程序为何能加速或受限。",
+    "en": "Start with why hardware becomes parallel, understand cloud service organization, and use performance metrics, memory systems and interconnects to explain speedups and limits."
+  },
+  "pathway": [
+    {
+      "resourceId": "material-1",
+      "reason": {
+        "zh": "先确认学习目标，再学习具体技术。",
+        "en": "Establish the learning goals before individual technologies."
+      }
+    },
+    {
+      "resourceId": "material-2",
+      "reason": {
+        "zh": "先建立云的概念与成本判断，再比较服务和部署模型。",
+        "en": "Build cloud and cost reasoning before comparing service and deployment models."
+      }
+    },
+    {
+      "resourceId": "material-3",
+      "reason": {
+        "zh": "把云资源背后的硬件动机与计算组织方式补齐。",
+        "en": "Understand the hardware motivation and organization behind computing resources."
+      }
+    },
+    {
+      "resourceId": "material-4",
+      "reason": {
+        "zh": "把Part I的价值判断落实为模型选择。",
+        "en": "Turn Part I value reasoning into model selection."
+      }
+    },
+    {
+      "resourceId": "material-5",
+      "reason": {
+        "zh": "将并行动机转化为可计算的性能判断。",
+        "en": "Turn parallel-computing motivation into quantitative performance reasoning."
+      }
+    },
+    {
+      "resourceId": "material-6",
+      "reason": {
+        "zh": "用体系结构解释Part 2中的性能与通信现象。",
+        "en": "Use architecture to explain Part 2 performance and communication."
+      }
+    }
+  ],
+  "materials": [
+    {
+      "resourceId": "material-1",
+      "overview": {
+        "zh": "把课程目标、考核和云计算—并行计算两条学习路线连起来。",
+        "en": "Connect learning outcomes and assessment to the cloud and parallel-computing strands."
+      },
+      "groups": [
+        {
+          "id": "material-1-g1",
+          "title": {
+            "zh": "课程目标与学习路线",
+            "en": "Outcomes and study routes"
+          },
+          "concepts": [
+            {
+              "id": "material-1-c1",
+              "title": {
+                "zh": "应用、构建与分析",
+                "en": "Apply, construct and analyse"
+              },
+              "explanation": {
+                "zh": "三个目标是应用并行/云概念解决问题、用平台与服务构建程序，以及分析设计开发问题；只记术语不能覆盖构建和分析目标。",
+                "en": "The outcomes require applying concepts, constructing programs with platforms and services, and analysing design issues; terminology alone does not demonstrate construction or analysis."
+              },
+              "pages": [
+                1,
+                2
+              ]
+            },
+            {
+              "id": "material-1-c2",
+              "title": {
+                "zh": "考核与学习证据",
+                "en": "Assessment and evidence"
+              },
+              "explanation": {
+                "zh": "文件把期末考试与coursework各设50%；coursework包含两次小组作业20%和10%、两次测试合计20%。阅读材料、实验和讨论共同支持目标。",
+                "en": "The document assigns 50% each to the final exam and coursework; coursework comprises group assignments worth 20% and 10% and two tests totalling 20%. Reading, practical work and discussion support the outcomes."
+              },
+              "pages": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "id": "material-1-c3",
+              "title": {
+                "zh": "两条技术主线",
+                "en": "Two technical strands"
+              },
+              "explanation": {
+                "zh": "云主线由分布通信、虚拟化、容器编排、Hadoop/MapReduce/HDFS、服务模型和管理组成；并行主线由架构、程序基础、Pthreads/OpenMP和GPU编程组成。学习时将具体工具连接到通信、资源和性能问题。",
+                "en": "The cloud strand covers distributed communication, virtualization, orchestration, Hadoop/MapReduce/HDFS, service models and management; the parallel strand covers architecture, program basics, Pthreads/OpenMP and GPU programming. Relate tools to communication, resources and performance."
+              },
+              "pages": [
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-1-c1",
+          "to": "material-1-c3",
+          "relation": {
+            "zh": "课程目标落实为两条技术路线",
+            "en": "Outcomes are implemented through the two technical strands"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-1-q1",
+          "conceptIds": [
+            "material-1-c1"
+          ],
+          "prompt": {
+            "zh": "哪项学习证据同时体现构建和分析？",
+            "en": "Which evidence demonstrates both construction and analysis?"
+          },
+          "options": [
+            {
+              "zh": "仅实现程序但不解释结果或设计问题",
+              "en": "Implement without explaining results or design issues"
+            },
+            {
+              "zh": "仅根据术语画出架构草图",
+              "en": "Sketch an architecture based only on terminology"
+            },
+            {
+              "zh": "仅给出不同平台的优缺点，没有实现",
+              "en": "Compare platform advantages without implementation"
+            },
+            {
+              "zh": "实现并行程序并解释实测性能",
+              "en": "Implement a parallel program and explain measured performance"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "可运行程序体现构建，解释性能与设计问题体现分析；记忆或出勤不能替代这两项。",
+            "en": "A running program demonstrates construction and analysis of performance demonstrates reasoning; recall and attendance do not replace them."
+          },
+          "pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "material-1-q2",
+          "conceptIds": [
+            "material-1-c2"
+          ],
+          "prompt": {
+            "zh": "按此文件，两个作业加两次测试占总成绩多少？",
+            "en": "According to this document, what is the combined assignment-and-test weight?"
+          },
+          "options": [
+            {
+              "zh": "50%",
+              "en": "50%"
+            },
+            {
+              "zh": "30%",
+              "en": "30%"
+            },
+            {
+              "zh": "100%",
+              "en": "100%"
+            },
+            {
+              "zh": "20%",
+              "en": "20%"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "20%+10%+20%=50%，其余50%为期末考试；这些是文件中的权重，不代替最新通知。",
+            "en": "20%+10%+20%=50%; the final exam supplies the other 50%. These are the document weights, not a replacement for current announcements."
+          },
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "material-1-q3",
+          "conceptIds": [
+            "material-1-c3"
+          ],
+          "prompt": {
+            "zh": "哪组匹配符合课程路线？",
+            "en": "Which pairing follows the course strands?"
+          },
+          "options": [
+            {
+              "zh": "Pthreads—GPU核函数；MapReduce—互斥锁接口",
+              "en": "Pthreads—GPU kernels; MapReduce—mutex API"
+            },
+            {
+              "zh": "Pthreads/OpenMP—分布文件系统；HDFS—共享变量锁",
+              "en": "Pthreads/OpenMP—distributed filesystems; HDFS—shared-variable locks"
+            },
+            {
+              "zh": "Pthreads/OpenMP—共享内存；HDFS/MapReduce—云端数据处理",
+              "en": "Pthreads/OpenMP—shared memory; HDFS/MapReduce—cloud data processing"
+            },
+            {
+              "zh": "OpenMP—云部署模型；HDFS—应用层HTTP接口",
+              "en": "OpenMP—cloud deployment model; HDFS—HTTP application interface"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "Pthreads和OpenMP处理共享内存并行，HDFS和MapReduce属于云编程与数据处理内容；其余把不同层次概念混在一起。",
+            "en": "Pthreads and OpenMP address shared-memory parallelism, while HDFS and MapReduce belong to cloud data processing; the other choices mix unrelated layers."
+          },
+          "pages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "excludedPages": []
+      },
+      "sourceNote": {
+        "zh": "此文件首页写2025/2026，课程网站与当前讲义为2026/2027；考核和周次仅作为文件快照，最新安排以eLearn通知为准。",
+        "en": "The planner cover says 2025/2026 whereas the current site and lectures say 2026/2027; assessment and week numbers are a document snapshot, subject to current eLearn notices."
+      },
+      "sourceSha256": "3eeeba1fdfe7072f8ad58f9d3a8bc594bf5e3e5183fca838b3acffff0cb1c24f"
+    },
+    {
+      "resourceId": "material-2",
+      "overview": {
+        "zh": "理解云计算的服务化、资源共享、经济性与关键特征，并区分云与相邻计算模式。",
+        "en": "Understand service delivery, shared resources, economics and cloud characteristics while distinguishing related computing models."
+      },
+      "groups": [
+        {
+          "id": "material-2-g1",
+          "title": {
+            "zh": "云的定义、起源与架构",
+            "en": "Definition, origins and architecture"
+          },
+          "concepts": [
+            {
+              "id": "material-2-c1",
+              "title": {
+                "zh": "按需服务与基础设施抽象",
+                "en": "On-demand services and abstraction"
+              },
+              "explanation": {
+                "zh": "云通过互联网按需提供共享计算资源、软件和数据，用户通过服务接口访问，而底层服务器与网络细节被抽象。动态扩展和虚拟化常用于这种交付模式。",
+                "en": "Cloud delivers shared resources, software and data on demand through Internet services, abstracting server and network details. Dynamic scaling and virtualization commonly support this delivery model."
+              },
+              "pages": [
+                3,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "id": "material-2-c2",
+              "title": {
+                "zh": "公用计算到云服务的历史",
+                "en": "From computing utility to cloud services"
+              },
+              "explanation": {
+                "zh": "课件把1960年代的计算公用事业设想、电话网络/VPN的资源利用、AWS在2006年的服务化，以及2007—2008年的研究和市场转向连为演变过程。核心变化是从自有资产转向按使用量获得服务。",
+                "en": "The lecture connects 1960s computing-utility ideas, telephony/VPN resource utilization, AWS service delivery in 2006 and the 2007–2008 research and market shift. The central change is from owning assets to obtaining services by use."
+              },
+              "pages": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ]
+            },
+            {
+              "id": "material-2-c3",
+              "title": {
+                "zh": "租用、多租户与利用率",
+                "en": "Rental, multitenancy and utilization"
+              },
+              "explanation": {
+                "zh": "用户租用资源而不是必然拥有物理设施；多租户共享资源和成本，把分散峰值需求汇入资源池，提高闲置资源的利用率。共享并不意味着所有用户的数据公开。",
+                "en": "Users rent resources rather than necessarily owning infrastructure; multitenancy pools capacity and cost across users, improving utilization of otherwise idle resources. Sharing infrastructure does not mean making all tenant data public."
+              },
+              "pages": [
+                14,
+                15,
+                37
+              ]
+            },
+            {
+              "id": "material-2-c4",
+              "title": {
+                "zh": "API组件化架构",
+                "en": "API-based component architecture"
+              },
+              "explanation": {
+                "zh": "多个云组件通过API或Web服务协作，每个组件完成明确功能。统一接口把复杂系统分成可管理部分，呼应Unix式小组件协作思想。",
+                "en": "Cloud components cooperate through APIs or web services, each with a focused function. Common interfaces divide complex systems into manageable parts, echoing the Unix approach to cooperating components."
+              },
+              "pages": [
+                17,
+                18
+              ]
+            },
+            {
+              "id": "material-2-c5",
+              "title": {
+                "zh": "基础设施、QoS与SLA",
+                "en": "Infrastructure, QoS and SLA"
+              },
+              "explanation": {
+                "zh": "云通常以数据中心服务器提供统一服务入口。QoS描述需要达到的服务质量；SLA把服务承诺、衡量和可能的违约后果写入约定，具体条款需逐项核查。",
+                "en": "Cloud commonly offers a unified service entry over data-centre servers. QoS describes required service quality; an SLA records commitments, measurement and possible remedies, whose actual terms must be checked."
+              },
+              "pages": [
+                20,
+                21,
+                27
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-2-g2",
+          "title": {
+            "zh": "相邻计算模式的区别",
+            "en": "Related models and their differences"
+          },
+          "concepts": [
+            {
+              "id": "material-2-c6",
+              "title": {
+                "zh": "自治、客户—服务器与网格",
+                "en": "Autonomic, client–server and grid computing"
+              },
+              "explanation": {
+                "zh": "自治计算强调自我管理；客户—服务器强调服务请求方与提供方的角色；网格把松耦合联网资源组合处理大任务。云可借鉴这些特点，但这些名称分别描述管理、角色或资源协作。",
+                "en": "Autonomic computing emphasizes self-management; client–server distinguishes requesters and providers; grid computing combines loosely coupled networked resources for large tasks. Cloud can use these ideas, but they describe different dimensions."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-2-c7",
+              "title": {
+                "zh": "大型机、公用计算与P2P",
+                "en": "Mainframes, utility computing and P2P"
+              },
+              "explanation": {
+                "zh": "大型机集中处理关键大批量业务；公用计算把计算/存储包装为可计量服务；P2P参与者既提供也消费资源，不以单一中央协调为必要条件。公用计算是计费/交付方式，P2P是组织结构。",
+                "en": "Mainframes handle critical bulk workloads; utility computing packages computation/storage as metered services; P2P participants both provide and consume resources without requiring a central coordinator. Utility is a delivery/billing model, whereas P2P is an organizational architecture."
+              },
+              "pages": [
+                24
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-2-g3",
+          "title": {
+            "zh": "经济性与采用决策",
+            "en": "Economics and adoption decisions"
+          },
+          "concepts": [
+            {
+              "id": "material-2-c8",
+              "title": {
+                "zh": "CapEx、OpEx与总成本",
+                "en": "CapEx, OpEx and total cost"
+              },
+              "explanation": {
+                "zh": "云可减少前期资本投入，把部分开支变成运行期费用，并降低进入门槛；但长期运营费用未必更低。比较自有数据中心效率、既有成本、采用规模、应用功能和预算结构后再决策。",
+                "en": "Cloud can reduce upfront capital expenditure, shift costs to operating expenditure and lower entry barriers, but ongoing cost may be higher. Compare internal efficiency, existing cost, adoption scale, workload and budget constraints before deciding."
+              },
+              "pages": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                35
+              ]
+            },
+            {
+              "id": "material-2-c9",
+              "title": {
+                "zh": "计量与账单组成",
+                "en": "Metering and billing dimensions"
+              },
+              "explanation": {
+                "zh": "计量应按客户/应用和时间范围记录使用量。账单可能包含实例、数据传输、GB月存储、I/O、PUT/GET、IP和负载均衡；实例价格也可能随供需变化。",
+                "en": "Metering records usage by customer/application over time. Bills may include instances, transfer, GB-month storage, I/O, PUT/GET, IP addresses and load balancing; instance prices may also vary with supply and demand."
+              },
+              "pages": [
+                31,
+                42
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-2-g4",
+          "title": {
+            "zh": "关键特征及其边界",
+            "en": "Key characteristics and limits"
+          },
+          "concepts": [
+            {
+              "id": "material-2-c10",
+              "title": {
+                "zh": "敏捷性",
+                "en": "Agility"
+              },
+              "explanation": {
+                "zh": "快速、低成本重新配置基础设施使团队响应业务变化、缩短从想法到上线的周期，并把精力投入战略任务。敏捷强调改变速度，不等于无限免费资源。",
+                "en": "Rapid, inexpensive reprovisioning helps teams respond to change, shorten idea-to-delivery cycles and focus on strategic work. Agility concerns speed of change, not unlimited free resources."
+              },
+              "pages": [
+                33,
+                34
+              ]
+            },
+            {
+              "id": "material-2-c11",
+              "title": {
+                "zh": "设备和位置独立性",
+                "en": "Device and location independence"
+              },
+              "explanation": {
+                "zh": "浏览器和互联网访问让用户不必与承载服务的设备同处一地，也无需在每台终端安装完整服务器软件；网络可达性仍是条件。",
+                "en": "Browser and Internet access decouple users from the hosting location and avoid installing full server software on every endpoint; network reachability remains necessary."
+              },
+              "pages": [
+                36
+              ]
+            },
+            {
+              "id": "material-2-c12",
+              "title": {
+                "zh": "冗余、可靠性与停机风险",
+                "en": "Redundancy, reliability and outage risk"
+              },
+              "explanation": {
+                "zh": "冗余站点可支持业务连续性与灾难恢复，但云服务仍可能中断。可靠性来自设计与约定，应同时考虑服务不可用时的应对。",
+                "en": "Redundant sites can support continuity and disaster recovery, but cloud services can still fail. Reliability depends on design and commitments, including responses to unavailability."
+              },
+              "pages": [
+                38
+              ]
+            },
+            {
+              "id": "material-2-c13",
+              "title": {
+                "zh": "动态扩展与性能瓶颈",
+                "en": "Dynamic scaling and bottlenecks"
+              },
+              "explanation": {
+                "zh": "通过按需、自助、细粒度配置资源应对负载；监测性能，结合松耦合Web服务和适合的数据并行设计，才可能减少瓶颈。更多资源并不自动修复串行瓶颈。",
+                "en": "On-demand, self-service provisioning adjusts capacity to load. Monitoring, loosely coupled services and suitable data-parallel design help address bottlenecks; more resources do not automatically remove serial limits."
+              },
+              "pages": [
+                39
+              ]
+            },
+            {
+              "id": "material-2-c14",
+              "title": {
+                "zh": "集中安全与控制权的权衡",
+                "en": "Security resources versus control"
+              },
+              "explanation": {
+                "zh": "服务商可能投入更多安全资源和访问日志，但用户也面临敏感数据控制权、审计日志可获得性和分布设备扩大后的复杂度问题。安全需要逐项评估。",
+                "en": "Providers may invest in security and access logs, while users face data-control, audit-access and distributed-device complexity concerns. Security must be evaluated explicitly."
+              },
+              "pages": [
+                40
+              ]
+            },
+            {
+              "id": "material-2-c15",
+              "title": {
+                "zh": "集中维护",
+                "en": "Centralized maintenance"
+              },
+              "explanation": {
+                "zh": "集中部署的云应用可由服务端统一维护和发布，使客户端较快获得改进，减少逐台终端安装维护工作。",
+                "en": "Centrally deployed applications can be maintained and released on the service side so clients receive improvements without repeated installation on every endpoint."
+              },
+              "pages": [
+                41
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-2-c1",
+          "to": "material-2-c3",
+          "relation": {
+            "zh": "共享服务通过资源池化提高利用率",
+            "en": "Shared services pool capacity to improve utilization"
+          }
+        },
+        {
+          "from": "material-2-c3",
+          "to": "material-2-c8",
+          "relation": {
+            "zh": "利用率变化影响总成本判断",
+            "en": "Utilization affects total-cost decisions"
+          }
+        },
+        {
+          "from": "material-2-c4",
+          "to": "material-2-c13",
+          "relation": {
+            "zh": "松耦合接口为按需扩展提供基础",
+            "en": "Loose interfaces support on-demand scaling"
+          }
+        },
+        {
+          "from": "material-2-c5",
+          "to": "material-2-c12",
+          "relation": {
+            "zh": "服务承诺需要配合恢复与冗余设计",
+            "en": "Service commitments need recovery and redundancy design"
+          }
+        },
+        {
+          "from": "material-2-c9",
+          "to": "material-2-c8",
+          "relation": {
+            "zh": "计量维度构成实际运营费用",
+            "en": "Metered dimensions form actual operating cost"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-2-q1",
+          "conceptIds": [
+            "material-2-c1"
+          ],
+          "prompt": {
+            "zh": "哪种情形最体现云计算的抽象？",
+            "en": "Which situation best illustrates cloud abstraction?"
+          },
+          "options": [
+            {
+              "zh": "用户调用在线服务，无需知道具体服务器位置",
+              "en": "A user calls an online service without knowing the physical server location"
+            },
+            {
+              "zh": "用户必须管理所有物理服务器的内部接线",
+              "en": "The user must manage physical server wiring"
+            },
+            {
+              "zh": "服务接口必须暴露每台主机的全部内部实现",
+              "en": "The service interface must expose every host implementation detail"
+            },
+            {
+              "zh": "用户获得服务后就同时获得物理服务器所有权",
+              "en": "Service access also transfers physical server ownership"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "抽象隐藏基础设施的实现细节而保留服务能力；硬件所有权或逐台操作不是云使用的必要条件。",
+            "en": "Abstraction hides implementation details while preserving service capabilities; hardware ownership and individual server control are not required."
+          },
+          "pages": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-2-q2",
+          "conceptIds": [
+            "material-2-c2"
+          ],
+          "prompt": {
+            "zh": "这些历史事件共同解释了什么变化？",
+            "en": "What common transition do these historical events explain?"
+          },
+          "options": [
+            {
+              "zh": "资源池化转向每个客户永久预留固定峰值容量",
+              "en": "Pooling gives way to permanently reserving each customer peak"
+            },
+            {
+              "zh": "服务消费模式转向以硬件所有权为访问前提",
+              "en": "Service consumption shifts to hardware ownership as an access prerequisite"
+            },
+            {
+              "zh": "远程统一服务转向每个客户端维护独立机房",
+              "en": "Remote services shift to each client maintaining a separate data centre"
+            },
+            {
+              "zh": "从自建专用资源走向可共享、按需消费的计算服务",
+              "en": "From dedicated owned resources to shared computing services consumed on demand"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "历史线索围绕公用服务、资源利用率与服务消费模式，而不是取消网络或共享。",
+            "en": "The historical thread concerns utilities, utilization and service consumption, not elimination of networking or sharing."
+          },
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "material-2-q3",
+          "conceptIds": [
+            "material-2-c3"
+          ],
+          "prompt": {
+            "zh": "多租户降低成本的主要机制是什么？",
+            "en": "How does multitenancy primarily reduce cost?"
+          },
+          "options": [
+            {
+              "zh": "只通过增加单台CPU频率降低所有空闲损耗",
+              "en": "Only increasing CPU frequency reduces all idle capacity"
+            },
+            {
+              "zh": "汇集需求、共享资源，减少为各自峰值预留的闲置容量",
+              "en": "Pool demand and resources to reduce idle capacity reserved for separate peaks"
+            },
+            {
+              "zh": "只把相同数量的专用服务器改成按月付款",
+              "en": "Only changing dedicated-server payment to monthly billing"
+            },
+            {
+              "zh": "每个租户都持续独占自己的峰值容量",
+              "en": "Each tenant continuously reserves its own peak capacity"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "池化使不同使用模式共享容量和成本；隔离仍然需要，资源共享不等于数据公开。",
+            "en": "Pooling shares capacity and cost across usage patterns; isolation is still required and resource sharing is not public data access."
+          },
+          "pages": [
+            14,
+            15,
+            37
+          ]
+        },
+        {
+          "id": "material-2-q4",
+          "conceptIds": [
+            "material-2-c4"
+          ],
+          "prompt": {
+            "zh": "两个独立云组件需要协作，最符合课件的做法是？",
+            "en": "How should two independent cloud components cooperate according to the lecture?"
+          },
+          "options": [
+            {
+              "zh": "通过定义清楚的API交换请求和数据",
+              "en": "Exchange requests and data through well-defined APIs"
+            },
+            {
+              "zh": "通过共享物理内存地址让跨站组件通信",
+              "en": "Use shared physical memory addresses across sites"
+            },
+            {
+              "zh": "让组件直接依赖对方私有数据库的内部表结构",
+              "en": "Make components depend directly on each other private database schema"
+            },
+            {
+              "zh": "把每个组件的代码复制到所有其他组件中",
+              "en": "Copy each component code into all the others"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "API给组件提供明确边界和协作方式；依赖物理内部实现会破坏抽象与可管理性。",
+            "en": "APIs provide boundaries and coordination; depending on physical internals undermines abstraction and manageability."
+          },
+          "pages": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "material-2-q5",
+          "conceptIds": [
+            "material-2-c5"
+          ],
+          "prompt": {
+            "zh": "客户要求可用性承诺和违约补偿，应重点检查什么？",
+            "en": "What should a customer inspect for availability commitments and remedies?"
+          },
+          "options": [
+            {
+              "zh": "只检查单次性能基准的最高值",
+              "en": "Check only the peak value of one benchmark"
+            },
+            {
+              "zh": "只检查供应商提供的实例类型数量",
+              "en": "Check only the number of provider instance types"
+            },
+            {
+              "zh": "服务级别协议及其测量条件",
+              "en": "The SLA and its measurement conditions"
+            },
+            {
+              "zh": "只检查服务网页是否能在本地打开",
+              "en": "Check only whether the service webpage opens locally"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "SLA才定义服务义务与条件；统一入口或营销描述不能代替合同中的质量标准。",
+            "en": "The SLA defines obligations and conditions; a unified entry point or marketing description does not replace quality terms."
+          },
+          "pages": [
+            20,
+            21,
+            27
+          ]
+        },
+        {
+          "id": "material-2-q6",
+          "conceptIds": [
+            "material-2-c6"
+          ],
+          "prompt": {
+            "zh": "将多个松耦合计算节点联合处理一个大型计算任务，最直接体现哪项？",
+            "en": "Combining loosely coupled nodes for a large computation most directly illustrates what?"
+          },
+          "options": [
+            {
+              "zh": "公用计算，因为其定义只关注按量交付",
+              "en": "Utility computing, defined around metered delivery"
+            },
+            {
+              "zh": "自治计算，因为其定义只关注自我配置",
+              "en": "Autonomic computing, defined around self-management"
+            },
+            {
+              "zh": "网格计算",
+              "en": "Grid computing"
+            },
+            {
+              "zh": "客户—服务器，因为其定义只区分请求方和服务方",
+              "en": "Client–server, defined around requester/provider roles"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "网格定义强调联合联网资源执行大任务；自我管理、用户界面和计费是不同维度。",
+            "en": "Grid computing emphasizes coordinating networked resources for large tasks; self-management, interfaces and billing are different dimensions."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-2-q7",
+          "conceptIds": [
+            "material-2-c7"
+          ],
+          "prompt": {
+            "zh": "“每个节点既是资源供应者又是消费者”描述的是？",
+            "en": "What does each node being both supplier and consumer describe?"
+          },
+          "options": [
+            {
+              "zh": "公用计算的按量计费规则",
+              "en": "Utility-computing metering rules"
+            },
+            {
+              "zh": "客户—服务器中的固定请求方角色",
+              "en": "A fixed requester role in client–server"
+            },
+            {
+              "zh": "大型机集中处理批量交易",
+              "en": "Centralized mainframe batch transactions"
+            },
+            {
+              "zh": "P2P架构",
+              "en": "P2P architecture"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "P2P节点具有双重角色；计量收费不能决定节点关系，大型机也不等于P2P。",
+            "en": "P2P gives nodes both roles; metering does not determine node relationships, and a mainframe is not P2P."
+          },
+          "pages": [
+            24
+          ]
+        },
+        {
+          "id": "material-2-q8",
+          "conceptIds": [
+            "material-2-c8"
+          ],
+          "prompt": {
+            "zh": "某应用长期稳定满载，企业自有机房很高效。最合理的成本结论是？",
+            "en": "An application is steadily busy and the existing data centre is efficient. What is the most defensible cost conclusion?"
+          },
+          "options": [
+            {
+              "zh": "只比较购买服务器的费用即可，不算持续运行费",
+              "en": "Compare server purchase cost only, excluding running cost"
+            },
+            {
+              "zh": "只比较云实例小时价，不计算迁移或数据传输",
+              "en": "Compare instance hourly rate only, excluding migration or transfer"
+            },
+            {
+              "zh": "比较总运营成本和前期投入，不能仅凭少买硬件断言云更便宜",
+              "en": "Compare total operating and upfront cost rather than assuming less hardware purchasing makes cloud cheaper"
+            },
+            {
+              "zh": "把所有现有机房成本一律视为可立即避免",
+              "en": "Treat all existing data-centre cost as immediately avoidable"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "课件明确区分节省CapEx与节省OpEx；工作负载和已有设施效率都会影响总成本。",
+            "en": "The lecture separates CapEx savings from OpEx savings; workload and existing efficiency affect total cost."
+          },
+          "pages": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            35
+          ]
+        },
+        {
+          "id": "material-2-q9",
+          "conceptIds": [
+            "material-2-c9"
+          ],
+          "prompt": {
+            "zh": "大量小对象下载为何可能在存储量没变时增加费用？",
+            "en": "Why can many small-object downloads increase cost without increasing stored data?"
+          },
+          "options": [
+            {
+              "zh": "存储容量会随每次读取永久翻倍",
+              "en": "Every read permanently doubles stored capacity"
+            },
+            {
+              "zh": "请求次数与传输量可能分别计费",
+              "en": "Request count and transfer volume may be billed separately"
+            },
+            {
+              "zh": "所有下载费用仅由实例CPU数量决定",
+              "en": "Download cost depends only on instance CPU count"
+            },
+            {
+              "zh": "GB月只要不变，请求和出站流量必定免费",
+              "en": "Unchanged GB-month storage guarantees free requests and egress"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "存储、请求和网络是不同计量维度，不能仅按文件总容量估算账单。",
+            "en": "Storage, requests and networking are distinct metering dimensions, so stored size alone cannot estimate the bill."
+          },
+          "pages": [
+            31,
+            42
+          ]
+        },
+        {
+          "id": "material-2-q10",
+          "conceptIds": [
+            "material-2-c10"
+          ],
+          "prompt": {
+            "zh": "临时实验环境能在需求变化时迅速创建和释放，最直接体现什么？",
+            "en": "Rapidly creating and releasing experimental environments primarily demonstrates what?"
+          },
+          "options": [
+            {
+              "zh": "敏捷性",
+              "en": "Agility"
+            },
+            {
+              "zh": "根据合同记录服务可用性百分比",
+              "en": "Record contractual service availability percentages"
+            },
+            {
+              "zh": "为同一数据对象保留多个副本",
+              "en": "Keep multiple copies of the same data object"
+            },
+            {
+              "zh": "按客户汇总每月用量",
+              "en": "Summarize monthly usage per customer"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "重新配置的速度支持试验和响应变化；它不会自动消除安全责任或网络时延。",
+            "en": "Reprovisioning speed supports experimentation and responsiveness; it does not automatically eliminate security duties or latency."
+          },
+          "pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "id": "material-2-q11",
+          "conceptIds": [
+            "material-2-c11"
+          ],
+          "prompt": {
+            "zh": "位置独立性最准确的含义是？",
+            "en": "What is the most accurate meaning of location independence?"
+          },
+          "options": [
+            {
+              "zh": "服务端可隐藏实现，因此数据没有物理驻留位置",
+              "en": "Hidden implementation means data has no physical residence"
+            },
+            {
+              "zh": "用户可跨地点访问，因此不需要网络连接",
+              "en": "Cross-location access removes the need for connectivity"
+            },
+            {
+              "zh": "用户换终端后就必须迁移整个服务端",
+              "en": "Changing client device requires migrating the whole server"
+            },
+            {
+              "zh": "可通过网络从不同位置访问服务",
+              "en": "Services can be accessed over the network from different locations"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "位置独立是访问方式的抽象，不是数据无物理位置、完全离线或免身份验证。",
+            "en": "Location independence abstracts access, not physical data location, connectivity or authentication."
+          },
+          "pages": [
+            36
+          ]
+        },
+        {
+          "id": "material-2-q12",
+          "conceptIds": [
+            "material-2-c12"
+          ],
+          "prompt": {
+            "zh": "关于多站点冗余，哪项成立？",
+            "en": "Which claim about multisite redundancy is valid?"
+          },
+          "options": [
+            {
+              "zh": "有SLA就能确保每次故障都被技术上阻止",
+              "en": "An SLA technically prevents every failure"
+            },
+            {
+              "zh": "可提高恢复能力，但不能保证永不停机",
+              "en": "It can improve recovery but cannot guarantee zero outages"
+            },
+            {
+              "zh": "只要有两个站点就不需要检查共同依赖",
+              "en": "Two sites remove the need to inspect shared dependencies"
+            },
+            {
+              "zh": "冗余副本数越多就不必考虑恢复流程",
+              "en": "More replicas remove the need for recovery procedures"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "冗余降低部分故障影响，仍有服务和依赖故障，所以不能把“云”当作绝对保证。",
+            "en": "Redundancy reduces some failure effects but service and dependency failures remain; cloud is not an absolute guarantee."
+          },
+          "pages": [
+            38
+          ]
+        },
+        {
+          "id": "material-2-q13",
+          "conceptIds": [
+            "material-2-c13"
+          ],
+          "prompt": {
+            "zh": "负载增加后响应变慢，合理的扩展方式是什么？",
+            "en": "What is a sensible response to slower performance under higher load?"
+          },
+          "options": [
+            {
+              "zh": "先取消组件接口边界，让所有工作在同一串行步骤运行",
+              "en": "Remove component boundaries and run all work as one serial step"
+            },
+            {
+              "zh": "先监测瓶颈，再按需配置资源并审视并行设计",
+              "en": "Measure bottlenecks, then provision resources and review parallel design"
+            },
+            {
+              "zh": "只增加存储容量而不测量实际请求负载",
+              "en": "Add storage without measuring request load"
+            },
+            {
+              "zh": "只增加实例数量而不检查串行或共享资源瓶颈",
+              "en": "Add instances without checking serial/shared-resource limits"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "扩展需要瓶颈证据及合适架构；盲目加资源未必改善限制点。",
+            "en": "Scaling needs evidence and suitable architecture; blind resource increases may not improve the limiting factor."
+          },
+          "pages": [
+            39
+          ]
+        },
+        {
+          "id": "material-2-q14",
+          "conceptIds": [
+            "material-2-c14"
+          ],
+          "prompt": {
+            "zh": "“服务商安全投入更多”能推出哪个结论？",
+            "en": "What follows from greater provider security investment?"
+          },
+          "options": [
+            {
+              "zh": "集中数据后设备数量不再影响安全复杂度",
+              "en": "Centralized data means device count no longer affects security complexity"
+            },
+            {
+              "zh": "存在访问日志就表示用户一定能获取全部审计记录",
+              "en": "Access logs imply the user can obtain every audit record"
+            },
+            {
+              "zh": "提供商负责基础设施，因此用户的数据权限设置无需检查",
+              "en": "Provider infrastructure responsibility removes the need to check data permissions"
+            },
+            {
+              "zh": "可能改善安全能力，但仍须核查数据控制与审计访问",
+              "en": "Security capability may improve, but data control and audit access still need checking"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "投入是潜在优势，并不消除控制权、审计及分布式环境的风险。",
+            "en": "Investment is a potential advantage, not removal of control, audit or distributed-environment risks."
+          },
+          "pages": [
+            40
+          ]
+        },
+        {
+          "id": "material-2-q15",
+          "conceptIds": [
+            "material-2-c15"
+          ],
+          "prompt": {
+            "zh": "哪项最能解释云应用较易维护？",
+            "en": "What best explains easier maintenance of a cloud application?"
+          },
+          "options": [
+            {
+              "zh": "服务端统一更新可让多个客户端获得改进",
+              "en": "One server-side update can deliver improvements to many clients"
+            },
+            {
+              "zh": "维护成本只取决于物理服务器的数量",
+              "en": "Maintenance cost depends only on physical server count"
+            },
+            {
+              "zh": "每次修改必须由全部用户各自安装服务端补丁",
+              "en": "Every user must install server patches for each change"
+            },
+            {
+              "zh": "统一部署意味着无需兼容性与回归检查",
+              "en": "Central deployment removes compatibility/regression checks"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "集中发布减少重复安装工作，但不会保证无缺陷或取消备份需要。",
+            "en": "Central delivery reduces repeated installations but does not guarantee defect-free software or remove backup needs."
+          },
+          "pages": [
+            41
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          17,
+          18,
+          20,
+          21,
+          23,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2,
+              7,
+              13,
+              16,
+              19,
+              22,
+              25,
+              32,
+              43
+            ],
+            "reason": {
+              "zh": "封面、目录、章节分隔、重复回顾或非教学行政信息；知识已合并到相应主题。",
+              "en": "Cover, agenda, divider, repeated recap, or non-teaching administration; repeated knowledge is consolidated under its topic."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "历史年份和厂商例子按课件叙述整理；利用率、合同条件和成本优势不是对所有当前服务的保证。",
+        "en": "Historical dates and vendor examples follow the lecture; utilization figures, contract terms and cost benefits are not guarantees for every current service."
+      },
+      "sourceSha256": "360c9c075fd7ed8720004cdd35fa574aa85d64a25373731fc7f8ab370e2cb325"
+    },
+    {
+      "resourceId": "material-3",
+      "overview": {
+        "zh": "用硬件演变、功耗限制和多核设计解释并行计算的必要性，再比较并行与分布式系统。",
+        "en": "Use hardware evolution, power limits and multicore design to explain parallel computing, then compare parallel and distributed systems."
+      },
+      "groups": [
+        {
+          "id": "material-3-g1",
+          "title": {
+            "zh": "硬件演进与多核动机",
+            "en": "Hardware evolution and multicore motivation"
+          },
+          "concepts": [
+            {
+              "id": "material-3-c1",
+              "title": {
+                "zh": "集成电路与处理器演进",
+                "en": "Integrated circuits and processor evolution"
+              },
+              "explanation": {
+                "zh": "微处理器把CPU制作在单个集成电路上。历史图展示器件更小、晶体管更密、性能提升的趋势；趋势不能简单等同于每个应用自动线性提速。",
+                "en": "A microprocessor implements a CPU on an integrated circuit. Historical charts show smaller devices, denser transistors and rising performance, not an automatic linear speedup for every application."
+              },
+              "pages": [
+                2,
+                3,
+                4,
+                6,
+                7
+              ]
+            },
+            {
+              "id": "material-3-c2",
+              "title": {
+                "zh": "频率、功耗与设计限制",
+                "en": "Frequency, power and design limits"
+              },
+              "explanation": {
+                "zh": "继续提高单核频率与深流水线会遇到发热、耗电、验证复杂度和机房冷却成本。多线程应用增长也推动体系结构转向更多并行。",
+                "en": "Higher single-core frequency and deeper pipelines face heat, power, verification and cooling costs; growing multithreaded workloads also motivate parallel architecture."
+              },
+              "pages": [
+                8,
+                9
+              ]
+            },
+            {
+              "id": "material-3-c3",
+              "title": {
+                "zh": "CMP与性能—功耗权衡",
+                "en": "CMP and performance–power trade-offs"
+              },
+              "explanation": {
+                "zh": "CMP把多个处理核心放在一片芯片、一个处理器插槽上。课件用性能≈频率×IPC和动态功耗随电压平方、频率及电容变化的关系解释低频多核的潜力；示例比例有假设。",
+                "en": "CMP places multiple cores on a chip in one processor socket. The lecture uses performance ≈ frequency × IPC and dynamic-power dependence on voltage squared, frequency and capacitance to explain lower-frequency multicore potential; numerical ratios rely on assumptions."
+              },
+              "pages": [
+                10,
+                11,
+                12,
+                13
+              ]
+            },
+            {
+              "id": "material-3-c4",
+              "title": {
+                "zh": "核心、线程与GPU组织",
+                "en": "Cores, threads and GPU organization"
+              },
+              "explanation": {
+                "zh": "多核拥有多个执行核心；硬件多线程可让一个核心支持多个线程，二者不可混为一谈。GPU图把线程组成块并分配给多个多处理器，体现大量并行工作组织。",
+                "en": "Multicore provides multiple execution cores; hardware multithreading supports multiple threads on a core and is not the same thing. The GPU diagram groups threads into blocks distributed across multiprocessors."
+              },
+              "pages": [
+                5,
+                14,
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-3-g2",
+          "title": {
+            "zh": "并行、分布式与价值判断",
+            "en": "Parallelism, distribution and value"
+          },
+          "concepts": [
+            {
+              "id": "material-3-c5",
+              "title": {
+                "zh": "并行计算与机器形态",
+                "en": "Parallel computing and machine forms"
+              },
+              "explanation": {
+                "zh": "并行计算用多个处理器协作缩短任务时间。典型机器包括通过高速网络连接的集群、共享内存多处理器SMP和单芯片多核心CMP。",
+                "en": "Parallel computing uses multiple processors cooperatively to reduce task time. Examples include high-speed-network clusters, shared-memory SMPs and single-chip CMPs."
+              },
+              "pages": [
+                16,
+                17
+              ]
+            },
+            {
+              "id": "material-3-c6",
+              "title": {
+                "zh": "分布式系统与资源共享",
+                "en": "Distributed systems and resource sharing"
+              },
+              "explanation": {
+                "zh": "分布式系统由自治计算机联网协作，分享处理器、存储、打印机或数据库等资源，从客户—服务器到集群、网格都有实例。",
+                "en": "A distributed system connects autonomous computers that cooperate and share processors, storage, printers or databases; examples range from client–server systems to clusters and grids."
+              },
+              "pages": [
+                18,
+                19
+              ]
+            },
+            {
+              "id": "material-3-c7",
+              "title": {
+                "zh": "并行与分布式的交集和差异",
+                "en": "Overlap and differences"
+              },
+              "explanation": {
+                "zh": "二者都有多个互连处理单元并发协作。课件将并行侧重单应用加速、较细粒度和紧耦合，分布式侧重资源共享与吞吐、较粗粒度和异构开放环境；实际系统可重叠。",
+                "en": "Both coordinate concurrent work across connected processors. The lecture emphasizes single-application speedup and tighter/finer-grained organization for parallel systems, versus sharing, throughput and looser heterogeneous organization for distributed systems; real systems can overlap."
+              },
+              "pages": [
+                20,
+                21,
+                22,
+                23
+              ]
+            },
+            {
+              "id": "material-3-c8",
+              "title": {
+                "zh": "通信、调度、粒度与动机",
+                "en": "Communication, scheduling, granularity and motivations"
+              },
+              "explanation": {
+                "zh": "并行/分布式设计都要处理进程通信、资源管理、调度、负载均衡和计算粒度。采用动机包括性能、性价比、资源共享、可用性、增量扩容和利用闲置算力。",
+                "en": "Both designs handle communication, resource management, scheduling, load balancing and granularity. Motivations include performance, price/performance, sharing, availability, incremental growth and using idle capacity."
+              },
+              "pages": [
+                20,
+                24
+              ]
+            },
+            {
+              "id": "material-3-c9",
+              "title": {
+                "zh": "成本—完成时间计算",
+                "en": "Cost versus completion-time calculation"
+              },
+              "explanation": {
+                "zh": "课件例题中A每小时完成10项、收费100；B每小时2项、收费15。做10项时A用1小时花100，B用5小时花75；若提前每小时价值6，A提前4小时只带来24价值，仍差1。",
+                "en": "In the lecture example A completes 10 jobs/hour for 100, while B completes 2/hour for 15. Ten jobs cost A 100 in one hour and B 75 in five hours. Valuing four saved hours at 6 yields 24, one less than the extra charge."
+              },
+              "pages": [
+                25
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-3-c1",
+          "to": "material-3-c2",
+          "relation": {
+            "zh": "硬件演进遇到功耗和复杂度边界",
+            "en": "Evolution encounters power and complexity limits"
+          }
+        },
+        {
+          "from": "material-3-c2",
+          "to": "material-3-c3",
+          "relation": {
+            "zh": "限制推动多核设计与功耗权衡",
+            "en": "Limits motivate multicore trade-offs"
+          }
+        },
+        {
+          "from": "material-3-c4",
+          "to": "material-3-c5",
+          "relation": {
+            "zh": "多核心为并行程序提供执行资源",
+            "en": "Multiple cores supply execution resources"
+          }
+        },
+        {
+          "from": "material-3-c5",
+          "to": "material-3-c7",
+          "relation": {
+            "zh": "与分布式系统比较目标和组织方式",
+            "en": "Compare goals and organization with distribution"
+          }
+        },
+        {
+          "from": "material-3-c8",
+          "to": "material-3-c9",
+          "relation": {
+            "zh": "技术动机还需成本与时间量化",
+            "en": "Motivations also require cost–time quantification"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-3-q1",
+          "conceptIds": [
+            "material-3-c1"
+          ],
+          "prompt": {
+            "zh": "微处理器的定义关注哪一点？",
+            "en": "What defines a microprocessor here?"
+          },
+          "options": [
+            {
+              "zh": "只包含输入输出接口而不执行指令的电路",
+              "en": "A circuit with only I/O that executes no instructions"
+            },
+            {
+              "zh": "多个完整计算机通过网络组合成一个集群",
+              "en": "Several whole computers linked into a cluster"
+            },
+            {
+              "zh": "CPU实现在集成电路上",
+              "en": "A CPU implemented on an integrated circuit"
+            },
+            {
+              "zh": "任何带屏幕和键盘的通用计算机",
+              "en": "Any general-purpose computer with a screen and keyboard"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "集成是定义重点，联网规模、机械实现或无指令都不是其定义。",
+            "en": "Integration is the defining point, not network size, mechanical implementation or absence of instructions."
+          },
+          "pages": [
+            2,
+            3,
+            4,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "material-3-q2",
+          "conceptIds": [
+            "material-3-c2"
+          ],
+          "prompt": {
+            "zh": "厂商转向多核的重要原因是什么？",
+            "en": "What is an important reason for the move to multicore?"
+          },
+          "options": [
+            {
+              "zh": "增加核心必定能让所有串行程序线性加速",
+              "en": "Adding cores guarantees linear speedup for serial programs"
+            },
+            {
+              "zh": "只有网络带宽而没有功耗约束推动变化",
+              "en": "Only network bandwidth, not power limits, motivates the change"
+            },
+            {
+              "zh": "单纯提高频率受功耗、发热和设计复杂度限制",
+              "en": "Raising frequency alone is limited by power, heat and design complexity"
+            },
+            {
+              "zh": "硬件线程数与物理核心数在所有芯片中相同",
+              "en": "Hardware thread count always equals physical core count"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "功耗与设计约束使频率提升不能无限延续；多核也仍要求可并行软件。",
+            "en": "Power and design constraints limit frequency growth; multicore still requires parallelizable software."
+          },
+          "pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "material-3-q3",
+          "conceptIds": [
+            "material-3-c3"
+          ],
+          "prompt": {
+            "zh": "评价“核心翻倍，性能必翻倍”应怎样做？",
+            "en": "How should doubling cores doubles performance be evaluated?"
+          },
+          "options": [
+            {
+              "zh": "把示例中的功耗比例应用于所有处理器和工作负载",
+              "en": "Apply the example power ratio to every processor and workload"
+            },
+            {
+              "zh": "只统计晶体管数量，忽略频率与软件",
+              "en": "Count transistors only, ignoring frequency and software"
+            },
+            {
+              "zh": "核查程序并行性及频率、IPC和功耗假设",
+              "en": "Check software parallelism and frequency, IPC and power assumptions"
+            },
+            {
+              "zh": "只比较主频，忽略每周期工作量和可并行部分",
+              "en": "Compare clock rates only, ignoring IPC and parallelizable work"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "多核有潜力，但核心数不是性能的唯一因素；课件的比例是教学模型。",
+            "en": "Multicore has potential, but core count is not the only performance factor; the ratios are teaching models."
+          },
+          "pages": [
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "id": "material-3-q4",
+          "conceptIds": [
+            "material-3-c4"
+          ],
+          "prompt": {
+            "zh": "一颗芯片有2核，每核支持2线程，总线程数与核心数分别是？",
+            "en": "A chip has two cores supporting two threads each. What are the thread and core counts?"
+          },
+          "options": [
+            {
+              "zh": "4线程、4核心",
+              "en": "4 threads and 4 cores"
+            },
+            {
+              "zh": "1线程、2核心",
+              "en": "1 thread and 2 cores"
+            },
+            {
+              "zh": "4线程、2核心",
+              "en": "4 threads and 2 cores"
+            },
+            {
+              "zh": "2线程、4核心",
+              "en": "2 threads and 4 cores"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "线程/芯片=核心数×每核线程数；线程支持不等于增加相同数量的物理核心。",
+            "en": "Threads per chip equal cores times threads per core; thread support does not create the same number of physical cores."
+          },
+          "pages": [
+            5,
+            14,
+            15
+          ]
+        },
+        {
+          "id": "material-3-q5",
+          "conceptIds": [
+            "material-3-c5"
+          ],
+          "prompt": {
+            "zh": "哪项正确区分SMP与CMP的关注点？",
+            "en": "Which correctly distinguishes the focus of SMP and CMP?"
+          },
+          "options": [
+            {
+              "zh": "SMP强调对称共享内存组织，CMP强调同芯片多个核心",
+              "en": "SMP emphasizes symmetric shared-memory organization; CMP emphasizes multiple on-chip cores"
+            },
+            {
+              "zh": "SMP强调同一芯片，CMP强调远程异构资源",
+              "en": "SMP means same-chip integration; CMP means remote heterogeneous resources"
+            },
+            {
+              "zh": "SMP专指消息传递软件，CMP专指共享数据锁",
+              "en": "SMP means messaging software; CMP means shared-data locks"
+            },
+            {
+              "zh": "SMP一定是单核，而CMP一定有分布式内存",
+              "en": "SMP must be single-core; CMP must have distributed memory"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "SMP描述系统组织，CMP描述芯片集成；二者不是互斥的所有层次分类。",
+            "en": "SMP describes system organization and CMP chip integration; they are not exclusive labels across all abstraction levels."
+          },
+          "pages": [
+            16,
+            17
+          ]
+        },
+        {
+          "id": "material-3-q6",
+          "conceptIds": [
+            "material-3-c6"
+          ],
+          "prompt": {
+            "zh": "跨多个自治机器共享数据库和计算资源，最直接体现什么？",
+            "en": "Sharing databases and computing across autonomous machines primarily illustrates what?"
+          },
+          "options": [
+            {
+              "zh": "一个核心内通过时间片调度的多个线程",
+              "en": "Several time-sliced threads inside one core"
+            },
+            {
+              "zh": "分布式系统",
+              "en": "A distributed system"
+            },
+            {
+              "zh": "CPU内部用流水线重叠指令阶段",
+              "en": "A CPU overlapping instruction stages in a pipeline"
+            },
+            {
+              "zh": "一条向量指令处理多个连续数组元素",
+              "en": "One vector instruction processing consecutive elements"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "自治计算机互连、协作和资源共享构成分布式系统的关键。",
+            "en": "Autonomous connected computers, cooperation and shared resources are the defining features."
+          },
+          "pages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-3-q7",
+          "conceptIds": [
+            "material-3-c7"
+          ],
+          "prompt": {
+            "zh": "哪组目标最符合课件的对比？",
+            "en": "Which goals match the lecture comparison?"
+          },
+          "options": [
+            {
+              "zh": "并行必然无通信，分布式必然共享一块物理内存",
+              "en": "Parallel has no communication; distributed must share one physical memory"
+            },
+            {
+              "zh": "并行侧重单任务加速；分布式侧重跨资源共享与吞吐",
+              "en": "Parallel emphasizes one task speedup; distributed emphasizes resource sharing and throughput"
+            },
+            {
+              "zh": "并行只关注资源共享，分布式只关注单程序延迟",
+              "en": "Parallel only concerns sharing; distributed only single-program latency"
+            },
+            {
+              "zh": "并行与分布式必须使用完全不同的硬件且不能重叠",
+              "en": "Parallel and distributed must use disjoint hardware without overlap"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "目标和耦合程度提供区别，网络通信、资源管理和负载均衡则是共同问题。",
+            "en": "Goals and coupling distinguish emphases, while communication, resource management and load balancing are shared concerns."
+          },
+          "pages": [
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "id": "material-3-q8",
+          "conceptIds": [
+            "material-3-c8"
+          ],
+          "prompt": {
+            "zh": "把很多很小的任务分到远程机器后变慢，首先该检查什么？",
+            "en": "After distributing many tiny tasks remotely, execution slows. What should be examined first?"
+          },
+          "options": [
+            {
+              "zh": "把吞吐增加直接当作单个任务延迟减少",
+              "en": "Treat higher throughput as lower single-task latency"
+            },
+            {
+              "zh": "通信开销相对计算粒度及负载分配",
+              "en": "Communication overhead relative to granularity and load distribution"
+            },
+            {
+              "zh": "只统计总任务数量，不检查每项成本",
+              "en": "Count tasks without measuring per-task cost"
+            },
+            {
+              "zh": "只比较每台机器的标称主频",
+              "en": "Compare only nominal CPU clock rates"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "任务过细会让通信占比增大，负载不均也会造成等待；这是两类系统共同的设计问题。",
+            "en": "Tiny tasks can make communication dominant and imbalance creates waiting; both are shared design concerns."
+          },
+          "pages": [
+            20,
+            24
+          ]
+        },
+        {
+          "id": "material-3-q9",
+          "conceptIds": [
+            "material-3-c9"
+          ],
+          "prompt": {
+            "zh": "按例题给定价格和提前收益，哪项计算正确？",
+            "en": "Which calculation follows the example prices and time benefit?"
+          },
+          "options": [
+            {
+              "zh": "B用2小时花30",
+              "en": "B takes 2 hours and costs 30"
+            },
+            {
+              "zh": "A只需付10，因此必优",
+              "en": "A costs only 10 and must win"
+            },
+            {
+              "zh": "提前4小时的价值为6",
+              "en": "Four hours saved are worth 6"
+            },
+            {
+              "zh": "A多付25、节省时间价值24，因此B净优1",
+              "en": "A costs 25 more and saves time worth 24, so B is better by 1"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "10/10=1小时，10/2=5小时；比较额外费用25与4×6=24。该结论只适用给定假设。",
+            "en": "10/10=1 hour and 10/2=5 hours; compare an extra 25 with 4×6=24. The conclusion depends on the stated assumptions."
+          },
+          "pages": [
+            25
+          ]
+        },
+        {
+          "id": "material-3-q10",
+          "conceptIds": [
+            "material-3-c4"
+          ],
+          "pages": [
+            5
+          ],
+          "prompt": {
+            "zh": "GPU架构示意中的线程块如何组织工作？",
+            "en": "How does the GPU diagram organize thread blocks?"
+          },
+          "options": [
+            {
+              "zh": "把每个线程直接等同于一台独立PC",
+              "en": "Equate each thread with a separate PC"
+            },
+            {
+              "zh": "把线程分组为块并分配到多个多处理器",
+              "en": "Group threads into blocks distributed to multiprocessors"
+            },
+            {
+              "zh": "用线程块数量直接代表网络路由跳数",
+              "en": "Treat block count as routing-hop count"
+            },
+            {
+              "zh": "所有线程块必须顺序运行在唯一一个标量寄存器",
+              "en": "Run every block sequentially in one scalar register"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "图把Grid划为线程块并映射到MP；软件分组、执行资源和网络拓扑不能互相替代。",
+            "en": "The diagram divides a grid into blocks mapped to MPs; software groups, execution resources and network topology are different concepts."
+          }
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1
+            ],
+            "reason": {
+              "zh": "封面、目录、章节分隔、重复回顾或非教学行政信息；知识已合并到相应主题。",
+              "en": "Cover, agenda, divider, repeated recap, or non-teaching administration; repeated knowledge is consolidated under its topic."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "图表中的处理器数量、年代和性能数字是历史教学例子；多核性能提升取决于程序是否能并行。",
+        "en": "Processor counts, dates and performance figures are historical examples; multicore gains depend on program parallelism."
+      },
+      "sourceSha256": "1830656608d2fbc70f78669f9f3a8be94e1a64e318da6fed25831cbd9bbfb81f"
+    },
+    {
+      "resourceId": "material-4",
+      "overview": {
+        "zh": "在云基础概念上比较服务责任层次、部署模型、技术支撑和采用风险。",
+        "en": "Build on cloud basics to compare service responsibilities, deployment models, enabling technologies and adoption risks."
+      },
+      "groups": [
+        {
+          "id": "material-4-g1",
+          "title": {
+            "zh": "技术支撑与云特征",
+            "en": "Enablers and cloud characteristics"
+          },
+          "concepts": [
+            {
+              "id": "material-4-c1",
+              "title": {
+                "zh": "云的支撑技术",
+                "en": "Cloud enabling technologies"
+              },
+              "explanation": {
+                "zh": "网格和集群提供资源协作，公用计算支持按量使用，虚拟化抽象计算资源，面向服务架构组织服务接口。它们支持云模式，但任一单独技术不等于完整云。",
+                "en": "Grids/clusters coordinate resources, utility computing supports metered use, virtualization abstracts resources and SOA organizes service interfaces. They enable cloud delivery but no single technology is the whole cloud."
+              },
+              "pages": [
+                3,
+                5
+              ]
+            },
+            {
+              "id": "material-4-c2",
+              "title": {
+                "zh": "五项核心特征",
+                "en": "Five core characteristics"
+              },
+              "explanation": {
+                "zh": "按需自助允许用户自行获取服务；广泛网络访问支持多种终端；资源池化共享容量；快速弹性按负载调整容量；可计量服务记录并报告使用。",
+                "en": "On-demand self-service lets users provision services; broad network access supports endpoints; resource pooling shares capacity; rapid elasticity adjusts capacity; measured service tracks and reports use."
+              },
+              "pages": [
+                7
+              ]
+            },
+            {
+              "id": "material-4-c3",
+              "title": {
+                "zh": "分层服务带来的收益",
+                "en": "Benefits from layered services"
+              },
+              "explanation": {
+                "zh": "课件将成本、敏捷、灵活扩展和高可用性与存储/数据库、Web前端、队列和计费虚拟机等组件联系起来。收益取决于组件组合和系统设计。",
+                "en": "The lecture connects cost, agility, scaling and availability with storage/databases, web frontends, queues and billing VMs. Benefits depend on component composition and design."
+              },
+              "pages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-4-g2",
+          "title": {
+            "zh": "服务模型与部署模型",
+            "en": "Service and deployment models"
+          },
+          "concepts": [
+            {
+              "id": "material-4-c4",
+              "title": {
+                "zh": "IaaS、PaaS与应用服务",
+                "en": "IaaS, PaaS and application services"
+              },
+              "explanation": {
+                "zh": "IaaS提供基础计算资源，PaaS提供应用开发运行平台，应用服务/SaaS提供可直接使用的软件。课件以EC2、App Engine和Web/CRM应用举例，关键是消费者管理范围不同。",
+                "en": "IaaS supplies infrastructure, PaaS an application development/runtime platform, and application services/SaaS ready-to-use software. EC2, App Engine and web/CRM applications illustrate differing consumer management scopes."
+              },
+              "pages": [
+                11,
+                12
+              ]
+            },
+            {
+              "id": "material-4-c5",
+              "title": {
+                "zh": "公有云与私有云",
+                "en": "Public and private cloud"
+              },
+              "explanation": {
+                "zh": "公有云面向服务商的外部客户；私有云服务特定组织，可在本地也可外部托管。因此“私有”不直接等同于“本地机房”。",
+                "en": "Public cloud serves provider customers; private cloud serves a particular organization and may be on-premises or externally hosted. Private does not automatically mean on-premises."
+              },
+              "pages": [
+                14,
+                15
+              ]
+            },
+            {
+              "id": "material-4-c6",
+              "title": {
+                "zh": "社区云与混合云",
+                "en": "Community and hybrid clouds"
+              },
+              "explanation": {
+                "zh": "社区云围绕共同需求或愿景服务一个群体；混合云组合两种或以上部署模型。不要把“使用两个同类实例”误认为混合云。",
+                "en": "A community cloud serves a group with common needs or vision; a hybrid cloud combines two or more deployment models. Two instances of the same type do not alone create hybrid cloud."
+              },
+              "pages": [
+                16,
+                17
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-4-g3",
+          "title": {
+            "zh": "基础设施、挑战与选择",
+            "en": "Infrastructure, challenges and selection"
+          },
+          "concepts": [
+            {
+              "id": "material-4-c7",
+              "title": {
+                "zh": "云基础设施四部分",
+                "en": "Four infrastructure components"
+              },
+              "explanation": {
+                "zh": "物理设施提供真实计算/网络/存储，虚拟设施抽象资源，应用和平台软件承载服务，管理与服务创建工具负责配置和运营；这些属于不同层次。",
+                "en": "Physical infrastructure provides actual compute/network/storage, virtual infrastructure abstracts it, application/platform software hosts services, and management/service-creation tools configure and operate them."
+              },
+              "pages": [
+                19
+              ]
+            },
+            {
+              "id": "material-4-c8",
+              "title": {
+                "zh": "消费者与提供者的不同挑战",
+                "en": "Consumer and provider challenges"
+              },
+              "explanation": {
+                "zh": "消费者关注数据控制、复制、时延、应用兼容和厂商锁定；提供者关注SLA履约、软件许可和专有API。分析方案时应分别列出双方风险。",
+                "en": "Consumers face data control, replication, latency, application compatibility and lock-in; providers face SLA compliance, licensing and proprietary APIs. Evaluate risks for both sides."
+              },
+              "pages": [
+                21
+              ]
+            },
+            {
+              "id": "material-4-c9",
+              "title": {
+                "zh": "采用云的检查顺序",
+                "en": "Cloud-adoption checks"
+              },
+              "explanation": {
+                "zh": "选择部署模型后，还要核查应用适用性、财务收益、服务商及SLA。把需求与限制逐项对应，避免仅凭厂商品牌或“云更便宜”的口号决策。",
+                "en": "Check deployment model, application suitability, financial benefit, provider and SLA. Map needs to constraints rather than deciding only by brand or a cheaper-cloud slogan."
+              },
+              "pages": [
+                23,
+                24
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-4-c1",
+          "to": "material-4-c2",
+          "relation": {
+            "zh": "支撑技术实现可识别的云服务特征",
+            "en": "Enablers implement recognizable cloud characteristics"
+          }
+        },
+        {
+          "from": "material-4-c4",
+          "to": "material-4-c5",
+          "relation": {
+            "zh": "服务层次与部署范围需分别选择",
+            "en": "Choose service level and deployment scope separately"
+          }
+        },
+        {
+          "from": "material-4-c5",
+          "to": "material-4-c6",
+          "relation": {
+            "zh": "私有与公有可以组合为混合部署",
+            "en": "Private and public environments can form hybrid deployment"
+          }
+        },
+        {
+          "from": "material-4-c8",
+          "to": "material-4-c9",
+          "relation": {
+            "zh": "风险清单进入采用决策",
+            "en": "Risks feed adoption decisions"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-4-q1",
+          "conceptIds": [
+            "material-4-c1"
+          ],
+          "prompt": {
+            "zh": "为什么装了虚拟机不一定就是完整云服务？",
+            "en": "Why does installing a virtual machine not necessarily create a full cloud service?"
+          },
+          "options": [
+            {
+              "zh": "虚拟化只是支撑技术，还需服务交付与云特征",
+              "en": "Virtualization is an enabler; service delivery and cloud characteristics are also needed"
+            },
+            {
+              "zh": "所有虚拟机都必然属于公有云部署",
+              "en": "Every VM necessarily belongs to public cloud"
+            },
+            {
+              "zh": "只要网络可达就等于完整的云服务管理",
+              "en": "Network reachability alone supplies full cloud-service management"
+            },
+            {
+              "zh": "虚拟机数量多就必然具备按需自助与计量",
+              "en": "Many VMs automatically provide self-service and metering"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "虚拟化抽象资源，完整云还涉及按需服务、池化、网络访问和计量等组织能力。",
+            "en": "Virtualization abstracts resources, while cloud also involves on-demand delivery, pooling, network access and metering."
+          },
+          "pages": [
+            3,
+            5
+          ]
+        },
+        {
+          "id": "material-4-q2",
+          "conceptIds": [
+            "material-4-c2"
+          ],
+          "prompt": {
+            "zh": "哪组情形正确对应弹性与计量？",
+            "en": "Which pair correctly matches elasticity and measurement?"
+          },
+          "options": [
+            {
+              "zh": "按负载增减容量；记录各应用资源用量",
+              "en": "Adjust capacity with load; record each application resource use"
+            },
+            {
+              "zh": "所有租户独占硬件是资源池化，人工审批每次操作是自助",
+              "en": "Dedicated hardware per tenant is pooling; manual approval is self-service"
+            },
+            {
+              "zh": "固定峰值容量是弹性，按固定名额收费是资源池化",
+              "en": "Fixed peak capacity is elasticity; fixed quotas are pooling"
+            },
+            {
+              "zh": "记录使用量是弹性，调整容量是计量",
+              "en": "Recording usage is elasticity; adjusting capacity is metering"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "弹性关注容量变化，计量关注用量可见性；二者是不同但互补的能力。",
+            "en": "Elasticity concerns capacity change and metering usage visibility; they are separate complementary capabilities."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-4-q3",
+          "conceptIds": [
+            "material-4-c3"
+          ],
+          "prompt": {
+            "zh": "把Web前端、队列和数据库解耦后，可优先获得哪种设计机会？",
+            "en": "What design opportunity arises from separating frontend, queue and database?"
+          },
+          "options": [
+            {
+              "zh": "要求数据库、队列和前端必须使用完全相同实例",
+              "en": "Require database, queue and frontend to use identical instances"
+            },
+            {
+              "zh": "按组件需求独立组合和调整资源",
+              "en": "Compose and adjust resources according to component needs"
+            },
+            {
+              "zh": "把各组件的峰值容量永久设置为相同数值",
+              "en": "Permanently assign every component the same peak capacity"
+            },
+            {
+              "zh": "只统计系统总负载，忽略组件间差异",
+              "en": "Measure only aggregate load, ignoring component differences"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "分层组件使资源与需求匹配更灵活；收益仍需设计，不会自动取消故障与接口问题。",
+            "en": "Layered components allow more flexible resource matching; benefits still require design and do not remove faults or interface needs."
+          },
+          "pages": [
+            9
+          ]
+        },
+        {
+          "id": "material-4-q4",
+          "conceptIds": [
+            "material-4-c4"
+          ],
+          "prompt": {
+            "zh": "团队只想使用现成CRM、不开发或管理底层运行平台，应选择哪一层？",
+            "en": "A team wants a ready-made CRM without developing or managing its runtime. Which layer fits?"
+          },
+          "options": [
+            {
+              "zh": "应用服务/SaaS",
+              "en": "Application service/SaaS"
+            },
+            {
+              "zh": "自行管理OS和软件的IaaS虚拟机",
+              "en": "IaaS VMs where the team manages OS and software"
+            },
+            {
+              "zh": "只提供内部专用基础设施而没有CRM应用的私有云",
+              "en": "A private cloud providing infrastructure without a CRM app"
+            },
+            {
+              "zh": "需要自行开发部署应用的PaaS运行环境",
+              "en": "A PaaS runtime where the team develops and deploys the app"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "SaaS直接交付应用；PaaS仍需要部署应用，IaaS通常留下更多软件管理责任。",
+            "en": "SaaS delivers the application; PaaS still requires an application and IaaS leaves more software management work."
+          },
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "material-4-q5",
+          "conceptIds": [
+            "material-4-c5"
+          ],
+          "prompt": {
+            "zh": "某组织专用的云由外部机房托管，按课件可能是什么？",
+            "en": "An organization-exclusive cloud is hosted externally. What can it be?"
+          },
+          "options": [
+            {
+              "zh": "私有云",
+              "en": "Private cloud"
+            },
+            {
+              "zh": "社区云，因为任何外部托管都服务共同群体",
+              "en": "Community cloud because every external host serves a community"
+            },
+            {
+              "zh": "混合云，因为外部托管必然组合两种模型",
+              "en": "Hybrid cloud because external hosting always combines models"
+            },
+            {
+              "zh": "公有云，因为托管地点是唯一分类标准",
+              "en": "Public cloud because hosting location is the sole criterion"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "部署地点和使用群体是不同维度，课件明确列出externally-hosted private cloud。",
+            "en": "Location and audience are different dimensions; the lecture explicitly includes externally hosted private cloud."
+          },
+          "pages": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "material-4-q6",
+          "conceptIds": [
+            "material-4-c6"
+          ],
+          "prompt": {
+            "zh": "专用私有环境与公有云协同承载业务，体现哪种模型？",
+            "en": "A private environment and public cloud jointly support a workload. Which model is this?"
+          },
+          "options": [
+            {
+              "zh": "混合云",
+              "en": "Hybrid cloud"
+            },
+            {
+              "zh": "单一私有云，因为私有部分会决定所有资源性质",
+              "en": "Only private because the private part determines every resource"
+            },
+            {
+              "zh": "单一公有云，因为公有部分会决定所有资源性质",
+              "en": "Only public because the public part determines every resource"
+            },
+            {
+              "zh": "社区云，因为多个组件就等于共同愿景群体",
+              "en": "Community cloud because multiple components imply a common-vision group"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "混合指部署模型组合；社区云强调共同群体需求，而不是设备数量。",
+            "en": "Hybrid denotes combining deployment models; community concerns common group needs rather than machine count."
+          },
+          "pages": [
+            16,
+            17
+          ]
+        },
+        {
+          "id": "material-4-q7",
+          "conceptIds": [
+            "material-4-c7"
+          ],
+          "prompt": {
+            "zh": "负责配置、运营与创建服务的工具位于哪部分？",
+            "en": "Which infrastructure component configures, operates and creates services?"
+          },
+          "options": [
+            {
+              "zh": "仅用户直接使用的业务应用页面",
+              "en": "Only end-user business application pages"
+            },
+            {
+              "zh": "物理服务器、交换机和存储介质本身",
+              "en": "Physical servers, switches and storage media alone"
+            },
+            {
+              "zh": "云管理与服务创建工具",
+              "en": "Cloud management and service-creation tools"
+            },
+            {
+              "zh": "仅虚拟CPU和虚拟磁盘这类资源抽象",
+              "en": "Only virtual CPU/disk resource abstractions"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "管理工具把底层能力组织成可运营的服务；物理硬件自身不完成全部服务管理。",
+            "en": "Management tools organize underlying capability into operational services; physical hardware alone does not perform all service management."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-4-q8",
+          "conceptIds": [
+            "material-4-c8"
+          ],
+          "prompt": {
+            "zh": "应用严重依赖某厂商专有接口、迁移需大量重写，最直接体现什么？",
+            "en": "An application depends on proprietary APIs and needs major rewriting to move. What is the main issue?"
+          },
+          "options": [
+            {
+              "zh": "数据复制，因为迁移重写等于数据多副本",
+              "en": "Data replication because rewriting is data duplication"
+            },
+            {
+              "zh": "厂商锁定",
+              "en": "Vendor lock-in"
+            },
+            {
+              "zh": "SLA可用性，因为专有接口自动提高在线率",
+              "en": "SLA availability because proprietary APIs raise uptime"
+            },
+            {
+              "zh": "网络时延，因为所有接口差异都是往返时间",
+              "en": "Network latency because every API difference is round-trip time"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "接口依赖使迁移受限，这是锁定风险；不能据此推导性能或履约保证。",
+            "en": "API dependency constrains migration, creating lock-in; it does not imply performance or SLA guarantees."
+          },
+          "pages": [
+            21
+          ]
+        },
+        {
+          "id": "material-4-q9",
+          "conceptIds": [
+            "material-4-c9"
+          ],
+          "prompt": {
+            "zh": "哪种采用决策最完整？",
+            "en": "Which cloud-adoption decision is most complete?"
+          },
+          "options": [
+            {
+              "zh": "只看可用性宣传，不核实测量条件和责任",
+              "en": "Use advertised availability without checking measurement and responsibilities"
+            },
+            {
+              "zh": "只选部署地点，不检查服务条款",
+              "en": "Choose location without service terms"
+            },
+            {
+              "zh": "只比较实例价，不检查应用兼容与传输成本",
+              "en": "Compare instance price without compatibility or transfer cost"
+            },
+            {
+              "zh": "同时验证适用性、总成本、部署范围和SLA",
+              "en": "Validate suitability, total cost, deployment scope and SLA together"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "采用决策覆盖技术、经济与服务承诺；单一价格或品牌不能代表整体可行性。",
+            "en": "Adoption spans technology, economics and commitments; one price or brand cannot establish overall feasibility."
+          },
+          "pages": [
+            23,
+            24
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          3,
+          5,
+          7,
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          19,
+          21,
+          23,
+          24
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2,
+              4,
+              6,
+              8,
+              10,
+              13,
+              18,
+              20,
+              22
+            ],
+            "reason": {
+              "zh": "封面、目录、章节分隔、重复回顾或非教学行政信息；知识已合并到相应主题。",
+              "en": "Cover, agenda, divider, repeated recap, or non-teaching administration; repeated knowledge is consolidated under its topic."
+            }
+          }
+        ]
+      },
+      "sourceSha256": "bcb68882ebd6b60c1952f50729c0a7397d6bf9e7ff659ee76a1b318000f8e9bd"
+    },
+    {
+      "resourceId": "material-5",
+      "overview": {
+        "zh": "用加速比、效率、成本与扩展性评价并行求和，再连接划分、通信、同步和负载均衡。",
+        "en": "Evaluate parallel summation using speedup, efficiency, cost and scalability, then connect partitioning, communication, synchronization and load balancing."
+      },
+      "groups": [
+        {
+          "id": "material-5-g1",
+          "title": {
+            "zh": "性能指标与扩展性",
+            "en": "Performance metrics and scalability"
+          },
+          "concepts": [
+            {
+              "id": "material-5-c1",
+              "title": {
+                "zh": "加速比及三种情况",
+                "en": "Speedup and its regimes"
+              },
+              "explanation": {
+                "zh": "加速比S(p)=T(1)/T(p)。小于p为次线性，约等于p为线性，大于p为超线性；它比较运行时间，不是直接比较核心数量。",
+                "en": "Speedup S(p)=T(1)/T(p). Values below, near and above p are sublinear, linear and superlinear; speedup compares execution times rather than merely counting cores."
+              },
+              "pages": [
+                2
+              ]
+            },
+            {
+              "id": "material-5-c2",
+              "title": {
+                "zh": "效率与处理器时间成本",
+                "en": "Efficiency and processor-time cost"
+              },
+              "explanation": {
+                "zh": "效率E=S/p表示每个处理器平均贡献的相对加速；成本C=p×T(p)表示总处理器时间。较短运行时间不一定意味着更低成本。",
+                "en": "Efficiency E=S/p measures speedup per processor; cost C=p×T(p) is total processor-time. Shorter elapsed time does not necessarily mean lower cost."
+              },
+              "pages": [
+                3
+              ]
+            },
+            {
+              "id": "material-5-c3",
+              "title": {
+                "zh": "强扩展性",
+                "en": "Strong scaling"
+              },
+              "explanation": {
+                "zh": "固定总输入规模，增加处理器数，观察运行时间、加速比与效率。课件求和图显示处理器过多后通信成本占比上升，效率降低，运行时间甚至回升。",
+                "en": "Strong scaling fixes total input size while increasing processors. The summation plot shows communication becoming dominant at high processor counts, reducing efficiency and eventually increasing runtime."
+              },
+              "pages": [
+                4,
+                10
+              ]
+            },
+            {
+              "id": "material-5-c4",
+              "title": {
+                "zh": "弱扩展性",
+                "en": "Weak scaling"
+              },
+              "explanation": {
+                "zh": "弱扩展同时增加处理器和输入规模，通常保持每个处理器工作量相近；课件以n=1024p示例，适合判断更大系统能否处理同比变大的问题。",
+                "en": "Weak scaling increases processors and input, typically preserving similar work per processor; the lecture uses n=1024p to study proportionally larger problems."
+              },
+              "pages": [
+                4,
+                11
+              ]
+            },
+            {
+              "id": "material-5-c5",
+              "title": {
+                "zh": "计算通信比",
+                "en": "Computation-to-communication ratio"
+              },
+              "explanation": {
+                "zh": "计算时间除以通信时间衡量任务中有用计算相对数据交换的占比。较高比值通常更利于加速和扩展，但仍受同步与负载均衡影响。",
+                "en": "Computation time divided by communication time indicates useful work relative to data exchange. Higher ratios generally favor speedup and scaling, subject to synchronization and balance."
+              },
+              "pages": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-5-g2",
+          "title": {
+            "zh": "求和模型与程序设计",
+            "en": "Summation model and program design"
+          },
+          "concepts": [
+            {
+              "id": "material-5-c6",
+              "title": {
+                "zh": "分发—局部求和—归约",
+                "en": "Distribution, local sums and reduction"
+              },
+              "explanation": {
+                "zh": "初始数据在PE0，先按树形步骤分发，各PE局部加法，再把结果汇回PE0。模型规定一次加法1时间单位、一次通信3单位且锁步执行；p=2/4/8运行时间为518/269/148，效率逐渐下降。",
+                "en": "Starting at PE0, data is distributed in tree steps, summed locally, and reduced back to PE0. The model uses one time unit per add, three per communication and lockstep execution; p=2/4/8 gives 518/269/148, with falling efficiency."
+              },
+              "pages": [
+                6,
+                7,
+                8,
+                9
+              ]
+            },
+            {
+              "id": "material-5-c7",
+              "title": {
+                "zh": "分布内存、MPI与PGAS",
+                "en": "Distributed memory, MPI and PGAS"
+              },
+              "explanation": {
+                "zh": "分布内存中的进程通过网络消息通信，包括点到点与集合通信，并显式分配数据。MPI是示例接口；PGAS把分布内存与全局地址空间概念结合。",
+                "en": "Distributed-memory processes communicate through network messages, using point-to-point and collective operations with data partitioning. MPI is an example interface; PGAS combines distribution with a global address-space abstraction."
+              },
+              "pages": [
+                12,
+                13
+              ]
+            },
+            {
+              "id": "material-5-c8",
+              "title": {
+                "zh": "共享内存与竞态",
+                "en": "Shared memory and races"
+              },
+              "explanation": {
+                "zh": "线程可通过共同内存交换数据，但同时读写共享数组可能产生竞态。缓存一致性维护副本一致，程序同步则控制访问顺序；两者不能互相替代。",
+                "en": "Threads communicate through shared memory, but concurrent array access can create races. Cache coherence manages copies, whereas program synchronization controls access ordering; neither substitutes for the other."
+              },
+              "pages": [
+                14,
+                15
+              ]
+            },
+            {
+              "id": "material-5-c9",
+              "title": {
+                "zh": "数据、任务与模型并行",
+                "en": "Data, task and model parallelism"
+              },
+              "explanation": {
+                "zh": "数据并行把同类处理分给不同数据块；任务并行分配不同工作；模型并行拆分模型组成部分。划分决定后续通信模式，应按问题依赖关系选择。",
+                "en": "Data parallelism applies similar work to different data partitions; task parallelism distributes different work; model parallelism splits model components. Partitioning determines communication patterns and should follow dependencies."
+              },
+              "pages": [
+                16,
+                17,
+                18,
+                19
+              ]
+            },
+            {
+              "id": "material-5-c10",
+              "title": {
+                "zh": "同步与负载均衡",
+                "en": "Synchronization and load balance"
+              },
+              "explanation": {
+                "zh": "同步维护跨线程/进程依赖和正确性；负载均衡减少部分处理器忙碌而其他处理器空闲的时间。通信设计由任务划分决定，三者需要一起考虑。",
+                "en": "Synchronization preserves dependencies and correctness; load balance reduces time when some processors are busy and others idle. Communication follows partitioning, so these must be designed together."
+              },
+              "pages": [
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-5-g3",
+          "title": {
+            "zh": "高性能计算评价",
+            "en": "HPC evaluation"
+          },
+          "concepts": [
+            {
+              "id": "material-5-c11",
+              "title": {
+                "zh": "TOP500与LINPACK",
+                "en": "TOP500 and LINPACK"
+              },
+              "explanation": {
+                "zh": "课件以TOP500讨论HPC，LINPACK用求解稠密线性方程组的浮点运算表现衡量性能。历史排名数据是特定基准的结果，不等于每种应用都得到相同速度。",
+                "en": "The lecture introduces TOP500 through LINPACK performance on dense linear systems. Historical ranking figures are benchmark-specific, not a promise of the same speed on every application."
+              },
+              "pages": [
+                20,
+                21
+              ]
+            },
+            {
+              "id": "material-5-c12",
+              "title": {
+                "zh": "Green500与混合并行",
+                "en": "Green500 and hybrid parallelism"
+              },
+              "explanation": {
+                "zh": "Green500强调能效。现代异构HPC可组合节点间MPI、节点内OpenMP和GPU上的CUDA；不同层次并行与能耗、通信和编程复杂度共同作用。",
+                "en": "Green500 emphasizes energy efficiency. Heterogeneous HPC can combine inter-node MPI, intra-node OpenMP and GPU CUDA; these levels interact with energy, communication and programming complexity."
+              },
+              "pages": [
+                22,
+                23,
+                24
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-5-c1",
+          "to": "material-5-c2",
+          "relation": {
+            "zh": "加速比除以处理器数得到效率",
+            "en": "Divide speedup by processors to obtain efficiency"
+          }
+        },
+        {
+          "from": "material-5-c3",
+          "to": "material-5-c4",
+          "relation": {
+            "zh": "固定总规模与同比增规模形成两种实验",
+            "en": "Fixed and proportional problem sizes define different experiments"
+          }
+        },
+        {
+          "from": "material-5-c5",
+          "to": "material-5-c6",
+          "relation": {
+            "zh": "求和实例显示通信比例如何影响效率",
+            "en": "Summation shows how communication affects efficiency"
+          }
+        },
+        {
+          "from": "material-5-c9",
+          "to": "material-5-c10",
+          "relation": {
+            "zh": "任务划分决定通信和同步需求",
+            "en": "Partitioning determines communication and synchronization needs"
+          }
+        },
+        {
+          "from": "material-5-c7",
+          "to": "material-5-c12",
+          "relation": {
+            "zh": "分布内存消息用于节点间并行",
+            "en": "Distributed-memory messages enable inter-node parallelism"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-5-q1",
+          "conceptIds": [
+            "material-5-c1"
+          ],
+          "prompt": {
+            "zh": "单处理器100秒，4处理器25秒，加速比和类型是？",
+            "en": "One processor takes 100 seconds and four take 25. What are the speedup and regime?"
+          },
+          "options": [
+            {
+              "zh": "25，超线性",
+              "en": "25, superlinear"
+            },
+            {
+              "zh": "100，线性",
+              "en": "100, linear"
+            },
+            {
+              "zh": "4，线性",
+              "en": "4, linear"
+            },
+            {
+              "zh": "0.25，次线性",
+              "en": "0.25, sublinear"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "100/25=4，等于处理器数p=4；不能把并行时间直接当加速比。",
+            "en": "100/25=4 equals p=4; parallel runtime itself is not speedup."
+          },
+          "pages": [
+            2
+          ]
+        },
+        {
+          "id": "material-5-q2",
+          "conceptIds": [
+            "material-5-c2"
+          ],
+          "prompt": {
+            "zh": "T(1)=120秒、T(4)=40秒，效率和成本分别是？",
+            "en": "If T(1)=120 s and T(4)=40 s, what are efficiency and cost?"
+          },
+          "options": [
+            {
+              "zh": "25%，120处理器秒",
+              "en": "25%, 120 processor-seconds"
+            },
+            {
+              "zh": "75%，160处理器秒",
+              "en": "75%, 160 processor-seconds"
+            },
+            {
+              "zh": "300%，40处理器秒",
+              "en": "300%, 40 processor-seconds"
+            },
+            {
+              "zh": "75%，30处理器秒",
+              "en": "75%, 30 processor-seconds"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "S=3，E=3/4=0.75，C=4×40=160；效率和成本分别是比率与处理器时间。",
+            "en": "S=3, E=3/4=0.75 and C=4×40=160; efficiency is a ratio whereas cost is processor-time."
+          },
+          "pages": [
+            3
+          ]
+        },
+        {
+          "id": "material-5-q3",
+          "conceptIds": [
+            "material-5-c3"
+          ],
+          "prompt": {
+            "zh": "哪项实验测量强扩展性？",
+            "en": "Which experiment measures strong scaling?"
+          },
+          "options": [
+            {
+              "zh": "固定1024个输入，用1、2、4、8个处理器运行",
+              "en": "Keep 1024 inputs and use 1, 2, 4 and 8 processors"
+            },
+            {
+              "zh": "固定处理器数，仅把输入规模逐次翻倍",
+              "en": "Keep processors fixed and double input size"
+            },
+            {
+              "zh": "输入规模与处理器数量同比增加",
+              "en": "Increase input proportionally with processor count"
+            },
+            {
+              "zh": "固定每个处理器的输入量而增加总规模",
+              "en": "Keep per-processor input fixed while increasing total size"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "强扩展固定总问题规模；随处理器增加输入的实验属于弱扩展方向。",
+            "en": "Strong scaling fixes the total problem size; scaling input with processor count instead examines weak scaling."
+          },
+          "pages": [
+            4,
+            10
+          ]
+        },
+        {
+          "id": "material-5-q4",
+          "conceptIds": [
+            "material-5-c4"
+          ],
+          "prompt": {
+            "zh": "n=1024p时，从p=2增至p=8，输入如何变化？",
+            "en": "With n=1024p, how does input change when p grows from 2 to 8?"
+          },
+          "options": [
+            {
+              "zh": "8192减至2048",
+              "en": "8192 down to 2048"
+            },
+            {
+              "zh": "2048增至8192，每处理器仍对应1024项",
+              "en": "2048 to 8192, still 1024 items per processor"
+            },
+            {
+              "zh": "始终1024",
+              "en": "Always 1024"
+            },
+            {
+              "zh": "输入必须变成0",
+              "en": "Input must become zero"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "弱扩展保持每处理器问题量，处理器和总输入同比增加；固定总输入是强扩展。",
+            "en": "Weak scaling keeps work per processor similar by increasing total input proportionally; fixed total input is strong scaling."
+          },
+          "pages": [
+            4,
+            11
+          ]
+        },
+        {
+          "id": "material-5-q5",
+          "conceptIds": [
+            "material-5-c5"
+          ],
+          "prompt": {
+            "zh": "计算100毫秒、通信20毫秒的比值是多少？",
+            "en": "What is the ratio for 100 ms computation and 20 ms communication?"
+          },
+          "options": [
+            {
+              "zh": "5",
+              "en": "5"
+            },
+            {
+              "zh": "120",
+              "en": "120"
+            },
+            {
+              "zh": "80",
+              "en": "80"
+            },
+            {
+              "zh": "0.2",
+              "en": "0.2"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "比值是100/20=5，不是求和或相减；单位相同后比值无量纲。",
+            "en": "The ratio is 100/20=5, not a sum or difference; matching units cancel."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-5-q6",
+          "conceptIds": [
+            "material-5-c6"
+          ],
+          "prompt": {
+            "zh": "为什么把求和任务从2个PE增到8个PE，效率不保持100%？",
+            "en": "Why does summation efficiency not stay at 100% when growing from two to eight PEs?"
+          },
+          "options": [
+            {
+              "zh": "分发、汇总和同步成本没有随局部计算同样消失",
+              "en": "Distribution, gathering and synchronization remain as local computation shrinks"
+            },
+            {
+              "zh": "所有输入都自动消失",
+              "en": "All input disappears automatically"
+            },
+            {
+              "zh": "通信时间被定义为零",
+              "en": "Communication is defined as zero-time"
+            },
+            {
+              "zh": "每个PE被禁止相加",
+              "en": "Every PE is forbidden to add"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "局部计算减少，但通信与等待仍消耗时间；课件模型明确通信为3单位。",
+            "en": "Local work shrinks while communication and waiting remain; the model explicitly assigns three units to communication."
+          },
+          "pages": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "material-5-q7",
+          "conceptIds": [
+            "material-5-c7"
+          ],
+          "prompt": {
+            "zh": "哪项区分MPI式通信与PGAS概念最准确？",
+            "en": "Which best distinguishes MPI-style communication and the PGAS concept?"
+          },
+          "options": [
+            {
+              "zh": "PGAS的全局地址必然意味着所有数据物理集中",
+              "en": "A PGAS global address means data is physically centralized"
+            },
+            {
+              "zh": "MPI与PGAS都只是具体网络布线拓扑",
+              "en": "MPI and PGAS are only physical wiring topologies"
+            },
+            {
+              "zh": "前者强调消息操作，后者提供分区的全局地址空间抽象",
+              "en": "The former emphasizes messaging; the latter a partitioned global address-space abstraction"
+            },
+            {
+              "zh": "MPI提供统一物理内存，PGAS只定义无数据消息",
+              "en": "MPI supplies one physical memory; PGAS only defines data-free messages"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "全局地址抽象不消除物理分布；MPI消息通信也不是缓存层。",
+            "en": "A global address abstraction does not remove physical distribution, and MPI messaging is not a cache layer."
+          },
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "material-5-q8",
+          "conceptIds": [
+            "material-5-c8"
+          ],
+          "prompt": {
+            "zh": "有缓存一致性的多核系统，还需要防止两个线程不受控地更新同一值吗？",
+            "en": "Does a cache-coherent multicore system still need to prevent uncontrolled concurrent updates?"
+          },
+          "options": [
+            {
+              "zh": "不需要，因为多个线程读到同一新值就保证更新不丢失",
+              "en": "No, reading the same new value guarantees no lost updates"
+            },
+            {
+              "zh": "不需要，因为共享数组总被复制为线程私有",
+              "en": "No, a shared array is always copied privately per thread"
+            },
+            {
+              "zh": "需要，缓存一致性不等于复合操作同步",
+              "en": "Yes, coherence does not synchronize compound operations"
+            },
+            {
+              "zh": "不需要，因为一致性已经使所有读改写操作成为不可分割操作",
+              "en": "No, coherence makes every read-modify-write atomic"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "副本可见性和读改写操作的互斥是不同问题，仍需正确同步。",
+            "en": "Copy visibility and mutual exclusion for read-modify-write operations are different problems; correct synchronization remains necessary."
+          },
+          "pages": [
+            14,
+            15
+          ]
+        },
+        {
+          "id": "material-5-q9",
+          "conceptIds": [
+            "material-5-c9"
+          ],
+          "prompt": {
+            "zh": "同一图像处理操作分别作用于不同图片块，属于哪种划分？",
+            "en": "Applying the same image operation to separate image blocks is which partitioning?"
+          },
+          "options": [
+            {
+              "zh": "数据并行",
+              "en": "Data parallelism"
+            },
+            {
+              "zh": "模型并行：每个处理器保存不同模型部分",
+              "en": "Model parallelism: processors hold different model parts"
+            },
+            {
+              "zh": "任务并行：不同处理器执行不同算法阶段",
+              "en": "Task parallelism: processors execute different algorithm stages"
+            },
+            {
+              "zh": "串行流水：每个块都等待前块完整处理后才开始",
+              "en": "Serial flow: each block waits for its predecessor to finish"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "操作相同而数据不同是数据并行；任务/模型并行拆分的是工作类型或模型组成。",
+            "en": "Same operation on different data is data parallelism; task/model parallelism splits work types or model components."
+          },
+          "pages": [
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-5-q10",
+          "conceptIds": [
+            "material-5-c10"
+          ],
+          "prompt": {
+            "zh": "所有进程在屏障等待一个处理特别多数据的进程，最直接的问题是什么？",
+            "en": "All processes wait at a barrier for one overloaded process. What is the most direct issue?"
+          },
+          "options": [
+            {
+              "zh": "屏障实现错误，因为屏障不允许等待任何进程",
+              "en": "The barrier is wrong because barriers cannot wait for processes"
+            },
+            {
+              "zh": "负载不均衡放大同步等待",
+              "en": "Imbalance amplifies synchronization waiting"
+            },
+            {
+              "zh": "通信带宽不足已经被证明，工作量分配无需检查",
+              "en": "Bandwidth insufficiency is proven, so work distribution need not be checked"
+            },
+            {
+              "zh": "负载均衡已经完成，因为进程数相等",
+              "en": "Balance is complete because process counts are equal"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "屏障保证阶段等待关系，不自动均分任务；过重任务决定阶段完成时间。",
+            "en": "A barrier coordinates stages but does not distribute work; the overloaded task determines stage completion."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-5-q11",
+          "conceptIds": [
+            "material-5-c11"
+          ],
+          "prompt": {
+            "zh": "LINPACK成绩主要衡量什么？",
+            "en": "What does a LINPACK score primarily measure?"
+          },
+          "options": [
+            {
+              "zh": "文件系统读写的随机I/O吞吐",
+              "en": "Random filesystem I/O throughput"
+            },
+            {
+              "zh": "任意程序的平均响应时间",
+              "en": "Average response time of arbitrary programs"
+            },
+            {
+              "zh": "单位功耗下所有工作负载的综合性能",
+              "en": "Combined performance per watt for all workloads"
+            },
+            {
+              "zh": "求解稠密线性方程组的浮点性能",
+              "en": "Floating-point performance on dense linear systems"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "基准针对特定数值工作负载，不能直接代替目标应用性能测试。",
+            "en": "The benchmark targets a specific numerical workload and cannot replace measurement of the target application."
+          },
+          "pages": [
+            20,
+            21
+          ]
+        },
+        {
+          "id": "material-5-q12",
+          "conceptIds": [
+            "material-5-c12"
+          ],
+          "prompt": {
+            "zh": "哪种技术层次映射符合课件？",
+            "en": "Which technology-to-level mapping matches the lecture?"
+          },
+          "options": [
+            {
+              "zh": "MPI—节点内共享循环；OpenMP—跨节点消息；CUDA—磁盘复制",
+              "en": "MPI—intra-node shared loops; OpenMP—inter-node messages; CUDA—disk replication"
+            },
+            {
+              "zh": "MPI—节点间；OpenMP—CPU节点内；CUDA—GPU加速",
+              "en": "MPI—between nodes; OpenMP—within CPU nodes; CUDA—GPU acceleration"
+            },
+            {
+              "zh": "MPI—GPU专用；OpenMP—云服务模型；CUDA—CPU缓存",
+              "en": "MPI—GPU only; OpenMP—cloud model; CUDA—CPU cache"
+            },
+            {
+              "zh": "所有层次只使用一个工具即可自动最佳，能效无需单独衡量",
+              "en": "One tool is automatically optimal at every level and energy needs no measurement"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "混合系统把不同工具用于不同层次；Green500另加入能效视角。",
+            "en": "Hybrid systems use different tools at different levels, while Green500 adds the energy-efficiency view."
+          },
+          "pages": [
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "id": "material-5-q13",
+          "conceptIds": [
+            "material-5-c1"
+          ],
+          "pages": [
+            2
+          ],
+          "prompt": {
+            "zh": "8个处理器得到加速比6.4，属于哪类？",
+            "en": "Eight processors achieve speedup 6.4. Which regime is it?"
+          },
+          "options": [
+            {
+              "zh": "次线性",
+              "en": "Sublinear"
+            },
+            {
+              "zh": "无法比较，必须知道每台硬盘容量",
+              "en": "Cannot compare without disk capacities"
+            },
+            {
+              "zh": "线性，因为加速比大于1",
+              "en": "Linear because speedup exceeds one"
+            },
+            {
+              "zh": "超线性，因为用了多个处理器",
+              "en": "Superlinear because there are multiple processors"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "类型比较S与p：6.4<8，为次线性；S>1只说明比串行快。",
+            "en": "Compare S with p: 6.4<8 is sublinear. S>1 only indicates improvement over serial."
+          }
+        },
+        {
+          "id": "material-5-q14",
+          "conceptIds": [
+            "material-5-c9"
+          ],
+          "pages": [
+            16,
+            17,
+            18
+          ],
+          "prompt": {
+            "zh": "训练模型不同部分放在不同处理器，而不是每个处理器复制整个模型处理不同数据，属于？",
+            "en": "Different model parts are placed on different processors rather than replicating the whole model across data partitions. Which type is this?"
+          },
+          "options": [
+            {
+              "zh": "模型并行",
+              "en": "Model parallelism"
+            },
+            {
+              "zh": "单纯串行执行",
+              "en": "Pure serial execution"
+            },
+            {
+              "zh": "数据并行",
+              "en": "Data parallelism"
+            },
+            {
+              "zh": "缓存写直达",
+              "en": "Cache write-through"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "拆分模型组成是模型并行；复制同一模型处理不同数据才更接近数据并行。",
+            "en": "Splitting model components is model parallelism; replicating the same model across different data is data parallelism."
+          }
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1
+            ],
+            "reason": {
+              "zh": "封面、目录、章节分隔、重复回顾或非教学行政信息；知识已合并到相应主题。",
+              "en": "Cover, agenda, divider, repeated recap, or non-teaching administration; repeated knowledge is consolidated under its topic."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "HPC排名数字是课件中的历史数据，不代表当前排名；数值题使用课件指定的计算与通信模型。",
+        "en": "HPC figures are historical lecture examples rather than current rankings; numerical exercises use the lecture computation/communication model."
+      },
+      "sourceSha256": "029f097f14f4be454bc7c6055a29104abf832cac2d95fb00a5f323c6501eb6a2"
+    },
+    {
+      "resourceId": "material-6",
+      "overview": {
+        "zh": "从线程和存储层次进入指令级并行，再用Flynn分类、共享/分布内存与网络拓扑理解不同并行平台。",
+        "en": "Move from threads and memory hierarchy to instruction-level parallelism, then use Flynn classes, memory organization and network topology to understand platforms."
+      },
+      "groups": [
+        {
+          "id": "material-6-g1",
+          "title": {
+            "zh": "线程、缓存与地址转换",
+            "en": "Threads, caches and address translation"
+          },
+          "concepts": [
+            {
+              "id": "material-6-c1",
+              "title": {
+                "zh": "多任务、线程与fork/join",
+                "en": "Multitasking, threads and fork/join"
+              },
+              "explanation": {
+                "zh": "单处理器多任务通过时间片交替运行进程，产生并发的体验。线程在进程内拆分工作；图中fork启动子线程，join等待/合并线程完成，使依赖关系明确。",
+                "en": "Single-processor multitasking alternates processes in time slices. Threads split work inside a process; the diagram uses fork to start threads and join to coordinate their completion."
+              },
+              "pages": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "id": "material-6-c2",
+              "title": {
+                "zh": "空间与时间局部性",
+                "en": "Spatial and temporal locality"
+              },
+              "explanation": {
+                "zh": "缓存用更快的小容量存储减少平均访问延迟。空间局部性是访问附近地址，时间局部性是短期重复访问同一数据；顺序数组求和兼具相邻数组访问和累加器复用。",
+                "en": "Caches use fast small storage to reduce average latency. Spatial locality accesses nearby addresses; temporal locality reuses data soon. Sequential array summation accesses neighbors and repeatedly updates an accumulator."
+              },
+              "pages": [
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "id": "material-6-c3",
+              "title": {
+                "zh": "缓存层次、命中与未命中",
+                "en": "Cache hierarchy, hits and misses"
+              },
+              "explanation": {
+                "zh": "L1通常最小最快，较低层缓存更大更慢。命中直接使用缓存副本，未命中需向后续层或主存取数；命中率影响平均访问成本。",
+                "en": "L1 is typically smallest and fastest, while lower levels are larger and slower. A hit uses cached data; a miss fetches from later levels or memory, affecting average access cost."
+              },
+              "pages": [
+                8,
+                9,
+                10
+              ]
+            },
+            {
+              "id": "material-6-c4",
+              "title": {
+                "zh": "写直达与写回",
+                "en": "Write-through and write-back"
+              },
+              "explanation": {
+                "zh": "写直达在写缓存时同时更新主存；写回把缓存行标为dirty，在替换等需要时再写回。两种策略在写流量与一致性处理时机上不同。",
+                "en": "Write-through updates main memory when cache is written; write-back marks a line dirty and writes it later when required, such as on replacement. They differ in traffic and update timing."
+              },
+              "pages": [
+                11
+              ]
+            },
+            {
+              "id": "material-6-c5",
+              "title": {
+                "zh": "虚拟内存、页与页表",
+                "en": "Virtual memory, pages and page tables"
+              },
+              "explanation": {
+                "zh": "虚拟内存把活动页保留在主存，非活动部分可在二级存储；页表把虚拟页映射到物理位置。地址分为虚拟页号与页内偏移，局部性帮助控制活跃工作集。",
+                "en": "Virtual memory keeps active pages in RAM and inactive portions in secondary storage; page tables map virtual pages to physical locations. Addresses contain page number and offset, with locality supporting the active working set."
+              },
+              "pages": [
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "id": "material-6-c6",
+              "title": {
+                "zh": "TLB与缺页",
+                "en": "TLB and page faults"
+              },
+              "explanation": {
+                "zh": "TLB是页表映射的高速缓存，减少反复查页表的成本。缺页表示所需页不在主存而需从二级存储取回；TLB未命中并不必然意味着缺页。",
+                "en": "A TLB caches page-table translations to avoid repeated lookup cost. A page fault requires bringing a nonresident page from secondary storage; a TLB miss does not necessarily imply a page fault."
+              },
+              "pages": [
+                18,
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-6-g2",
+          "title": {
+            "zh": "指令级并行与硬件多线程",
+            "en": "ILP and hardware multithreading"
+          },
+          "concepts": [
+            {
+              "id": "material-6-c7",
+              "title": {
+                "zh": "流水线的吞吐与延迟",
+                "en": "Pipeline throughput and latency"
+              },
+              "explanation": {
+                "zh": "流水线把操作分成阶段，让不同操作处于不同阶段。课件7阶段、每阶段1ns：单次加法仍需7ns，而1000次独立加法从约7000ns降至1006ns，即7+999。",
+                "en": "A pipeline stages operations so different operations occupy different stages. In the seven-stage, 1 ns example, one addition still takes 7 ns, but 1000 independent additions take 1006 ns instead of about 7000 ns."
+              },
+              "pages": [
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27
+              ]
+            },
+            {
+              "id": "material-6-c8",
+              "title": {
+                "zh": "多发射与调度时机",
+                "en": "Multiple issue and scheduling time"
+              },
+              "explanation": {
+                "zh": "多发射复制功能单元以同时启动不同指令。静态多发射由编译期安排，动态多发射由运行期硬件安排；它与流水线阶段重叠不是同一机制。",
+                "en": "Multiple issue replicates functional units to initiate different instructions together. Static issue is scheduled at compile time, dynamic issue at runtime; this differs from overlapping pipeline stages."
+              },
+              "pages": [
+                28,
+                29
+              ]
+            },
+            {
+              "id": "material-6-c9",
+              "title": {
+                "zh": "推测执行与错误恢复",
+                "en": "Speculation and recovery"
+              },
+              "explanation": {
+                "zh": "编译器或处理器预测某个条件并先执行后续指令，以寻找并行机会；猜错时必须撤销/重算错误路径的结果，不能把预测当成正确性保证。",
+                "en": "A compiler or processor predicts a condition and executes ahead to expose parallel work; wrong predictions require recovery or recomputation, not acceptance of the guessed result."
+              },
+              "pages": [
+                30,
+                31
+              ]
+            },
+            {
+              "id": "material-6-c10",
+              "title": {
+                "zh": "细粒度、粗粒度与SMT",
+                "en": "Fine-grained, coarse-grained and SMT"
+              },
+              "explanation": {
+                "zh": "细粒度多线程频繁切换并跳过停顿线程；粗粒度主要在较长停顿时切换，切换负担较小但短停顿可能浪费周期；SMT可让多个线程同时利用多个功能单元。",
+                "en": "Fine-grained multithreading switches frequently and skips stalled threads; coarse-grained switching targets long stalls but can waste short ones; SMT lets several threads use multiple functional units together."
+              },
+              "pages": [
+                32,
+                33,
+                34,
+                35
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-6-g3",
+          "title": {
+            "zh": "Flynn分类与数据并行",
+            "en": "Flynn taxonomy and data parallelism"
+          },
+          "concepts": [
+            {
+              "id": "material-6-c11",
+              "title": {
+                "zh": "SISD、SIMD、MISD、MIMD",
+                "en": "SISD, SIMD, MISD and MIMD"
+              },
+              "explanation": {
+                "zh": "Flynn按指令流和数据流的单/多分类：SISD单单，SIMD单指令多数据，MISD多指令单数据，MIMD多多。分类是两个维度；现代平台可包含不同层次机制。",
+                "en": "Flynn classifies single/multiple instruction and data streams: SISD single/single, SIMD single/multiple, MISD multiple/single and MIMD multiple/multiple. Modern platforms can combine mechanisms at different levels."
+              },
+              "pages": [
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44
+              ]
+            },
+            {
+              "id": "material-6-c12",
+              "title": {
+                "zh": "银行类比与数据访问协调",
+                "en": "Banking analogy and access coordination"
+              },
+              "explanation": {
+                "zh": "柜员对应处理器、客户对应任务、交易对应操作、账户对应数据。锁步同操作说明SIMD式数据划分；独立柜员执行不同交易说明MIMD，访问共享账户需协调。",
+                "en": "Tellers represent processors, customers tasks, transactions operations and accounts data. Lockstep identical operations illustrate SIMD-like partitioning; independent transactions illustrate MIMD with coordinated shared-account access."
+              },
+              "pages": [
+                45,
+                46,
+                47
+              ]
+            },
+            {
+              "id": "material-6-c13",
+              "title": {
+                "zh": "SIMD批处理及限制",
+                "en": "SIMD batching and limits"
+              },
+              "explanation": {
+                "zh": "SIMD对多个数据项执行相同指令；ALU不足时分批处理。15项数据配4个ALU需4轮，末轮有空闲。不同控制路径或不规则工作会降低利用率；SPMD程序模式不等同于纯SIMD硬件。",
+                "en": "SIMD applies one instruction across data, batching when ALUs are fewer than items. Fifteen items on four ALUs need four rounds with an underfilled last round. Irregular control reduces utilization; SPMD programming is not identical to pure SIMD hardware."
+              },
+              "pages": [
+                49,
+                50,
+                51,
+                52,
+                53
+              ]
+            },
+            {
+              "id": "material-6-c14",
+              "title": {
+                "zh": "向量处理器、存储交错与步长",
+                "en": "Vector processors, banking and strides"
+              },
+              "explanation": {
+                "zh": "向量寄存器和指令处理整组数据，配合流水化功能单元；交错存储把元素分散到独立bank，支持较高带宽，步长访问与scatter/gather处理非连续位置。规则数组适合向量化，不规则结构和扩展上限是约束。",
+                "en": "Vector registers/instructions process groups with pipelined units. Interleaved banks improve bandwidth, while stride access and scatter/gather address noncontiguous elements. Regular arrays suit vectorization; irregular structures and finite scaling are limitations."
+              },
+              "pages": [
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ]
+            },
+            {
+              "id": "material-6-c15",
+              "title": {
+                "zh": "GPU流水与MIMD核心",
+                "en": "GPU pipelines and MIMD cores"
+              },
+              "explanation": {
+                "zh": "图形流水把点线三角形转成像素，可编程shader对多元素并行工作并利用SIMD。MIMD核心则有各自控制单元与ALU；GPU不能简单概括为纯SIMD系统。",
+                "en": "Graphics pipelines turn points, lines and triangles into pixels; programmable shaders process many elements and exploit SIMD. MIMD units have independent control and ALUs; a GPU is not simply a pure SIMD system."
+              },
+              "pages": [
+                61,
+                62,
+                63,
+                64
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-6-g4",
+          "title": {
+            "zh": "编程模型与内存组织",
+            "en": "Programming models and memory organization"
+          },
+          "concepts": [
+            {
+              "id": "material-6-c16",
+              "title": {
+                "zh": "模型、范式与抽象层",
+                "en": "Models, paradigms and abstraction levels"
+              },
+              "explanation": {
+                "zh": "模型抽象稳定的重要概念，范式描述典型程序结构。Pthreads/OpenMP、消息传递/MPI与具体SMP、NUMA、集群位于不同层次；程序员视角不能直接等同于硬件拓扑。",
+                "en": "Models abstract stable concepts and paradigms describe recurring program structures. Pthreads/OpenMP, messaging/MPI and SMP/NUMA/clusters occupy different levels; the programmer view is not identical to hardware topology."
+              },
+              "pages": [
+                66,
+                67
+              ]
+            },
+            {
+              "id": "material-6-c17",
+              "title": {
+                "zh": "共享内存与总线竞争",
+                "en": "Shared memory and bus contention"
+              },
+              "explanation": {
+                "zh": "共享内存让各处理器访问共同地址空间，通过共享数据隐式通信。多个核心争用互连会限制扩展；课件的具体处理器数上限是历史例子，机制重点是竞争。",
+                "en": "Shared memory gives processors a common address space and implicit communication through data. Contention for interconnects limits scaling; the lecture processor-count limit is historical, while contention is the key mechanism."
+              },
+              "pages": [
+                69,
+                70,
+                71,
+                72
+              ]
+            },
+            {
+              "id": "material-6-c18",
+              "title": {
+                "zh": "UMA与NUMA",
+                "en": "UMA and NUMA"
+              },
+              "explanation": {
+                "zh": "UMA各核心访问内存的时间相同；NUMA访问本地与远端内存有不同代价，跨芯片通常更慢。若保持缓存一致性可称CC-NUMA；非均匀访问不等于不能访问远端内存。",
+                "en": "UMA offers uniform memory-access time; NUMA has different local and remote costs, often higher across chips. Coherent NUMA is CC-NUMA; nonuniform access does not mean remote memory is inaccessible."
+              },
+              "pages": [
+                73,
+                74,
+                75,
+                76
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-6-g5",
+          "title": {
+            "zh": "缓存一致性与层次设计",
+            "en": "Coherence and cache hierarchy design"
+          },
+          "concepts": [
+            {
+              "id": "material-6-c19",
+              "title": {
+                "zh": "私有副本与陈旧读",
+                "en": "Private copies and stale reads"
+              },
+              "explanation": {
+                "zh": "多个核心可缓存同一变量。若一个核心更新x而另一核心继续使用旧副本，就出现一致性问题；应使各核心对共享位置的值形成一致视图。",
+                "en": "Several cores may cache one variable. If one updates x while another uses its stale copy, coherence is violated; cores need a consistent view of shared locations."
+              },
+              "pages": [
+                77,
+                78,
+                79,
+                80,
+                81,
+                82
+              ]
+            },
+            {
+              "id": "material-6-c20",
+              "title": {
+                "zh": "窥探失效协议与更新协议",
+                "en": "Snooping invalidation versus update"
+              },
+              "explanation": {
+                "zh": "窥探协议通过核心间互连观察写操作并使其他缓存副本失效。连续写同一位置时，失效通常只需初次通知，而更新协议每次广播新值，流量可能更大；MSI/MESI用更多状态细化处理。",
+                "en": "Snooping observes interconnect writes and invalidates other copies. Repeated writes often need an initial invalidation, whereas update protocols broadcast each new value; MSI/MESI refine behavior with additional states."
+              },
+              "pages": [
+                83,
+                84,
+                85,
+                86
+              ]
+            },
+            {
+              "id": "material-6-c21",
+              "title": {
+                "zh": "私有与共享缓存的取舍",
+                "en": "Private versus shared caches"
+              },
+              "explanation": {
+                "zh": "私有缓存靠近核心、访问快且减少争用；共享缓存便于线程共享数据，并让少量活跃线程使用更多总容量。L1、L2、L3可采用不同组合，课件芯片是设计例子。",
+                "en": "Private caches are close and reduce contention; shared caches facilitate data sharing and let a few active threads use more aggregate capacity. L1/L2/L3 can use different combinations, illustrated by historical chips."
+              },
+              "pages": [
+                87,
+                88,
+                89,
+                90
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-6-g6",
+          "title": {
+            "zh": "分布内存与互连网络",
+            "en": "Distributed memory and interconnects"
+          },
+          "concepts": [
+            {
+              "id": "material-6-c22",
+              "title": {
+                "zh": "集群与松耦合分布式系统",
+                "en": "Clusters and loosely coupled systems"
+              },
+              "explanation": {
+                "zh": "集群把带CPU、内存、存储和操作系统的完整计算机联网，提供统一计算资源和单系统映像。更松耦合、异构网络适合分布式或粗粒度任务；网络通信代价影响适用性。",
+                "en": "Clusters connect whole computers with CPU, memory, storage and OS into a unified resource and system image. Looser heterogeneous networks suit distributed or coarse-grained work; communication cost affects suitability."
+              },
+              "pages": [
+                92,
+                93,
+                94,
+                95,
+                96
+              ]
+            },
+            {
+              "id": "material-6-c23",
+              "title": {
+                "zh": "总线与交叉开关",
+                "en": "Bus and crossbar"
+              },
+              "explanation": {
+                "zh": "总线由多个设备共享线路，设备增多会增加争用；交叉开关使用开关路由不同设备间通信，可支持多个同时访问，但连接和开关成本更高。",
+                "en": "A bus shares communication wires and grows more contended with devices; a crossbar routes among devices and supports concurrent accesses at greater switch/link cost."
+              },
+              "pages": [
+                98,
+                99,
+                100,
+                101
+              ]
+            },
+            {
+              "id": "material-6-c24",
+              "title": {
+                "zh": "直接与间接互连",
+                "en": "Direct and indirect interconnects"
+              },
+              "explanation": {
+                "zh": "直接互连中交换节点与处理器—内存对相连，交换节点之间再连线，环和网格是例子。间接互连允许部分交换机不直接附属处理器，而组成交换网络。",
+                "en": "Direct interconnects attach switches to processor–memory pairs and connect switches, as in rings or meshes. Indirect interconnects allow switching elements without directly attached processors."
+              },
+              "pages": [
+                102,
+                103
+              ]
+            },
+            {
+              "id": "material-6-c25",
+              "title": {
+                "zh": "二分宽度与二分带宽",
+                "en": "Bisection width and bandwidth"
+              },
+              "explanation": {
+                "zh": "把节点分为尽量相等两半，最窄割上的链路数量是二分宽度；这些链路可承载的位/秒为二分带宽。它们估计跨两半通信能力，数量与速率不可混用。",
+                "en": "Split nodes into equal halves: the minimum cut-link count is bisection width, while aggregate bit rate across that narrowest cut is bisection bandwidth. They estimate cross-half communication, distinguishing count from rate."
+              },
+              "pages": [
+                104,
+                105,
+                106
+              ]
+            },
+            {
+              "id": "material-6-c26",
+              "title": {
+                "zh": "全连接、环与超立方体",
+                "en": "Complete graphs, rings and hypercubes"
+              },
+              "explanation": {
+                "zh": "全连接直径1但链路数p(p−1)/2，成本随规模快速增长。环有p条链路、二分宽度2；p=2^d的超立方体有d=log₂p维，直径d、二分宽度p/2、链路pd/2。",
+                "en": "A complete graph has diameter 1 but p(p−1)/2 links. A ring has p links and width 2. A p=2^d hypercube has dimension/diameter d=log₂p, bisection width p/2 and pd/2 links."
+              },
+              "pages": [
+                107,
+                108,
+                109,
+                110
+              ]
+            },
+            {
+              "id": "material-6-c27",
+              "title": {
+                "zh": "直径、连通性与链路成本",
+                "en": "Diameter, connectivity and link cost"
+              },
+              "explanation": {
+                "zh": "直径是任意两节点最短路径的最大长度，用来衡量最坏跳数；课件比较星、二叉树、线性阵列、环、全连接和超立方体。低直径不等于高二分宽度，星形直径2但中间路径可成为瓶颈。",
+                "en": "Diameter is the largest shortest-path distance between nodes. The lecture compares stars, trees, lines, rings, complete graphs and hypercubes. Small diameter need not mean high bisection width; stars have diameter 2 but a central bottleneck."
+              },
+              "pages": [
+                110
+              ]
+            },
+            {
+              "id": "material-6-c28",
+              "title": {
+                "zh": "间接网络、Crossbar与Omega",
+                "en": "Indirect networks, crossbars and Omega"
+              },
+              "explanation": {
+                "zh": "间接网络让处理器的出入链路通过交换结构路由。交叉开关提供直接交换组合，Omega通过多级较小开关组织路径；选型需考虑路径冲突和硬件代价。",
+                "en": "Indirect networks route processor input/output links through switches. A crossbar provides switching combinations, whereas Omega organizes paths through stages of smaller switches; routing conflicts and hardware cost matter."
+              },
+              "pages": [
+                111,
+                112,
+                113,
+                114,
+                115
+              ]
+            },
+            {
+              "id": "material-6-c29",
+              "title": {
+                "zh": "跨维度的平台分类",
+                "en": "Cross-dimensional platform classification"
+              },
+              "explanation": {
+                "zh": "SIMD/MIMD描述指令和数据流，共享/分布内存描述地址与数据组织，SMP、NUMA、集群描述具体平台。课件总图把耦合度、粒度和通信速度放在连续谱上，应分别判断再组合。",
+                "en": "SIMD/MIMD describe streams, shared/distributed memory describe data organization, and SMP/NUMA/clusters describe platforms. The summary places coupling, granularity and communication speed on a spectrum; evaluate dimensions separately."
+              },
+              "pages": [
+                116,
+                117
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-6-c2",
+          "to": "material-6-c3",
+          "relation": {
+            "zh": "局部性决定缓存的有效命中机会",
+            "en": "Locality affects cache-hit opportunity"
+          }
+        },
+        {
+          "from": "material-6-c5",
+          "to": "material-6-c6",
+          "relation": {
+            "zh": "页表翻译由TLB加速",
+            "en": "TLB accelerates page-table translation"
+          }
+        },
+        {
+          "from": "material-6-c7",
+          "to": "material-6-c8",
+          "relation": {
+            "zh": "阶段重叠与同时发射提供不同ILP机制",
+            "en": "Stage overlap and multiple issue offer different ILP mechanisms"
+          }
+        },
+        {
+          "from": "material-6-c11",
+          "to": "material-6-c13",
+          "relation": {
+            "zh": "SIMD分类落实为同指令批量数据操作",
+            "en": "The SIMD class becomes batched same-instruction work"
+          }
+        },
+        {
+          "from": "material-6-c17",
+          "to": "material-6-c19",
+          "relation": {
+            "zh": "共享数据的私有缓存副本引出一致性问题",
+            "en": "Private copies of shared data create coherence needs"
+          }
+        },
+        {
+          "from": "material-6-c19",
+          "to": "material-6-c20",
+          "relation": {
+            "zh": "陈旧副本由失效或更新协议协调",
+            "en": "Invalidation or update coordinates stale copies"
+          }
+        },
+        {
+          "from": "material-6-c22",
+          "to": "material-6-c24",
+          "relation": {
+            "zh": "分布内存依赖互连组织通信",
+            "en": "Distributed memory depends on interconnect organization"
+          }
+        },
+        {
+          "from": "material-6-c24",
+          "to": "material-6-c25",
+          "relation": {
+            "zh": "拓扑的跨半网能力用二分指标评价",
+            "en": "Bisection metrics evaluate cross-half topology capacity"
+          }
+        },
+        {
+          "from": "material-6-c26",
+          "to": "material-6-c27",
+          "relation": {
+            "zh": "拓扑需同时权衡跳数、连通性与成本",
+            "en": "Topologies trade off hops, connectivity and cost"
+          }
+        },
+        {
+          "from": "material-6-c11",
+          "to": "material-6-c29",
+          "relation": {
+            "zh": "流分类与内存组织共同描述平台",
+            "en": "Stream and memory classifications jointly describe platforms"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-6-q1",
+          "conceptIds": [
+            "material-6-c1"
+          ],
+          "prompt": {
+            "zh": "单核交替运行两个进程是否等于两个物理核心同时执行？",
+            "en": "Does alternating two processes on one core equal simultaneous execution on two physical cores?"
+          },
+          "options": [
+            {
+              "zh": "不等于，因此单核不能产生任何并发交错",
+              "en": "No, so a single core cannot interleave concurrent tasks"
+            },
+            {
+              "zh": "等于，因为线程数直接决定物理核心数",
+              "en": "Yes, because thread count determines physical core count"
+            },
+            {
+              "zh": "等于，因为两个进程拥有各自的虚拟地址空间",
+              "en": "Yes, because the processes have separate virtual address spaces"
+            },
+            {
+              "zh": "不等于，它是时间片并发",
+              "en": "No, it is time-sliced concurrency"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "时间片交替与多核同时执行的硬件条件不同；线程也不等于独占核心。",
+            "en": "Time-sliced alternation and simultaneous multicore execution have different hardware conditions; a thread does not imply a dedicated core."
+          },
+          "pages": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "material-6-q2",
+          "conceptIds": [
+            "material-6-c2"
+          ],
+          "prompt": {
+            "zh": "顺序读取数组相邻元素主要利用哪种局部性？",
+            "en": "Sequentially reading neighboring array elements primarily exploits which locality?"
+          },
+          "options": [
+            {
+              "zh": "虚拟地址翻译，因为数组下标就是页表项",
+              "en": "Address translation because array indices are page-table entries"
+            },
+            {
+              "zh": "空间局部性",
+              "en": "Spatial locality"
+            },
+            {
+              "zh": "时间局部性，因为相邻元素必是同一地址",
+              "en": "Temporal locality because neighboring elements share an address"
+            },
+            {
+              "zh": "缓存一致性，因为连续地址必须由不同核心更新",
+              "en": "Coherence because neighboring addresses must be updated by different cores"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "相邻地址体现空间局部性；重复读同一累加器才是时间局部性的例子。",
+            "en": "Neighboring addresses exhibit spatial locality; reusing the same accumulator illustrates temporal locality."
+          },
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "material-6-q3",
+          "conceptIds": [
+            "material-6-c3"
+          ],
+          "prompt": {
+            "zh": "L1未命中时最合理的下一步是什么？",
+            "en": "What is a reasonable next step after an L1 miss?"
+          },
+          "options": [
+            {
+              "zh": "跳过所有后续层，返回上次缓存值",
+              "en": "Skip all lower levels and return an old cached value"
+            },
+            {
+              "zh": "将数据标为dirty以免继续查找",
+              "en": "Mark the data dirty to avoid further lookup"
+            },
+            {
+              "zh": "直接判定发生缺页并从磁盘加载",
+              "en": "Immediately declare a page fault and load from disk"
+            },
+            {
+              "zh": "检查后续缓存层，必要时访问主存",
+              "en": "Check later cache levels and access main memory if needed"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "未命中表示当前层没有所需副本，不代表整个存储系统没有数据。",
+            "en": "A miss means the current level lacks the needed copy, not that data is absent from the storage system."
+          },
+          "pages": [
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "id": "material-6-q4",
+          "conceptIds": [
+            "material-6-c4"
+          ],
+          "prompt": {
+            "zh": "脏位最直接服务于哪种策略？",
+            "en": "Which policy most directly uses a dirty bit?"
+          },
+          "options": [
+            {
+              "zh": "预取：dirty表示缓存行从未被任何程序访问",
+              "en": "Prefetch: dirty means a cache line was never accessed"
+            },
+            {
+              "zh": "TLB：dirty表示指令必须重新编译",
+              "en": "TLB: dirty means an instruction needs recompilation"
+            },
+            {
+              "zh": "写直达：用dirty标记每次已经同步到主存的写入",
+              "en": "Write-through: dirty marks every write already synchronized to memory"
+            },
+            {
+              "zh": "写回，记录尚未写到主存的修改",
+              "en": "Write-back, recording changes not yet written to memory"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "dirty说明缓存内容比主存新，需要在适当时机写回；写直达已同步写主存。",
+            "en": "Dirty indicates newer cache content requiring later write-back; write-through updates memory immediately."
+          },
+          "pages": [
+            11
+          ]
+        },
+        {
+          "id": "material-6-q5",
+          "conceptIds": [
+            "material-6-c5"
+          ],
+          "prompt": {
+            "zh": "页表的主要作用是什么？",
+            "en": "What is the main role of a page table?"
+          },
+          "options": [
+            {
+              "zh": "决定程序下一条分支指令是否执行",
+              "en": "Decide the next branch outcome"
+            },
+            {
+              "zh": "缓存最近访问的传感器测量值",
+              "en": "Cache recent sensor readings"
+            },
+            {
+              "zh": "映射虚拟页到物理存储位置",
+              "en": "Map virtual pages to physical locations"
+            },
+            {
+              "zh": "把每个线程映射为一个独占物理核心",
+              "en": "Map each thread to a dedicated physical core"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "页表负责地址映射，不是算术转换，也不保证所有数据常驻最快存储。",
+            "en": "Page tables provide address mapping, not arithmetic conversion or permanent residency in the fastest storage."
+          },
+          "pages": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "material-6-q6",
+          "conceptIds": [
+            "material-6-c6"
+          ],
+          "prompt": {
+            "zh": "TLB中没有某映射时，哪项结论正确？",
+            "en": "If a translation is absent from the TLB, which conclusion is correct?"
+          },
+          "options": [
+            {
+              "zh": "直接视为缺页，因为TLB与主存驻留完全相同",
+              "en": "Treat it as a page fault because TLB presence equals RAM residency"
+            },
+            {
+              "zh": "直接增加CPU频率便能生成正确映射",
+              "en": "Increase clock frequency to produce the correct translation"
+            },
+            {
+              "zh": "需进一步查询页表，不能立即断定页在磁盘",
+              "en": "A page-table lookup is needed; the page need not be on disk"
+            },
+            {
+              "zh": "直接从缓存返回旧物理地址而不查页表",
+              "en": "Reuse an old physical address without checking the page table"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "TLB缓存地址映射而非完整驻留状态，映射可不在TLB但页仍在主存。",
+            "en": "The TLB caches translations; a mapping can be absent there while its page remains in RAM."
+          },
+          "pages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-6-q7",
+          "conceptIds": [
+            "material-6-c7"
+          ],
+          "prompt": {
+            "zh": "理想7级流水线执行1000次独立加法为何是1006ns？",
+            "en": "Why do 1000 independent additions take 1006 ns in the ideal seven-stage pipeline?"
+          },
+          "options": [
+            {
+              "zh": "999ns，因为1000个结果之间只有999个间隔",
+              "en": "999 ns, counting only gaps between results"
+            },
+            {
+              "zh": "首个结果7ns，随后999个结果各间隔1ns",
+              "en": "The first result takes 7 ns, then 999 results emerge one ns apart"
+            },
+            {
+              "zh": "1000ns，因为只数1000个稳态周期而忽略填充",
+              "en": "1000 ns, counting steady-state cycles but ignoring filling"
+            },
+            {
+              "zh": "7000ns，因为每次加法都要等前一次完全退出流水线",
+              "en": "7000 ns, waiting for each addition to leave before starting the next"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "首个结果需要7ns，后续999个结果每1ns产生一个，合计1006ns。1000/999遗漏填充，7000则没有重叠。",
+            "en": "The first result needs 7 ns and the next 999 emerge every ns, totaling 1006 ns. 1000/999 omit filling; 7000 assumes no overlap."
+          },
+          "pages": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "id": "material-6-q8",
+          "conceptIds": [
+            "material-6-c8"
+          ],
+          "prompt": {
+            "zh": "运行时决定哪些独立指令同时发射，属于？",
+            "en": "Scheduling independent instructions for simultaneous issue at runtime is what?"
+          },
+          "options": [
+            {
+              "zh": "动态多发射",
+              "en": "Dynamic multiple issue"
+            },
+            {
+              "zh": "流水线，仅把同一操作分成阶段而不并行发射不同指令",
+              "en": "Pipelining that stages an operation without issuing distinct instructions together"
+            },
+            {
+              "zh": "静态多发射，调度由编译器预先确定",
+              "en": "Static multiple issue with compiler-planned scheduling"
+            },
+            {
+              "zh": "粗粒度多线程，只在长停顿时切换线程",
+              "en": "Coarse-grained threading that switches on long stalls"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "调度时间区分静态与动态：前者编译时，后者运行时。",
+            "en": "Scheduling time distinguishes them: static at compile time and dynamic at runtime."
+          },
+          "pages": [
+            28,
+            29
+          ]
+        },
+        {
+          "id": "material-6-q9",
+          "conceptIds": [
+            "material-6-c9"
+          ],
+          "prompt": {
+            "zh": "预测z>0并计算w=x，但实际z≤0时应怎样？",
+            "en": "If z>0 was predicted and w=x computed, but z≤0 actually holds, what should happen?"
+          },
+          "options": [
+            {
+              "zh": "将z更新为正值以保持已执行路径",
+              "en": "Change z to positive to preserve the executed path"
+            },
+            {
+              "zh": "只修正预测历史但不修正已算错的w",
+              "en": "Correct prediction history but leave w unchanged"
+            },
+            {
+              "zh": "保留w=x，因为推测结果优先于真实条件",
+              "en": "Keep w=x because prediction takes precedence over the actual condition"
+            },
+            {
+              "zh": "恢复并按正确分支计算w=y",
+              "en": "Recover and compute w=y on the correct branch"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "推测提高机会但不能改变程序语义，预测失败需要恢复。",
+            "en": "Speculation increases opportunity but cannot change program semantics; misprediction requires recovery."
+          },
+          "pages": [
+            30,
+            31
+          ]
+        },
+        {
+          "id": "material-6-q10",
+          "conceptIds": [
+            "material-6-c10"
+          ],
+          "prompt": {
+            "zh": "线程因访存长时间停顿才触发切换，最符合哪种方式？",
+            "en": "Switching threads mainly when a long memory stall occurs best matches which approach?"
+          },
+          "options": [
+            {
+              "zh": "SMT，让多个线程同周期利用多个功能单元",
+              "en": "SMT using functional units from multiple threads in one cycle"
+            },
+            {
+              "zh": "细粒度多线程，在每条指令之后选择其他可运行线程",
+              "en": "Fine-grained threading selecting another runnable thread after each instruction"
+            },
+            {
+              "zh": "静态多发射，在编译期安排功能单元",
+              "en": "Static multiple issue scheduling units at compile time"
+            },
+            {
+              "zh": "粗粒度硬件多线程",
+              "en": "Coarse-grained hardware multithreading"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "粗粒度在长停顿时切换；细粒度频繁切换，SMT强调同时使用多个功能单元。",
+            "en": "Coarse-grained switching targets long stalls; fine-grained switches frequently, while SMT emphasizes concurrent use of functional units."
+          },
+          "pages": [
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        {
+          "id": "material-6-q11",
+          "conceptIds": [
+            "material-6-c11"
+          ],
+          "prompt": {
+            "zh": "多个独立处理器可执行不同指令并处理不同数据，属于？",
+            "en": "Independent processors executing different instructions on different data are classified as what?"
+          },
+          "options": [
+            {
+              "zh": "MIMD",
+              "en": "MIMD"
+            },
+            {
+              "zh": "SISD",
+              "en": "SISD"
+            },
+            {
+              "zh": "SIMD",
+              "en": "SIMD"
+            },
+            {
+              "zh": "MISD",
+              "en": "MISD"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "指令流和数据流均为多，故为MIMD；SIMD共享同一指令流。",
+            "en": "Both instruction and data streams are multiple, hence MIMD; SIMD shares an instruction stream."
+          },
+          "pages": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44
+          ]
+        },
+        {
+          "id": "material-6-q12",
+          "conceptIds": [
+            "material-6-c12"
+          ],
+          "prompt": {
+            "zh": "两个柜员同时修改同一账户余额，类比提醒我们检查什么？",
+            "en": "Two tellers update the same balance concurrently. What does the analogy highlight?"
+          },
+          "options": [
+            {
+              "zh": "只需把账户复制到每个柜员，永不协调副本",
+              "en": "Copy accounts to each teller without coordinating replicas"
+            },
+            {
+              "zh": "只需缓存一致性，复合更新天然不会冲突",
+              "en": "Coherence alone makes compound updates conflict-free"
+            },
+            {
+              "zh": "只需增加柜员，账户更新顺序就自然确定",
+              "en": "Adding tellers automatically orders account updates"
+            },
+            {
+              "zh": "共享数据访问需要协调以保证正确",
+              "en": "Shared-data access must be coordinated for correctness"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "独立任务也可依赖同一数据；协调账户读写对应并行程序的共享数据同步。",
+            "en": "Independent tasks can depend on the same data; coordinating account updates corresponds to shared-data synchronization."
+          },
+          "pages": [
+            45,
+            46,
+            47
+          ]
+        },
+        {
+          "id": "material-6-q13",
+          "conceptIds": [
+            "material-6-c13"
+          ],
+          "prompt": {
+            "zh": "15个独立数据项由4个ALU每轮各处理1项，最少几轮？",
+            "en": "Fifteen independent items are processed one per ALU per round by four ALUs. How many rounds are needed?"
+          },
+          "options": [
+            {
+              "zh": "15轮，因为不能并行",
+              "en": "15 rounds because parallelism is impossible"
+            },
+            {
+              "zh": "4轮，末轮3项",
+              "en": "4 rounds, with 3 items in the last"
+            },
+            {
+              "zh": "3轮且无剩余",
+              "en": "3 rounds with nothing left"
+            },
+            {
+              "zh": "60轮",
+              "en": "60 rounds"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "ceil(15/4)=4，前三轮12项，末轮3项；未满一批导致部分ALU空闲。",
+            "en": "ceil(15/4)=4: twelve items in three rounds, then three, leaving one ALU idle in the last round."
+          },
+          "pages": [
+            49,
+            50,
+            51,
+            52,
+            53
+          ]
+        },
+        {
+          "id": "material-6-q14",
+          "conceptIds": [
+            "material-6-c14"
+          ],
+          "prompt": {
+            "zh": "为何把连续向量元素分布到多个存储bank？",
+            "en": "Why distribute consecutive vector elements across memory banks?"
+          },
+          "options": [
+            {
+              "zh": "通过增加bank数量保证任意不规则访问都无冲突",
+              "en": "More banks guarantee no conflicts for every irregular access"
+            },
+            {
+              "zh": "利用相对独立的访问减少连续读写等待",
+              "en": "Use relatively independent accesses to reduce successive-load/store delay"
+            },
+            {
+              "zh": "用bank编号代替向量指令，因而无需向量寄存器",
+              "en": "Replace vector instructions with bank numbers so registers are unnecessary"
+            },
+            {
+              "zh": "让所有元素必须依次访问同一个bank以避免并行",
+              "en": "Force all elements through one bank to avoid parallelism"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "bank交错提供并行存储带宽，但不会取消算法和访问模式的限制。",
+            "en": "Bank interleaving provides parallel memory bandwidth but does not remove algorithmic or access-pattern limits."
+          },
+          "pages": [
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60
+          ]
+        },
+        {
+          "id": "material-6-q15",
+          "conceptIds": [
+            "material-6-c15"
+          ],
+          "prompt": {
+            "zh": "为何不能只用“纯SIMD”概括整个GPU？",
+            "en": "Why is pure SIMD insufficient to describe an entire GPU?"
+          },
+          "options": [
+            {
+              "zh": "SIMD要求整个GPU所有功能始终执行同一条指令，不能有其他层次",
+              "en": "SIMD requires the whole GPU to execute one instruction at every level"
+            },
+            {
+              "zh": "只要有多个处理单元就必须完全属于MIMD，不能包含SIMD机制",
+              "en": "Multiple processing units require pure MIMD with no SIMD mechanism"
+            },
+            {
+              "zh": "SIMD是其可利用的并行机制，完整系统组织更复杂",
+              "en": "SIMD is a mechanism it exploits, while full-system organization is more complex"
+            },
+            {
+              "zh": "图形流水中的不同阶段与ALU上的同指令处理完全是同一层次",
+              "en": "Graphics-pipeline stages and same-instruction ALUs are the same abstraction level"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "GPU可利用SIMD处理数据，同时还有流水、控制和存储组织。整体平台、阶段和执行单元的分类层次不能混用。",
+            "en": "A GPU can use SIMD while also having pipeline, control and memory organization. Whole-platform, stage and execution-unit classifications must not be conflated."
+          },
+          "pages": [
+            61,
+            62,
+            63,
+            64
+          ]
+        },
+        {
+          "id": "material-6-q16",
+          "conceptIds": [
+            "material-6-c16"
+          ],
+          "prompt": {
+            "zh": "“MPI是一个物理互连拓扑”错在哪里？",
+            "en": "Why is MPI is a physical interconnect topology incorrect?"
+          },
+          "options": [
+            {
+              "zh": "因为软件抽象和具体硬件在任何系统中都必须一一对应",
+              "en": "Because every software abstraction must map one-to-one to hardware"
+            },
+            {
+              "zh": "因为MPI只能对应一种固定网络拓扑",
+              "en": "Because MPI can correspond to only one fixed topology"
+            },
+            {
+              "zh": "因为MPI定义的是物理内存读写时序而非消息",
+              "en": "Because MPI defines physical-memory timing rather than messages"
+            },
+            {
+              "zh": "把消息传递编程接口与具体硬件网络层混淆",
+              "en": "It confuses a message-passing programming interface with the physical network layer"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "模型/接口表达程序怎样通信，拓扑描述硬件怎样连接，属于不同抽象层。",
+            "en": "Models/interfaces describe how programs communicate; topology describes physical connectivity, a different abstraction level."
+          },
+          "pages": [
+            66,
+            67
+          ]
+        },
+        {
+          "id": "material-6-q17",
+          "conceptIds": [
+            "material-6-c17"
+          ],
+          "prompt": {
+            "zh": "增加共享总线上的处理器可能为什么不继续线性加速？",
+            "en": "Why may adding processors on a shared bus fail to give linear speedup?"
+          },
+          "options": [
+            {
+              "zh": "核心越多每条缓存线就越小，所以性能必下降",
+              "en": "More cores shrink every cache line, so performance must fall"
+            },
+            {
+              "zh": "总线竞争只存在于分布内存而不会出现在共享内存",
+              "en": "Bus contention exists only in distributed memory"
+            },
+            {
+              "zh": "总线竞争增加，访问请求等待",
+              "en": "Bus contention increases and requests wait"
+            },
+            {
+              "zh": "共享地址空间自动把访存带宽按核心数同比增加",
+              "en": "A shared address space scales bandwidth proportionally with cores"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "处理器共同使用互连资源，竞争可形成瓶颈；共享地址空间不消除同步。",
+            "en": "Processors compete for the interconnect, creating bottlenecks; a shared address space does not eliminate synchronization."
+          },
+          "pages": [
+            69,
+            70,
+            71,
+            72
+          ]
+        },
+        {
+          "id": "material-6-q18",
+          "conceptIds": [
+            "material-6-c18"
+          ],
+          "prompt": {
+            "zh": "NUMA程序把数据放在使用它的核心附近，主要改善什么？",
+            "en": "Placing NUMA data near the core using it primarily improves what?"
+          },
+          "options": [
+            {
+              "zh": "通过数据位置改变处理器的指令集分类",
+              "en": "Change instruction-stream classification by moving data"
+            },
+            {
+              "zh": "让远端内存自动具有与本地完全相同延迟",
+              "en": "Make remote memory automatically have identical local latency"
+            },
+            {
+              "zh": "用物理位置消除所有共享数据同步需求",
+              "en": "Use placement to eliminate all shared-data synchronization"
+            },
+            {
+              "zh": "减少较慢的远端内存访问",
+              "en": "Reduce slower remote-memory accesses"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "NUMA的性能差异来自位置相关的访存代价，数据局部性因此重要。",
+            "en": "NUMA costs depend on location, making data locality important."
+          },
+          "pages": [
+            73,
+            74,
+            75,
+            76
+          ]
+        },
+        {
+          "id": "material-6-q19",
+          "conceptIds": [
+            "material-6-c19"
+          ],
+          "prompt": {
+            "zh": "主存x已更新，另一个核心仍从缓存读到旧x，这属于？",
+            "en": "Memory x has been updated, but another core reads old x from cache. What is the issue?"
+          },
+          "options": [
+            {
+              "zh": "指令流水线填充，因为所有旧值都源于阶段延迟",
+              "en": "Pipeline fill because all stale values come from stage latency"
+            },
+            {
+              "zh": "负载不均，因为任何错误值都表示某核任务较多",
+              "en": "Load imbalance because every wrong value means unequal work"
+            },
+            {
+              "zh": "TLB未命中，因为变量值变化等同于虚拟页号变化",
+              "en": "A TLB miss because value changes equal virtual-page changes"
+            },
+            {
+              "zh": "缓存一致性问题",
+              "en": "A cache-coherence problem"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "问题在于同一共享位置的多个副本未协调，而不必涉及地址错误或外部网络。",
+            "en": "The issue is uncoordinated copies of one shared location, not necessarily addressing or external networking."
+          },
+          "pages": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82
+          ]
+        },
+        {
+          "id": "material-6-q20",
+          "conceptIds": [
+            "material-6-c20"
+          ],
+          "prompt": {
+            "zh": "同一核心连续写同一缓存位置时，失效为何可能比更新少通信？",
+            "en": "Why can invalidation use less traffic for repeated writes by one core?"
+          },
+          "options": [
+            {
+              "zh": "失效后读者可永久使用旧副本直到程序结束",
+              "en": "After invalidation readers may use stale copies until termination"
+            },
+            {
+              "zh": "其他副本失效后，不必每次广播新值",
+              "en": "Once other copies are invalid, each new value need not be broadcast"
+            },
+            {
+              "zh": "每次写仍必须向所有失效副本发送完整新值",
+              "en": "Every write must still send full values to every invalid copy"
+            },
+            {
+              "zh": "更新协议只在第一次写入时广播，后续写都省略",
+              "en": "Update broadcasts only on the first write and skips later writes"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "初次失效后其他核心需重新取有效数据；更新则每次传新值，代价取决于访问模式。",
+            "en": "After invalidation, others must fetch valid data when needed; update sends every new value, with costs depending on the access pattern."
+          },
+          "pages": [
+            83,
+            84,
+            85,
+            86
+          ]
+        },
+        {
+          "id": "material-6-q21",
+          "conceptIds": [
+            "material-6-c21"
+          ],
+          "prompt": {
+            "zh": "只有少数活跃线程但工作集较大，共享末级缓存的潜在优势是？",
+            "en": "With few active threads and a large working set, what is a potential shared last-level-cache advantage?"
+          },
+          "options": [
+            {
+              "zh": "私有缓存未使用的空间始终可被任意其他核心直接占用",
+              "en": "Unused private-cache space is always directly available to any core"
+            },
+            {
+              "zh": "少数线程运行时缓存总容量会自动变成无限",
+              "en": "Cache capacity becomes unlimited with few threads"
+            },
+            {
+              "zh": "共享末级缓存可代替所有一级缓存而没有延迟代价",
+              "en": "Shared last-level cache replaces all L1 caches without latency cost"
+            },
+            {
+              "zh": "活跃线程可使用更多共享容量",
+              "en": "Active threads can use more shared capacity"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "共享容量可在活跃线程之间更灵活分配，但访问延迟与一致性等问题仍存在。",
+            "en": "Shared capacity can be allocated more flexibly among active threads, but latency and coherence concerns remain."
+          },
+          "pages": [
+            87,
+            88,
+            89,
+            90
+          ]
+        },
+        {
+          "id": "material-6-q22",
+          "conceptIds": [
+            "material-6-c22"
+          ],
+          "prompt": {
+            "zh": "为什么细粒度高频通信任务不一定适合松耦合远程系统？",
+            "en": "Why might a fine-grained, communication-heavy task fit a loosely coupled remote system poorly?"
+          },
+          "options": [
+            {
+              "zh": "松耦合系统的每次网络通信必与寄存器访问同样快",
+              "en": "Every loosely coupled network message is as fast as a register access"
+            },
+            {
+              "zh": "通信代价可能相对每次计算过大",
+              "en": "Communication may be expensive relative to each computation"
+            },
+            {
+              "zh": "只要资源数相等，耦合度对执行时间没有影响",
+              "en": "Equal resource count makes coupling irrelevant to runtime"
+            },
+            {
+              "zh": "细粒度任务一定包含更多计算，所以通信占比最低",
+              "en": "Fine-grained tasks necessarily contain more work and minimize communication ratio"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "粒度与通信速度共同决定效率，远程资源共享并不保证紧耦合任务加速。",
+            "en": "Granularity and communication speed jointly affect efficiency; remote sharing does not guarantee speedup for tightly coupled work."
+          },
+          "pages": [
+            92,
+            93,
+            94,
+            95,
+            96
+          ]
+        },
+        {
+          "id": "material-6-q23",
+          "conceptIds": [
+            "material-6-c23"
+          ],
+          "prompt": {
+            "zh": "交叉开关相对总线的典型取舍是什么？",
+            "en": "What is the typical crossbar-versus-bus trade-off?"
+          },
+          "options": [
+            {
+              "zh": "减少全部开关数量，同时保证任意规模无冲突",
+              "en": "Reduce all switches while guaranteeing conflict-free arbitrary scale"
+            },
+            {
+              "zh": "只通过给总线提频而不改变共享结构获得交叉开关",
+              "en": "Create a crossbar only by raising bus frequency"
+            },
+            {
+              "zh": "更多并发通信机会，但硬件连接成本更高",
+              "en": "More concurrent communication opportunities at greater hardware cost"
+            },
+            {
+              "zh": "用更多交换链路换取固定只能一对设备通信",
+              "en": "Use more switching links but restrict communication to one pair"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "交换网络提高并发机会，需要更多开关与链路；不能同时假定零成本与无限性能。",
+            "en": "Switched networks improve concurrency using more switches and links; zero cost and unlimited performance do not follow."
+          },
+          "pages": [
+            98,
+            99,
+            100,
+            101
+          ]
+        },
+        {
+          "id": "material-6-q24",
+          "conceptIds": [
+            "material-6-c24"
+          ],
+          "prompt": {
+            "zh": "某网络含不直接连接处理器的中间交换机，体现哪类互连？",
+            "en": "A network has intermediate switches not directly attached to processors. Which class does this illustrate?"
+          },
+          "options": [
+            {
+              "zh": "UMA，因为是否附属处理器完全等于访存时间是否相同",
+              "en": "UMA because switch attachment equals uniform memory time"
+            },
+            {
+              "zh": "共享总线，因为所有交换层都只是一条共同线路",
+              "en": "Shared bus because all switching stages form one shared line"
+            },
+            {
+              "zh": "间接互连",
+              "en": "Indirect interconnect"
+            },
+            {
+              "zh": "直接互连，因为每个交换器都必须直接附属一个处理器",
+              "en": "Direct interconnect, requiring every switch to attach to a processor"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "是否每个交换节点直接带处理器—内存对，是课件区分两类互连的关键。",
+            "en": "Whether each switch directly attaches to a processor–memory pair distinguishes the two classes here."
+          },
+          "pages": [
+            102,
+            103
+          ]
+        },
+        {
+          "id": "material-6-q25",
+          "conceptIds": [
+            "material-6-c25"
+          ],
+          "prompt": {
+            "zh": "最窄二分割有2条各1Gbit/s链路，在相同计数方向下总带宽是多少？",
+            "en": "A minimum bisection has two 1 Gbit/s links. Under the same direction-counting convention, what is the aggregate bandwidth?"
+          },
+          "options": [
+            {
+              "zh": "2Gbit/s，宽度为2",
+              "en": "2 Gbit/s, width 2"
+            },
+            {
+              "zh": "0.5Gbit/s，用速率除以链路数",
+              "en": "0.5 Gbit/s, dividing rate by link count"
+            },
+            {
+              "zh": "4Gbit/s，额外把双向速率再算一次",
+              "en": "4 Gbit/s, counting both directions again"
+            },
+            {
+              "zh": "1Gbit/s，把最慢单链路速率直接当作总割带宽",
+              "en": "1 Gbit/s, taking one link rate as aggregate cut bandwidth"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "宽度是2条，统一方向下带宽为2×1=2Gbit/s。1忽略并发链路，4重复计方向，0.5错误地用除法。",
+            "en": "Width is two links and bandwidth is 2×1=2 Gbit/s under one direction convention. One ignores parallel links, four double-counts directions and 0.5 incorrectly divides."
+          },
+          "pages": [
+            104,
+            105,
+            106
+          ]
+        },
+        {
+          "id": "material-6-q26",
+          "conceptIds": [
+            "material-6-c26"
+          ],
+          "prompt": {
+            "zh": "8节点超立方体的维数、二分宽度、链路数分别为？",
+            "en": "For an eight-node hypercube, what are dimension, bisection width and link count?"
+          },
+          "options": [
+            {
+              "zh": "8、2、8",
+              "en": "8, 2, 8"
+            },
+            {
+              "zh": "3、8、24",
+              "en": "3, 8, 24"
+            },
+            {
+              "zh": "1、16、28",
+              "en": "1, 16, 28"
+            },
+            {
+              "zh": "3、4、12",
+              "en": "3, 4, 12"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "log₂8=3，8/2=4，8×3/2=12；无向链路两端均计数后须除以2。",
+            "en": "log₂8=3, 8/2=4 and 8×3/2=12; dividing by two avoids counting each undirected link at both ends."
+          },
+          "pages": [
+            107,
+            108,
+            109,
+            110
+          ]
+        },
+        {
+          "id": "material-6-q27",
+          "conceptIds": [
+            "material-6-c27"
+          ],
+          "prompt": {
+            "zh": "星形直径小，能否因此断言其跨半网通信能力必优于所有拓扑？",
+            "en": "Does a small star diameter prove its cross-half communication is better than every topology?"
+          },
+          "options": [
+            {
+              "zh": "能，因为直径同时给出了二分割的链路数量",
+              "en": "Yes, diameter also gives the number of cut links"
+            },
+            {
+              "zh": "不能，但只需比较节点总数而不用看链路",
+              "en": "No, but node count alone is sufficient without links"
+            },
+            {
+              "zh": "不能，还要看二分宽度、链路速率与竞争",
+              "en": "No; bisection width, rates and contention also matter"
+            },
+            {
+              "zh": "能，因为星形中心能自动提供无限并发带宽",
+              "en": "Yes, the star centre automatically provides unlimited concurrent bandwidth"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "直径只表示最坏最短路径跳数，不能替代并发通信容量指标。",
+            "en": "Diameter describes worst shortest-path hops, not concurrent communication capacity."
+          },
+          "pages": [
+            110
+          ]
+        },
+        {
+          "id": "material-6-q28",
+          "conceptIds": [
+            "material-6-c28"
+          ],
+          "prompt": {
+            "zh": "Omega示意图与单一共享总线的主要结构差别是？",
+            "en": "How does the Omega diagram structurally differ from one shared bus?"
+          },
+          "options": [
+            {
+              "zh": "它由多个阶段的小交换单元连接成路径",
+              "en": "It forms paths through multiple stages of small switches"
+            },
+            {
+              "zh": "Omega以软件页表而非交换单元决定物理连线",
+              "en": "Omega uses software page tables instead of switches for physical connections"
+            },
+            {
+              "zh": "Omega必须给每对处理器配置一条专用直连链路",
+              "en": "Omega requires a dedicated direct link between every processor pair"
+            },
+            {
+              "zh": "Omega只有一组全体设备共享的连续导线",
+              "en": "Omega is a single continuous wire shared by all devices"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "Omega图体现多级交换结构；总线是共享通信线路，页表则属于地址翻译。",
+            "en": "Omega is a multistage switching structure; a bus shares wires and a page table belongs to address translation."
+          },
+          "pages": [
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        {
+          "id": "material-6-q29",
+          "conceptIds": [
+            "material-6-c29"
+          ],
+          "prompt": {
+            "zh": "“MIMD系统一定只有共享内存”为何不成立？",
+            "en": "Why is every MIMD system shared-memory incorrect?"
+          },
+          "options": [
+            {
+              "zh": "因为共享与分布内存由指令数量而非地址组织定义",
+              "en": "Because memory type is defined by instruction count rather than address organization"
+            },
+            {
+              "zh": "因为MIMD只能描述软件而不能描述硬件结构",
+              "en": "Because MIMD can describe only software, not hardware"
+            },
+            {
+              "zh": "流分类和内存组织是不同维度，MIMD可对应多种内存组织",
+              "en": "Stream classification and memory organization are distinct; MIMD can use different memory organizations"
+            },
+            {
+              "zh": "因为多指令流必定意味着单一全局物理内存",
+              "en": "Because multiple instruction streams imply one global physical memory"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "总图同时给出共享和分布内存的MIMD平台，不能用一个分类维度替代另一个。",
+            "en": "The summary includes both shared- and distributed-memory MIMD platforms; one dimension cannot replace another."
+          },
+          "pages": [
+            116,
+            117
+          ]
+        },
+        {
+          "id": "material-6-q30",
+          "conceptIds": [
+            "material-6-c4"
+          ],
+          "pages": [
+            11
+          ],
+          "prompt": {
+            "zh": "缓存修改后暂不写主存，替换脏行时再更新主存，这是什么？",
+            "en": "A cache change is deferred in memory until a dirty line is replaced. What is this?"
+          },
+          "options": [
+            {
+              "zh": "地址翻译缓存",
+              "en": "Translation caching"
+            },
+            {
+              "zh": "只读预取",
+              "en": "Read-only prefetch"
+            },
+            {
+              "zh": "写回",
+              "en": "Write-back"
+            },
+            {
+              "zh": "写直达",
+              "en": "Write-through"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "写回延迟更新主存并用dirty记录修改；写直达在写缓存时同步更新。",
+            "en": "Write-back defers memory updates and tracks dirty changes; write-through updates memory with each cache write."
+          }
+        },
+        {
+          "id": "material-6-q31",
+          "conceptIds": [
+            "material-6-c5",
+            "material-6-c6"
+          ],
+          "pages": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "prompt": {
+            "zh": "页表与TLB的正确关系是？",
+            "en": "What is the correct relationship between a page table and TLB?"
+          },
+          "options": [
+            {
+              "zh": "TLB缓存部分地址映射，页表提供完整的相关映射信息",
+              "en": "The TLB caches some translations while the page table supplies mapping information"
+            },
+            {
+              "zh": "TLB未命中表示页表一定没有合法映射",
+              "en": "A TLB miss means no valid page-table mapping exists"
+            },
+            {
+              "zh": "页表项数量必须等于线程数量",
+              "en": "Page-table entry count must equal thread count"
+            },
+            {
+              "zh": "页表缓存完整应用数据，TLB保存所有磁盘文件",
+              "en": "The page table caches application data and TLB holds all disk files"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "TLB加速翻译，不等同于数据缓存或页驻留本身；未命中仍可查页表。",
+            "en": "The TLB accelerates translations, not application-data caching or residency itself; a miss can be resolved through the page table."
+          }
+        },
+        {
+          "id": "material-6-q32",
+          "conceptIds": [
+            "material-6-c10"
+          ],
+          "pages": [
+            32,
+            33,
+            34,
+            35
+          ],
+          "prompt": {
+            "zh": "哪个方案允许同一周期多个线程使用多个功能单元？",
+            "en": "Which approach lets multiple threads use functional units in the same cycle?"
+          },
+          "options": [
+            {
+              "zh": "仅把虚拟页映射到物理页",
+              "en": "Only virtual-to-physical page mapping"
+            },
+            {
+              "zh": "只在长停顿后换线程的粗粒度方式",
+              "en": "Coarse-grained switching only after long stalls"
+            },
+            {
+              "zh": "一次只发射一个线程指令的简单轮换",
+              "en": "Simple rotation issuing from one thread at a time"
+            },
+            {
+              "zh": "SMT",
+              "en": "SMT"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "SMT结合多线程与多个执行资源；按停顿切换和地址映射不等于同时发射利用。",
+            "en": "SMT combines threads with multiple execution resources; stall-based switching and address mapping are not simultaneous use."
+          }
+        },
+        {
+          "id": "material-6-q33",
+          "conceptIds": [
+            "material-6-c11"
+          ],
+          "pages": [
+            38,
+            39,
+            40,
+            43
+          ],
+          "prompt": {
+            "zh": "同一数据流输入多个独立指令处理流，按Flynn属于？",
+            "en": "One data stream feeds multiple independent instruction streams. What Flynn class is it?"
+          },
+          "options": [
+            {
+              "zh": "MIMD",
+              "en": "MIMD"
+            },
+            {
+              "zh": "MISD",
+              "en": "MISD"
+            },
+            {
+              "zh": "SISD",
+              "en": "SISD"
+            },
+            {
+              "zh": "SIMD",
+              "en": "SIMD"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "多指令、单数据即MISD；SIMD交换了两维，MIMD两维都是多。",
+            "en": "Multiple instruction/single data is MISD; SIMD swaps the dimensions and MIMD is multiple in both."
+          }
+        },
+        {
+          "id": "material-6-q34",
+          "conceptIds": [
+            "material-6-c14"
+          ],
+          "pages": [
+            58
+          ],
+          "prompt": {
+            "zh": "程序按固定间隔访问向量元素，最直接对应哪个术语？",
+            "en": "A program accesses vector elements at fixed intervals. Which term fits?"
+          },
+          "options": [
+            {
+              "zh": "根据错误分支猜测执行",
+              "en": "Execution based on branch speculation"
+            },
+            {
+              "zh": "每次都访问同一地址的时间局部性",
+              "en": "Temporal reuse of one address"
+            },
+            {
+              "zh": "每条缓存线都被修改的写直达",
+              "en": "Write-through of every cache line"
+            },
+            {
+              "zh": "步长访问",
+              "en": "Strided access"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "步长访问用固定索引间隔；它不同于同地址复用、写策略和控制流预测。",
+            "en": "Strided access uses a fixed index interval, unlike same-address reuse, write policy or branch prediction."
+          }
+        },
+        {
+          "id": "material-6-q35",
+          "conceptIds": [
+            "material-6-c26"
+          ],
+          "pages": [
+            107,
+            110
+          ],
+          "prompt": {
+            "zh": "8节点无向全连接网络有多少条链路？",
+            "en": "How many undirected links does an eight-node complete network have?"
+          },
+          "options": [
+            {
+              "zh": "56",
+              "en": "56"
+            },
+            {
+              "zh": "28",
+              "en": "28"
+            },
+            {
+              "zh": "16",
+              "en": "16"
+            },
+            {
+              "zh": "8",
+              "en": "8"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "p(p−1)/2=8×7/2=28；56把每条链路两个端点分别计了一次，8更接近环的链路数。",
+            "en": "p(p−1)/2=8×7/2=28. Fifty-six double-counts endpoints; eight is the ring link count."
+          }
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          66,
+          67,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          92,
+          93,
+          94,
+          95,
+          96,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              36,
+              37,
+              48,
+              65,
+              68,
+              91,
+              97
+            ],
+            "reason": {
+              "zh": "封面、目录、章节分隔、重复回顾或非教学行政信息；知识已合并到相应主题。",
+              "en": "Cover, agenda, divider, repeated recap, or non-teaching administration; repeated knowledge is consolidated under its topic."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "本课含历史硬件示例和简化分类。固定缓存容量、处理器上限及“目前”等措辞不作为通用现状；按页码学习其机制。",
+        "en": "This lecture contains historical hardware and simplified classifications. Fixed cache sizes, processor limits and present-day wording are not universal current facts; focus on mechanisms."
+      },
+      "sourceSha256": "f2ff01055d1274ec7f01f366662dc4b3c0bb0789edd3794be42d7ddc24a1d653"
+    }
+  ]
+}

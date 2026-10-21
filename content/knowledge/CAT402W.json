@@ -1,0 +1,3602 @@
+{
+  "courseId": "CAT402W",
+  "overview": {
+    "zh": "把职业能力转化为可展示的价值，用 GenAI 放大能力，再以战略—战术—运营链条组织电子商务，最后通过真实营销项目检验效果。",
+    "en": "Turn professional capability into demonstrable value, amplify it with GenAI, organize e-business through strategy–tactics–operations, and test results through a real marketing project."
+  },
+  "pathway": [
+    {
+      "resourceId": "material-40",
+      "reason": {
+        "zh": "先明确职业能力与科技创业两条主线及考核。",
+        "en": "Start with the professional and technopreneurship strands and assessments."
+      }
+    },
+    {
+      "resourceId": "material-41",
+      "reason": {
+        "zh": "建立技能、AI 判断与客户价值的连接，再用作品证明能力。",
+        "en": "Connect skills, AI judgment, and customer value, then demonstrate capability through a portfolio."
+      }
+    },
+    {
+      "resourceId": "material-46",
+      "reason": {
+        "zh": "职业发展章节的装饰配图，学习内容集中在前一份课件。",
+        "en": "Decorative illustration for professional development; learning content is in the preceding deck."
+      }
+    },
+    {
+      "resourceId": "material-47",
+      "reason": {
+        "zh": "先用金字塔建立战略、战术与运营三层的整体结构。",
+        "en": "Use the pyramid to establish strategy, tactics, and operations."
+      }
+    },
+    {
+      "resourceId": "material-42",
+      "reason": {
+        "zh": "展开三层框架，连接 RevOps、客户流程、技术与反馈。",
+        "en": "Expand the levels through RevOps, customer workflows, technology, and feedback."
+      }
+    },
+    {
+      "resourceId": "material-39",
+      "reason": {
+        "zh": "用营销项目把受众、内容、发布、指标和改进连成实践闭环。",
+        "en": "Apply the concepts through a campaign linking audience, content, publication, metrics, and improvement."
+      }
+    }
+  ],
+  "materials": [
+    {
+      "resourceId": "material-40",
+      "overview": {
+        "zh": "了解职业发展与科技创业两条主线、课程成果、考核组成及课程责任。",
+        "en": "Understand the professional-development and technopreneurship strands, learning outcomes, assessment components, and course responsibilities."
+      },
+      "groups": [
+        {
+          "id": "material-40-g1",
+          "title": {
+            "zh": "课程导航",
+            "en": "Course orientation"
+          },
+          "concepts": [
+            {
+              "id": "material-40-strands",
+              "title": {
+                "zh": "职业发展与科技创业",
+                "en": "Professional development and technopreneurship"
+              },
+              "explanation": {
+                "zh": "课程将 IT 产品/服务的商业想法、计划、启动与运营，与专业责任、伦理、社会影响和职业发展结合。商业价值和专业责任共同构成学习目标。",
+                "en": "The course combines IT-based ideas, business planning, launching, and operations with professional responsibility, ethics, social impact, and career development. Business value and professional responsibility jointly shape the learning goals."
+              },
+              "pages": [
+                4,
+                5
+              ]
+            },
+            {
+              "id": "material-40-outcomes",
+              "title": {
+                "zh": "四项课程成果",
+                "en": "Four course learning outcomes"
+              },
+              "explanation": {
+                "zh": "CLO1 连接个人技能与职业/创业决策；CLO2 建立可持续、多渠道且关注保护措施的电子商务计划；CLO3 分析 ICT 伦理法律社会影响；CLO4 清晰自信地展示计划。",
+                "en": "CLO1 connects skills to career and venture decisions; CLO2 develops a sustainable multichannel e-business plan with protection practices; CLO3 examines ICT ethical, legal, and social implications; CLO4 communicates the plan clearly and confidently."
+              },
+              "pages": [
+                8
+              ]
+            },
+            {
+              "id": "material-40-assessment",
+              "title": {
+                "zh": "全课程考核结构",
+                "en": "Coursework-only assessment"
+              },
+              "explanation": {
+                "zh": "概览列出100% coursework：测试40%、作业20%、项目30%、项目展示10%。项目指南把营销迷你项目整体称为40%，应同时区分项目与展示。",
+                "en": "The overview specifies 100% coursework: tests 40%, assignment 20%, project 30%, and project presentation 10%. The marketing guide calls the combined mini-project 40%; distinguish the project and presentation components."
+              },
+              "pages": [
+                6
+              ]
+            },
+            {
+              "id": "material-40-sequence",
+              "title": {
+                "zh": "教学主题顺序",
+                "en": "Teaching sequence"
+              },
+              "explanation": {
+                "zh": "前半段从电子商务基础走向运营、销售和网络营销；后半段涉及未来技术、ICT 项目挑战与技术提案。课程计划是主题导航，不等于每份课件已发布。",
+                "en": "The first half moves from e-business foundations to operations, selling, and web marketing; the second addresses future technologies, ICT project challenges, and proposals. The schedule is a roadmap, not proof that every deck is already available."
+              },
+              "pages": [
+                9,
+                10
+              ]
+            },
+            {
+              "id": "material-40-responsibility",
+              "title": {
+                "zh": "出席、期限与原创责任",
+                "en": "Attendance, deadlines, and originality"
+              },
+              "explanation": {
+                "zh": "课程要求出席、按期提交，并对缺考例外和抄袭作出规定。准备时应保存原创过程与出处，遇到时间或缺考问题按课程规定处理。",
+                "en": "The course requires attendance and timely submission, with rules for missed tests and plagiarism. Keep evidence of original work and sources, and follow course procedures for timing or absence issues."
+              },
+              "pages": [
+                12
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-40-strands",
+          "to": "material-40-outcomes",
+          "relation": {
+            "zh": "两条主线落实为四项成果",
+            "en": "The two strands become four outcomes"
+          }
+        },
+        {
+          "from": "material-40-outcomes",
+          "to": "material-40-assessment",
+          "relation": {
+            "zh": "通过测试、作业与项目展示成果",
+            "en": "Outcomes are assessed through tests, assignments, and the project"
+          }
+        },
+        {
+          "from": "material-40-sequence",
+          "to": "material-40-assessment",
+          "relation": {
+            "zh": "按教学顺序准备对应考核",
+            "en": "Prepare assessments along the teaching sequence"
+          }
+        },
+        {
+          "from": "material-40-responsibility",
+          "to": "material-40-assessment",
+          "relation": {
+            "zh": "按规定完成各项考核",
+            "en": "Complete assessments under course rules"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-40-strands-q",
+          "conceptIds": [
+            "material-40-strands"
+          ],
+          "prompt": {
+            "zh": "一份 IT 创业计划只讨论收入而完全不考虑隐私与责任，遗漏了什么？",
+            "en": "An IT business plan discusses revenue but ignores privacy and responsibility. What is omitted?"
+          },
+          "options": [
+            {
+              "zh": "课程的专业发展与责任主线",
+              "en": "The professional-development and responsibility strand"
+            },
+            {
+              "zh": "课程只要求完成市场营销，隐私属于完全无关主题",
+              "en": "The course concerns only marketing, with privacy entirely unrelated"
+            },
+            {
+              "zh": "只要商业计划可盈利就自动满足全部课程成果",
+              "en": "A profitable plan automatically meets every outcome"
+            },
+            {
+              "zh": "只有最终展示时才需要考虑专业责任",
+              "en": "Responsibility matters only during the final presentation"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "课程同时覆盖专业责任与创业；盈利、营销或展示不能替代伦理与隐私分析。",
+            "en": "The course covers responsibility alongside entrepreneurship; profit, marketing, and presentation do not replace ethical and privacy analysis."
+          },
+          "pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "material-40-outcomes-q",
+          "conceptIds": [
+            "material-40-outcomes"
+          ],
+          "prompt": {
+            "zh": "“解释隐私、知识产权与网络犯罪的社会影响”最直接对应哪项？",
+            "en": "“Explain social implications of privacy, IP, and cybercrime” most directly maps to which outcome?"
+          },
+          "options": [
+            {
+              "zh": "CLO1：个人职业决策",
+              "en": "CLO1: personal career decisions"
+            },
+            {
+              "zh": "CLO3：伦理、法律与社会影响",
+              "en": "CLO3: ethical, legal, and social implications"
+            },
+            {
+              "zh": "CLO2：运营商业计划",
+              "en": "CLO2: operating a business plan"
+            },
+            {
+              "zh": "CLO4：展示表达",
+              "en": "CLO4: presentation"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "这些主题属于 CLO3；其他成果涉及职业判断、商业计划或沟通表达。",
+            "en": "These topics belong to CLO3; the others concern career decisions, business planning, or communication."
+          },
+          "pages": [
+            8
+          ]
+        },
+        {
+          "id": "material-40-assessment-q",
+          "conceptIds": [
+            "material-40-assessment"
+          ],
+          "prompt": {
+            "zh": "按照概览，项目与项目展示合计多少？",
+            "en": "According to the overview, what is the combined project and presentation weight?"
+          },
+          "options": [
+            {
+              "zh": "30%",
+              "en": "30%"
+            },
+            {
+              "zh": "50%",
+              "en": "50%"
+            },
+            {
+              "zh": "40%",
+              "en": "40%"
+            },
+            {
+              "zh": "60%",
+              "en": "60%"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "项目30%加展示10%为40%；这与单独项目部分的30%不同。",
+            "en": "The project’s 30% plus presentation’s 10% totals 40%, distinct from the project component alone."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-40-sequence-q",
+          "conceptIds": [
+            "material-40-sequence"
+          ],
+          "prompt": {
+            "zh": "学习“运营电子商务”后，计划中紧接的相关主题是什么？",
+            "en": "After operating e-business, which related themes follow in the schedule?"
+          },
+          "options": [
+            {
+              "zh": "先进行最终展示，再介绍电子商务",
+              "en": "Final presentation before e-business introduction"
+            },
+            {
+              "zh": "只学习职业申请，不涉及网络销售",
+              "en": "Career applications only, without web selling"
+            },
+            {
+              "zh": "后续只有测试，没有其他技术主题",
+              "en": "Only tests remain, with no technology topics"
+            },
+            {
+              "zh": "网络销售与网络营销",
+              "en": "Selling and marketing on the web"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "主题表从基础、运营进入销售与营销，后半学期还列技术和项目主题。",
+            "en": "The table progresses to selling and marketing, with technology and project topics later."
+          },
+          "pages": [
+            9,
+            10
+          ]
+        },
+        {
+          "id": "material-40-responsibility-q",
+          "conceptIds": [
+            "material-40-responsibility"
+          ],
+          "prompt": {
+            "zh": "组员建议复制另一组作品以赶期限，哪种应对符合课程责任？",
+            "en": "A teammate suggests copying another group to meet a deadline. Which response fits course responsibilities?"
+          },
+          "options": [
+            {
+              "zh": "保留原创并按课程程序处理时间问题",
+              "en": "Keep the work original and address timing through course procedures"
+            },
+            {
+              "zh": "复制后更改字体即可",
+              "en": "Copy and change the font"
+            },
+            {
+              "zh": "允许复制但不署名",
+              "en": "Allow copying without attribution"
+            },
+            {
+              "zh": "有期限就自动免除原创要求",
+              "en": "Assume deadlines waive originality requirements"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "期限压力不会取消学术诚信要求，课件明确惩罚复制及允许他人复制。",
+            "en": "Deadline pressure does not remove integrity requirements; the deck addresses copying and enabling copying."
+          },
+          "pages": [
+            12
+          ]
+        },
+        {
+          "id": "material-40-outcomes-q2",
+          "conceptIds": [
+            "material-40-outcomes"
+          ],
+          "prompt": {
+            "zh": "个人职业判断、可持续多渠道商业计划、清晰展示，分别最直接对应什么？",
+            "en": "Personal career judgment, a sustainable multichannel business plan, and clear presentation map most directly to what?"
+          },
+          "options": [
+            {
+              "zh": "CLO2、CLO3、CLO1",
+              "en": "CLO2, CLO3, CLO1"
+            },
+            {
+              "zh": "CLO1、CLO2、CLO4",
+              "en": "CLO1, CLO2, CLO4"
+            },
+            {
+              "zh": "CLO3、CLO1、CLO2",
+              "en": "CLO3, CLO1, CLO2"
+            },
+            {
+              "zh": "三项均只属于CLO3",
+              "en": "All belong only to CLO3"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "CLO1关注职业决定，CLO2关注可持续计划，CLO4关注展示；CLO3关注伦理法律社会影响。",
+            "en": "CLO1 concerns career decisions, CLO2 sustainable planning, and CLO4 presentation; CLO3 concerns ethical, legal, and social implications."
+          },
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2,
+              3,
+              7,
+              11,
+              13
+            ],
+            "reason": {
+              "zh": "封面、学习目标、参考资料、行政信息或重复总结；不设独立考点。",
+              "en": "Cover, learning objectives, references, administrative information, or repeated recap; no separate learning objective."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "课程概览的测试时段标注“pagi”与课表时段不一致，具体考试时间以最新通知为准；这里不据此推定上午或下午。",
+        "en": "The test schedule’s “pagi” wording conflicts with the class timetable. Use the latest notice for the actual time; this guide does not infer morning or afternoon."
+      },
+      "sourceSha256": "2e3b834e5f8d8ec6f6ab301e9cf86b1f7bc19cd99c2bd5966fb10eb2b168e1f9"
+    },
+    {
+      "resourceId": "material-41",
+      "overview": {
+        "zh": "围绕“我能解决什么问题”建立职业能力，用人类判断指导 GenAI，把技能转化为作品与客户价值，并持续学习改进。",
+        "en": "Build professional capability around problems you can solve, direct GenAI with human judgment, turn skills into portfolio evidence and customer value, and keep learning."
+      },
+      "groups": [
+        {
+          "id": "material-41-g1",
+          "title": {
+            "zh": "职业能力与变化中的路径",
+            "en": "Capability and changing career paths"
+          },
+          "concepts": [
+            {
+              "id": "material-41-adaptability",
+              "title": {
+                "zh": "职业适应力",
+                "en": "Professional adaptability"
+              },
+              "explanation": {
+                "zh": "创业是可能的职业路径之一，适应变化则适用于所有路径。重点是技术变化时仍能创造价值，而不是要求每名毕业生都开公司。",
+                "en": "Entrepreneurship is one possible career path; adaptability matters across all paths. The goal is to remain valuable as technology changes, not to require every graduate to start a company."
+              },
+              "pages": [
+                4,
+                26,
+                28
+              ]
+            },
+            {
+              "id": "material-41-career",
+              "title": {
+                "zh": "新的职业发展链",
+                "en": "The evolving career-development chain"
+              },
+              "explanation": {
+                "zh": "课件以“学位→技能→作品集→机会→持续学习”描述新的路径。学历提供起点，展示能力与持续改进帮助连接机会，收入或职业路径也可能并行。",
+                "en": "The deck presents “degree → skills → portfolio → opportunities → continuous learning.” A degree is a starting point; demonstrable capability and improvement connect to opportunities, and career or income paths may overlap."
+              },
+              "pages": [
+                6,
+                22
+              ]
+            },
+            {
+              "id": "material-41-development",
+              "title": {
+                "zh": "专业发展的五个维度",
+                "en": "Five dimensions of professional development"
+              },
+              "explanation": {
+                "zh": "专业发展是持续提升知识、技能、沟通、判断与适应力。参加课程只是可能手段，目标是在实际任务中变得更有用。",
+                "en": "Professional development continuously improves knowledge, skills, communication, judgment, and adaptability. Courses are one means; the aim is increased usefulness in real tasks."
+              },
+              "pages": [
+                7
+              ]
+            },
+            {
+              "id": "material-41-employability",
+              "title": {
+                "zh": "就业能力与雇主视角",
+                "en": "Employability and the employer perspective"
+              },
+              "explanation": {
+                "zh": "就业能力是学历、技术、沟通、经验、作品与解决问题能力的组合，组合随岗位变化。雇主关注能做什么、能解决什么问题以及能否快速学习。",
+                "en": "Employability combines education, technical skills, communication, experience, portfolios, and problem solving in role-dependent ways. Employers ask what candidates can do, solve, and learn quickly."
+              },
+              "pages": [
+                8,
+                9
+              ]
+            },
+            {
+              "id": "material-41-stack",
+              "title": {
+                "zh": "毕业生技能组合",
+                "en": "The graduate skill stack"
+              },
+              "explanation": {
+                "zh": "课件提出领域知识、数字技能、沟通、批判性思考、问题解决、AI 素养和创业思维七项互补能力。单独会提示词不能替代领域知识或判断。",
+                "en": "The deck combines domain knowledge, digital skills, communication, critical thinking, problem solving, AI literacy, and entrepreneurial mindset. Prompting alone cannot replace domain knowledge or judgment."
+              },
+              "pages": [
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-41-g2",
+          "title": {
+            "zh": "人类与 GenAI 协作",
+            "en": "Human–GenAI collaboration"
+          },
+          "concepts": [
+            {
+              "id": "material-41-askcheck",
+              "title": {
+                "zh": "提问、检查、改进与应用",
+                "en": "Ask, check, improve, and apply"
+              },
+              "explanation": {
+                "zh": "GenAI 可辅助写作、研究、编码、数据与营销，但职业价值在于知道如何提出任务、检查结果、改进并应用。工具熟悉度只是起点。",
+                "en": "GenAI can assist writing, research, coding, data work, and marketing; professional value comes from framing tasks, checking results, improving them, and applying them. Tool familiarity is only the start."
+              },
+              "pages": [
+                10
+              ]
+            },
+            {
+              "id": "material-41-human",
+              "title": {
+                "zh": "AI 优势与人的责任",
+                "en": "AI strengths and human responsibilities"
+              },
+              "explanation": {
+                "zh": "课件把 AI 的速度、规模、模式处理和草稿能力，与人的情境理解、判断、责任、信任和关系能力相配合。协作应保留人对结果的最终理解与责任。",
+                "en": "The deck pairs AI’s speed, scale, pattern handling, and drafting with human context, judgment, responsibility, trust, and relationships. Collaboration retains human understanding and responsibility for outcomes."
+              },
+              "pages": [
+                11,
+                27
+              ]
+            },
+            {
+              "id": "material-41-risks",
+              "title": {
+                "zh": "AI 风险与检查义务",
+                "en": "AI risks and verification duties"
+              },
+              "explanation": {
+                "zh": "错误信息、泛化内容、偏差、隐私问题、过度依赖和缺乏原创性是课件列出的风险。使用者应核实事实、理解输出、保护保密资料，并遵守学术与职业规则。",
+                "en": "The deck lists misinformation, generic output, bias, privacy problems, dependence, and lack of originality. Users should verify facts, understand outputs, protect confidential information, and follow academic and professional rules."
+              },
+              "pages": [
+                19,
+                24
+              ]
+            },
+            {
+              "id": "material-41-workflow",
+              "title": {
+                "zh": "负责任的学习流程",
+                "en": "A responsible learning workflow"
+              },
+              "explanation": {
+                "zh": "推荐流程是提示→理解→验证→改写适配→创造。它把生成结果转化为自己的理解和适合任务的成果，避免提示→复制→提交导致能力未发展。",
+                "en": "The recommended sequence is prompt → understand → verify → adapt → create. It turns generated material into understanding and task-appropriate work rather than bypassing learning through copying."
+              },
+              "pages": [
+                20,
+                24
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-41-g3",
+          "title": {
+            "zh": "从问题到数字价值",
+            "en": "From problems to digital value"
+          },
+          "concepts": [
+            {
+              "id": "material-41-mindset",
+              "title": {
+                "zh": "创业思维",
+                "en": "Entrepreneurial mindset"
+              },
+              "explanation": {
+                "zh": "创业思维沿着发现问题→识别机会→创造价值→测试→改进展开。它不要求先成立公司，而是要求针对真实需求开展可检验行动。",
+                "en": "Entrepreneurial thinking follows problem recognition → opportunity → value creation → testing → improvement. It does not require starting a company first; it requires testable action around real needs."
+              },
+              "pages": [
+                12
+              ]
+            },
+            {
+              "id": "material-41-digital",
+              "title": {
+                "zh": "数字创业与原型边界",
+                "en": "Digital entrepreneurship and prototype limits"
+              },
+              "explanation": {
+                "zh": "数字创业用数字技术创造价值，可表现为电商、服务、应用、内容或自由职业。GenAI 降低内容、网站和分析原型门槛，但原型不是已经成功的生意。",
+                "en": "Digital entrepreneurship creates value through digital technologies such as commerce, services, apps, content, or freelancing. GenAI lowers prototyping barriers for content, websites, and analysis, but a prototype is not a successful business."
+              },
+              "pages": [
+                13,
+                14
+              ]
+            },
+            {
+              "id": "material-41-cases",
+              "title": {
+                "zh": "把技能连接客户问题",
+                "en": "Connecting skills to customer problems"
+              },
+              "explanation": {
+                "zh": "数据毕业生可用 Excel/Power BI 把销售数据变成仪表盘与月度洞察；计算机毕业生可用预约网站减少店主手工操作。价值来自改善客户工作，而不仅是使用某工具。",
+                "en": "A data graduate can turn sales data into dashboards and monthly insights with Excel/Power BI; a computing graduate can reduce manual work through a booking site. Value lies in improving customer work, not merely using a tool."
+              },
+              "pages": [
+                15,
+                16
+              ]
+            },
+            {
+              "id": "material-41-formula",
+              "title": {
+                "zh": "机会公式",
+                "en": "The opportunity formula"
+              },
+              "explanation": {
+                "zh": "技能＋真实问题＋数字工具＋客户＝可能的价值。“可能”提醒我们还需验证客户是否需要、是否愿意采用，避免把技术本身当成需求。",
+                "en": "Skill + real problem + digital tool + customer = possible value. “Possible” reminds us to validate need and adoption rather than treating technology itself as demand."
+              },
+              "pages": [
+                17,
+                18
+              ]
+            },
+            {
+              "id": "material-41-portfolio",
+              "title": {
+                "zh": "作品集作为能力证据",
+                "en": "Portfolio as evidence of capability"
+              },
+              "explanation": {
+                "zh": "仪表盘、网站、应用、营销活动、案例和原型能够展示技能的实际运用。作品应说明解决了什么问题、自己做了什么以及结果与改进，而非只有技能清单。",
+                "en": "Dashboards, websites, apps, campaigns, cases, and prototypes show applied skills. A portfolio should explain the problem, the creator’s contribution, outcomes, and improvements rather than list skills alone."
+              },
+              "pages": [
+                21,
+                28
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-41-adaptability",
+          "to": "material-41-career",
+          "relation": {
+            "zh": "适应力支持多条持续变化的职业路径",
+            "en": "Adaptability supports evolving career paths"
+          }
+        },
+        {
+          "from": "material-41-career",
+          "to": "material-41-development",
+          "relation": {
+            "zh": "机会需要持续能力建设",
+            "en": "Opportunities require continuing capability development"
+          }
+        },
+        {
+          "from": "material-41-development",
+          "to": "material-41-employability",
+          "relation": {
+            "zh": "能力组合回应岗位需求",
+            "en": "Capability combinations respond to role needs"
+          }
+        },
+        {
+          "from": "material-41-employability",
+          "to": "material-41-stack",
+          "relation": {
+            "zh": "岗位价值依赖互补技能",
+            "en": "Role value depends on complementary skills"
+          }
+        },
+        {
+          "from": "material-41-stack",
+          "to": "material-41-askcheck",
+          "relation": {
+            "zh": "AI 素养体现为提问与质量控制",
+            "en": "AI literacy becomes task framing and quality control"
+          }
+        },
+        {
+          "from": "material-41-askcheck",
+          "to": "material-41-human",
+          "relation": {
+            "zh": "质量控制需要人的情境与责任",
+            "en": "Quality control needs human context and responsibility"
+          }
+        },
+        {
+          "from": "material-41-risks",
+          "to": "material-41-workflow",
+          "relation": {
+            "zh": "风险要求理解、核验与适配",
+            "en": "Risks require understanding, verification, and adaptation"
+          }
+        },
+        {
+          "from": "material-41-human",
+          "to": "material-41-workflow",
+          "relation": {
+            "zh": "人的判断贯穿协作过程",
+            "en": "Human judgment runs through collaboration"
+          }
+        },
+        {
+          "from": "material-41-mindset",
+          "to": "material-41-formula",
+          "relation": {
+            "zh": "机会需把技能、需求、工具和客户连接",
+            "en": "Opportunity connects skill, need, tools, and customer"
+          }
+        },
+        {
+          "from": "material-41-digital",
+          "to": "material-41-cases",
+          "relation": {
+            "zh": "数字技术通过具体服务创造价值",
+            "en": "Technology creates value through concrete services"
+          }
+        },
+        {
+          "from": "material-41-cases",
+          "to": "material-41-formula",
+          "relation": {
+            "zh": "案例展示机会要素的组合",
+            "en": "Cases illustrate the opportunity elements"
+          }
+        },
+        {
+          "from": "material-41-formula",
+          "to": "material-41-portfolio",
+          "relation": {
+            "zh": "被验证的解决方案可成为能力证据",
+            "en": "Validated solutions can become capability evidence"
+          }
+        },
+        {
+          "from": "material-41-portfolio",
+          "to": "material-41-career",
+          "relation": {
+            "zh": "可见成果连接新的职业机会",
+            "en": "Visible outcomes connect to career opportunities"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-41-adaptability-q",
+          "conceptIds": [
+            "material-41-adaptability"
+          ],
+          "prompt": {
+            "zh": "一位希望受雇工作的学生是否仍需要创业思维与适应力？",
+            "en": "Does a student seeking employment still need entrepreneurial thinking and adaptability?"
+          },
+          "options": [
+            {
+              "zh": "需要，它们帮助识别问题和持续创造价值",
+              "en": "Yes; they support problem recognition and continuing value creation"
+            },
+            {
+              "zh": "不需要，只有公司创办者需要",
+              "en": "No; only founders need them"
+            },
+            {
+              "zh": "只需开公司才能证明适应力",
+              "en": "Only starting a company demonstrates adaptability"
+            },
+            {
+              "zh": "适应力只表示频繁换工作",
+              "en": "Adaptability means only frequent job changes"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "课件把适应力作为所有路径的能力，创业思维也适用于雇员。",
+            "en": "Adaptability applies to all paths, and entrepreneurial thinking also applies to employees."
+          },
+          "pages": [
+            4,
+            26,
+            28
+          ]
+        },
+        {
+          "id": "material-41-career-q",
+          "conceptIds": [
+            "material-41-career"
+          ],
+          "prompt": {
+            "zh": "按课件，新毕业生如何补强只有课程名称的简历？",
+            "en": "How can a graduate strengthen a CV containing only course names?"
+          },
+          "options": [
+            {
+              "zh": "继续扩大课程清单，但不展示任何应用",
+              "en": "Expand the course list without showing application"
+            },
+            {
+              "zh": "加入能展示解决问题能力的作品，并持续改进",
+              "en": "Add work demonstrating problem-solving and continue improving"
+            },
+            {
+              "zh": "只展示证书数量，而不说明所解决的问题",
+              "en": "Show certificate counts without explaining problems solved"
+            },
+            {
+              "zh": "只声明学习速度快，不提供过程或成果",
+              "en": "Claim fast learning without process or outcome evidence"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "作品与学习过程让技能可以被观察；课程、证书和声明不能独立证明应用能力。",
+            "en": "Work and learning processes make skills observable; courses, certificates, and claims do not independently establish applied ability."
+          },
+          "pages": [
+            6,
+            22
+          ]
+        },
+        {
+          "id": "material-41-development-q",
+          "conceptIds": [
+            "material-41-development"
+          ],
+          "prompt": {
+            "zh": "哪项最能体现专业发展而不只是参加活动？",
+            "en": "Which best demonstrates professional development beyond attendance?"
+          },
+          "options": [
+            {
+              "zh": "完成培训即停止练习，因为参与记录足以代表能力",
+              "en": "Stop practice after training because attendance proves ability"
+            },
+            {
+              "zh": "只发展技术操作，不需要沟通或判断",
+              "en": "Develop only technical operation, omitting communication and judgment"
+            },
+            {
+              "zh": "学会解释方案、判断质量并适应新任务",
+              "en": "Explain solutions, judge quality, and adapt to new tasks"
+            },
+            {
+              "zh": "把遇到的新任务完全交给 AI，自己不理解",
+              "en": "Delegate unfamiliar tasks entirely to AI without understanding"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "发展包含知识、技能、沟通、判断与适应；参加培训或工具代做不等于这些能力已形成。",
+            "en": "Development includes knowledge, skills, communication, judgment, and adaptability; attendance or outsourced work does not establish them."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-41-employability-q",
+          "conceptIds": [
+            "material-41-employability"
+          ],
+          "prompt": {
+            "zh": "两个候选人课程相同，哪项证据最直接回应雇主的问题？",
+            "en": "Two candidates studied the same courses. Which evidence best addresses the employer’s questions?"
+          },
+          "options": [
+            {
+              "zh": "用更多软件名称替代成果和反思",
+              "en": "Replace outcomes and reflection with more software names"
+            },
+            {
+              "zh": "只比较相同课程的学分数量",
+              "en": "Compare only credits from the same courses"
+            },
+            {
+              "zh": "只证明已经毕业，不说明能完成哪些任务",
+              "en": "Prove graduation without explaining capability"
+            },
+            {
+              "zh": "展示解决真实问题的作品及学习过程",
+              "en": "Demonstrate a real solution and the learning process"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "作品和学习过程回应“能做什么、解决什么、能否学习”；其余信息只能提供部分背景。",
+            "en": "Work and learning processes address doing, solving, and learning; the alternatives provide only partial background."
+          },
+          "pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "material-41-stack-q",
+          "conceptIds": [
+            "material-41-stack"
+          ],
+          "prompt": {
+            "zh": "只会生成流畅 AI 文本，却无法判断内容是否适合行业，最明显缺少什么？",
+            "en": "A graduate generates fluent AI text but cannot judge its fit for an industry. What is most clearly missing?"
+          },
+          "options": [
+            {
+              "zh": "领域知识与批判性判断",
+              "en": "Domain knowledge and critical judgment"
+            },
+            {
+              "zh": "只需提高生成速度，内容判断可省略",
+              "en": "Only generation speed is needed; evaluation can be omitted"
+            },
+            {
+              "zh": "只需增加提示词数量，就能替代领域知识",
+              "en": "More prompts alone replace domain knowledge"
+            },
+            {
+              "zh": "只需把结果排版得更专业",
+              "en": "Only more professional formatting is needed"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "领域知识与批判思考用于判断是否适合行业；速度、数量和排版无法替代实质评估。",
+            "en": "Domain knowledge and critical thinking evaluate industry fit; speed, quantity, and formatting do not replace substantive assessment."
+          },
+          "pages": [
+            25
+          ]
+        },
+        {
+          "id": "material-41-askcheck-q",
+          "conceptIds": [
+            "material-41-askcheck"
+          ],
+          "prompt": {
+            "zh": "哪位学生更体现课件所说的 AI 使用能力？",
+            "en": "Which student best demonstrates the deck’s AI capability?"
+          },
+          "options": [
+            {
+              "zh": "只检查语法，不核对事实或任务要求",
+              "en": "Check grammar only, without facts or task requirements"
+            },
+            {
+              "zh": "提出明确需求、验证输出并针对情境修改",
+              "en": "Frames a clear task, verifies output, and adapts it to context"
+            },
+            {
+              "zh": "只依据工具自我评价决定结果可信度",
+              "en": "Rely only on the tool’s self-assessment of reliability"
+            },
+            {
+              "zh": "提示后直接发布，再等客户发现问题",
+              "en": "Publish after prompting and wait for customers to find errors"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "提问、核实、改进、应用组成完整能力链；只看语法、自信度或事后纠错都不充分。",
+            "en": "Asking, verifying, improving, and applying form a capability chain; grammar, self-confidence, or after-the-fact correction alone is insufficient."
+          },
+          "pages": [
+            10
+          ]
+        },
+        {
+          "id": "material-41-human-q",
+          "conceptIds": [
+            "material-41-human"
+          ],
+          "prompt": {
+            "zh": "AI 起草客户建议后，最不能被省略的步骤是什么？",
+            "en": "After AI drafts customer advice, what should not be omitted?"
+          },
+          "options": [
+            {
+              "zh": "只由工具自行确认是否理解客户",
+              "en": "Let the tool alone confirm whether it understands the customer"
+            },
+            {
+              "zh": "只检查表达是否流畅，不考虑实际建议",
+              "en": "Check fluency without evaluating the advice"
+            },
+            {
+              "zh": "人根据客户情境判断并承担责任",
+              "en": "A human judges it in context and accepts responsibility"
+            },
+            {
+              "zh": "把专业责任转移给自动生成系统",
+              "en": "Transfer professional responsibility to the generator"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "客户情境、判断、信任与责任是人的贡献，不能仅用语言流畅或工具自检替代。",
+            "en": "Customer context, judgment, trust, and responsibility are human contributions, not substitutes for fluency or tool self-checking."
+          },
+          "pages": [
+            11,
+            27
+          ]
+        },
+        {
+          "id": "material-41-risks-q",
+          "conceptIds": [
+            "material-41-risks"
+          ],
+          "prompt": {
+            "zh": "向 AI 输入客户机密并直接发布其结论，主要遗漏哪些控制？",
+            "en": "Entering confidential client data and publishing AI conclusions directly omits which controls?"
+          },
+          "options": [
+            {
+              "zh": "只漏了把文本改得更有营销吸引力",
+              "en": "Only more persuasive marketing wording is missing"
+            },
+            {
+              "zh": "只漏了在报告中说明使用哪款工具",
+              "en": "Only naming the tool in the report is missing"
+            },
+            {
+              "zh": "只漏了把同一输入再生成一次",
+              "en": "Only regenerating the same input is missing"
+            },
+            {
+              "zh": "保密保护、事实核验和情境判断",
+              "en": "Confidentiality, fact verification, and contextual judgment"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "重复生成或披露工具名称不修复保密泄露和事实错误；需要源头保护、核验与判断。",
+            "en": "Regeneration or naming the tool does not fix confidentiality exposure or factual error; protection, verification, and judgment are required."
+          },
+          "pages": [
+            19,
+            24
+          ]
+        },
+        {
+          "id": "material-41-workflow-q",
+          "conceptIds": [
+            "material-41-workflow"
+          ],
+          "prompt": {
+            "zh": "哪一流程最符合本课？",
+            "en": "Which workflow best matches the lesson?"
+          },
+          "options": [
+            {
+              "zh": "提示→理解→验证→适配→创造",
+              "en": "Prompt → understand → verify → adapt → create"
+            },
+            {
+              "zh": "提示→直接采纳→只检查语言→提交",
+              "en": "Prompt → accept directly → check language only → submit"
+            },
+            {
+              "zh": "提示→理解→省略验证→照搬发布",
+              "en": "Prompt → understand → skip verification → publish unchanged"
+            },
+            {
+              "zh": "提示→核对长度→改写措辞→不理解地提交",
+              "en": "Prompt → check length → reword → submit without understanding"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "课件要求理解、验证和适配，语言检查、改写或控制长度不能替代事实与情境评估。",
+            "en": "The deck requires understanding, verification, and adaptation; language checks, rewording, or length control do not replace factual and contextual evaluation."
+          },
+          "pages": [
+            20,
+            24
+          ]
+        },
+        {
+          "id": "material-41-mindset-q",
+          "conceptIds": [
+            "material-41-mindset"
+          ],
+          "prompt": {
+            "zh": "发现校园预约混乱后，最符合创业思维的下一步是什么？",
+            "en": "After noticing disorganized campus bookings, what best follows entrepreneurial thinking?"
+          },
+          "options": [
+            {
+              "zh": "先扩大宣传而不验证问题",
+              "en": "Expand promotion without validating the problem"
+            },
+            {
+              "zh": "验证需求并测试小型改进方案",
+              "en": "Validate the need and test a small improvement"
+            },
+            {
+              "zh": "把想法直接当成成功商业模式",
+              "en": "Treat the idea as a proven business model"
+            },
+            {
+              "zh": "等所有风险消失才学习",
+              "en": "Wait for all risk to disappear before learning"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "从真实问题走向测试与改进才体现该循环；想法本身不等于验证后的价值。",
+            "en": "Moving from a real problem to testing and improvement follows the cycle; an idea is not yet validated value."
+          },
+          "pages": [
+            12
+          ]
+        },
+        {
+          "id": "material-41-digital-q",
+          "conceptIds": [
+            "material-41-digital"
+          ],
+          "prompt": {
+            "zh": "一个人用 AI 很快做出网站，能说明什么？",
+            "en": "A person quickly builds a website with AI. What does this establish?"
+          },
+          "options": [
+            {
+              "zh": "商业模式已必然成功",
+              "en": "The business model must have succeeded"
+            },
+            {
+              "zh": "所有客户需求均已满足",
+              "en": "All customer needs have been met"
+            },
+            {
+              "zh": "原型制作门槛降低，但客户价值和商业成效仍需验证",
+              "en": "Prototyping is easier, but customer value and business results still need validation"
+            },
+            {
+              "zh": "不再需要客户沟通",
+              "en": "Customer communication is unnecessary"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "课件明确 prototype ≠ successful business；技术实现只是验证旅程的一部分。",
+            "en": "The deck explicitly separates prototypes from successful businesses; implementation is only part of validation."
+          },
+          "pages": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "material-41-cases-q",
+          "conceptIds": [
+            "material-41-cases"
+          ],
+          "prompt": {
+            "zh": "为什么预约网站案例可能有客户价值？",
+            "en": "Why can the booking-site example create customer value?"
+          },
+          "options": [
+            {
+              "zh": "因为网站上线本身就证明客户愿意采用",
+              "en": "Because launch alone proves customers will adopt it"
+            },
+            {
+              "zh": "因为比手工流程复杂就更有价值",
+              "en": "Because greater complexity than manual work means greater value"
+            },
+            {
+              "zh": "因为采用数字工具就不需要验证效果",
+              "en": "Because using digital tools removes the need for validation"
+            },
+            {
+              "zh": "节省店主时间并减少手工工作",
+              "en": "It saves the owner time and reduces manual work"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "案例把价值明确连接到节约时间与减少手工工作；上线、复杂度和工具名称不能自动证明价值。",
+            "en": "The case explicitly connects value to saved time and reduced manual work; launch, complexity, or tools do not automatically prove value."
+          },
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "material-41-formula-q",
+          "conceptIds": [
+            "material-41-formula"
+          ],
+          "prompt": {
+            "zh": "已有技能和工具，却不知道谁有该问题，机会公式还缺什么？",
+            "en": "You have skills and tools but do not know who has the problem. What is missing?"
+          },
+          "options": [
+            {
+              "zh": "明确的真实问题与客户",
+              "en": "A defined real problem and customer"
+            },
+            {
+              "zh": "只有工具熟练度，其他要素可以长期省略",
+              "en": "Only tool proficiency, with other elements indefinitely omitted"
+            },
+            {
+              "zh": "只要增加技术功能就等同于获得客户",
+              "en": "More technical features are equivalent to having customers"
+            },
+            {
+              "zh": "只要建立公司身份就不需确认问题",
+              "en": "Forming a company removes the need to identify a problem"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "技能、问题、工具和客户需相互连接；功能或公司身份不会自动建立需求。",
+            "en": "Skill, problem, tools, and customer must connect; features or company status do not create demand automatically."
+          },
+          "pages": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "material-41-portfolio-q",
+          "conceptIds": [
+            "material-41-portfolio"
+          ],
+          "prompt": {
+            "zh": "“我会 Power BI”应如何变成更有说服力的作品证据？",
+            "en": "How can “I know Power BI” become stronger portfolio evidence?"
+          },
+          "options": [
+            {
+              "zh": "只展示软件认证，不解释任何项目",
+              "en": "Show certification without explaining a project"
+            },
+            {
+              "zh": "展示仪表盘及其回答的业务问题与洞察",
+              "en": "Show a dashboard and the business questions and insights it addresses"
+            },
+            {
+              "zh": "展示图表截图但不说明问题和个人贡献",
+              "en": "Show charts without explaining the problem or own contribution"
+            },
+            {
+              "zh": "直接展示别人的案例而不区分自己的工作",
+              "en": "Show another person’s case without distinguishing one’s contribution"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "可信作品需要解释问题、洞察和个人贡献；证书、无背景截图或他人成果都不能完整证明自身应用能力。",
+            "en": "Credible work explains the problem, insights, and own contribution; certificates, context-free images, or others’ outcomes do not fully demonstrate personal applied ability."
+          },
+          "pages": [
+            21,
+            28
+          ]
+        },
+        {
+          "id": "material-41-career-q2",
+          "conceptIds": [
+            "material-41-career"
+          ],
+          "prompt": {
+            "zh": "课件如何看待受雇、自由职业、数字服务、数字产品与创业？",
+            "en": "How does the deck view employment, freelancing, digital services, digital products, and entrepreneurship?"
+          },
+          "options": [
+            {
+              "zh": "只能选择一种且终身不可改变",
+              "en": "Exactly one must be chosen permanently"
+            },
+            {
+              "zh": "受雇者不能提供数字服务",
+              "en": "Employees cannot offer digital services"
+            },
+            {
+              "zh": "路径可以重叠，不必一次决定全部未来",
+              "en": "Paths can overlap; one need not decide everything at once"
+            },
+            {
+              "zh": "必须先创业才可以学习专业技能",
+              "en": "One must start a company before learning professional skills"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "课件展示可交叠的职业路径，并把持续能力建设作为共同基础。",
+            "en": "The deck presents overlapping paths with continuing capability development as a shared foundation."
+          },
+          "pages": [
+            6,
+            22
+          ]
+        },
+        {
+          "id": "material-41-stack-q2",
+          "conceptIds": [
+            "material-41-stack"
+          ],
+          "prompt": {
+            "zh": "哪组技能最符合课件提出的完整毕业生组合？",
+            "en": "Which set best matches the complete graduate skill stack in the deck?"
+          },
+          "options": [
+            {
+              "zh": "只有数字工具操作、AI生成速度与软件证书",
+              "en": "Only digital tool operation, AI speed, and software certificates"
+            },
+            {
+              "zh": "只有学历、绩点、任职年限与职位头衔",
+              "en": "Only degree, grades, tenure, and job titles"
+            },
+            {
+              "zh": "只有产品销售、广告投放与财务记账",
+              "en": "Only selling, advertising, and bookkeeping"
+            },
+            {
+              "zh": "领域知识、数字技能、沟通、批判思考、问题解决、AI素养、创业思维",
+              "en": "Domain knowledge, digital skills, communication, critical thinking, problem solving, AI literacy, entrepreneurial mindset"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "七项互补能力结合专业理解、技术、沟通与判断；单一工具或身份清单不足。",
+            "en": "The seven complementary capabilities combine expertise, technology, communication, and judgment; tools or credentials alone are incomplete."
+          },
+          "pages": [
+            25
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2,
+              3,
+              5,
+              23,
+              29
+            ],
+            "reason": {
+              "zh": "封面、学习目标、参考资料、行政信息或重复总结；不设独立考点。",
+              "en": "Cover, learning objectives, references, administrative information, or repeated recap; no separate learning objective."
+            }
+          }
+        ]
+      },
+      "sourceSha256": "d80ed7243d498249e7598eeac7247fa2b2773ea28789d6b572c9f1b3c854c969"
+    },
+    {
+      "resourceId": "material-42",
+      "overview": {
+        "zh": "用战略—战术—运营三层组织电商工作：先明确方向和价值，再设计部门行动，最后通过履约、支持、数据及 RevOps 保证日常执行。",
+        "en": "Organize e-business across strategy, tactics, and operations: define direction and value, design departmental action, and execute through fulfillment, support, data, and RevOps."
+      },
+      "groups": [
+        {
+          "id": "material-42-g1",
+          "title": {
+            "zh": "三层规划与增长障碍",
+            "en": "Three planning levels and growth barriers"
+          },
+          "concepts": [
+            {
+              "id": "material-42-levels",
+              "title": {
+                "zh": "战略、战术与运营",
+                "en": "Strategy, tactics, and operations"
+              },
+              "explanation": {
+                "zh": "战略确立长期方向与目标；战术把战略转成部门方案和资源安排；运营执行日常流程。图中自上而下细节增多，各层应围绕共同目标衔接。",
+                "en": "Strategy sets long-term direction and goals; tactics translate them into departmental plans and resource choices; operations execute daily processes. Detail increases downward, and the levels should align around common goals."
+              },
+              "pages": [
+                2,
+                3,
+                5,
+                6,
+                36
+              ]
+            },
+            {
+              "id": "material-42-delegation",
+              "title": {
+                "zh": "委派与管理者角色",
+                "en": "Delegation and the owner’s role"
+              },
+              "explanation": {
+                "zh": "老板若包办所有日常职能，会挤压构想与扩展业务的时间。委派清晰责任并引入合适专长，使日常工作有人负责，也让领导关注整体方向。",
+                "en": "An owner doing every daily function loses time for ideas and expansion. Delegating clear responsibilities and involving specialists gives routine work ownership while allowing leadership to focus on direction."
+              },
+              "pages": [
+                7
+              ]
+            },
+            {
+              "id": "material-42-stagnation",
+              "title": {
+                "zh": "停滞的识别与应对",
+                "en": "Recognizing and responding to stagnation"
+              },
+              "explanation": {
+                "zh": "停滞是增长、发展或改变不足，可能伴随低生产率和机会流失。应先识别原因，再组合战略调整、投资、创新或流程改进，避免把忙碌当作进步。",
+                "en": "Stagnation is insufficient growth, development, or change, potentially linked to low productivity and missed opportunities. Diagnose causes before combining strategic adjustment, investment, innovation, or process improvement; activity is not necessarily progress."
+              },
+              "pages": [
+                8,
+                9
+              ]
+            },
+            {
+              "id": "material-42-cases",
+              "title": {
+                "zh": "停滞案例中的不同战略选择",
+                "en": "Different strategic responses in stagnation cases"
+              },
+              "explanation": {
+                "zh": "讲义以 Zalora 的合作与技术投资、eBay 的核心定位与本地化、Amazon 的业务多元化和体验/物流改进展示不同应对方式。案例共同点是根据客户与竞争情境调整，而非复制同一种动作。",
+                "en": "The deck uses Zalora’s partnerships and technology, eBay’s core positioning and localization, and Amazon’s diversification and experience/logistics improvements to illustrate different responses. The common lesson is contextual adaptation, not copying one action."
+              },
+              "pages": [
+                10,
+                11,
+                12
+              ]
+            },
+            {
+              "id": "material-42-pareto",
+              "title": {
+                "zh": "帕累托原则",
+                "en": "The Pareto principle"
+              },
+              "explanation": {
+                "zh": "80/20原则用来提醒管理者：较少的关键投入可能贡献较多结果，应识别高影响事项。它是优先排序的启发，不是保证每个业务数据都严格符合80/20。",
+                "en": "The 80/20 principle highlights that a small share of key inputs may contribute much of the result, encouraging attention to high-impact work. It is a prioritization heuristic, not a guarantee of an exact ratio in every business."
+              },
+              "pages": [
+                13,
+                14
+              ]
+            },
+            {
+              "id": "material-42-matrix",
+              "title": {
+                "zh": "重要性—紧急性矩阵",
+                "en": "Importance–urgency matrix"
+              },
+              "explanation": {
+                "zh": "Eisenhower 矩阵的两轴为重要性与紧急性：重要且紧急立即做；重要不紧急安排时间；不重要但紧急考虑委派；两者都低则删除。战略工作往往需要主动保留时间。",
+                "en": "The Eisenhower matrix uses importance and urgency: do important–urgent work now; schedule important–nonurgent work; delegate urgent–unimportant work; eliminate work low on both. Strategic work often requires protected time."
+              },
+              "pages": [
+                15,
+                16
+              ]
+            },
+            {
+              "id": "material-42-routine",
+              "title": {
+                "zh": "日常任务与意外事件",
+                "en": "Routine tasks versus unexpected events"
+              },
+              "explanation": {
+                "zh": "课件提醒不要把可预见的维修等重复任务都称为不可抗力。识别日常任务后，可安排计划、明确专人并减轻不必要的压力与冲突；真正意外仍需留出应对空间。",
+                "en": "The deck warns against labeling predictable recurring tasks such as maintenance as force majeure. Recognizing routine work enables scheduling, ownership, and less avoidable stress; genuine surprises still require response capacity."
+              },
+              "pages": [
+                17,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-42-g2",
+          "title": {
+            "zh": "战略框架：方向、能力与协同",
+            "en": "Strategic framework: direction, capacity, and coordination"
+          },
+          "concepts": [
+            {
+              "id": "material-42-objectives",
+              "title": {
+                "zh": "增长目标、价值主张与市场扩展",
+                "en": "Growth objectives, value proposition, and market expansion"
+              },
+              "explanation": {
+                "zh": "战略应说明希望实现什么增长、客户为何选择本企业，以及如何扩展地区或产品。价值主张强调便利、价格或差异体验等客户收益，不只是企业自我介绍。",
+                "en": "Strategy specifies desired growth, why customers choose the business, and geographic or product expansion. A value proposition emphasizes customer benefits such as convenience, price, or differentiated experience, not merely company description."
+              },
+              "pages": [
+                20,
+                21
+              ]
+            },
+            {
+              "id": "material-42-infrastructure",
+              "title": {
+                "zh": "云与电商平台投资",
+                "en": "Cloud and commerce-platform investment"
+              },
+              "explanation": {
+                "zh": "云资源为计算、数据和流量变化提供可扩展能力；电商平台提供店铺、支付、库存等连接能力。选择时应对应增长目标与定制需求，不能只按品牌名称判断。",
+                "en": "Cloud resources provide scalable computing, storage, and capacity for changing traffic; commerce platforms connect storefronts, payments, and inventory. Choices should fit growth and customization needs rather than brand recognition alone."
+              },
+              "pages": [
+                22,
+                35
+              ]
+            },
+            {
+              "id": "material-42-revops",
+              "title": {
+                "zh": "收入运营 RevOps",
+                "en": "Revenue operations (RevOps)"
+              },
+              "explanation": {
+                "zh": "RevOps 在共同目标下协调营销、销售和客户服务的数据、工具与流程。它贯穿获客、转化和留存，减少部门各自优化却损害整体客户旅程的情况。",
+                "en": "RevOps aligns marketing, sales, and service data, tools, and processes under shared goals. It spans acquisition, conversion, and retention, reducing isolated departmental optimization that harms the overall journey."
+              },
+              "pages": [
+                2,
+                23,
+                29,
+                34
+              ]
+            },
+            {
+              "id": "material-42-data",
+              "title": {
+                "zh": "数据驱动的决策",
+                "en": "Data-driven decisions"
+              },
+              "explanation": {
+                "zh": "实时分析可观察客户行为、线索、转化、销售和库存趋势，支持及时调整。数据必须围绕业务问题解读，并共享给相关团队，不能只把数据加载到图表。",
+                "en": "Real-time analytics can track behavior, leads, conversions, sales, and inventory for timely adjustments. Interpret data around business questions and share it with relevant teams rather than merely loading charts."
+              },
+              "pages": [
+                23,
+                35,
+                37
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-42-g3",
+          "title": {
+            "zh": "战术框架：把目标变成行动",
+            "en": "Tactical framework: turning goals into action"
+          },
+          "concepts": [
+            {
+              "id": "material-42-campaign",
+              "title": {
+                "zh": "数字营销与个性化内容",
+                "en": "Digital marketing and personalized content"
+              },
+              "explanation": {
+                "zh": "营销战术通过关键词、受众特征、兴趣和行为定位潜在客户，并用相关内容推动互动与转化。应把渠道和内容选择与目标受众及目标相匹配。",
+                "en": "Marketing tactics use keywords, audience characteristics, interests, and behavior to reach prospects and tailor content for engagement and conversion. Channel and content choices should fit the audience and objective."
+              },
+              "pages": [
+                25,
+                26
+              ]
+            },
+            {
+              "id": "material-42-crm",
+              "title": {
+                "zh": "客户关系管理 CRM",
+                "en": "Customer relationship management (CRM)"
+              },
+              "explanation": {
+                "zh": "CRM 汇集客户互动、线索与跟进记录，支持贯穿生命周期的关系维护。它让团队知道已发生什么、下一步做什么，区别于只保存一次订单。",
+                "en": "CRM brings together interactions, leads, and follow-up records across the customer lifecycle. It supports knowing what has happened and what to do next, rather than merely storing one order."
+              },
+              "pages": [
+                27
+              ]
+            },
+            {
+              "id": "material-42-automation",
+              "title": {
+                "zh": "流程与邮件自动化",
+                "en": "Workflow and email automation"
+              },
+              "explanation": {
+                "zh": "自动化把重复流程连接起来，例如表单信息进入 CRM、反馈触发回应或未完成购物车触发提醒。它释放人工处理更复杂工作的时间，但流程设计仍需符合客户情境。",
+                "en": "Automation connects repetitive workflows, such as forms feeding CRM, feedback triggering replies, or abandoned carts triggering reminders. It frees people for complex work, while workflow design still needs customer context."
+              },
+              "pages": [
+                28,
+                35
+              ]
+            },
+            {
+              "id": "material-42-handoff",
+              "title": {
+                "zh": "营销—销售—支持交接",
+                "en": "Marketing–sales–support handoffs"
+              },
+              "explanation": {
+                "zh": "营销提供合适线索，销售培育并完成转化，支持解决问题并回馈信息。三个环节的交接质量影响整体收入，不能把留存只视为客服部门自己的问题。",
+                "en": "Marketing supplies suitable leads, sales nurtures and converts them, and support resolves issues and returns feedback. Handoff quality affects revenue; retention is not solely a service-team problem."
+              },
+              "pages": [
+                29,
+                34
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-42-g4",
+          "title": {
+            "zh": "运营框架：交付、支持与持续改进",
+            "en": "Operations: delivery, support, and improvement"
+          },
+          "concepts": [
+            {
+              "id": "material-42-fulfillment",
+              "title": {
+                "zh": "订单履约、物流与 OMS",
+                "en": "Fulfillment, logistics, and OMS"
+              },
+              "explanation": {
+                "zh": "运营需准确、及时交付。物流追踪与路线/延迟预测改善透明度；订单管理系统连接订单、库存和配送更新，减少手工错误和状态不同步。",
+                "en": "Operations must deliver accurately and on time. Tracking and route or delay prediction improve transparency; an OMS connects orders, inventory, and delivery updates to reduce manual errors and inconsistent status."
+              },
+              "pages": [
+                31,
+                32
+              ]
+            },
+            {
+              "id": "material-42-support",
+              "title": {
+                "zh": "客户支持与自助服务",
+                "en": "Customer support and self-service"
+              },
+              "explanation": {
+                "zh": "工单、在线聊天、聊天机器人和电话路由可降低等待，让人工处理复杂问题；知识库和 FAQ 支持客户自助。重复问题还可反向推动政策和产品改进。",
+                "en": "Tickets, live chat, bots, and call routing can reduce waits and reserve humans for complex cases; knowledge bases and FAQs enable self-service. Recurring issues can inform policy and product improvements."
+              },
+              "pages": [
+                33
+              ]
+            },
+            {
+              "id": "material-42-operrev",
+              "title": {
+                "zh": "运营中的 RevOps 反馈",
+                "en": "Operational RevOps feedback"
+              },
+              "explanation": {
+                "zh": "配送延迟或服务投诉应进入共享记录，支持、销售与营销共同处理原因、跟进客户并改进承诺。补偿或追加销售应与真实问题的解决配合。",
+                "en": "Delivery delays and complaints should enter shared records so service, sales, and marketing can address causes, follow up, and improve promises. Compensation or selling activity should accompany genuine issue resolution."
+              },
+              "pages": [
+                34,
+                37
+              ]
+            },
+            {
+              "id": "material-42-alignment",
+              "title": {
+                "zh": "由目标到执行的连贯案例",
+                "en": "A coherent goal-to-execution chain"
+              },
+              "explanation": {
+                "zh": "课件用销售增长目标、定向营销活动和更快配送路线说明上下衔接；客户旅程数据进入 CRM 后可改进线索和个性化。评估各环节是否真正支持同一目标。",
+                "en": "The deck links a sales-growth target to targeted campaigns and faster delivery routes. Customer-journey data in CRM can improve leads and personalization. Evaluate whether each action supports the same objective."
+              },
+              "pages": [
+                36,
+                37
+              ]
+            },
+            {
+              "id": "material-42-challenges",
+              "title": {
+                "zh": "数据孤岛、扩展、留存与安全",
+                "en": "Data silos, scaling, retention, and security"
+              },
+              "explanation": {
+                "zh": "讲义将挑战对应措施：数据孤岛需整合；负载变化需可扩展基础设施；流失风险需分析与个性化留存；客户数据和支付需保护。措施应对应具体风险。",
+                "en": "The deck matches challenges to responses: integrate silos; scale infrastructure for changing load; use analysis and personalization for retention risks; protect customer data and payments. Match controls to the actual risk."
+              },
+              "pages": [
+                38
+              ]
+            },
+            {
+              "id": "material-42-startup",
+              "title": {
+                "zh": "初创企业与成熟企业的重点",
+                "en": "Priorities for startups and established firms"
+              },
+              "explanation": {
+                "zh": "初创企业可先聚焦细分市场、可负担工具及客户反馈；成熟企业更需跨团队数据与复杂运营整合。两者共同核心是客户满意和可持续改善，工具投入应与规模相称。",
+                "en": "Startups can focus on niches, affordable tools, and customer feedback; established firms need stronger cross-team data and complex operational integration. Both center on customer satisfaction and continuing improvement, with tools suited to scale."
+              },
+              "pages": [
+                40,
+                41
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-42-levels",
+          "to": "material-42-delegation",
+          "relation": {
+            "zh": "清晰层次使日常责任可委派",
+            "en": "Clear levels enable delegation of routine responsibilities"
+          }
+        },
+        {
+          "from": "material-42-stagnation",
+          "to": "material-42-cases",
+          "relation": {
+            "zh": "不同情境需要不同战略调整",
+            "en": "Different contexts need different strategic responses"
+          }
+        },
+        {
+          "from": "material-42-pareto",
+          "to": "material-42-matrix",
+          "relation": {
+            "zh": "高影响选择需结合时间优先级",
+            "en": "High-impact choices need time prioritization"
+          }
+        },
+        {
+          "from": "material-42-matrix",
+          "to": "material-42-routine",
+          "relation": {
+            "zh": "分清任务属性才能合理安排",
+            "en": "Classifying tasks enables appropriate scheduling"
+          }
+        },
+        {
+          "from": "material-42-levels",
+          "to": "material-42-objectives",
+          "relation": {
+            "zh": "战略层首先定义方向与价值",
+            "en": "The strategic level defines direction and value"
+          }
+        },
+        {
+          "from": "material-42-objectives",
+          "to": "material-42-infrastructure",
+          "relation": {
+            "zh": "增长目标指导能力投资",
+            "en": "Growth objectives guide capacity investment"
+          }
+        },
+        {
+          "from": "material-42-objectives",
+          "to": "material-42-campaign",
+          "relation": {
+            "zh": "目标与受众决定营销方案",
+            "en": "Objectives and audiences shape campaigns"
+          }
+        },
+        {
+          "from": "material-42-revops",
+          "to": "material-42-data",
+          "relation": {
+            "zh": "共享数据支持共同收入目标",
+            "en": "Shared data supports joint revenue goals"
+          }
+        },
+        {
+          "from": "material-42-campaign",
+          "to": "material-42-crm",
+          "relation": {
+            "zh": "获客互动进入客户生命周期记录",
+            "en": "Acquisition interactions enter lifecycle records"
+          }
+        },
+        {
+          "from": "material-42-crm",
+          "to": "material-42-automation",
+          "relation": {
+            "zh": "客户记录触发适当后续流程",
+            "en": "Customer records trigger appropriate workflows"
+          }
+        },
+        {
+          "from": "material-42-automation",
+          "to": "material-42-handoff",
+          "relation": {
+            "zh": "自动化支持跨部门交接",
+            "en": "Automation supports cross-team handoffs"
+          }
+        },
+        {
+          "from": "material-42-handoff",
+          "to": "material-42-fulfillment",
+          "relation": {
+            "zh": "销售承诺需要交付兑现",
+            "en": "Sales promises require fulfillment"
+          }
+        },
+        {
+          "from": "material-42-fulfillment",
+          "to": "material-42-support",
+          "relation": {
+            "zh": "交付问题进入支持与跟踪",
+            "en": "Delivery issues flow into support and tracking"
+          }
+        },
+        {
+          "from": "material-42-support",
+          "to": "material-42-operrev",
+          "relation": {
+            "zh": "服务反馈推动跨团队留存行动",
+            "en": "Service feedback drives coordinated retention"
+          }
+        },
+        {
+          "from": "material-42-operrev",
+          "to": "material-42-alignment",
+          "relation": {
+            "zh": "客户反馈检验战略与执行一致性",
+            "en": "Customer feedback tests strategic alignment"
+          }
+        },
+        {
+          "from": "material-42-data",
+          "to": "material-42-challenges",
+          "relation": {
+            "zh": "指标揭示孤岛、容量与流失问题",
+            "en": "Metrics reveal silos, capacity issues, and churn"
+          }
+        },
+        {
+          "from": "material-42-challenges",
+          "to": "material-42-startup",
+          "relation": {
+            "zh": "按规模选择合适改进措施",
+            "en": "Select improvements appropriate to scale"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-42-levels-q",
+          "conceptIds": [
+            "material-42-levels"
+          ],
+          "prompt": {
+            "zh": "“扩大市场→设计季度营销活动→每天处理订单”分别属于什么？",
+            "en": "“Expand a market → design a quarterly campaign → process orders daily” represents what?"
+          },
+          "options": [
+            {
+              "zh": "战略→战术→运营",
+              "en": "Strategy → tactics → operations"
+            },
+            {
+              "zh": "运营→战略→战术",
+              "en": "Operations → strategy → tactics"
+            },
+            {
+              "zh": "战术→运营→战略",
+              "en": "Tactics → operations → strategy"
+            },
+            {
+              "zh": "三个都是战略决策",
+              "en": "All are strategic decisions"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "市场方向、部门方案和日常执行位于不同层次；行动越具体通常越靠近运营。",
+            "en": "Market direction, departmental plans, and daily execution occupy different levels; more detailed action generally approaches operations."
+          },
+          "pages": [
+            2,
+            3,
+            5,
+            6,
+            36
+          ]
+        },
+        {
+          "id": "material-42-delegation-q",
+          "conceptIds": [
+            "material-42-delegation"
+          ],
+          "prompt": {
+            "zh": "老板每天处理所有快递问题，长期无暇规划增长，最适合的改进是什么？",
+            "en": "An owner handles every delivery issue and has no time to plan growth. What is the most suitable improvement?"
+          },
+          "options": [
+            {
+              "zh": "取消所有履约检查",
+              "en": "Remove all fulfillment checks"
+            },
+            {
+              "zh": "明确委派日常履约责任并保留战略监督",
+              "en": "Delegate daily fulfillment clearly while retaining strategic oversight"
+            },
+            {
+              "zh": "增加老板负责的事务数量",
+              "en": "Add more tasks to the owner"
+            },
+            {
+              "zh": "只写愿景而无人负责执行",
+              "en": "Write a vision with nobody responsible for execution"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "委派释放战略时间但不取消责任或监督；单纯放弃执行同样会出问题。",
+            "en": "Delegation frees strategic time without removing accountability or oversight; abandoning execution also creates problems."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-42-stagnation-q",
+          "conceptIds": [
+            "material-42-stagnation"
+          ],
+          "prompt": {
+            "zh": "订单长期不增长但团队每天很忙，最合理的判断是什么？",
+            "en": "Orders remain flat while the team stays busy. What is the most reasonable interpretation?"
+          },
+          "options": [
+            {
+              "zh": "忙碌必然证明战略有效",
+              "en": "Busyness proves the strategy works"
+            },
+            {
+              "zh": "只要增加会议即可消除停滞",
+              "en": "More meetings alone remove stagnation"
+            },
+            {
+              "zh": "忙碌不能排除停滞，需检查增长障碍",
+              "en": "Busyness does not rule out stagnation; investigate growth barriers"
+            },
+            {
+              "zh": "停滞一定只由外部竞争造成",
+              "en": "Stagnation must be caused only by external competition"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "停滞关注发展与结果，应调查原因而非只看活动量或归咎单一因素。",
+            "en": "Stagnation concerns development and outcomes; investigate causes rather than activity volume or a single assumed cause."
+          },
+          "pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "id": "material-42-cases-q",
+          "conceptIds": [
+            "material-42-cases"
+          ],
+          "prompt": {
+            "zh": "一家特色商品平台不宜只与大众零售商拼同质商品，最贴近哪项案例思路？",
+            "en": "A distinctive-goods marketplace should avoid competing only on identical mass-market products. Which case logic fits?"
+          },
+          "options": [
+            {
+              "zh": "无条件复制所有大型企业业务",
+              "en": "Copy every large-company business unconditionally"
+            },
+            {
+              "zh": "在所有市场使用完全相同服务",
+              "en": "Use identical service in every market"
+            },
+            {
+              "zh": "只增加商品数量而不分析客户",
+              "en": "Increase product counts without customer analysis"
+            },
+            {
+              "zh": "重新聚焦核心定位并改善相关体验",
+              "en": "Refocus on core positioning and improve the related experience"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "eBay 案例强调核心优势和适应客户，其他选项忽略定位与情境。",
+            "en": "The eBay case emphasizes core strengths and customer adaptation; the alternatives ignore positioning and context."
+          },
+          "pages": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "id": "material-42-pareto-q",
+          "conceptIds": [
+            "material-42-pareto"
+          ],
+          "prompt": {
+            "zh": "应用80/20原则时，哪种做法最合适？",
+            "en": "Which practice best applies the 80/20 principle?"
+          },
+          "options": [
+            {
+              "zh": "分析哪些客户或活动贡献最大，并优先关注",
+              "en": "Analyze which customers or activities contribute most and prioritize them"
+            },
+            {
+              "zh": "不看数据直接删除80%的客户",
+              "en": "Delete 80% of customers without examining data"
+            },
+            {
+              "zh": "规定每项活动都必须产生完全相同回报",
+              "en": "Require equal returns from every activity"
+            },
+            {
+              "zh": "把80/20当作无例外的数学定律",
+              "en": "Treat 80/20 as an exceptionless mathematical law"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "原则用于寻找不均衡贡献，不能机械删减或把经验比例当定律。",
+            "en": "The principle helps identify unequal contributions; it does not justify mechanical deletion or treating a heuristic as a law."
+          },
+          "pages": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "material-42-matrix-q",
+          "conceptIds": [
+            "material-42-matrix"
+          ],
+          "prompt": {
+            "zh": "长期重要但今天不紧急的战略规划，应落在哪一格？",
+            "en": "Where does strategically important but nonurgent planning belong?"
+          },
+          "options": [
+            {
+              "zh": "因为不紧急直接删除",
+              "en": "Delete it because it is nonurgent"
+            },
+            {
+              "zh": "安排时间完成",
+              "en": "Schedule it"
+            },
+            {
+              "zh": "全部立即执行并停止其他工作",
+              "en": "Do all of it immediately and stop everything else"
+            },
+            {
+              "zh": "只因紧急而委派",
+              "en": "Delegate merely because it is urgent"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "重要不紧急对应 Decide/Schedule；删除适用于两者都低，立即做适用于两者都高。",
+            "en": "Important–nonurgent work belongs in Decide/Schedule; deletion is low on both and immediate action is high on both."
+          },
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "material-42-routine-q",
+          "conceptIds": [
+            "material-42-routine"
+          ],
+          "prompt": {
+            "zh": "车辆反复出现可预见的保养需求，最佳处理是什么？",
+            "en": "Vehicles repeatedly require predictable maintenance. What is the best response?"
+          },
+          "options": [
+            {
+              "zh": "每次都视为不可预见事件",
+              "en": "Treat every instance as unforeseeable"
+            },
+            {
+              "zh": "完全取消备用时间",
+              "en": "Remove all contingency time"
+            },
+            {
+              "zh": "纳入维护计划并明确负责人员",
+              "en": "Schedule maintenance and assign responsibility"
+            },
+            {
+              "zh": "永久停止战略规划",
+              "en": "Stop strategic planning permanently"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "可预见任务可被管理；把它们都叫意外会掩盖可改进的流程。",
+            "en": "Predictable tasks can be managed; labeling them all unexpected hides improvable processes."
+          },
+          "pages": [
+            17,
+            18
+          ]
+        },
+        {
+          "id": "material-42-objectives-q",
+          "conceptIds": [
+            "material-42-objectives"
+          ],
+          "prompt": {
+            "zh": "“三年进入新地区，以快速配送服务某细分客户”包含哪些战略要素？",
+            "en": "“Enter new regions in three years and serve a segment through fast delivery” contains which strategic elements?"
+          },
+          "options": [
+            {
+              "zh": "仅某部门下周广告预算与素材安排",
+              "en": "Only next week’s departmental ad budget and creative schedule"
+            },
+            {
+              "zh": "仅仓库当日拣货与扫描流程",
+              "en": "Only today’s warehouse picking and scanning process"
+            },
+            {
+              "zh": "仅客服工单的分派次序",
+              "en": "Only the order of assigning support tickets"
+            },
+            {
+              "zh": "扩展方向、目标客户与价值主张",
+              "en": "Expansion direction, target customers, and value proposition"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "地区扩展、客户群与价值属于战略方向；部门短期安排和每日工作流程更加具体。",
+            "en": "Expansion, customer segments, and value concern strategic direction; short-term departmental schedules and daily workflows are more specific."
+          },
+          "pages": [
+            20,
+            21
+          ]
+        },
+        {
+          "id": "material-42-infrastructure-q",
+          "conceptIds": [
+            "material-42-infrastructure"
+          ],
+          "prompt": {
+            "zh": "促销流量骤增同时需要支付与库存衔接，应优先评估什么？",
+            "en": "A sale causes traffic spikes and requires payment–inventory integration. What should be assessed?"
+          },
+          "options": [
+            {
+              "zh": "基础设施扩展能力与平台集成能力",
+              "en": "Infrastructure scalability and platform integration"
+            },
+            {
+              "zh": "只增加广告投放，并假设后台容量会自动满足",
+              "en": "Increase advertising and assume backend capacity will suffice"
+            },
+            {
+              "zh": "只扩充销售人员，不检查订单系统衔接",
+              "en": "Add sales staff without checking system integration"
+            },
+            {
+              "zh": "只选择最低价格的平台，不考虑容量与接口",
+              "en": "Choose the cheapest platform without considering capacity or interfaces"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "需求同时涉及可扩展容量和业务连接；流量、人手或价格不能独立保证这些能力。",
+            "en": "The needs involve scalable capacity and business integration; traffic, staffing, or price alone does not ensure them."
+          },
+          "pages": [
+            22,
+            35
+          ]
+        },
+        {
+          "id": "material-42-revops-q",
+          "conceptIds": [
+            "material-42-revops"
+          ],
+          "prompt": {
+            "zh": "营销线索很多但销售无法跟进、客服反馈也不共享，最直接缺少什么？",
+            "en": "Marketing generates leads, sales cannot follow up, and service feedback is not shared. What is most directly missing?"
+          },
+          "options": [
+            {
+              "zh": "更多孤立的数据表",
+              "en": "More isolated spreadsheets"
+            },
+            {
+              "zh": "跨部门 RevOps 协同",
+              "en": "Cross-functional RevOps coordination"
+            },
+            {
+              "zh": "只优化广告点击数",
+              "en": "Optimization of ad clicks alone"
+            },
+            {
+              "zh": "把客服与收入完全分开",
+              "en": "Complete separation of service from revenue"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "问题在信息和流程脱节，RevOps 连接全旅程而不是只提高某个部门数字。",
+            "en": "The problem is disconnected information and workflows; RevOps connects the journey instead of one departmental metric."
+          },
+          "pages": [
+            2,
+            23,
+            29,
+            34
+          ]
+        },
+        {
+          "id": "material-42-data-q",
+          "conceptIds": [
+            "material-42-data"
+          ],
+          "prompt": {
+            "zh": "转化下降后，哪项最符合数据驱动决策？",
+            "en": "After conversion declines, which action best reflects data-driven decisions?"
+          },
+          "options": [
+            {
+              "zh": "只增加图表数量",
+              "en": "Only increase chart counts"
+            },
+            {
+              "zh": "只根据最高浏览量决定成功",
+              "en": "Judge success only by peak views"
+            },
+            {
+              "zh": "结合获客、销售和服务数据定位旅程断点",
+              "en": "Combine acquisition, sales, and service data to locate journey failures"
+            },
+            {
+              "zh": "忽略留存数据",
+              "en": "Ignore retention data"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "共享指标应帮助解释客户旅程并形成行动；可视化数量不是决策质量。",
+            "en": "Shared metrics should explain the customer journey and lead to action; chart counts do not equal decision quality."
+          },
+          "pages": [
+            23,
+            35,
+            37
+          ]
+        },
+        {
+          "id": "material-42-campaign-q",
+          "conceptIds": [
+            "material-42-campaign"
+          ],
+          "prompt": {
+            "zh": "活动面向特定兴趣群体，哪种选择最合理？",
+            "en": "A campaign targets a specific interest group. Which choice is most reasonable?"
+          },
+          "options": [
+            {
+              "zh": "所有人收到完全相同内容且不评价效果",
+              "en": "Send identical content to everyone without evaluation"
+            },
+            {
+              "zh": "只选自己最熟悉的平台而忽略用户",
+              "en": "Use only a familiar platform regardless of users"
+            },
+            {
+              "zh": "把曝光量直接当成购买量",
+              "en": "Treat impressions as purchases"
+            },
+            {
+              "zh": "按受众与目标选择定向方式并设计相关内容",
+              "en": "Choose targeting and relevant content around the audience and objective"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "定向和相关性连接营销与客户需求；曝光不是转化的同义词。",
+            "en": "Targeting and relevance connect marketing to needs; impressions are not the same as conversions."
+          },
+          "pages": [
+            25,
+            26
+          ]
+        },
+        {
+          "id": "material-42-crm-q",
+          "conceptIds": [
+            "material-42-crm"
+          ],
+          "prompt": {
+            "zh": "客户跨邮件和聊天多次联系，销售却每次重新询问背景，应优先改善什么？",
+            "en": "A customer contacts the business by email and chat, but sales repeatedly asks for the same background. What should improve?"
+          },
+          "options": [
+            {
+              "zh": "统一 CRM 互动记录与跟进",
+              "en": "Unified CRM interaction records and follow-up"
+            },
+            {
+              "zh": "仅增加一次性广告投放，不共享客户互动",
+              "en": "Increase one-off advertising without sharing interactions"
+            },
+            {
+              "zh": "只把客户订单存档，忽略沟通与后续记录",
+              "en": "Archive orders but omit communication and follow-up"
+            },
+            {
+              "zh": "要求每个部门独立收集同样信息",
+              "en": "Require every department to collect the same information independently"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "CRM连接多次互动及跟进；单次订单、重复收集或广告不能解决客户记录断裂。",
+            "en": "CRM connects repeated interactions and follow-up; orders alone, repeated collection, or advertising do not repair fragmented records."
+          },
+          "pages": [
+            27
+          ]
+        },
+        {
+          "id": "material-42-automation-q",
+          "conceptIds": [
+            "material-42-automation"
+          ],
+          "prompt": {
+            "zh": "潜客提交表单后经常漏掉跟进，哪项最有针对性？",
+            "en": "Lead forms are frequently missed during follow-up. What is most targeted?"
+          },
+          "options": [
+            {
+              "zh": "只提高访问量，使更多表单进入原有遗漏流程",
+              "en": "Increase traffic so more forms enter the same faulty process"
+            },
+            {
+              "zh": "把表单连接 CRM 并设置合适的后续流程",
+              "en": "Connect forms to CRM and define appropriate follow-up"
+            },
+            {
+              "zh": "只要求员工记住更多线索，不改变交接流程",
+              "en": "Ask staff to remember more leads without changing handoffs"
+            },
+            {
+              "zh": "把表单分散给个人账号，且不共享处理状态",
+              "en": "Distribute forms to personal accounts without shared status"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "问题在交接与跟进，适当自动化连接能减少遗漏；更多量或更多记忆负担不修复流程。",
+            "en": "The problem is handoff and follow-up; appropriate automation reduces omissions, whereas volume or memory demands do not repair the workflow."
+          },
+          "pages": [
+            28,
+            35
+          ]
+        },
+        {
+          "id": "material-42-handoff-q",
+          "conceptIds": [
+            "material-42-handoff"
+          ],
+          "prompt": {
+            "zh": "营销转交线索后完全不接收销售和客服反馈，会损害什么？",
+            "en": "What is harmed when marketing sends leads but receives no sales or service feedback?"
+          },
+          "options": [
+            {
+              "zh": "只损害营销部门自己的报告格式",
+              "en": "Only marketing’s report format"
+            },
+            {
+              "zh": "只影响客服，不影响销售转化或获客承诺",
+              "en": "Only service, not conversion or acquisition promises"
+            },
+            {
+              "zh": "全流程协同与改进闭环",
+              "en": "End-to-end coordination and the improvement loop"
+            },
+            {
+              "zh": "只要广告点击数达标，协同就无须考虑",
+              "en": "Coordination is unnecessary once click targets are met"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "销售和服务反馈帮助检验线索质量、承诺及留存，不能只看营销部门指标。",
+            "en": "Sales and service feedback test lead quality, promises, and retention, beyond marketing metrics."
+          },
+          "pages": [
+            29,
+            34
+          ]
+        },
+        {
+          "id": "material-42-fulfillment-q",
+          "conceptIds": [
+            "material-42-fulfillment"
+          ],
+          "prompt": {
+            "zh": "库存有货但订单状态滞后、客户无法追踪，优先解决哪项？",
+            "en": "Stock is available, but order status is stale and customers cannot track delivery. What needs priority?"
+          },
+          "options": [
+            {
+              "zh": "重新制定长期市场愿景，暂不修复状态同步",
+              "en": "Redefine long-term vision while leaving status synchronization unfixed"
+            },
+            {
+              "zh": "增加促销吸引更多订单，继续手工更新状态",
+              "en": "Promote more orders while retaining manual updates"
+            },
+            {
+              "zh": "只提高客户满意度目标，不改订单流程",
+              "en": "Raise satisfaction targets without changing order processes"
+            },
+            {
+              "zh": "订单、库存与配送状态的系统衔接",
+              "en": "Integration of order, inventory, and delivery status"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "订单、库存、配送信息连接是题干直接缺口；愿景、促销或目标不能替代流程修复。",
+            "en": "The direct gap is connecting order, inventory, and delivery information; vision, promotion, or targets cannot replace workflow repair."
+          },
+          "pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "id": "material-42-support-q",
+          "conceptIds": [
+            "material-42-support"
+          ],
+          "prompt": {
+            "zh": "大量重复咨询与少数复杂投诉并存，哪种配置更合理？",
+            "en": "Many repetitive inquiries coexist with a few complex complaints. Which arrangement is more suitable?"
+          },
+          "options": [
+            {
+              "zh": "自助/自动化处理常见问题，人工处理复杂情况并分析重复原因",
+              "en": "Use self-service/automation for common issues, humans for complex cases, and analyze recurring causes"
+            },
+            {
+              "zh": "所有问题只用同一条自动回复",
+              "en": "Use one automated reply for every issue"
+            },
+            {
+              "zh": "只扩充销售而不改支持流程",
+              "en": "Expand sales without improving support"
+            },
+            {
+              "zh": "把投诉数据删除以减少工单",
+              "en": "Delete complaints to reduce ticket counts"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "分层支持兼顾效率与复杂需求，重复问题的数据还可以消除根因。",
+            "en": "Tiered support addresses efficiency and complex needs, while recurring data can help remove root causes."
+          },
+          "pages": [
+            33
+          ]
+        },
+        {
+          "id": "material-42-operrev-q",
+          "conceptIds": [
+            "material-42-operrev"
+          ],
+          "prompt": {
+            "zh": "客户反复遭遇配送延迟，销售仅持续发促销邮件有何不足？",
+            "en": "A customer repeatedly experiences delays while sales keeps sending promotions. What is missing?"
+          },
+          "options": [
+            {
+              "zh": "只需进一步增加促销邮件发送频率",
+              "en": "Only increase promotional email frequency"
+            },
+            {
+              "zh": "把运营反馈用于解决根因并协调留存跟进",
+              "en": "Using operational feedback to address causes and coordinate retention"
+            },
+            {
+              "zh": "只需把投诉留在客服部门，不影响销售安排",
+              "en": "Keep complaints within service without affecting sales"
+            },
+            {
+              "zh": "只需提供折扣而不处理配送原因",
+              "en": "Offer discounts without addressing delivery causes"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "需要把客户问题与跨团队行动连接，解决根因并协调跟进；促销或隔离投诉不构成闭环。",
+            "en": "Problems need coordinated cross-team action, root-cause resolution, and follow-up; promotions or isolated complaints do not close the loop."
+          },
+          "pages": [
+            34,
+            37
+          ]
+        },
+        {
+          "id": "material-42-alignment-q",
+          "conceptIds": [
+            "material-42-alignment"
+          ],
+          "prompt": {
+            "zh": "战略要提升复购，哪条链条最一致？",
+            "en": "If strategy aims to improve repeat purchases, which chain is most coherent?"
+          },
+          "options": [
+            {
+              "zh": "只增加新客曝光→忽略老客投诉",
+              "en": "Increase new-customer exposure → ignore existing-customer complaints"
+            },
+            {
+              "zh": "减少跟进→只看总访问量",
+              "en": "Reduce follow-up → monitor visits only"
+            },
+            {
+              "zh": "针对老客设计活动→可靠履约与支持→用反馈调整",
+              "en": "Design repeat-customer campaigns → deliver and support reliably → adjust from feedback"
+            },
+            {
+              "zh": "不断改目标→保持所有流程不变",
+              "en": "Repeatedly change goals → leave all processes unchanged"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "复购需要相关沟通和兑现承诺，反馈使各层保持一致。",
+            "en": "Repeat purchasing needs relevant communication and fulfilled promises; feedback maintains alignment across levels."
+          },
+          "pages": [
+            36,
+            37
+          ]
+        },
+        {
+          "id": "material-42-challenges-q",
+          "conceptIds": [
+            "material-42-challenges"
+          ],
+          "prompt": {
+            "zh": "“各部门数据不通、促销容量不足、客户易流失”正确的应对组合是？",
+            "en": "Which responses match disconnected departmental data, insufficient sale capacity, and customer churn?"
+          },
+          "options": [
+            {
+              "zh": "整合数据、增加广告曝光、只降低价格",
+              "en": "Integrate data, increase ad exposure, and only reduce prices"
+            },
+            {
+              "zh": "增加服务器、维持孤立报表、只提高访问量",
+              "en": "Add servers, keep isolated reports, and raise visits only"
+            },
+            {
+              "zh": "统一折扣政策，用同一促销处理所有风险",
+              "en": "Use one discount promotion for every risk"
+            },
+            {
+              "zh": "整合数据、扩展基础设施、改进留存",
+              "en": "Integrate data, scale infrastructure, improve retention"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "孤岛、容量和流失分别需要协同、扩展和留存措施；广告、价格或服务器单独不对应所有问题。",
+            "en": "Silos, capacity, and churn need coordination, scaling, and retention respectively; ads, prices, or servers do not address every issue."
+          },
+          "pages": [
+            38
+          ]
+        },
+        {
+          "id": "material-42-startup-q",
+          "conceptIds": [
+            "material-42-startup"
+          ],
+          "prompt": {
+            "zh": "单人手工艺网店最合理的起点是什么？",
+            "en": "What is a reasonable starting point for a solo craft shop?"
+          },
+          "options": [
+            {
+              "zh": "聚焦客户细分、适当平台、可靠配送与反馈",
+              "en": "Focus on a niche, suitable platforms, reliable delivery, and feedback"
+            },
+            {
+              "zh": "立即复制大型企业的全部系统",
+              "en": "Immediately copy all enterprise systems"
+            },
+            {
+              "zh": "在未了解客户前覆盖所有市场",
+              "en": "Cover every market before understanding customers"
+            },
+            {
+              "zh": "只建设系统而不交付产品",
+              "en": "Build systems without delivering products"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "课件建议小企业从细分市场和可负担工具起步，以客户反馈改进。",
+            "en": "The deck recommends niches and affordable tools for small firms, improving through customer feedback."
+          },
+          "pages": [
+            40,
+            41
+          ]
+        },
+        {
+          "id": "material-42-matrix-q2",
+          "conceptIds": [
+            "material-42-matrix"
+          ],
+          "prompt": {
+            "zh": "突发且重要的客户故障、紧急但不重要的例行转发、无关且不紧急的浏览，分别如何处理？",
+            "en": "How should an important urgent customer outage, urgent but unimportant routine forwarding, and irrelevant nonurgent browsing be handled?"
+          },
+          "options": [
+            {
+              "zh": "委派、立即做、安排时间",
+              "en": "Delegate, do now, schedule"
+            },
+            {
+              "zh": "立即做、委派、删除",
+              "en": "Do now, delegate, eliminate"
+            },
+            {
+              "zh": "删除、安排时间、立即做",
+              "en": "Eliminate, schedule, do now"
+            },
+            {
+              "zh": "三项都排到下个月",
+              "en": "Schedule all for next month"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "矩阵按两条轴匹配行动：双高立即做，紧急低重要可委派，双低删除；不能只看紧急性。",
+            "en": "The matrix uses both axes: high on both means do now, urgent–low importance suggests delegation, low on both elimination; urgency alone is insufficient."
+          },
+          "pages": [
+            16
+          ]
+        },
+        {
+          "id": "material-42-cases-q2",
+          "conceptIds": [
+            "material-42-cases"
+          ],
+          "prompt": {
+            "zh": "讲义中的 Zalora 合作投资与 Amazon 多元化案例，共同说明什么？",
+            "en": "What do the deck’s Zalora partnership/investment and Amazon diversification cases jointly illustrate?"
+          },
+          "options": [
+            {
+              "zh": "每家小企业都必须复制全部大型企业业务",
+              "en": "Every small firm must copy all large-company businesses"
+            },
+            {
+              "zh": "任何投资都无需评价客户价值",
+              "en": "Any investment can ignore customer value"
+            },
+            {
+              "zh": "通过适合情境的合作、技术和战略调整应对增长压力",
+              "en": "Use context-appropriate partnerships, technology, and strategic changes to address growth pressure"
+            },
+            {
+              "zh": "只要多元化就必定消除所有风险",
+              "en": "Diversification guarantees elimination of every risk"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "案例呈现不同调整路线，核心是持续创新与适应；并未证明统一配方或必然成功。",
+            "en": "The cases present different adjustment paths centered on innovation and adaptation, not one recipe or guaranteed success."
+          },
+          "pages": [
+            10,
+            12
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          41
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              4,
+              19,
+              24,
+              30,
+              39
+            ],
+            "reason": {
+              "zh": "封面、学习目标、参考资料、行政信息或重复总结；不设独立考点。",
+              "en": "Cover, learning objectives, references, administrative information, or repeated recap; no separate learning objective."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "讲义中的公司和工具是教学案例，整理保留其分析用途，不将品牌使用情况、价格或功能视为已核实的当前事实；第15页时间比例是课件建议，不是 Eisenhower 矩阵的定义。 目录称 Week 3，文件封面写 Week 6；这里按实际文件内容整理，保留原目录标题。",
+        "en": "Companies and tools are teaching examples, not verified current claims about adoption, prices, or features. The time allocation on page 15 is a suggestion in the deck, not the definition of the Eisenhower matrix. The catalog says Week 3 while the cover says Week 6; this guide follows the actual file content and retains the original catalog title."
+      },
+      "sourceSha256": "d05d7ad8e0f4d2a7ad7df4acae8e4dcb6c2cf8a23ec2c21891a12783e3b8e40e"
+    },
+    {
+      "resourceId": "material-39",
+      "overview": {
+        "zh": "把电子商务与营销知识落实为真实活动：定位受众、制定计划、制作和发布内容、分析效果，并以仪表盘、报告和录播展示提供证据。",
+        "en": "Apply e-business and marketing through a real campaign: define audiences, plan, produce and publish content, analyze results, and evidence the work in a dashboard, report, and recorded presentation."
+      },
+      "groups": [
+        {
+          "id": "material-39-g1",
+          "title": {
+            "zh": "活动设计与执行",
+            "en": "Campaign design and execution"
+          },
+          "concepts": [
+            {
+              "id": "material-39-objective",
+              "title": {
+                "zh": "真实数字营销活动",
+                "en": "A real digital marketing campaign"
+              },
+              "explanation": {
+                "zh": "项目要求选择真实或假设产品/服务，设计并执行营销活动，发布多种内容，再分析表现。重点是计划、执行和证据形成完整闭环，项目整体标示40%。",
+                "en": "Choose a real or hypothetical product or service, design and execute a campaign, publish varied content, and analyze performance. The emphasis is a complete planning–execution–evidence loop; the overall mini-project is labeled 40%."
+              },
+              "pages": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "id": "material-39-planning",
+              "title": {
+                "zh": "受众、价值主张与平台策略",
+                "en": "Audience, value proposition, and platform strategy"
+              },
+              "explanation": {
+                "zh": "规划阶段确定产品/服务、目标受众、客户价值、营销目标、内容类型和平台。各选择应相互支持，例如品牌认知目标与内容、平台及衡量方式一致。",
+                "en": "Planning identifies the product or service, audience, value proposition, marketing goal, content types, and platforms. Choices should reinforce one another, such as aligning awareness goals with content, platforms, and measurement."
+              },
+              "pages": [
+                4,
+                6
+              ]
+            },
+            {
+              "id": "material-39-content",
+              "title": {
+                "zh": "内容、CTA 与发布证据",
+                "en": "Content, CTAs, and publication evidence"
+              },
+              "explanation": {
+                "zh": "指南要求至少3个1–3分钟短视频，配合标题、说明和行动号召；至少3个平台公开发布，并在报告提供链接证明。CTA 告诉受众希望其下一步采取什么行动。",
+                "en": "The guide requests at least three short videos of 1–3 minutes, with captions and calls to action; publish publicly on at least three platforms and supply links as evidence. A CTA tells the audience what to do next."
+              },
+              "pages": [
+                4,
+                6
+              ]
+            },
+            {
+              "id": "material-39-roles",
+              "title": {
+                "zh": "四类团队责任",
+                "en": "Four team responsibilities"
+              },
+              "explanation": {
+                "zh": "内容创作者负责视觉/视频，文案负责文字，研究/分析者研究受众并分析表现，项目经理协调期限与完成情况。职责应明确且共享活动目标。",
+                "en": "The creator makes visuals/videos, the writer produces text, the researcher/analyst studies audiences and performance, and the project manager coordinates deadlines and completion. Clear ownership should support shared goals."
+              },
+              "pages": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-39-g2",
+          "title": {
+            "zh": "衡量、提交与质量",
+            "en": "Measurement, submission, and quality"
+          },
+          "concepts": [
+            {
+              "id": "material-39-analysis",
+              "title": {
+                "zh": "效果分析与录播展示",
+                "en": "Performance analysis and recorded presentation"
+              },
+              "explanation": {
+                "zh": "使用平台分析或适合的分析工具记录点赞、分享、浏览等指标，评价目标达成、经验和改进。第14周安排分析及3–5分钟录播展示，第15周提交；以最新通知确认时间。",
+                "en": "Use platform analytics or suitable tools to track likes, shares, views, and other relevant metrics, evaluating objectives, lessons, and improvements. The guide places analysis and a 3–5-minute recording in Week 14, with submission in Week 15; confirm timing through current notices."
+              },
+              "pages": [
+                3,
+                4,
+                9
+              ]
+            },
+            {
+              "id": "material-39-dashboard",
+              "title": {
+                "zh": "从数据到目标清晰的仪表盘",
+                "en": "From data to a goal-focused dashboard"
+              },
+              "explanation": {
+                "zh": "项目要求使用提供的数据建立 Excel 或 Power BI 等仪表盘。评分说明强调不止加载数据，还要用清楚、有创意的界面呈现目标与洞察。",
+                "en": "The project asks for a dashboard using provided data, for example in Excel or Power BI. The rubric emphasizes going beyond data loading to a clear, creative presentation of objectives and insights."
+              },
+              "pages": [
+                3,
+                7,
+                8
+              ]
+            },
+            {
+              "id": "material-39-report",
+              "title": {
+                "zh": "报告的证据链与格式",
+                "en": "Report evidence and format"
+              },
+              "explanation": {
+                "zh": "报告包括封面、执行摘要、活动计划、内容制作、发布证明、效果分析、经验改进和可选附录。指南要求PDF、12号 Arial 或 Times New Roman、1.5倍行距，页数写为至少5–7页且不含封面/附录。",
+                "en": "The report includes a cover, executive summary, plan, content creation, deployment evidence, analysis, lessons, and optional appendices. The guide requests PDF, size-12 Arial or Times New Roman, 1.5 spacing, and states a minimum of 5–7 pages excluding cover/appendices."
+              },
+              "pages": [
+                6,
+                7
+              ]
+            },
+            {
+              "id": "material-39-rubric",
+              "title": {
+                "zh": "质量标准与评分冲突",
+                "en": "Quality criteria and rubric inconsistency"
+              },
+              "explanation": {
+                "zh": "评分关注内容创造力、战略一致性、互动结果、仪表盘及报告展示质量。第7/8页互动权重矛盾，应保留记录并确认，不应根据对自己有利的版本准备。",
+                "en": "Assessment considers creativity, strategic alignment, engagement, dashboards, and reporting/presentation quality. Conflicting engagement weights on pages 7 and 8 require clarification, not choosing the more convenient version."
+              },
+              "pages": [
+                7,
+                8
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-39-objective",
+          "to": "material-39-planning",
+          "relation": {
+            "zh": "真实活动从目标与受众开始",
+            "en": "A real campaign begins with goals and audience"
+          }
+        },
+        {
+          "from": "material-39-planning",
+          "to": "material-39-content",
+          "relation": {
+            "zh": "策略指导内容与渠道",
+            "en": "Strategy guides content and channels"
+          }
+        },
+        {
+          "from": "material-39-roles",
+          "to": "material-39-content",
+          "relation": {
+            "zh": "责任分工保证制作与发布",
+            "en": "Role ownership supports creation and publication"
+          }
+        },
+        {
+          "from": "material-39-content",
+          "to": "material-39-analysis",
+          "relation": {
+            "zh": "公开发布产生可分析证据",
+            "en": "Publication produces evidence for analysis"
+          }
+        },
+        {
+          "from": "material-39-analysis",
+          "to": "material-39-dashboard",
+          "relation": {
+            "zh": "用指标和洞察呈现结果",
+            "en": "Present outcomes through metrics and insights"
+          }
+        },
+        {
+          "from": "material-39-dashboard",
+          "to": "material-39-report",
+          "relation": {
+            "zh": "仪表盘与报告共同支持判断",
+            "en": "Dashboard and report jointly support evaluation"
+          }
+        },
+        {
+          "from": "material-39-report",
+          "to": "material-39-rubric",
+          "relation": {
+            "zh": "证据链对应质量维度",
+            "en": "The evidence chain aligns with quality criteria"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-39-objective-q",
+          "conceptIds": [
+            "material-39-objective"
+          ],
+          "prompt": {
+            "zh": "只有一份漂亮营销计划但未发布内容，是否完成项目目标？",
+            "en": "Does a polished marketing plan without published content meet the project objective?"
+          },
+          "options": [
+            {
+              "zh": "没有，还要求执行、发布并分析效果",
+              "en": "No; execution, publication, and analysis are also required"
+            },
+            {
+              "zh": "完成，因为方案已经详细说明未来可能取得的效果",
+              "en": "Yes, because the plan describes possible future effects"
+            },
+            {
+              "zh": "只要使用足够多平台标志就算执行",
+              "en": "Using enough platform logos counts as execution"
+            },
+            {
+              "zh": "只需用预计数据替代实际活动证据",
+              "en": "Predicted data alone can replace actual campaign evidence"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "项目要求实际执行、发布与分析；计划、标志和预测都不能代替活动证据。",
+            "en": "The project requires actual execution, publication, and analysis; plans, logos, and forecasts do not replace campaign evidence."
+          },
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "material-39-planning-q",
+          "conceptIds": [
+            "material-39-planning"
+          ],
+          "prompt": {
+            "zh": "要提高特定群体对新品的认知，哪种计划最一致？",
+            "en": "Which plan best supports awareness of a new product among a defined group?"
+          },
+          "options": [
+            {
+              "zh": "先选最流行平台，再把所有群体视为相同受众",
+              "en": "Choose the most popular platform and treat all groups alike"
+            },
+            {
+              "zh": "明确群体与价值，再选能触达他们的内容和平台",
+              "en": "Define the group and value, then choose content and platforms that reach them"
+            },
+            {
+              "zh": "先制作内容，再不加修改地套用任何营销目标",
+              "en": "Create content first and apply any goal without adaptation"
+            },
+            {
+              "zh": "把工具使用熟练度当作客户价值主张",
+              "en": "Treat tool proficiency as the customer value proposition"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "计划需要受众、价值、目标、内容与渠道一致；流行程度或工具熟练度不是客户价值的替代品。",
+            "en": "Planning aligns audience, value, objectives, content, and channels; popularity or tool skill does not substitute for customer value."
+          },
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "id": "material-39-content-q",
+          "conceptIds": [
+            "material-39-content"
+          ],
+          "prompt": {
+            "zh": "哪项最完整符合发布要求？",
+            "en": "Which submission best fits the publication requirement?"
+          },
+          "options": [
+            {
+              "zh": "3张内部草稿截图但无公开链接",
+              "en": "Three internal draft screenshots without public links"
+            },
+            {
+              "zh": "1个视频只在私人文件夹存档",
+              "en": "One video stored only privately"
+            },
+            {
+              "zh": "3个1–3分钟视频，在至少3个平台公开发布并附链接",
+              "en": "Three 1–3-minute videos, public on at least three platforms with links"
+            },
+            {
+              "zh": "只写计划发布的平台名称",
+              "en": "Only list planned platform names"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "视频数量、时长、平台覆盖和公开链接都是指南要素，草稿不能证明部署。",
+            "en": "Video count, length, platform coverage, and public links are all specified; drafts do not prove deployment."
+          },
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "id": "material-39-roles-q",
+          "conceptIds": [
+            "material-39-roles"
+          ],
+          "prompt": {
+            "zh": "分析受众和活动数据主要由谁负责，同时谁协调期限？",
+            "en": "Who primarily analyzes audiences and campaign data, and who coordinates deadlines?"
+          },
+          "options": [
+            {
+              "zh": "项目经理；仅内容创作者",
+              "en": "Project manager; content creator alone"
+            },
+            {
+              "zh": "文案；研究者",
+              "en": "Writer; researcher"
+            },
+            {
+              "zh": "内容创作者；文案",
+              "en": "Content creator; writer"
+            },
+            {
+              "zh": "研究/分析者；项目经理",
+              "en": "Researcher/analyst; project manager"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "角色表区分分析与协调，虽可协作但职责不能混淆。",
+            "en": "The role table separates analysis from coordination, while allowing collaboration."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-39-analysis-q",
+          "conceptIds": [
+            "material-39-analysis"
+          ],
+          "prompt": {
+            "zh": "报告显示很多浏览量，但未与活动目标比较，缺少什么？",
+            "en": "A report lists many views without comparing them with the campaign goal. What is missing?"
+          },
+          "options": [
+            {
+              "zh": "效果评价与经验分析",
+              "en": "Evaluation of effectiveness and lessons"
+            },
+            {
+              "zh": "只缺按浏览量从高到低排列的平台截图",
+              "en": "Only screenshots sorted by view count are missing"
+            },
+            {
+              "zh": "只缺对每个平台工具功能的介绍",
+              "en": "Only descriptions of platform tool features are missing"
+            },
+            {
+              "zh": "只缺下一次活动的未经验证目标",
+              "en": "Only an untested goal for a future campaign is missing"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "效果分析应把指标与目标比较并解释经验，截图排序或工具介绍不完成判断。",
+            "en": "Effectiveness analysis compares metrics with objectives and explains lessons; sorted screenshots or tool descriptions do not do this."
+          },
+          "pages": [
+            3,
+            4,
+            9
+          ]
+        },
+        {
+          "id": "material-39-dashboard-q",
+          "conceptIds": [
+            "material-39-dashboard"
+          ],
+          "prompt": {
+            "zh": "哪种仪表盘更符合评分要求？",
+            "en": "Which dashboard better meets the rubric?"
+          },
+          "options": [
+            {
+              "zh": "导入所有数据，但不说明指标回答什么问题",
+              "en": "Import all data without explaining what metrics answer"
+            },
+            {
+              "zh": "围绕目标展示可解释指标和洞察",
+              "en": "Present interpretable metrics and insights around the objective"
+            },
+            {
+              "zh": "用最多图表覆盖页面，但缺少目标和解释",
+              "en": "Fill the page with charts without objectives or interpretation"
+            },
+            {
+              "zh": "只显示原始数据表，认为可视化目标不重要",
+              "en": "Show only raw rows and treat presentation objectives as unimportant"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "指南要求清楚表达目标和洞察；数据导入是起点，图表数量不是质量本身。",
+            "en": "The guide requires clear objectives and insights; importing data is a starting point, and chart count is not quality itself."
+          },
+          "pages": [
+            3,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "material-39-report-q",
+          "conceptIds": [
+            "material-39-report"
+          ],
+          "prompt": {
+            "zh": "哪条报告顺序最能让读者判断活动是否有效？",
+            "en": "Which report sequence best lets a reader assess effectiveness?"
+          },
+          "options": [
+            {
+              "zh": "只列截图而不说明目标",
+              "en": "Screenshots without objectives"
+            },
+            {
+              "zh": "先给结论但删除部署证明",
+              "en": "Conclusions with no deployment evidence"
+            },
+            {
+              "zh": "计划与目标→制作/发布证据→结果分析→改进",
+              "en": "Plan and objectives → creation/publication evidence → results → improvements"
+            },
+            {
+              "zh": "只描述工具功能",
+              "en": "Descriptions of tool features only"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "该链条把意图、行动和结果连接起来，便于评价而非仅展示素材。",
+            "en": "The chain connects intent, action, and outcomes so the work can be evaluated rather than merely displayed."
+          },
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "id": "material-39-rubric-q",
+          "conceptIds": [
+            "material-39-rubric"
+          ],
+          "prompt": {
+            "zh": "面对两页不同的互动权重，最可靠的处理是什么？",
+            "en": "What is the most reliable response to conflicting engagement weights?"
+          },
+          "options": [
+            {
+              "zh": "默认选择较低权重即可",
+              "en": "Automatically choose the lower weight"
+            },
+            {
+              "zh": "自行把其他分数补足100%",
+              "en": "Invent other weights to total 100%"
+            },
+            {
+              "zh": "完全忽略互动结果",
+              "en": "Ignore engagement altogether"
+            },
+            {
+              "zh": "向教师确认，同时准备全部列出的质量维度",
+              "en": "Confirm with the lecturer while addressing all listed quality dimensions"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "两页存在实质冲突，学习系统不能替教师确定最终权重；各质量维度仍须准备。",
+            "en": "The pages materially conflict, so the study system cannot set the final weights; all quality dimensions remain relevant."
+          },
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "material-39-rubric-q2",
+          "conceptIds": [
+            "material-39-rubric"
+          ],
+          "prompt": {
+            "zh": "内容很有创意，但与受众和营销目标无关，哪项评分维度最直接受损？",
+            "en": "Creative content is unrelated to the audience and marketing goal. Which criterion is most directly weakened?"
+          },
+          "options": [
+            {
+              "zh": "战略一致性",
+              "en": "Strategic alignment"
+            },
+            {
+              "zh": "创造力必定完全不存在",
+              "en": "Creativity must be entirely absent"
+            },
+            {
+              "zh": "文件格式必定错误",
+              "en": "The file format must be wrong"
+            },
+            {
+              "zh": "仪表盘必定无法导入",
+              "en": "The dashboard must fail to import"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "创意与战略一致性是不同标准；有新意不自动证明它服务目标和受众。",
+            "en": "Creativity and strategic alignment are distinct; originality does not automatically mean serving the goal and audience."
+          },
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "excludedPages": []
+      },
+      "sourceNote": {
+        "zh": "第7页写 Engagement results 20%，第8页写30%；第7页列项相加仅90%，请向教师确认最终评分，不擅自选定某个版本。组员数量文字也有不一致，组队以最新说明为准。",
+        "en": "Page 7 gives engagement 20%, while page 8 gives 30%; page 7’s components total only 90%. Confirm the final rubric with the lecturer rather than selecting a version silently. Group-size wording is also inconsistent; use the latest instructions."
+      },
+      "sourceSha256": "722d19c4226c718cd07461bf71629166e5641254e37c7698957e1315a0c0526f"
+    },
+    {
+      "resourceId": "material-46",
+      "overview": {
+        "zh": "此文件是职业发展主题的毕业人物配图，没有教学文字或概念图。相关知识点与选择题见“Fresh Graduate in Gen AI Era”。",
+        "en": "This is a graduation-themed illustration without instructional text or a conceptual diagram. Related knowledge and questions are provided in “Fresh Graduate in Gen AI Era.”"
+      },
+      "groups": [],
+      "links": [],
+      "questions": [],
+      "coverage": {
+        "coveredPages": [],
+        "excludedPages": []
+      },
+      "sourceNote": {
+        "zh": "已查看原图：仅人物照片。保留原文件，并关联 material-41；不从装饰图片编造知识点、页码或选择题。",
+        "en": "The original image was inspected and contains only a portrait. The file is retained and linked to material-41; no concepts, page numbers, or questions are invented from decoration."
+      },
+      "sourceSha256": "defd197b79895b4d67a99819e8008701a4ef41219174f0935c676cf7ccda0dc3"
+    },
+    {
+      "resourceId": "material-47",
+      "overview": {
+        "zh": "这张金字塔按时间尺度、管理层级和问题类型区分战略、战术与运营。可用于快速判断一个行动属于哪一层，以及上下层是否一致。",
+        "en": "This pyramid distinguishes strategy, tactics, and operations by time horizon, management level, and question type. Use it to classify actions and check alignment across levels."
+      },
+      "groups": [
+        {
+          "id": "material-47-g1",
+          "title": {
+            "zh": "三层管理金字塔",
+            "en": "Three-level management pyramid"
+          },
+          "concepts": [
+            {
+              "id": "material-47-strategic",
+              "title": {
+                "zh": "战略层",
+                "en": "Strategic level"
+              },
+              "explanation": {
+                "zh": "图中战略层面向整体与长期（示意2至5年以上），由高层关注愿景、使命、政策与方向，回答“公司应走向哪里”。",
+                "en": "The strategic level concerns the big picture and long term (illustrated as 2 to 5+ years), with executives focusing on vision, mission, policy, and direction: where should the company go?"
+              },
+              "pages": []
+            },
+            {
+              "id": "material-47-tactical",
+              "title": {
+                "zh": "战术层",
+                "en": "Tactical level"
+              },
+              "explanation": {
+                "zh": "图中战术层聚焦特定部门与较短期计划（示意3个月至2年），由中层把战略转成要开展的活动，并检查战略一致性。",
+                "en": "The tactical level focuses on departments and shorter-term plans (illustrated as 3 months to 2 years), with middle management translating strategy into activities and checking alignment."
+              },
+              "pages": []
+            },
+            {
+              "id": "material-47-operational",
+              "title": {
+                "zh": "运营层",
+                "en": "Operational level"
+              },
+              "explanation": {
+                "zh": "运营层由团队与经理执行日常详细流程以取得具体结果，并持续检查行动是否符合战略。它承担实际交付，但仍应服务上层目标。",
+                "en": "Teams and managers execute detailed daily processes at the operational level to achieve specific outcomes while checking strategic alignment. This level delivers the work while serving higher-level goals."
+              },
+              "pages": []
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-47-strategic",
+          "to": "material-47-tactical",
+          "relation": {
+            "zh": "长期方向转成部门行动计划",
+            "en": "Long-term direction becomes departmental action plans"
+          }
+        },
+        {
+          "from": "material-47-tactical",
+          "to": "material-47-operational",
+          "relation": {
+            "zh": "计划落实为日常流程和结果",
+            "en": "Plans become daily workflows and results"
+          }
+        },
+        {
+          "from": "material-47-operational",
+          "to": "material-47-strategic",
+          "relation": {
+            "zh": "检查实际行动是否与方向一致",
+            "en": "Check whether actual work aligns with direction"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-47-strategic-q",
+          "conceptIds": [
+            "material-47-strategic"
+          ],
+          "prompt": {
+            "zh": "决定公司未来五年进入哪些市场，最符合图中的哪层？",
+            "en": "Choosing markets to enter over the next five years best fits which level?"
+          },
+          "options": [
+            {
+              "zh": "战略层",
+              "en": "Strategic level"
+            },
+            {
+              "zh": "部门战术层",
+              "en": "Departmental tactical level"
+            },
+            {
+              "zh": "每日运营层",
+              "en": "Daily operational level"
+            },
+            {
+              "zh": "单次订单处理",
+              "en": "Single-order processing"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "长期整体方向由战略层回答；部门计划与订单处理更加具体。",
+            "en": "Long-term overall direction is strategic; departmental plans and order processing are more specific."
+          },
+          "pages": []
+        },
+        {
+          "id": "material-47-tactical-q",
+          "conceptIds": [
+            "material-47-tactical"
+          ],
+          "prompt": {
+            "zh": "营销部门为既定市场目标制定半年活动计划，属于哪层？",
+            "en": "A marketing department creates a six-month campaign plan for an established market goal. Which level is this?"
+          },
+          "options": [
+            {
+              "zh": "制定全公司使命的战略层",
+              "en": "The strategic level setting the company mission"
+            },
+            {
+              "zh": "战术层",
+              "en": "Tactical level"
+            },
+            {
+              "zh": "每日打包的运营层",
+              "en": "The operational level packing daily orders"
+            },
+            {
+              "zh": "仅个人工作偏好",
+              "en": "Personal work preference only"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "部门行动方案把战略落实为计划，正是战术层的连接作用。",
+            "en": "A departmental action plan translates strategy into planned activity, the linking role of tactics."
+          },
+          "pages": []
+        },
+        {
+          "id": "material-47-operational-q",
+          "conceptIds": [
+            "material-47-operational"
+          ],
+          "prompt": {
+            "zh": "每天按流程处理订单并检查是否达到配送承诺，属于哪层？",
+            "en": "Processing orders daily and checking delivery promises belongs to which level?"
+          },
+          "options": [
+            {
+              "zh": "长期战略方向",
+              "en": "Long-term strategic direction"
+            },
+            {
+              "zh": "部门年度市场规划",
+              "en": "Departmental annual market planning"
+            },
+            {
+              "zh": "运营层",
+              "en": "Operational level"
+            },
+            {
+              "zh": "组织使命定义",
+              "en": "Organizational mission definition"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "具体、重复、日常执行是运营特征；它用结果检验战略承诺的落实。",
+            "en": "Detailed, repeated daily execution characterizes operations; results test whether strategic promises are delivered."
+          },
+          "pages": []
+        }
+      ],
+      "coverage": {
+        "coveredPages": [],
+        "excludedPages": []
+      },
+      "sourceNote": {
+        "zh": "来源是原始金字塔图片，没有页码；时间范围为此图的教学示意，不能机械套用于所有组织。",
+        "en": "The source is the original pyramid image and has no page number. Time ranges illustrate this diagram and are not rigid rules for every organization."
+      },
+      "sourceSha256": "e03f04218f8eab55d7abe31107d799cf557177b7a193d515566bef202c5d424f"
+    }
+  ]
+}
