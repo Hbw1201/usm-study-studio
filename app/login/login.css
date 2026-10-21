@@ -1,0 +1,41 @@
+.signin-page{min-height:100svh;padding:31px 6vw 20px;background:#f6f7f0;display:flex;flex-direction:column;align-items:center;color:#294537}
+.signin-topline{width:100%;max-width:1150px;display:flex;justify-content:space-between;align-items:center;margin-bottom:35px;gap:20px}
+.signin-brand{display:flex;gap:11px;align-items:center;text-decoration:none;color:#2e5543}
+.signin-brand:hover{text-decoration:none}.signin-brand>span{height:43px;width:43px;display:grid;place-items:center;border-radius:11px;background:#e5ecd8;border:1px solid #cedabb;color:#648354}
+.signin-brand b{display:block;font-size:27px;letter-spacing:3px;line-height:1.2;font-weight:650}.signin-brand b>span{color:#90a66a;letter-spacing:0}
+.signin-brand small{display:block;margin-top:4px;font-size:8px;letter-spacing:1.9px;color:#95a285}
+.signin-semester{display:flex;align-items:center;gap:9px;font-size:9px;color:#93a184;letter-spacing:1px}.signin-semester i{width:5px;height:5px;background:#9eb77d;border-radius:50%;display:block}
+.signin-shell{display:grid;grid-template-columns:1.04fr 1fr;max-width:1050px;width:100%;min-height:650px;overflow:hidden;border:1px solid #e1e7d9;border-radius:22px;background:#fff;box-shadow:0 15px 60px #2947310b;margin:auto 0}
+.signin-story{background:#244638;color:#e8efdc;padding:46px 43px 31px;position:relative;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.signin-story-eyebrow{font-size:8px;color:#b1c39d;letter-spacing:2.4px;font-weight:500;margin-bottom:17px}
+.signin-story h1{font-size:31px;line-height:1.65;letter-spacing:.5px;color:#f1f4e6;font-weight:550;position:relative;z-index:1}.signin-story h1>span{color:#bdcd94}
+.signin-story-copy{font-size:12px;color:#a3baa5;line-height:2.1;margin-top:17px;position:relative;z-index:1}
+.signin-notebook-art{height:270px;position:relative;margin-top:1px;width:100%;max-width:360px;align-self:center}
+.signin-orbit{position:absolute;width:225px;height:225px;border:1px solid #49664a;border-radius:50%;left:52px;top:19px;transform:rotate(-15deg)}
+.signin-orbit:after{content:"";position:absolute;width:270px;height:185px;border:1px solid #3b5a43;border-radius:50%;left:-24px;top:22px;transform:rotate(35deg)}
+.signin-book-back{position:absolute;width:170px;height:220px;left:105px;top:35px;border-radius:4px 12px 12px 4px;background:#879e66;transform:rotate(13deg);border-left:8px solid #6f8953;box-shadow:8px 10px 25px #122d2633}
+.signin-paper{position:absolute;width:179px;height:230px;left:72px;top:24px;background:#f6f5df;border-left:7px solid #c7d2a4;border-radius:3px 11px 11px 3px;padding:22px 16px;transform:rotate(-9deg);box-shadow:8px 12px 22px #112f2326;color:#4d704a}
+.signin-paper-label{font-size:6px;letter-spacing:.7px;display:flex;align-items:center;gap:5px;color:#8b9d75;white-space:nowrap}
+.signin-paper-heading{font-size:21px;line-height:1.7;margin:13px 0 14px;font-weight:600;letter-spacing:1px}
+.signin-paper-line{height:2px;background:#dde3c9;margin:8px 0}.signin-paper-line.short{width:70%}
+.signin-paper-check{display:flex;align-items:center;gap:6px;font-size:7px;color:#8a9c70;margin-top:16px}.signin-paper-check>span{display:grid;place-items:center;width:15px;height:15px;border-radius:4px;background:#e2eacb;color:#6b8758}
+.signin-memory-tag{position:absolute;left:10px;bottom:26px;display:flex;align-items:center;gap:8px;border:1px solid #cfdcbd;border-radius:9px;padding:11px 15px;background:#e8efdc;color:#6c8258;transform:rotate(-4deg);box-shadow:0 7px 16px #1c382b1c;font-size:9px}
+.signin-art-star{position:absolute;top:43px;right:13px;font-size:29px;color:#a8bd81}
+.signin-courses{margin-top:auto;padding-top:13px;border-top:1px solid #3d5b47;position:relative;z-index:1}.signin-courses>span{font-size:9px;letter-spacing:.5px;color:#8fac92}.signin-courses>div{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.signin-courses b{font-size:8px;letter-spacing:.6px;color:#bdcdb4;font-weight:500;padding:4px 7px;border:1px solid #4c6750;border-radius:4px;background:#2d4d3c}
+.signin-form-panel{display:flex;flex-direction:column;padding:61px 48px 29px;min-width:0}
+.signin-welcome-icon{display:grid;place-items:center;width:51px;height:51px;border-radius:15px;background:#edf2e5;color:#8ba174;margin-bottom:26px}
+.signin-eyebrow{font-size:8px;font-weight:600;letter-spacing:1.8px;color:#9cab8e;margin-bottom:9px}
+.signin-form-heading h2{font-size:25px;font-weight:600;line-height:1.5;color:#31533e;letter-spacing:-.5px}.signin-form-heading p{font-size:11px;color:#98a38b;margin-top:11px;line-height:1.9}
+.signin-form{display:flex;flex-direction:column;gap:21px;margin-top:31px}
+.signin-field>label{display:block;margin-bottom:9px;font-size:11px;color:#687e5d;font-weight:500}
+.signin-input{display:flex;align-items:center;gap:11px;border:1px solid #dfe6d5;border-radius:8px;padding:0 14px;background:#fbfcf7;height:48px;color:#a4b296;transition:border-color .18s,box-shadow .18s}
+.signin-input:focus-within{border-color:#8ea77a;box-shadow:0 0 0 3px #dfe9d05c}.signin-input>input{flex:1;width:100%;border:0;background:transparent;font-size:12px;color:#3f5b39;outline:none;box-shadow:none;height:100%;padding:0;min-width:0}.signin-input>input:focus{outline:none;box-shadow:none}.signin-input>input::placeholder{color:#b1baa5;font-size:11px}
+.signin-reveal{display:grid;place-items:center;padding:7px;color:#9aaa88;margin-right:-6px;border-radius:5px}.signin-reveal:hover{background:#e9efdf;color:#5c7850}
+.signin-submit{display:flex;align-items:center;justify-content:center;gap:10px;background:#2e6352;color:white;border:1px solid #2e6352;border-radius:8px;min-height:48px;padding:12px 17px;font-size:12px;font-weight:550;margin-top:4px}.signin-submit:not(:disabled):hover{background:#224f40;box-shadow:0 6px 15px #264b3f19}.signin-submit:disabled{opacity:.7}
+.signin-error{font-size:11px;line-height:1.8;color:#a55e43;padding:10px 12px;background:#fbf1e9;border:1px solid #ecd9c7;border-radius:7px;margin-top:-5px}
+.signin-personal-space{display:flex;align-items:flex-start;gap:8px;color:#a0ae91;margin-top:24px;padding:0 1px}.signin-personal-space>span{margin-top:3px}.signin-personal-space p{font-size:9px;line-height:1.9}.signin-personal-space strong{font-weight:400;color:#a9b39b}
+.signin-form-footer{margin-top:auto;padding-top:27px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:7px;color:#b5bea9;font-size:8px;letter-spacing:.1px}
+.signin-bottom{font-size:9px;color:#a4ae97;margin-top:28px;letter-spacing:.6px;text-align:center}
+@media(max-width:1000px){.signin-page{padding:25px 4vw 20px}.signin-story{padding:40px 31px 28px}.signin-story h1{font-size:28px}.signin-form-panel{padding:50px 33px 27px}.signin-form-heading h2{font-size:23px}.signin-memory-tag{left:0}.signin-shell{min-height:640px}}
+@media(max-width:730px){.signin-page{padding:23px 21px 19px}.signin-topline{max-width:440px;margin-bottom:22px;gap:10px}.signin-semester{font-size:7px;letter-spacing:.4px}.signin-brand>span{width:37px;height:39px}.signin-brand b{font-size:24px}.signin-brand small{font-size:7px;letter-spacing:1.4px}.signin-shell{display:flex;flex-direction:column;max-width:440px;min-height:0;border-radius:16px;margin:0}.signin-story{padding:23px 26px 24px}.signin-story-eyebrow{font-size:7px;margin-bottom:10px;letter-spacing:1.8px}.signin-story h1{font-size:24px;line-height:1.6}.signin-story-copy{font-size:10px;margin-top:11px;line-height:1.9}.signin-notebook-art,.signin-courses{display:none}.signin-form-panel{padding:29px 26px 23px}.signin-welcome-icon{display:none}.signin-eyebrow{font-size:7px;margin-bottom:7px}.signin-form-heading h2{font-size:23px}.signin-form-heading p{font-size:10px;margin-top:8px}.signin-form{gap:17px;margin-top:24px}.signin-input{height:46px}.signin-input>input{font-size:16px}.signin-input>input::placeholder{font-size:11px}.signin-submit{font-size:12px;min-height:46px}.signin-personal-space{margin-top:20px}.signin-form-footer{font-size:7px;padding-top:22px}.signin-bottom{margin-top:20px;font-size:8px}}
+@media(max-width:360px){.signin-page{padding-left:15px;padding-right:15px}.signin-semester{font-size:6px}.signin-story,.signin-form-panel{padding-left:21px;padding-right:21px}.signin-story h1{font-size:22px}}

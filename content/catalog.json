@@ -1,0 +1,577 @@
+{
+  "snapshot": "2026-10-21",
+  "courses": [
+    {
+      "code": "AKP202W",
+      "name": "组织行为学",
+      "id": 2464,
+      "topics": [
+        "组织行为 OB",
+        "管理技能",
+        "循证管理",
+        "行为科学"
+      ],
+      "studyTip": "先用自己的话解释概念，再为每个概念写一个课堂、社团或工作场景中的例子。",
+      "color": "sage",
+      "english": "Organizational Behaviour",
+      "icon": "users"
+    },
+    {
+      "code": "CAT402W",
+      "name": "职业发展与科技创业",
+      "id": 2210,
+      "topics": [
+        "职业发展",
+        "GenAI 协作",
+        "创业思维",
+        "数字创业"
+      ],
+      "studyTip": "围绕一个真实问题，把已有技能、可提供的价值与可验证的小作品连接起来。",
+      "color": "clay",
+      "english": "Professional Development",
+      "icon": "sparkles"
+    },
+    {
+      "code": "CAT405W",
+      "name": "智能计算毕业项目",
+      "id": 1874,
+      "topics": [
+        "项目里程碑",
+        "SRD",
+        "报告与展示",
+        "项目推进"
+      ],
+      "studyTip": "把每个项目里程碑拆成文档、实现和演示三个检查项，并定期向导师反馈进展。",
+      "color": "lavender",
+      "english": "Intelligent Computing Project",
+      "icon": "layers"
+    },
+    {
+      "code": "CMT322W",
+      "name": "Web工程与技术",
+      "id": 1960,
+      "topics": [
+        "Web 工程",
+        "Web 应用",
+        "系统开发",
+        "质量与风险"
+      ],
+      "studyTip": "用同一个小型 Web 项目贯穿概念学习，说明每个工程原则解决了什么具体问题。",
+      "color": "blue",
+      "english": "Web Engineering",
+      "icon": "code"
+    },
+    {
+      "code": "CPC357W",
+      "name": "物联网架构与智能应用",
+      "id": 2193,
+      "topics": [
+        "IoT 基础",
+        "感知与互联",
+        "实时处理",
+        "系统挑战"
+      ],
+      "studyTip": "从一个传感器应用出发，画出数据采集、通信、处理与动作的过程，再对照实验验证。",
+      "color": "amber",
+      "english": "Internet of Things",
+      "icon": "cpu"
+    },
+    {
+      "code": "CST435W",
+      "name": "并行与云计算",
+      "id": 1962,
+      "topics": [
+        "多核处理器",
+        "并行计算",
+        "云计算",
+        "云成本"
+      ],
+      "studyTip": "分清硬件并行与云服务交付，比较性能、功耗和成本时写清前提条件。",
+      "color": "teal",
+      "english": "Parallel & Cloud Computing",
+      "icon": "cloud"
+    }
+  ],
+  "resources": [
+    {
+      "id": "material-0",
+      "courseId": "AKP202W",
+      "title": "Teaching Plan AKP202W 2026-2027",
+      "fileName": "TEACHING PLAN AKP202W 2026-2027.pdf",
+      "ext": "pdf",
+      "category": "课程说明与其他资料",
+      "bytes": 245403,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=49055"
+    },
+    {
+      "id": "material-1",
+      "courseId": "CST435W",
+      "title": "Course planner",
+      "fileName": "CST435-Planner-262.pdf",
+      "ext": "pdf",
+      "category": "课程说明与其他资料",
+      "bytes": 493955,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=35062"
+    },
+    {
+      "id": "material-2",
+      "courseId": "CST435W",
+      "title": "Cloud Computing Part 1",
+      "fileName": "Cloud Computing 2026 Part I.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 521852,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=35063"
+    },
+    {
+      "id": "material-3",
+      "courseId": "CST435W",
+      "title": "Introduction CST435",
+      "fileName": "Introduction435.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 1861397,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=35590"
+    },
+    {
+      "id": "material-4",
+      "courseId": "CST435W",
+      "title": "Cloud computing Part 2",
+      "fileName": "Cloud Computing 2026 Part II.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 667474,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=43648"
+    },
+    {
+      "id": "material-5",
+      "courseId": "CST435W",
+      "title": "Introduction part 2",
+      "fileName": "Introduction2026.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 1205439,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=49583"
+    },
+    {
+      "id": "material-6",
+      "courseId": "CST435W",
+      "title": "Parallel Architecture",
+      "fileName": "3ParallelArchitecture2026.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 2776075,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=49590"
+    },
+    {
+      "id": "material-7",
+      "courseId": "CPC357W",
+      "title": "Course planner",
+      "fileName": "CPC357_Course Planner_Sem1 2026.pdf",
+      "ext": "pdf",
+      "category": "课程说明与其他资料",
+      "bytes": 265539,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=24303"
+    },
+    {
+      "id": "material-8",
+      "courseId": "CPC357W",
+      "title": "Chapter 1",
+      "fileName": "CPC357 Chapter1.pdf",
+      "ext": "pdf",
+      "category": "课件",
+      "bytes": 9691017,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=38557"
+    },
+    {
+      "id": "material-9",
+      "courseId": "CPC357W",
+      "title": "Lab sheet 1",
+      "fileName": "CPC357 - Lab Sheet 1 (NodeMCU).pdf",
+      "ext": "pdf",
+      "category": "作业",
+      "bytes": 1053235,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=26489"
+    },
+    {
+      "id": "material-10",
+      "courseId": "CPC357W",
+      "title": "Chapter 2",
+      "fileName": "CPC357 Chapter2.pdf",
+      "ext": "pdf",
+      "category": "课件",
+      "bytes": 7610273,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=38559"
+    },
+    {
+      "id": "material-11",
+      "courseId": "CPC357W",
+      "title": "Lab sheet 2",
+      "fileName": "CPC357 - Lab Sheet 2 (NodeMCU).pdf",
+      "ext": "pdf",
+      "category": "作业",
+      "bytes": 454348,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=38563"
+    },
+    {
+      "id": "material-12",
+      "courseId": "CPC357W",
+      "title": "Chapter 3",
+      "fileName": "CPC357 Chapter3.pdf",
+      "ext": "pdf",
+      "category": "课件",
+      "bytes": 11469377,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=46389"
+    },
+    {
+      "id": "material-13",
+      "courseId": "CPC357W",
+      "title": "Chapter 3.2",
+      "fileName": "3 - Embedded System.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 8571086,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=51667"
+    },
+    {
+      "id": "material-14",
+      "courseId": "CPC357W",
+      "title": "Lab sheet 3",
+      "fileName": "CPC357 - Lab Sheet 3 (NodeMCU).pdf",
+      "ext": "pdf",
+      "category": "作业",
+      "bytes": 473294,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=46118"
+    },
+    {
+      "id": "material-15",
+      "courseId": "CPC357W",
+      "title": "Chapter 4",
+      "fileName": "CPC357 Chapter4.pdf",
+      "ext": "pdf",
+      "category": "课件",
+      "bytes": 6492314,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=46976"
+    },
+    {
+      "id": "material-16",
+      "courseId": "CPC357W",
+      "title": "Chapter 4.2",
+      "fileName": "4 - Sensors and Actuators.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 9957860,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=51671"
+    },
+    {
+      "id": "material-17",
+      "courseId": "CPC357W",
+      "title": "Lab sheet 4",
+      "fileName": "CPC357 - Lab Sheet 4 (NodeMCU).pdf",
+      "ext": "pdf",
+      "category": "作业",
+      "bytes": 579628,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=46977"
+    },
+    {
+      "id": "material-18",
+      "courseId": "CPC357W",
+      "title": "Lab 4",
+      "fileName": "Lab04.zip",
+      "ext": "zip",
+      "category": "作业",
+      "bytes": 795,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=52182"
+    },
+    {
+      "id": "material-19",
+      "courseId": "CPC357W",
+      "title": "CPC357 - Assignment 1_v1.pdf",
+      "fileName": "CPC357 - Assignment 1_v1.pdf",
+      "ext": "pdf",
+      "category": "作业",
+      "bytes": 310451,
+      "url": "https://elearning.usm.my/sidang2627/pluginfile.php/187279/mod_assign/introattachment/0/CPC357%20-%20Assignment%201_v1.pdf?forcedownload=1"
+    },
+    {
+      "id": "material-20",
+      "courseId": "CPC357W",
+      "title": "CPC357-Project.pdf",
+      "fileName": "CPC357-Project.pdf",
+      "ext": "pdf",
+      "category": "Coursework",
+      "bytes": 178925,
+      "url": "https://elearning.usm.my/sidang2627/pluginfile.php/180665/mod_assign/introattachment/0/CPC357-Project.pdf?forcedownload=1"
+    },
+    {
+      "id": "material-21",
+      "courseId": "CMT322W",
+      "title": "Course Planner",
+      "fileName": "Course Planner CMT322 20262027.pdf",
+      "ext": "pdf",
+      "category": "课程说明与其他资料",
+      "bytes": 223859,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17360"
+    },
+    {
+      "id": "material-22",
+      "courseId": "CMT322W",
+      "title": "Assignment Question",
+      "fileName": "Project Ques 2026 (1) (1).docx",
+      "ext": "docx",
+      "category": "作业",
+      "bytes": 46975,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=43019"
+    },
+    {
+      "id": "material-23",
+      "courseId": "CMT322W",
+      "title": "Assignment Rubric",
+      "fileName": "Project Part A Rubrics (1).docx",
+      "ext": "docx",
+      "category": "作业",
+      "bytes": 52042,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=43022"
+    },
+    {
+      "id": "material-24",
+      "courseId": "CMT322W",
+      "title": "Week 1:Introduction",
+      "fileName": "Week 01 Introduction  [Autosaved].pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 4534665,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17332"
+    },
+    {
+      "id": "material-25",
+      "courseId": "CMT322W",
+      "title": "Week2: Requirements Engineering Slide 10",
+      "fileName": "Week 02 Requirement Engineering .pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 913406,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17333"
+    },
+    {
+      "id": "material-26",
+      "courseId": "CMT322W",
+      "title": "Week2_Activity",
+      "fileName": "Week2_Activity.pdf",
+      "ext": "pdf",
+      "category": "作业",
+      "bytes": 37201,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=44762"
+    },
+    {
+      "id": "material-27",
+      "courseId": "CMT322W",
+      "title": "Week3 _Web Project Management",
+      "fileName": "Week 03 Managing risks.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 632175,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17336"
+    },
+    {
+      "id": "material-28",
+      "courseId": "CMT322W",
+      "title": "Stage 1 Activity",
+      "fileName": "Stage 1 Assignment.pptx",
+      "ext": "pptx",
+      "category": "作业",
+      "bytes": 2790933,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=48820"
+    },
+    {
+      "id": "material-29",
+      "courseId": "CMT322W",
+      "title": "Week 4_WebProjectManagement_Risk Part 2",
+      "fileName": "Week 04 Managing risks.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 654291,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17337"
+    },
+    {
+      "id": "material-30",
+      "courseId": "CMT322W",
+      "title": "Week5_Modelling Web Apps",
+      "fileName": "Week 04 Modelling Web Apps.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 1323883,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17338"
+    },
+    {
+      "id": "material-31",
+      "courseId": "CMT322W",
+      "title": "Week6_WebApplicationDesign",
+      "fileName": "Week 06 Web Application Design.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 212649086,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17353"
+    },
+    {
+      "id": "material-32",
+      "courseId": "CMT322W",
+      "title": "Week6_Web Application Design",
+      "fileName": "Week 06 Web Application Design (1).pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 212649086,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17365"
+    },
+    {
+      "id": "material-33",
+      "courseId": "CMT322W",
+      "title": "Week6_Web Development",
+      "fileName": "Week 06 Web development.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 5625604,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17359"
+    },
+    {
+      "id": "material-34",
+      "courseId": "CMT322W",
+      "title": "Week6_Web Architecture",
+      "fileName": "Week 06 Web Architecture.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 2465605,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=17355"
+    },
+    {
+      "id": "material-35",
+      "courseId": "CMT322W",
+      "title": "Week 06 Web Application Design.mp4",
+      "fileName": "Week 06 Web Application Design.mp4",
+      "ext": "mp4",
+      "category": "课件",
+      "bytes": 336124669,
+      "url": "https://elearning.usm.my/sidang2627/pluginfile.php/68626/mod_label/intro/Week%2006%20Web%20Application%20Design.mp4"
+    },
+    {
+      "id": "material-36",
+      "courseId": "CAT405W",
+      "title": "Undergraduate Major Project Guidelines",
+      "fileName": "Undergraduate Major Project Guidelines (CAT403, CAT404  CAT405) 2026-2027.pdf",
+      "ext": "pdf",
+      "category": "Coursework",
+      "bytes": 1234067,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=32887"
+    },
+    {
+      "id": "material-37",
+      "courseId": "CAT405W",
+      "title": "Outlines, Rubrics, Templates",
+      "fileName": "CAT405.zip",
+      "ext": "zip",
+      "category": "Coursework",
+      "bytes": 11167469,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=32890"
+    },
+    {
+      "id": "material-38",
+      "courseId": "CAT405W",
+      "title": "Briefing Slides",
+      "fileName": "FYP Briefing (30.9.26).pdf",
+      "ext": "pdf",
+      "category": "课件",
+      "bytes": 1135114,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=34356"
+    },
+    {
+      "id": "material-39",
+      "courseId": "CAT402W",
+      "title": "PROJECT GUIDELINES",
+      "fileName": "Mini_Project_Guidelines (2) (3).pptx",
+      "ext": "pptx",
+      "category": "Coursework",
+      "bytes": 506220,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=51357"
+    },
+    {
+      "id": "material-40",
+      "courseId": "CAT402W",
+      "title": "COURSE OVERVIEW",
+      "fileName": "CAT402W 26.pptx",
+      "ext": "pptx",
+      "category": "课程说明与其他资料",
+      "bytes": 982849,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=35230"
+    },
+    {
+      "id": "material-41",
+      "courseId": "CAT402W",
+      "title": "Week 2: Fresh Graduate in Gen AI Era",
+      "fileName": "Augmented_Marketer_Professional_Development_2026.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 214422,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=51305"
+    },
+    {
+      "id": "material-42",
+      "courseId": "CAT402W",
+      "title": "Week 3: Operating Ebusiness",
+      "fileName": "Week 6 Operating Ebusiness (4).pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 6123261,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=51299"
+    },
+    {
+      "id": "material-43",
+      "courseId": "AKP202W",
+      "title": "Week One Lecture Slides",
+      "fileName": "Book One.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 2271717,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=48576"
+    },
+    {
+      "id": "material-44",
+      "courseId": "AKP202W",
+      "title": "Week Two Lecture Slides",
+      "fileName": "Book Two.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 724624,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=48818"
+    },
+    {
+      "id": "material-45",
+      "courseId": "AKP202W",
+      "title": "Week Three Lecture Slides",
+      "fileName": "Book Three.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 1447804,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=48822"
+    },
+    {
+      "id": "material-46",
+      "courseId": "CAT402W",
+      "title": "职业发展阅读配图.jpg",
+      "fileName": "职业发展阅读配图.jpg",
+      "ext": "jpg",
+      "category": "课件",
+      "bytes": 14101,
+      "url": "https://elearning.usm.my/sidang2627/course/view.php?id=2210"
+    },
+    {
+      "id": "material-47",
+      "courseId": "CAT402W",
+      "title": "运营规划阅读配图.webp",
+      "fileName": "运营规划阅读配图.webp",
+      "ext": "webp",
+      "category": "课件",
+      "bytes": 137920,
+      "url": "https://elearning.usm.my/sidang2627/course/view.php?id=2210"
+    }
+  ]
+}

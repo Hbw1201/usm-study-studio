@@ -1,0 +1,228 @@
+{
+  "courses": [
+    {
+      "code": "AKP202W",
+      "topics": ["组织行为 OB", "管理技能", "循证管理", "行为科学"],
+      "studyTip": "先用自己的话解释概念，再为每个概念写一个课堂、社团或工作场景中的例子。"
+    },
+    {
+      "code": "CAT402W",
+      "topics": ["职业发展", "GenAI 协作", "创业思维", "数字创业"],
+      "studyTip": "围绕一个真实问题，把已有技能、可提供的价值与可验证的小作品连接起来。"
+    },
+    {
+      "code": "CAT405W",
+      "topics": ["项目里程碑", "SRD", "报告与展示", "项目推进"],
+      "studyTip": "把每个项目里程碑拆成文档、实现和演示三个检查项，并定期向导师反馈进展。"
+    },
+    {
+      "code": "CMT322W",
+      "topics": ["Web 工程", "Web 应用", "系统开发", "质量与风险"],
+      "studyTip": "用同一个小型 Web 项目贯穿概念学习，说明每个工程原则解决了什么具体问题。"
+    },
+    {
+      "code": "CPC357W",
+      "topics": ["IoT 基础", "感知与互联", "实时处理", "系统挑战"],
+      "studyTip": "从一个传感器应用出发，画出数据采集、通信、处理与动作的过程，再对照实验验证。"
+    },
+    {
+      "code": "CST435W",
+      "topics": ["多核处理器", "并行计算", "云计算", "云成本"],
+      "studyTip": "分清硬件并行与云服务交付，比较性能、功耗和成本时写清前提条件。"
+    }
+  ],
+  "cards": [
+    {
+      "id": "seed-akp202w-01",
+      "courseId": "AKP202W",
+      "question": "什么是组织行为学（Organizational Behavior, OB）？它关注哪些因素？",
+      "answer": "OB 研究个体、群体和组织结构如何影响组织中的行为，并把这些知识用于提高组织效能。",
+      "source": {"file": "Book One.pptx", "page": 10, "label": "第 10 张 · Define Organizational Behavior：研究个体、群体与结构的影响"},
+      "tags": ["定义", "OB"]
+    },
+    {
+      "id": "seed-akp202w-02",
+      "courseId": "AKP202W",
+      "question": "技术技能、人际技能与概念技能（Technical / Human / Conceptual Skills）各指什么？",
+      "answer": "技术技能是应用专业知识或专长；人际技能是与他人合作、理解并激励他人；概念技能是分析和诊断复杂情境的能力。",
+      "source": {"file": "Book One.pptx", "page": 7, "label": "第 7 张 · Management Skills：三类管理技能的定义"},
+      "tags": ["管理技能", "比较"]
+    },
+    {
+      "id": "seed-akp202w-03",
+      "courseId": "AKP202W",
+      "question": "循证管理（Evidence-Based Management, EBM）如何补充直觉？",
+      "answer": "EBM 要求管理决策以证据为依据。系统研究和证据可以补充直觉，减少只凭感觉、依据不完整信息作判断的风险。",
+      "source": {"file": "Book One.pptx", "page": 11, "label": "第 11 张 · Complementing Intuition with Systematic Study：用证据补充直觉"},
+      "tags": ["循证管理", "决策"]
+    },
+    {
+      "id": "seed-akp202w-04",
+      "courseId": "AKP202W",
+      "question": "哪些主要行为科学学科为 OB 提供基础？",
+      "answer": "心理学（Psychology）、社会心理学（Social Psychology）、社会学（Sociology）和人类学（Anthropology）。",
+      "source": {"file": "Book One.pptx", "page": 13, "label": "第 13 张 · Behavioral Science Disciplines：列出四个学科来源"},
+      "tags": ["行为科学", "基础"]
+    },
+    {
+      "id": "seed-cat402w-01",
+      "courseId": "CAT402W",
+      "question": "职业发展（Professional Development）除了参加课程，还应持续提升哪些方面？",
+      "answer": "知识、技能、沟通、判断力和适应能力。重点是持续提高自己解决问题和创造价值的能力。",
+      "source": {"file": "Augmented_Marketer_Professional_Development_2026.pptx", "page": 7, "label": "第 7 张 · What Does Professional Development Really Mean?：五个持续提升的方面"},
+      "tags": ["职业发展", "能力"]
+    },
+    {
+      "id": "seed-cat402w-02",
+      "courseId": "CAT402W",
+      "question": "在 GenAI 工作环境中，为什么仅说“我会使用 AI”还不够？",
+      "answer": "更有价值的是知道如何提出合适的问题，检查输出，改进结果，并将其应用到实际任务。工具使用需要与判断和实践结合。",
+      "source": {"file": "Augmented_Marketer_Professional_Development_2026.pptx", "page": 10, "label": "第 10 张 · GenAI Has Entered the Workplace：提问、检查、改进与应用"},
+      "tags": ["GenAI", "判断力"]
+    },
+    {
+      "id": "seed-cat402w-03",
+      "courseId": "CAT402W",
+      "question": "创业思维（Entrepreneurial Mindset）的基本过程是什么？必须先创办公司吗？",
+      "answer": "发现问题，识别机会，创造价值，测试并改进。不必先创办公司，雇员也可以用这种思维处理工作中的问题。",
+      "source": {"file": "Augmented_Marketer_Professional_Development_2026.pptx", "page": 12, "label": "第 12 张 · What Is an Entrepreneurial Mindset?：从问题到测试改进"},
+      "tags": ["创业思维", "价值创造"]
+    },
+    {
+      "id": "seed-cat402w-04",
+      "courseId": "CAT402W",
+      "question": "数字创业（Digital Entrepreneurship）的核心是什么？举出两类实践形式。",
+      "answer": "核心是利用数字技术创造价值。实践形式包括电子商务、数字服务、应用或网站、在线教育、数据服务等；可以从一个小项目开始。",
+      "source": {"file": "Augmented_Marketer_Professional_Development_2026.pptx", "page": 13, "label": "第 13 张 · Digital Entrepreneurship：数字技术创造价值及实践示例"},
+      "tags": ["数字创业", "应用"]
+    },
+    {
+      "id": "seed-cat405w-01",
+      "courseId": "CAT405W",
+      "question": "毕业项目的三个主要里程碑（Milestones）分别交付什么？",
+      "answer": "里程碑 1：系统需求与设计（SRD）报告第 1–3 章和展示；里程碑 2：项目进度演示；里程碑 3：最终报告和系统演示。另需准备书面 proposal。",
+      "source": {"file": "FYP Briefing (30.9.26).pdf", "page": 5, "label": "PDF 第 5 页 · Project Deliverables：proposal 与三个里程碑"},
+      "tags": ["项目里程碑", "交付物"]
+    },
+    {
+      "id": "seed-cat405w-02",
+      "courseId": "CAT405W",
+      "question": "按本次 FYP briefing，五项项目考核（Evaluation）的权重分别是多少？",
+      "answer": "SRD 报告 10%，SRD 展示 10%，项目进度演示 20%，最终报告 10%，系统展示与演示 50%。后续调整应以课程通知为准。",
+      "source": {"file": "FYP Briefing (30.9.26).pdf", "page": 6, "label": "PDF 第 6 页 · Evaluation：五项权重合计 100%"},
+      "tags": ["考核", "项目规划"]
+    },
+    {
+      "id": "seed-cat405w-03",
+      "courseId": "CAT405W",
+      "question": "最终报告（Final Report）的附录还应包含什么使用或部署材料？",
+      "answer": "应包含系统或应用的使用手册，以及安装说明。该要求与 proposal、SRD 报告、最终报告按期提交的要求一并列在项目 ToR 中。",
+      "source": {"file": "FYP Briefing (30.9.26).pdf", "page": 10, "label": "PDF 第 10 页 · Terms of Reference：最终报告附录包含手册与安装说明"},
+      "tags": ["报告", "交付检查"]
+    },
+    {
+      "id": "seed-cat405w-04",
+      "courseId": "CAT405W",
+      "question": "项目推进中，briefing 建议保持哪些良好习惯（Good Practice）？",
+      "answer": "与导师保持良好沟通；定期查看邮件与课程公告；主动推进，避免临近截止才赶工；重视每个阶段，而不是只在最后阶段投入。",
+      "source": {"file": "FYP Briefing (30.9.26).pdf", "page": 13, "label": "PDF 第 13 页 · Warm Reminder：沟通、检查通知、主动推进与阶段投入"},
+      "tags": ["项目管理", "学习习惯"]
+    },
+    {
+      "id": "seed-cmt322w-01",
+      "courseId": "CMT322W",
+      "question": "Web 工程（Web Engineering）如何支持高质量 Web 系统的开发？",
+      "answer": "它把科学、工程和管理原则与系统化方法用于 Web 系统和应用的开发、部署与维护。",
+      "source": {"file": "Week 01 Introduction  [Autosaved].pptx", "page": 12, "label": "第 12 张 · What is Web Engineering?：系统化开发、部署与维护"},
+      "tags": ["Web 工程", "定义"]
+    },
+    {
+      "id": "seed-cmt322w-02",
+      "courseId": "CMT322W",
+      "question": "采用 Web 工程的主要目标有哪些？",
+      "answer": "让 Web 系统开发过程可控，减少风险，并改善 Web 应用的质量、可维护性和可扩展性。",
+      "source": {"file": "Week 01 Introduction  [Autosaved].pptx", "page": 13, "label": "第 13 张 · Why Web Engineering?：控制、风险与三类质量目标"},
+      "tags": ["质量", "风险"]
+    },
+    {
+      "id": "seed-cmt322w-03",
+      "courseId": "CMT322W",
+      "question": "课程将软件分为哪两大类（Software Types）？",
+      "answer": "系统软件（System Software）和应用软件（Application Software）。软件通过指令或程序规定计算机应执行的操作。",
+      "source": {"file": "Week 01 Introduction  [Autosaved].pptx", "page": 8, "label": "第 8 张 · Software Engineering?：软件指令及两种主要类型"},
+      "tags": ["软件基础", "分类"]
+    },
+    {
+      "id": "seed-cmt322w-04",
+      "courseId": "CMT322W",
+      "question": "课件如何描述 Web 应用（Web Application）的典型特点？",
+      "answer": "Web 应用属于软件，利用网络连接和 W3C 标准及技术，通过浏览器或界面提供功能，应用通常存放在远程服务器。",
+      "source": {"file": "Week 01 Introduction  [Autosaved].pptx", "page": 10, "label": "第 10 张 · Web application：网络、标准、界面与远程服务器"},
+      "tags": ["Web 应用", "架构基础"]
+    },
+    {
+      "id": "seed-cpc357w-01",
+      "courseId": "CPC357W",
+      "question": "物联网（Internet of Things, IoT）是什么？",
+      "answer": "IoT 是由嵌入电子部件、软件、传感器和网络连接能力的物理设备构成的网络，使这些对象能够收集和交换数据。",
+      "source": {"file": "CPC357 Chapter1.pdf", "page": 6, "label": "PDF 第 6 页 · What Is Internet of Things?：物理设备网络与数据交换"},
+      "tags": ["IoT", "定义"]
+    },
+    {
+      "id": "seed-cpc357w-02",
+      "courseId": "CPC357W",
+      "question": "从感知到响应，IoT 的四个关键能力（Key Characteristics）是什么？",
+      "answer": "互联与通信；感知与数据采集；智能与自主决策；实时处理与响应。",
+      "source": {"file": "CPC357 Chapter1.pdf", "page": 11, "label": "PDF 第 11 页 · Key Characteristics：列出互联、感知、智能和实时响应"},
+      "tags": ["IoT 特征", "系统能力"]
+    },
+    {
+      "id": "seed-cpc357w-03",
+      "courseId": "CPC357W",
+      "question": "IoT 从单个设备扩大到系统时，还需考虑哪四项特征？",
+      "answer": "从设备到系统的可扩展性（Scalability）、安全性（Security）、能效（Energy Efficiency）和互操作性（Interoperability）。",
+      "source": {"file": "CPC357 Chapter1.pdf", "page": 12, "label": "PDF 第 12 页 · Key Characteristics：可扩展性、安全、能效、互操作性"},
+      "tags": ["IoT 特征", "系统设计"]
+    },
+    {
+      "id": "seed-cpc357w-04",
+      "courseId": "CPC357W",
+      "question": "IoT 部署面临哪些主要挑战（Challenges and Considerations）？",
+      "answer": "安全与隐私、不同标准和协议间的互操作性、大量设备的扩展与管理，以及数据分析和 AI 集成。例如，加密和身份认证属于安全考虑，OTA 更新属于设备管理。",
+      "source": {"file": "CPC357 Chapter1.pdf", "page": 15, "label": "PDF 第 15 页 · Challenges and Considerations：四类挑战及对应措施"},
+      "tags": ["IoT 挑战", "安全与管理"]
+    },
+    {
+      "id": "seed-cst435w-01",
+      "courseId": "CST435W",
+      "question": "多核处理器（Multi-core / CMP）把什么集成在一起？",
+      "answer": "把多个处理器核心集成在同一芯片上，这些核心位于一个处理器插槽中。CMP 是 Chip Multi-Processor 的缩写。",
+      "source": {"file": "Introduction435.pptx", "page": 11, "label": "第 11 张 · OK, Multi-core! So, what?：同一芯片上的多个核心"},
+      "tags": ["多核", "硬件基础"]
+    },
+    {
+      "id": "seed-cst435w-02",
+      "courseId": "CST435W",
+      "question": "推动体系结构转向更多并行性（Parallelism）的因素有哪些？",
+      "answer": "深流水线设计带来的热量与功耗问题、设计和验证复杂度，以及越来越多的多线程应用，都推动了向更多并行性的转变。",
+      "source": {"file": "Introduction435.pptx", "page": 9, "label": "第 9 张 · Not just that, there are more：功耗、设计复杂度与多线程需求"},
+      "tags": ["并行计算", "设计动机"]
+    },
+    {
+      "id": "seed-cst435w-03",
+      "courseId": "CST435W",
+      "question": "云计算（Cloud Computing）中的按需供给是什么意思？",
+      "answer": "用户通过互联网，按需要获得共享计算资源、软件和信息；课件用电网供电作类比，强调资源按需提供。",
+      "source": {"file": "Cloud Computing 2026 Part I.pptx", "page": 3, "label": "第 3 张 · Overview：通过互联网按需提供共享资源"},
+      "tags": ["云计算", "按需服务"]
+    },
+    {
+      "id": "seed-cst435w-04",
+      "courseId": "CST435W",
+      "question": "云计算降低前期资本支出（CapEx），是否就一定降低总成本？",
+      "answer": "不一定。课件指出，前期资本支出可能下降，但运营支出可能更高。判断是否划算，需要结合原有资本需求和组织的预算结构。",
+      "source": {"file": "Cloud Computing 2026 Part I.pptx", "page": 29, "label": "第 29 张 · Cloud Computing Economics：资本开支节省不保证运营开支更低"},
+      "tags": ["云成本", "比较"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {scheduleReview,isDue,emptyState,DAY} from '../lib/study.ts';
+import {stateSchema} from '../lib/validation.ts';
+const now=new Date('2026-10-21T09:00:00Z');
+test('new card is due; successful first recall is scheduled for tomorrow',()=>{assert.equal(isDue(undefined,now.getTime()),true);const r=scheduleReview(undefined,4,now);assert.equal(Date.parse(r.dueAt)-now.getTime(),DAY);assert.equal(isDue(r,now.getTime()),false);});
+test('failed recall returns in ten minutes and resets repetitions',()=>{const p=scheduleReview(undefined,5,now);const r=scheduleReview(p,1,now);assert.equal(Date.parse(r.dueAt)-now.getTime(),600000);assert.equal(r.repetitions,0);assert.equal(r.lapses,1);});
+test('easy and hard recall have distinct intervals; ease cannot fall below 1.3',()=>{assert.ok(scheduleReview(undefined,5,now).interval>scheduleReview(undefined,3,now).interval);let r;for(let i=0;i<50;i++)r=scheduleReview(r,1,now);assert.equal(r.ease,1.3);});
+test('due threshold includes exact scheduled time',()=>{const r=scheduleReview(undefined,4,now);assert.equal(isDue(r,Date.parse(r.dueAt)-1),false);assert.equal(isDue(r,Date.parse(r.dueAt)),true);});
+test('default workspace and legitimate backup pass validation',()=>{const state=emptyState();assert.equal(stateSchema.safeParse(state).success,true);state.notes.push({id:'note-1',courseId:'CMT322W',resourceId:'material-1',title:'学习笔记',body:'hello',updatedAt:now.toISOString()});assert.equal(stateSchema.safeParse(state).success,true);});
+test('invalid backup does not pass validation',()=>{assert.equal(stateSchema.safeParse({...emptyState(),version:2}).success,false);assert.equal(stateSchema.safeParse({...emptyState(),settings:{dailyMinutes:-1}}).success,false);const state=emptyState();state.tasks[0].source='javascript:alert(1)';assert.equal(stateSchema.safeParse(state).success,false);});
+test('course references and seed source anchors are complete',async()=>{const fs=await import('node:fs/promises');const cat=JSON.parse(await fs.readFile(new URL('../content/catalog.json',import.meta.url)));const seed=JSON.parse(await fs.readFile(new URL('../content/course-seed.json',import.meta.url)));assert.equal(cat.courses.length,6);assert.equal(seed.cards.length,24);assert.equal(new Set(seed.cards.map(c=>c.id)).size,24);for(const card of seed.cards){assert.ok(cat.resources.some(r=>r.courseId===card.courseId&&r.fileName===card.source.file));assert.ok(card.source.page>0);}});

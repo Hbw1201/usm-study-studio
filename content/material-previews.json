@@ -1,0 +1,901 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-21T10:07:00.446Z",
+  "materials": [
+    {
+      "id": "material-0",
+      "courseId": "AKP202W",
+      "fileName": "TEACHING PLAN AKP202W 2026-2027.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "AKP202W/material-0/original.pdf",
+        "key": "course-assets/AKP202W/material-0/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 245403
+      },
+      "sha256": "bf6b1e17922bf8102f5b2794c467deddab0284970ac86804320eeb3b17740efe",
+      "status": "ready",
+      "pageCount": 5
+    },
+    {
+      "id": "material-1",
+      "courseId": "CST435W",
+      "fileName": "CST435-Planner-262.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CST435W/material-1/original.pdf",
+        "key": "course-assets/CST435W/material-1/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 493955
+      },
+      "sha256": "3eeeba1fdfe7072f8ad58f9d3a8bc594bf5e3e5183fca838b3acffff0cb1c24f",
+      "status": "ready",
+      "pageCount": 5
+    },
+    {
+      "id": "material-2",
+      "courseId": "CST435W",
+      "fileName": "Cloud Computing 2026 Part I.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CST435W/material-2/original.pptx",
+        "key": "course-assets/CST435W/material-2/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 521852
+      },
+      "sha256": "360c9c075fd7ed8720004cdd35fa574aa85d64a25373731fc7f8ab370e2cb325",
+      "status": "ready",
+      "sourceSlideCount": 43,
+      "preview": {
+        "file": "CST435W/material-2/preview.pdf",
+        "key": "course-assets/CST435W/material-2/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 1176239
+      },
+      "pageCount": 43
+    },
+    {
+      "id": "material-3",
+      "courseId": "CST435W",
+      "fileName": "Introduction435.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CST435W/material-3/original.pptx",
+        "key": "course-assets/CST435W/material-3/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 1861397
+      },
+      "sha256": "1830656608d2fbc70f78669f9f3a8be94e1a64e318da6fed25831cbd9bbfb81f",
+      "status": "ready",
+      "sourceSlideCount": 25,
+      "preview": {
+        "file": "CST435W/material-3/preview.pdf",
+        "key": "course-assets/CST435W/material-3/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 1261070
+      },
+      "pageCount": 25
+    },
+    {
+      "id": "material-4",
+      "courseId": "CST435W",
+      "fileName": "Cloud Computing 2026 Part II.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CST435W/material-4/original.pptx",
+        "key": "course-assets/CST435W/material-4/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 667474
+      },
+      "sha256": "bcb68882ebd6b60c1952f50729c0a7397d6bf9e7ff659ee76a1b318000f8e9bd",
+      "status": "ready",
+      "sourceSlideCount": 24,
+      "preview": {
+        "file": "CST435W/material-4/preview.pdf",
+        "key": "course-assets/CST435W/material-4/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 945324
+      },
+      "pageCount": 24
+    },
+    {
+      "id": "material-5",
+      "courseId": "CST435W",
+      "fileName": "Introduction2026.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CST435W/material-5/original.pptx",
+        "key": "course-assets/CST435W/material-5/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 1205439
+      },
+      "sha256": "029f097f14f4be454bc7c6055a29104abf832cac2d95fb00a5f323c6501eb6a2",
+      "status": "ready",
+      "sourceSlideCount": 24,
+      "preview": {
+        "file": "CST435W/material-5/preview.pdf",
+        "key": "course-assets/CST435W/material-5/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 1118827
+      },
+      "pageCount": 24
+    },
+    {
+      "id": "material-6",
+      "courseId": "CST435W",
+      "fileName": "3ParallelArchitecture2026.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CST435W/material-6/original.pptx",
+        "key": "course-assets/CST435W/material-6/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 2776075
+      },
+      "sha256": "f2ff01055d1274ec7f01f366662dc4b3c0bb0789edd3794be42d7ddc24a1d653",
+      "status": "ready",
+      "sourceSlideCount": 117,
+      "preview": {
+        "file": "CST435W/material-6/preview.pdf",
+        "key": "course-assets/CST435W/material-6/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 2466688
+      },
+      "pageCount": 117
+    },
+    {
+      "id": "material-7",
+      "courseId": "CPC357W",
+      "fileName": "CPC357_Course Planner_Sem1 2026.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-7/original.pdf",
+        "key": "course-assets/CPC357W/material-7/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 265539
+      },
+      "sha256": "692ec9b90163ddaa8d2af009cac6b0ccfbef351d3a0ee01acfdc30610ed25f36",
+      "status": "ready",
+      "pageCount": 5
+    },
+    {
+      "id": "material-8",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 Chapter1.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-8/original.pdf",
+        "key": "course-assets/CPC357W/material-8/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 9691017
+      },
+      "sha256": "d1891d3e3ebba4cbc301cd6840f6874bbeff4b72130315969c2264a96aa03f0c",
+      "status": "ready",
+      "pageCount": 17
+    },
+    {
+      "id": "material-9",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 - Lab Sheet 1 (NodeMCU).pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-9/original.pdf",
+        "key": "course-assets/CPC357W/material-9/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 1053235
+      },
+      "sha256": "531fa70fe410964fea2b74177568ff57041d09e0e5a21262762f8bcea8c55b67",
+      "status": "ready",
+      "pageCount": 12
+    },
+    {
+      "id": "material-10",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 Chapter2.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-10/original.pdf",
+        "key": "course-assets/CPC357W/material-10/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 7610273
+      },
+      "sha256": "41c28d22f42091753385b97c20d43b3b10173ae539e9d0d63a4cc1686c62ad27",
+      "status": "ready",
+      "pageCount": 13
+    },
+    {
+      "id": "material-11",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 - Lab Sheet 2 (NodeMCU).pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-11/original.pdf",
+        "key": "course-assets/CPC357W/material-11/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 454348
+      },
+      "sha256": "c0112c436454fc9f34989b3ab878e10960c5876ebe40cffea4d88c1b40871d1b",
+      "status": "ready",
+      "pageCount": 7
+    },
+    {
+      "id": "material-12",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 Chapter3.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-12/original.pdf",
+        "key": "course-assets/CPC357W/material-12/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 11469377
+      },
+      "sha256": "ef7eae4794caacd13ba6ff78e3e9ecd1698b173169c794eadff6bac555cf1651",
+      "status": "ready",
+      "pageCount": 20
+    },
+    {
+      "id": "material-13",
+      "courseId": "CPC357W",
+      "fileName": "3 - Embedded System.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CPC357W/material-13/original.pptx",
+        "key": "course-assets/CPC357W/material-13/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 8571086
+      },
+      "sha256": "a5ea0b50f1f1795f62779b9833cf919607fe90d527c76ef885823f7b7a4bb3f1",
+      "status": "ready",
+      "sourceSlideCount": 29,
+      "preview": {
+        "file": "CPC357W/material-13/preview.pdf",
+        "key": "course-assets/CPC357W/material-13/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 4058192
+      },
+      "pageCount": 29
+    },
+    {
+      "id": "material-14",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 - Lab Sheet 3 (NodeMCU).pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-14/original.pdf",
+        "key": "course-assets/CPC357W/material-14/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 473294
+      },
+      "sha256": "21828f990738a1e7f1e26c7eb6544a0f49551f8ca124d75320cac50e74df6e24",
+      "status": "ready",
+      "pageCount": 8
+    },
+    {
+      "id": "material-15",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 Chapter4.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-15/original.pdf",
+        "key": "course-assets/CPC357W/material-15/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 6492314
+      },
+      "sha256": "37e37f772425a598246fa8ddc406cdcb8793fb8520d1e77a037a17d596bcf6bb",
+      "status": "ready",
+      "pageCount": 20
+    },
+    {
+      "id": "material-16",
+      "courseId": "CPC357W",
+      "fileName": "4 - Sensors and Actuators.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CPC357W/material-16/original.pptx",
+        "key": "course-assets/CPC357W/material-16/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 9957860
+      },
+      "sha256": "0d7bd77e0b525c84a52516916313410167ea13e38420b5dda62fccb38db91629",
+      "status": "ready",
+      "sourceSlideCount": 43,
+      "preview": {
+        "file": "CPC357W/material-16/preview.pdf",
+        "key": "course-assets/CPC357W/material-16/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 3424241
+      },
+      "pageCount": 43
+    },
+    {
+      "id": "material-17",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 - Lab Sheet 4 (NodeMCU).pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-17/original.pdf",
+        "key": "course-assets/CPC357W/material-17/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 579628
+      },
+      "sha256": "7b5e4dbaafbf3712636cebaeffcb0507edd1226006be58e9cecf324b192d9c58",
+      "status": "ready",
+      "pageCount": 8
+    },
+    {
+      "id": "material-18",
+      "courseId": "CPC357W",
+      "fileName": "Lab04.zip",
+      "kind": "download",
+      "original": {
+        "file": "CPC357W/material-18/original.zip",
+        "key": "course-assets/CPC357W/material-18/original.zip",
+        "mime": "application/zip",
+        "bytes": 795
+      },
+      "sha256": "90d193e2cb58a64942329a152c97a9f84965e7b956e00bf3fa311aa63476211c",
+      "status": "ready"
+    },
+    {
+      "id": "material-19",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 - Assignment 1_v1.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-19/original.pdf",
+        "key": "course-assets/CPC357W/material-19/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 310451
+      },
+      "sha256": "094f97b4105fd06e86622de6e9f3c0d925b41bf427a2570191edfbcc92cef164",
+      "status": "ready",
+      "pageCount": 2
+    },
+    {
+      "id": "material-20",
+      "courseId": "CPC357W",
+      "fileName": "CPC357-Project.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-20/original.pdf",
+        "key": "course-assets/CPC357W/material-20/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 178925
+      },
+      "sha256": "e761610b48f1f5eb843731f35e05dea414b80c8c03ba1f29951547bdd1b6be23",
+      "status": "ready",
+      "pageCount": 5
+    },
+    {
+      "id": "material-21",
+      "courseId": "CMT322W",
+      "fileName": "Course Planner CMT322 20262027.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CMT322W/material-21/original.pdf",
+        "key": "course-assets/CMT322W/material-21/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 223859
+      },
+      "sha256": "ae91fd13818c87c1a877bbbadb47c107fcb56404324a64ef34d16715980bc4d2",
+      "status": "ready",
+      "pageCount": 6
+    },
+    {
+      "id": "material-22",
+      "courseId": "CMT322W",
+      "fileName": "Project Ques 2026 (1) (1).docx",
+      "kind": "pdf",
+      "original": {
+        "file": "CMT322W/material-22/original.docx",
+        "key": "course-assets/CMT322W/material-22/original.docx",
+        "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "bytes": 46975
+      },
+      "sha256": "1e4c05f00e7f671a740247b9b93a0a78171fc17af0c465f90d2d483e5cd52ec5",
+      "status": "ready",
+      "preview": {
+        "file": "CMT322W/material-22/preview.pdf",
+        "key": "course-assets/CMT322W/material-22/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 137190
+      },
+      "pageCount": 1
+    },
+    {
+      "id": "material-23",
+      "courseId": "CMT322W",
+      "fileName": "Project Part A Rubrics (1).docx",
+      "kind": "pdf",
+      "original": {
+        "file": "CMT322W/material-23/original.docx",
+        "key": "course-assets/CMT322W/material-23/original.docx",
+        "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "bytes": 52042
+      },
+      "sha256": "9782d9abf5e23ed254f1dfc7235fa9fa9f17bb520e28ca5c0ae8e20c496b01e1",
+      "status": "ready",
+      "preview": {
+        "file": "CMT322W/material-23/preview.pdf",
+        "key": "course-assets/CMT322W/material-23/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 192798
+      },
+      "pageCount": 3
+    },
+    {
+      "id": "material-24",
+      "courseId": "CMT322W",
+      "fileName": "Week 01 Introduction  [Autosaved].pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-24/original.pptx",
+        "key": "course-assets/CMT322W/material-24/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 4534665
+      },
+      "sha256": "3496eddc534c321bdd004d38a1f88f40f03b2320e19300c55edb69c9adb65b60",
+      "status": "ready",
+      "sourceSlideCount": 26,
+      "preview": {
+        "file": "CMT322W/material-24/preview.pdf",
+        "key": "course-assets/CMT322W/material-24/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 3440052
+      },
+      "pageCount": 26
+    },
+    {
+      "id": "material-25",
+      "courseId": "CMT322W",
+      "fileName": "Week 02 Requirement Engineering .pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-25/original.pptx",
+        "key": "course-assets/CMT322W/material-25/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 913406
+      },
+      "sha256": "8e51171b818b7a1192f949b3f34d96ebc899d2f3d38cc95e88fea6bfd6944eaf",
+      "status": "ready",
+      "sourceSlideCount": 25,
+      "preview": {
+        "file": "CMT322W/material-25/preview.pdf",
+        "key": "course-assets/CMT322W/material-25/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 842818
+      },
+      "pageCount": 25
+    },
+    {
+      "id": "material-26",
+      "courseId": "CMT322W",
+      "fileName": "Week2_Activity.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CMT322W/material-26/original.pdf",
+        "key": "course-assets/CMT322W/material-26/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 37201
+      },
+      "sha256": "daf5973cc1ade51c4270fe11d6c03384a8c27be34125564d7f057f9144815027",
+      "status": "ready",
+      "pageCount": 1
+    },
+    {
+      "id": "material-27",
+      "courseId": "CMT322W",
+      "fileName": "Week 03 Managing risks.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-27/original.pptx",
+        "key": "course-assets/CMT322W/material-27/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 632175
+      },
+      "sha256": "646c60971ae8d83a4337e0c6070ebb5d28019caf82df842196071d5c763dbd46",
+      "status": "ready",
+      "sourceSlideCount": 6,
+      "preview": {
+        "file": "CMT322W/material-27/preview.pdf",
+        "key": "course-assets/CMT322W/material-27/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 463240
+      },
+      "pageCount": 6
+    },
+    {
+      "id": "material-28",
+      "courseId": "CMT322W",
+      "fileName": "Stage 1 Assignment.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-28/original.pptx",
+        "key": "course-assets/CMT322W/material-28/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 2790933
+      },
+      "sha256": "4c99ff2388f313da80a98a9241dfcafdb44686a97d025cd1c8993faac01f61e1",
+      "status": "ready",
+      "sourceSlideCount": 2,
+      "preview": {
+        "file": "CMT322W/material-28/preview.pdf",
+        "key": "course-assets/CMT322W/material-28/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 802007
+      },
+      "pageCount": 2
+    },
+    {
+      "id": "material-29",
+      "courseId": "CMT322W",
+      "fileName": "Week 04 Managing risks.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-29/original.pptx",
+        "key": "course-assets/CMT322W/material-29/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 654291
+      },
+      "sha256": "60f0790c7dd8850cc816b498edc43bb7cedb8969dd2c0bd36070965bad2b5ea3",
+      "status": "ready",
+      "sourceSlideCount": 7,
+      "preview": {
+        "file": "CMT322W/material-29/preview.pdf",
+        "key": "course-assets/CMT322W/material-29/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 482912
+      },
+      "pageCount": 7
+    },
+    {
+      "id": "material-30",
+      "courseId": "CMT322W",
+      "fileName": "Week 04 Modelling Web Apps.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-30/original.pptx",
+        "key": "course-assets/CMT322W/material-30/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 1323883
+      },
+      "sha256": "b4943d70257252535cf9fdbb25152f2a3fde14bd075accb11314ab38718ce4d0",
+      "status": "ready",
+      "sourceSlideCount": 17,
+      "preview": {
+        "file": "CMT322W/material-30/preview.pdf",
+        "key": "course-assets/CMT322W/material-30/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 1124235
+      },
+      "pageCount": 17
+    },
+    {
+      "id": "material-31",
+      "courseId": "CMT322W",
+      "fileName": "Week 06 Web Application Design.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-31/original.pptx",
+        "key": "course-assets/CMT322W/material-31/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 212649086
+      },
+      "sha256": "5c95aed57ea210d83002fd9fee0cd46260f2c8c2e7a28c2950173cc630c0ea36",
+      "status": "ready",
+      "sourceSlideCount": 11,
+      "preview": {
+        "file": "CMT322W/material-31/preview.pdf",
+        "key": "course-assets/CMT322W/material-31/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 837096
+      },
+      "pageCount": 11
+    },
+    {
+      "id": "material-32",
+      "courseId": "CMT322W",
+      "fileName": "Week 06 Web Application Design (1).pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-32/original.pptx",
+        "key": "course-assets/CMT322W/material-32/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 212649086
+      },
+      "sha256": "5c95aed57ea210d83002fd9fee0cd46260f2c8c2e7a28c2950173cc630c0ea36",
+      "status": "ready",
+      "sourceSlideCount": 11,
+      "preview": {
+        "file": "CMT322W/material-32/preview.pdf",
+        "key": "course-assets/CMT322W/material-32/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 837096
+      },
+      "pageCount": 11
+    },
+    {
+      "id": "material-33",
+      "courseId": "CMT322W",
+      "fileName": "Week 06 Web development.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-33/original.pptx",
+        "key": "course-assets/CMT322W/material-33/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 5625604
+      },
+      "sha256": "97a7d39aef3d3dc29473a251f0b91dbbca51d9cfd51205217bc16b811517c168",
+      "status": "ready",
+      "sourceSlideCount": 13,
+      "preview": {
+        "file": "CMT322W/material-33/preview.pdf",
+        "key": "course-assets/CMT322W/material-33/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 1533351
+      },
+      "pageCount": 13
+    },
+    {
+      "id": "material-34",
+      "courseId": "CMT322W",
+      "fileName": "Week 06 Web Architecture.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CMT322W/material-34/original.pptx",
+        "key": "course-assets/CMT322W/material-34/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 2465605
+      },
+      "sha256": "f268570860602659322f11fa1d7b512d467e00aad42f3e86166fd02d2deb017d",
+      "status": "ready",
+      "sourceSlideCount": 15,
+      "preview": {
+        "file": "CMT322W/material-34/preview.pdf",
+        "key": "course-assets/CMT322W/material-34/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 958877
+      },
+      "pageCount": 15
+    },
+    {
+      "id": "material-35",
+      "courseId": "CMT322W",
+      "fileName": "Week 06 Web Application Design.mp4",
+      "kind": "video",
+      "original": {
+        "file": "CMT322W/material-35/original.mp4",
+        "key": "course-assets/CMT322W/material-35/original.mp4",
+        "mime": "video/mp4",
+        "bytes": 336124669
+      },
+      "sha256": "6cb1cecaed50920859621a1376c439aaa5ebdf936278d12214a9648286916b76",
+      "status": "ready"
+    },
+    {
+      "id": "material-36",
+      "courseId": "CAT405W",
+      "fileName": "Undergraduate Major Project Guidelines (CAT403, CAT404  CAT405) 2026-2027.pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CAT405W/material-36/original.pdf",
+        "key": "course-assets/CAT405W/material-36/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 1234067
+      },
+      "sha256": "d33fe8ebf9e0b35348d78d15aa2c7d9d6762c7a48be60146bf110ee88080ba44",
+      "status": "ready",
+      "pageCount": 21
+    },
+    {
+      "id": "material-37",
+      "courseId": "CAT405W",
+      "fileName": "CAT405.zip",
+      "kind": "download",
+      "original": {
+        "file": "CAT405W/material-37/original.zip",
+        "key": "course-assets/CAT405W/material-37/original.zip",
+        "mime": "application/zip",
+        "bytes": 11167469
+      },
+      "sha256": "5b62158b962aedb4948c55fe59f2aab3cc174e880a4667bdfad5249e6f3b58f0",
+      "status": "ready"
+    },
+    {
+      "id": "material-38",
+      "courseId": "CAT405W",
+      "fileName": "FYP Briefing (30.9.26).pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CAT405W/material-38/original.pdf",
+        "key": "course-assets/CAT405W/material-38/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 1135114
+      },
+      "sha256": "404dc83753a606b9f09975b54f75177967db905fda1fa7c26e56f75c87c1bdf0",
+      "status": "ready",
+      "pageCount": 14
+    },
+    {
+      "id": "material-39",
+      "courseId": "CAT402W",
+      "fileName": "Mini_Project_Guidelines (2) (3).pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CAT402W/material-39/original.pptx",
+        "key": "course-assets/CAT402W/material-39/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 506220
+      },
+      "sha256": "722d19c4226c718cd07461bf71629166e5641254e37c7698957e1315a0c0526f",
+      "status": "ready",
+      "sourceSlideCount": 9,
+      "preview": {
+        "file": "CAT402W/material-39/preview.pdf",
+        "key": "course-assets/CAT402W/material-39/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 590984
+      },
+      "pageCount": 9
+    },
+    {
+      "id": "material-40",
+      "courseId": "CAT402W",
+      "fileName": "CAT402W 26.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CAT402W/material-40/original.pptx",
+        "key": "course-assets/CAT402W/material-40/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 982849
+      },
+      "sha256": "2e3b834e5f8d8ec6f6ab301e9cf86b1f7bc19cd99c2bd5966fb10eb2b168e1f9",
+      "status": "ready",
+      "sourceSlideCount": 13,
+      "preview": {
+        "file": "CAT402W/material-40/preview.pdf",
+        "key": "course-assets/CAT402W/material-40/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 1184960
+      },
+      "pageCount": 13
+    },
+    {
+      "id": "material-41",
+      "courseId": "CAT402W",
+      "fileName": "Augmented_Marketer_Professional_Development_2026.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CAT402W/material-41/original.pptx",
+        "key": "course-assets/CAT402W/material-41/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 214422
+      },
+      "sha256": "d80ed7243d498249e7598eeac7247fa2b2773ea28789d6b572c9f1b3c854c969",
+      "status": "ready",
+      "sourceSlideCount": 29,
+      "preview": {
+        "file": "CAT402W/material-41/preview.pdf",
+        "key": "course-assets/CAT402W/material-41/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 313200
+      },
+      "pageCount": 29
+    },
+    {
+      "id": "material-42",
+      "courseId": "CAT402W",
+      "fileName": "Week 6 Operating Ebusiness (4).pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CAT402W/material-42/original.pptx",
+        "key": "course-assets/CAT402W/material-42/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 6123261
+      },
+      "sha256": "d05d7ad8e0f4d2a7ad7df4acae8e4dcb6c2cf8a23ec2c21891a12783e3b8e40e",
+      "status": "ready",
+      "sourceSlideCount": 41,
+      "preview": {
+        "file": "CAT402W/material-42/preview.pdf",
+        "key": "course-assets/CAT402W/material-42/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 4116540
+      },
+      "pageCount": 41
+    },
+    {
+      "id": "material-43",
+      "courseId": "AKP202W",
+      "fileName": "Book One.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "AKP202W/material-43/original.pptx",
+        "key": "course-assets/AKP202W/material-43/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 2271717
+      },
+      "sha256": "d6978e6cc7cfb9dad32d5d5ce5529acb68be7b959e4d570831e9545370d454ce",
+      "status": "ready",
+      "sourceSlideCount": 42,
+      "preview": {
+        "file": "AKP202W/material-43/preview.pdf",
+        "key": "course-assets/AKP202W/material-43/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 1172355
+      },
+      "pageCount": 42
+    },
+    {
+      "id": "material-44",
+      "courseId": "AKP202W",
+      "fileName": "Book Two.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "AKP202W/material-44/original.pptx",
+        "key": "course-assets/AKP202W/material-44/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 724624
+      },
+      "sha256": "5425b2ce440d8571e91c292ec2c42f926c65c900bcb4515ae7e13a6f50bdb185",
+      "status": "ready",
+      "sourceSlideCount": 26,
+      "preview": {
+        "file": "AKP202W/material-44/preview.pdf",
+        "key": "course-assets/AKP202W/material-44/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 662115
+      },
+      "pageCount": 26
+    },
+    {
+      "id": "material-45",
+      "courseId": "AKP202W",
+      "fileName": "Book Three.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "AKP202W/material-45/original.pptx",
+        "key": "course-assets/AKP202W/material-45/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 1447804
+      },
+      "sha256": "a1c1a14b4278949b2aa85f2a56ae60c68e4d6b62c8d143baa01ce976d633d9ed",
+      "status": "ready",
+      "sourceSlideCount": 24,
+      "preview": {
+        "file": "AKP202W/material-45/preview.pdf",
+        "key": "course-assets/AKP202W/material-45/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 914552
+      },
+      "pageCount": 24
+    },
+    {
+      "id": "material-46",
+      "courseId": "CAT402W",
+      "fileName": "职业发展阅读配图.jpg",
+      "kind": "image",
+      "original": {
+        "file": "CAT402W/material-46/original.jpg",
+        "key": "course-assets/CAT402W/material-46/original.jpg",
+        "mime": "image/jpeg",
+        "bytes": 14101
+      },
+      "sha256": "defd197b79895b4d67a99819e8008701a4ef41219174f0935c676cf7ccda0dc3",
+      "status": "ready"
+    },
+    {
+      "id": "material-47",
+      "courseId": "CAT402W",
+      "fileName": "运营规划阅读配图.webp",
+      "kind": "image",
+      "original": {
+        "file": "CAT402W/material-47/original.webp",
+        "key": "course-assets/CAT402W/material-47/original.webp",
+        "mime": "image/webp",
+        "bytes": 137920
+      },
+      "sha256": "e03f04218f8eab55d7abe31107d799cf557177b7a193d515566bef202c5d424f",
+      "status": "ready"
+    }
+  ]
+}
