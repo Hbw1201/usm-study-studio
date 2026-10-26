@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T10:07:00.446Z",
+  "generatedAt": "2026-10-26T01:57:08.833Z",
   "materials": [
     {
       "id": "material-0",
@@ -50,7 +50,8 @@
         "file": "CST435W/material-2/preview.pdf",
         "key": "course-assets/CST435W/material-2/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 1176239
+        "bytes": 1176239,
+        "sha256": "89def5d1559ae7583cf5e0b8aaccd3e25472d13e7815c2c318a13d4fe0bb7150"
       },
       "pageCount": 43
     },
@@ -72,7 +73,8 @@
         "file": "CST435W/material-3/preview.pdf",
         "key": "course-assets/CST435W/material-3/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 1261070
+        "bytes": 1261070,
+        "sha256": "9dd6a2205818b6edbe721eba192c17909ece5ac499ccf5ec9b9ca762370f5c32"
       },
       "pageCount": 25
     },
@@ -94,7 +96,8 @@
         "file": "CST435W/material-4/preview.pdf",
         "key": "course-assets/CST435W/material-4/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 945324
+        "bytes": 945324,
+        "sha256": "3bca00f91c4a69597c0958c3b8c75ce114714481eb96f7b23cbf35f0e338c357"
       },
       "pageCount": 24
     },
@@ -116,7 +119,8 @@
         "file": "CST435W/material-5/preview.pdf",
         "key": "course-assets/CST435W/material-5/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 1118827
+        "bytes": 1118827,
+        "sha256": "fe5d00f61e5be774dd78e1da4e67bbcbba8d75085082a2a4268b6681815b08f0"
       },
       "pageCount": 24
     },
@@ -138,7 +142,8 @@
         "file": "CST435W/material-6/preview.pdf",
         "key": "course-assets/CST435W/material-6/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 2466688
+        "bytes": 2466688,
+        "sha256": "7bc220ba69b1ee9b12b78f050692fdf890ff23f355ec3b6852ceb343c462b631"
       },
       "pageCount": 117
     },
@@ -250,7 +255,8 @@
         "file": "CPC357W/material-13/preview.pdf",
         "key": "course-assets/CPC357W/material-13/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 4058192
+        "bytes": 4058192,
+        "sha256": "74e98eb272972e21a794dfe1eec9b7634442a9f89122ad543f3688e7f51a6609"
       },
       "pageCount": 29
     },
@@ -302,7 +308,8 @@
         "file": "CPC357W/material-16/preview.pdf",
         "key": "course-assets/CPC357W/material-16/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 3424241
+        "bytes": 3424241,
+        "sha256": "e3c55bde0b10a8fe401c2d5d46b3a876d3bae5883bb9d3cae9a06b3c4b631e57"
       },
       "pageCount": 43
     },
@@ -397,7 +404,8 @@
         "file": "CMT322W/material-22/preview.pdf",
         "key": "course-assets/CMT322W/material-22/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 137190
+        "bytes": 137190,
+        "sha256": "3772655751f95c469f9c27836ee6e0b1d9ed5133fec0cc2c02314dbad32350fc"
       },
       "pageCount": 1
     },
@@ -418,7 +426,8 @@
         "file": "CMT322W/material-23/preview.pdf",
         "key": "course-assets/CMT322W/material-23/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 192798
+        "bytes": 192798,
+        "sha256": "89ad1422ea14302cd647a2d2550648e4477d8b6e9cb9c572baf627d886108b71"
       },
       "pageCount": 3
     },
@@ -440,7 +449,8 @@
         "file": "CMT322W/material-24/preview.pdf",
         "key": "course-assets/CMT322W/material-24/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 3440052
+        "bytes": 3440052,
+        "sha256": "09dd682256761e01810fe5c603237790591444e75d64ec56398aaf95fe444bda"
       },
       "pageCount": 26
     },
@@ -462,7 +472,8 @@
         "file": "CMT322W/material-25/preview.pdf",
         "key": "course-assets/CMT322W/material-25/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 842818
+        "bytes": 842818,
+        "sha256": "fcb603c3dec6f021156e0e8ffc2cc0ed31a14ff0568a786d3c4f46470c5728de"
       },
       "pageCount": 25
     },
@@ -499,7 +510,8 @@
         "file": "CMT322W/material-27/preview.pdf",
         "key": "course-assets/CMT322W/material-27/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 463240
+        "bytes": 463240,
+        "sha256": "69d9148b19bb05dd3dc3915a4e813ec7de944bad7af95c588348e838f4250e91"
       },
       "pageCount": 6
     },
@@ -521,7 +533,8 @@
         "file": "CMT322W/material-28/preview.pdf",
         "key": "course-assets/CMT322W/material-28/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 802007
+        "bytes": 802007,
+        "sha256": "9e414044d4e1e00eec1222cf0256f809c2eaac7442a0324c7adb69a5e36ea6e4"
       },
       "pageCount": 2
     },
@@ -543,7 +556,8 @@
         "file": "CMT322W/material-29/preview.pdf",
         "key": "course-assets/CMT322W/material-29/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 482912
+        "bytes": 482912,
+        "sha256": "c7073d240db3533e34cbd803523f364902922f4c2fd36cb010661a06eab5e1d6"
       },
       "pageCount": 7
     },
@@ -565,7 +579,8 @@
         "file": "CMT322W/material-30/preview.pdf",
         "key": "course-assets/CMT322W/material-30/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 1124235
+        "bytes": 1124235,
+        "sha256": "c18a1103a65cf44fa60d07225e6c5cfd4ca3eb5cf6a22858129ae236cd2ddaac"
       },
       "pageCount": 17
     },
@@ -587,7 +602,8 @@
         "file": "CMT322W/material-31/preview.pdf",
         "key": "course-assets/CMT322W/material-31/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 837096
+        "bytes": 837096,
+        "sha256": "40e54f8425b5a3835cb5cf87c2de713af44d9bde94ccc0a65c8ab50388e20487"
       },
       "pageCount": 11
     },
@@ -609,7 +625,8 @@
         "file": "CMT322W/material-32/preview.pdf",
         "key": "course-assets/CMT322W/material-32/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 837096
+        "bytes": 837096,
+        "sha256": "40e54f8425b5a3835cb5cf87c2de713af44d9bde94ccc0a65c8ab50388e20487"
       },
       "pageCount": 11
     },
@@ -631,7 +648,8 @@
         "file": "CMT322W/material-33/preview.pdf",
         "key": "course-assets/CMT322W/material-33/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 1533351
+        "bytes": 1533351,
+        "sha256": "92bf5e6bb97b67c9244dce39b33401ad2a9fc3acef96158a012cafe3543ff713"
       },
       "pageCount": 13
     },
@@ -653,7 +671,8 @@
         "file": "CMT322W/material-34/preview.pdf",
         "key": "course-assets/CMT322W/material-34/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 958877
+        "bytes": 958877,
+        "sha256": "f71d09c9373d23e57cc4ee470fb9aec1ef3ba1309700ed43ca0b0404ecd6ca2a"
       },
       "pageCount": 15
     },
@@ -733,7 +752,8 @@
         "file": "CAT402W/material-39/preview.pdf",
         "key": "course-assets/CAT402W/material-39/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 590984
+        "bytes": 590984,
+        "sha256": "d7916f6d65e9caa4b0507dd7206355c3f0c168dca306a14def7bb311f17ed1fb"
       },
       "pageCount": 9
     },
@@ -755,7 +775,8 @@
         "file": "CAT402W/material-40/preview.pdf",
         "key": "course-assets/CAT402W/material-40/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 1184960
+        "bytes": 1184960,
+        "sha256": "5a1af10bff27b6d67fa95eb4d786c0b315bee86b52623cf8b6ee6a0ece1c1b58"
       },
       "pageCount": 13
     },
@@ -777,7 +798,8 @@
         "file": "CAT402W/material-41/preview.pdf",
         "key": "course-assets/CAT402W/material-41/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 313200
+        "bytes": 313200,
+        "sha256": "9b13b46b078473385f03c49c81b4d69868dcf5f9801ddd7c43d943c07f25ad2f"
       },
       "pageCount": 29
     },
@@ -799,7 +821,8 @@
         "file": "CAT402W/material-42/preview.pdf",
         "key": "course-assets/CAT402W/material-42/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 4116540
+        "bytes": 4116540,
+        "sha256": "72b5b3d7cd832245f3ff9c74044ea1352d252dd01cc2afe1db55a4ddf5034002"
       },
       "pageCount": 41
     },
@@ -821,7 +844,8 @@
         "file": "AKP202W/material-43/preview.pdf",
         "key": "course-assets/AKP202W/material-43/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 1172355
+        "bytes": 1172355,
+        "sha256": "77079dd43f18297cf62b0304aa5ba9e1e57a29028e3d54837c9e464a24e0ffac"
       },
       "pageCount": 42
     },
@@ -843,7 +867,8 @@
         "file": "AKP202W/material-44/preview.pdf",
         "key": "course-assets/AKP202W/material-44/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 662115
+        "bytes": 662115,
+        "sha256": "800e4f762c30f89190be7013a49f3b0daa73cf505caa048db5862fddf2a97e03"
       },
       "pageCount": 26
     },
@@ -865,7 +890,8 @@
         "file": "AKP202W/material-45/preview.pdf",
         "key": "course-assets/AKP202W/material-45/preview.pdf",
         "mime": "application/pdf",
-        "bytes": 914552
+        "bytes": 914552,
+        "sha256": "dbf61416edb954b8c8e4ea0552643bc6bc4eebaf31408c0266cededfe04a9b28"
       },
       "pageCount": 24
     },
@@ -896,6 +922,135 @@
       },
       "sha256": "e03f04218f8eab55d7abe31107d799cf557177b7a193d515566bef202c5d424f",
       "status": "ready"
+    },
+    {
+      "id": "material-48",
+      "courseId": "AKP202W",
+      "fileName": "Week Four Lecture Slides.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "AKP202W/material-48/original.pptx",
+        "key": "course-assets/AKP202W/material-48/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 834214
+      },
+      "sha256": "a38b6bd917f83598460823a0124623fe2f843ba33d20d2c0ee931c8dcc4872e5",
+      "status": "ready",
+      "sourceSlideCount": 29,
+      "preview": {
+        "file": "AKP202W/material-48/preview.pdf",
+        "key": "course-assets/AKP202W/material-48/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 709292,
+        "sha256": "c2fb2782fb3e92ad2dcd332861aad7fb9e24991c37177696e7da82f1e4cb65ff"
+      },
+      "pageCount": 29
+    },
+    {
+      "id": "material-49",
+      "courseId": "CAT402W",
+      "fileName": "WEEK 3 (1) (1) (2) (1) (3).pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CAT402W/material-49/original.pptx",
+        "key": "course-assets/CAT402W/material-49/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 6472228
+      },
+      "sha256": "afa4f82163c64ed1721153c67b5b1a417ba927d6be08d95aa0d70e7dbe391c58",
+      "status": "ready",
+      "sourceSlideCount": 39,
+      "preview": {
+        "file": "CAT402W/material-49/preview.pdf",
+        "key": "course-assets/CAT402W/material-49/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 2248927,
+        "sha256": "ff56c2b488fc1cc6295c60db315a5c1462d7d4b83fae42caaca3c10f85960ab3"
+      },
+      "pageCount": 39
+    },
+    {
+      "id": "material-50",
+      "courseId": "CPC357W",
+      "fileName": "5 - IoT Circuit.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CPC357W/material-50/original.pptx",
+        "key": "course-assets/CPC357W/material-50/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 4326413
+      },
+      "sha256": "1c127b339be66b9323e4212848c7271eac9b7aa3251ee8474dc5d6bf8267978b",
+      "status": "ready",
+      "sourceSlideCount": 34,
+      "preview": {
+        "file": "CPC357W/material-50/preview.pdf",
+        "key": "course-assets/CPC357W/material-50/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 2641095,
+        "sha256": "4c37f1d8163ae84e8ee49611f74b68820980ec9f4ad601ebd76ae78c865b1a85"
+      },
+      "pageCount": 34
+    },
+    {
+      "id": "material-51",
+      "courseId": "CPC357W",
+      "fileName": "CPC357 - Lab Sheet 5 (NodeMCU).pdf",
+      "kind": "pdf",
+      "original": {
+        "file": "CPC357W/material-51/original.pdf",
+        "key": "course-assets/CPC357W/material-51/original.pdf",
+        "mime": "application/pdf",
+        "bytes": 386720
+      },
+      "sha256": "cee9aaf311c4e4abb7d282e556226a255fda51ae6fd273a777d325fea210a4c8",
+      "status": "ready",
+      "pageCount": 6
+    },
+    {
+      "id": "material-52",
+      "courseId": "CST435W",
+      "fileName": "ASSIGNMENT 1 CST435W (1).docx",
+      "kind": "pdf",
+      "original": {
+        "file": "CST435W/material-52/original.docx",
+        "key": "course-assets/CST435W/material-52/original.docx",
+        "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "bytes": 14250
+      },
+      "sha256": "de8ef4ac36461a5fd3e9ae6662612e91fb7089dceb7cbf9f69c50870752976ee",
+      "status": "ready",
+      "preview": {
+        "file": "CST435W/material-52/preview.pdf",
+        "key": "course-assets/CST435W/material-52/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 35919,
+        "sha256": "2d3122e156eaf3a34b2ff91d003a7371353b4c369a68faa6b36e90c517b91445"
+      },
+      "pageCount": 1
+    },
+    {
+      "id": "material-53",
+      "courseId": "CST435W",
+      "fileName": "4ParallelSoftware2026.pptx",
+      "kind": "slides",
+      "original": {
+        "file": "CST435W/material-53/original.pptx",
+        "key": "course-assets/CST435W/material-53/original.pptx",
+        "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "bytes": 3650691
+      },
+      "sha256": "9d09c18cbd4835db5380dd86e54ab08b7bd4a25e8efd5250829883a125b8e997",
+      "status": "ready",
+      "sourceSlideCount": 69,
+      "preview": {
+        "file": "CST435W/material-53/preview.pdf",
+        "key": "course-assets/CST435W/material-53/preview.pdf",
+        "mime": "application/pdf",
+        "bytes": 2420493,
+        "sha256": "94d119bf4e4675ba9ec6e0919773585e3ae2eea0ddb58d37c4481c946ac47f02"
+      },
+      "pageCount": 69
     }
   ]
 }

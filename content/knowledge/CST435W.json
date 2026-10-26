@@ -46,6 +46,20 @@
         "zh": "用体系结构解释Part 2中的性能与通信现象。",
         "en": "Use architecture to explain Part 2 performance and communication."
       }
+    },
+    {
+      "resourceId": "material-53",
+      "reason": {
+        "zh": "承接Parallel Architecture的存储与通信约束，把它们落实为划分、归约、同步和计时选择；随后用Assignment1的同问题串行/并行实验验证性能模型。",
+        "en": "Build on Parallel Architecture’s memory and communication constraints through partitioning, reduction, synchronization and timing, then test performance models with Assignment1’s sequential/parallel experiments."
+      }
+    },
+    {
+      "resourceId": "material-52",
+      "reason": {
+        "zh": "在并行架构与Parallel Software Design之后，用相同问题的实现和测量检验任务划分、通信及加速比；先完成理论学习再独立完成作业。",
+        "en": "After parallel architecture and Parallel Software Design, use implementations and measurements of the same problem to test partitioning, communication and speedup; study the concepts before completing the assignment independently."
+      }
     }
   ],
   "materials": [
@@ -5339,6 +5353,3094 @@
         "en": "This lecture contains historical hardware and simplified classifications. Fixed cache sizes, processor limits and present-day wording are not universal current facts; focus on mechanisms."
       },
       "sourceSha256": "f2ff01055d1274ec7f01f366662dc4b3c0bb0789edd3794be42d7ddc24a1d653"
+    },
+    {
+      "resourceId": "material-52",
+      "sourceSha256": "de8ef4ac36461a5fd3e9ae6662612e91fb7089dceb7cbf9f69c50870752976ee",
+      "overview": {
+        "zh": "围绕同一算法的串行与并行实现建立可复现的性能证据，并把平台调研、输入输出、扩展性和提交材料组织成报告。",
+        "en": "Build reproducible performance evidence from sequential and parallel versions of one algorithm, organizing platform research, I/O, scalability and submission artifacts into a report."
+      },
+      "groups": [
+        {
+          "id": "material-52-g1",
+          "title": {
+            "zh": "任务范围与实验设计",
+            "en": "Scope and experiment design"
+          },
+          "concepts": [
+            {
+              "id": "material-52-c1",
+              "title": {
+                "zh": "小组规模与问题选择",
+                "en": "Group size and problem selection"
+              },
+              "explanation": {
+                "zh": "作业为约3–4人小组，选择一个问题及其中一种算法，再实现串行和并行版本。例子包括排序、旅行商和机器学习；智能计算方向的小组应选择AI算法或优化问题。",
+                "en": "This is a group assignment for about 3–4 members. Choose a problem and one of its algorithms, then implement sequential and parallel versions. Examples include sorting, travelling salesman and machine learning; intelligent-computing groups should choose an AI algorithm or optimization problem."
+              },
+              "pages": [
+                1
+              ]
+            },
+            {
+              "id": "material-52-c2",
+              "title": {
+                "zh": "平台调研与实现范围",
+                "en": "Platform research versus implementation scope"
+              },
+              "explanation": {
+                "zh": "调研覆盖单机多核、计算机网络、GPU和云上适用的库或工具，比较其适用平台。实际程序在一台多核机器上运行即可，可选择多线程、OpenMP、MPI或其他并行方法；调研覆盖面不等于必须部署四个平台。",
+                "en": "Research tools or libraries for single multicore machines, networks of computers, GPUs and cloud platforms. The implementation may run on one multicore machine using multithreading, OpenMP, MPI or other methods; the research breadth does not require deploying on all four platforms."
+              },
+              "pages": [
+                1
+              ]
+            },
+            {
+              "id": "material-52-c3",
+              "title": {
+                "zh": "可比较的输入输出与基线",
+                "en": "Comparable I/O and baseline"
+              },
+              "explanation": {
+                "zh": "报告说明输入格式及输出格式，输出包含执行时间，并展示串行与并行程序的实际输出。并行版尽可能使用相同输入格式，比较时使用同一问题的数据和结果要求，避免把输入变化误当并行收益。",
+                "en": "Document input and output formats, include execution time in the output, and show actual output from both versions. Use the same input format where possible and compare the same problem data and result requirements so input changes are not mistaken for parallel gains."
+              },
+              "pages": [
+                1
+              ]
+            },
+            {
+              "id": "material-52-c4",
+              "title": {
+                "zh": "扩展性、加速比与效率证据",
+                "en": "Scalability, speedup and efficiency evidence"
+              },
+              "explanation": {
+                "zh": "作业明确要求用加速比和效率分析扩展性，可同时与串行及其他方法比较。学习时应改变并行资源数量并记录时间，把“更快”进一步拆成速度收益和资源利用程度；相关公式及假设见Parallel Software Design。",
+                "en": "The assignment requires scalability analysis using speedup and efficiency, with comparison to sequential and other methods allowed. Vary parallel resources and record times to distinguish speed gain from resource effectiveness; formulas and assumptions are taught in Parallel Software Design."
+              },
+              "pages": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-52-g2",
+          "title": {
+            "zh": "报告与提交证据",
+            "en": "Report and submission evidence"
+          },
+          "concepts": [
+            {
+              "id": "material-52-c5",
+              "title": {
+                "zh": "报告结构与代码证据",
+                "en": "Report structure and code evidence"
+              },
+              "explanation": {
+                "zh": "报告不超过10页，包含平台工具调研、输入输出说明、程序输出、主要代码、并行版本说明、扩展性分析、参考文献及程序清单附录。可用图表达并行概念；原文未明确附录是否豁免页数，不应自行假定。",
+                "en": "The report is at most ten pages and includes platform-tool findings, I/O descriptions, output, main code, parallel-version explanation, scalability analysis, references and a program-listing appendix. Diagrams may explain the parallel idea; the brief does not explicitly exempt appendices from the limit."
+              },
+              "pages": [
+                1
+              ]
+            },
+            {
+              "id": "material-52-c6",
+              "title": {
+                "zh": "提交组合与演示目的",
+                "en": "Submission bundle and demonstration purpose"
+              },
+              "explanation": {
+                "zh": "课程网站提交应同时包含报告、程序，以及约3分钟的简短运行演示视频。三者分别说明方法与结果、提供可运行实现、展示程序行为，不能用其中一种替代全部。",
+                "en": "Submit the report, programs and a short three-minute demonstration video to the course website. They respectively explain method/results, provide implementation, and demonstrate behavior; one artifact does not replace the others."
+              },
+              "pages": [
+                1
+              ]
+            },
+            {
+              "id": "material-52-c7",
+              "title": {
+                "zh": "冲突日期的核实",
+                "en": "Verifying an inconsistent deadline"
+              },
+              "explanation": {
+                "zh": "标题标注2026，但结尾日期26/11/2022属于不同年份。应把它记录为来源冲突并核对当前课程发布信息；不能直接将2022改成2026后当作已确认截止。",
+                "en": "The title says 2026 while the closing date is 26/11/2022. Record the inconsistency and check current course announcements; silently replacing 2022 with 2026 would invent a confirmed deadline."
+              },
+              "pages": [
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-52-c1",
+          "to": "material-52-c2",
+          "relation": {
+            "zh": "选题后匹配工具与执行平台",
+            "en": "Match the chosen problem to tools and platform"
+          }
+        },
+        {
+          "from": "material-52-c2",
+          "to": "material-52-c3",
+          "relation": {
+            "zh": "实现选择仍需同一比较基线",
+            "en": "Implementation choices require a common comparison baseline"
+          }
+        },
+        {
+          "from": "material-52-c3",
+          "to": "material-52-c4",
+          "relation": {
+            "zh": "一致的测量支持扩展性判断",
+            "en": "Comparable measurements support scalability reasoning"
+          }
+        },
+        {
+          "from": "material-52-c4",
+          "to": "material-52-c5",
+          "relation": {
+            "zh": "把性能证据组织到报告中",
+            "en": "Organize performance evidence in the report"
+          }
+        },
+        {
+          "from": "material-52-c5",
+          "to": "material-52-c6",
+          "relation": {
+            "zh": "报告与实现一起构成提交包",
+            "en": "Combine report and implementation in the submission bundle"
+          }
+        },
+        {
+          "from": "material-52-c7",
+          "to": "material-52-c6",
+          "relation": {
+            "zh": "提交时间须另行核实有效日期",
+            "en": "Confirm the active deadline for submission"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-52-q1",
+          "conceptIds": [
+            "material-52-c1"
+          ],
+          "prompt": {
+            "zh": "智能计算方向小组的哪种选题最符合要求？",
+            "en": "Which choice best matches the brief for an intelligent-computing group?"
+          },
+          "options": [
+            {
+              "zh": "选一个AI或优化问题，对选定算法做串行与并行实现",
+              "en": "Choose an AI or optimization problem and implement one algorithm sequentially and in parallel"
+            },
+            {
+              "zh": "分别选择两个互不相关的问题，各只实现一种版本",
+              "en": "Choose two unrelated problems and implement only one version of each"
+            },
+            {
+              "zh": "把四位成员分别完成的四个串行程序直接称为并行实现",
+              "en": "Call four unrelated sequential programs a parallel implementation"
+            },
+            {
+              "zh": "只调研工具名称，不选择算法或运行程序",
+              "en": "Research tool names without selecting an algorithm or running a program"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "要求围绕同一选定问题与算法建立两种实现；方向要求、实现与比较都不能被工具清单或独立程序数量替代。",
+            "en": "The task centers on a chosen problem and algorithm with two implementations; specialization, implementation and comparison cannot be replaced by a tool list or a count of independent programs."
+          },
+          "pages": [
+            1
+          ]
+        },
+        {
+          "id": "material-52-q2",
+          "conceptIds": [
+            "material-52-c2"
+          ],
+          "prompt": {
+            "zh": "调研四类平台后，怎样安排实际实现符合最低平台范围？",
+            "en": "After researching four platform categories, which implementation meets the stated platform scope?"
+          },
+          "options": [
+            {
+              "zh": "只在GPU上查文档，无需运行任何版本",
+              "en": "Read GPU documentation without running either version"
+            },
+            {
+              "zh": "在一台多核机器上运行并比较串行与并行版本",
+              "en": "Run and compare sequential and parallel versions on one multicore machine"
+            },
+            {
+              "zh": "因为在单机运行，所以可以省略并行版本",
+              "en": "Omit the parallel version because execution is on one machine"
+            },
+            {
+              "zh": "必须在四类平台上各提交完整部署后才算满足要求",
+              "en": "Submit full deployments on all four platform types"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "原文明确单机多核即可，但仍须完成两种实现和性能比较；平台调研范围比最低实现范围更广。",
+            "en": "The brief explicitly allows one multicore machine but still requires both implementations and a comparison; research scope is broader than the minimum execution platform."
+          },
+          "pages": [
+            1
+          ]
+        },
+        {
+          "id": "material-52-q3",
+          "conceptIds": [
+            "material-52-c3"
+          ],
+          "prompt": {
+            "zh": "哪种比较最有说服力？",
+            "en": "Which comparison is most defensible?"
+          },
+          "options": [
+            {
+              "zh": "串行用大输入、并行用小输入，只比较秒数",
+              "en": "Use a large serial input and small parallel input and compare seconds"
+            },
+            {
+              "zh": "只展示并行输出，假定串行基线无需运行",
+              "en": "Show only parallel output and assume the baseline need not run"
+            },
+            {
+              "zh": "两版处理同一输入、核对结果一致，再比较同一计时范围",
+              "en": "Both process the same input, verify matching results and compare the same timing scope"
+            },
+            {
+              "zh": "并行省略部分输出计算，仍按完整任务报告加速",
+              "en": "Omit part of the parallel output computation yet report speedup for the full task"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "一致的问题与输出要求建立公平基线；不同工作量、遗漏计算或未测基线都削弱性能比较。",
+            "en": "Matching problem and output requirements establish a fair baseline; different workloads, omitted computation or an unmeasured baseline undermine performance claims."
+          },
+          "pages": [
+            1
+          ]
+        },
+        {
+          "id": "material-52-q4",
+          "conceptIds": [
+            "material-52-c4"
+          ],
+          "prompt": {
+            "zh": "哪组证据能支持扩展性分析？",
+            "en": "Which evidence supports a scalability analysis?"
+          },
+          "options": [
+            {
+              "zh": "只报告代码行数随线程数变化",
+              "en": "Only report code-line counts versus thread count"
+            },
+            {
+              "zh": "串行时间和多个处理器数量下的并行时间、加速比及效率",
+              "en": "Serial time plus parallel times, speedups and efficiencies at several processor counts"
+            },
+            {
+              "zh": "只给最多处理器时的一张输出截图",
+              "en": "Only an output screenshot at the maximum processor count"
+            },
+            {
+              "zh": "只列线程创建函数，不记录运行时间",
+              "en": "Only list thread-creation functions without timings"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "扩展性关注资源增加后的性能变化，需多个资源规模及可比较基线；单次输出、API名称或代码长度无法给出这种趋势。",
+            "en": "Scalability concerns performance as resources increase and needs multiple scales plus a comparable baseline; a single output, API names or code length cannot establish the trend."
+          },
+          "pages": [
+            1
+          ]
+        },
+        {
+          "id": "material-52-q5",
+          "conceptIds": [
+            "material-52-c5"
+          ],
+          "prompt": {
+            "zh": "关于报告页数和代码展示，哪项最谨慎地符合原文？",
+            "en": "Which approach most carefully follows the report and code requirements?"
+          },
+          "options": [
+            {
+              "zh": "控制在10页要求内，正文展示主干代码，并附程序清单；附录豁免先核实",
+              "en": "Respect the ten-page requirement, show key code and include the listing, verifying any appendix exemption"
+            },
+            {
+              "zh": "只要把所有内容改名为附录，就可忽略页数要求",
+              "en": "Rename everything an appendix to ignore the page limit"
+            },
+            {
+              "zh": "用架构图替代程序实现和所有实测输出",
+              "en": "Replace implementation and all measured output with an architecture diagram"
+            },
+            {
+              "zh": "只交完整代码文件，报告可省略输入输出说明",
+              "en": "Submit code alone and omit I/O explanations from the report"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "原文要求报告、关键代码和附录清单，同时限定10页；没有明确附录豁免，图也只是辅助说明。",
+            "en": "The brief requires a report, key code and listing appendix with a ten-page limit; no appendix exemption is explicit, and diagrams only support explanation."
+          },
+          "pages": [
+            1
+          ]
+        },
+        {
+          "id": "material-52-q6",
+          "conceptIds": [
+            "material-52-c6"
+          ],
+          "prompt": {
+            "zh": "哪组材料完整对应作业要求？",
+            "en": "Which bundle matches the assignment submission?"
+          },
+          "options": [
+            {
+              "zh": "10分钟理论讲解视频，代替报告与程序",
+              "en": "A ten-minute theory video instead of report and programs"
+            },
+            {
+              "zh": "报告和参考文献，程序只在视频中一闪而过",
+              "en": "Report and references with code only briefly visible in the video"
+            },
+            {
+              "zh": "程序和性能表，不提交报告或演示",
+              "en": "Programs and a performance table without report or demo"
+            },
+            {
+              "zh": "报告、程序和3分钟演示视频",
+              "en": "Report, programs and a three-minute demo video"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "要求明确列出报告、短演示视频与程序；视频展示不能替代代码文件，性能表也不能替代报告论证。",
+            "en": "The brief names the report, short demonstration and programs; video does not replace code files and a performance table does not replace report reasoning."
+          },
+          "pages": [
+            1
+          ]
+        },
+        {
+          "id": "material-52-q7",
+          "conceptIds": [
+            "material-52-c7"
+          ],
+          "prompt": {
+            "zh": "应如何处理这份文件的截止日期？",
+            "en": "How should this document deadline be handled?"
+          },
+          "options": [
+            {
+              "zh": "直接把年份替换为2026并视为已确认",
+              "en": "Replace the year with 2026 and treat it as confirmed"
+            },
+            {
+              "zh": "用网站下载日期自动推算一个月后的截止",
+              "en": "Automatically infer a deadline one month after download"
+            },
+            {
+              "zh": "保留冲突说明，核对当前课程通知后确定有效日期",
+              "en": "Preserve the inconsistency and verify the active date in current notices"
+            },
+            {
+              "zh": "因为写2022，所以断定当前无需提交作业",
+              "en": "Conclude no current submission is needed because it says 2022"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "存在冲突时需要当前来源确认；自动改年、取消任务或推算日期都超出文件证据。",
+            "en": "A conflict requires confirmation from current course information; changing the year, cancelling the task or inferring a date exceeds the evidence."
+          },
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          1
+        ],
+        "excludedPages": []
+      },
+      "sourceNote": {
+        "zh": "原文标题为2026、占10%，末行却写截止26/11/2022，显然存在年份冲突；本知识页不把该历史日期设为当前截止，须核对当前eLearn通知。这里归纳作业要求、实验设计与报告证据。",
+        "en": "The title says 2026 and a 10% weight, but the final line gives 26/11/2022, an inconsistent year. This knowledge page does not treat that historical date as the current deadline; check current eLearn notices. It summarizes assignment requirements, experimental design and report evidence."
+      }
+    },
+    {
+      "resourceId": "material-53",
+      "sourceSha256": "9d09c18cbd4835db5380dd86e54ab08b7bd4a25e8efd5250829883a125b8e997",
+      "overview": {
+        "zh": "把“更多核心”转化为可运行且可度量的并行算法：从局部求和与树形归约学习任务组织，再分析计时、加速比、效率、两条扩展定律与开销。",
+        "en": "Turn more cores into executable, measurable parallel algorithms: learn work organization through local sums and tree reduction, then analyze timing, speedup, efficiency, scaling laws and overhead."
+      },
+      "groups": [
+        {
+          "id": "material-53-g1",
+          "title": {
+            "zh": "性能需求与软件责任",
+            "en": "Performance demand and software responsibility"
+          },
+          "concepts": [
+            {
+              "id": "material-53-c1",
+              "title": {
+                "zh": "增长的计算需求",
+                "en": "Growing computational demand"
+              },
+              "explanation": {
+                "zh": "硬件性能增长不断打开新问题，也伴随更大的计算需求。气候建模、蛋白质折叠、药物发现、能源研究和数据分析是课件展示的应用例；这些图片说明需求背景，并未给出各领域完整算法。",
+                "en": "Hardware gains open new problems while computational demand grows. Climate modeling, protein folding, drug discovery, energy research and data analysis illustrate that demand; the images motivate performance needs rather than specifying full domain algorithms."
+              },
+              "pages": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "id": "material-53-c2",
+              "title": {
+                "zh": "显式线程与进程组织",
+                "en": "Explicit thread and process organization"
+              },
+              "explanation": {
+                "zh": "共享内存示例从一个进程创建多个线程，由线程执行任务；分布式内存示例启动多个进程，由进程执行任务。软件需要明确组织这些执行单元及其协作，不能仅依赖新增硬件自动分解工作。",
+                "en": "The shared-memory example starts one process and creates threads to execute tasks; the distributed-memory example starts multiple processes. Software organizes these execution units and their cooperation instead of assuming hardware automatically partitions work."
+              },
+              "pages": [
+                8
+              ]
+            },
+            {
+              "id": "material-53-c3",
+              "title": {
+                "zh": "吞吐量与单任务延迟",
+                "en": "Throughput versus single-task latency"
+              },
+              "explanation": {
+                "zh": "运行多个串行程序副本可以完成多个独立任务，但不一定缩短一个任务的完成时间。想让一个游戏运行实例或一个计算问题更快，需要在该任务内部发现和利用可并行的工作。",
+                "en": "Multiple serial instances can complete independent tasks but need not reduce one task’s completion time. Speeding up one game instance or one computation requires finding parallel work within that task."
+              },
+              "pages": [
+                10
+              ]
+            },
+            {
+              "id": "material-53-c4",
+              "title": {
+                "zh": "自动并行化与算法重设计",
+                "en": "Automatic parallelization and algorithm redesign"
+              },
+              "explanation": {
+                "zh": "可重写串行程序或尝试自动翻译，但识别出并行代码结构不保证高效率。数据依赖、协调和算法本身可能使直接转换受限；退一步重新设计算法有时比机械转换更有效。",
+                "en": "Serial programs may be rewritten or automatically translated, but recognizing parallel constructs does not guarantee efficiency. Dependencies, coordination and the algorithm can limit direct conversion; redesign can outperform mechanical translation."
+              },
+              "pages": [
+                11,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-53-g2",
+          "title": {
+            "zh": "局部求和到树形归约",
+            "en": "From partial sums to tree reduction"
+          },
+          "concepts": [
+            {
+              "id": "material-53-c5",
+              "title": {
+                "zh": "数据分块与私有局部和",
+                "en": "Partitioned data and private sums"
+              },
+              "explanation": {
+                "zh": "串行循环对n个值依次计算并累加。并行版本在p个核心间分配约n/p个值，各核心用私有my_sum、循环索引和临时值独立计算；局部和完成后才进行全局合并。",
+                "en": "The serial loop computes and accumulates n values. The parallel version gives about n/p values to each of p cores, with private my_sum, index and temporary values; global combination follows local summation."
+              },
+              "pages": [
+                13,
+                14
+              ]
+            },
+            {
+              "id": "material-53-c6",
+              "title": {
+                "zh": "主核集中归约",
+                "en": "Centralized master reduction"
+              },
+              "explanation": {
+                "zh": "各核局部和为8、19、7、15、7、13、12、14，总和95。集中方案由其他核把局部和发送给主核，主核保留自己的局部和后依次接收并相加；发送最后一次计算值my_x会遗漏之前的值。",
+                "en": "Partial sums are 8, 19, 7, 15, 7, 13, 12 and 14, totaling 95. Other cores send partial sums to a master, which starts with its own partial sum and adds received values; sending only the last my_x would lose earlier values."
+              },
+              "pages": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "id": "material-53-c7",
+              "title": {
+                "zh": "树形配对归约",
+                "en": "Tree-structured pairwise reduction"
+              },
+              "explanation": {
+                "zh": "第一轮相邻核配对，0←1、2←3、4←5、6←7，得到27、22、20、26；第二轮0←2、4←6得到49、46；第三轮0←4得到95。每轮活跃归约者约减半，把合并工作分散到多个核。",
+                "en": "First pair neighbors: 0←1, 2←3, 4←5 and 6←7, yielding 27, 22, 20 and 26. Next 0←2 and 4←6 yield 49 and 46; finally 0←4 yields 95. Active reducers roughly halve each round, distributing combination work."
+              },
+              "pages": [
+                19,
+                20,
+                21
+              ]
+            },
+            {
+              "id": "material-53-c8",
+              "title": {
+                "zh": "归约深度与总工作量",
+                "en": "Reduction depth versus total work"
+              },
+              "explanation": {
+                "zh": "8核集中归约让主核做7次接收与加法，树形只需3轮；1000核例中主核负担由999次降到约10轮。树形缩短关键依赖链，但合并p个局部和仍需总共p−1次加法；轮数比例不等于整程序必然的实测加速比。",
+                "en": "For eight cores, centralized reduction needs seven master receives/adds while a tree has three rounds; the 1000-core example reduces a master burden of 999 to about ten rounds. A tree shortens the dependency chain but combining p partial sums still needs p−1 total additions; round-count ratios are not guaranteed whole-program speedups."
+              },
+              "pages": [
+                22,
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-53-g3",
+          "title": {
+            "zh": "划分、协调与存储模型",
+            "en": "Partitioning, coordination and memory models"
+          },
+          "concepts": [
+            {
+              "id": "material-53-c9",
+              "title": {
+                "zh": "数据并行",
+                "en": "Data parallelism"
+              },
+              "explanation": {
+                "zh": "数据并行把数据分给各核心，各自执行相似操作。批改300份、每份15题的试卷时，3名助教各批100份完整试卷是按数据分区，任务规则相同而输入子集不同。",
+                "en": "Data parallelism partitions data among cores performing similar operations. For 300 exam scripts with 15 questions each, three assistants grading 100 complete scripts each partition the data while retaining the same task."
+              },
+              "pages": [
+                25,
+                26,
+                27,
+                28
+              ]
+            },
+            {
+              "id": "material-53-c10",
+              "title": {
+                "zh": "任务并行",
+                "en": "Task parallelism"
+              },
+              "explanation": {
+                "zh": "任务并行按解决问题的不同工作角色划分，而非只切数据。3名助教分别负责全部试卷的1–5、6–10、11–15题，职责不同但共同完成一份试卷的评分；题数相等也不保证工作时间相等。",
+                "en": "Task parallelism divides different roles in solving a problem rather than merely splitting data. Assistants grading questions 1–5, 6–10 and 11–15 across all scripts have different responsibilities that together complete each script; equal question counts need not mean equal effort."
+              },
+              "pages": [
+                25,
+                26,
+                27,
+                29
+              ]
+            },
+            {
+              "id": "material-53-c11",
+              "title": {
+                "zh": "不可并行部分的约束",
+                "en": "Constraints from sequential work"
+              },
+              "explanation": {
+                "zh": "如果某部分存在必须先后完成的依赖，增加处理器无法直接缩短该部分时间。可并行部分变快后，串行部分会成为总体速度上限的主要来源，这正是后续Amdahl模型的出发点。",
+                "en": "If work has unavoidable sequential dependencies, more processors do not directly shorten it. As parallel work accelerates, the serial part increasingly limits total speed, motivating the Amdahl model."
+              },
+              "pages": [
+                30
+              ]
+            },
+            {
+              "id": "material-53-c12",
+              "title": {
+                "zh": "通信：交换必要的中间结果",
+                "en": "Communication of intermediate results"
+              },
+              "explanation": {
+                "zh": "通信把某核心已得到的信息传给其他核心，例如发送局部和参与最终归约。通信解决数据可达性，不等同于让所有核心等到同一点，也不自动把工作量分配均匀。",
+                "en": "Communication transfers information between cores, such as sending partial sums for reduction. It makes data available but is not the same as waiting at a common point or distributing work evenly."
+              },
+              "pages": [
+                32
+              ]
+            },
+            {
+              "id": "material-53-c13",
+              "title": {
+                "zh": "负载均衡与慢核尾部",
+                "en": "Load balancing and the slow tail"
+              },
+              "explanation": {
+                "zh": "把工作适当分配，避免某核心承担过多任务而其他核心等待。均衡应考虑计算成本而非只看元素个数；整体结束时间受最后完成的核心影响。",
+                "en": "Distribute work to avoid an overloaded core while others wait. Balance should consider computational cost rather than element counts alone; overall completion depends on the last finisher."
+              },
+              "pages": [
+                32
+              ]
+            },
+            {
+              "id": "material-53-c14",
+              "title": {
+                "zh": "同步：维持必要的执行关系",
+                "en": "Synchronization of execution relationships"
+              },
+              "explanation": {
+                "zh": "各核以不同速度推进，同步确保需要的阶段或事件已经完成后才继续。它保证协调正确性，但等待会带来成本，不能把频繁同步误认为总会提高性能。",
+                "en": "Cores progress at different rates, so synchronization ensures required phases or events finish before continuing. It supports correctness but waiting costs time; more synchronization does not inherently mean better performance."
+              },
+              "pages": [
+                32
+              ]
+            },
+            {
+              "id": "material-53-c15",
+              "title": {
+                "zh": "共享内存协调",
+                "en": "Shared-memory coordination"
+              },
+              "explanation": {
+                "zh": "多个核能访问同一内存，通过检查和更新共享位置协作。共享可见性提供通信途径，却仍需要同步保证更新顺序和协调，不意味着每个并发访问都天然安全。",
+                "en": "Cores access common memory and coordinate by examining and updating shared locations. Shared visibility provides a communication path but still requires synchronization for ordering and coordination; concurrent accesses are not automatically safe."
+              },
+              "pages": [
+                33,
+                34
+              ]
+            },
+            {
+              "id": "material-53-c16",
+              "title": {
+                "zh": "分布式内存与显式消息",
+                "en": "Distributed memory and explicit messages"
+              },
+              "explanation": {
+                "zh": "每个处理单元拥有私有内存，其他单元不能像访问本地变量那样直接依赖其数据；需要通过网络显式发送消息。数据分配和通信安排因此成为算法设计的一部分。",
+                "en": "Each processing unit has private memory, so another unit cannot simply depend on it as a local variable; explicit network messages transfer data. Data placement and communication scheduling therefore become algorithm-design decisions."
+              },
+              "pages": [
+                33,
+                34
+              ]
+            },
+            {
+              "id": "material-53-c17",
+              "title": {
+                "zh": "粒度的计算—通信权衡",
+                "en": "Granularity trade-off"
+              },
+              "explanation": {
+                "zh": "粒度是分配给一个处理器的一组工作大小，可分粗、中、细。粗粒度通常计算/通信比高、管理次数较少；细粒度更易重分配并均衡负载，但会增加调度或通信频次，最优选择取决于任务成本。",
+                "en": "Granularity is the work bundle assigned to a processor, described as coarse, medium or fine. Coarse grains often have a higher computation/communication ratio and fewer management events; fine grains allow easier redistribution but may raise scheduling or communication frequency."
+              },
+              "pages": [
+                36
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-53-g4",
+          "title": {
+            "zh": "测量正确的运行时间",
+            "en": "Measuring the right runtime"
+          },
+          "concepts": [
+            {
+              "id": "material-53-c18",
+              "title": {
+                "zh": "并行运行时间与最后完成者",
+                "en": "Parallel runtime and the last finisher"
+              },
+              "explanation": {
+                "zh": "串行运行时间是目标计算从开始到结束的耗时；并行运行时间从并行计算开始到最后一个处理器完成。平均线程耗时或最快线程耗时不能代表整体任务完成时间。",
+                "en": "Serial runtime is elapsed time from start to finish of the target computation; parallel runtime lasts until the final processor finishes. Average or fastest-thread duration does not represent completion of the entire task."
+              },
+              "pages": [
+                37
+              ]
+            },
+            {
+              "id": "material-53-c19",
+              "title": {
+                "zh": "计时范围与墙钟差值",
+                "en": "Timing scope and wall-clock difference"
+              },
+              "explanation": {
+                "zh": "先明确测的是完整程序还是目标代码段，以及墙钟时间还是CPU消耗。课件用开始和结束时间之差包住目标段，并列出MPI_Wtime、omp_get_wtime作为墙钟计时例；串行与并行比较应采用一致范围。",
+                "en": "Specify whether timing covers the whole program or a target segment, and whether it measures elapsed wall time or CPU consumption. The lecture brackets a segment with start/end timestamps and names MPI_Wtime and omp_get_wtime as wall-time examples; serial and parallel scopes should match."
+              },
+              "pages": [
+                40,
+                41
+              ]
+            },
+            {
+              "id": "material-53-c20",
+              "title": {
+                "zh": "私有计时状态",
+                "en": "Private timing state"
+              },
+              "explanation": {
+                "zh": "每个并行执行单元需要自己的开始、结束时间变量，以免相互覆盖计时状态。局部持续时间是本单元结束减开始，随后才能根据测量目的汇总；共享一个start变量会混淆不同单元的区间。",
+                "en": "Each execution unit needs its own start and finish variables to avoid overwriting another’s timing state. Its local duration is finish minus start, which can then be aggregated; one shared start variable can mix intervals from different units."
+              },
+              "pages": [
+                42
+              ]
+            },
+            {
+              "id": "material-53-c21",
+              "title": {
+                "zh": "同步起点与最大局部耗时",
+                "en": "Synchronized start and maximum local duration"
+              },
+              "explanation": {
+                "zh": "计时伪代码先Barrier()对齐开始阶段，每单元记录my_finish−my_start，再Global_max取最大局部耗时，由rank 0报告。它避免报告平均值或只看主线程，从而更接近最后完成者定义；伪函数表示测量步骤而非可直接编译API。",
+                "en": "The pseudocode uses Barrier() to align the start phase, measures each my_finish−my_start and applies Global_max, reported by rank zero. It avoids averaging or timing only the master and aligns with last-finisher runtime; placeholder functions describe steps rather than directly compilable APIs."
+              },
+              "pages": [
+                43
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-53-g5",
+          "title": {
+            "zh": "加速比、效率与扩展趋势",
+            "en": "Speedup, efficiency and scaling trends"
+          },
+          "concepts": [
+            {
+              "id": "material-53-c22",
+              "title": {
+                "zh": "加速比与串行工作保留",
+                "en": "Speedup with retained serial work"
+              },
+              "explanation": {
+                "zh": "S(p)=Tserial/Tparallel比较同一问题的串行和并行耗时。刷300根栅栏例中准备30分钟、清理30分钟不可并行，刷漆300分钟可分配，故Tp=60+300/p；10人用90分钟，加速360/90=4而非10。",
+                "en": "S(p)=Tserial/Tparallel compares serial and parallel time for the same problem. Painting 300 pickets has 30-minute preparation and cleanup plus 300 parallelizable painting minutes, so Tp=60+300/p; ten workers take 90 minutes, giving 360/90=4 rather than ten."
+              },
+              "pages": [
+                37,
+                44,
+                45,
+                46
+              ]
+            },
+            {
+              "id": "material-53-c23",
+              "title": {
+                "zh": "效率与资源数量",
+                "en": "Efficiency and resource count"
+              },
+              "explanation": {
+                "zh": "E(p)=S(p)/p=Tserial/(pTparallel)，常用百分比表示。10名刷漆者得到4倍加速，效率40%；增加资源可能降低时间却降低效率。这个比值是相对串行基线的利用效果指标，不等同于硬件监控直接测得的CPU忙碌百分比。",
+                "en": "E(p)=S(p)/p=Tserial/(pTparallel), often expressed as a percentage. Ten painters with speedup four have 40% efficiency; more resources may lower both runtime and efficiency. This is effectiveness relative to a serial baseline, not a direct hardware CPU-busy measurement."
+              },
+              "pages": [
+                38,
+                47,
+                48
+              ]
+            },
+            {
+              "id": "material-53-c24",
+              "title": {
+                "zh": "速度增加与效率下降可同时发生",
+                "en": "Rising speedup with falling efficiency"
+              },
+              "explanation": {
+                "zh": "表中p=1、2、4、8、16时S=1、1.9、3.6、6.5、10.8，对应效率约1、0.95、0.90、0.81、0.68。16核比8核快，但速度增加小于资源翻倍，因此效率下降；扩展性需要同时读这两条趋势。",
+                "en": "At p=1,2,4,8,16 the table gives S=1,1.9,3.6,6.5,10.8 and efficiency about 1,0.95,0.90,0.81,0.68. Sixteen cores are faster than eight, but less than twice as fast, so efficiency falls; scalability needs both trends."
+              },
+              "pages": [
+                38,
+                49
+              ]
+            },
+            {
+              "id": "material-53-c25",
+              "title": {
+                "zh": "最佳串行基线与公平比较",
+                "en": "Best serial baseline and fair comparison"
+              },
+              "explanation": {
+                "zh": "加速比的基线应是解决同一问题的有效串行算法，而不是刻意缓慢的版本。喷漆枪例提醒：如果更好的串行方法已经减少总时间，就必须在一致计时范围下重新评价并行收益，而不能保留较慢刷漆基线。",
+                "en": "Speedup should use an effective serial algorithm for the same problem, not a deliberately slow version. The spray-gun example shows that a better serial method changes the baseline; reevaluate parallel gains with consistent timing scope rather than retaining the slower brush baseline."
+              },
+              "pages": [
+                37,
+                45
+              ]
+            },
+            {
+              "id": "material-53-c26",
+              "title": {
+                "zh": "线性、次线性与超线性趋势",
+                "en": "Linear, sublinear and superlinear trends"
+              },
+              "explanation": {
+                "zh": "理想线性S=p且Tp=T1/p；常见实际结果低于线性，超线性则S>p且较少见。课件用S≈p/log₂p展示分治协调的影响，并用通信相关示意式说明通信限制；这些是模型示意，不能套给每个同名算法。",
+                "en": "Ideal linear speedup has S=p and Tp=T1/p; typical results are sublinear, while superlinear S>p is rarer. The lecture illustrates divide-and-conquer coordination with S≈p/log₂p and communication-limited trends with a schematic expression; these are illustrative models, not formulas for every named algorithm."
+              },
+              "pages": [
+                38,
+                50
+              ]
+            },
+            {
+              "id": "material-53-c27",
+              "title": {
+                "zh": "通信延迟与带宽",
+                "en": "Communication latency and bandwidth"
+              },
+              "explanation": {
+                "zh": "延迟描述一次消息传递所需的时间，带宽描述每单位时间可传送的数据量。大量小消息可能对延迟敏感，大块数据传输也受带宽限制；减少消息次数和减少字节数解决的瓶颈可能不同。",
+                "en": "Latency describes message-transfer delay, while bandwidth is data transferred per unit time. Many small messages may be latency-sensitive and bulk transfer also depends on bandwidth; reducing message count and reducing bytes can target different bottlenecks."
+              },
+              "pages": [
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-53-g6",
+          "title": {
+            "zh": "固定工作量与扩展工作量的两条定律",
+            "en": "Fixed-work and scaled-work laws"
+          },
+          "concepts": [
+            {
+              "id": "material-53-c28",
+              "title": {
+                "zh": "Amdahl固定工作量模型",
+                "en": "Amdahl’s fixed-work model"
+              },
+              "explanation": {
+                "zh": "令β为单处理器总时间中不可并行的比例，固定同一问题大小并假定其余部分理想分到p核，则Tp=T1[β+(1−β)/p]，S=1/[β+(1−β)/p]。p趋于无穷且β>0时，上限1/β；这是忽略额外开销的理想模型。",
+                "en": "Let β be the serial fraction of single-processor time. For a fixed problem with the remaining work ideally split over p processors, Tp=T1[β+(1−β)/p] and S=1/[β+(1−β)/p]. For β>0, the limit is 1/β as p grows, ignoring additional overhead."
+              },
+              "pages": [
+                53,
+                54
+              ]
+            },
+            {
+              "id": "material-53-c29",
+              "title": {
+                "zh": "串行比例很大时的有限核收益",
+                "en": "Finite-core gain with a large serial fraction"
+              },
+              "explanation": {
+                "zh": "课件例β=0.67、p=10，S=1/(0.67+0.33/10)=1/0.703≈1.42。把67%错当可并行比例会得到另一问题；增加核心也不能突破其约1/0.67≈1.49的理想上限。",
+                "en": "With β=0.67 and p=10, S=1/(0.67+0.33/10)=1/0.703≈1.42. Treating 67% as parallelizable solves a different problem; more cores cannot exceed the ideal limit of about 1/0.67≈1.49."
+              },
+              "pages": [
+                55
+              ]
+            },
+            {
+              "id": "material-53-c30",
+              "title": {
+                "zh": "Gustafson扩展工作量模型",
+                "en": "Gustafson’s scaled-work model"
+              },
+              "explanation": {
+                "zh": "在固定运行时间内利用更多资源处理更大问题，把并行运行时间归一化为1，其中串行占α、并行占1−α。同一扩展工作量单核运行需α+p(1−α)，因此S=p+(1−p)α；α是并行运行中的比例，不能直接当成Amdahl的β。",
+                "en": "Use more resources to solve a larger problem within fixed runtime, normalizing parallel runtime to one with serial fraction α and parallel fraction 1−α. The same scaled work takes α+p(1−α) on one processor, giving S=p+(1−p)α; α is a fraction of parallel runtime, not automatically Amdahl’s β."
+              },
+              "pages": [
+                56,
+                57,
+                58
+              ]
+            },
+            {
+              "id": "material-53-c31",
+              "title": {
+                "zh": "两种串行比例不能直接混同",
+                "en": "Do not conflate the two serial fractions"
+              },
+              "explanation": {
+                "zh": "Gustafson示例α=0.67、p=10得到S=10−9×0.67=3.97；Amdahl的β=0.67得到1.42。它们不是对同一工作量、同一分母下比例作出互相矛盾的预测，而是固定工作量和扩展工作量的不同模型；选择模型先看实验问题。",
+                "en": "Gustafson with α=0.67 and p=10 yields 3.97, while Amdahl with β=0.67 yields 1.42. These are not contradictory predictions for an identical workload and identically normalized fraction; they model fixed versus scaled work. Choose based on the experiment."
+              },
+              "pages": [
+                59,
+                60
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-53-g7",
+          "title": {
+            "zh": "并行开销及诊断",
+            "en": "Parallel overhead and diagnosis"
+          },
+          "concepts": [
+            {
+              "id": "material-53-c32",
+              "title": {
+                "zh": "执行剖面中的有用工作与等待",
+                "en": "Computation and waiting in execution profiles"
+              },
+              "explanation": {
+                "zh": "八处理单元剖面区分计算（含必要和额外计算）、进程间通信、空闲。总运行时间包含这些部分；看到处理器在执行计算也不能直接断言该计算全部贡献原任务，因为可能有重复工作。",
+                "en": "The eight-unit profile distinguishes computation, including essential and excess work, interprocess communication and idling. Runtime includes all of them; a busy processor is not necessarily doing only work essential to the original task."
+              },
+              "pages": [
+                62,
+                63
+              ]
+            },
+            {
+              "id": "material-53-c33",
+              "title": {
+                "zh": "交互、同步与空闲",
+                "en": "Interaction, synchronization and idling"
+              },
+              "explanation": {
+                "zh": "非平凡并行任务常需交互；同步使某线程等待另一个事件，空闲也可能源于负载不均或串行阶段。看到等待应追溯其原因，增加线程数不一定减少等待，甚至可能增加协调。",
+                "en": "Nontrivial parallel tasks often interact; synchronization can make a thread wait for another event, and idling may also come from imbalance or serial stages. Diagnose the cause of waiting; more threads do not necessarily remove it and can add coordination."
+              },
+              "pages": [
+                64
+              ]
+            },
+            {
+              "id": "material-53-c34",
+              "title": {
+                "zh": "共享资源争用",
+                "en": "Shared-resource contention"
+              },
+              "explanation": {
+                "zh": "多个执行单元竞争同一有限资源会造成性能下降，这称为争用。它区别于没有工作可做的空闲：即使都想继续执行，也可能在共享内存、锁或其他资源处排队。",
+                "en": "Contention is degraded performance when execution units compete for a limited shared resource. Unlike having no work available, contenders may all be ready to progress yet queue for memory, a lock or another shared resource."
+              },
+              "pages": [
+                65
+              ]
+            },
+            {
+              "id": "material-53-c35",
+              "title": {
+                "zh": "额外计算的通信权衡",
+                "en": "Extra computation versus communication"
+              },
+              "explanation": {
+                "zh": "并行版可能执行串行版没有的工作：为了使用较易并行的算法，或在多个处理器上重复计算以减少通信。这是成本权衡，不是任何重复计算都错误，也不能把它当作免费加速。",
+                "en": "A parallel version may do work absent from the serial version, using a more parallelizable algorithm or repeating computation on processors to reduce communication. This is a trade-off: duplication is neither always wrong nor free speedup."
+              },
+              "pages": [
+                65
+              ]
+            },
+            {
+              "id": "material-53-c36",
+              "title": {
+                "zh": "理想分摊加额外耗时模型",
+                "en": "Ideal sharing plus additional time"
+              },
+              "explanation": {
+                "zh": "课件用Tp=Tserial/p+Toverhead表示理想均摊之外的附加时间。即使第一项随p变小，开销项仍可能增长，使整体收益变差；这里只把Toverhead视为该时间模型的附加项，不与总处理器工作量混用。",
+                "en": "The lecture models Tp=Tserial/p+Toverhead, adding time beyond ideal sharing. Even as the first term shrinks, overhead can grow and reduce gains; Toverhead is an additive time term here, not total processor work."
+              },
+              "pages": [
+                66
+              ]
+            },
+            {
+              "id": "material-53-c37",
+              "title": {
+                "zh": "C语言并行工具路线",
+                "en": "Parallel tools around C"
+              },
+              "explanation": {
+                "zh": "课程计划学习显式并行，列出Pthreads、OpenMP、MPI和CUDA四项。把工具选择连接到执行和内存模型：线程工具支持共享内存协作，MPI用于显式消息交换，CUDA面向GPU编程；工具名称不替代算法划分与测量。",
+                "en": "The course plans explicit parallel programming and lists Pthreads, OpenMP, MPI and CUDA. Connect tools to execution and memory models: thread tools support shared-memory cooperation, MPI explicit messages and CUDA GPU programming. Tool names do not replace algorithm partitioning or measurement."
+              },
+              "pages": [
+                69
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-53-c1",
+          "to": "material-53-c2",
+          "relation": {
+            "zh": "应用需求推动显式并行组织",
+            "en": "Application demand motivates explicit parallel organization"
+          }
+        },
+        {
+          "from": "material-53-c3",
+          "to": "material-53-c4",
+          "relation": {
+            "zh": "单任务加速需要重构算法",
+            "en": "Single-task acceleration may require algorithm redesign"
+          }
+        },
+        {
+          "from": "material-53-c4",
+          "to": "material-53-c5",
+          "relation": {
+            "zh": "求和示例从数据划分开始",
+            "en": "The sum example begins with data partitioning"
+          }
+        },
+        {
+          "from": "material-53-c5",
+          "to": "material-53-c6",
+          "relation": {
+            "zh": "局部和通过集中方案合并",
+            "en": "Combine partial sums through a centralized scheme"
+          }
+        },
+        {
+          "from": "material-53-c6",
+          "to": "material-53-c7",
+          "relation": {
+            "zh": "分散合并任务得到树形归约",
+            "en": "Distribute combination work into a reduction tree"
+          }
+        },
+        {
+          "from": "material-53-c7",
+          "to": "material-53-c8",
+          "relation": {
+            "zh": "树结构降低依赖链深度",
+            "en": "Tree structure lowers dependency depth"
+          }
+        },
+        {
+          "from": "material-53-c5",
+          "to": "material-53-c9",
+          "relation": {
+            "zh": "相似操作处理不同数据体现数据并行",
+            "en": "Similar operations on different data illustrate data parallelism"
+          }
+        },
+        {
+          "from": "material-53-c9",
+          "to": "material-53-c10",
+          "relation": {
+            "zh": "对比按数据与按角色划分",
+            "en": "Contrast data partitions with task roles"
+          }
+        },
+        {
+          "from": "material-53-c11",
+          "to": "material-53-c28",
+          "relation": {
+            "zh": "串行依赖形成固定工作量的上限",
+            "en": "Serial dependencies bound fixed-work speedup"
+          }
+        },
+        {
+          "from": "material-53-c12",
+          "to": "material-53-c16",
+          "relation": {
+            "zh": "私有内存使信息交换显式化",
+            "en": "Private memory makes information transfer explicit"
+          }
+        },
+        {
+          "from": "material-53-c14",
+          "to": "material-53-c15",
+          "relation": {
+            "zh": "共享更新需要同步协调",
+            "en": "Shared updates require synchronization"
+          }
+        },
+        {
+          "from": "material-53-c13",
+          "to": "material-53-c17",
+          "relation": {
+            "zh": "粒度影响负载均衡的灵活性",
+            "en": "Grain size affects balancing flexibility"
+          }
+        },
+        {
+          "from": "material-53-c13",
+          "to": "material-53-c18",
+          "relation": {
+            "zh": "慢核尾部决定整体结束",
+            "en": "The slow tail determines whole-task completion"
+          }
+        },
+        {
+          "from": "material-53-c18",
+          "to": "material-53-c19",
+          "relation": {
+            "zh": "先定义完成时间再选计时范围",
+            "en": "Define completion time before timing scope"
+          }
+        },
+        {
+          "from": "material-53-c19",
+          "to": "material-53-c20",
+          "relation": {
+            "zh": "每执行单元独立保存时间状态",
+            "en": "Keep timing state private per execution unit"
+          }
+        },
+        {
+          "from": "material-53-c20",
+          "to": "material-53-c21",
+          "relation": {
+            "zh": "汇总最大局部耗时",
+            "en": "Aggregate maximum local duration"
+          }
+        },
+        {
+          "from": "material-53-c21",
+          "to": "material-53-c22",
+          "relation": {
+            "zh": "可靠运行时间支撑加速比",
+            "en": "Reliable runtime supports speedup"
+          }
+        },
+        {
+          "from": "material-53-c22",
+          "to": "material-53-c23",
+          "relation": {
+            "zh": "用资源数归一化得到效率",
+            "en": "Normalize speedup by resources for efficiency"
+          }
+        },
+        {
+          "from": "material-53-c23",
+          "to": "material-53-c24",
+          "relation": {
+            "zh": "一起观察速度和效率趋势",
+            "en": "Inspect speed and efficiency trends together"
+          }
+        },
+        {
+          "from": "material-53-c25",
+          "to": "material-53-c22",
+          "relation": {
+            "zh": "基线选择决定加速比含义",
+            "en": "Baseline choice defines speedup meaning"
+          }
+        },
+        {
+          "from": "material-53-c26",
+          "to": "material-53-c27",
+          "relation": {
+            "zh": "通信限制可使性能偏离线性",
+            "en": "Communication limits can drive sublinear performance"
+          }
+        },
+        {
+          "from": "material-53-c28",
+          "to": "material-53-c29",
+          "relation": {
+            "zh": "代入串行比例计算有限核收益",
+            "en": "Substitute the serial fraction for finite-core gain"
+          }
+        },
+        {
+          "from": "material-53-c28",
+          "to": "material-53-c30",
+          "relation": {
+            "zh": "从固定工作量切换到扩展工作量",
+            "en": "Switch from fixed to scaled workload"
+          }
+        },
+        {
+          "from": "material-53-c30",
+          "to": "material-53-c31",
+          "relation": {
+            "zh": "比较模型前区分比例分母",
+            "en": "Distinguish fraction denominators before comparison"
+          }
+        },
+        {
+          "from": "material-53-c32",
+          "to": "material-53-c33",
+          "relation": {
+            "zh": "剖面中的空闲需要追溯原因",
+            "en": "Trace the causes of idling in profiles"
+          }
+        },
+        {
+          "from": "material-53-c34",
+          "to": "material-53-c36",
+          "relation": {
+            "zh": "资源争用贡献附加时间",
+            "en": "Contention contributes additional time"
+          }
+        },
+        {
+          "from": "material-53-c35",
+          "to": "material-53-c36",
+          "relation": {
+            "zh": "重复计算也进入实际耗时",
+            "en": "Repeated computation enters actual runtime"
+          }
+        },
+        {
+          "from": "material-53-c27",
+          "to": "material-53-c35",
+          "relation": {
+            "zh": "计算与通信可以互相权衡",
+            "en": "Computation can trade against communication"
+          }
+        },
+        {
+          "from": "material-53-c36",
+          "to": "material-53-c24",
+          "relation": {
+            "zh": "开销增长解释扩展效率下降",
+            "en": "Growing overhead helps explain falling scaling efficiency"
+          }
+        },
+        {
+          "from": "material-53-c15",
+          "to": "material-53-c37",
+          "relation": {
+            "zh": "共享内存模型连接线程工具",
+            "en": "Link shared memory to thread tools"
+          }
+        },
+        {
+          "from": "material-53-c16",
+          "to": "material-53-c37",
+          "relation": {
+            "zh": "消息模型连接MPI",
+            "en": "Link messaging to MPI"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-53-q1",
+          "conceptIds": [
+            "material-53-c1"
+          ],
+          "prompt": {
+            "zh": "气候建模、蛋白质折叠、药物发现、能源研究和数据分析这些应用案例共同支持哪项课程论点？",
+            "en": "What common course argument is supported by climate modeling, protein folding, drug discovery, energy research and data analysis?"
+          },
+          "options": [
+            {
+              "zh": "每个案例都证明其任务完全没有串行部分",
+              "en": "Every example proves its task has no serial part"
+            },
+            {
+              "zh": "计算需求也在增长，提升硬件还需配合软件设计",
+              "en": "Demand also grows, so hardware improvement needs complementary software design"
+            },
+            {
+              "zh": "这些领域都必须使用完全相同的并行算法",
+              "en": "All these domains must use exactly the same parallel algorithm"
+            },
+            {
+              "zh": "应用图片已经提供可直接执行的算法实现",
+              "en": "The illustrations already provide executable implementations"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "案例解释为何需要持续性能提升，不能从应用名称推断无依赖、同一算法或现成实现。",
+            "en": "The examples motivate continued performance gains; domain names cannot establish independence, identical algorithms or ready implementations."
+          },
+          "pages": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "id": "material-53-q2",
+          "conceptIds": [
+            "material-53-c2"
+          ],
+          "prompt": {
+            "zh": "哪组对应符合课件的程序组织？",
+            "en": "Which pairing matches the lecture’s program organization?"
+          },
+          "options": [
+            {
+              "zh": "启动更多进程就保证单次任务自动加速",
+              "en": "Starting more processes guarantees automatic speedup of one task"
+            },
+            {
+              "zh": "共享内存必须每线程独立私有地址空间；分布式只能一个线程",
+              "en": "Shared memory requires a private address space per thread; distributed memory permits only one thread"
+            },
+            {
+              "zh": "线程和进程都不需要划分任务，只需复制原程序",
+              "en": "Neither threads nor processes need task partitioning, only program copies"
+            },
+            {
+              "zh": "共享内存常由一个进程创建线程；分布式内存常用多个进程",
+              "en": "Shared memory commonly uses threads within a process; distributed memory commonly uses multiple processes"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "课件强调执行单元和软件任务组织；启动数量本身不能替代划分与协调，线程共享访问和进程私有内存也不可混淆。",
+            "en": "The lecture emphasizes execution units and work organization; counts do not replace partitioning and coordination, and shared thread access differs from private process memory."
+          },
+          "pages": [
+            8
+          ]
+        },
+        {
+          "id": "material-53-q3",
+          "conceptIds": [
+            "material-53-c3"
+          ],
+          "prompt": {
+            "zh": "同时启动四个互不协作的串行求解器，分别处理不同输入，能直接证明什么？",
+            "en": "Four independent serial solvers run on different inputs. What does this directly demonstrate?"
+          },
+          "options": [
+            {
+              "zh": "每个求解器内部已经变为树形归约",
+              "en": "Each solver internally becomes a tree reduction"
+            },
+            {
+              "zh": "能并发处理多个任务，但未证明单个输入的延迟下降",
+              "en": "Multiple tasks can run concurrently, but lower latency for one input is unproven"
+            },
+            {
+              "zh": "每个输入的运行时间必定缩短四倍",
+              "en": "Every input necessarily finishes four times faster"
+            },
+            {
+              "zh": "任务之间无需通信，所以单任务不存在串行瓶颈",
+              "en": "No inter-task communication means no serial bottleneck within a task"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "独立实例主要增加并发处理能力；单任务加速需要内部划分，不能由副本数量直接推出。",
+            "en": "Independent instances mainly increase concurrent processing capacity; single-task speedup requires internal partitioning and does not follow from instance count."
+          },
+          "pages": [
+            10
+          ]
+        },
+        {
+          "id": "material-53-q4",
+          "conceptIds": [
+            "material-53-c4"
+          ],
+          "prompt": {
+            "zh": "编译器把一个循环转换成并行形式但运行更慢，哪项解释最符合本课？",
+            "en": "A compiler parallelizes a loop but it runs more slowly. Which explanation best fits this lecture?"
+          },
+          "options": [
+            {
+              "zh": "可转换不等于高效，协调成本或原算法结构可能需要重新设计",
+              "en": "Convertibility is not efficiency; coordination costs or algorithm structure may require redesign"
+            },
+            {
+              "zh": "只要语法并行，计时结果必定测错",
+              "en": "Parallel syntax means any slower timing must be wrong"
+            },
+            {
+              "zh": "更多处理器必定让所有循环成线性加速",
+              "en": "More processors must make every loop scale linearly"
+            },
+            {
+              "zh": "自动生成程序就无需检查数据依赖",
+              "en": "Generated programs never require dependency checks"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "课件区分识别并行结构与取得有效加速；开销和结构问题可能需要新的并行算法。",
+            "en": "The lecture distinguishes recognizing parallel structure from useful speedup; overhead and structure may call for a different parallel algorithm."
+          },
+          "pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "id": "material-53-q5",
+          "conceptIds": [
+            "material-53-c5"
+          ],
+          "prompt": {
+            "zh": "24个值分给8核求局部和时，每核约处理多少值，my_sum如何管理？",
+            "en": "For 24 values on 8 cores, about how many values does each core handle and how is my_sum managed?"
+          },
+          "options": [
+            {
+              "zh": "3个值，但my_sum必须保存整个输入数组",
+              "en": "Three values, but my_sum must contain the full input array"
+            },
+            {
+              "zh": "24个值，每核重复全部计算后直接称为8倍加速",
+              "en": "All 24 values per core, calling duplication an eightfold speedup"
+            },
+            {
+              "zh": "3个值，每核保留自己的局部和",
+              "en": "Three values, with a private partial sum on each core"
+            },
+            {
+              "zh": "8个值，全部核心同时改同一个未经协调的my_sum",
+              "en": "Eight values, all updating one uncoordinated my_sum"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "24/8=3，私有局部变量让各核独立累计，随后合并结果；重复全部工作或未经协调共享累加都不是示例算法。",
+            "en": "24/8=3, and private variables permit independent accumulation before reduction; full duplication or uncoordinated shared accumulation is not the example algorithm."
+          },
+          "pages": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "material-53-q6",
+          "conceptIds": [
+            "material-53-c6"
+          ],
+          "prompt": {
+            "zh": "每核已算完my_sum，归约时应发送什么？",
+            "en": "After each core computes my_sum, what should be sent for reduction?"
+          },
+          "options": [
+            {
+              "zh": "每核的循环次数，代替求和结果",
+              "en": "The local iteration count instead of the sum"
+            },
+            {
+              "zh": "仅核心编号，因为主核可把编号相加",
+              "en": "Only the rank, so the master can add ranks"
+            },
+            {
+              "zh": "最后一个计算值my_x",
+              "en": "Only the last computed value my_x"
+            },
+            {
+              "zh": "完整局部和my_sum",
+              "en": "The complete partial sum my_sum"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "要恢复全部n个值的总和，传递的必须是局部和；p16伪代码的my_x与前文不一致，不能照抄为正确实现。",
+            "en": "Recovering the total of all n values requires partial sums; slide 16’s my_x is inconsistent with the earlier code and should not be copied as correct."
+          },
+          "pages": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "id": "material-53-q7",
+          "conceptIds": [
+            "material-53-c7"
+          ],
+          "prompt": {
+            "zh": "8核局部和依次为8、19、7、15、7、13、12、14，按相邻配对的树形归约，第二轮后剩哪两个待合并值？",
+            "en": "Eight cores have partial sums 8,19,7,15,7,13,12,14. In adjacent-pair tree reduction, which two values remain after round two?"
+          },
+          "options": [
+            {
+              "zh": "95和14",
+              "en": "95 and 14"
+            },
+            {
+              "zh": "8和87",
+              "en": "8 and 87"
+            },
+            {
+              "zh": "49和46",
+              "en": "49 and 46"
+            },
+            {
+              "zh": "27和22",
+              "en": "27 and 22"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "第一轮四个和27、22、20、26，第二轮把相邻两组再合并为49和46；27和22只是第一轮部分值。",
+            "en": "The first round produces 27, 22, 20 and 26, which combine into 49 and 46 in round two; 27 and 22 are only first-round partial results."
+          },
+          "pages": [
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "id": "material-53-q8",
+          "conceptIds": [
+            "material-53-c8"
+          ],
+          "prompt": {
+            "zh": "8个局部和按平衡二叉树归约，每轮由相邻的活跃节点配对，配对可同时执行。正确的工作量描述是什么？",
+            "en": "Eight partial sums are reduced in a balanced binary tree, pairing adjacent active nodes each round with pairs running concurrently. Which correctly describes the work?"
+          },
+          "options": [
+            {
+              "zh": "关键路径3轮，总共3次加法",
+              "en": "Three critical-path rounds and three total additions"
+            },
+            {
+              "zh": "关键路径1轮，总共8次加法",
+              "en": "One critical-path round and eight total additions"
+            },
+            {
+              "zh": "关键路径3轮，总共7次加法",
+              "en": "Three rounds on the critical path, seven total additions"
+            },
+            {
+              "zh": "关键路径7轮，总共3次加法",
+              "en": "Seven critical-path rounds, three total additions"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "各轮分别4、2、1次加法，可并行发生，合计7而深度3；深度和总工作量是不同量。",
+            "en": "Rounds contain 4, 2 and 1 additions that can overlap, totaling seven at depth three; depth differs from total work."
+          },
+          "pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "id": "material-53-q9",
+          "conceptIds": [
+            "material-53-c9"
+          ],
+          "prompt": {
+            "zh": "3名助教各批100份完整试卷，属于哪种划分？",
+            "en": "Three assistants each grade 100 complete scripts. What partition is this?"
+          },
+          "options": [
+            {
+              "zh": "任务并行：每人只负责固定题号",
+              "en": "Task parallelism with fixed question roles"
+            },
+            {
+              "zh": "串行执行：只有一名助教有工作",
+              "en": "Serial execution with only one active assistant"
+            },
+            {
+              "zh": "数据并行",
+              "en": "Data parallelism"
+            },
+            {
+              "zh": "树形归约：每轮把试卷数减半",
+              "en": "Tree reduction halving scripts each round"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "各人执行相同批改操作、输入试卷不同，因此是数据并行；按题号分工才是下一个任务并行例。",
+            "en": "Each performs the same grading operation on different scripts, making this data parallelism; assigning question roles is the task-parallel alternative."
+          },
+          "pages": [
+            25,
+            26,
+            27,
+            28
+          ]
+        },
+        {
+          "id": "material-53-q10",
+          "conceptIds": [
+            "material-53-c10"
+          ],
+          "prompt": {
+            "zh": "若每人负责所有试卷的不同题号范围，最需要留意什么？",
+            "en": "When each assistant handles different question ranges across all scripts, what deserves attention?"
+          },
+          "options": [
+            {
+              "zh": "每人必须再独立批完整试卷才能构成并行",
+              "en": "Each must also grade full scripts independently to make it parallel"
+            },
+            {
+              "zh": "这是任务并行，题目难度不同可能造成负载不均",
+              "en": "It is task parallelism and differing question difficulty may imbalance work"
+            },
+            {
+              "zh": "每人都是5题，所以运行时间必然相同",
+              "en": "Five questions each guarantees equal runtime"
+            },
+            {
+              "zh": "这是数据并行，因为题号本身是数字",
+              "en": "It is data parallelism because question numbers are numeric"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "分工依据是不同任务角色；计数均等不是耗时均等，仍需考虑任务成本。",
+            "en": "The partition follows different task roles; equal counts are not equal duration, so task costs still matter."
+          },
+          "pages": [
+            25,
+            26,
+            27,
+            29
+          ]
+        },
+        {
+          "id": "material-53-q11",
+          "conceptIds": [
+            "material-53-c11"
+          ],
+          "prompt": {
+            "zh": "某阶段必须等待上一项结果才开始下一项，新增核心主要受什么限制？",
+            "en": "A stage must wait for each preceding result before starting the next item. What primarily limits extra cores?"
+          },
+          "options": [
+            {
+              "zh": "并行效率一定高于100%",
+              "en": "Parallel efficiency must exceed 100%"
+            },
+            {
+              "zh": "只要核心数量足够，依赖关系会自动消失",
+              "en": "Enough cores automatically remove dependencies"
+            },
+            {
+              "zh": "使用共享内存会自动取消执行顺序",
+              "en": "Shared memory automatically removes ordering"
+            },
+            {
+              "zh": "该阶段的先后依赖形成串行约束",
+              "en": "Sequential dependencies within the stage"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "处理器数量不能直接取消问题依赖；需要算法改变或承认该阶段串行，不能由存储模型直接推导并行性。",
+            "en": "Processor count cannot directly remove dependencies; an algorithm change or a serial-stage model is needed, and memory model alone does not establish parallelism."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-53-q12",
+          "conceptIds": [
+            "material-53-c12"
+          ],
+          "prompt": {
+            "zh": "把局部和发给另一个核，直接体现哪种协调？",
+            "en": "Sending a partial sum to another core directly illustrates which coordination?"
+          },
+          "options": [
+            {
+              "zh": "负载均衡",
+              "en": "Load balancing"
+            },
+            {
+              "zh": "屏障同步本身",
+              "en": "A barrier itself"
+            },
+            {
+              "zh": "纯串行基线优化",
+              "en": "Only serial-baseline optimization"
+            },
+            {
+              "zh": "通信",
+              "en": "Communication"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "该动作传递数据，是通信；等待阶段对齐属于同步，重新分配工作量才是负载均衡。",
+            "en": "The action transfers data, so it is communication; aligning phases is synchronization and redistributing work is load balancing."
+          },
+          "pages": [
+            32
+          ]
+        },
+        {
+          "id": "material-53-q13",
+          "conceptIds": [
+            "material-53-c13"
+          ],
+          "prompt": {
+            "zh": "两核分别处理100个简单样本和100个复杂样本后长时间等待差异，主要问题是什么？",
+            "en": "Two cores process 100 easy and 100 difficult samples with very different finish times. What is the main issue?"
+          },
+          "options": [
+            {
+              "zh": "任务成本不均造成负载不平衡",
+              "en": "Unequal task cost causes load imbalance"
+            },
+            {
+              "zh": "元素数量相同，所以负载必定平衡",
+              "en": "Equal element counts guarantee balance"
+            },
+            {
+              "zh": "停止发送任何结果会自动均分计算",
+              "en": "Stopping result messages automatically balances computation"
+            },
+            {
+              "zh": "加一个屏障就能减少较慢核的计算量",
+              "en": "A barrier reduces the slower core’s computation"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "相同数量不等于相同耗时；屏障只组织等待而不重新分配工作，通信减少也不自动解决计算不均。",
+            "en": "Equal counts do not imply equal work time; a barrier organizes waiting without repartitioning, and less communication does not automatically fix unequal computation."
+          },
+          "pages": [
+            32
+          ]
+        },
+        {
+          "id": "material-53-q14",
+          "conceptIds": [
+            "material-53-c14"
+          ],
+          "prompt": {
+            "zh": "下一阶段必须使用所有核算好的结果，何时开始最合适？",
+            "en": "A next phase needs results from every core. When should it begin?"
+          },
+          "options": [
+            {
+              "zh": "每次增加核心就跳过同步以保证加速",
+              "en": "Skip synchronization whenever cores are added to guarantee speedup"
+            },
+            {
+              "zh": "只按固定最短延时推测所有核完成",
+              "en": "Infer completion from a fixed minimum delay"
+            },
+            {
+              "zh": "第一核完成后立即开始，即使其余结果尚未产生",
+              "en": "As soon as the first core finishes despite missing results"
+            },
+            {
+              "zh": "在所需结果全部就绪的同步条件满足后",
+              "en": "After synchronization establishes that required results are ready"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "数据依赖要求确认必要事件，不能用最快核心或延时猜测替代；同步成本要优化但正确性约束仍在。",
+            "en": "Dependencies require confirming necessary events, not guessing from the fastest core or a delay; synchronization cost can be optimized without dropping correctness constraints."
+          },
+          "pages": [
+            32
+          ]
+        },
+        {
+          "id": "material-53-q15",
+          "conceptIds": [
+            "material-53-c15"
+          ],
+          "prompt": {
+            "zh": "多个线程访问同一共享计数器，哪项推论正确？",
+            "en": "Several threads access one shared counter. Which inference is correct?"
+          },
+          "options": [
+            {
+              "zh": "共享位置便于协作，但更新仍需按需求同步",
+              "en": "A shared location supports cooperation, but updates still require appropriate synchronization"
+            },
+            {
+              "zh": "因为共享内存，所有加法天然组成不可分割操作",
+              "en": "Shared memory makes every addition automatically indivisible"
+            },
+            {
+              "zh": "共享计数器意味着每线程都有完全独立的副本",
+              "en": "A shared counter means each thread has an independent copy"
+            },
+            {
+              "zh": "共享内存必须把每次访问都通过网络消息发送",
+              "en": "Every shared-memory access must be sent as a network message"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "共享和同步是不同问题；同一地址空间并不自动提供更新原子性，私有副本与显式网络消息属于不同组织方式。",
+            "en": "Sharing and synchronization are different concerns; common address space does not automatically make updates atomic, while private copies and explicit network messages describe different organizations."
+          },
+          "pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "id": "material-53-q16",
+          "conceptIds": [
+            "material-53-c16"
+          ],
+          "prompt": {
+            "zh": "一个进程需要另一个节点的局部和，应采用什么基本方式？",
+            "en": "A process needs another node’s partial sum. What basic action is required?"
+          },
+          "options": [
+            {
+              "zh": "通过显式消息传递该结果",
+              "en": "Transfer the result through an explicit message"
+            },
+            {
+              "zh": "依靠所有节点内存天然同一地址空间",
+              "en": "Rely on all node memories being one address space"
+            },
+            {
+              "zh": "仅使用同名本地变量就能访问远端结果",
+              "en": "Use an identically named local variable to access it"
+            },
+            {
+              "zh": "把本地指针值相加就得到远端数据",
+              "en": "Add local pointer values to obtain remote data"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "私有内存中的同名变量或指针不是远端通信；消息把所需值跨节点传递。",
+            "en": "Identical names or pointers in private memory do not communicate remotely; a message transfers the required value between nodes."
+          },
+          "pages": [
+            33,
+            34
+          ]
+        },
+        {
+          "id": "material-53-q17",
+          "conceptIds": [
+            "material-53-c17"
+          ],
+          "prompt": {
+            "zh": "任务耗时差别很大且调度成本可接受，减小粒度可能带来什么主要好处？",
+            "en": "Task times vary greatly and scheduling cost is acceptable. What benefit can smaller grains offer?"
+          },
+          "options": [
+            {
+              "zh": "自动令每条消息延迟变为零",
+              "en": "Automatically reduce message latency to zero"
+            },
+            {
+              "zh": "更灵活地重新分配工作，改善负载均衡",
+              "en": "More flexible work redistribution and better load balance"
+            },
+            {
+              "zh": "保证通信次数少于粗粒度",
+              "en": "Guarantee fewer communications than coarse grains"
+            },
+            {
+              "zh": "让所有任务失去数据依赖",
+              "en": "Remove all data dependencies"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "细粒度的主要优势是分配灵活性；代价可能是更多管理和通信，而非消除通信成本或依赖。",
+            "en": "Fine grains primarily improve allocation flexibility, potentially at the cost of more management and communication rather than eliminating cost or dependencies."
+          },
+          "pages": [
+            36
+          ]
+        },
+        {
+          "id": "material-53-q18",
+          "conceptIds": [
+            "material-53-c18"
+          ],
+          "prompt": {
+            "zh": "同时开始的四个线程分别用2、3、4、7秒完成所需工作，整体并行运行时间是多少？",
+            "en": "Four threads start together and finish required work in 2, 3, 4 and 7 seconds. What is the whole parallel runtime?"
+          },
+          "options": [
+            {
+              "zh": "2秒",
+              "en": "2 seconds"
+            },
+            {
+              "zh": "7秒",
+              "en": "7 seconds"
+            },
+            {
+              "zh": "4秒",
+              "en": "4 seconds"
+            },
+            {
+              "zh": "16秒",
+              "en": "16 seconds"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "整体必须等最后线程完成，所以取7；2是最快，4是平均，16是线程耗时之和而非墙钟完成时间。",
+            "en": "The task waits for the final thread, so runtime is seven; two is the fastest, four the mean and sixteen the sum rather than wall-clock completion time."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-53-q19",
+          "conceptIds": [
+            "material-53-c19"
+          ],
+          "prompt": {
+            "zh": "串行计时包含读文件，并行只计核心循环，如何解读所得加速比？",
+            "en": "Serial timing includes file input but parallel timing covers only the core loop. How should the resulting speedup be treated?"
+          },
+          "options": [
+            {
+              "zh": "计时范围不同，不能直接解释为同一任务的公平加速",
+              "en": "The scopes differ, so it is not a fair direct speedup for the same task"
+            },
+            {
+              "zh": "因为都用秒，所以必定公平",
+              "en": "It is necessarily fair because both use seconds"
+            },
+            {
+              "zh": "把两次时间相加后就能得到正确加速比",
+              "en": "Adding both times gives the correct speedup"
+            },
+            {
+              "zh": "只要并行使用omp_get_wtime就自动补齐未计入部分",
+              "en": "omp_get_wtime automatically accounts for omitted work"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "单位相同不足以保证可比；需要对同一工作范围测量，计时API不自动纳入调用区间之外的I/O。",
+            "en": "Matching units does not ensure comparability; measure the same work scope, since a timing API does not include I/O outside its interval automatically."
+          },
+          "pages": [
+            40,
+            41
+          ]
+        },
+        {
+          "id": "material-53-q20",
+          "conceptIds": [
+            "material-53-c20"
+          ],
+          "prompt": {
+            "zh": "各线程计时变量start被其他线程写入，最合理的修正是什么？",
+            "en": "Other threads overwrite a thread’s start timestamp. What is the appropriate correction?"
+          },
+          "options": [
+            {
+              "zh": "只把输出格式改为毫秒",
+              "en": "Only change display units to milliseconds"
+            },
+            {
+              "zh": "为各线程保留私有start和finish",
+              "en": "Give each thread private start and finish variables"
+            },
+            {
+              "zh": "删除结束时间，只按线程编号估计耗时",
+              "en": "Remove finish times and estimate duration from thread ranks"
+            },
+            {
+              "zh": "取所有被覆盖start的最小值作为每线程结束时间",
+              "en": "Use the minimum overwritten start as every finish time"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "私有状态解决变量互相覆盖；改变单位、用错误时间点或线程编号均不能恢复有效测量区间。",
+            "en": "Private state prevents overwriting; changing units, substituting the wrong timestamp or using ranks cannot recover a valid interval."
+          },
+          "pages": [
+            42
+          ]
+        },
+        {
+          "id": "material-53-q21",
+          "conceptIds": [
+            "material-53-c21"
+          ],
+          "prompt": {
+            "zh": "屏障后各进程局部耗时1.8、2.1、2.0、2.7秒，Global_max应报告什么？",
+            "en": "After a barrier, local times are 1.8, 2.1, 2.0 and 2.7 seconds. What should Global_max report?"
+          },
+          "options": [
+            {
+              "zh": "8.6秒",
+              "en": "8.6 seconds"
+            },
+            {
+              "zh": "2.7秒",
+              "en": "2.7 seconds"
+            },
+            {
+              "zh": "2.15秒",
+              "en": "2.15 seconds"
+            },
+            {
+              "zh": "1.8秒",
+              "en": "1.8 seconds"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "Global_max取最慢完成者2.7；2.15是平均，1.8是最小，8.6是总和。先求各自差值也避免把不同单元时间戳直接混减。",
+            "en": "Global_max selects the slowest 2.7; 2.15 is the mean, 1.8 the minimum and 8.6 the sum. Local differences also avoid subtracting timestamps from different units."
+          },
+          "pages": [
+            43
+          ]
+        },
+        {
+          "id": "material-53-q22",
+          "conceptIds": [
+            "material-53-c22"
+          ],
+          "prompt": {
+            "zh": "栅栏工作含30分钟串行准备、300分钟可并行刷漆、30分钟串行清理；10人分摊刷漆时，理想加速比是多少？",
+            "en": "Fence work has 30 minutes of serial preparation, 300 parallelizable painting minutes and 30 serial cleanup minutes. With ten painters sharing painting, what is ideal speedup?"
+          },
+          "options": [
+            {
+              "zh": "4倍",
+              "en": "4×"
+            },
+            {
+              "zh": "10倍",
+              "en": "10×"
+            },
+            {
+              "zh": "12倍",
+              "en": "12×"
+            },
+            {
+              "zh": "6倍",
+              "en": "6×"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "T1=360、T10=60+30=90，S=4；10忽略串行60分钟，12只以刷漆30分钟为分母，6是无限人数上限。",
+            "en": "T1=360 and T10=60+30=90, so S=4; ten ignores serial work, twelve divides only by painting time and six is the infinite-worker limit."
+          },
+          "pages": [
+            37,
+            44,
+            45,
+            46
+          ]
+        },
+        {
+          "id": "material-53-q23",
+          "conceptIds": [
+            "material-53-c23"
+          ],
+          "prompt": {
+            "zh": "8个线程获得6倍加速，效率是多少？",
+            "en": "Eight threads achieve sixfold speedup. What is efficiency?"
+          },
+          "options": [
+            {
+              "zh": "600%",
+              "en": "600%"
+            },
+            {
+              "zh": "12.5%",
+              "en": "12.5%"
+            },
+            {
+              "zh": "75%",
+              "en": "75%"
+            },
+            {
+              "zh": "133.3%",
+              "en": "133.3%"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "E=6/8=0.75；8/6把比例颠倒，6是加速比，1/8忽略实测收益。",
+            "en": "E=6/8=0.75; 8/6 reverses the ratio, six is speedup and 1/8 ignores the measured benefit."
+          },
+          "pages": [
+            38,
+            47,
+            48
+          ]
+        },
+        {
+          "id": "material-53-q24",
+          "conceptIds": [
+            "material-53-c24"
+          ],
+          "prompt": {
+            "zh": "从8核S=6.5到16核S=10.8，哪项解释正确？",
+            "en": "From eight cores at S=6.5 to sixteen at S=10.8, which interpretation is correct?"
+          },
+          "options": [
+            {
+              "zh": "16核一定比8核慢，因为效率较低",
+              "en": "Sixteen cores must be slower because efficiency is lower"
+            },
+            {
+              "zh": "效率提高，因为加速比数字更大",
+              "en": "Efficiency rises because the speedup number is larger"
+            },
+            {
+              "zh": "加速比已达到资源翻倍所需的13",
+              "en": "Speedup has reached the 13 needed for proportional doubling"
+            },
+            {
+              "zh": "时间进一步缩短，但效率从约81%降到约68%",
+              "en": "Runtime falls further but efficiency drops from about 81% to 68%"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "10.8>6.5表示更快，但10.8/16<6.5/8；效率与总速度是不同指标，不能互相替代。",
+            "en": "10.8>6.5 means faster, but 10.8/16<6.5/8; efficiency and total speed are distinct metrics."
+          },
+          "pages": [
+            38,
+            49
+          ]
+        },
+        {
+          "id": "material-53-q25",
+          "conceptIds": [
+            "material-53-c25"
+          ],
+          "prompt": {
+            "zh": "同一计时范围内，最佳串行120秒、旧串行300秒、并行60秒，应报告相对最佳串行的加速比是多少？",
+            "en": "For the same timing scope, best serial is 120 s, old serial 300 s and parallel 60 s. What is speedup versus best serial?"
+          },
+          "options": [
+            {
+              "zh": "0.5倍",
+              "en": "0.5×"
+            },
+            {
+              "zh": "2倍",
+              "en": "2×"
+            },
+            {
+              "zh": "3.5倍",
+              "en": "3.5×"
+            },
+            {
+              "zh": "5倍",
+              "en": "5×"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "120/60=2；5只相对旧的慢基线，0.5颠倒时间比，3.5没有对应基线定义。",
+            "en": "120/60=2; five uses the old slow baseline, 0.5 reverses the ratio and 3.5 has no defined baseline."
+          },
+          "pages": [
+            37,
+            45
+          ]
+        },
+        {
+          "id": "material-53-q26",
+          "conceptIds": [
+            "material-53-c26"
+          ],
+          "prompt": {
+            "zh": "在8核上测得S=6.4，这属于什么趋势？",
+            "en": "A measured speedup of 6.4 on eight cores is which trend?"
+          },
+          "options": [
+            {
+              "zh": "负加速，因为S未超过核心数",
+              "en": "Slowdown because S does not exceed core count"
+            },
+            {
+              "zh": "次线性，效率80%",
+              "en": "Sublinear, with 80% efficiency"
+            },
+            {
+              "zh": "线性，效率100%",
+              "en": "Linear, with 100% efficiency"
+            },
+            {
+              "zh": "超线性，效率125%",
+              "en": "Superlinear, with 125% efficiency"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "6.4<8所以次线性，但6.4>1仍比串行快；效率6.4/8=0.8。",
+            "en": "6.4<8 is sublinear, yet 6.4>1 still beats serial; efficiency is 6.4/8=0.8."
+          },
+          "pages": [
+            38,
+            50
+          ]
+        },
+        {
+          "id": "material-53-q27",
+          "conceptIds": [
+            "material-53-c27"
+          ],
+          "prompt": {
+            "zh": "若大量很小的消息每次都支付较高启动延迟，哪种改变最直接针对该问题？",
+            "en": "Many tiny messages each incur high startup latency. Which change most directly targets this?"
+          },
+          "options": [
+            {
+              "zh": "在依赖允许时合并消息，减少消息次数",
+              "en": "Combine messages when dependencies allow, reducing message count"
+            },
+            {
+              "zh": "只提高每个线程的局部数组容量，不改变通信",
+              "en": "Only enlarge local arrays without changing communication"
+            },
+            {
+              "zh": "只增加处理器数量，保持每核消息次数与等待模式不变",
+              "en": "Add processors while retaining each core’s message count and waits"
+            },
+            {
+              "zh": "把延迟单位改为MB/s即可消除延迟",
+              "en": "Change latency units to MB/s to eliminate it"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "合并可减少重复支付消息延迟；带宽单位不能替代时间，更多核心也不自动减少通信次数。",
+            "en": "Combining can reduce repeated latency costs; bandwidth units do not replace time and more cores do not automatically reduce message count."
+          },
+          "pages": [
+            51
+          ]
+        },
+        {
+          "id": "material-53-q28",
+          "conceptIds": [
+            "material-53-c28"
+          ],
+          "prompt": {
+            "zh": "固定工作量中20%时间不可并行，理想无限核心下加速上限是多少？",
+            "en": "For fixed work with a 20% serial fraction, what is the ideal infinite-core speedup limit?"
+          },
+          "options": [
+            {
+              "zh": "5倍",
+              "en": "5×"
+            },
+            {
+              "zh": "20倍",
+              "en": "20×"
+            },
+            {
+              "zh": "80倍",
+              "en": "80×"
+            },
+            {
+              "zh": "无限大",
+              "en": "Unbounded"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "上限1/β=1/0.2=5；可并行部分即使趋近零时间，串行20%仍保留。",
+            "en": "The limit is 1/β=1/0.2=5; even if parallel work takes negligible time, the serial 20% remains."
+          },
+          "pages": [
+            53,
+            54
+          ]
+        },
+        {
+          "id": "material-53-q29",
+          "conceptIds": [
+            "material-53-c29"
+          ],
+          "prompt": {
+            "zh": "67%为串行比例时，10核Amdahl加速比约为多少？",
+            "en": "With a 67% serial fraction, what is the ten-core Amdahl speedup?"
+          },
+          "options": [
+            {
+              "zh": "3.97",
+              "en": "3.97"
+            },
+            {
+              "zh": "2.52",
+              "en": "2.52"
+            },
+            {
+              "zh": "10.00",
+              "en": "10.00"
+            },
+            {
+              "zh": "1.42",
+              "en": "1.42"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "串行0.67保持不变，仅0.33除以10；3.97来自不同归一化的Gustafson例，2.52把串行与并行比例互换，10忽略串行。",
+            "en": "The serial 0.67 stays intact and only 0.33 is divided by ten; 3.97 belongs to a differently normalized Gustafson example, 2.52 swaps fractions and ten ignores serial work."
+          },
+          "pages": [
+            55
+          ]
+        },
+        {
+          "id": "material-53-q30",
+          "conceptIds": [
+            "material-53-c30"
+          ],
+          "prompt": {
+            "zh": "Gustafson模型中并行时间归一化为1、p=4、α=0.1，对应单核运行同一扩展任务需多少时间单位？",
+            "en": "With normalized parallel time 1, p=4 and α=0.1, how long does one processor take for the same scaled task?"
+          },
+          "options": [
+            {
+              "zh": "3.7",
+              "en": "3.7"
+            },
+            {
+              "zh": "0.325",
+              "en": "0.325"
+            },
+            {
+              "zh": "4.1",
+              "en": "4.1"
+            },
+            {
+              "zh": "1.0",
+              "en": "1.0"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "单核时间=0.1+4×0.9=3.7；1漏乘p，0.325来自固定工作量的另一个归一化，4.1错误把整个并行时间乘4再加串行。",
+            "en": "Single-processor time is 0.1+4×0.9=3.7; one omits p, 0.325 uses a different fixed-work normalization and 4.1 scales the whole time before adding serial work."
+          },
+          "pages": [
+            56,
+            57,
+            58
+          ]
+        },
+        {
+          "id": "material-53-q31",
+          "conceptIds": [
+            "material-53-c31"
+          ],
+          "prompt": {
+            "zh": "课件用Amdahl β=0.67得10核S≈1.42，用Gustafson α=0.67得S=3.97。为什么不能据此断言后者推翻前者？",
+            "en": "The lecture gives ten-core S≈1.42 for Amdahl β=0.67 and S=3.97 for Gustafson α=0.67. Why does this not mean the latter disproves the former?"
+          },
+          "options": [
+            {
+              "zh": "因为Gustafson只能用于GPU，Amdahl只能用于CPU",
+              "en": "Gustafson only applies to GPUs and Amdahl only to CPUs"
+            },
+            {
+              "zh": "因为3.97与1.42只是不同单位下的同一时间",
+              "en": "They are the same time in different units"
+            },
+            {
+              "zh": "工作量设定和串行比例分母不同，回答的问题不同",
+              "en": "Workload assumptions and serial-fraction denominators differ"
+            },
+            {
+              "zh": "因为较大的结果必定代表测量错误",
+              "en": "The larger result must be a measurement error"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "β基于单核固定任务时间，α基于并行扩展任务时间；不能忽略这些定义，把数值相同的比例当成同一物理条件。",
+            "en": "β refers to single-core fixed-task time and α to parallel scaled-task time; equal numerical fractions do not imply identical physical conditions."
+          },
+          "pages": [
+            59,
+            60
+          ]
+        },
+        {
+          "id": "material-53-q32",
+          "conceptIds": [
+            "material-53-c32"
+          ],
+          "prompt": {
+            "zh": "剖面中一段深色“Essential/Excess Computation”应如何解释？",
+            "en": "How should a dark Essential/Excess Computation segment be interpreted?"
+          },
+          "options": [
+            {
+              "zh": "它包含计算，但还需区分必要工作和额外计算",
+              "en": "It is computation that may include both essential and excess work"
+            },
+            {
+              "zh": "它证明并行效率必定100%",
+              "en": "It proves parallel efficiency is 100%"
+            },
+            {
+              "zh": "它等于墙钟总时间除以处理器数",
+              "en": "It equals total wall time divided by processor count"
+            },
+            {
+              "zh": "它全部是通信等待",
+              "en": "It consists entirely of communication waiting"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "图例把必要和额外计算放在同类颜色，不能据颜色把所有CPU工作视为有效收益；通信和空闲另有颜色。",
+            "en": "The legend combines essential and excess computation, so color alone cannot classify all CPU work as useful gain; communication and idling have other colors."
+          },
+          "pages": [
+            62,
+            63
+          ]
+        },
+        {
+          "id": "material-53-q33",
+          "conceptIds": [
+            "material-53-c33"
+          ],
+          "prompt": {
+            "zh": "若七个核在屏障等待第八核完成更重任务，最直接的诊断是什么？",
+            "en": "Seven cores wait at a barrier for an eighth with heavier work. What is the direct diagnosis?"
+          },
+          "options": [
+            {
+              "zh": "等待核的计算速度必定比第八核更慢",
+              "en": "The waiting cores must compute more slowly than the eighth"
+            },
+            {
+              "zh": "屏障让第八核的工作量自动翻倍",
+              "en": "The barrier automatically doubles the eighth core’s work"
+            },
+            {
+              "zh": "所有核通信带宽必定为零",
+              "en": "All cores necessarily have zero communication bandwidth"
+            },
+            {
+              "zh": "负载不均经同步表现为空闲",
+              "en": "Load imbalance manifests as idling at synchronization"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "屏障暴露完成时间差，主要根因是工作量不均；不能仅凭等待断言带宽、处理器速度或任务数量改变。",
+            "en": "The barrier exposes different finish times, with workload imbalance as the stated cause; waiting alone does not establish bandwidth, core-speed or task-count changes."
+          },
+          "pages": [
+            64
+          ]
+        },
+        {
+          "id": "material-53-q34",
+          "conceptIds": [
+            "material-53-c34"
+          ],
+          "prompt": {
+            "zh": "所有线程都有任务，但必须争用同一共享资源而排队，属于什么开销？",
+            "en": "Every thread has work but queues for one shared resource. Which overhead is this?"
+          },
+          "options": [
+            {
+              "zh": "负载完全均衡，因此没有开销",
+              "en": "Perfect load balance, therefore no overhead"
+            },
+            {
+              "zh": "超线性加速",
+              "en": "Superlinear speedup"
+            },
+            {
+              "zh": "只属于工作量不足，与共享资源无关",
+              "en": "Only insufficient work, unrelated to shared resources"
+            },
+            {
+              "zh": "争用",
+              "en": "Contention"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "共享资源竞争定义争用；即使任务数均衡，也可能因资源容量限制而排队。",
+            "en": "Competition for a shared resource defines contention; equal task counts can still queue behind limited resource capacity."
+          },
+          "pages": [
+            65
+          ]
+        },
+        {
+          "id": "material-53-q35",
+          "conceptIds": [
+            "material-53-c35"
+          ],
+          "prompt": {
+            "zh": "重复计算一个便宜中间值以避免昂贵消息时，应怎样评估？",
+            "en": "How should recomputing a cheap intermediate value to avoid an expensive message be evaluated?"
+          },
+          "options": [
+            {
+              "zh": "只要消息减少，运行时间必定下降",
+              "en": "Fewer messages guarantee lower runtime"
+            },
+            {
+              "zh": "只要有重复计算，并行算法必定无效",
+              "en": "Any duplication makes the parallel algorithm invalid"
+            },
+            {
+              "zh": "比较新增计算与节省通信的总时间影响",
+              "en": "Compare the added computation with communication time saved"
+            },
+            {
+              "zh": "把重复计算排除在并行运行时间之外",
+              "en": "Exclude duplicated computation from parallel runtime"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "重复工作可能合理但需度量净收益；它仍消耗时间，消息减少也可能被计算成本抵消。",
+            "en": "Duplication can be reasonable but needs a net-benefit assessment; it still consumes time, and computation cost may outweigh saved messages."
+          },
+          "pages": [
+            65
+          ]
+        },
+        {
+          "id": "material-53-q36",
+          "conceptIds": [
+            "material-53-c36"
+          ],
+          "prompt": {
+            "zh": "Tserial=100秒、p=4、附加Toverhead=10秒，模型给出的并行时间与加速比是什么？",
+            "en": "For Tserial=100 s, p=4 and additive overhead 10 s, what are parallel time and speedup?"
+          },
+          "options": [
+            {
+              "zh": "25秒，4倍",
+              "en": "25 s, 4×"
+            },
+            {
+              "zh": "27.5秒，约3.64倍",
+              "en": "27.5 s, about 3.64×"
+            },
+            {
+              "zh": "35秒，约2.86倍",
+              "en": "35 s, about 2.86×"
+            },
+            {
+              "zh": "110秒，约0.91倍",
+              "en": "110 s, about 0.91×"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "Tp=100/4+10=35，S=100/35≈2.86；25忽略开销，27.5误把开销也除4，110没有分摊工作。",
+            "en": "Tp=100/4+10=35 and S≈2.86; 25 omits overhead, 27.5 also divides overhead by four and 110 does not share the work."
+          },
+          "pages": [
+            66
+          ]
+        },
+        {
+          "id": "material-53-q37",
+          "conceptIds": [
+            "material-53-c37"
+          ],
+          "prompt": {
+            "zh": "若学习目标是跨私有内存进程显式交换消息，四项中哪项最直接对应？",
+            "en": "Which of the four tools most directly matches explicit messages between private-memory processes?"
+          },
+          "options": [
+            {
+              "zh": "MPI",
+              "en": "MPI"
+            },
+            {
+              "zh": "CUDA GPU内核模型",
+              "en": "CUDA GPU kernel model"
+            },
+            {
+              "zh": "OpenMP共享内存指令",
+              "en": "OpenMP shared-memory directives"
+            },
+            {
+              "zh": "Pthreads线程接口",
+              "en": "Pthreads thread interface"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "MPI全称Message-Passing Interface，直接对应消息传递；其余侧重线程共享内存或GPU执行，虽可组合使用但不改变本题对应关系。",
+            "en": "MPI is the Message-Passing Interface and directly matches messaging; the others focus on shared-memory threads or GPU execution, although tools can be combined."
+          },
+          "pages": [
+            69
+          ]
+        },
+        {
+          "id": "material-53-q38",
+          "conceptIds": [
+            "material-53-c7",
+            "material-53-c8"
+          ],
+          "prompt": {
+            "zh": "8核树形归约为何比主核串行接收更有并行性？",
+            "en": "Why does the eight-core tree reduction expose more parallelism than serial master reception?"
+          },
+          "options": [
+            {
+              "zh": "它把7次必要加法全部消除",
+              "en": "It eliminates all seven required additions"
+            },
+            {
+              "zh": "每核必须依次接收另外7核的结果",
+              "en": "Each core must sequentially receive all seven other results"
+            },
+            {
+              "zh": "同轮不相交的配对可同时合并，关键链由7步变3轮",
+              "en": "Disjoint pairs combine concurrently, shortening the critical chain from seven steps to three rounds"
+            },
+            {
+              "zh": "它不再需要任何结果传递或同步",
+              "en": "It needs no result transfer or synchronization"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "树形分散合并工作而保留必要通信与加法；优化的是依赖深度，不是把全部工作变为零。",
+            "en": "The tree distributes combination while retaining necessary messages and additions; it reduces dependency depth rather than eliminating all work."
+          },
+          "pages": [
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "id": "material-53-q39",
+          "conceptIds": [
+            "material-53-c9",
+            "material-53-c10"
+          ],
+          "prompt": {
+            "zh": "哪组准确区分两种批卷方案？",
+            "en": "Which pair correctly distinguishes the grading schemes?"
+          },
+          "options": [
+            {
+              "zh": "两种分工保证相同耗时，因此无需区分",
+              "en": "Both guarantee identical times, so no distinction is needed"
+            },
+            {
+              "zh": "每人100份完整卷是任务并行；不同题号是数据并行",
+              "en": "Full scripts are task parallelism; question roles are data parallelism"
+            },
+            {
+              "zh": "只要使用3名助教，两种都必定是串行",
+              "en": "Both are serial whenever three assistants are used"
+            },
+            {
+              "zh": "每人100份完整卷是数据并行；每人负责不同题号是任务并行",
+              "en": "100 full scripts each is data parallelism; distinct question roles are task parallelism"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "区分看划分的是输入数据还是工作角色，不看人数；两种方案的负载和协调成本也可能不同。",
+            "en": "The distinction is partitioning data versus work roles, not headcount; balance and coordination costs can differ."
+          },
+          "pages": [
+            25,
+            28,
+            29
+          ]
+        },
+        {
+          "id": "material-53-q40",
+          "conceptIds": [
+            "material-53-c17"
+          ],
+          "prompt": {
+            "zh": "某任务切得极细后调度和通信占据大部分时间，适度加粗粒度主要改善什么？",
+            "en": "Very fine tasks spend most time scheduling and communicating. What can moderately coarser grains improve?"
+          },
+          "options": [
+            {
+              "zh": "把分布式内存自动变为共享内存",
+              "en": "Automatically turn distributed into shared memory"
+            },
+            {
+              "zh": "保证所有任务耗时相同",
+              "en": "Guarantee identical task durations"
+            },
+            {
+              "zh": "提高每次协调对应的计算量，减少管理频次",
+              "en": "Increase computation per coordination event and reduce management frequency"
+            },
+            {
+              "zh": "让消息字节数自动为零",
+              "en": "Automatically reduce message bytes to zero"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "粗粒度提高计算/通信比，但可能牺牲灵活均衡；它不自动消除数据传递或改变内存模型。",
+            "en": "Coarser grains improve computation/communication ratio but can reduce balancing flexibility; they do not automatically remove transfer or change memory models."
+          },
+          "pages": [
+            36
+          ]
+        },
+        {
+          "id": "material-53-q41",
+          "conceptIds": [
+            "material-53-c22",
+            "material-53-c28"
+          ],
+          "prompt": {
+            "zh": "栅栏模型的串行60分钟占总360分钟的1/6，无限工人时加速上限是多少？",
+            "en": "The fence model has 60 serial minutes out of 360, a fraction 1/6. What is the infinite-worker speedup limit?"
+          },
+          "options": [
+            {
+              "zh": "无限大",
+              "en": "Unbounded"
+            },
+            {
+              "zh": "6倍",
+              "en": "6×"
+            },
+            {
+              "zh": "300倍",
+              "en": "300×"
+            },
+            {
+              "zh": "360倍",
+              "en": "360×"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "Tp趋近60，S趋近360/60=6，也等于1/(1/6)；人数增加不能消除准备和清理。",
+            "en": "Tp approaches 60 and S approaches 360/60=6=1/(1/6); more workers cannot remove preparation and cleanup."
+          },
+          "pages": [
+            44,
+            45,
+            53,
+            54
+          ]
+        },
+        {
+          "id": "material-53-q42",
+          "conceptIds": [
+            "material-53-c26"
+          ],
+          "prompt": {
+            "zh": "仅在课件示意模型S≈p/log₂p下，p=8时S约多少？",
+            "en": "Only under the lecture’s illustrative model S≈p/log₂p, what is S at p=8?"
+          },
+          "options": [
+            {
+              "zh": "24",
+              "en": "24"
+            },
+            {
+              "zh": "8",
+              "en": "8"
+            },
+            {
+              "zh": "2.67",
+              "en": "2.67"
+            },
+            {
+              "zh": "0.375",
+              "en": "0.375"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "log₂8=3，故8/3≈2.67；这不是对所有分治实现的保证，24乘错，0.375颠倒比值。",
+            "en": "log₂8=3, so 8/3≈2.67; this is not guaranteed for every divide-and-conquer implementation. Twenty-four multiplies and 0.375 reverses the ratio."
+          },
+          "pages": [
+            50
+          ]
+        },
+        {
+          "id": "material-53-q43",
+          "conceptIds": [
+            "material-53-c30",
+            "material-53-c31"
+          ],
+          "prompt": {
+            "zh": "Gustafson模型α=0.67、p=10时，S是多少？",
+            "en": "For Gustafson α=0.67 and p=10, what is S?"
+          },
+          "options": [
+            {
+              "zh": "3.97",
+              "en": "3.97"
+            },
+            {
+              "zh": "6.70",
+              "en": "6.70"
+            },
+            {
+              "zh": "9.33",
+              "en": "9.33"
+            },
+            {
+              "zh": "1.42",
+              "en": "1.42"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "S=10+(1−10)×0.67=3.97；1.42来自以β=0.67固定工作量的Amdahl问题，6.70和9.33未正确计入缩放项。",
+            "en": "S=10+(1−10)×0.67=3.97; 1.42 comes from the fixed-work Amdahl problem with β=0.67, while 6.70 and 9.33 mishandle scaling."
+          },
+          "pages": [
+            58,
+            59,
+            60
+          ]
+        },
+        {
+          "id": "material-53-q44",
+          "conceptIds": [
+            "material-53-c27"
+          ],
+          "prompt": {
+            "zh": "一次传大块数据受每秒可传字节数限制，主要关注哪个指标？",
+            "en": "A bulk transfer is limited by bytes transferred per second. Which metric is central?"
+          },
+          "options": [
+            {
+              "zh": "同步屏障数量本身",
+              "en": "The barrier count alone"
+            },
+            {
+              "zh": "串行代码行数",
+              "en": "Number of serial code lines"
+            },
+            {
+              "zh": "单次消息延迟的单位改写",
+              "en": "A rewritten unit for message latency"
+            },
+            {
+              "zh": "带宽",
+              "en": "Bandwidth"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "每单位时间传输量是带宽定义；延迟描述时间开销，屏障数与代码行数不是该传输率指标。",
+            "en": "Data per unit time defines bandwidth; latency is a time cost and neither barrier count nor code-line count is this transfer-rate metric."
+          },
+          "pages": [
+            51
+          ]
+        },
+        {
+          "id": "material-53-q45",
+          "conceptIds": [
+            "material-53-c36"
+          ],
+          "prompt": {
+            "zh": "100秒串行任务：4核开销5秒，8核开销30秒。按Tp=T1/p+Toverhead，哪个更快？",
+            "en": "For a 100-second serial task, overhead is 5 s at four cores and 30 s at eight. Under Tp=T1/p+Toverhead, which is faster?"
+          },
+          "options": [
+            {
+              "zh": "8核，因为理想计算项12.5秒总小于25秒",
+              "en": "Eight, because ideal compute time 12.5 s is less than 25 s"
+            },
+            {
+              "zh": "4核，30秒；8核为42.5秒",
+              "en": "Four cores at 30 s; eight take 42.5 s"
+            },
+            {
+              "zh": "8核为16.25秒，因为30秒开销再除8",
+              "en": "Eight take 16.25 s after also dividing overhead by eight"
+            },
+            {
+              "zh": "两者同为30秒，因为只比较开销",
+              "en": "Both take 30 s by comparing overhead only"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "四核25+5=30，八核12.5+30=42.5；新增资源减少理想项，但更大的开销可以抵消并超过收益。",
+            "en": "Four cores give 25+5=30; eight give 12.5+30=42.5. More resources reduce the ideal term, but larger overhead can outweigh that benefit."
+          },
+          "pages": [
+            66
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          32,
+          33,
+          34,
+          36,
+          37,
+          38,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          62,
+          63,
+          64,
+          65,
+          66,
+          69
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1
+            ],
+            "reason": {
+              "zh": "课程封面。",
+              "en": "Course cover."
+            }
+          },
+          {
+            "pages": [
+              9,
+              18,
+              24,
+              31,
+              35,
+              39,
+              52,
+              61
+            ],
+            "reason": {
+              "zh": "章节分隔或过渡提示；没有独立的新概念。",
+              "en": "Section dividers or transition prompts without independent new concepts."
+            }
+          },
+          {
+            "pages": [
+              67,
+              68
+            ],
+            "reason": {
+              "zh": "对前文主题的重复目录式总结，已归并到相应知识点。",
+              "en": "Repeated topic summaries consolidated into the corresponding concepts."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "已视觉核对求和代码、归约树、计时伪代码与性能表。p16的my_x与前文局部和my_sum不一致，正确归约应发送局部和；p58单核时间图漏乘处理器数，应为α+p(1−α)。p50为示意性能趋势，不是所有算法的普遍复杂度；p60的关键区别是工作量与串行比例的归一化，不应把Amdahl/Gustafson限制为某一种编程模型。p69写“三种”却列四项，本页保留Pthreads、OpenMP、MPI、CUDA四项。",
+        "en": "Sum code, reduction tree, timing pseudocode and performance tables were visually checked. Slide 16 uses my_x inconsistently with the earlier partial sum my_sum; a correct reduction sends partial sums. Slide 58 omits a processor factor in the single-processor time, which should be α+p(1−α). Slide 50 illustrates trends, not universal complexities; slide 60’s key distinction is workload and normalization of the serial fraction, not exclusive programming models. Slide 69 says three but lists four tools; all four—Pthreads, OpenMP, MPI and CUDA—are retained."
+      }
     }
   ]
 }

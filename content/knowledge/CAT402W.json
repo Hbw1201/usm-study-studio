@@ -41,6 +41,13 @@
       }
     },
     {
+      "resourceId": "material-49",
+      "reason": {
+        "zh": "在战略—战术—运营之后，把目标转为收入模式与渠道选择，再用目录、网站体验和可信信息连接顾客；这些决策为后续营销项目的内容、导流与评估提供依据。",
+        "en": "After strategy–tactics–operations, translate goals into revenue and channel choices, then connect customers through catalogs, experience and trustworthy information; use these decisions to guide the marketing project’s content, acquisition and evaluation."
+      }
+    },
+    {
       "resourceId": "material-39",
       "reason": {
         "zh": "用营销项目把受众、内容、发布、指标和改进连成实践闭环。",
@@ -3597,6 +3604,2672 @@
         "en": "The source is the original pyramid image and has no page number. Time ranges illustrate this diagram and are not rigid rules for every organization."
       },
       "sourceSha256": "e03f04218f8eab55d7abe31107d799cf557177b7a193d515566bef202c5d424f"
+    },
+    {
+      "resourceId": "material-49",
+      "overview": {
+        "zh": "Selling on the Web 从“谁为何付费”串起收入模式，再用商品目录、跨渠道协同和网站体验把访客连接到交易与持续关系。复习时同时判断收入触发条件、渠道是否整合，以及页面设计服务什么业务目标。",
+        "en": "Selling on the Web links revenue models through who pays for what, then connects visitors to transactions and lasting relationships through catalogs, channel integration and website experience. Review payment triggers, channel integration and the business purpose of design together."
+      },
+      "sourceNote": {
+        "zh": "原文件名包含 WEEK 3，但第1页标题为 Week 4: Selling on the Web；本整理按实际39页内容命名。已逐页读取文字并查看嵌入图，含第27/28/35页WMF的PDF渲染。企业与平台示例、佣金、收益统计均按课件历史案例理解，未核验为当前数据或规则；不把图中的收益宣称作为保证。第27页标题写Google Ads，图片实际讲AdSense与按点击付费示例。外链延伸阅读未访问。",
+        "en": "Although the filename contains WEEK 3, slide 1 is titled Week 4: Selling on the Web; this summary follows the actual 39-slide content. Text and embedded images were inspected, including PDF-rendered WMF images on slides 27/28/35. Company/platform examples, commission rates and financial statistics are historical slide examples, not verified current data or rules; illustrated returns are not guarantees. Slide 27 is headed Google Ads but its image discusses AdSense and a click-payment example. External further-reading links were not visited."
+      },
+      "sourceSha256": "afa4f82163c64ed1721153c67b5b1a417ba927d6be08d95aa0d70e7dbe391c58",
+      "groups": [
+        {
+          "id": "material-49-g-catalog",
+          "title": {
+            "zh": "线上收入与商品目录",
+            "en": "Online revenue and product catalogs"
+          },
+          "concepts": [
+            {
+              "id": "material-49-online-benefits",
+              "title": {
+                "zh": "线上经营的价值主张与条件",
+                "en": "Online-business benefits and their conditions"
+              },
+              "explanation": {
+                "zh": "图中列出便利、灵活、较低成本、较快交付、易于设置及收入机会。它们是可能的价值主张，需要产品、履约与体验支持；“任何人都能赚钱”和未说明口径的比例不是对个别业务的收益保证。",
+                "en": "The image lists convenience, flexibility, cost effectiveness, faster delivery, easier setup and income opportunities. These are potential value propositions requiring product, fulfilment and experience support; broad money-making claims and unexplained percentages do not guarantee an individual business’s returns."
+              },
+              "pages": [
+                4
+              ]
+            },
+            {
+              "id": "material-49-revenue-models",
+              "title": {
+                "zh": "收入模型：谁付费、为谁提供什么",
+                "en": "Revenue models: who pays and for what"
+              },
+              "explanation": {
+                "zh": "课件列出Web catalog、digital content、advertising-supported、advertising-subscription mixed及fee-based五类。目录销售靠商品，数字内容靠文件或访问权，广告靠广告主，混合模式结合广告与订阅，收费模式按特定服务或交易收费；同一模型可用于B2C或B2B。",
+                "en": "The slides list web catalog, digital content, advertising-supported, advertising–subscription mixed and fee-based models. They respectively monetise merchandise, digital files/access, advertisers, a combination of ads and subscriptions, or specified services/transactions. The same model can serve B2C or B2B."
+              },
+              "pages": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "material-49-fee-triggers",
+              "title": {
+                "zh": "按次访问、佣金与特色展示收费",
+                "en": "Pay-per-view, commissions and featured listings"
+              },
+              "explanation": {
+                "zh": "收入图还列出pay per view、commissions和feature listings。按次访问围绕单次内容访问收费；佣金随促成交易而取得；特色展示为更突出的位置收费。先找付费触发条件，才能区分名称相近的模式。",
+                "en": "The revenue diagram also names pay-per-view, commissions and featured listings. Pay-per-view charges for an individual content access, commissions follow facilitated transactions, and featured listings charge for prominent placement. Identify the payment trigger to distinguish similar labels."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-49-catalog-value",
+              "title": {
+                "zh": "目录管理的四类价值",
+                "en": "Four sources of catalog-management value"
+              },
+              "explanation": {
+                "zh": "目录管理让商品组织有序、信息一致、浏览体验更好并支持增长。配图进一步指出reach、presentation、efficiency、control：商品数据既要覆盖触点，也要被有效呈现、维护和控制，不能只增加商品数量。",
+                "en": "Catalog management organises products, keeps information consistent, improves experience and supports growth. The image adds reach, presentation, efficiency and control: product data must reach touchpoints, be presented effectively, and be maintained and controlled, not merely increase in quantity."
+              },
+              "pages": [
+                7,
+                8
+              ]
+            },
+            {
+              "id": "material-49-catalog-discovery",
+              "title": {
+                "zh": "筛选与排序的不同职责",
+                "en": "Different roles of filtering and sorting"
+              },
+              "explanation": {
+                "zh": "筛选按颜色、尺码、价格或评分缩小候选集合；排序按新旧、价格、设计者或热度重新排列当前结果。两者共同帮助顾客找到商品，但“移除不符合条件的商品”与“改变顺序”不是同一操作。",
+                "en": "Filters narrow products by colour, size, price or rating; sorting reorders the current results by recency, price, designer or popularity. Both aid discovery, but removing nonmatching items differs from changing their order."
+              },
+              "pages": [
+                9
+              ]
+            },
+            {
+              "id": "material-49-catalog-navigation",
+              "title": {
+                "zh": "快速预览与长目录导航",
+                "en": "Quick view and navigation in long catalogs"
+              },
+              "explanation": {
+                "zh": "快速预览在当前浏览流程中显示商品信息与照片；返回顶部帮助长目录定位，图中的“加载更多”替代逐页切换继续展示商品。这些是课件中的设计方案，应按用户找货任务判断是否合适，而不是所有站点必须采用同一种分页。",
+                "en": "Quick view reveals product information and images within browsing; back-to-top helps long catalogs, and the illustrated load-more pattern continues the list instead of switching pages. These are design options from the slides, to be judged against shopping tasks rather than imposed universally."
+              },
+              "pages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-49-g-channels",
+          "title": {
+            "zh": "从多渠道到全渠道及后台协同",
+            "en": "From multichannel to omnichannel and back-office coordination"
+          },
+          "concepts": [
+            {
+              "id": "material-49-multi-omni",
+              "title": {
+                "zh": "多渠道与全渠道的核心区别",
+                "en": "The central difference between multichannel and omnichannel"
+              },
+              "explanation": {
+                "zh": "多渠道让顾客能通过门店、网站、移动端、社交或电话接触，但渠道可能各自独立。全渠道让这些接触点相互连接，围绕同一顾客形成连续体验；渠道数量多不自动等于整合好。",
+                "en": "Multichannel offers touchpoints such as stores, web, mobile, social and phone that may operate independently. Omnichannel connects them around the customer to create continuity; having more channels does not automatically mean integration."
+              },
+              "pages": [
+                10,
+                11
+              ]
+            },
+            {
+              "id": "material-49-omni-operations",
+              "title": {
+                "zh": "全渠道的目标、数据、分析与人员对齐",
+                "en": "Omnichannel alignment of goals, data, analytics and agents"
+              },
+              "explanation": {
+                "zh": "比较表的四条组织要求是：激励跨渠道协作、整合客户数据、用360度视图分析全部触点、让服务人员能直接或协作支持多个渠道。只统一页面风格而保留独立数据与竞争激励，不能满足这些要求。",
+                "en": "The comparison table gives four organisational requirements: incentives for cross-channel collaboration, integrated customer data, a 360-degree view of touchpoints, and agents able to support multiple channels directly or collaboratively. Shared styling alone does not resolve siloed data or competing incentives."
+              },
+              "pages": [
+                13
+              ]
+            },
+            {
+              "id": "material-49-channel-evolution",
+              "title": {
+                "zh": "单渠道、多渠道、跨渠道、全渠道",
+                "en": "Single-, multi-, cross- and omnichannel"
+              },
+              "explanation": {
+                "zh": "演进图从单一接触点，经过彼此独立的多个触点，再到顾客看到同一品牌但组织仍有职能壁垒的跨渠道，最后到利用统一顾客视图协调行动的全渠道。这个序列强调整合程度，不只是增加设备。",
+                "en": "The progression moves from one touchpoint to independent multiple touchpoints, then cross-channel recognition of one brand while functional silos remain, and finally omnichannel coordination using a single customer view. It concerns integration, not merely adding devices."
+              },
+              "pages": [
+                14
+              ]
+            },
+            {
+              "id": "material-49-channel-evidence",
+              "title": {
+                "zh": "渠道收益图的指标与推断边界",
+                "en": "Channel-outcome metrics and inference limits"
+              },
+              "explanation": {
+                "zh": "图中分别展示线上销售、留存率、客户体验，以及增加渠道后的平均收入变化。例如一图写89%对33%的留存，另一图写38%、120%、190%的平均收入增加；它们来自不同图表和口径，不能互换，也不能保证新增渠道必然产生相同比例收益。",
+                "en": "The images separately discuss online sales, retention, customer experience and average revenue changes after adding channels. One gives 89% versus 33% retention; another shows 38%, 120% and 190% average revenue increases. Different metrics and sources are not interchangeable or guaranteed outcomes from adding channels."
+              },
+              "pages": [
+                12,
+                15
+              ]
+            },
+            {
+              "id": "material-49-channel-mix",
+              "title": {
+                "zh": "线上与线下触点组合",
+                "en": "Combining online and offline touchpoints"
+              },
+              "explanation": {
+                "zh": "多渠道图把实体地点、纸质目录、网站、付费搜索、直邮、邮件、电视和广播放在同一组合中。网络渠道可以扩展传统模式；设计组合时要考虑各触点如何帮助同一受众进入后续体验，而不是认为数字化必须取消所有线下接触。",
+                "en": "The multichannel image combines physical locations, catalogs, websites, paid search, direct mail, email, television and radio. Online touchpoints can extend traditional models; design how each brings the same audience into subsequent experiences rather than assuming digital business removes all offline contact."
+              },
+              "pages": [
+                16
+              ]
+            },
+            {
+              "id": "material-49-catalog-workflow",
+              "title": {
+                "zh": "目录生命周期与后台支持",
+                "en": "Catalog lifecycle and back-office support"
+              },
+              "explanation": {
+                "zh": "内圈工作包含网页内容/目录处理、商品数据录入、图片处理、构建与索引、格式转换和product feed提交；外圈包含规划研究、执行、定期维护、后台支持及沟通报告。商品目录是持续运作的数据流程，不是一次上传后结束。",
+                "en": "The inner ring includes web/catalog content processing, product-data entry, image processing, building/indexing, conversion and product-feed submission. The outer ring covers planning/research, execution, maintenance, back-office support and communication/reporting. A catalog is an ongoing data operation, not a one-time upload."
+              },
+              "pages": [
+                17
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-49-g-digital",
+          "title": {
+            "zh": "数字内容与收入来源的组合",
+            "en": "Digital content and combinations of revenue sources"
+          },
+          "concepts": [
+            {
+              "id": "material-49-digital-content",
+              "title": {
+                "zh": "数字内容：文件、访问与设备适配",
+                "en": "Digital content: files, access and device compatibility"
+              },
+              "explanation": {
+                "zh": "数字内容图列出文档、音乐、PDF、视频、图片、矢量图、HTML及电子表格等可售内容；后续例子包括电子书、软件和素材。顾客购买的是数字文件或使用/访问价值，格式与使用设备是否适配是交付的一部分。",
+                "en": "The image shows documents, audio, PDFs, video, images, vector graphics, HTML and spreadsheets as saleable content; later examples include ebooks, software and media assets. Customers purchase digital files or usage/access value, making format and device compatibility part of delivery."
+              },
+              "pages": [
+                18,
+                20
+              ]
+            },
+            {
+              "id": "material-49-freemium",
+              "title": {
+                "zh": "免费增值与广告—订阅组合",
+                "en": "Freemium and the advertising–subscription combination"
+              },
+              "explanation": {
+                "zh": "Spotify案例区分免费广告支持服务与付费premium服务：免费层提供受限访问，付费层提供更完整功能。Freemium用不同价值层吸引免费用户并形成付费理由；图中的2017年约90%订阅收入和10%广告收入是历史结构，不是所有免费增值业务的固定比例。",
+                "en": "The Spotify example distinguishes a free ad-supported tier with limited access from a premium tier with more complete features. Freemium attracts free users while creating reasons to upgrade; its roughly 90% subscription/10% advertising split in 2017 is a historical structure, not a universal ratio."
+              },
+              "pages": [
+                19
+              ]
+            },
+            {
+              "id": "material-49-metrics-profit",
+              "title": {
+                "zh": "收入结构、用户收入与利润不是一回事",
+                "en": "Revenue mix, revenue per user and profit differ"
+              },
+              "explanation": {
+                "zh": "Spotify图同时展示总收入增长、每用户收入及营业亏损；Netflix图分别展示总收入与净利润；Google图展示不同收入来源。应区分规模、单位用户收入、来源占比和扣除成本后的结果，不能从总收入上升直接推出盈利。",
+                "en": "The Spotify image presents revenue growth, revenue per user and an operating loss; Netflix separates revenue from net income; Google shows revenue sources. Distinguish scale, revenue per user, source mix and results after costs rather than inferring profitability from revenue growth alone."
+              },
+              "pages": [
+                19,
+                24,
+                26
+              ]
+            },
+            {
+              "id": "material-49-direct-licensing",
+              "title": {
+                "zh": "直接销售、平台分成与使用许可",
+                "en": "Direct sales, platform shares and usage licences"
+              },
+              "explanation": {
+                "zh": "素材例子包括游戏/软件、照片/视频及音乐；软件可随购买提供许可密钥，音乐可区分个人购买与项目使用授权。直接商店能管理品牌与销售关系，但课件中的平台分成与收费宣传是历史营销示例，不能推成当下必然零费用或完全防盗版。",
+                "en": "Examples include games/software, photos/video and music; software may deliver licence keys, while music can distinguish individual purchase from project-use licensing. Direct stores manage branding and sales relationships, but the slides’ platform-fee claims are historical marketing examples, not proof of zero current costs or perfect piracy prevention."
+              },
+              "pages": [
+                20,
+                21
+              ]
+            },
+            {
+              "id": "material-49-bundling-demonstration",
+              "title": {
+                "zh": "数字课程的组合、试用与模板展示",
+                "en": "Bundling, sampling and demonstration of digital products"
+              },
+              "explanation": {
+                "zh": "课件例子允许课程整体出售或按课时出售，用免费样本帮助顾客判断，也可配实体学习材料。网站模板则用高质量图片和视频展示实际功能，再交付下载文件；组合方式与展示证据应匹配顾客购买前的疑问。",
+                "en": "The examples offer whole courses or individual lessons, free samples for evaluation, and optional physical materials. Website templates use images/video to demonstrate features before file delivery. Packaging and demonstrations should answer customers’ pre-purchase questions."
+              },
+              "pages": [
+                21
+              ]
+            },
+            {
+              "id": "material-49-sponsorship",
+              "title": {
+                "zh": "固定费用赞助",
+                "en": "Fixed-fee sponsorship"
+              },
+              "explanation": {
+                "zh": "Fixed-fee sponsorships 在课件中与subscriptions、CPC及affiliate并列。它围绕约定内容或曝光安排由赞助方支付固定费用；与按点击或成交逐次累计的模式不同，辨别时看合同约定的付费依据。",
+                "en": "Fixed-fee sponsorships are listed alongside subscriptions, CPC and affiliates. A sponsor pays a fixed amount for an agreed content or exposure arrangement, unlike charges accumulated per click or sale. Distinguish models by their agreed payment basis."
+              },
+              "pages": [
+                5,
+                22
+              ]
+            },
+            {
+              "id": "material-49-subscription",
+              "title": {
+                "zh": "订阅：持续访问与分层方案",
+                "en": "Subscription: continuing access and tiered plans"
+              },
+              "explanation": {
+                "zh": "订阅通过持续付费换取一段期间的内容或服务访问。Netflix案例用Basic、Standard、Premium演示分层；图中的价格和2013–2017财务数字仅属于课件时期。与按次观看相比，订阅的核心是持续访问关系。",
+                "en": "Subscription exchanges continuing payment for access over a period. The Netflix case illustrates Basic, Standard and Premium tiers; its prices and 2013–2017 financial figures are source-era examples. The defining contrast with pay-per-view is continuing access rather than one viewing event."
+              },
+              "pages": [
+                22,
+                24
+              ]
+            },
+            {
+              "id": "material-49-affiliate",
+              "title": {
+                "zh": "联盟营销：推荐—点击—成交—分佣",
+                "en": "Affiliate marketing: referral, click, sale and commission"
+              },
+              "explanation": {
+                "zh": "联盟营销图描述：推荐与网站受众相关的他人产品，访客通过affiliate link点击并购买后，推广者获得一部分销售额。只发生点击不一定满足图中的成交分佣条件；30–70%的图中文字不是所有计划的通用或当前佣金率。",
+                "en": "The affiliate image describes recommending others’ products relevant to the audience; after a visitor follows an affiliate link and purchases, the promoter receives a share of the sale. A click alone need not satisfy this sale-based trigger, and the illustrated 30–70% is not a universal or current rate."
+              },
+              "pages": [
+                22,
+                23
+              ]
+            },
+            {
+              "id": "material-49-model-map",
+              "title": {
+                "zh": "数字商业模式图：多个维度可重叠",
+                "en": "Digital-business model map: overlapping dimensions"
+              },
+              "explanation": {
+                "zh": "图中并列电商/市场、按需、订阅、免费增值、P2P双边市场、广告支持、隐藏收入来源、开源等标签。它们分别描述交付方式、参与者结构或变现方式，因此同一平台可出现于多个区域；“开源”本身也没有说明具体向谁收费。",
+                "en": "The map places e-commerce/marketplace, on-demand, subscription, free/freemium, peer-to-peer two-sided markets, ad-supported, hidden revenue and open source alongside one another. These describe delivery, participant structure or monetisation, so a platform can appear in several regions; “open source” alone does not specify who pays."
+              },
+              "pages": [
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-49-g-advertising",
+          "title": {
+            "zh": "广告收入、计费与广告形式",
+            "en": "Advertising revenue, charging bases and formats"
+          },
+          "concepts": [
+            {
+              "id": "material-49-ad-supported",
+              "title": {
+                "zh": "广告支持：使用者与付费者可不同",
+                "en": "Ad-supported models: users and payers can differ"
+              },
+              "explanation": {
+                "zh": "广告支持业务向广告主提供接触受众的机会，使用内容或服务的人不一定直接付款。Google历史图显示广告为主要收入，同时存在应用、云、硬件等来源；“主要依赖广告”不等于“只有广告收入”。",
+                "en": "Ad-supported businesses offer advertisers access to audiences; service/content users need not pay directly. The historical Google image shows advertising as the main source alongside apps, cloud and hardware, so advertising-dominant does not mean advertising-only."
+              },
+              "pages": [
+                6,
+                26
+              ]
+            },
+            {
+              "id": "material-49-cpc-roles",
+              "title": {
+                "zh": "CPC 与广告网络中的发布者角色",
+                "en": "CPC and the publisher’s role in an ad network"
+              },
+              "explanation": {
+                "zh": "CPC 的计费事件是广告点击。第27页虽题为Google Ads，图文实际说明AdSense让网页发布者展示广告，并给出按点击取得收入的示例；学习时应区分购买流量的广告主与提供展示位置的发布者，不能据旧图断言现行平台只按点击结算。",
+                "en": "CPC uses ad clicks as the charging event. Although slide 27 is headed Google Ads, its image describes AdSense publishers displaying ads and illustrates click-based earnings. Distinguish advertisers buying reach from publishers providing placement, without treating the old image as proof of current platform settlement rules."
+              },
+              "pages": [
+                22,
+                27
+              ]
+            },
+            {
+              "id": "material-49-cpm",
+              "title": {
+                "zh": "直接广告位销售与CPM",
+                "en": "Direct ad-space sales and CPM"
+              },
+              "explanation": {
+                "zh": "直接销售广告位是由网站向希望接触其受众的企业出售位置。图中用CPM表示每千次展示的计价口径；展示不是点击、独立访客或购买，需要按所计费事件核算。",
+                "en": "Direct ad-space selling offers website placement to businesses seeking its audience. The image uses CPM as a price per thousand impressions; impressions differ from clicks, unique visitors and purchases, so calculations must use the billed event."
+              },
+              "pages": [
+                28
+              ]
+            },
+            {
+              "id": "material-49-programmatic-beacon",
+              "title": {
+                "zh": "程序化广告与信标广告",
+                "en": "Programmatic and beacon advertising"
+              },
+              "explanation": {
+                "zh": "第29页将programmatic与beacon列为广告趋势。复习可按触发机制区分：程序化侧重用自动化系统安排广告投放/购买，信标侧重接近某个实体位置的触达；它们不是CPC或CPM这样的计费单位。",
+                "en": "Slide 29 names programmatic and beacon advertising. Distinguish their mechanisms: programmatic emphasises automated ad placement/buying, while beacons concern proximity to a physical location. They are not charging units such as CPC or CPM."
+              },
+              "pages": [
+                29
+              ]
+            },
+            {
+              "id": "material-49-social-mobile-buy",
+              "title": {
+                "zh": "社交、移动广告与购买按钮",
+                "en": "Social/mobile advertising and buy buttons"
+              },
+              "explanation": {
+                "zh": "社交广告与移动广告强调触达的平台或设备；buy button把购买入口放进当前接触点，减少从兴趣到购买的步骤。三个词可以组合，例如在移动社交场景中设置购买按钮，并非互斥收入模型。",
+                "en": "Social and mobile advertising describe platforms or devices; a buy button embeds a purchase entry point into the current touchpoint, shortening the path from interest to purchase. They can combine, such as a buy button in mobile social content, rather than being exclusive revenue models."
+              },
+              "pages": [
+                29
+              ]
+            },
+            {
+              "id": "material-49-video-vr-native",
+              "title": {
+                "zh": "视频、VR与原生广告的形式",
+                "en": "Video, VR and native advertising formats"
+              },
+              "explanation": {
+                "zh": "视频以动态视听内容表达，VR强调沉浸体验，原生广告强调融入所在内容环境的呈现形式。第29页把它们列作趋势；“原生”不等于自然产生的非商业内容，也不等于某一种固定计费方式。",
+                "en": "Video uses audiovisual content, VR emphasises immersion, and native advertising matches the presentation of its surrounding content environment. Slide 29 lists them as trends; native does not mean organically produced noncommercial content or one fixed charging method."
+              },
+              "pages": [
+                29
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-49-g-website-types",
+          "title": {
+            "zh": "按网站目的选择设计",
+            "en": "Choose design by website purpose"
+          },
+          "concepts": [
+            {
+              "id": "material-49-content-types",
+              "title": {
+                "zh": "倡议、新闻、信息与教育网站",
+                "en": "Advocacy, news, informational and educational sites"
+              },
+              "explanation": {
+                "zh": "课堂活动列出13种网站，要求选实例并说明它为什么好。倡议站侧重支持议题，新闻站侧重事件报道，信息站侧重查找事实，教育站侧重学习；评估时要用对应目的判断内容是否清楚、可信、容易使用。",
+                "en": "The activity lists 13 site types and asks students to choose an example and justify its quality. Advocacy supports a cause, news reports events, informational sites support fact-finding, and educational sites support learning. Evaluate clarity, credibility and usability against the relevant purpose."
+              },
+              "pages": [
+                30
+              ]
+            },
+            {
+              "id": "material-49-portal-aggregator",
+              "title": {
+                "zh": "门户与内容聚合网站",
+                "en": "Portals and content aggregators"
+              },
+              "explanation": {
+                "zh": "Portal提供进入多种信息或服务的集中入口；content aggregator把不同来源的内容集中展示。两者都可能汇集信息，但前者强调入口与导航，后者强调内容汇聚；应检查访问路径与来源是否清楚。",
+                "en": "A portal provides a central entry point to information or services; a content aggregator brings content from different sources together. Both can collect information, but the former emphasises access/navigation and the latter aggregation; examine clear pathways and sources."
+              },
+              "pages": [
+                30
+              ]
+            },
+            {
+              "id": "material-49-participation-sites",
+              "title": {
+                "zh": "个人、博客、社交网络与Wiki",
+                "en": "Personal sites, blogs, social networks and wikis"
+              },
+              "explanation": {
+                "zh": "个人网站围绕个人身份或作品，博客以持续发布的文章组织内容，社交网络围绕用户之间的连接与交流，Wiki强调协作编辑知识。它们可同时包含文章，但参与者的关系与内容维护方式不同。",
+                "en": "Personal sites centre on identity or work; blogs organise ongoing posts; social networks centre on connections and interaction among users; wikis emphasise collaborative knowledge editing. All may contain articles, but participant relationships and content-maintenance mechanisms differ."
+              },
+              "pages": [
+                30
+              ]
+            },
+            {
+              "id": "material-49-functional-sites",
+              "title": {
+                "zh": "商业、娱乐与Web应用网站",
+                "en": "Business, entertainment and web-application sites"
+              },
+              "explanation": {
+                "zh": "Marketing/business网站支持品牌、商品或服务推广，娱乐站提供娱乐体验，Web application让用户在浏览器中完成任务。分类用于明确用户来做什么；同一商业站也可能包含应用功能或娱乐内容。",
+                "en": "Marketing/business sites support promotion of a brand or offering, entertainment sites provide entertainment experiences, and web applications let users perform tasks in the browser. The categories clarify user purpose; a business site may also include application features or entertainment content."
+              },
+              "pages": [
+                30
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-49-g-design",
+          "title": {
+            "zh": "设计、体验与受众",
+            "en": "Design, experience and audience"
+          },
+          "concepts": [
+            {
+              "id": "material-49-first-impression",
+              "title": {
+                "zh": "第一印象与可信度",
+                "en": "First impressions and credibility"
+              },
+              "explanation": {
+                "zh": "第一印象页把网站设计与企业可信度、购买前研究联系起来。图中的75%、94%、85%是课件引用的不同主张，未给出可核验研究方法；复习重点是设计影响评价与信息获取，而不是把这些比例当作当前普遍定律。",
+                "en": "The first-impression slide connects design with business credibility and pre-purchase research. Its 75%, 94% and 85% refer to different claims without study methods available in the deck; focus on design’s role in evaluation and information seeking rather than treating the figures as current universal laws."
+              },
+              "pages": [
+                32
+              ]
+            },
+            {
+              "id": "material-49-ux-value",
+              "title": {
+                "zh": "用户体验投资与回报评估",
+                "en": "UX investment and evaluation of returns"
+              },
+              "explanation": {
+                "zh": "UX设计关注用户完成目标的体验。图宣称每投入£1可能带来£2–£100回报，这里只能作为强调体验价值的课件示意；具体项目仍需用找货、理解、完成任务或购买等实际结果检验。",
+                "en": "UX design concerns the experience of achieving user goals. The image claims £2–£100 return per £1 invested; here it is an illustrative slide claim about UX value, while a specific project still needs evidence from discovery, comprehension, task completion or purchase outcomes."
+              },
+              "pages": [
+                33
+              ]
+            },
+            {
+              "id": "material-49-style-guide",
+              "title": {
+                "zh": "品牌一致性与样式指南",
+                "en": "Brand consistency and style guides"
+              },
+              "explanation": {
+                "zh": "样式指南图同时规范标题层级、字体、按钮、链接、表单及normal/hover/active等状态。保持一致帮助用户识别什么可操作、当前状态如何，也让不同页面保持同一品牌；一致不是让所有控件看起来毫无差别。",
+                "en": "The style-guide image covers heading hierarchy, typography, buttons, links, forms and normal/hover/active states. Consistency helps users recognise actions and states and maintains the brand across pages; it does not mean making every control indistinguishable."
+              },
+              "pages": [
+                34
+              ]
+            },
+            {
+              "id": "material-49-colour-palette",
+              "title": {
+                "zh": "配色：有意选择并保持一致",
+                "en": "Colour palette: deliberate and consistent choices"
+              },
+              "explanation": {
+                "zh": "配色页展示多种颜色组成的色轮，提示色彩是网站设计决策的一部分。结合前页样式指南，应选择适合品牌与受众的可读配色，并保持角色一致；图中未规定某种颜色必然提高转化率。",
+                "en": "The palette slide shows a colour wheel, identifying colour as a design decision. Together with the style-guide slide, it supports deliberate, readable choices appropriate to brand and audience with consistent roles; it does not establish that any one colour guarantees conversions."
+              },
+              "pages": [
+                34,
+                35
+              ]
+            },
+            {
+              "id": "material-49-differentiation",
+              "title": {
+                "zh": "有辨识度且任务明确的页面",
+                "en": "Distinctive pages with clear tasks"
+              },
+              "explanation": {
+                "zh": "The Sill截图通过植物主视觉、统一绿蓝色调、简洁价值表达与Shop All入口形成辨识度，同时保留导航、搜索、登录和购物袋。站出同类竞争不是只追求新奇，而是让特色与顾客下一步行动相互支持。",
+                "en": "The Sill screenshot combines plant imagery, a coherent green/blue palette, a concise value message and a Shop All action while retaining navigation, search, login and a shopping bag. Distinctiveness should support the customer’s next action rather than novelty alone."
+              },
+              "pages": [
+                36
+              ]
+            },
+            {
+              "id": "material-49-audience-devices",
+              "title": {
+                "zh": "以受众任务与使用设备为中心",
+                "en": "Centre design on audience tasks and devices"
+              },
+              "explanation": {
+                "zh": "设备图展示同一电商内容在电脑、平板与手机上的呈现，末页强调为真正使用并购买的目标受众设计。应检查在不同屏幕上能否理解内容、浏览和行动；展示多个设备并不自动证明所有任务已经可用。",
+                "en": "The device image shows e-commerce content on computers, tablets and phones; the final slide says to design for the audience that will use and purchase from the site. Check comprehension, browsing and action across screens; showing devices does not by itself prove usable task completion."
+              },
+              "pages": [
+                31,
+                39
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-49-g-presence",
+          "title": {
+            "zh": "网站目标—策略—持续关系",
+            "en": "Website objectives, strategies and continuing relationships"
+          },
+          "concepts": [
+            {
+              "id": "material-49-acquisition",
+              "title": {
+                "zh": "吸引访问：营销信息与落地页连接",
+                "en": "Attracting visits: connect marketing messages to destination pages"
+              },
+              "explanation": {
+                "zh": "目标—策略表将“吸引访客”对应到营销邮件中加入网站或具体页面链接。链接应把感兴趣的人送到相关信息或行动处；它解决到访问题，不等同于已经建立信任或完成购买。",
+                "en": "The objectives–strategies table links attracting visitors to including website or specific-page links in marketing emails. The destination should support the relevant information/action; arrival is distinct from established trust or completed purchase."
+              },
+              "pages": [
+                37
+              ]
+            },
+            {
+              "id": "material-49-explore-navigation",
+              "title": {
+                "zh": "让访客愿意探索且知道链接去向",
+                "en": "Encourage exploration and make destinations predictable"
+              },
+              "explanation": {
+                "zh": "让用户停留探索可用商品评论、比较功能及使用建议；促使用户沿链接寻找信息则需要清楚标签，并提示点击后会得到什么。前者提供有用内容，后者减少导航不确定性。",
+                "en": "Product reviews, comparisons and usage advice encourage visitors to stay and explore. Clearly labelled links indicating what lies behind them encourage information seeking. One adds useful content; the other reduces navigation uncertainty."
+              },
+              "pages": [
+                37
+              ]
+            },
+            {
+              "id": "material-49-brand-trust",
+              "title": {
+                "zh": "品牌印象、信息可信与声誉证明",
+                "en": "Brand impression, reliable information and reputation evidence"
+              },
+              "explanation": {
+                "zh": "一致品牌印象依靠logo、角色、口号等已有元素；建立信任依靠信息的有效性与客观性；强化既有正面形象可展示评价、奖项及外部评论。三者相互支持，但好看或有口号不能替代可靠事实。",
+                "en": "A consistent brand impression uses established logos, characters and slogans. Trust requires valid, objective information, while testimonials, awards and external reviews can reinforce positive reputation. They support one another, but appearance or slogans do not replace reliable facts."
+              },
+              "pages": [
+                37
+              ]
+            },
+            {
+              "id": "material-49-return-visits",
+              "title": {
+                "zh": "更新信息支持再次访问",
+                "en": "Keep information current to support return visits"
+              },
+              "explanation": {
+                "zh": "表中“鼓励返回”对应定期更新组织、商品与服务的当前信息。网站关系并不止于首次获客：目录与内容维护让访客再次访问时仍能获得价值，连接到前面的目录生命周期。",
+                "en": "The table connects return visits with regularly updated information about the organisation, products and services. Relationships extend beyond first acquisition: catalog/content maintenance preserves value on later visits, linking back to the catalog lifecycle."
+              },
+              "pages": [
+                37
+              ]
+            },
+            {
+              "id": "material-49-accessibility-goals",
+              "title": {
+                "zh": "可达性：易找信息、多种路径与双向沟通",
+                "en": "Accessibility goals: findable information, varied paths and two-way communication"
+              },
+              "explanation": {
+                "zh": "该页列五个业务网站目标：易获取组织事实、允许不同方式与层次的体验、提供有意义的双向互动、保持注意并鼓励回访、易获取产品/服务及使用方法信息。这是课件的广义可达性清单，不是完整技术无障碍标准。",
+                "en": "The slide lists five goals: easy access to organisational facts, varied ways and levels of experience, meaningful two-way interaction, sustained attention/return visits, and easy access to offering/usage information. This is the deck’s broad accessibility checklist, not a complete technical accessibility standard."
+              },
+              "pages": [
+                38
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-49-online-benefits",
+          "to": "material-49-revenue-models",
+          "relation": {
+            "zh": "把线上价值进一步转成明确的付费来源",
+            "en": "Translate online value into identified payer streams"
+          }
+        },
+        {
+          "from": "material-49-revenue-models",
+          "to": "material-49-fee-triggers",
+          "relation": {
+            "zh": "通过付费事件区分收费子模式",
+            "en": "Distinguish fee variants through their payment events"
+          }
+        },
+        {
+          "from": "material-49-revenue-models",
+          "to": "material-49-catalog-value",
+          "relation": {
+            "zh": "目录销售需要可靠商品信息支撑",
+            "en": "Catalog sales require dependable product information"
+          }
+        },
+        {
+          "from": "material-49-catalog-value",
+          "to": "material-49-catalog-discovery",
+          "relation": {
+            "zh": "一致有序的数据支持筛选和排序",
+            "en": "Consistent organised data support filtering and sorting"
+          }
+        },
+        {
+          "from": "material-49-catalog-discovery",
+          "to": "material-49-catalog-navigation",
+          "relation": {
+            "zh": "找到候选后通过预览与导航继续比较",
+            "en": "After discovery, previews and navigation support comparison"
+          }
+        },
+        {
+          "from": "material-49-multi-omni",
+          "to": "material-49-omni-operations",
+          "relation": {
+            "zh": "连续体验依赖目标、数据、分析和人员协同",
+            "en": "Continuous experience depends on goals, data, analytics and agents"
+          }
+        },
+        {
+          "from": "material-49-omni-operations",
+          "to": "material-49-channel-evolution",
+          "relation": {
+            "zh": "整合程度解释渠道演进，而非单纯触点数量",
+            "en": "Integration explains channel progression beyond touchpoint counts"
+          }
+        },
+        {
+          "from": "material-49-channel-mix",
+          "to": "material-49-multi-omni",
+          "relation": {
+            "zh": "触点组合还要检查是否相互连接",
+            "en": "A touchpoint mix must also be checked for integration"
+          }
+        },
+        {
+          "from": "material-49-catalog-workflow",
+          "to": "material-49-return-visits",
+          "relation": {
+            "zh": "持续维护保持回访信息的时效",
+            "en": "Ongoing maintenance keeps return-visit information current"
+          }
+        },
+        {
+          "from": "material-49-digital-content",
+          "to": "material-49-direct-licensing",
+          "relation": {
+            "zh": "文件交付还要明确使用权和销售关系",
+            "en": "File delivery also requires clarity about rights and sales relationships"
+          }
+        },
+        {
+          "from": "material-49-digital-content",
+          "to": "material-49-bundling-demonstration",
+          "relation": {
+            "zh": "数字内容可通过组合与示例降低选择难度",
+            "en": "Packaging and demonstrations aid digital-content choices"
+          }
+        },
+        {
+          "from": "material-49-freemium",
+          "to": "material-49-subscription",
+          "relation": {
+            "zh": "免费层的价值差异形成持续付费理由",
+            "en": "Value differences from the free tier create reasons for continuing payment"
+          }
+        },
+        {
+          "from": "material-49-ad-supported",
+          "to": "material-49-freemium",
+          "relation": {
+            "zh": "广告可以支持免费层，与订阅形成组合",
+            "en": "Advertising can fund a free tier alongside subscriptions"
+          }
+        },
+        {
+          "from": "material-49-ad-supported",
+          "to": "material-49-cpc-roles",
+          "relation": {
+            "zh": "广告模型需要区分广告主与发布者的付费角色",
+            "en": "Advertising models require distinguishing advertiser and publisher roles"
+          }
+        },
+        {
+          "from": "material-49-cpc-roles",
+          "to": "material-49-cpm",
+          "relation": {
+            "zh": "点击与展示是不同计费事件",
+            "en": "Clicks and impressions are different billable events"
+          }
+        },
+        {
+          "from": "material-49-affiliate",
+          "to": "material-49-cpc-roles",
+          "relation": {
+            "zh": "销售分佣与按点击收入的触发条件不同",
+            "en": "Sales commissions and click revenue have different triggers"
+          }
+        },
+        {
+          "from": "material-49-subscription",
+          "to": "material-49-metrics-profit",
+          "relation": {
+            "zh": "持续收入仍需与利润及单位指标区分",
+            "en": "Recurring revenue still differs from profit and unit metrics"
+          }
+        },
+        {
+          "from": "material-49-model-map",
+          "to": "material-49-revenue-models",
+          "relation": {
+            "zh": "结构与交付标签不应混成唯一收入来源",
+            "en": "Structure and delivery labels do not imply one revenue source"
+          }
+        },
+        {
+          "from": "material-49-content-types",
+          "to": "material-49-audience-devices",
+          "relation": {
+            "zh": "网站目的与受众决定设计检验任务",
+            "en": "Site purpose and audience determine design tasks to test"
+          }
+        },
+        {
+          "from": "material-49-style-guide",
+          "to": "material-49-colour-palette",
+          "relation": {
+            "zh": "配色是样式指南中需要一致使用的决策",
+            "en": "Palette choices are part of consistently applied style rules"
+          }
+        },
+        {
+          "from": "material-49-colour-palette",
+          "to": "material-49-differentiation",
+          "relation": {
+            "zh": "一致配色可与主视觉和行动共同形成特色",
+            "en": "Consistent colour can combine with imagery and action to build identity"
+          }
+        },
+        {
+          "from": "material-49-first-impression",
+          "to": "material-49-brand-trust",
+          "relation": {
+            "zh": "第一印象要由可信信息支撑才能深化为信任",
+            "en": "Credible information supports moving from impression toward trust"
+          }
+        },
+        {
+          "from": "material-49-acquisition",
+          "to": "material-49-explore-navigation",
+          "relation": {
+            "zh": "到访后用相关信息与清楚导航支持深入了解",
+            "en": "After arrival, relevant information and clear navigation support exploration"
+          }
+        },
+        {
+          "from": "material-49-explore-navigation",
+          "to": "material-49-brand-trust",
+          "relation": {
+            "zh": "能理解的信息路径与可靠内容共同支持信任",
+            "en": "Understandable pathways and reliable content jointly support trust"
+          }
+        },
+        {
+          "from": "material-49-brand-trust",
+          "to": "material-49-return-visits",
+          "relation": {
+            "zh": "保持可信且更新的信息有助持续关系",
+            "en": "Reliable, updated information supports a continuing relationship"
+          }
+        },
+        {
+          "from": "material-49-ux-value",
+          "to": "material-49-accessibility-goals",
+          "relation": {
+            "zh": "体验价值落实为找信息、选择路径与沟通等任务",
+            "en": "Experience value is realised through information, pathways and communication"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-49-q-online-benefits",
+          "conceptIds": [
+            "material-49-online-benefits"
+          ],
+          "prompt": {
+            "zh": "准备上线商店时，应怎样使用图中的“更快交付”优势？",
+            "en": "When planning an online store, how should the image’s “faster delivery” benefit be used?"
+          },
+          "options": [
+            {
+              "zh": "把它作为需要履约流程支持并验证的价值主张",
+              "en": "Treat it as a value proposition requiring fulfilment support and validation"
+            },
+            {
+              "zh": "网站上线本身就证明所有产品交付更快",
+              "en": "Launching the site itself proves all products arrive faster"
+            },
+            {
+              "zh": "只需提高广告流量即可保证交付速度",
+              "en": "Increasing ad traffic alone guarantees faster delivery"
+            },
+            {
+              "zh": "用销售收入增长代替检查交付体验",
+              "en": "Use revenue growth instead of checking delivery experience"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "线上渠道提供机会，实际交付仍依赖流程；流量和收入指标不能单独证明履约速度。",
+            "en": "Online channels create opportunities, but delivery depends on operations; traffic and revenue alone do not prove fulfilment speed."
+          },
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "material-49-q-revenue-models",
+          "conceptIds": [
+            "material-49-revenue-models"
+          ],
+          "prompt": {
+            "zh": "一个内容站同时向广告主收费、向读者收订阅费，最贴近哪类？",
+            "en": "A content site charges advertisers and also charges readers a subscription. Which category fits best?"
+          },
+          "options": [
+            {
+              "zh": "只靠Web目录销售实物",
+              "en": "Pure physical-goods web catalog sales"
+            },
+            {
+              "zh": "广告—订阅混合模式",
+              "en": "Advertising–subscription mixed"
+            },
+            {
+              "zh": "只有按成交抽佣的收费模式",
+              "en": "A commission-only transaction model"
+            },
+            {
+              "zh": "只能属于B2B而不可能属于B2C",
+              "en": "It must be B2B and cannot be B2C"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "两种付费来源构成混合模式；B2B/B2C是客户类型，不是收入模型的替代名称。",
+            "en": "The two payer streams form a mixed model; B2B/B2C identify customer types, not substitutes for revenue-model categories."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-49-q-fee-triggers",
+          "conceptIds": [
+            "material-49-fee-triggers"
+          ],
+          "prompt": {
+            "zh": "平台只在撮合买卖成交后取得交易额的一部分，属于什么？",
+            "en": "A platform receives a share only when a facilitated transaction completes. What is this?"
+          },
+          "options": [
+            {
+              "zh": "按次观看收费",
+              "en": "Pay-per-view"
+            },
+            {
+              "zh": "特色展示位置费",
+              "en": "A featured-listing fee"
+            },
+            {
+              "zh": "交易佣金",
+              "en": "A transaction commission"
+            },
+            {
+              "zh": "固定期间订阅费",
+              "en": "A fixed-period subscription fee"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "佣金以交易为触发；观看、突出展示和持续访问分别对应其他收费对象。",
+            "en": "Commission is triggered by a transaction; viewing, prominence and ongoing access correspond to the other charging bases."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-49-q-catalog-value",
+          "conceptIds": [
+            "material-49-catalog-value"
+          ],
+          "prompt": {
+            "zh": "同一商品在不同页面规格不一致，应优先改善什么？",
+            "en": "The same product has conflicting specifications on different pages. What should be improved first?"
+          },
+          "options": [
+            {
+              "zh": "仅增加广告覆盖范围",
+              "en": "Only advertising reach"
+            },
+            {
+              "zh": "仅增加上架商品总数",
+              "en": "Only the number of listed products"
+            },
+            {
+              "zh": "仅改变结算按钮颜色",
+              "en": "Only checkout-button colour"
+            },
+            {
+              "zh": "目录信息的一致性与维护控制",
+              "en": "Catalog-data consistency and maintenance control"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "问题来自数据不一致，直接影响理解与信任；流量、数量和装饰都不能修复规格冲突。",
+            "en": "The problem is inconsistent data, directly affecting comprehension and trust; traffic, quantity and decoration do not repair conflicting specifications."
+          },
+          "pages": [
+            7,
+            8
+          ]
+        },
+        {
+          "id": "material-49-q-catalog-discovery",
+          "conceptIds": [
+            "material-49-catalog-discovery"
+          ],
+          "prompt": {
+            "zh": "顾客只想看指定尺码、预算内的商品，再按价格排列，应使用什么？",
+            "en": "A shopper wants only the right size within budget, then orders those products by price. What is needed?"
+          },
+          "options": [
+            {
+              "zh": "先筛选，再排序",
+              "en": "Filter first, then sort"
+            },
+            {
+              "zh": "只排序，不排除不符商品",
+              "en": "Sort only, without excluding mismatches"
+            },
+            {
+              "zh": "只用快速预览替代筛选",
+              "en": "Use quick view instead of filtering"
+            },
+            {
+              "zh": "只增加分页数量",
+              "en": "Only increase the number of pages"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "筛选确定符合条件的集合，排序决定集合内的顺序；快速预览与分页解决的是另一类交互。",
+            "en": "Filtering defines the matching set; sorting orders that set. Quick view and pagination address different interactions."
+          },
+          "pages": [
+            9
+          ]
+        },
+        {
+          "id": "material-49-q-catalog-navigation",
+          "conceptIds": [
+            "material-49-catalog-navigation"
+          ],
+          "prompt": {
+            "zh": "用户想快速检查几件商品的细节、尽量不打断列表比较，哪项最直接有帮助？",
+            "en": "Users want to inspect several products without disrupting list comparison. Which feature most directly helps?"
+          },
+          "options": [
+            {
+              "zh": "返回顶部",
+              "en": "Back to top"
+            },
+            {
+              "zh": "快速预览",
+              "en": "Quick view"
+            },
+            {
+              "zh": "按热门程度排序",
+              "en": "Sort by popularity"
+            },
+            {
+              "zh": "只显示最高评分商品",
+              "en": "Filter to the highest-rated products"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "快速预览直接提供当前商品细节；返回顶部、排序和筛选分别解决定位、顺序和候选范围。",
+            "en": "Quick view directly supplies product details; back-to-top, sorting and filtering address location, order and candidate scope."
+          },
+          "pages": [
+            9
+          ]
+        },
+        {
+          "id": "material-49-q-multi-omni",
+          "conceptIds": [
+            "material-49-multi-omni"
+          ],
+          "prompt": {
+            "zh": "顾客在网站开始咨询后，到门店仍需重新提供全部信息，最直接暴露什么？",
+            "en": "A customer starts online but must repeat all information in store. What does this most directly reveal?"
+          },
+          "options": [
+            {
+              "zh": "渠道过多，所以不能销售数字商品",
+              "en": "Too many channels to sell digital products"
+            },
+            {
+              "zh": "已经形成完整全渠道体验",
+              "en": "A fully integrated omnichannel experience"
+            },
+            {
+              "zh": "触点虽多，但跨渠道衔接不足",
+              "en": "Multiple touchpoints but weak cross-channel continuity"
+            },
+            {
+              "zh": "问题只在网站是否有广告",
+              "en": "A problem only about whether the site contains ads"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "全渠道要求连接顾客体验；重复说明信息反映渠道割裂，而不是单纯缺少一个渠道。",
+            "en": "Omnichannel requires continuity of experience; repeating information indicates silos, not simply a missing channel."
+          },
+          "pages": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "material-49-q-omni-operations",
+          "conceptIds": [
+            "material-49-omni-operations"
+          ],
+          "prompt": {
+            "zh": "公司统一了各渠道logo，却仍按单渠道业绩竞争、分别保存客户记录，缺口主要在哪里？",
+            "en": "A firm shares logos across channels but retains competing channel targets and separate customer records. What is missing?"
+          },
+          "options": [
+            {
+              "zh": "更多相同的品牌图片",
+              "en": "More identical brand images"
+            },
+            {
+              "zh": "把各渠道联系方式隐藏起来",
+              "en": "Hiding channel contact information"
+            },
+            {
+              "zh": "只允许顾客使用一个渠道",
+              "en": "Restricting customers to one channel"
+            },
+            {
+              "zh": "目标激励与客户数据的整合",
+              "en": "Integrated goals/incentives and customer data"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "表中的组织层整合包括激励、数据、分析与人员；品牌一致是必要线索之一，却不能代替业务协同。",
+            "en": "The table’s organisational integration includes incentives, data, analytics and agents; brand consistency cannot replace operational coordination."
+          },
+          "pages": [
+            13
+          ]
+        },
+        {
+          "id": "material-49-q-channel-evolution",
+          "conceptIds": [
+            "material-49-channel-evolution"
+          ],
+          "prompt": {
+            "zh": "已有统一顾客视图，但不同部门仍在各自职能壁垒内运营，在图中最接近哪一阶段？",
+            "en": "A single customer view exists, but departments still operate in functional silos. Which stage is closest in the diagram?"
+          },
+          "options": [
+            {
+              "zh": "跨渠道",
+              "en": "Cross-channel"
+            },
+            {
+              "zh": "单渠道",
+              "en": "Single-channel"
+            },
+            {
+              "zh": "完全协调的全渠道",
+              "en": "Fully coordinated omnichannel"
+            },
+            {
+              "zh": "只有彼此独立触点的多渠道",
+              "en": "Multichannel with entirely independent touchpoints"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "图中跨渠道已连接品牌和顾客视图，却尚未完成组织协同；全渠道进一步利用该视图协调战略行动。",
+            "en": "The diagram’s cross-channel stage connects the brand/customer view but retains silos; omnichannel uses that view for coordinated strategic action."
+          },
+          "pages": [
+            14
+          ]
+        },
+        {
+          "id": "material-49-q-channel-evidence",
+          "conceptIds": [
+            "material-49-channel-evidence"
+          ],
+          "prompt": {
+            "zh": "能否用图中的89%留存率，直接推算新增一个渠道后收入必增89%？",
+            "en": "Can the illustrated 89% retention be used to conclude one added channel guarantees 89% revenue growth?"
+          },
+          "options": [
+            {
+              "zh": "可以，因为所有百分数都衡量收入",
+              "en": "Yes, because every percentage measures revenue"
+            },
+            {
+              "zh": "不能，留存与收入增长是不同指标，且图中数据不保证个别结果",
+              "en": "No; retention and revenue growth differ, and illustrated data do not guarantee individual results"
+            },
+            {
+              "zh": "可以，只要新增的是社交渠道",
+              "en": "Yes, provided the added channel is social"
+            },
+            {
+              "zh": "不能，因为留存率只能用于线下业务",
+              "en": "No, because retention applies only to offline business"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "应保留指标、样本和比较口径；留存并非收入增幅，线上业务同样可研究留存。",
+            "en": "Preserve metric and comparison context; retention is not revenue growth, and online businesses can also measure retention."
+          },
+          "pages": [
+            12,
+            15
+          ]
+        },
+        {
+          "id": "material-49-q-channel-mix",
+          "conceptIds": [
+            "material-49-channel-mix"
+          ],
+          "prompt": {
+            "zh": "门店展示商品、纸质目录引导访问网站，最合理的解释是什么？",
+            "en": "A store presents products and a printed catalog directs shoppers online. What is the best interpretation?"
+          },
+          "options": [
+            {
+              "zh": "只要存在纸质目录就不属于线上业务",
+              "en": "A printed catalog means it cannot be an online business"
+            },
+            {
+              "zh": "渠道组合必须全部使用相同媒介",
+              "en": "A channel mix must use only one medium"
+            },
+            {
+              "zh": "传统触点与网站共同构成渠道组合",
+              "en": "Traditional touchpoints and the website form a channel mix"
+            },
+            {
+              "zh": "两个触点存在就证明数据已自动整合",
+              "en": "Having two touchpoints proves data are automatically integrated"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "渠道组合可以跨媒介；是否形成全渠道还需要数据和体验整合，不能只按触点数量判断。",
+            "en": "A mix can cross media; omnichannel status still requires data and experience integration, not merely multiple touchpoints."
+          },
+          "pages": [
+            16
+          ]
+        },
+        {
+          "id": "material-49-q-catalog-workflow",
+          "conceptIds": [
+            "material-49-catalog-workflow"
+          ],
+          "prompt": {
+            "zh": "产品价格与图片不断更新时，哪种安排最符合目录管理图？",
+            "en": "When prices and images change continually, which arrangement fits the catalog-management diagram?"
+          },
+          "options": [
+            {
+              "zh": "首批上传后只管理广告，不再维护目录",
+              "en": "After initial upload, manage only advertising"
+            },
+            {
+              "zh": "每个渠道独立随意改写规格以加快发布",
+              "en": "Let channels independently rewrite specifications"
+            },
+            {
+              "zh": "把格式转换视为整个目录管理的全部",
+              "en": "Treat format conversion as the entirety of catalog management"
+            },
+            {
+              "zh": "将数据、图片、索引及发布纳入持续维护和报告流程",
+              "en": "Include data, images, indexing and publication in ongoing maintenance/reporting"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "图有多类内容处理与外层支撑活动；单项转换或一次上传不能覆盖持续一致的目录运作。",
+            "en": "The diagram includes several processing tasks plus supporting activities; one conversion step or one upload cannot cover continuing consistent operation."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-49-q-digital-content",
+          "conceptIds": [
+            "material-49-digital-content"
+          ],
+          "prompt": {
+            "zh": "销售电子书时，哪项最直接属于数字内容交付设计？",
+            "en": "When selling ebooks, what most directly concerns digital-content delivery?"
+          },
+          "options": [
+            {
+              "zh": "说明文件格式以及顾客能在哪些设备阅读",
+              "en": "Specify formats and the devices customers can read on"
+            },
+            {
+              "zh": "只展示实体仓库货架位置",
+              "en": "Show only the physical warehouse shelf location"
+            },
+            {
+              "zh": "以广告点击数代替说明文件类型",
+              "en": "Substitute ad-click counts for file-type information"
+            },
+            {
+              "zh": "只按网站访客数计算每本书价格",
+              "en": "Price each book only by site visitor count"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "格式与设备影响数字内容能否使用；仓库位置和广告流量不能替代数字交付信息。",
+            "en": "Formats and devices affect usability of digital content; warehouse location and ad traffic do not replace delivery information."
+          },
+          "pages": [
+            18,
+            20
+          ]
+        },
+        {
+          "id": "material-49-q-freemium",
+          "conceptIds": [
+            "material-49-freemium"
+          ],
+          "prompt": {
+            "zh": "免费层可用部分内容，付费层提供完整访问和附加功能，核心逻辑是什么？",
+            "en": "A free tier offers some content while a paid tier offers full access and extra features. What is the core logic?"
+          },
+          "options": [
+            {
+              "zh": "免费层意味着业务不可能有任何收入",
+              "en": "A free tier makes revenue impossible"
+            },
+            {
+              "zh": "通过差异化价值层形成升级理由",
+              "en": "Differentiate value tiers to create reasons to upgrade"
+            },
+            {
+              "zh": "所有用户必须从第一天支付同一费用",
+              "en": "Every user must pay the same fee from day one"
+            },
+            {
+              "zh": "广告收入必须始终超过订阅收入",
+              "en": "Advertising revenue must always exceed subscriptions"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "免费与付费可以共存；关键是功能/访问价值差异，收入比例依业务而异。",
+            "en": "Free and paid tiers can coexist; the key is differentiated functionality/access, while the revenue mix depends on the business."
+          },
+          "pages": [
+            19
+          ]
+        },
+        {
+          "id": "material-49-q-metrics-profit",
+          "conceptIds": [
+            "material-49-metrics-profit"
+          ],
+          "prompt": {
+            "zh": "某案例总收入上升但仍报告营业亏损，哪种解释正确？",
+            "en": "A case reports rising revenue but an operating loss. Which interpretation is correct?"
+          },
+          "options": [
+            {
+              "zh": "只要收入上升，营业亏损一定是图表错误",
+              "en": "Rising revenue makes any operating loss a chart error"
+            },
+            {
+              "zh": "每用户收入必定与总收入同比例上升",
+              "en": "Revenue per user must rise at the same rate as total revenue"
+            },
+            {
+              "zh": "收入增长与是否盈利是不同判断，仍需考虑成本",
+              "en": "Revenue growth and profitability differ; costs still matter"
+            },
+            {
+              "zh": "广告占比等同于净利润率",
+              "en": "Advertising share is identical to net profit margin"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "总收入不扣成本，单位收入与来源占比也有各自分母；这些指标不能互相替代。",
+            "en": "Revenue is before costs, while unit revenue and source shares have different denominators; these metrics are not interchangeable."
+          },
+          "pages": [
+            19,
+            24,
+            26
+          ]
+        },
+        {
+          "id": "material-49-q-direct-licensing",
+          "conceptIds": [
+            "material-49-direct-licensing"
+          ],
+          "prompt": {
+            "zh": "买家要把音乐用在商业项目中，卖家应优先明确什么？",
+            "en": "A buyer wants to use music in a commercial project. What should the seller clarify first?"
+          },
+          "options": [
+            {
+              "zh": "只要可下载就自动拥有所有用途权利",
+              "en": "Download access automatically grants every use right"
+            },
+            {
+              "zh": "页面颜色能否替代许可说明",
+              "en": "Whether page colour can replace licence terms"
+            },
+            {
+              "zh": "网站访客数是否超过某一固定门槛",
+              "en": "Whether site traffic exceeds a fixed threshold"
+            },
+            {
+              "zh": "所购买的使用许可与授权范围",
+              "en": "The purchased usage licence and its scope"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "下载或购买文件与获得特定使用权并非同一问题；许可设计对应内容使用场景。",
+            "en": "Downloading or purchasing a file is not identical to receiving every usage right; licensing should match the intended use."
+          },
+          "pages": [
+            20,
+            21
+          ]
+        },
+        {
+          "id": "material-49-q-bundling-demonstration",
+          "conceptIds": [
+            "material-49-bundling-demonstration"
+          ],
+          "prompt": {
+            "zh": "顾客不确定课程是否适合自己，哪项最直接降低判断难度？",
+            "en": "Customers are unsure whether a course suits them. What most directly helps them evaluate it?"
+          },
+          "options": [
+            {
+              "zh": "提供代表性免费样本，并清楚说明整课与单课选项",
+              "en": "Provide a representative sample and explain full-course versus lesson options"
+            },
+            {
+              "zh": "隐藏课程组成，只显示统一价格",
+              "en": "Hide course composition and show one price"
+            },
+            {
+              "zh": "用网站总访问量代替课程内容说明",
+              "en": "Replace content information with site-traffic figures"
+            },
+            {
+              "zh": "只允许顾客购买所有课程以增加选择自由",
+              "en": "Require purchase of every course to increase choice"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "样本提供内容证据，组合说明帮助选择；流量数字和隐藏结构无法回答适配问题。",
+            "en": "Samples provide content evidence and packaging helps selection; traffic figures and hidden structure do not answer suitability questions."
+          },
+          "pages": [
+            21
+          ]
+        },
+        {
+          "id": "material-49-q-sponsorship",
+          "conceptIds": [
+            "material-49-sponsorship"
+          ],
+          "prompt": {
+            "zh": "品牌支付固定金额赞助一期内容，不随点击或成交数量结算，属于哪项？",
+            "en": "A brand pays a fixed amount to sponsor a content edition, independent of clicks or sales. Which model is this?"
+          },
+          "options": [
+            {
+              "zh": "按点击收费",
+              "en": "Cost per click"
+            },
+            {
+              "zh": "固定费用赞助",
+              "en": "Fixed-fee sponsorship"
+            },
+            {
+              "zh": "成交佣金",
+              "en": "Sales commission"
+            },
+            {
+              "zh": "读者按月订阅",
+              "en": "Reader monthly subscription"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "付款方是赞助商且金额按安排固定；点击、成交或持续用户访问是其他模式的触发条件。",
+            "en": "The sponsor pays a fixed arrangement fee; clicks, completed sales or ongoing user access trigger the other models."
+          },
+          "pages": [
+            5,
+            22
+          ]
+        },
+        {
+          "id": "material-49-q-subscription",
+          "conceptIds": [
+            "material-49-subscription"
+          ],
+          "prompt": {
+            "zh": "顾客按月付费访问内容库，而不是每看一次单独付款，主要属于什么？",
+            "en": "Customers pay monthly for access to a content library rather than paying per viewing. What is this primarily?"
+          },
+          "options": [
+            {
+              "zh": "按次观看模式",
+              "en": "Pay-per-view"
+            },
+            {
+              "zh": "只按广告点击收费",
+              "en": "Advertising CPC only"
+            },
+            {
+              "zh": "订阅模式",
+              "en": "A subscription model"
+            },
+            {
+              "zh": "只靠成交抽佣",
+              "en": "Transaction commission only"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "按期间持续访问对应订阅；单次访问、广告点击和平台成交分别构成不同收费依据。",
+            "en": "Period-based continuing access is subscription; individual views, ad clicks and platform transactions have different charging bases."
+          },
+          "pages": [
+            22,
+            24
+          ]
+        },
+        {
+          "id": "material-49-q-affiliate",
+          "conceptIds": [
+            "material-49-affiliate"
+          ],
+          "prompt": {
+            "zh": "按本页的销售型联盟示例，哪一事件触发分佣？",
+            "en": "In this slide’s sales-based affiliate example, what triggers commission?"
+          },
+          "options": [
+            {
+              "zh": "只看到产品图片",
+              "en": "Only viewing the product image"
+            },
+            {
+              "zh": "只点击链接但没有购买",
+              "en": "Only clicking without purchasing"
+            },
+            {
+              "zh": "推广者每月自动支付订阅费",
+              "en": "The promoter automatically paying a monthly subscription"
+            },
+            {
+              "zh": "通过推荐链接完成购买",
+              "en": "Completing a purchase through the referral link"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "图中把点击连接到最终购买，再分配销售额；应与只按点击计费的CPC区分。",
+            "en": "The diagram connects the referral click to a completed purchase and sale share; distinguish it from CPC paid solely by click."
+          },
+          "pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "id": "material-49-q-model-map",
+          "conceptIds": [
+            "material-49-model-map"
+          ],
+          "prompt": {
+            "zh": "同一平台同时出现在“按需”和“双边市场”，最合理的解释是什么？",
+            "en": "Why might a platform appear under both “on-demand” and “two-sided marketplace”?"
+          },
+          "options": [
+            {
+              "zh": "前者描述服务获取方式，后者描述参与者结构，两者可以共存",
+              "en": "One describes service delivery and the other participant structure, so they can coexist"
+            },
+            {
+              "zh": "任何平台只能有一种商业模式标签，图必然无效",
+              "en": "Every platform can have only one label, making the map invalid"
+            },
+            {
+              "zh": "双边市场表示每次必须向两边收相同费用",
+              "en": "Two-sided means charging both sides the same fee every time"
+            },
+            {
+              "zh": "按需服务必然只能靠订阅收费",
+              "en": "On-demand service must be funded only by subscriptions"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "图不是互斥的单轴分类；结构、交付与收入来源应分别辨别，不能从一个标签推导唯一收费方式。",
+            "en": "The map is not a mutually exclusive single-axis taxonomy; structure, delivery and revenue sources should be distinguished rather than deriving one mandatory fee model."
+          },
+          "pages": [
+            25
+          ]
+        },
+        {
+          "id": "material-49-q-ad-supported",
+          "conceptIds": [
+            "material-49-ad-supported"
+          ],
+          "prompt": {
+            "zh": "一个平台对用户免费、主要向广告主收费，应怎样理解？",
+            "en": "A platform is free to users and earns mainly from advertisers. How should it be understood?"
+          },
+          "options": [
+            {
+              "zh": "免费用户意味着平台没有收入模型",
+              "en": "Free users mean the platform has no revenue model"
+            },
+            {
+              "zh": "用户与主要付款方不同，广告主为接触受众付费",
+              "en": "Users differ from the main payer; advertisers pay to reach the audience"
+            },
+            {
+              "zh": "广告主购买的必然是实物商品",
+              "en": "Advertisers must be purchasing physical goods"
+            },
+            {
+              "zh": "广告为主意味着不允许其他收入来源",
+              "en": "Advertising dominance prohibits other revenue sources"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "收入分析先识别付款方；平台可同时有多种收入，不能把使用免费等同于没有变现。",
+            "en": "Revenue analysis starts with the payer; platforms can combine sources, so free use does not imply no monetisation."
+          },
+          "pages": [
+            6,
+            26
+          ]
+        },
+        {
+          "id": "material-49-q-cpc-roles",
+          "conceptIds": [
+            "material-49-cpc-roles"
+          ],
+          "prompt": {
+            "zh": "按第27页图片，网站所有者提供位置展示他人广告，属于哪一角色？",
+            "en": "In slide 27’s image, the site owner provides placement for others’ ads. Which role is this?"
+          },
+          "options": [
+            {
+              "zh": "购买广告流量的广告主",
+              "en": "Advertiser buying reach"
+            },
+            {
+              "zh": "按月购买内容访问的订阅者",
+              "en": "Subscriber purchasing monthly access"
+            },
+            {
+              "zh": "广告发布者／publisher",
+              "en": "Ad publisher"
+            },
+            {
+              "zh": "出售推荐商品本身的制造商",
+              "en": "Manufacturer selling the referred product itself"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "图片从网站发布者角度解释广告收入；标题与图片品牌不同，角色判断应以实际业务流程为准。",
+            "en": "The image explains revenue from the publisher’s perspective; despite the heading/image naming difference, identify roles from the actual workflow."
+          },
+          "pages": [
+            22,
+            27
+          ]
+        },
+        {
+          "id": "material-49-q-cpm",
+          "conceptIds": [
+            "material-49-cpm"
+          ],
+          "prompt": {
+            "zh": "若示例约定CPM为RM8，计费展示25,000次，费用是多少？",
+            "en": "If an example agreement sets CPM at RM8 for 25,000 billable impressions, what is the fee?"
+          },
+          "options": [
+            {
+              "zh": "RM8",
+              "en": "RM8"
+            },
+            {
+              "zh": "RM3,125",
+              "en": "RM3,125"
+            },
+            {
+              "zh": "RM200,000",
+              "en": "RM200,000"
+            },
+            {
+              "zh": "RM200",
+              "en": "RM200"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "25,000÷1,000×8=200；CPM的单位是每千次展示，不是每次展示或每次点击。",
+            "en": "25,000 ÷ 1,000 × 8 = 200. CPM is per thousand impressions, not per impression or click."
+          },
+          "pages": [
+            28
+          ]
+        },
+        {
+          "id": "material-49-q-payment-bases",
+          "conceptIds": [
+            "material-49-cpc-roles",
+            "material-49-cpm",
+            "material-49-affiliate"
+          ],
+          "prompt": {
+            "zh": "哪一组正确对应课件示例中的计费/分佣事件？",
+            "en": "Which correctly maps charging/commission events in the slide examples?"
+          },
+          "options": [
+            {
+              "zh": "CPC—点击；CPM—千次展示；销售型联盟—推荐后成交",
+              "en": "CPC—clicks; CPM—thousand impressions; sales affiliate—referred purchases"
+            },
+            {
+              "zh": "CPC—购买；CPM—点击；联盟—任何页面浏览",
+              "en": "CPC—purchases; CPM—clicks; affiliate—any page view"
+            },
+            {
+              "zh": "CPC—千次展示；CPM—订阅；联盟—固定赞助",
+              "en": "CPC—thousand impressions; CPM—subscriptions; affiliate—fixed sponsorship"
+            },
+            {
+              "zh": "三者都只根据同一网站的独立访客数",
+              "en": "All three depend only on the site’s unique-visitor count"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "三种模式分别按不同事件结算；不能把曝光、点击和成交当成同一个转化步骤。",
+            "en": "They settle on different events; exposure, clicking and purchasing are distinct steps, not interchangeable conversions."
+          },
+          "pages": [
+            23,
+            27,
+            28
+          ]
+        },
+        {
+          "id": "material-49-q-programmatic-beacon",
+          "conceptIds": [
+            "material-49-programmatic-beacon"
+          ],
+          "prompt": {
+            "zh": "“自动安排广告购买”与“顾客接近门店时触达”分别更接近什么？",
+            "en": "“Automated ad buying” and “contact near a store” respectively align with what?"
+          },
+          "options": [
+            {
+              "zh": "信标广告；程序化广告",
+              "en": "Beacon; programmatic advertising"
+            },
+            {
+              "zh": "程序化广告；信标广告",
+              "en": "Programmatic; beacon advertising"
+            },
+            {
+              "zh": "CPM；按次观看",
+              "en": "CPM; pay-per-view"
+            },
+            {
+              "zh": "联盟分佣；固定赞助",
+              "en": "Affiliate commission; fixed sponsorship"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "两者按投放机制区分；CPM、按次观看等是不同层次的收费或访问方式。",
+            "en": "The distinction concerns delivery mechanisms; CPM and pay-per-view describe charging or access at a different level."
+          },
+          "pages": [
+            29
+          ]
+        },
+        {
+          "id": "material-49-q-social-mobile-buy",
+          "conceptIds": [
+            "material-49-social-mobile-buy"
+          ],
+          "prompt": {
+            "zh": "移动社交页面内可直接点击购买，哪种理解最准确？",
+            "en": "A mobile social page includes a direct buy button. Which interpretation is most accurate?"
+          },
+          "options": [
+            {
+              "zh": "有购买按钮就不再属于社交广告",
+              "en": "A buy button makes it no longer social advertising"
+            },
+            {
+              "zh": "移动广告只能按订阅收费",
+              "en": "Mobile advertising can only use subscriptions"
+            },
+            {
+              "zh": "设备、渠道与购买交互三个层次组合在一起",
+              "en": "Device, channel and purchase interaction are combined"
+            },
+            {
+              "zh": "买按钮本身保证所有点击成为销售",
+              "en": "A buy button guarantees every click becomes a sale"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "这些标签描述不同层次；减少步骤可以改善路径，但不保证成交或限定收费模式。",
+            "en": "The labels concern different levels; fewer steps may improve the path but neither guarantee sales nor determine the payment model."
+          },
+          "pages": [
+            29
+          ]
+        },
+        {
+          "id": "material-49-q-video-vr-native",
+          "conceptIds": [
+            "material-49-video-vr-native"
+          ],
+          "prompt": {
+            "zh": "广告以接近所在资讯页面的内容形式呈现，最贴近哪项？",
+            "en": "An ad is presented in a format resembling the surrounding editorial environment. Which is closest?"
+          },
+          "options": [
+            {
+              "zh": "信标广告",
+              "en": "Beacon advertising"
+            },
+            {
+              "zh": "仅凭格式即可认定为非商业内容",
+              "en": "Noncommercial content determined by format alone"
+            },
+            {
+              "zh": "按次观看收费",
+              "en": "Pay-per-view"
+            },
+            {
+              "zh": "原生广告",
+              "en": "Native advertising"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "原生描述呈现形式；接近内容样式不改变其广告性质，计费与位置触发也属于不同维度。",
+            "en": "Native describes presentation; matching content style does not remove its advertising nature, and charging/proximity are different dimensions."
+          },
+          "pages": [
+            29
+          ]
+        },
+        {
+          "id": "material-49-q-content-types",
+          "conceptIds": [
+            "material-49-content-types"
+          ],
+          "prompt": {
+            "zh": "比较新闻站与教育站时，哪种评价更有依据？",
+            "en": "Which evaluation is better grounded when comparing news and educational sites?"
+          },
+          "options": [
+            {
+              "zh": "分别检查事件报道与学习任务是否得到有效支持",
+              "en": "Check how well each supports event reporting and learning tasks respectively"
+            },
+            {
+              "zh": "只看是否都采用相同布局",
+              "en": "Judge only whether both use the same layout"
+            },
+            {
+              "zh": "所有网站都只按购物车完成率评价",
+              "en": "Evaluate every site only by cart completion"
+            },
+            {
+              "zh": "只要有长篇文字就属于教育站",
+              "en": "Classify any long-text site as educational"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "网站类型服务不同任务，设计评价应与任务对应；单一形式或购物指标不能替代目的分析。",
+            "en": "Site types serve different tasks, so design evaluation should match them; one visual form or shopping metric cannot replace purpose analysis."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-49-q-portal-aggregator",
+          "conceptIds": [
+            "material-49-portal-aggregator"
+          ],
+          "prompt": {
+            "zh": "一个站点把多个来源的文章集中展示，最直接体现哪一种类型？",
+            "en": "A site collects articles from multiple sources for display. Which type is most directly illustrated?"
+          },
+          "options": [
+            {
+              "zh": "纯Web应用工具",
+              "en": "Pure web application tool"
+            },
+            {
+              "zh": "内容聚合网站",
+              "en": "Content aggregator"
+            },
+            {
+              "zh": "个人身份介绍页",
+              "en": "Personal profile site"
+            },
+            {
+              "zh": "倡议网站",
+              "en": "Advocacy site"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "跨来源内容汇集是聚合的特征；执行工具任务、个人展示和支持议题是不同主要目的。",
+            "en": "Bringing together cross-source content defines aggregation; tool execution, personal presentation and cause advocacy have different primary purposes."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-49-q-participation-sites",
+          "conceptIds": [
+            "material-49-participation-sites"
+          ],
+          "prompt": {
+            "zh": "以多人共同编辑和维护知识条目为核心，最贴近哪种网站？",
+            "en": "Which type centres on multiple people collaboratively editing and maintaining knowledge entries?"
+          },
+          "options": [
+            {
+              "zh": "以个人连续文章为主的博客",
+              "en": "A blog centred on one person’s continuing posts"
+            },
+            {
+              "zh": "以个人身份和作品展示为主的网站",
+              "en": "A personal identity/portfolio site"
+            },
+            {
+              "zh": "Wiki",
+              "en": "Wiki"
+            },
+            {
+              "zh": "只展示公司商品与服务的营销站",
+              "en": "A marketing site displaying company offerings"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "协作编辑知识是Wiki的核心机制；博客、个人展示与商业推广的主要组织逻辑不同。",
+            "en": "Collaborative knowledge editing is the key wiki mechanism; blogs, personal presentation and commercial promotion use different organising logic."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-49-q-social-vs-blog",
+          "conceptIds": [
+            "material-49-participation-sites"
+          ],
+          "prompt": {
+            "zh": "以用户关系、互相交流为核心，而不是以某位作者的连续文章为核心，最贴近什么？",
+            "en": "A site centres on user relationships and interaction rather than one author’s continuing posts. Which type is closest?"
+          },
+          "options": [
+            {
+              "zh": "个人博客",
+              "en": "Personal blog"
+            },
+            {
+              "zh": "静态个人作品展示",
+              "en": "Static personal portfolio"
+            },
+            {
+              "zh": "只聚合外部新闻的页面",
+              "en": "A page only aggregating external news"
+            },
+            {
+              "zh": "在线社交网络",
+              "en": "Online social network"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "区别在参与机制：社交网络围绕用户之间的关系，博客围绕发布者的文章序列；二者可以共享某些界面功能。",
+            "en": "The distinction is participation: a network centres on relationships among users, while a blog centres on a publisher’s post sequence, even if some interface features overlap."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-49-q-functional-sites",
+          "conceptIds": [
+            "material-49-functional-sites"
+          ],
+          "prompt": {
+            "zh": "用户主要在浏览器里编辑文件并完成任务，最直接属于哪类？",
+            "en": "Users mainly edit files and complete tasks in the browser. Which type most directly fits?"
+          },
+          "options": [
+            {
+              "zh": "Web应用",
+              "en": "Web application"
+            },
+            {
+              "zh": "新闻报道网站",
+              "en": "News site"
+            },
+            {
+              "zh": "只展示个人简介的网站",
+              "en": "Personal biography site"
+            },
+            {
+              "zh": "只汇集文章来源的聚合页",
+              "en": "An article-source aggregation page"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "任务执行与交互功能是Web应用的核心；它可以商业化，但收入方式与网站功能类型仍需区分。",
+            "en": "Task execution and interactive functionality are central to a web application; it may be commercial, but monetisation and functional site type remain distinct."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-49-q-first-impression",
+          "conceptIds": [
+            "material-49-first-impression"
+          ],
+          "prompt": {
+            "zh": "公司想提升网站初次访问时的可信度，应怎样理解该页？",
+            "en": "A firm wants to improve credibility on first visits. How should the slide be interpreted?"
+          },
+          "options": [
+            {
+              "zh": "只要达到图中的百分比，任何设计都会成功",
+              "en": "Any design succeeds once the illustrated percentage is reached"
+            },
+            {
+              "zh": "检查设计是否清楚、专业并支持顾客了解业务",
+              "en": "Examine whether design is clear, professional and helps customers understand the business"
+            },
+            {
+              "zh": "网站设计与购买前信息研究完全无关",
+              "en": "Design is unrelated to pre-purchase research"
+            },
+            {
+              "zh": "把三项百分比相加得到购买成功率",
+              "en": "Add the three percentages to obtain a purchase-success rate"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "图中的百分比对应不同问题，不能相加成转化率；可采取的方向是改善访问者的理解与信任。",
+            "en": "The percentages address different questions and cannot be summed into conversion; the actionable direction is improved understanding and trust."
+          },
+          "pages": [
+            32
+          ]
+        },
+        {
+          "id": "material-49-q-ux-value",
+          "conceptIds": [
+            "material-49-ux-value"
+          ],
+          "prompt": {
+            "zh": "重新设计结算流程后，哪种证据更能检验体验是否改善？",
+            "en": "After redesigning checkout, what better evaluates whether experience improved?"
+          },
+          "options": [
+            {
+              "zh": "直接把投入乘以100作为已经实现的回报",
+              "en": "Multiply spending by 100 and record it as realised return"
+            },
+            {
+              "zh": "只计算新页面使用了多少种颜色",
+              "en": "Count only how many colours the new pages use"
+            },
+            {
+              "zh": "观察用户是否更顺利地理解并完成购买任务",
+              "en": "Observe whether users understand and complete purchasing more successfully"
+            },
+            {
+              "zh": "只检查页面是否比原来更长",
+              "en": "Check only whether pages are longer than before"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "用户体验应连接任务结果；课件的宽泛回报宣称不是对项目的实测值，装饰数量也不是体验成果。",
+            "en": "UX should connect to task outcomes; the broad return claim is not a measured result for the project, and decoration counts are not experience outcomes."
+          },
+          "pages": [
+            33
+          ]
+        },
+        {
+          "id": "material-49-q-style-guide",
+          "conceptIds": [
+            "material-49-style-guide"
+          ],
+          "prompt": {
+            "zh": "同类按钮在各页面的悬停与选中状态完全不同，应如何改善？",
+            "en": "Equivalent buttons show unrelated hover/selected states across pages. What should improve them?"
+          },
+          "options": [
+            {
+              "zh": "让所有文本都看起来像按钮",
+              "en": "Make all text look like buttons"
+            },
+            {
+              "zh": "只更换logo而不统一控件行为线索",
+              "en": "Only change the logo without aligning control cues"
+            },
+            {
+              "zh": "取消全部状态差异以追求一致",
+              "en": "Remove all state differences in pursuit of consistency"
+            },
+            {
+              "zh": "用共同样式指南定义相同角色与状态的规则",
+              "en": "Use shared style-guide rules for equivalent roles and states"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "一致性要保持同一角色规则，同时保留状态与层级区别；不是把所有元素压成同一种外观。",
+            "en": "Consistency preserves rules for equivalent roles while retaining state and hierarchy distinctions; it is not visual uniformity for every element."
+          },
+          "pages": [
+            34
+          ]
+        },
+        {
+          "id": "material-49-q-colour-palette",
+          "conceptIds": [
+            "material-49-colour-palette"
+          ],
+          "prompt": {
+            "zh": "设计者依据色轮决定所有购买按钮必须用红色并保证销量提高，问题是什么？",
+            "en": "A designer uses the colour wheel to claim all buy buttons must be red and sales are guaranteed to rise. What is the problem?"
+          },
+          "options": [
+            {
+              "zh": "图只提示配色选择，没有给出颜色与必然销量的规则",
+              "en": "The figure prompts palette choices but establishes no guaranteed colour–sales rule"
+            },
+            {
+              "zh": "网站设计完全不需要考虑颜色",
+              "en": "Website design never needs colour choices"
+            },
+            {
+              "zh": "样式指南只适用于纸质目录",
+              "en": "Style guides apply only to printed catalogs"
+            },
+            {
+              "zh": "只要所有颜色不同，就一定更易使用",
+              "en": "Different colours for every element necessarily improve usability"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "配色要服务品牌、可读性与一致性；该页没有可支持绝对转化承诺的证据。",
+            "en": "Colour should serve brand, readability and consistency; the slide provides no evidence for an absolute conversion promise."
+          },
+          "pages": [
+            34,
+            35
+          ]
+        },
+        {
+          "id": "material-49-q-differentiation",
+          "conceptIds": [
+            "material-49-differentiation"
+          ],
+          "prompt": {
+            "zh": "哪种做法更符合这张截图对“突出特色”的示范？",
+            "en": "Which approach best matches the screenshot’s demonstration of distinctiveness?"
+          },
+          "options": [
+            {
+              "zh": "为了独特而隐藏导航与搜索",
+              "en": "Hide navigation and search to be distinctive"
+            },
+            {
+              "zh": "把品牌主视觉、清楚价值表达与明确购买入口结合",
+              "en": "Combine distinctive imagery, a clear value message and an obvious shopping action"
+            },
+            {
+              "zh": "只增加动画，移除商品信息",
+              "en": "Add animation while removing product information"
+            },
+            {
+              "zh": "复制竞争者每个细节即可自动形成辨识度",
+              "en": "Copy every competitor detail to guarantee distinctiveness"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "图中视觉特色和清楚行动并存；差异化不能以阻碍找货和理解为代价。",
+            "en": "The screenshot combines visual identity and clear action; differentiation should not obstruct discovery or understanding."
+          },
+          "pages": [
+            36
+          ]
+        },
+        {
+          "id": "material-49-q-audience-devices",
+          "conceptIds": [
+            "material-49-audience-devices"
+          ],
+          "prompt": {
+            "zh": "目标顾客主要用手机，设计验收应优先包含什么？",
+            "en": "Target customers mainly use phones. What should design acceptance especially include?"
+          },
+          "options": [
+            {
+              "zh": "只检查大屏电脑截图是否漂亮",
+              "en": "Check only attractive desktop screenshots"
+            },
+            {
+              "zh": "把电脑页面等比例截图当作所有手机体验",
+              "en": "Treat a scaled desktop screenshot as the entire mobile experience"
+            },
+            {
+              "zh": "在手机上验证实际浏览、理解与购买任务",
+              "en": "Validate real browsing, comprehension and purchasing tasks on phones"
+            },
+            {
+              "zh": "只统计采用了多少新技术名称",
+              "en": "Count only the number of new technology names"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "设计应服务真实受众和使用条件；静态截图或技术清单不能代替任务体验检查。",
+            "en": "Design should serve the actual audience and conditions; static screenshots or technology lists do not replace task checks."
+          },
+          "pages": [
+            31,
+            39
+          ]
+        },
+        {
+          "id": "material-49-q-acquisition",
+          "conceptIds": [
+            "material-49-acquisition"
+          ],
+          "prompt": {
+            "zh": "营销邮件介绍某款商品，哪种策略最直接支持吸引相关访客？",
+            "en": "A marketing email introduces one product. Which strategy most directly attracts relevant visitors?"
+          },
+          "options": [
+            {
+              "zh": "只在页面上展示公司获奖记录而不提供入口",
+              "en": "Show awards without an access link"
+            },
+            {
+              "zh": "仅把后台目录格式转换为另一种格式",
+              "en": "Only convert the back-office catalog format"
+            },
+            {
+              "zh": "先改变订阅价再判断是否需要链接",
+              "en": "Change subscription price before deciding whether to link"
+            },
+            {
+              "zh": "提供通往相关网站页面的明确链接",
+              "en": "Provide a clear link to the relevant site page"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "该目标的直接策略是把营销触点连接到网站；奖项、格式和价格可能服务其他目的，但不提供这里所需的入口。",
+            "en": "The direct strategy connects the marketing touchpoint to the site; awards, formats and prices may serve other purposes but do not supply this entry point."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-49-q-explore-navigation",
+          "conceptIds": [
+            "material-49-explore-navigation"
+          ],
+          "prompt": {
+            "zh": "用户不知道“点击这里”会打开什么，最直接应改善什么？",
+            "en": "Users cannot tell what “click here” opens. What should be improved most directly?"
+          },
+          "options": [
+            {
+              "zh": "用能预示目标信息的清楚链接标签",
+              "en": "Use clear link labels that preview destination information"
+            },
+            {
+              "zh": "仅增加更多不带说明的链接",
+              "en": "Add more unexplained links"
+            },
+            {
+              "zh": "把所有商品评论移除以减少文字",
+              "en": "Remove all reviews to reduce text"
+            },
+            {
+              "zh": "只把品牌logo放大",
+              "en": "Only enlarge the brand logo"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "问题是链接的信息线索不足；更多同样模糊的入口和视觉放大都不能解释去向。",
+            "en": "The problem is insufficient link information; more ambiguous links and larger visuals do not explain destinations."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-49-q-engagement-strategy",
+          "conceptIds": [
+            "material-49-explore-navigation"
+          ],
+          "prompt": {
+            "zh": "访客已到达商品区，却缺少理由继续了解，表中哪组策略更直接？",
+            "en": "Visitors reach products but lack reasons to explore further. Which table strategy is more direct?"
+          },
+          "options": [
+            {
+              "zh": "只发送更多邮件链接",
+              "en": "Only send more email links"
+            },
+            {
+              "zh": "提供评论、比较功能与使用建议",
+              "en": "Offer reviews, comparison features and usage advice"
+            },
+            {
+              "zh": "只调整CPM单价",
+              "en": "Only adjust the CPM price"
+            },
+            {
+              "zh": "隐藏商品说明以制造悬念",
+              "en": "Hide descriptions to create suspense"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "这些内容帮助访客判断和使用产品，直接服务停留探索；引流或计费调整不等于改善站内信息价值。",
+            "en": "These resources help visitors evaluate and use products, directly supporting exploration; acquisition and pricing changes do not add on-site information value."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-49-q-brand-trust",
+          "conceptIds": [
+            "material-49-brand-trust"
+          ],
+          "prompt": {
+            "zh": "页面视觉一致但产品说法缺少依据，最直接缺少哪项信任策略？",
+            "en": "A visually consistent page makes unsupported product claims. Which trust strategy is most directly missing?"
+          },
+          "options": [
+            {
+              "zh": "只把logo在更多位置重复",
+              "en": "Only repeat the logo in more places"
+            },
+            {
+              "zh": "仅增大口号字体",
+              "en": "Only enlarge slogan text"
+            },
+            {
+              "zh": "确保信息有效、客观且可依赖",
+              "en": "Ensure valid, objective and dependable information"
+            },
+            {
+              "zh": "把所有外部评论替换为品牌颜色",
+              "en": "Replace external reviews with brand colours"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "品牌一致与事实可信是不同目标；重复视觉元素不能弥补信息质量问题。",
+            "en": "Brand consistency and factual credibility are different objectives; repeated visuals cannot compensate for weak information quality."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-49-q-reputation-strategy",
+          "conceptIds": [
+            "material-49-brand-trust"
+          ],
+          "prompt": {
+            "zh": "公司要强化访客已有的正面印象，表中哪项最匹配？",
+            "en": "To reinforce an existing positive impression, which strategy best matches the table?"
+          },
+          "options": [
+            {
+              "zh": "只为每条链接使用相同的“更多”文字",
+              "en": "Label every link simply “more”"
+            },
+            {
+              "zh": "用浏览量代替产品事实说明",
+              "en": "Replace product facts with traffic counts"
+            },
+            {
+              "zh": "仅增加广告展示次数",
+              "en": "Only increase ad impressions"
+            },
+            {
+              "zh": "提供真实评价、奖项信息与相关外部评论",
+              "en": "Provide testimonials, award information and relevant external reviews"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "表把声誉证明与强化正面印象对应；链接标签、流量和广告曝光并不是同一证据。",
+            "en": "The table pairs reputation evidence with reinforcing positive impressions; link labels, traffic and exposure are not equivalent evidence."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-49-q-return-visits",
+          "conceptIds": [
+            "material-49-return-visits"
+          ],
+          "prompt": {
+            "zh": "哪项最直接对应“鼓励访客再次访问”的目标？",
+            "en": "Which action most directly matches the objective of encouraging return visits?"
+          },
+          "options": [
+            {
+              "zh": "持续提供并更新相关的当前信息",
+              "en": "Provide and regularly update relevant current information"
+            },
+            {
+              "zh": "只在上线当天发布一次资料",
+              "en": "Publish information only once at launch"
+            },
+            {
+              "zh": "保留过期价格以免改变页面",
+              "en": "Keep expired prices to avoid page changes"
+            },
+            {
+              "zh": "仅记录第一次邮件点击数",
+              "en": "Only count initial email clicks"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "再次访问需要持续价值和时效；一次发布、过期信息或首次引流指标不足以支持该目标。",
+            "en": "Return visits need continuing value and currency; a single publication, stale information or initial acquisition metrics do not fulfil that aim."
+          },
+          "pages": [
+            37
+          ]
+        },
+        {
+          "id": "material-49-q-accessibility-goals",
+          "conceptIds": [
+            "material-49-accessibility-goals"
+          ],
+          "prompt": {
+            "zh": "网站介绍和产品资料齐全，但访客无法向企业提出问题或获得回应，最直接缺哪项目标？",
+            "en": "A site has organisation and product information but no way to ask questions and receive responses. Which goal is most directly missing?"
+          },
+          "options": [
+            {
+              "zh": "只有更多单向宣传内容",
+              "en": "Merely more one-way promotional content"
+            },
+            {
+              "zh": "有意义的双向互动沟通",
+              "en": "Meaningful two-way interactive communication"
+            },
+            {
+              "zh": "只能采用一种浏览路径",
+              "en": "Restricting visitors to one browsing path"
+            },
+            {
+              "zh": "必须改为按次观看收费",
+              "en": "A mandatory change to pay-per-view"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "信息可获取与双向交流是不同目标；增加单向内容不能自动建立互动渠道。",
+            "en": "Information availability and two-way communication are distinct goals; adding one-way content does not automatically create interaction."
+          },
+          "pages": [
+            38
+          ]
+        },
+        {
+          "id": "material-49-q-accessibility-paths",
+          "conceptIds": [
+            "material-49-accessibility-goals",
+            "material-49-audience-devices"
+          ],
+          "prompt": {
+            "zh": "新访客想看概览，熟悉产品的顾客想查详细用法，应怎样设计？",
+            "en": "New visitors want an overview while experienced customers want detailed usage guidance. How should the site respond?"
+          },
+          "options": [
+            {
+              "zh": "所有人必须先完整读完同一长页",
+              "en": "Require everyone to read the same entire long page"
+            },
+            {
+              "zh": "只提供概览，删除所有详细信息",
+              "en": "Provide only an overview and remove details"
+            },
+            {
+              "zh": "提供不同深度的信息路径，并以目标受众任务检验可用性",
+              "en": "Provide paths at different depths and test usability against audience tasks"
+            },
+            {
+              "zh": "只提供技术细节而不允许快速了解",
+              "en": "Provide only technical detail without a quick overview"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "课件要求不同方式和层次的体验，同时让产品与使用信息容易获取；受众不同不意味着只能选一种深度。",
+            "en": "The slides call for different ways/levels of experience and easy access to usage information; different audiences do not require one universal depth."
+          },
+          "pages": [
+            38,
+            39
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1
+            ],
+            "reason": {
+              "zh": "章节标题与授课者信息；主题按标题Week 4保留，不以文件名误判。",
+              "en": "Chapter title and lecturer information; the Week 4 title is retained rather than inferred from the filename."
+            }
+          },
+          {
+            "pages": [
+              2,
+              3
+            ],
+            "reason": {
+              "zh": "学习目标预告；收入、渠道、设计及顾客连接已在实质页展开。",
+              "en": "Learning-objective previews; revenue, channels, design and customer connections are covered on substantive slides."
+            }
+          }
+        ]
+      }
     }
   ]
 }

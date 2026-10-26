@@ -10,8 +10,9 @@
 ## 功能
 
 - 用户名和密码登录；账号独立保存笔记、图片、进度和复习记录，共同读取课程资料。
-- 六门课程、48 份教学资源，按课程和课件／作业／Coursework 分类，支持搜索与学习进度。
-- 内置课件阅读：17 份原生 PDF 连续滚动，24 份 PPT 共 622 页按原版幻灯片翻页；两份 Word 转 PDF 阅读。视频和图片可以直接查看，ZIP 提供下载。
+- 六门课程、54 份教学资源，按课程和课件／作业／Coursework 分类，支持搜索与学习进度。
+- 内置课件阅读：18 份原生 PDF 连续滚动，28 份 PPT 共 793 页按原版幻灯片翻页；3 份 Word 转 PDF 阅读。视频和图片可以直接查看，ZIP 提供下载。
+- 首页和课程页提供本次新增资料入口；学习计划页展示共享的学校通知、考试时间和作业日期，个人计划仍由各账号独立维护。
 - 所有原文件保留下载入口。Office 预览为静态 PDF，动画和内嵌视频在预览中不播放；独立 MP4 可播放。
 - 笔记按六门课程独立整理，新建笔记自动归入当前课程。随课笔记保留课件关联。
 - Markdown 编辑器：桌面左右分栏，左边写 Markdown，右边展示真正 PDF；手机可在编辑与预览之间切换。
@@ -56,7 +57,9 @@ node scripts/seed-course-assets.mjs --verify-only
 
 prepare 脚本从上级六门课程目录定位原件，在 outputs/course-assets/ 生成按课程整理的原件和 PDF 预览，并生成 content/material-previews.json。Office 转换使用本机便携 LibreOffice，不修改原件。含视频的 PPT 预览保留静态封面，移除 PDF 视频动作以缩小体积。转换脚本会检查每份 PPT 的幻灯片数与 PDF 页数。
 
-seed 脚本只写本地 R2（没有远程模式），验证文件大小与 SHA256。当前 48 原件 + 26 预览共 74 对象，约 865 MiB。
+seed 脚本只写本地 R2（没有远程模式），验证文件大小与 SHA256。当前清单包含 54 原件 + 31 预览，共 85 对象；准备与上传脚本均从 catalog 和 manifest 推导数量，并验证完整性、唯一性与路径边界。
+
+prepare 按 SHA256 比较源文件与 staging，同大小的改版文件也会刷新并重新生成 Office 预览。未变化的已验证预览直接复用；转换失败时不在清单中发布过时的预览。
 
 ## 验证
 
@@ -68,7 +71,7 @@ npm run build
 
 覆盖口令哈希、会话 Cookie、同源校验、登录输入边界和限流窗口，以及间隔复习、备份结构、课程来源、图片格式与限额、用户图片隔离、视频/PDF Range、Unicode 下载文件名、Markdown 安全处理、中文 PDF 和图片嵌入。
 
-接口集成验证可运行 node --experimental-strip-types tests/account-api.integration.mjs，按隐藏标准输入提示提供两组 username/password。测试验证两个账号登录、笔记和图片隔离、旧窗口保护、全部 48 份共享课件、视频 Range 和退出后的会话撤销；测试笔记会恢复为原状态。报告只记录检查结果，不包含口令和 Cookie。设置 STUDY_TEST_URL 为正式站点 origin 可执行线上验证；不设置时测试 localhost。
+接口集成验证可运行 node --experimental-strip-types tests/account-api.integration.mjs，按隐藏标准输入提示提供两组 username/password。测试验证两个账号登录、笔记和图片隔离、旧窗口保护、当前 catalog 中的全部共享课件、视频 Range 和退出后的会话撤销；测试笔记会恢复为原状态。报告只记录检查结果，不包含口令和 Cookie。设置 STUDY_TEST_URL 为正式站点 origin 可执行线上验证；不设置时测试 localhost。
 
 浏览器验证：登录与退出、账号显示、课程隔离、Markdown 编辑和自动保存、图片上传与 PDF 预览、带图 PDF 下载、Markdown 图片包下载、原版 PPT 翻页与页码边界、PDF 连续阅读、手机布局。
 
@@ -79,13 +82,15 @@ npm run build
 - 本地数据目录 .wrangler/、转换工具 .sites-runtime/、准备素材 outputs/ 均已忽略。
 - JSON 备份不含图片二进制；单篇带图笔记请导出 Markdown 图片包，或导出 PDF。备份里的图片地址只在原站点和原账号下有效。
 - 笔记排版在浏览器内完成，不发送给第三方转换服务。首次生成会加载约 16 MB 的中文字体。
-- 课程目录排除学生联系表和个人提交文件。资料快照日期为 2026-10-21，不自动抓取 eLearn 更新。
+- 课程目录排除学生联系表和个人提交文件。最近课程目录核对日期记录在 catalog.snapshot；共享通知来源保存在 content/course-updates.json。外部 Codex 定时任务每三天通过学校已登录会话检查更新，登录过期时需恢复会话，网站本身不持有学校登录凭据。
 
 ## 发布状态
 
-2026-10-21 已发布到上方正式地址，源码同步到 Hbw1201/usm-study-studio 的 main 分支。更新网站时仍需执行 Sites 原生源码同步、保存版本和部署流程；向 GitHub 推送代码不会自动修改线上版本。
+网站使用上方正式地址，源码同步到 Hbw1201/usm-study-studio 的 main 分支。更新网站时执行 Sites 原生源码同步、保存版本和部署流程；向 GitHub 推送代码不会自动修改线上版本。同步报告保存在本地 outputs/sync-checks，只有正式部署、文件上传和两账号核验全部成功才记录完成。
 
-生产初始化使用 scripts/provision-production.mjs，通过隐藏 stdin 接收 {baseUrl,token,users}；users 只包含两个约定身份及密码哈希，不传明文密码。课件严格按照 74 个白名单对象导入，大文件按 16 MiB 分块，校验本地 SHA256、远端文件大小与摘要元数据。已存在的账号不会重置密码。
+生产初始化使用 scripts/provision-production.mjs，通过隐藏 stdin 接收 {baseUrl,token,users}；users 只包含两个约定身份及密码哈希，不传明文密码。课件严格按照当前 manifest 的完整白名单导入，大文件按 16 MiB 分块，校验本地 SHA256、远端文件大小与摘要元数据。已存在的账号不会重置密码。
+
+日常课程同步必须使用 {baseUrl,token,materialsOnly:true}，并省略 users。这种模式完全跳过账号写入，只有远端对象的大小与 SHA256 都匹配时才跳过上传；个人 workspace 与上传图片不属于同步对象。
 
 初始化接口默认返回 404；只有配置强随机 STUDY_PROVISION_TOKEN 运行时秘密后才临时启用。数据导入后删除该秘密并重新部署即可关闭入口。所有本地原课件和旧试用记录继续保留，源码仓库不包含数据库、会话、密码或课程二进制。
 

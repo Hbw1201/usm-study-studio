@@ -10,9 +10,11 @@ test('provisioning fails closed without a strong secret and rejects wrong bearer
   assert.equal(await authorizedProvisionToken('Bearer '+'b'.repeat(64),secret),false);
   assert.equal(await authorizedProvisionToken(secret,secret),false);
 });
-test('course whitelist contains all 74 objects and only accepts original source digests',async()=>{
-  const index=provisionAssetIndex(JSON.parse(await readFile(new URL('../content/material-previews.json',import.meta.url),'utf8')));
-  assert.equal(index.size,74);assert.equal([...index.values()].reduce((sum,item)=>sum+item.bytes,0),906619744);
+test('course whitelist derives all objects from the current manifest and checks original digests',async()=>{
+  const manifest=JSON.parse(await readFile(new URL('../content/material-previews.json',import.meta.url),'utf8'));
+  const expected=manifest.materials.flatMap(m=>[m.original,...(m.preview?[m.preview]:[])]),index=provisionAssetIndex(manifest);
+  assert.equal(index.size,expected.length);assert.deepEqual([...index.keys()].sort(),expected.map(asset=>asset.key).sort());
+  assert.equal([...index.values()].reduce((sum,item)=>sum+item.bytes,0),expected.reduce((sum,item)=>sum+item.bytes,0));
   assert.equal(index.has('../notes/private.png'),false);
   const original=[...index.values()].find(item=>item.sha256);
   assert.equal(validateDigest(original,original.sha256),original.sha256);

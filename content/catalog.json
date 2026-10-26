@@ -1,5 +1,5 @@
 {
-  "snapshot": "2026-10-21",
+  "snapshot": "2026-10-26",
   "courses": [
     {
       "code": "AKP202W",
@@ -572,6 +572,66 @@
       "category": "课件",
       "bytes": 137920,
       "url": "https://elearning.usm.my/sidang2627/course/view.php?id=2210"
+    },
+    {
+      "id": "material-48",
+      "courseId": "AKP202W",
+      "title": "Week Four Lecture, tutorial, and attendance form",
+      "fileName": "Week Four Lecture Slides.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 834214,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=55732"
+    },
+    {
+      "id": "material-49",
+      "courseId": "CAT402W",
+      "title": "Week 4 Selling on the Web",
+      "fileName": "WEEK 3 (1) (1) (2) (1) (3).pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 6472228,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=54892"
+    },
+    {
+      "id": "material-50",
+      "courseId": "CPC357W",
+      "title": "Chapter 5",
+      "fileName": "5 - IoT Circuit.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 4326413,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=56560"
+    },
+    {
+      "id": "material-51",
+      "courseId": "CPC357W",
+      "title": "Lab sheet 5",
+      "fileName": "CPC357 - Lab Sheet 5 (NodeMCU).pdf",
+      "ext": "pdf",
+      "category": "作业",
+      "bytes": 386720,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=56561"
+    },
+    {
+      "id": "material-52",
+      "courseId": "CST435W",
+      "title": "Assignment 1",
+      "fileName": "ASSIGNMENT 1 CST435W (1).docx",
+      "ext": "docx",
+      "category": "作业",
+      "bytes": 14250,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=54615"
+    },
+    {
+      "id": "material-53",
+      "courseId": "CST435W",
+      "title": "Parallel Software Design",
+      "fileName": "4ParallelSoftware2026.pptx",
+      "ext": "pptx",
+      "category": "课件",
+      "bytes": 3650691,
+      "url": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=54620"
     }
   ]
 }

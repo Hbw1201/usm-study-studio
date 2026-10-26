@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-10-26",
+  "newResourceIds": [
+    "material-48",
+    "material-49",
+    "material-50",
+    "material-51",
+    "material-52",
+    "material-53"
+  ],
+  "notices": [
+    {
+      "id": "cat402-55022",
+      "courseId": "CAT402W",
+      "title": "Week 2 & 3 测验 / Quiz",
+      "dueAt": "2026-10-26T23:59:00+08:00",
+      "details": "10 道选择题，限时 15 分钟，最多 2 次，取最高分；不能返回上一题。请在 USM 完成正式测验。",
+      "source": "https://elearning.usm.my/sidang2627/mod/quiz/view.php?id=55022"
+    },
+    {
+      "id": "cmt322-test1-3022",
+      "courseId": "CMT322W",
+      "title": "Test 1 · Exam Hall 1",
+      "dueAt": "2026-11-02T09:00:00+08:00",
+      "details": "教师公告：11 月 2 日 09:00–10:00，Exam Hall 1，40 道选择题，范围至 Chapter 04 Modelling Web Apps。",
+      "source": "https://elearning.usm.my/sidang2627/mod/forum/discuss.php?d=3022"
+    },
+    {
+      "id": "cst435-test1-2026",
+      "courseId": "CST435W",
+      "title": "Test 1",
+      "dueAt": "2026-11-05T14:00:00+08:00",
+      "details": "学校课程页面列出的考试时间为 2026 年 11 月 5 日 14:00–15:00。",
+      "source": "https://elearning.usm.my/sidang2627/course/section.php?id=20209"
+    },
+    {
+      "id": "cpc357-48524",
+      "courseId": "CPC357W",
+      "title": "Assignment 1 提交",
+      "dueAt": "2026-11-13T23:59:00+08:00",
+      "details": "作业页面截止时间：11 月 13 日 23:59；附件 CPC357 - Assignment 1_v1.pdf 已在资料库中。",
+      "source": "https://elearning.usm.my/sidang2627/mod/assign/view.php?id=48524"
+    },
+    {
+      "id": "cat405-56543",
+      "courseId": "CAT405W",
+      "title": "SRD 报告提交 / System Requirement and Design",
+      "dueAt": "2026-11-23T23:59:00+08:00",
+      "details": "新增 SRD 报告提交入口，截止 11 月 23 日 23:59。此入口当前未附加新文件，要求和模板见课程已有指南。",
+      "source": "https://elearning.usm.my/sidang2627/mod/assign/view.php?id=56543"
+    },
+    {
+      "id": "cmt322-test2-3023",
+      "courseId": "CMT322W",
+      "title": "Test 2 · Room 411 (LT)",
+      "dueAt": "2026-12-14T09:00:00+08:00",
+      "details": "教师公告：12 月 14 日 09:00–10:00，Room 411 (LT)。当前公告仍写明考试范围稍后公布。",
+      "source": "https://elearning.usm.my/sidang2627/mod/forum/discuss.php?d=3023"
+    },
+    {
+      "id": "cpc357-44026",
+      "courseId": "CPC357W",
+      "title": "Coursework / Project 提交",
+      "dueAt": "2027-01-03T11:59:00+08:00",
+      "details": "注意：学校提交页面显示 1 月 3 日 11:59 AM（上午），并非晚上；如与文档不同，请向教师确认。附件 CPC357-Project.pdf 已保留。",
+      "source": "https://elearning.usm.my/sidang2627/mod/assign/view.php?id=44026"
+    },
+    {
+      "id": "akp202-55732",
+      "courseId": "AKP202W",
+      "title": "Week 4 课堂活动与签到",
+      "dueAt": null,
+      "details": "按学校通知观看 Personality and Values 录播、填写视频中的口令并完成表单 30 道题。达到 15/30（50%）才计签到，低于标准可重做；本系统练习不等于学校签到。",
+      "source": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=55732"
+    },
+    {
+      "id": "cmt322-week6",
+      "courseId": "CMT322W",
+      "title": "Week 6 项目 Part A",
+      "dueAt": null,
+      "details": "课程页面第 6 周（11 月 2–8 日）列出 Project Report Part A 与 Simulation Part A 到期；此处未给出具体时分，请结合教师最新通知安排。",
+      "source": "https://elearning.usm.my/sidang2627/course/section.php?id=7430"
+    },
+    {
+      "id": "cst435-54615",
+      "courseId": "CST435W",
+      "title": "Assignment 1 日期需确认",
+      "dueAt": null,
+      "details": "新发布作业的标题为 2026，但正文截止写 26/11/2022。该日期已标注为源文档矛盾，请向教师确认本学期截止日期。",
+      "source": "https://elearning.usm.my/sidang2627/mod/resource/view.php?id=54615"
+    }
+  ]
+}

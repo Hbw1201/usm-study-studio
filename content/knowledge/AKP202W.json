@@ -32,6 +32,13 @@
         "zh": "从个体输入进一步研究态度与满意度，连接绩效、OCB 和退出等结果。",
         "en": "Extend individual inputs to attitudes and satisfaction, connecting them to performance, OCB, and withdrawal."
       }
+    },
+    {
+      "resourceId": "material-48",
+      "reason": {
+        "zh": "承接多样性和工作态度，解释人格与价值如何经过情境、任务和文化匹配影响行为；回到前章满意度与绩效时避免只凭人格标签判断。",
+        "en": "Build on diversity and work attitudes to explain how personality and values operate through situations, task demands and cultural fit; reconnect to satisfaction and performance without relying on personality labels alone."
+      }
     }
   ],
   "materials": [
@@ -5046,6 +5053,2647 @@
         "en": "Statistical charts illustrate historical studies cited in the deck; they do not establish current country rankings or a causal effect of an individual’s pay on satisfaction."
       },
       "sourceSha256": "a1c1a14b4278949b2aa85f2a56ae60c68e4d6b62c8d143baa01ce976d633d9ed"
+    },
+    {
+      "resourceId": "material-48",
+      "overview": {
+        "zh": "人格与价值观把个体差异连接到工作行为：先理解测量和特质，再通过情境强度、特质激活、人员匹配与文化价值判断何时能够预测结果。",
+        "en": "Personality and values connect individual differences to work behaviour. Understand measurement and traits, then use situation strength, trait activation, fit and cultural values to determine when they help predict outcomes."
+      },
+      "sourceNote": {
+        "zh": "依据 Week Four Lecture Slides.pptx 全部29页及第11页图、第18–19页表整理。MBTI、黑暗特质和文化维度按本课件教学框架解释；课件中的群体标签不是个人诊断，年龄与世代表属于原版课件快照。网页中的课堂录像与签到30题未作为已转录或已读取的来源。",
+        "en": "Based on all 29 slides of Week Four Lecture Slides.pptx, including the figure on slide 11 and table on slides 18–19. MBTI, dark traits and cultural dimensions are explained as teaching frameworks; group labels are not individual diagnoses, and cohort ages belong to the original slide snapshot. The webpage recording and 30 attendance questions are not claimed as transcribed or read sources."
+      },
+      "sourceSha256": "a38b6bd917f83598460823a0124623fe2f843ba33d20d2c0ee931c8dcc4872e5",
+      "groups": [
+        {
+          "id": "material-48-g-foundations",
+          "title": {
+            "zh": "人格的含义与测量",
+            "en": "Meaning and measurement of personality"
+          },
+          "concepts": [
+            {
+              "id": "material-48-personality",
+              "title": {
+                "zh": "人格：整体而动态的心理系统",
+                "en": "Personality: a whole and dynamic psychological system"
+              },
+              "explanation": {
+                "zh": "人格是一个人对他人作出反应并与之互动的方式总和，也描述整个心理系统的发展。它比某一天的情绪或某一次行为更广，解释时要考察持续的互动模式。",
+                "en": "Personality is the sum of ways a person reacts to and interacts with others, and a dynamic description of the development of the whole psychological system. It is broader than one mood or isolated action; look for enduring interaction patterns."
+              },
+              "pages": [
+                4
+              ]
+            },
+            {
+              "id": "material-48-measurement",
+              "title": {
+                "zh": "自陈量表与工作匹配判断",
+                "en": "Self-report surveys and job-related assessment"
+              },
+              "explanation": {
+                "zh": "自陈问卷是课件列出的最常见人格测量方式，由受测者报告自己的倾向。管理者可把人格测量用于招聘和岗位匹配预测，但测量到的倾向不能直接等同于已证明的工作绩效。",
+                "en": "Self-report surveys, in which respondents report their own tendencies, are the most common measurement method named in the slides. Managers can use personality assessment to inform hiring and job-fit predictions, while a reported tendency is not itself demonstrated job performance."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-48-heredity",
+              "title": {
+                "zh": "遗传因素与人格形成",
+                "en": "Heredity and personality formation"
+              },
+              "explanation": {
+                "zh": "遗传指受孕时已经决定的因素；遗传解释把人格的一部分来源追溯到染色体中基因的分子结构。课件以“遗传还是环境”提出形成问题，不能据此把人格简化成只由工作环境决定或完全不可发展。",
+                "en": "Heredity refers to factors determined at conception; the heredity approach traces personality influences to the molecular structure of genes in chromosomes. The slides pose heredity versus environment as a formation question, rather than reducing personality to workplace conditions alone or treating development as impossible."
+              },
+              "pages": [
+                6
+              ]
+            },
+            {
+              "id": "material-48-traits",
+              "title": {
+                "zh": "人格特质与持久倾向",
+                "en": "Personality traits and enduring tendencies"
+              },
+              "explanation": {
+                "zh": "特质是相对持久的人格特征，例如害羞、抱负、忠诚或胆怯。描述特质要区分长期倾向与一次事件中的反应，后者也可能由强烈的情境要求引起。",
+                "en": "Traits are relatively enduring personality characteristics, such as shyness, ambition, loyalty or timidity. Distinguish a lasting tendency from one response in one event, which may also reflect strong situational demands."
+              },
+              "pages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-48-g-frameworks",
+          "title": {
+            "zh": "MBTI、大五与预测边界",
+            "en": "MBTI, the Big Five and predictive limits"
+          },
+          "concepts": [
+            {
+              "id": "material-48-mbti",
+              "title": {
+                "zh": "MBTI 的四组偏好与类型",
+                "en": "Four MBTI preference pairs and types"
+              },
+              "explanation": {
+                "zh": "MBTI 用 E/I（外向/内向）、S/N（感觉/直觉）、T/F（思考/情感）及 P/J（知觉/判断）四组偏好组合类型；课件把 INTJ、ESTJ、ENTP 分别称为愿景型、组织型、概念型。它是类型框架，不能把类型代号直接当作岗位胜任证明。",
+                "en": "MBTI combines E/I (extraversion/introversion), S/N (sensing/intuition), T/F (thinking/feeling) and P/J (perceiving/judging) into types. The slides call INTJs visionaries, ESTJs organisers and ENTPs conceptualisers. Type labels do not by themselves demonstrate job competence."
+              },
+              "pages": [
+                8
+              ]
+            },
+            {
+              "id": "material-48-mbti-use",
+              "title": {
+                "zh": "MBTI 的发展用途与局限",
+                "en": "Developmental uses and limitations of MBTI"
+              },
+              "explanation": {
+                "zh": "课件承认 MBTI 存在缺点，同时建议用于培训发展、增进同事理解、打开沟通及可能减少冲突。因此适合把它作为对话工具；重要招聘判断仍应结合岗位要求及更相关的特质证据。",
+                "en": "The slides acknowledge MBTI faults while recommending it for training, mutual understanding, communication and possibly reducing conflict. Treat it as a developmental conversation tool; important hiring judgments should still consider job requirements and relevant trait evidence."
+              },
+              "pages": [
+                28
+              ]
+            },
+            {
+              "id": "material-48-extraversion",
+              "title": {
+                "zh": "大五：外向性",
+                "en": "Big Five: extraversion"
+              },
+              "explanation": {
+                "zh": "外向性涉及社会互动和表达。第11页把较好人际技能、较强社会主导性与情感表达连接到绩效、领导和工作／生活满意度；这种关系还要结合工作是否要求社交互动。",
+                "en": "Extraversion concerns social interaction and expressiveness. Slide 11 connects interpersonal skill, social dominance and emotional expression with performance, leadership and job/life satisfaction; relevance also depends on the job’s social demands."
+              },
+              "pages": [
+                9,
+                11
+              ]
+            },
+            {
+              "id": "material-48-agreeableness",
+              "title": {
+                "zh": "大五：宜人性",
+                "en": "Big Five: agreeableness"
+              },
+              "explanation": {
+                "zh": "宜人性体现合作、友善和较易与他人相处的倾向。图中通过受欢迎、顺从及遵从规范连接较高绩效和较少越轨行为；但在强调竞争的情境中，其预测关系可能不同。",
+                "en": "Agreeableness reflects cooperative, friendly and accommodating tendencies. The figure links being liked and compliant/conforming with higher performance and less deviant behaviour, while its predictive relationship may differ in competitive settings."
+              },
+              "pages": [
+                9,
+                11
+              ]
+            },
+            {
+              "id": "material-48-conscientiousness",
+              "title": {
+                "zh": "大五：尽责性",
+                "en": "Big Five: conscientiousness"
+              },
+              "explanation": {
+                "zh": "尽责性表现为努力、坚持、纪律性、条理与规划。图中将这些机制连接到绩效、领导和更长寿命；管理建议强调按组织重视的标准考察尽责性及其他特质，而不是把它作为万能标准。",
+                "en": "Conscientiousness involves effort, persistence, discipline, organisation and planning. The figure links these mechanisms to performance, leadership and greater longevity. Management advice is to assess it alongside other traits according to the organisation’s criteria, not as a universal criterion."
+              },
+              "pages": [
+                9,
+                11,
+                28
+              ]
+            },
+            {
+              "id": "material-48-stability",
+              "title": {
+                "zh": "大五：情绪稳定性",
+                "en": "Big Five: emotional stability"
+              },
+              "explanation": {
+                "zh": "情绪稳定性与较少负面思考、负面情绪和过度警觉相关。图中连接较高工作／生活满意度、较低压力和更能适应变化；第19页用 Neuroticism（神经质）的负方向表达相应关系。",
+                "en": "Emotional stability is associated with less negative thinking, negative emotion and hypervigilance. The figure links it to higher job/life satisfaction, lower stress and greater adaptability; slide 19 expresses related predictions using the negative direction of neuroticism."
+              },
+              "pages": [
+                9,
+                11,
+                19
+              ]
+            },
+            {
+              "id": "material-48-openness",
+              "title": {
+                "zh": "大五：经验开放性",
+                "en": "Big Five: openness to experience"
+              },
+              "explanation": {
+                "zh": "开放性涉及新经验、学习、创造性、灵活与自主。图中将其连接培训表现与领导；创新要求高的工作更可能让这一特质与行为预测有关。",
+                "en": "Openness concerns new experiences, learning, creativity, flexibility and autonomy. The figure links it to training performance and leadership; jobs requiring innovation are especially likely to make this trait relevant to behavioural prediction."
+              },
+              "pages": [
+                9,
+                11
+              ]
+            },
+            {
+              "id": "material-48-criterion-context",
+              "title": {
+                "zh": "按成功标准解释特质的重要性",
+                "en": "Interpret trait importance against the success criterion"
+              },
+              "explanation": {
+                "zh": "并购公司案例把坚持、注意细节、效率、分析能力和高标准列为“较重要”，把沟通、团队合作、适应、热情和倾听列为相对“较不重要”。这是特定研究情境中的比较，不表示后者在所有岗位没有价值。",
+                "en": "The buyout-company example ranks persistence, detail, efficiency, analytical skill and high standards as more important than communication, teamwork, adaptability, enthusiasm and listening. This is a context-specific comparison, not a claim that the latter qualities have no value in every role."
+              },
+              "pages": [
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-48-g-dark",
+          "title": {
+            "zh": "黑暗特质：区分而不混同",
+            "en": "Dark traits: distinguish the constructs"
+          },
+          "concepts": [
+            {
+              "id": "material-48-machiavellianism",
+              "title": {
+                "zh": "黑暗三联征：马基雅维利主义",
+                "en": "Dark Triad: Machiavellianism"
+              },
+              "explanation": {
+                "zh": "马基雅维利主义在课件中指务实、保持情感距离，并认为结果可以证明手段正当的倾向。分析案例时重点看是否为了目标而操纵过程，不能只因一个人有抱负就作此判断。",
+                "en": "Machiavellianism in the slides involves pragmatism, emotional distance and the belief that ends can justify means. In a case, examine instrumental manipulation in pursuit of goals; ambition alone is not enough."
+              },
+              "pages": [
+                12
+              ]
+            },
+            {
+              "id": "material-48-narcissism",
+              "title": {
+                "zh": "黑暗三联征：自恋",
+                "en": "Dark Triad: narcissism"
+              },
+              "explanation": {
+                "zh": "自恋在课件中包括傲慢、夸大的自我重要感、过度赞美需求与特权感。它与积极的自我能力判断不同，辨别重点是是否要求不相称的特殊待遇和持续崇拜。",
+                "en": "Narcissism in the slides includes arrogance, grandiose self-importance, excessive need for admiration and entitlement. It differs from a positive assessment of one’s capabilities; disproportionate special treatment and admiration are key clues."
+              },
+              "pages": [
+                12
+              ]
+            },
+            {
+              "id": "material-48-psychopathy",
+              "title": {
+                "zh": "黑暗三联征：对伤害缺少内疚",
+                "en": "Dark Triad: lack of guilt about harm"
+              },
+              "explanation": {
+                "zh": "课件将 psychopathy 描述为不关心他人，以及自己的行为造成伤害时缺少内疚或悔意的倾向。此处用于理解组织行为特征，不能把一次冲突或冷静表现当作临床诊断。",
+                "en": "The slides describe psychopathy as a tendency to lack concern for others and guilt or remorse when one’s actions cause harm. Here it is an OB trait description; a single conflict or calm demeanour does not establish a clinical diagnosis."
+              },
+              "pages": [
+                12
+              ]
+            },
+            {
+              "id": "material-48-antisocial-borderline",
+              "title": {
+                "zh": "扩展黑暗特质：冷漠与自我不确定",
+                "en": "Expanded dark traits: callousness versus self-uncertainty"
+              },
+              "explanation": {
+                "zh": "课件的扩展框架把 antisocial 描述为对他人冷漠、无情，把 borderline 描述为低自尊与高度不确定。两个描述的焦点分别是对他人的态度和对自我的不稳定判断，不应互换。",
+                "en": "The expanded slide framework describes antisocial tendencies as indifference and callousness toward others, and borderline tendencies as low self-esteem and high uncertainty. Their emphases are attitudes toward others versus insecure self-appraisal; the labels are not interchangeable."
+              },
+              "pages": [
+                13
+              ]
+            },
+            {
+              "id": "material-48-schizotypal-avoidant",
+              "title": {
+                "zh": "扩展黑暗特质：古怪失序与回避批评",
+                "en": "Expanded dark traits: eccentricity versus avoidance of criticism"
+              },
+              "explanation": {
+                "zh": "课件把 schizotypal 描述为古怪、缺少条理，把 avoidant 描述为感觉自己不足并厌恶批评。理解这两个课堂术语时，分别抓住组织行为中的失序表现与对否定的回避。",
+                "en": "The slides describe schizotypal tendencies as eccentric and disorganised, and avoidant tendencies as feeling inadequate and disliking criticism. For these classroom terms, distinguish disorganisation from avoidance of negative evaluation."
+              },
+              "pages": [
+                14
+              ]
+            },
+            {
+              "id": "material-48-perfectionism",
+              "title": {
+                "zh": "扩展黑暗特质：完美主义的双面性",
+                "en": "Expanded dark traits: two sides of perfectionism"
+              },
+              "explanation": {
+                "zh": "课件的 obsessive-compulsive 描述同时包含完美主义和固执，也包含重细节、强工作伦理及成就动机。分析时应同时识别可能的僵化成本与对细节的贡献，不能把该描述全盘等同于尽责性或全盘负面。",
+                "en": "The slide’s obsessive-compulsive description combines perfectionism and stubbornness with attention to detail, a strong work ethic and possible achievement motivation. Analyse both rigidity costs and detail-oriented contributions rather than equating it wholly with conscientiousness or treating every aspect as negative."
+              },
+              "pages": [
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-48-g-self",
+          "title": {
+            "zh": "自我信念、调节与主动性",
+            "en": "Self-beliefs, regulation and initiative"
+          },
+          "concepts": [
+            {
+              "id": "material-48-cse",
+              "title": {
+                "zh": "核心自我评价 CSE",
+                "en": "Core self-evaluation (CSE)"
+              },
+              "explanation": {
+                "zh": "CSE 是个人对自身能力、胜任力及作为一个人的价值作出的根本判断。自尊和自我效能是课件在求职部分强调的组成，反映“我是否有价值、能否应对”，不同于对赞美与特权的要求。",
+                "en": "CSE is a person’s fundamental conclusion about their capabilities, competence and worth. Self-esteem and self-efficacy are highlighted in the job-search section, reflecting worth and capability rather than a demand for admiration or entitlement."
+              },
+              "pages": [
+                15,
+                16
+              ]
+            },
+            {
+              "id": "material-48-self-monitoring",
+              "title": {
+                "zh": "自我监控：因情境调整表达",
+                "en": "Self-monitoring: adapting behaviour to context"
+              },
+              "explanation": {
+                "zh": "自我监控衡量一个人根据外部情境因素调整自身行为的能力，例如对客户和技术同事采用不同的讲解方式。它关注行为的适应性，不等于主动改变环境或拥有较高自尊。",
+                "en": "Self-monitoring measures the ability to adjust behaviour to external situational factors, such as explaining differently to customers and technical colleagues. It concerns adaptive behaviour, not necessarily initiating environmental change or having high self-esteem."
+              },
+              "pages": [
+                15
+              ]
+            },
+            {
+              "id": "material-48-proactivity",
+              "title": {
+                "zh": "主动性人格：发现机会并坚持改变",
+                "en": "Proactive personality: identify opportunities and persist in change"
+              },
+              "explanation": {
+                "zh": "主动性人格包括发现机会、表现主动、采取行动，并坚持到发生有意义的改变。它不只是顺应当前要求；关键是把机会识别转化为持续行动和实际变化。",
+                "en": "Proactive personality involves identifying opportunities, showing initiative, acting and persisting until meaningful change occurs. It is more than adapting to existing demands: opportunity recognition must lead to sustained action and change."
+              },
+              "pages": [
+                15
+              ]
+            },
+            {
+              "id": "material-48-job-search",
+              "title": {
+                "zh": "人格与失业者的求职行为",
+                "en": "Personality and job-search behaviour during unemployment"
+              },
+              "explanation": {
+                "zh": "课件将尽责性和外向性列为求职行为的两个最强人格预测因素，同时强调自尊和自我效能。这里预测的是求职活动与行为，不能直接改写成“某种人格保证获得工作”。",
+                "en": "The slides identify conscientiousness and extraversion as the two strongest personality predictors of job-search behaviour, with self-esteem and self-efficacy also important. The stated outcome is search activity, not a guarantee of obtaining employment."
+              },
+              "pages": [
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-48-g-situation",
+          "title": {
+            "zh": "情境如何改变人格的预测力",
+            "en": "How situations change personality prediction"
+          },
+          "concepts": [
+            {
+              "id": "material-48-situation-strength",
+              "title": {
+                "zh": "情境强度理论",
+                "en": "Situation strength theory"
+              },
+              "explanation": {
+                "zh": "人格转化为行为的程度取决于情境中规范、线索与标准对适当行为的约束。强情境使不同人更可能表现相似；较弱情境给个体特质更大的表达空间，但不意味着没有规范。",
+                "en": "The expression of personality depends on how strongly norms, cues and standards dictate appropriate behaviour. Strong situations can make different people act similarly; weaker situations allow more trait expression without necessarily eliminating norms."
+              },
+              "pages": [
+                17,
+                29
+              ]
+            },
+            {
+              "id": "material-48-clarity-consistency",
+              "title": {
+                "zh": "情境强度：清晰性与一致性",
+                "en": "Situation strength: clarity and consistency"
+              },
+              "explanation": {
+                "zh": "Clarity 是工作线索和要求是否清楚；Consistency 是不同线索是否相互一致。清楚但互相矛盾的指令仍缺乏一致性；两者共同影响员工是否知道应该怎样行动。",
+                "en": "Clarity concerns how understandable requirements and cues are; consistency concerns whether different cues agree. Instructions may be individually clear yet contradictory. Together these dimensions influence whether employees know how to act."
+              },
+              "pages": [
+                17
+              ]
+            },
+            {
+              "id": "material-48-constraints-consequences",
+              "title": {
+                "zh": "情境强度：限制与后果",
+                "en": "Situation strength: constraints and consequences"
+              },
+              "explanation": {
+                "zh": "Constraints 是外部因素限制个人自由选择的程度；Consequences 是行为后果的重要程度。流程强制步骤体现限制，操作失误产生重大影响体现后果；二者不是同一个维度。",
+                "en": "Constraints describe how external factors limit discretion; consequences describe the significance of behavioural outcomes. Mandatory workflow steps illustrate constraints, while serious effects of errors illustrate consequences. These are distinct dimensions."
+              },
+              "pages": [
+                17
+              ]
+            },
+            {
+              "id": "material-48-trait-activation",
+              "title": {
+                "zh": "特质激活：任务要求让某些特质更相关",
+                "en": "Trait activation: demands make particular traits relevant"
+              },
+              "explanation": {
+                "zh": "特质激活理论关注哪些工作线索使某个特质更有预测力。第18–19页把细节要求对应尽责性、社交要求对应外向性与宜人性、创新要求对应开放性；高低岗位例子是在比较要求强度，不是给职业永久贴人格标签。",
+                "en": "Trait activation concerns which job cues make a particular trait more predictive. Slides 18–19 link detail demands to conscientiousness, social demands to extraversion/agreeableness and innovation to openness. High/low job examples compare demands, not permanent personality labels for occupations."
+              },
+              "pages": [
+                18,
+                19
+              ]
+            },
+            {
+              "id": "material-48-activation-directions",
+              "title": {
+                "zh": "竞争、愤怒客户与期限压力",
+                "en": "Competition, angry customers and deadlines"
+              },
+              "explanation": {
+                "zh": "表中竞争要求激活外向性正向、宜人性负向关系；面对愤怒者对应外向性和宜人性正向、神经质负向；期限压力对应尽责性正向与神经质负向。正负号属于特定任务预测，不能变成对人的道德排名。",
+                "en": "The table gives positive extraversion and negative agreeableness for competitive work; positive extraversion/agreeableness and negative neuroticism for dealing with angry people; and positive conscientiousness and negative neuroticism under deadlines. Signs are task-specific predictions, not moral rankings of people."
+              },
+              "pages": [
+                18,
+                19
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-48-g-values",
+          "title": {
+            "zh": "价值、目标与工作匹配",
+            "en": "Values, ends and work fit"
+          },
+          "concepts": [
+            {
+              "id": "material-48-values",
+              "title": {
+                "zh": "价值观与价值体系",
+                "en": "Values and value systems"
+              },
+              "explanation": {
+                "zh": "价值观是对何者正确、良好或值得追求的基本信念；价值体系按重要程度排列这些信念。价值为态度与动机提供基础，能帮助解释为何同样工作条件对不同人有不同意义。",
+                "en": "Values are basic convictions about what is right, good or desirable; a value system ranks them by intensity. Values underlie attitudes and motivation and help explain why identical work conditions mean different things to different people."
+              },
+              "pages": [
+                20
+              ]
+            },
+            {
+              "id": "material-48-terminal-instrumental",
+              "title": {
+                "zh": "终极价值与工具性价值",
+                "en": "Terminal versus instrumental values"
+              },
+              "explanation": {
+                "zh": "终极价值是希望达到的理想生活终点；工具性价值是偏好的行为方式或达到终点的手段。分析时问“想实现什么”与“愿意怎样行动”，例如理想成果与为实现它所坚持的诚实做法分属两个层次。",
+                "en": "Terminal values are desirable end-states of existence; instrumental values are preferred behaviours or means of reaching them. Ask “what end is desired?” versus “how should one act?”—an ideal outcome and honest conduct used to pursue it belong to different levels."
+              },
+              "pages": [
+                21
+              ]
+            },
+            {
+              "id": "material-48-cohorts",
+              "title": {
+                "zh": "世代工作价值表的比较与边界",
+                "en": "Comparing cohort work values and respecting their limits"
+              },
+              "explanation": {
+                "zh": "原版表把 Boomers 与成就、抱负和职业忠诚联系，把 Xers 与工作生活平衡、团队和关系忠诚联系，把 Millennials 与自信、财务成功、自立兼团队以及自我/关系忠诚联系。表中年龄是原版快照；群体描述不能直接代替对某个员工价值排序的了解。",
+                "en": "The original table associates Boomers with achievement, ambition and career loyalty; Xers with work–life balance, teams and relationship loyalty; and Millennials with confidence, financial success, self-reliance alongside teamwork, and loyalty to self/relationships. Ages are a source-era snapshot; group descriptions do not establish an individual’s value priorities."
+              },
+              "pages": [
+                22
+              ]
+            },
+            {
+              "id": "material-48-holland-realistic",
+              "title": {
+                "zh": "Holland：现实型",
+                "en": "Holland: realistic type"
+              },
+              "explanation": {
+                "zh": "现实型偏好需要技能、力量与协调的身体活动；表中例子是机械师、钻床操作员、装配工和农民。人员—工作匹配关注兴趣与活动要求是否相合，不是把职位名称当作人格诊断。",
+                "en": "The realistic type prefers physical activities requiring skill, strength and coordination; examples include mechanics, drill-press operators, assembly workers and farmers. Person–job fit concerns congruence between preferences and activity demands, not diagnosis by job title."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-48-holland-investigative",
+              "title": {
+                "zh": "Holland：研究型",
+                "en": "Holland: investigative type"
+              },
+              "explanation": {
+                "zh": "研究型偏好思考、组织与理解，特征包括分析、原创、好奇和独立；表中有生物学家、经济学家、数学家和记者。与常规型的区别在于探究理解而不是偏好固定规则。",
+                "en": "The investigative type prefers thinking, organising and understanding, with analytical, original, curious and independent characteristics; examples include biologists, economists, mathematicians and reporters. Its emphasis on inquiry differs from conventional preference for established rules."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-48-holland-social",
+              "title": {
+                "zh": "Holland：社会型",
+                "en": "Holland: social type"
+              },
+              "explanation": {
+                "zh": "社会型偏好帮助和发展他人，表现为友善、合作和理解；表中例子包括教师、辅导员、社会工作者和临床心理学家。社交活动的目的在这里是帮助，而企业型更强调影响与权力。",
+                "en": "The social type prefers helping and developing others, with friendliness, cooperation and understanding; examples include teachers, counsellors, social workers and clinical psychologists. The social purpose is helping, whereas enterprising activities emphasise influence and power."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-48-holland-conventional",
+              "title": {
+                "zh": "Holland：常规型",
+                "en": "Holland: conventional type"
+              },
+              "explanation": {
+                "zh": "常规型偏好有规则、有序、明确的活动；表中例子包括会计、银行柜员、档案员和企业管理者。与艺术型偏好的模糊自由活动相对，它更重视规范和可预期的流程。",
+                "en": "The conventional type prefers rule-regulated, orderly and unambiguous activities; examples include accountants, bank tellers, file clerks and corporate managers. It emphasises standards and predictable procedures in contrast to artistic preference for ambiguous, less structured activities."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-48-holland-enterprising",
+              "title": {
+                "zh": "Holland：企业型",
+                "en": "Holland: enterprising type"
+              },
+              "explanation": {
+                "zh": "企业型偏好可以影响别人并获得权力的语言活动，表现为自信、有抱负、有活力；例子包括律师、地产代理、公关和小企业管理者。这里区分的是活动动机，不是简单区分“会说话/不会说话”。",
+                "en": "The enterprising type prefers verbal activities offering opportunities to influence others and attain power, with confidence, ambition and energy; examples include lawyers, estate agents, public-relations specialists and small-business managers. The distinction concerns activity motives, not simply speaking ability."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-48-holland-artistic",
+              "title": {
+                "zh": "Holland：艺术型",
+                "en": "Holland: artistic type"
+              },
+              "explanation": {
+                "zh": "艺术型偏好允许创造表达、模糊而非系统化的活动；表中列画家、音乐家、作家和室内设计师。匹配判断要看工作能否提供这种表达空间，而非只看一个职业是否“有创意”的名称。",
+                "en": "The artistic type prefers ambiguous, unsystematic activities permitting creative expression; examples include painters, musicians, writers and interior decorators. Fit depends on actual expressive freedom, not merely whether a job title sounds creative."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-48-organisation-fit",
+              "title": {
+                "zh": "人员—工作匹配与人员—组织匹配",
+                "en": "Person–job versus person–organisation fit"
+              },
+              "explanation": {
+                "zh": "人员—工作匹配比较个人偏好与具体活动；人员—组织匹配比较个人与组织文化。课件把外向性与积极、团队导向文化，宜人性与支持氛围，开放性与创新而非标准化文化相联系。",
+                "en": "Person–job fit compares a person’s preferences with specific activities; person–organisation fit compares the person with organisational culture. The slides link extraversion to aggressive/team-oriented cultures, agreeableness to supportive climates, and openness to innovation rather than standardisation."
+              },
+              "pages": [
+                23,
+                24,
+                29
+              ]
+            },
+            {
+              "id": "material-48-other-fit",
+              "title": {
+                "zh": "人员—群体与人员—主管匹配",
+                "en": "Person–group and person–supervisor fit"
+              },
+              "explanation": {
+                "zh": "除岗位和组织外，还可考察与工作群体、直接主管的匹配。员工可能认同整个组织却与日常团队协作方式不适配，因此诊断冲突时要先明确比较对象。",
+                "en": "Beyond job and organisation, fit can be examined with the work group and immediate supervisor. Someone may identify with the organisation but struggle with the team’s collaboration style, so first specify the target of fit."
+              },
+              "pages": [
+                25,
+                29
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-48-g-culture",
+          "title": {
+            "zh": "跨文化价值框架",
+            "en": "Cross-cultural value frameworks"
+          },
+          "concepts": [
+            {
+              "id": "material-48-power-distance",
+              "title": {
+                "zh": "Hofstede：权力距离",
+                "en": "Hofstede: power distance"
+              },
+              "explanation": {
+                "zh": "权力距离关注社会对权力不平等分配的接受程度。用于比较对层级、权威与参与的期待，不等同于某个员工拥有多大实际职权，也不能据国别直接判断个人。",
+                "en": "Power distance concerns acceptance of unequal power distribution. It compares expectations about hierarchy, authority and participation, not an employee’s actual formal authority; national-level comparisons do not establish an individual’s beliefs."
+              },
+              "pages": [
+                26,
+                29
+              ]
+            },
+            {
+              "id": "material-48-individualism",
+              "title": {
+                "zh": "Hofstede：个人主义与集体主义",
+                "en": "Hofstede: individualism versus collectivism"
+              },
+              "explanation": {
+                "zh": "该维度比较较强调个人自主、个人责任，还是较强调群体归属与共同义务。它描述价值取向，不应被简化为“自私”与“无私”的道德二分。",
+                "en": "This dimension contrasts emphasis on personal autonomy and individual responsibility with group membership and shared obligations. It describes value orientation rather than a moral split between selfishness and selflessness."
+              },
+              "pages": [
+                26
+              ]
+            },
+            {
+              "id": "material-48-masculinity",
+              "title": {
+                "zh": "Hofstede：男性化与女性化价值取向",
+                "en": "Hofstede: masculinity versus femininity"
+              },
+              "explanation": {
+                "zh": "课件列出的传统名称用来比较较重成就、竞争和物质成功，与较重关系、关怀及生活质量的价值取向。它是文化维度名称，不是由个人性别决定的能力结论。",
+                "en": "These traditional framework labels contrast emphasis on achievement, competition and material success with emphasis on relationships, care and quality of life. They name a cultural dimension, not ability conclusions determined by a person’s gender."
+              },
+              "pages": [
+                26
+              ]
+            },
+            {
+              "id": "material-48-uncertainty",
+              "title": {
+                "zh": "Hofstede：不确定性规避",
+                "en": "Hofstede: uncertainty avoidance"
+              },
+              "explanation": {
+                "zh": "不确定性规避关注对模糊、未知情境的不适与对可预测安排的偏好。它不同于权力距离：需要明确规则并不自动意味着接受更大的权力不平等。",
+                "en": "Uncertainty avoidance concerns discomfort with ambiguous or unknown situations and preference for predictable arrangements. It differs from power distance: wanting clear rules does not automatically mean accepting greater power inequality."
+              },
+              "pages": [
+                26
+              ]
+            },
+            {
+              "id": "material-48-time-orientation",
+              "title": {
+                "zh": "Hofstede：长期与短期导向",
+                "en": "Hofstede: long-term versus short-term orientation"
+              },
+              "explanation": {
+                "zh": "该维度比较较面向未来、持续投入与长期结果，还是较重近期成果及当下或既有规范的价值取向。它是文化取向，不是某一次项目期限长短的直接测量。",
+                "en": "This dimension compares greater emphasis on future-oriented persistence and longer-term outcomes with greater emphasis on nearer-term results and present or established norms. It is a cultural orientation, not simply the duration of one project."
+              },
+              "pages": [
+                26
+              ]
+            },
+            {
+              "id": "material-48-globe",
+              "title": {
+                "zh": "GLOBE 与 Hofstede 的关系",
+                "en": "How GLOBE relates to Hofstede"
+              },
+              "explanation": {
+                "zh": "GLOBE 是 Global Leadership and Organizational Behavior Effectiveness 研究计划。课件说明它更新了 Hofstede 的研究，使用来自62个国家825个组织的数据，采用相近变量并增加新变量；本课件没有列出新增变量的完整清单。",
+                "en": "GLOBE is the Global Leadership and Organizational Behavior Effectiveness research programme. The slides say it updated Hofstede using data from 825 organisations in 62 countries, employing similar variables and adding new ones; this deck does not enumerate all added variables."
+              },
+              "pages": [
+                27,
+                29
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-48-personality",
+          "to": "material-48-measurement",
+          "relation": {
+            "zh": "从整体人格定义进入可观察的自陈测量",
+            "en": "Move from the overall construct to self-reported measurement"
+          }
+        },
+        {
+          "from": "material-48-traits",
+          "to": "material-48-conscientiousness",
+          "relation": {
+            "zh": "持久特征在大五中被组织为可区分维度",
+            "en": "The Big Five organise enduring characteristics into distinct dimensions"
+          }
+        },
+        {
+          "from": "material-48-mbti",
+          "to": "material-48-mbti-use",
+          "relation": {
+            "zh": "类型偏好可支持发展，但使用必须考虑局限",
+            "en": "Type preferences can support development when limitations are respected"
+          }
+        },
+        {
+          "from": "material-48-conscientiousness",
+          "to": "material-48-job-search",
+          "relation": {
+            "zh": "努力、坚持和规划可延伸到求职行为",
+            "en": "Effort, persistence and planning extend to job-search behaviour"
+          }
+        },
+        {
+          "from": "material-48-extraversion",
+          "to": "material-48-job-search",
+          "relation": {
+            "zh": "互动倾向与求职活动相联系",
+            "en": "Interaction tendencies relate to search activities"
+          }
+        },
+        {
+          "from": "material-48-cse",
+          "to": "material-48-job-search",
+          "relation": {
+            "zh": "自尊与自我效能支持求职行为解释",
+            "en": "Self-esteem and self-efficacy inform explanations of search"
+          }
+        },
+        {
+          "from": "material-48-self-monitoring",
+          "to": "material-48-situation-strength",
+          "relation": {
+            "zh": "情境提供可被个体调节所回应的线索",
+            "en": "Situations provide cues to which behavioural adjustment responds"
+          }
+        },
+        {
+          "from": "material-48-situation-strength",
+          "to": "material-48-trait-activation",
+          "relation": {
+            "zh": "先考察约束强度，再辨别哪种特质被任务激活",
+            "en": "Examine overall constraints, then identify which trait task cues activate"
+          }
+        },
+        {
+          "from": "material-48-trait-activation",
+          "to": "material-48-activation-directions",
+          "relation": {
+            "zh": "任务要求进一步决定预测方向",
+            "en": "Task demands further specify predictive directions"
+          }
+        },
+        {
+          "from": "material-48-openness",
+          "to": "material-48-organisation-fit",
+          "relation": {
+            "zh": "创新文化可能与开放性形成匹配",
+            "en": "An innovative culture can fit openness"
+          }
+        },
+        {
+          "from": "material-48-values",
+          "to": "material-48-terminal-instrumental",
+          "relation": {
+            "zh": "基本信念可按目的与手段区分",
+            "en": "Basic convictions can be distinguished as ends or means"
+          }
+        },
+        {
+          "from": "material-48-values",
+          "to": "material-48-cohorts",
+          "relation": {
+            "zh": "群体价值模式提供比较，但不代替个体排序",
+            "en": "Cohort patterns support comparison without replacing individual rankings"
+          }
+        },
+        {
+          "from": "material-48-holland-investigative",
+          "to": "material-48-organisation-fit",
+          "relation": {
+            "zh": "岗位活动匹配与组织文化匹配需要分开检查",
+            "en": "Task congruence and cultural congruence require separate checks"
+          }
+        },
+        {
+          "from": "material-48-organisation-fit",
+          "to": "material-48-other-fit",
+          "relation": {
+            "zh": "把匹配对象进一步细化到团队和主管",
+            "en": "Specify additional fit targets: group and supervisor"
+          }
+        },
+        {
+          "from": "material-48-power-distance",
+          "to": "material-48-globe",
+          "relation": {
+            "zh": "文化比较从Hofstede框架延伸到GLOBE",
+            "en": "Cultural comparison extends from Hofstede to GLOBE"
+          }
+        },
+        {
+          "from": "material-48-narcissism",
+          "to": "material-48-cse",
+          "relation": {
+            "zh": "赞美与特权需求不同于对能力和价值的积极判断",
+            "en": "Admiration and entitlement differ from positive capability and worth judgments"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-48-q-personality",
+          "conceptIds": [
+            "material-48-personality"
+          ],
+          "prompt": {
+            "zh": "哪项最符合课件对人格的定义？",
+            "en": "Which best matches the slide definition of personality?"
+          },
+          "options": [
+            {
+              "zh": "一个人在不同互动中呈现的整体反应模式",
+              "en": "The overall pattern of how a person reacts and interacts"
+            },
+            {
+              "zh": "员工今天对某项决定的不满",
+              "en": "An employee’s dissatisfaction with one decision today"
+            },
+            {
+              "zh": "员工完成一道数值测验的能力",
+              "en": "An employee’s ability on one numerical test"
+            },
+            {
+              "zh": "员工认为诚实比财富重要的价值排序",
+              "en": "An employee’s ranking of honesty above wealth"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "人格关注整个心理系统与互动方式；暂时情绪、特定能力和价值排序分别是相邻而不同的概念。",
+            "en": "Personality concerns the whole psychological system and interaction patterns; temporary mood, a specific ability and a value ranking are related but distinct concepts."
+          },
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "material-48-q-measurement",
+          "conceptIds": [
+            "material-48-measurement"
+          ],
+          "prompt": {
+            "zh": "候选人在问卷上评价“我做事有条理”，这首先属于什么证据？",
+            "en": "A candidate rates “I am organised” on a questionnaire. What evidence is this primarily?"
+          },
+          "options": [
+            {
+              "zh": "直接观察到的岗位绩效",
+              "en": "Directly observed job performance"
+            },
+            {
+              "zh": "自陈人格倾向",
+              "en": "A self-reported personality tendency"
+            },
+            {
+              "zh": "遗传因素的实验测定",
+              "en": "An experimental measurement of heredity"
+            },
+            {
+              "zh": "组织文化价值的集体测量",
+              "en": "A collective measure of organisational culture"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "自陈描述自己的特征，可帮助预测匹配，但不等于实际绩效观察、遗传检测或组织层面的数据。",
+            "en": "Self-report describes one’s own characteristics and may inform fit predictions; it is not a performance observation, genetic test or organisation-level measure."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-48-q-heredity",
+          "conceptIds": [
+            "material-48-heredity"
+          ],
+          "prompt": {
+            "zh": "哪项最准确说明课件中的“遗传”解释？",
+            "en": "Which best describes the heredity explanation in the slides?"
+          },
+          "options": [
+            {
+              "zh": "当前主管的奖励方式就是遗传因素",
+              "en": "The current supervisor’s reward system is a hereditary factor"
+            },
+            {
+              "zh": "遗传解释表明人格等同于短期情绪",
+              "en": "Heredity implies personality is identical to short-term mood"
+            },
+            {
+              "zh": "部分人格影响来自受孕时决定的遗传因素",
+              "en": "Some personality influences arise from genetic factors determined at conception"
+            },
+            {
+              "zh": "所有人格差异只由组织制度产生",
+              "en": "All personality differences arise only from organisational rules"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "遗传解释的关键是受孕时的生物因素；管理制度是环境输入，短期情绪也不是人格形成的同义词。",
+            "en": "The key is biological influence determined at conception; management practices are environmental inputs, and momentary mood is not synonymous with personality formation."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-48-q-traits",
+          "conceptIds": [
+            "material-48-traits"
+          ],
+          "prompt": {
+            "zh": "哪种观察更适合支持“害羞是一种特质”的判断？",
+            "en": "Which observation better supports treating shyness as a trait?"
+          },
+          "options": [
+            {
+              "zh": "在一次高风险答辩中短暂紧张",
+              "en": "Brief nervousness during one high-stakes presentation"
+            },
+            {
+              "zh": "因为安静规则而保持沉默",
+              "en": "Remaining silent because a rule requires quiet"
+            },
+            {
+              "zh": "刚收到负面反馈时心情低落",
+              "en": "Feeling low immediately after negative feedback"
+            },
+            {
+              "zh": "在多次不同互动中持续表现出相似的退缩倾向",
+              "en": "A similar reserved tendency across repeated interactions"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "特质强调持久性；单次压力、明确规则和即时情绪都可能产生类似表面行为，不能单凭一次行为推断。",
+            "en": "Traits emphasise endurance; pressure, explicit rules and immediate emotion can produce similar surface behaviour, so a single event is insufficient."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-48-q-mbti",
+          "conceptIds": [
+            "material-48-mbti"
+          ],
+          "prompt": {
+            "zh": "哪个组合属于课件中的 MBTI 四组偏好？",
+            "en": "Which set contains the four MBTI preference pairs shown?"
+          },
+          "options": [
+            {
+              "zh": "E/I、S/N、T/F、P/J",
+              "en": "E/I, S/N, T/F, P/J"
+            },
+            {
+              "zh": "E/I、S/N、尽责性、情绪稳定性",
+              "en": "E/I, S/N, conscientiousness, emotional stability"
+            },
+            {
+              "zh": "开放性、宜人性、尽责性、外向性",
+              "en": "Openness, agreeableness, conscientiousness, extraversion"
+            },
+            {
+              "zh": "权力距离、集体主义、长期导向、不确定性规避",
+              "en": "Power distance, collectivism, long-term orientation, uncertainty avoidance"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "第一组是四个二分偏好；大五是特质维度，文化维度则描述另一层次的差异。",
+            "en": "The correct set consists of four paired preferences; the Big Five are trait dimensions, while cultural dimensions describe a different level of difference."
+          },
+          "pages": [
+            8
+          ]
+        },
+        {
+          "id": "material-48-q-mbti-use",
+          "conceptIds": [
+            "material-48-mbti-use"
+          ],
+          "prompt": {
+            "zh": "哪种 MBTI 用法最符合本章管理建议？",
+            "en": "Which MBTI use best fits the chapter’s management advice?"
+          },
+          "options": [
+            {
+              "zh": "只凭四字母类型决定录用与淘汰",
+              "en": "Make hiring and rejection decisions from the four-letter type alone"
+            },
+            {
+              "zh": "以类型偏好开展团队沟通与相互理解练习",
+              "en": "Use preferences to facilitate team communication and mutual understanding"
+            },
+            {
+              "zh": "把类型代号解释为当事人的绩效成绩",
+              "en": "Interpret the type code as a performance score"
+            },
+            {
+              "zh": "用 MBTI 替代对岗位情境的分析",
+              "en": "Replace job-context analysis with MBTI"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "课件强调培训、理解与沟通用途，并明确存在局限；单凭标签选择或预测全部绩效超出了这些用途。",
+            "en": "The slides emphasise training, understanding and communication while noting limitations; selecting people or predicting all performance from a label exceeds those uses."
+          },
+          "pages": [
+            28
+          ]
+        },
+        {
+          "id": "material-48-q-extraversion",
+          "conceptIds": [
+            "material-48-extraversion"
+          ],
+          "prompt": {
+            "zh": "一个职位要求持续接触陌生客户并带动讨论，首先应关注哪一大五维度？",
+            "en": "A role requires engaging unfamiliar customers and leading discussion. Which Big Five dimension is especially relevant?"
+          },
+          "options": [
+            {
+              "zh": "开放性",
+              "en": "Openness"
+            },
+            {
+              "zh": "尽责性",
+              "en": "Conscientiousness"
+            },
+            {
+              "zh": "外向性",
+              "en": "Extraversion"
+            },
+            {
+              "zh": "情绪稳定性",
+              "en": "Emotional stability"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "社交与表达直接对应外向性；开放性更关联新想法，尽责性关联纪律规划，稳定性关联较少负面情绪。",
+            "en": "Social engagement and expression directly concern extraversion; openness concerns new ideas, conscientiousness discipline/planning, and stability fewer negative emotions."
+          },
+          "pages": [
+            9,
+            11
+          ]
+        },
+        {
+          "id": "material-48-q-agreeableness",
+          "conceptIds": [
+            "material-48-agreeableness"
+          ],
+          "prompt": {
+            "zh": "哪一组机制最符合课件对宜人性的解释？",
+            "en": "Which mechanism best matches the slides on agreeableness?"
+          },
+          "options": [
+            {
+              "zh": "更强的探索新方法与独立创新倾向",
+              "en": "Greater exploration of new methods and independent innovation"
+            },
+            {
+              "zh": "更多努力、坚持和工作规划",
+              "en": "Greater effort, persistence and work planning"
+            },
+            {
+              "zh": "较少负面情绪与过度警觉",
+              "en": "Fewer negative emotions and less hypervigilance"
+            },
+            {
+              "zh": "更容易被喜欢、合作并遵守规范",
+              "en": "Being more liked, cooperative and conforming"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "宜人性主要连接人际合作与规范行为；其余分别对应开放性、尽责性、情绪稳定性。",
+            "en": "Agreeableness primarily connects interpersonal cooperation and norm-following; the alternatives describe openness, conscientiousness and emotional stability."
+          },
+          "pages": [
+            9,
+            11
+          ]
+        },
+        {
+          "id": "material-48-q-conscientiousness",
+          "conceptIds": [
+            "material-48-conscientiousness"
+          ],
+          "prompt": {
+            "zh": "哪种工作行为最直接体现尽责性？",
+            "en": "Which behaviour most directly demonstrates conscientiousness?"
+          },
+          "options": [
+            {
+              "zh": "制定计划、持续跟进并检查细节",
+              "en": "Planning, following through and checking details"
+            },
+            {
+              "zh": "主动与许多陌生人交谈",
+              "en": "Readily talking to many unfamiliar people"
+            },
+            {
+              "zh": "乐于采用非常新颖的表达方式",
+              "en": "Enjoying highly novel forms of expression"
+            },
+            {
+              "zh": "面对批评时较少产生焦虑",
+              "en": "Experiencing less anxiety after criticism"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "规划、坚持和纪律是尽责性的机制；社交、新颖性和负面情绪反应分别更接近外向性、开放性和情绪稳定性。",
+            "en": "Planning, persistence and discipline are conscientiousness mechanisms; sociability, novelty and negative-emotion responses align more closely with extraversion, openness and emotional stability."
+          },
+          "pages": [
+            9,
+            11,
+            28
+          ]
+        },
+        {
+          "id": "material-48-q-stability",
+          "conceptIds": [
+            "material-48-stability"
+          ],
+          "prompt": {
+            "zh": "表中面对时间压力时 Neuroticism 标为负号，最合适的理解是什么？",
+            "en": "Neuroticism has a negative sign under time pressure. What is the best interpretation?"
+          },
+          "options": [
+            {
+              "zh": "较高神经质等同于更高尽责性",
+              "en": "Higher neuroticism is equivalent to higher conscientiousness"
+            },
+            {
+              "zh": "较低神经质／较高情绪稳定性在该情境更有利",
+              "en": "Lower neuroticism / higher emotional stability is more favourable in that context"
+            },
+            {
+              "zh": "负号表示情境完全不影响表现",
+              "en": "The negative sign means context has no effect on behaviour"
+            },
+            {
+              "zh": "所有大五特质在该情境都呈负关系",
+              "en": "Every Big Five trait has a negative relationship in that context"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "负号表示该特质与相关行为预测的方向，不是变量无效；神经质的反向对应较高情绪稳定性。",
+            "en": "The sign specifies the direction of that trait’s prediction, not irrelevance; lower neuroticism corresponds to higher emotional stability."
+          },
+          "pages": [
+            9,
+            11,
+            19
+          ]
+        },
+        {
+          "id": "material-48-q-openness",
+          "conceptIds": [
+            "material-48-openness"
+          ],
+          "prompt": {
+            "zh": "哪个岗位要求最直接激活经验开放性的优势？",
+            "en": "Which job requirement most directly draws on openness?"
+          },
+          "options": [
+            {
+              "zh": "反复按固定规则核对账目",
+              "en": "Repeatedly checking accounts against fixed rules"
+            },
+            {
+              "zh": "稳定处理愤怒客户的情绪",
+              "en": "Steadily handling angry customers’ emotions"
+            },
+            {
+              "zh": "持续构思和尝试新方案",
+              "en": "Continually devising and trying new solutions"
+            },
+            {
+              "zh": "积极影响谈判对方",
+              "en": "Actively influencing negotiation partners"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "新方案、学习与创造最贴近开放性；规则细节、情绪应对与社交影响分别侧重其他特质。",
+            "en": "Novel solutions, learning and creativity most closely match openness; rule-based detail, emotional coping and social influence emphasise other traits."
+          },
+          "pages": [
+            9,
+            11
+          ]
+        },
+        {
+          "id": "material-48-q-criterion-context",
+          "conceptIds": [
+            "material-48-criterion-context"
+          ],
+          "prompt": {
+            "zh": "如何合理使用并购公司案例中的特质排名？",
+            "en": "How should the buyout-company trait ranking be used?"
+          },
+          "options": [
+            {
+              "zh": "把“较不重要”理解为所有组织都不需要团队合作",
+              "en": "Treat “less important” as proof that no organisation needs teamwork"
+            },
+            {
+              "zh": "把该表当作 MBTI 的四组类型划分",
+              "en": "Treat the table as the four MBTI preference pairs"
+            },
+            {
+              "zh": "以排名代替对具体工作要求的分析",
+              "en": "Use the ranking instead of analysing specific job requirements"
+            },
+            {
+              "zh": "把排名放回研究的岗位和成功标准中解释",
+              "en": "Interpret the ranking within its studied roles and success criteria"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "“相对重要”依赖结果标准与情境；表中并非人格类型，也不能把局部结论扩展成通用招聘规则。",
+            "en": "Relative importance depends on criterion and context; the table is not a type classification and does not establish a universal hiring rule."
+          },
+          "pages": [
+            10
+          ]
+        },
+        {
+          "id": "material-48-q-machiavellianism",
+          "conceptIds": [
+            "material-48-machiavellianism"
+          ],
+          "prompt": {
+            "zh": "某员工认为“只要拿到合同，操纵同事是合理的”，最直接体现哪项？",
+            "en": "An employee says manipulating colleagues is justified if it wins the contract. Which trait is most directly illustrated?"
+          },
+          "options": [
+            {
+              "zh": "马基雅维利主义",
+              "en": "Machiavellianism"
+            },
+            {
+              "zh": "自恋",
+              "en": "Narcissism"
+            },
+            {
+              "zh": "经验开放性",
+              "en": "Openness to experience"
+            },
+            {
+              "zh": "核心自我评价",
+              "en": "Core self-evaluation"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "用结果证明操纵手段是该概念的核心；自恋重点是自大与赞美需求，开放性和CSE不包含这种手段论。",
+            "en": "Justifying manipulative means by their ends is central here; narcissism centres on grandiosity and admiration, while openness and CSE do not imply this reasoning."
+          },
+          "pages": [
+            12
+          ]
+        },
+        {
+          "id": "material-48-q-narcissism",
+          "conceptIds": [
+            "material-48-narcissism"
+          ],
+          "prompt": {
+            "zh": "哪种线索更能区分自恋与较高的核心自我评价？",
+            "en": "Which clue best distinguishes narcissism from positive core self-evaluation?"
+          },
+          "options": [
+            {
+              "zh": "相信自己有能力完成困难任务",
+              "en": "Believing one can complete difficult tasks"
+            },
+            {
+              "zh": "要求持续赞美并认为自己理应享有特殊待遇",
+              "en": "Demanding continual admiration and special treatment"
+            },
+            {
+              "zh": "遇到变化时较少紧张",
+              "en": "Feeling less tense when facing change"
+            },
+            {
+              "zh": "主动发现需要改进的流程",
+              "en": "Noticing a process that could be improved"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "自恋包含赞美需求和特权感；能力信念、稳定情绪和主动改进分别不等同于自恋。",
+            "en": "Narcissism includes admiration-seeking and entitlement; capability beliefs, emotional stability and initiative are not equivalent to it."
+          },
+          "pages": [
+            12
+          ]
+        },
+        {
+          "id": "material-48-q-psychopathy",
+          "conceptIds": [
+            "material-48-psychopathy"
+          ],
+          "prompt": {
+            "zh": "按课件定义，哪个线索最贴近 psychopathy？",
+            "en": "Under the slide definition, which clue most closely fits psychopathy?"
+          },
+          "options": [
+            {
+              "zh": "喜欢受到同事赞美和认可",
+              "en": "Enjoying praise and recognition from colleagues"
+            },
+            {
+              "zh": "更偏好独立而不是群体工作",
+              "en": "Preferring independent to group work"
+            },
+            {
+              "zh": "明知自己的行动伤害别人仍缺少内疚与关心",
+              "en": "Lacking guilt or concern despite knowing one’s actions harmed others"
+            },
+            {
+              "zh": "按周计划坚持完成工作",
+              "en": "Persisting with a weekly work plan"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "核心是对他人伤害缺少关心与悔意；赞美需求、独处偏好和坚持不能替代这个定义。",
+            "en": "The core is lack of concern and remorse regarding harm; desire for praise, preference for solitude and persistence do not substitute for that definition."
+          },
+          "pages": [
+            12
+          ]
+        },
+        {
+          "id": "material-48-q-antisocial-borderline",
+          "conceptIds": [
+            "material-48-antisocial-borderline"
+          ],
+          "prompt": {
+            "zh": "在课件的简化框架中，哪组配对正确？",
+            "en": "Within the slide’s simplified framework, which pairing is correct?"
+          },
+          "options": [
+            {
+              "zh": "Antisocial—创造力高；borderline—纪律性高",
+              "en": "Antisocial—high creativity; borderline—high discipline"
+            },
+            {
+              "zh": "Antisocial—低自尊；borderline—对他人冷漠",
+              "en": "Antisocial—low self-esteem; borderline—callousness toward others"
+            },
+            {
+              "zh": "Antisocial—偏好秩序；borderline—偏好社交主导",
+              "en": "Antisocial—preference for order; borderline—social dominance"
+            },
+            {
+              "zh": "Antisocial—对他人冷漠；borderline—低自尊与高度不确定",
+              "en": "Antisocial—callous toward others; borderline—low self-esteem and high uncertainty"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "第13页区分了对他人的冷漠与自我价值的不确定；交换这两个焦点会改变概念。",
+            "en": "Slide 13 distinguishes callousness toward others from uncertainty about self-worth; swapping these emphases changes the constructs."
+          },
+          "pages": [
+            13
+          ]
+        },
+        {
+          "id": "material-48-q-schizotypal-avoidant",
+          "conceptIds": [
+            "material-48-schizotypal-avoidant"
+          ],
+          "prompt": {
+            "zh": "哪组配对忠于本课件？",
+            "en": "Which pairing follows this deck?"
+          },
+          "options": [
+            {
+              "zh": "Schizotypal—古怪失序；avoidant—感到不足且厌恶批评",
+              "en": "Schizotypal—eccentric/disorganised; avoidant—inadequacy and dislike of criticism"
+            },
+            {
+              "zh": "Schizotypal—追求赞美；avoidant—相信结果证明手段",
+              "en": "Schizotypal—seeking admiration; avoidant—ends justify means"
+            },
+            {
+              "zh": "Schizotypal—条理规划；avoidant—高社会主导性",
+              "en": "Schizotypal—organisation/planning; avoidant—social dominance"
+            },
+            {
+              "zh": "Schizotypal—感到不足；avoidant—无内疚地伤害他人",
+              "en": "Schizotypal—inadequacy; avoidant—harming others without guilt"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "定义分别强调古怪失序与回避批评；其余选项混入了自恋、马基雅维利主义、大五或黑暗三联征的不同特征。",
+            "en": "The definitions emphasise eccentric disorganisation and avoidance of criticism; the alternatives import features from narcissism, Machiavellianism, the Big Five or other Dark Triad traits."
+          },
+          "pages": [
+            14
+          ]
+        },
+        {
+          "id": "material-48-q-perfectionism",
+          "conceptIds": [
+            "material-48-perfectionism"
+          ],
+          "prompt": {
+            "zh": "员工细节严谨但拒绝任何合理调整，怎样最贴近课件分析？",
+            "en": "An employee is meticulous but rejects reasonable adjustments. Which analysis best matches the slides?"
+          },
+          "options": [
+            {
+              "zh": "重细节意味着绝无负面影响",
+              "en": "Attention to detail means there can be no downside"
+            },
+            {
+              "zh": "同时识别重细节的贡献和固执完美主义的成本",
+              "en": "Recognise both attention-to-detail benefits and stubborn perfectionism costs"
+            },
+            {
+              "zh": "只要固执就不能有成就动机",
+              "en": "Stubbornness rules out achievement motivation"
+            },
+            {
+              "zh": "把行为仅解释为对赞美的需求",
+              "en": "Explain the behaviour solely as a need for admiration"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "该页明确呈现同一特征组合的两面；单纯赞美或否定都丢失了课件中的辨析。",
+            "en": "The slide explicitly presents both sides of the combination; blanket praise or rejection loses this distinction."
+          },
+          "pages": [
+            14
+          ]
+        },
+        {
+          "id": "material-48-q-cse",
+          "conceptIds": [
+            "material-48-cse"
+          ],
+          "prompt": {
+            "zh": "“我有能力应对困难，而且自己的贡献有价值”最直接体现什么？",
+            "en": "“I can handle difficult tasks and my contribution has worth” most directly reflects what?"
+          },
+          "options": [
+            {
+              "zh": "自我监控",
+              "en": "Self-monitoring"
+            },
+            {
+              "zh": "马基雅维利主义",
+              "en": "Machiavellianism"
+            },
+            {
+              "zh": "核心自我评价",
+              "en": "Core self-evaluation"
+            },
+            {
+              "zh": "权力距离",
+              "en": "Power distance"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "能力、胜任力与个人价值是CSE焦点；自我监控是调整行为，另外两项分别关注手段论和文化中的权力差异。",
+            "en": "Capability, competence and worth are CSE’s focus; self-monitoring concerns behavioural adjustment, while the other options concern instrumental manipulation and cultural power differences."
+          },
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "material-48-q-self-monitoring",
+          "conceptIds": [
+            "material-48-self-monitoring"
+          ],
+          "prompt": {
+            "zh": "某员工能根据不同听众调整交流方式，首先体现什么？",
+            "en": "An employee adjusts communication to different audiences. What is primarily illustrated?"
+          },
+          "options": [
+            {
+              "zh": "终极价值",
+              "en": "Terminal values"
+            },
+            {
+              "zh": "主动性人格",
+              "en": "Proactive personality"
+            },
+            {
+              "zh": "核心自我评价",
+              "en": "Core self-evaluation"
+            },
+            {
+              "zh": "自我监控",
+              "en": "Self-monitoring"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "根据线索调整自身行为是自我监控；主动性要求推动有意义的改变，CSE关注自我判断，价值则是所重视的目标或方式。",
+            "en": "Adjusting one’s behaviour to cues is self-monitoring; proactivity involves meaningful change, CSE self-appraisal, and values desired ends or means."
+          },
+          "pages": [
+            15
+          ]
+        },
+        {
+          "id": "material-48-q-proactivity",
+          "conceptIds": [
+            "material-48-proactivity"
+          ],
+          "prompt": {
+            "zh": "哪种行为最完整体现主动性人格？",
+            "en": "Which behaviour most fully demonstrates proactive personality?"
+          },
+          "options": [
+            {
+              "zh": "发现流程瓶颈后提出方案、试行并持续推进改进",
+              "en": "Identify a bottleneck, propose a solution, trial it and persist with improvement"
+            },
+            {
+              "zh": "按不同听众调整现有报告的语气",
+              "en": "Adjust the tone of an existing report to each audience"
+            },
+            {
+              "zh": "认为自己能胜任工作但等待具体指令",
+              "en": "Believe oneself capable but wait for detailed instructions"
+            },
+            {
+              "zh": "按既定清单准确完成任务且不提出改变",
+              "en": "Accurately complete a fixed checklist without initiating changes"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "完整链条是机会—主动—行动—坚持改变；适应表达、能力信念或遵守流程各只体现其他相邻特征。",
+            "en": "The full chain is opportunity–initiative–action–persistent change; adaptive expression, capability beliefs and procedural compliance describe adjacent traits."
+          },
+          "pages": [
+            15
+          ]
+        },
+        {
+          "id": "material-48-q-job-search",
+          "conceptIds": [
+            "material-48-job-search"
+          ],
+          "prompt": {
+            "zh": "哪种结论最准确保留课件对求职的预测范围？",
+            "en": "Which conclusion best preserves the scope of the job-search claim?"
+          },
+          "options": [
+            {
+              "zh": "外向性高的人一定会获得录用",
+              "en": "Highly extraverted applicants are guaranteed an offer"
+            },
+            {
+              "zh": "尽责性、外向性及CSE相关信念有助理解求职行为",
+              "en": "Conscientiousness, extraversion and CSE-related beliefs help explain search behaviour"
+            },
+            {
+              "zh": "只有工作结果才受人格影响，求职活动不受影响",
+              "en": "Only employment outcomes, never search activity, relate to personality"
+            },
+            {
+              "zh": "高自尊可以取代所有岗位能力要求",
+              "en": "High self-esteem can replace all job capability requirements"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "课件谈行为预测而非保证录用；CSE相关信念也不能替代雇主对能力和情境的要求。",
+            "en": "The slides concern behavioural prediction, not guaranteed hiring; CSE-related beliefs also do not replace capability or contextual requirements."
+          },
+          "pages": [
+            16
+          ]
+        },
+        {
+          "id": "material-48-q-situation-strength",
+          "conceptIds": [
+            "material-48-situation-strength"
+          ],
+          "prompt": {
+            "zh": "严格标准让员工行为几乎相同，此时最应避免什么推断？",
+            "en": "Strict standards make employees behave almost identically. Which inference should be avoided?"
+          },
+          "options": [
+            {
+              "zh": "考虑规范对行为的限制",
+              "en": "Considering the behavioural constraint imposed by norms"
+            },
+            {
+              "zh": "在解释行为时检查情境强度",
+              "en": "Checking situation strength when interpreting behaviour"
+            },
+            {
+              "zh": "仅凭相似行为推断所有员工人格相同",
+              "en": "Inferring identical personalities from similar behaviour alone"
+            },
+            {
+              "zh": "区分行为一致与人格一致",
+              "en": "Distinguishing behavioural similarity from personality similarity"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "强情境会压缩特质表达；相同表现可能由规则造成，不足以证明人格一致。",
+            "en": "Strong situations restrict trait expression; rules can produce similar behaviour without implying identical personalities."
+          },
+          "pages": [
+            17,
+            29
+          ]
+        },
+        {
+          "id": "material-48-q-clarity-consistency",
+          "conceptIds": [
+            "material-48-clarity-consistency"
+          ],
+          "prompt": {
+            "zh": "两名主管都给出清楚指示，但要求互相冲突，主要缺少哪项？",
+            "en": "Two supervisors give clear but conflicting instructions. What is primarily lacking?"
+          },
+          "options": [
+            {
+              "zh": "清晰性",
+              "en": "Clarity"
+            },
+            {
+              "zh": "结果严重性",
+              "en": "Consequences"
+            },
+            {
+              "zh": "个人价值排序",
+              "en": "A personal value hierarchy"
+            },
+            {
+              "zh": "一致性",
+              "en": "Consistency"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "每条指示清楚说明清晰性可能较高；冲突发生在线索之间，直接降低一致性。",
+            "en": "Each instruction may be clear, but disagreement between cues directly reduces consistency."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-48-q-constraints-consequences",
+          "conceptIds": [
+            "material-48-constraints-consequences"
+          ],
+          "prompt": {
+            "zh": "某岗位允许选择多种方法，但错误可能影响许多人，最直接说明什么？",
+            "en": "A role allows several methods, but mistakes can affect many people. What is most directly indicated?"
+          },
+          "options": [
+            {
+              "zh": "行为后果重要，即 consequences 较强",
+              "en": "Significant consequences of behaviour"
+            },
+            {
+              "zh": "方法选择必然受到很强限制",
+              "en": "Method choice must be tightly constrained"
+            },
+            {
+              "zh": "不同指令必然完全一致",
+              "en": "Different instructions must be fully consistent"
+            },
+            {
+              "zh": "个人特质因此完全不存在",
+              "en": "Personal traits therefore do not exist"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "后果严重不等于选择余地小；限制、后果、线索一致性应分开评估。",
+            "en": "Serious consequences do not imply low discretion; constraints, consequences and cue consistency must be assessed separately."
+          },
+          "pages": [
+            17
+          ]
+        },
+        {
+          "id": "material-48-q-trait-activation",
+          "conceptIds": [
+            "material-48-trait-activation"
+          ],
+          "prompt": {
+            "zh": "会计工作需要仔细核对，而创新写作需要新构想；应如何使用特质激活理论？",
+            "en": "Accounting requires detail checks while innovative writing requires new ideas. How should trait activation be applied?"
+          },
+          "options": [
+            {
+              "zh": "两类任务都只根据外向性判断",
+              "en": "Judge both tasks only by extraversion"
+            },
+            {
+              "zh": "分别关注尽责性与开放性对相应任务的预测作用",
+              "en": "Focus on conscientiousness and openness for the respective task demands"
+            },
+            {
+              "zh": "不同任务必须使用完全相同的特质权重",
+              "en": "Use identical trait weights for every task"
+            },
+            {
+              "zh": "把职业名称看作个人特质测量结果",
+              "en": "Treat the occupation label as a measured personality result"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "激活理论要求把特质与任务线索匹配；岗位例子不是个人测验结果，也不意味着一个特质适用所有任务。",
+            "en": "Activation theory matches traits to task cues; job examples are not individual test results and do not make one trait universally relevant."
+          },
+          "pages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-48-q-activation-directions",
+          "conceptIds": [
+            "material-48-activation-directions"
+          ],
+          "prompt": {
+            "zh": "为什么不能简单说“宜人性越高，对所有工作都越好”？",
+            "en": "Why is “higher agreeableness is better for every job” too simple?"
+          },
+          "options": [
+            {
+              "zh": "宜人性根本不属于大五模型",
+              "en": "Agreeableness is not part of the Big Five"
+            },
+            {
+              "zh": "宜人性等同于智力测验成绩",
+              "en": "Agreeableness is identical to an intelligence score"
+            },
+            {
+              "zh": "表中竞争任务与处理愤怒者对宜人性的预测方向不同",
+              "en": "Its predicted direction differs between competitive work and handling angry people"
+            },
+            {
+              "zh": "表中的正负号表示员工属于不同世代",
+              "en": "The signs identify different employee generations"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "相同特质的相关性和方向可以依任务而变；这是情境化预测，不是否定该特质或把人归为好坏。",
+            "en": "A trait’s relevance and direction can vary with demands; this is contextual prediction, not rejection of the construct or classification of people as good or bad."
+          },
+          "pages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-48-q-theories-contrast",
+          "conceptIds": [
+            "material-48-situation-strength",
+            "material-48-trait-activation"
+          ],
+          "prompt": {
+            "zh": "“严格规则压低个体差异”与“创新任务使开放性更相关”分别对应什么？",
+            "en": "What do “strict rules reduce individual differences” and “innovation makes openness more relevant” respectively illustrate?"
+          },
+          "options": [
+            {
+              "zh": "特质激活理论；情境强度理论",
+              "en": "Trait activation; situation strength"
+            },
+            {
+              "zh": "人员—组织匹配；核心自我评价",
+              "en": "Person–organisation fit; core self-evaluation"
+            },
+            {
+              "zh": "价值排序；遗传测量",
+              "en": "Value hierarchy; heredity measurement"
+            },
+            {
+              "zh": "情境强度理论；特质激活理论",
+              "en": "Situation strength; trait activation"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "强度关注情境对个体表达的整体约束；激活关注哪个具体特质被任务线索调动。",
+            "en": "Strength concerns overall constraints on individual expression; activation concerns which particular trait becomes relevant to task cues."
+          },
+          "pages": [
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-48-q-values",
+          "conceptIds": [
+            "material-48-values"
+          ],
+          "prompt": {
+            "zh": "两位员工都重视成就与家庭，但优先顺序不同，这最直接体现哪种差异？",
+            "en": "Two employees value both achievement and family but rank them differently. What differs most directly?"
+          },
+          "options": [
+            {
+              "zh": "价值体系",
+              "en": "Their value systems"
+            },
+            {
+              "zh": "是否拥有人格",
+              "en": "Whether they have personality"
+            },
+            {
+              "zh": "是否属于同一 MBTI 类型",
+              "en": "Whether they share an MBTI type"
+            },
+            {
+              "zh": "对工作流程的清晰程度",
+              "en": "Clarity of the work process"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "价值体系强调信念的重要性排序；共享同一价值词汇并不表示优先级相同。",
+            "en": "A value system concerns the ranking of convictions; sharing value labels does not imply identical priorities."
+          },
+          "pages": [
+            20
+          ]
+        },
+        {
+          "id": "material-48-q-terminal-instrumental",
+          "conceptIds": [
+            "material-48-terminal-instrumental"
+          ],
+          "prompt": {
+            "zh": "某人希望获得充实的生活，并坚持用诚实方式实现，哪项区分正确？",
+            "en": "Someone seeks a fulfilling life and insists on pursuing it honestly. Which distinction is correct?"
+          },
+          "options": [
+            {
+              "zh": "诚实是终点；充实生活是行为手段",
+              "en": "Honesty is the end; a fulfilling life is a behavioural means"
+            },
+            {
+              "zh": "充实生活是终点价值；诚实行动是工具性价值",
+              "en": "A fulfilling life is a terminal end; honest conduct is instrumental"
+            },
+            {
+              "zh": "两者都只是岗位技能",
+              "en": "Both are merely job skills"
+            },
+            {
+              "zh": "两者只说明情绪稳定性",
+              "en": "Both describe only emotional stability"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "终极/工具性区分的是目标与实现方式，不是哪个更重要，也不是人格维度。",
+            "en": "The distinction separates desired ends from means, not relative importance or personality dimensions."
+          },
+          "pages": [
+            21
+          ]
+        },
+        {
+          "id": "material-48-q-cohorts",
+          "conceptIds": [
+            "material-48-cohorts"
+          ],
+          "prompt": {
+            "zh": "使用课件世代表分析员工时，哪种做法最恰当？",
+            "en": "Which use of the cohort table is most appropriate?"
+          },
+          "options": [
+            {
+              "zh": "只根据出生世代决定员工一定重视什么",
+              "en": "Infer definite priorities solely from cohort membership"
+            },
+            {
+              "zh": "把表中“当前年龄”直接当作2026年的年龄",
+              "en": "Treat the table’s “current ages” as current in 2026"
+            },
+            {
+              "zh": "把群体模式作为比较线索，再了解个人的实际价值优先级",
+              "en": "Use cohort patterns as comparison cues, then examine individual priorities"
+            },
+            {
+              "zh": "假定同一世代的所有员工价值排序完全相同",
+              "en": "Assume everyone in a cohort has identical rankings"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "该表是历史群体概括；年龄会变化，个体价值还存在差异，应避免把概括当成个人事实。",
+            "en": "The table is a historical group-level summary; ages change and individual values differ, so the generalisation is not an individual fact."
+          },
+          "pages": [
+            22
+          ]
+        },
+        {
+          "id": "material-48-q-holland-realistic",
+          "conceptIds": [
+            "material-48-holland-realistic"
+          ],
+          "prompt": {
+            "zh": "喜欢动手操作设备和解决实体机械问题，最贴近 Holland 哪型？",
+            "en": "A preference for hands-on equipment work and physical mechanical problems best fits which Holland type?"
+          },
+          "options": [
+            {
+              "zh": "社会型",
+              "en": "Social"
+            },
+            {
+              "zh": "艺术型",
+              "en": "Artistic"
+            },
+            {
+              "zh": "企业型",
+              "en": "Enterprising"
+            },
+            {
+              "zh": "现实型",
+              "en": "Realistic"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "身体操作、技能和协调是现实型线索；帮助发展他人、创作和影响他人分别对应另外三型。",
+            "en": "Physical work, skill and coordination cue the realistic type; helping others, expression and influence cue the other types."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-48-q-holland-investigative",
+          "conceptIds": [
+            "material-48-holland-investigative"
+          ],
+          "prompt": {
+            "zh": "员工最喜欢提出解释、分析数据并理解未知问题，最贴近哪型？",
+            "en": "An employee prefers developing explanations, analysing data and understanding unknown problems. Which type fits best?"
+          },
+          "options": [
+            {
+              "zh": "研究型",
+              "en": "Investigative"
+            },
+            {
+              "zh": "常规型",
+              "en": "Conventional"
+            },
+            {
+              "zh": "社会型",
+              "en": "Social"
+            },
+            {
+              "zh": "现实型",
+              "en": "Realistic"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "探究与分析是研究型的活动核心；常规型强调有序规则，社会型帮助人，现实型身体操作。",
+            "en": "Inquiry and analysis are central to investigative activities; conventional emphasises orderly rules, social helping, and realistic physical tasks."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-48-q-holland-social",
+          "conceptIds": [
+            "material-48-holland-social"
+          ],
+          "prompt": {
+            "zh": "喜欢指导学生成长胜过谈判成交，最贴近哪种类型？",
+            "en": "Preferring to support students’ development over negotiating deals best fits which type?"
+          },
+          "options": [
+            {
+              "zh": "企业型",
+              "en": "Enterprising"
+            },
+            {
+              "zh": "社会型",
+              "en": "Social"
+            },
+            {
+              "zh": "常规型",
+              "en": "Conventional"
+            },
+            {
+              "zh": "艺术型",
+              "en": "Artistic"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "发展他人是社会型的核心；同样需要人际互动的企业型主要追求影响和实现权力目标。",
+            "en": "Developing others is central to the social type; enterprising work also involves people but centres on influence and power-related objectives."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-48-q-holland-conventional",
+          "conceptIds": [
+            "material-48-holland-conventional"
+          ],
+          "prompt": {
+            "zh": "偏好按明确规则整理记录、而不喜欢模糊任务，最贴近哪型？",
+            "en": "Preferring to organise records under explicit rules rather than ambiguous tasks best fits which type?"
+          },
+          "options": [
+            {
+              "zh": "艺术型",
+              "en": "Artistic"
+            },
+            {
+              "zh": "企业型",
+              "en": "Enterprising"
+            },
+            {
+              "zh": "常规型",
+              "en": "Conventional"
+            },
+            {
+              "zh": "研究型",
+              "en": "Investigative"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "清楚规则与秩序对应常规型；艺术型容许模糊，企业型侧重影响，研究型侧重探究。",
+            "en": "Clear rules and order characterise conventional preferences; artistic tolerates ambiguity, enterprising stresses influence, and investigative stresses inquiry."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-48-q-holland-enterprising",
+          "conceptIds": [
+            "material-48-holland-enterprising"
+          ],
+          "prompt": {
+            "zh": "喜欢说服客户、推动交易与影响决策，最贴近哪型？",
+            "en": "Enjoying persuasion, deal-making and influencing decisions best fits which type?"
+          },
+          "options": [
+            {
+              "zh": "社会型",
+              "en": "Social"
+            },
+            {
+              "zh": "常规型",
+              "en": "Conventional"
+            },
+            {
+              "zh": "现实型",
+              "en": "Realistic"
+            },
+            {
+              "zh": "企业型",
+              "en": "Enterprising"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "影响与权力机会是企业型关键；社会型的帮助目标虽也需沟通，但活动目的不同。",
+            "en": "Opportunities for influence and power define enterprising preferences; social helping also uses communication but serves a different purpose."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-48-q-holland-artistic",
+          "conceptIds": [
+            "material-48-holland-artistic"
+          ],
+          "prompt": {
+            "zh": "岗位允许多种表达路径且没有单一标准答案，哪型偏好最贴近？",
+            "en": "A role allows many forms of expression without one standard answer. Which preference is closest?"
+          },
+          "options": [
+            {
+              "zh": "艺术型",
+              "en": "Artistic"
+            },
+            {
+              "zh": "常规型",
+              "en": "Conventional"
+            },
+            {
+              "zh": "现实型",
+              "en": "Realistic"
+            },
+            {
+              "zh": "企业型",
+              "en": "Enterprising"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "表达自由与非结构化活动是艺术型线索；其他类型分别强调规则、身体技能或影响他人。",
+            "en": "Expressive freedom and unstructured activity cue the artistic type; the others emphasise rules, physical skill or influence."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-48-q-organisation-fit",
+          "conceptIds": [
+            "material-48-organisation-fit"
+          ],
+          "prompt": {
+            "zh": "员工喜欢自己的分析任务，却不认同公司激烈对抗的文化，应如何区分？",
+            "en": "An employee enjoys the analytical tasks but dislikes the firm’s confrontational culture. How should this be distinguished?"
+          },
+          "options": [
+            {
+              "zh": "喜欢工作任务就证明所有匹配都好",
+              "en": "Enjoying tasks proves all forms of fit are good"
+            },
+            {
+              "zh": "可能工作匹配较好，但组织匹配较弱",
+              "en": "Person–job fit may be good while person–organisation fit is weaker"
+            },
+            {
+              "zh": "文化问题只属于尽责性测量",
+              "en": "The culture issue is only a conscientiousness measure"
+            },
+            {
+              "zh": "组织匹配与个人偏好无关",
+              "en": "Person–organisation fit is unrelated to preferences"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "任务内容和组织文化是不同分析对象；前者匹配不能自动证明后者匹配。",
+            "en": "Task content and organisational culture are different targets; fit with one does not automatically establish fit with the other."
+          },
+          "pages": [
+            23,
+            24,
+            29
+          ]
+        },
+        {
+          "id": "material-48-q-other-fit",
+          "conceptIds": [
+            "material-48-other-fit"
+          ],
+          "prompt": {
+            "zh": "员工认可公司价值和岗位任务，却与直接领导的工作方式持续冲突，最直接应检查什么？",
+            "en": "An employee accepts the firm’s values and job tasks but repeatedly clashes with the direct manager’s work style. Which fit should be examined first?"
+          },
+          "options": [
+            {
+              "zh": "人员—工作匹配中的任务兴趣",
+              "en": "Task-interest aspects of person–job fit"
+            },
+            {
+              "zh": "整个国家的权力距离分数",
+              "en": "The entire country’s power-distance score"
+            },
+            {
+              "zh": "人员—主管匹配",
+              "en": "Person–supervisor fit"
+            },
+            {
+              "zh": "MBTI 类型是否相同",
+              "en": "Whether their MBTI type codes are identical"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "问题指向直接主管这一对象；不能把局部关系冲突直接扩展成岗位、国家或人格标签问题。",
+            "en": "The immediate target is the supervisor; a local relationship problem should not automatically be reframed as a job, national-culture or type-label problem."
+          },
+          "pages": [
+            25,
+            29
+          ]
+        },
+        {
+          "id": "material-48-q-power-distance",
+          "conceptIds": [
+            "material-48-power-distance"
+          ],
+          "prompt": {
+            "zh": "某文化更接受下属少质疑上级的层级安排，最直接对应哪项？",
+            "en": "A culture more readily accepts hierarchical arrangements with little questioning of superiors. Which dimension is most relevant?"
+          },
+          "options": [
+            {
+              "zh": "长期导向",
+              "en": "Long-term orientation"
+            },
+            {
+              "zh": "经验开放性",
+              "en": "Openness to experience"
+            },
+            {
+              "zh": "终极价值与工具性价值",
+              "en": "Terminal versus instrumental values"
+            },
+            {
+              "zh": "权力距离",
+              "en": "Power distance"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "对层级和不平等权力的接受是权力距离；时间取向、个体人格和目标/手段是不同概念。",
+            "en": "Acceptance of hierarchy and unequal power concerns power distance; time orientation, individual personality and ends/means are different concepts."
+          },
+          "pages": [
+            26,
+            29
+          ]
+        },
+        {
+          "id": "material-48-q-individualism",
+          "conceptIds": [
+            "material-48-individualism"
+          ],
+          "prompt": {
+            "zh": "比较“个人自主选择”与“维护群体义务”的优先程度，使用哪一维度？",
+            "en": "Which dimension compares priority for personal choice versus group obligations?"
+          },
+          "options": [
+            {
+              "zh": "个人主义—集体主义",
+              "en": "Individualism–collectivism"
+            },
+            {
+              "zh": "不确定性规避",
+              "en": "Uncertainty avoidance"
+            },
+            {
+              "zh": "情绪稳定性",
+              "en": "Emotional stability"
+            },
+            {
+              "zh": "人员—主管匹配",
+              "en": "Person–supervisor fit"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "这里比较个人与群体关系的价值重点；对不确定性的态度、情绪特质和具体关系匹配不等同于此。",
+            "en": "The comparison concerns individual–group value priorities, distinct from uncertainty, emotional traits and fit with a particular supervisor."
+          },
+          "pages": [
+            26
+          ]
+        },
+        {
+          "id": "material-48-q-masculinity",
+          "conceptIds": [
+            "material-48-masculinity"
+          ],
+          "prompt": {
+            "zh": "在 Hofstede 框架中，竞争成就与关怀生活质量的对比属于什么？",
+            "en": "In Hofstede’s framework, which dimension contrasts competitive achievement with care and quality of life?"
+          },
+          "options": [
+            {
+              "zh": "长期—短期导向",
+              "en": "Long-term–short-term orientation"
+            },
+            {
+              "zh": "男性化—女性化价值取向",
+              "en": "Masculinity–femininity"
+            },
+            {
+              "zh": "遗传—环境",
+              "en": "Heredity–environment"
+            },
+            {
+              "zh": "高—低自我监控",
+              "en": "High–low self-monitoring"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "这些是该文化维度的传统标签；不应把它与性别能力、时间取向或自我监控混为一谈。",
+            "en": "These are the dimension’s traditional labels; do not confuse it with gender-based ability, time orientation or self-monitoring."
+          },
+          "pages": [
+            26
+          ]
+        },
+        {
+          "id": "material-48-q-uncertainty",
+          "conceptIds": [
+            "material-48-uncertainty"
+          ],
+          "prompt": {
+            "zh": "员工希望流程清楚以减少模糊，却支持平等参与，哪种解释更准确？",
+            "en": "Employees want clear procedures to reduce ambiguity but support equal participation. Which interpretation is better?"
+          },
+          "options": [
+            {
+              "zh": "喜欢规则必然意味着极高权力距离",
+              "en": "Preferring rules necessarily implies very high power distance"
+            },
+            {
+              "zh": "平等参与必然意味着不能制定明确流程",
+              "en": "Equal participation makes clear procedures impossible"
+            },
+            {
+              "zh": "规避不确定性与接受权力不平等是两个不同维度",
+              "en": "Uncertainty avoidance and acceptance of power inequality are distinct dimensions"
+            },
+            {
+              "zh": "流程偏好直接决定 MBTI 类型",
+              "en": "Procedure preference directly determines MBTI type"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "对模糊的态度不等于对权力分配的态度，两者应分别分析。",
+            "en": "Attitudes to ambiguity are not attitudes to power distribution; analyse them separately."
+          },
+          "pages": [
+            26
+          ]
+        },
+        {
+          "id": "material-48-q-time-orientation",
+          "conceptIds": [
+            "material-48-time-orientation"
+          ],
+          "prompt": {
+            "zh": "哪项更适合用长期—短期导向分析？",
+            "en": "Which issue is best analysed with long-term–short-term orientation?"
+          },
+          "options": [
+            {
+              "zh": "主管能否批准某一笔经费",
+              "en": "Whether a supervisor can approve a particular expense"
+            },
+            {
+              "zh": "员工在社交中是否健谈",
+              "en": "Whether an employee is talkative socially"
+            },
+            {
+              "zh": "报告是否有完整参考文献",
+              "en": "Whether a report has complete references"
+            },
+            {
+              "zh": "对持续未来投入与近期成果的相对重视",
+              "en": "Relative emphasis on sustained future investment versus near-term results"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "时间导向讨论价值上的时间视野；权限、外向性与文档完整性并不是该维度。",
+            "en": "Time orientation concerns the time horizon of values; authority, extraversion and document completeness are not this dimension."
+          },
+          "pages": [
+            26
+          ]
+        },
+        {
+          "id": "material-48-q-globe",
+          "conceptIds": [
+            "material-48-globe"
+          ],
+          "prompt": {
+            "zh": "根据本课件，怎样准确描述 GLOBE？",
+            "en": "According to this deck, how is GLOBE best described?"
+          },
+          "options": [
+            {
+              "zh": "以跨国组织数据更新文化研究，保留相近变量并有所扩展",
+              "en": "It updates cultural research using cross-national organisational data, retaining similar variables and extending them"
+            },
+            {
+              "zh": "它是 MBTI 的四组偏好名称",
+              "en": "It is the name for the four MBTI preferences"
+            },
+            {
+              "zh": "它只研究一家组织并排除文化比较",
+              "en": "It studies only one organisation and excludes cultural comparison"
+            },
+            {
+              "zh": "它证明一个国家中的每个人价值完全一致",
+              "en": "It proves everyone within a country has identical values"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "GLOBE 是跨文化组织研究框架；多国数据并不消除个体差异，也不把文化变量变成人格类型。",
+            "en": "GLOBE is a cross-cultural organisational research framework; multinational data neither remove individual differences nor turn cultural variables into personality types."
+          },
+          "pages": [
+            27,
+            29
+          ]
+        },
+        {
+          "id": "material-48-q-culture-compare",
+          "conceptIds": [
+            "material-48-power-distance",
+            "material-48-individualism",
+            "material-48-uncertainty"
+          ],
+          "prompt": {
+            "zh": "员工认可平等参与、重视团队义务，又偏好明确规则。哪组维度应分别分析？",
+            "en": "Employees favour equal participation, group obligations and clear rules. Which dimensions should be examined separately?"
+          },
+          "options": [
+            {
+              "zh": "外向性、尽责性、开放性",
+              "en": "Extraversion, conscientiousness and openness"
+            },
+            {
+              "zh": "权力距离、个人主义/集体主义、不确定性规避",
+              "en": "Power distance, individualism/collectivism and uncertainty avoidance"
+            },
+            {
+              "zh": "终极价值、工具性价值、核心自我评价",
+              "en": "Terminal values, instrumental values and CSE"
+            },
+            {
+              "zh": "工作匹配、组织匹配、主管匹配",
+              "en": "Job fit, organisation fit and supervisor fit"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "平等与权力、个人与群体、规则与模糊分别对应三个文化维度；人格、价值类型和匹配对象不能替代它们。",
+            "en": "Equality/power, individual/group and rules/ambiguity correspond to three cultural dimensions; personality, value types and fit targets do not substitute for them."
+          },
+          "pages": [
+            26
+          ]
+        },
+        {
+          "id": "material-48-q-mbti-decode",
+          "conceptIds": [
+            "material-48-mbti"
+          ],
+          "prompt": {
+            "zh": "按课件的字母对应，INTJ应如何展开？",
+            "en": "Using the slide’s letter pairs, how is INTJ expanded?"
+          },
+          "options": [
+            {
+              "zh": "内向、感觉、思考、知觉",
+              "en": "Introverted, Sensing, Thinking, Perceiving"
+            },
+            {
+              "zh": "外向、直觉、情感、判断",
+              "en": "Extroverted, Intuitive, Feeling, Judging"
+            },
+            {
+              "zh": "内向、直觉、思考、判断",
+              "en": "Introverted, Intuitive, Thinking, Judging"
+            },
+            {
+              "zh": "内向、直觉、情感、知觉",
+              "en": "Introverted, Intuitive, Feeling, Perceiving"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "I对应内向、N对应直觉、T对应思考、J对应判断；S与N、T与F、P与J是不同偏好，不能仅凭一个字母猜整型。",
+            "en": "I means Introverted, N Intuitive, T Thinking and J Judging. S/N, T/F and P/J distinguish different preferences, so one letter cannot identify the whole type."
+          },
+          "pages": [
+            8
+          ]
+        },
+        {
+          "id": "material-48-q-mbti-examples",
+          "conceptIds": [
+            "material-48-mbti"
+          ],
+          "prompt": {
+            "zh": "哪一组类型与课件示例标签正确对应？",
+            "en": "Which type-to-example pairing matches the slides?"
+          },
+          "options": [
+            {
+              "zh": "INTJ—组织型；ESTJ—概念型；ENTP—愿景型",
+              "en": "INTJ—organisers; ESTJ—conceptualisers; ENTP—visionaries"
+            },
+            {
+              "zh": "INTJ—概念型；ESTJ—愿景型；ENTP—组织型",
+              "en": "INTJ—conceptualisers; ESTJ—visionaries; ENTP—organisers"
+            },
+            {
+              "zh": "INTJ—愿景型；ESTJ—概念型；ENTP—组织型",
+              "en": "INTJ—visionaries; ESTJ—conceptualisers; ENTP—organisers"
+            },
+            {
+              "zh": "INTJ—愿景型；ESTJ—组织型；ENTP—概念型",
+              "en": "INTJ—visionaries; ESTJ—organisers; ENTP—conceptualisers"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "第8页给出这三组对应；这些是框架中的示例称呼，不是证明一个人一定胜任相应职位的测验结论。",
+            "en": "Slide 8 gives these three pairings. They are illustrative framework labels, not test findings that prove competence in a corresponding job."
+          },
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1
+            ],
+            "reason": {
+              "zh": "封面与出版信息，无新增教学知识。",
+              "en": "Cover and publication details without additional teaching content."
+            }
+          },
+          {
+            "pages": [
+              2,
+              3
+            ],
+            "reason": {
+              "zh": "学习目标预告；具体概念已在后续实质页覆盖。",
+              "en": "Learning-objective previews; substantive concepts are covered on later slides."
+            }
+          }
+        ]
+      }
     }
   ]
 }

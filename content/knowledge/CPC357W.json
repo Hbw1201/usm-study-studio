@@ -76,6 +76,13 @@
       }
     },
     {
+      "resourceId": "material-50",
+      "reason": {
+        "zh": "把Chapter3的引脚与Chapter4的传感/执行器接到电路层：先识别节点和供电路径，再计算元件承受的电压、电流与功率，支持Lab5多模块接线。",
+        "en": "Connect Chapter3 pins and Chapter4 sensors/actuators to circuit reasoning: identify nodes and power paths, then calculate component voltage, current and power to support Lab5 wiring."
+      }
+    },
+    {
       "resourceId": "material-17",
       "reason": {
         "zh": "把传感/执行原理转化为协调的双舵机控制。",
@@ -87,6 +94,13 @@
       "reason": {
         "zh": "对比Lab Sheet 4与实际源码的接口差异。",
         "en": "Compare Lab Sheet 4 against the actual source interface."
+      }
+    },
+    {
+      "resourceId": "material-51",
+      "reason": {
+        "zh": "在传感器、执行器与Lab4舵机控制之后，将多传感输入、百分比映射与优先级规则组成农业控制流程，并回到项目设计验证可行性。",
+        "en": "After sensors, actuators and Lab4 servo control, combine multiple inputs, percentage mapping and priority rules into an agriculture controller, then use the project design to test viability."
       }
     },
     {
@@ -7078,6 +7092,2515 @@
         "en": "PDF page 3 states 3 January 2027 at 11:59 pm Malaysia time; the platform may differ, so follow current eLearn settings and lecturer announcements."
       },
       "sourceSha256": "e761610b48f1f5eb843731f35e05dea414b80c8c03ba1f29951547bdd1b6be23"
+    },
+    {
+      "resourceId": "material-51",
+      "sourceSha256": "cee9aaf311c4e4abb7d282e556226a255fda51ae6fd273a777d325fea210a4c8",
+      "overview": {
+        "zh": "把土壤湿度和降雨感知连接到舵机灌溉状态，用需求、校准和条件边界解释一个有目的的物联网原型。",
+        "en": "Connect moisture and rainfall sensing to servo irrigation states, explaining a purposeful IoT prototype through requirements, calibration and condition boundaries."
+      },
+      "groups": [
+        {
+          "id": "material-51-g1",
+          "title": {
+            "zh": "从问题到可实施的设计",
+            "en": "From problem to viable design"
+          },
+          "concepts": [
+            {
+              "id": "material-51-c1",
+              "title": {
+                "zh": "问题驱动的IoT构思",
+                "en": "Problem-led IoT ideation"
+              },
+              "explanation": {
+                "zh": "先识别真实的监测或自动化缺口，再想象数据如何改善决策，最后选择完成任务所需的传感器和执行器。连网能力的价值在于更及时、可响应的数据闭环，而不是元件数量。",
+                "en": "Identify a real monitoring or automation gap, envision how data improves decisions, then select the necessary sensors and actuators. Connectivity is valuable for timely, responsive data use rather than component count."
+              },
+              "pages": [
+                2
+              ]
+            },
+            {
+              "id": "material-51-c2",
+              "title": {
+                "zh": "简洁且有目的的组件选择",
+                "en": "Simple and purposeful components"
+              },
+              "explanation": {
+                "zh": "每个传感器、执行器和模块都应有直接的任务作用。不必要的组件增加成本、复杂度、故障点和维护负担；简单设计仍必须保留实现目标的关键感知和动作。",
+                "en": "Every sensor, actuator and module should serve the task directly. Unnecessary parts add cost, complexity, failure points and maintenance, while simplicity still requires essential sensing and actions."
+              },
+              "pages": [
+                2
+              ]
+            },
+            {
+              "id": "material-51-c3",
+              "title": {
+                "zh": "实施可行性与维护",
+                "en": "Implementation viability and maintenance"
+              },
+              "explanation": {
+                "zh": "构思需同时检查成本、技术限制、维护便利、扩展能力和实际使用条件。能在桌面运行只证明部分技术可行，不能单独证明农田部署可维护或可扩展。",
+                "en": "Assess cost, technical limits, ease of maintenance, scalability and practical conditions. A working desk prototype establishes only part of technical feasibility, not field maintainability or scalability."
+              },
+              "pages": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-51-g2",
+          "title": {
+            "zh": "智能农业的感知—决策—执行",
+            "en": "Sensing, decision and actuation in agriculture"
+          },
+          "concepts": [
+            {
+              "id": "material-51-c4",
+              "title": {
+                "zh": "灌溉状态的原型表达",
+                "en": "Representing irrigation states"
+              },
+              "explanation": {
+                "zh": "原型解决缺少实时信息导致的过量或不足浇水：湿度提供土壤状态，雨传感器提供天气条件，SG90舵机角度代表灌溉状态。角度模拟不等于已测得真实水流量。",
+                "en": "The prototype addresses over- and under-watering caused by missing real-time information: moisture indicates soil condition, rain indicates weather, and SG90 angle represents an irrigation state. An angle simulation is not a measured water-flow rate."
+              },
+              "pages": [
+                3
+              ]
+            },
+            {
+              "id": "material-51-c5",
+              "title": {
+                "zh": "信号类型与引脚分工",
+                "en": "Signal types and pin roles"
+              },
+              "explanation": {
+                "zh": "本实验把湿度A0接GPIO35作为模拟输入，雨模块D0接GPIO23作为数字输入，舵机SIG接GPIO17。模拟值保留湿度程度，数字值用于雨/无雨分类，输出信号驱动舵机位置。",
+                "en": "Moisture A0 connects to GPIO35 as an analog input, rain D0 to GPIO23 as a digital input, and servo SIG to GPIO17. Analog values retain moisture degree, digital values classify rain/no rain, and the output controls servo position."
+              },
+              "pages": [
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "id": "material-51-c6",
+              "title": {
+                "zh": "供电轨与信号参考",
+                "en": "Power rails and signal reference"
+              },
+              "explanation": {
+                "zh": "接线图连接左右正电源轨，并把板GND引到两侧负电源轨，使传感器和舵机有共同信号参考。VCC/GND负责供电，A0、D0、SIG分别承担测量或控制，不能互换角色。",
+                "en": "The diagram joins the positive rails and connects board GND to both negative rails, giving sensors and servo a shared signal reference. VCC/GND provide power, while A0, D0 and SIG carry sensing or control and are not interchangeable."
+              },
+              "pages": [
+                4
+              ]
+            },
+            {
+              "id": "material-51-c7",
+              "title": {
+                "zh": "舵机初始化与采样周期",
+                "en": "Servo initialization and sampling cadence"
+              },
+              "explanation": {
+                "zh": "ESP32Servo把舵机接到GPIO17，脉宽范围500–2500微秒、频率50 Hz，启动时write(0)。循环首部delay(1000)令读数约每秒更新，但循环采样周期和舵机PWM频率是两个不同时间尺度。",
+                "en": "ESP32Servo attaches the servo to GPIO17 with a 500–2500 microsecond pulse range at 50 Hz and writes zero degrees at startup. delay(1000) at the loop start updates readings roughly each second; sampling cadence and servo PWM frequency are different timescales."
+              },
+              "pages": [
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-51-g3",
+          "title": {
+            "zh": "校准、逻辑和边界验证",
+            "en": "Calibration, logic and boundary checks"
+          },
+          "concepts": [
+            {
+              "id": "material-51-c8",
+              "title": {
+                "zh": "反向量程的湿度映射",
+                "en": "Moisture mapping with a reversed range"
+              },
+              "explanation": {
+                "zh": "示例把干端4095对应0%，湿端2170对应100%，用map(sensorValue,2170,4095,100,0)线性缩放。原始值下降代表映射后的湿度上升；这些约数是实验校准端点，不应视为所有探头的固定常数。",
+                "en": "The example maps dry 4095 to 0% and wet 2170 to 100% using map(sensorValue,2170,4095,100,0). Decreasing raw readings produce increasing mapped moisture; these approximate calibration endpoints are not universal sensor constants."
+              },
+              "pages": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "material-51-c9",
+              "title": {
+                "zh": "映射与限幅的区别",
+                "en": "Mapping versus constraining"
+              },
+              "explanation": {
+                "zh": "map()按端点关系换算，在端点范围外仍可能产生小于0或大于100的结果；constrain(outputValue,0,100)才负责把百分比限制到合法区间。限幅避免异常显示，但不能修复错误校准。",
+                "en": "map() rescales by endpoints and can produce results below zero or above 100 for out-of-range readings; constrain(outputValue,0,100) bounds the result. Clamping prevents invalid percentages but does not repair calibration."
+              },
+              "pages": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "material-51-c10",
+              "title": {
+                "zh": "低有效雨信号的取反",
+                "en": "Inverting an active-low rain signal"
+              },
+              "explanation": {
+                "zh": "rainState = !digitalRead(rainPin)把模块的低电平雨信号翻成便于理解的HIGH=有雨、LOW=无雨。判断条件使用的是取反后的rainState，不能把它与引脚原电平混为一谈。",
+                "en": "rainState = !digitalRead(rainPin) converts the module’s low-active rain signal into HIGH for rain and LOW for no rain. Conditions use the inverted rainState, not the raw pin level."
+              },
+              "pages": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "material-51-c11",
+              "title": {
+                "zh": "降雨优先与阈值分支",
+                "en": "Rain priority and threshold branches"
+              },
+              "explanation": {
+                "zh": "无雨且湿度<20%时写180°；第一分支失败后，无雨且湿度<60%写90°，因此实际中间区间是20%≤湿度<60%。其余情况写0°，包括任何降雨与湿度≥60%；文字中的“20到60”应以代码边界为准。",
+                "en": "With no rain and moisture below 20%, write 180°. If that branch fails, no rain and moisture below 60% gives 90°, so the middle range is 20%≤moisture<60%. All other cases give zero, including any rain and moisture≥60%; the code resolves the prose’s boundary ambiguity."
+              },
+              "pages": [
+                5,
+                6
+              ]
+            },
+            {
+              "id": "material-51-c12",
+              "title": {
+                "zh": "串口诊断与可验证的控制",
+                "en": "Serial diagnostics and verifiable control"
+              },
+              "explanation": {
+                "zh": "9600波特串口打印处理后的百分比和Rain detected/No rain，适合同时核对传感解释与预期舵机角度。该代码没有发送网络请求；要验证规则，应记录输入状态、处理值和输出，而不是只看舵机是否转动。",
+                "en": "The 9600-baud serial output prints processed percentage and Rain detected/No rain, letting learners check interpretation alongside the expected angle. No network requests are sent; verify rules by relating input state, processed value and output rather than observing motion alone."
+              },
+              "pages": [
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-51-c1",
+          "to": "material-51-c2",
+          "relation": {
+            "zh": "按问题贡献选择必要组件",
+            "en": "Select essential parts by contribution to the problem"
+          }
+        },
+        {
+          "from": "material-51-c2",
+          "to": "material-51-c3",
+          "relation": {
+            "zh": "简化后仍需检验现实可行性",
+            "en": "Check real-world viability after simplification"
+          }
+        },
+        {
+          "from": "material-51-c4",
+          "to": "material-51-c5",
+          "relation": {
+            "zh": "灌溉输入与动作落实到不同信号",
+            "en": "Implement irrigation inputs and actions as distinct signals"
+          }
+        },
+        {
+          "from": "material-51-c5",
+          "to": "material-51-c6",
+          "relation": {
+            "zh": "信号接线依赖共同参考与正确供电",
+            "en": "Signal wiring depends on shared references and correct power"
+          }
+        },
+        {
+          "from": "material-51-c5",
+          "to": "material-51-c8",
+          "relation": {
+            "zh": "模拟输入经校准才成为百分比",
+            "en": "Calibrate analog input into a percentage"
+          }
+        },
+        {
+          "from": "material-51-c8",
+          "to": "material-51-c9",
+          "relation": {
+            "zh": "映射结果再做范围限制",
+            "en": "Constrain the mapped result"
+          }
+        },
+        {
+          "from": "material-51-c10",
+          "to": "material-51-c11",
+          "relation": {
+            "zh": "雨信号语义参与优先级判断",
+            "en": "Rain semantics determine branch priority"
+          }
+        },
+        {
+          "from": "material-51-c9",
+          "to": "material-51-c11",
+          "relation": {
+            "zh": "合法百分比进入阈值判断",
+            "en": "Feed bounded percentages into threshold decisions"
+          }
+        },
+        {
+          "from": "material-51-c11",
+          "to": "material-51-c7",
+          "relation": {
+            "zh": "决策通过初始化后的舵机执行",
+            "en": "Execute decisions through the initialized servo"
+          }
+        },
+        {
+          "from": "material-51-c11",
+          "to": "material-51-c12",
+          "relation": {
+            "zh": "用诊断输出验证分支及边界",
+            "en": "Verify branches and boundaries through diagnostics"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-51-q1",
+          "conceptIds": [
+            "material-51-c1"
+          ],
+          "prompt": {
+            "zh": "设计农业原型时，哪一个起点最符合讲义流程？",
+            "en": "Which starting point best follows the agriculture-design workflow?"
+          },
+          "options": [
+            {
+              "zh": "先规定舵机每小时旋转一次，再收集数据作为展示",
+              "en": "Schedule hourly servo motion first and collect data only for display"
+            },
+            {
+              "zh": "先购买所有可用传感器，再寻找能使用它们的情境",
+              "en": "Buy every available sensor before finding a use for them"
+            },
+            {
+              "zh": "先决定云平台套餐，再把农业问题改成符合套餐的功能",
+              "en": "Choose a cloud plan first and reshape the problem to fit it"
+            },
+            {
+              "zh": "确定何时浇水缺少实时依据，再选择能提供依据的传感器",
+              "en": "Identify missing real-time evidence for irrigation, then choose sensors that provide it"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "讲义从问题或低效率出发，再构思、选器件和评估；其余方案先锁定技术或行为，未建立需求依据。",
+            "en": "The sheet begins with a problem or inefficiency before ideation, component selection and evaluation; the alternatives lock in technology or behavior before establishing the need."
+          },
+          "pages": [
+            2
+          ]
+        },
+        {
+          "id": "material-51-q2",
+          "conceptIds": [
+            "material-51-c2"
+          ],
+          "prompt": {
+            "zh": "一个不影响浇水决策的附加传感器应如何处理？",
+            "en": "How should an extra sensor that does not affect irrigation decisions be treated?"
+          },
+          "options": [
+            {
+              "zh": "先说明其功能价值；若无必要作用则从最小设计中移除",
+              "en": "Justify its function and remove it from the minimal design if unnecessary"
+            },
+            {
+              "zh": "用它替换土壤传感器，保持总元件数量不变",
+              "en": "Replace the soil sensor with it to keep the component count constant"
+            },
+            {
+              "zh": "因为能增加可测量变量而必须保留",
+              "en": "Keep it because it increases the number of measurable variables"
+            },
+            {
+              "zh": "把它作为必需依赖，保证每次浇水都等它采样",
+              "en": "Make every irrigation action wait for its reading"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "有目的的简化按功能贡献判断，不按器件数量或可测量变量数量判断；移除必需土壤输入也不能满足原问题。",
+            "en": "Purposeful simplification judges functional contribution, not counts of parts or variables; removing essential soil input would also defeat the problem."
+          },
+          "pages": [
+            2
+          ]
+        },
+        {
+          "id": "material-51-q3",
+          "conceptIds": [
+            "material-51-c3"
+          ],
+          "prompt": {
+            "zh": "桌面演示成功后，哪项评估最能补足可行性论证？",
+            "en": "What best extends a successful desk demo into a viability assessment?"
+          },
+          "options": [
+            {
+              "zh": "只测一个节点的成本，并假定增加节点没有通信或维护限制",
+              "en": "Measure one node cost and assume extra nodes add no communication or maintenance limits"
+            },
+            {
+              "zh": "评估现场供电、维护成本和扩展到更多种植区域的限制",
+              "en": "Assess field power, maintenance cost and scaling to more plots"
+            },
+            {
+              "zh": "只证明一次运行成功，就认定长期部署可靠",
+              "en": "Demonstrate one successful run and infer reliable long-term deployment"
+            },
+            {
+              "zh": "只验证台架上的传感器精度，就假定现场维护和扩展也可行",
+              "en": "Validate bench sensor accuracy alone and assume field maintenance and scaling are feasible"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "可行性覆盖成本、技术限制、维护和扩展；台架精度、单节点成本与一次成功各是局部证据，不能替代整体约束评估。",
+            "en": "Viability includes cost, technical limits, maintenance and scaling; bench accuracy, one-node cost and one successful run are partial evidence, not an assessment of all constraints."
+          },
+          "pages": [
+            2
+          ]
+        },
+        {
+          "id": "material-51-q4",
+          "conceptIds": [
+            "material-51-c4"
+          ],
+          "prompt": {
+            "zh": "为什么该原型同时使用湿度与雨传感器？",
+            "en": "Why does this prototype use both moisture and rain sensors?"
+          },
+          "options": [
+            {
+              "zh": "二者测量相同物理量，可互相替代所有决策",
+              "en": "They measure the same quantity and replace each other for all decisions"
+            },
+            {
+              "zh": "土壤需求与正在下雨是不同输入，联合决定灌溉状态",
+              "en": "Soil need and current rain are different inputs that jointly determine irrigation"
+            },
+            {
+              "zh": "雨传感器给出舵机角度，湿度传感器直接产生PWM",
+              "en": "The rain sensor supplies an angle and the moisture sensor generates PWM"
+            },
+            {
+              "zh": "两者平均值就是实际每分钟供水量",
+              "en": "Their average directly equals water volume per minute"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "两种传感器提供不同环境证据，舵机表示动作；讲义并未实现流量测量或把传感器读数直接当PWM。",
+            "en": "The sensors provide distinct environmental evidence and the servo represents action; the sheet does not implement flow measurement or treat sensor readings as PWM."
+          },
+          "pages": [
+            3
+          ]
+        },
+        {
+          "id": "material-51-q5",
+          "conceptIds": [
+            "material-51-c5"
+          ],
+          "prompt": {
+            "zh": "哪组读取与连接符合实验？",
+            "en": "Which readings and connections match the lab?"
+          },
+          "options": [
+            {
+              "zh": "GPIO23直接给出0–100湿度；GPIO35给出雨/无雨",
+              "en": "GPIO23 directly gives 0–100 moisture; GPIO35 gives rain/no rain"
+            },
+            {
+              "zh": "GPIO35用analogRead读湿度；GPIO23用digitalRead读雨状态",
+              "en": "analogRead on GPIO35 for moisture; digitalRead on GPIO23 for rain"
+            },
+            {
+              "zh": "GPIO35用digitalRead读湿度百分比；GPIO23用analogRead读舵机",
+              "en": "digitalRead on GPIO35 for moisture percentage; analogRead on GPIO23 for the servo"
+            },
+            {
+              "zh": "GPIO17读取湿度A0；GPIO35输出舵机角度",
+              "en": "GPIO17 reads moisture A0; GPIO35 outputs the servo angle"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "模拟湿度和数字雨状态对应不同引脚与读取函数；百分比需后续映射，GPIO17属于舵机信号。",
+            "en": "Analog moisture and digital rain use different pins and read functions; percentage requires mapping and GPIO17 is the servo signal."
+          },
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "id": "material-51-q6",
+          "conceptIds": [
+            "material-51-c6"
+          ],
+          "prompt": {
+            "zh": "VCC都有供电、串口配置和代码已确认正确，但模块GND与控制板的连接尚未检查。要核对信号参考，首先检查什么？",
+            "en": "VCC is powered and serial configuration and code are confirmed, but module-to-board ground wiring is unchecked. What should be checked first to verify signal references?"
+          },
+          "options": [
+            {
+              "zh": "只核对每秒采样周期，认为采样越慢参考电位越一致",
+              "en": "Only check one-second sampling, assuming slower reads equalize reference potential"
+            },
+            {
+              "zh": "只核对串口9600波特率，不检查电源地连接",
+              "en": "Only check the 9600-baud serial setting, without ground wiring"
+            },
+            {
+              "zh": "各模块GND与控制板参考地及两侧电源轨连接是否正确",
+              "en": "Whether module grounds, controller reference ground and both rails are correctly connected"
+            },
+            {
+              "zh": "只核对舵机50 Hz设置，认为PWM会建立传感器参考地",
+              "en": "Only check 50 Hz servo setup, assuming PWM establishes sensor ground reference"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "共同GND与正确电源轨提供电气参考；串口速率、PWM频率和采样周期属于不同设置，不能代替地线检查。",
+            "en": "Shared GND and correct rails establish electrical references; serial rate, PWM frequency and sampling cadence are different settings and do not replace checking grounds."
+          },
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "material-51-q7",
+          "conceptIds": [
+            "material-51-c7"
+          ],
+          "prompt": {
+            "zh": "50 Hz设置和delay(1000)分别控制什么？",
+            "en": "What do 50 Hz and delay(1000) control respectively?"
+          },
+          "options": [
+            {
+              "zh": "PWM周期50 ms；控制循环等待约1秒",
+              "en": "A 50 ms PWM period; a roughly one-second loop wait"
+            },
+            {
+              "zh": "PWM周期20 ms；控制循环等待约1 ms",
+              "en": "A 20 ms PWM period; a roughly one-millisecond loop wait"
+            },
+            {
+              "zh": "PWM周期1秒；控制循环等待约20 ms",
+              "en": "A one-second PWM period; a roughly 20 ms loop wait"
+            },
+            {
+              "zh": "舵机PWM周期约20 ms；控制循环先等待约1秒",
+              "en": "A servo PWM period of about 20 ms; a roughly one-second wait in the control loop"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "周期=1/50秒=20 ms；delay(1000)参数单位是毫秒，即约1秒。PWM周期与循环等待不能互换，也不能把频率数值直接当周期。",
+            "en": "Period=1/50 s=20 ms, while delay(1000) uses milliseconds and waits about one second. PWM period and loop delay cannot be swapped, and frequency is not numerically equal to period."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-51-q8",
+          "conceptIds": [
+            "material-51-c8"
+          ],
+          "prompt": {
+            "zh": "按给定校准，原始读数2170应映射为什么？",
+            "en": "Under the provided calibration, what should a raw reading of 2170 map to?"
+          },
+          "options": [
+            {
+              "zh": "100%湿度",
+              "en": "100% moisture"
+            },
+            {
+              "zh": "0%湿度",
+              "en": "0% moisture"
+            },
+            {
+              "zh": "约53%湿度",
+              "en": "About 53% moisture"
+            },
+            {
+              "zh": "50%湿度",
+              "en": "50% moisture"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "校准明确2170映射100、4095映射0；0%把端点颠倒，约53%错误用2170/4095，50%把端点当作中点。",
+            "en": "Calibration maps 2170 to 100 and 4095 to zero; 0% reverses endpoints, about 53% wrongly uses 2170/4095 and 50% mistakes the endpoint for a midpoint."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-51-q9",
+          "conceptIds": [
+            "material-51-c9"
+          ],
+          "prompt": {
+            "zh": "若map结果为108，constrain(outputValue,0,100)后是什么？",
+            "en": "If map returns 108, what does constrain(outputValue,0,100) produce?"
+          },
+          "options": [
+            {
+              "zh": "0",
+              "en": "0"
+            },
+            {
+              "zh": "108",
+              "en": "108"
+            },
+            {
+              "zh": "100",
+              "en": "100"
+            },
+            {
+              "zh": "8",
+              "en": "8"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "constrain把超上限结果截为100，既不保留108，也不做模运算得到8，更不会对正超限值返回下限0。",
+            "en": "constrain clamps an above-limit result to 100; it neither preserves 108, takes a modulo to obtain 8, nor returns the lower limit for an upper overflow."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-51-q10",
+          "conceptIds": [
+            "material-51-c10"
+          ],
+          "prompt": {
+            "zh": "雨模块D0原始值为LOW，程序解释为什么？",
+            "en": "When the rain module D0 reads raw LOW, how does the program interpret it?"
+          },
+          "options": [
+            {
+              "zh": "rainState为HIGH，检测到雨",
+              "en": "rainState is HIGH: rain detected"
+            },
+            {
+              "zh": "rainState为HIGH，无雨",
+              "en": "rainState is HIGH: no rain"
+            },
+            {
+              "zh": "rainState为LOW，无雨",
+              "en": "rainState is LOW: no rain"
+            },
+            {
+              "zh": "取反不影响数字值，仍按原始LOW处理",
+              "en": "Inversion does not affect a digital value, so raw LOW is used"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "逻辑非把LOW变HIGH，串口三元表达式也把HIGH标为Rain detected；混淆原始电平与语义状态会把浇水逻辑反转。",
+            "en": "Logical NOT turns LOW into HIGH and the serial ternary labels HIGH as Rain detected; confusing the raw level with the semantic state reverses irrigation decisions."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-51-q11",
+          "conceptIds": [
+            "material-51-c11"
+          ],
+          "prompt": {
+            "zh": "无雨、湿度恰好60%时，代码设置什么角度？",
+            "en": "With no rain and moisture exactly 60%, which angle does the code set?"
+          },
+          "options": [
+            {
+              "zh": "保持启动后最后角度、不执行write",
+              "en": "Keep the previous angle without calling write"
+            },
+            {
+              "zh": "90°",
+              "en": "90°"
+            },
+            {
+              "zh": "180°",
+              "en": "180°"
+            },
+            {
+              "zh": "0°",
+              "en": "0°"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "两个条件都是严格小于，60不满足<60而进入else写0；每轮都有对应write，不会保留旧状态作为分支结果。",
+            "en": "Both comparisons are strict; 60 fails <60 and reaches else, which writes zero. Every branch calls write rather than retaining an old state."
+          },
+          "pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "id": "material-51-q12",
+          "conceptIds": [
+            "material-51-c12"
+          ],
+          "prompt": {
+            "zh": "验证“雨天暂停”最有说明力的一组记录是什么？",
+            "en": "Which record best verifies the rain-pause rule?"
+          },
+          "options": [
+            {
+              "zh": "串口显示有雨与10%，并观察输出为0°",
+              "en": "Serial shows rain and 10%, with the output at 0°"
+            },
+            {
+              "zh": "只记录开发板成功编译，不检查传感值或输出",
+              "en": "Record successful compilation without sensor values or output"
+            },
+            {
+              "zh": "串口显示无雨与10%，输出180°，据此证明雨天暂停",
+              "en": "Show no rain and 10% with 180° and infer rain-pause behavior"
+            },
+            {
+              "zh": "只记录舵机曾转动，但不记录雨状态",
+              "en": "Record that the servo moved without the rain state"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "有雨且土壤干燥是检验降雨优先级的关键情形；无雨开阀验证另一分支，编译或单看动作不能验证规则。",
+            "en": "Rain with dry soil directly tests rain priority; opening under no rain tests a different branch, while compilation or motion alone cannot validate the rule."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-51-q13",
+          "conceptIds": [
+            "material-51-c11"
+          ],
+          "prompt": {
+            "zh": "无雨且湿度恰好20%，输出是什么？",
+            "en": "With no rain and moisture exactly 20%, what is the output?"
+          },
+          "options": [
+            {
+              "zh": "0°",
+              "en": "0°"
+            },
+            {
+              "zh": "90°",
+              "en": "90°"
+            },
+            {
+              "zh": "先180°再90°，因为两个独立if都会执行",
+              "en": "180° then 90° because two independent if statements run"
+            },
+            {
+              "zh": "180°",
+              "en": "180°"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "20不满足第一个<20，但满足else if的<60，因此只有90°分支执行；这是互斥的if/else if链。",
+            "en": "20 fails the first <20 test but meets the else-if <60 test, so only the 90° branch runs; the if/else-if chain is mutually exclusive."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-51-q14",
+          "conceptIds": [
+            "material-51-c10",
+            "material-51-c11"
+          ],
+          "prompt": {
+            "zh": "原始雨引脚LOW、湿度10%，舵机应输出什么？",
+            "en": "With raw rain pin LOW and moisture 10%, what should the servo output?"
+          },
+          "options": [
+            {
+              "zh": "180°，土壤低于20%总是优先",
+              "en": "180°, because moisture below 20% always takes priority"
+            },
+            {
+              "zh": "90°，雨与低湿度互相抵消",
+              "en": "90°, because rain and low moisture cancel each other"
+            },
+            {
+              "zh": "0°，取反后表示有雨",
+              "en": "0°, because inversion indicates rain"
+            },
+            {
+              "zh": "180°，原始LOW等于程序中的无雨状态",
+              "en": "180°, because raw LOW equals the program no-rain state"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "原始LOW取反为HIGH有雨，使两个要求rainState==LOW的分支都失败；低湿度不会覆盖降雨优先。",
+            "en": "Raw LOW inverts to HIGH for rain, making both rainState==LOW branches fail; low moisture does not override rain priority."
+          },
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1
+            ],
+            "reason": {
+              "zh": "封面；实验主题已在正文与概览体现。",
+              "en": "Cover; the lab topic is represented in the body and overview."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "页码为PDF物理页1–6，正文页脚1–5。实验是本地灌溉模拟，给出的代码没有联网或云上传。接线照录信号用途；实际接线前须核对模块输出电压与NodeMCU-32S GPIO允许范围，不能仅凭模块接5V便假定其输出可直接接GPIO。",
+        "en": "Citations use physical PDF pages 1–6; body footers are 1–5. This is a local irrigation simulation: the code has no networking or cloud upload. Signal roles follow the sheet; check module output voltage against NodeMCU-32S GPIO limits before wiring rather than assuming a 5 V-powered module is GPIO-compatible."
+      }
+    },
+    {
+      "resourceId": "material-50",
+      "sourceSha256": "1c127b339be66b9323e4212848c7271eac9b7aa3251ee8474dc5d6bf8267978b",
+      "overview": {
+        "zh": "从闭合电路、元件符号和欧姆定律出发，比较串联与并联，再用逐层等效和反向展开分析混合电路的电压、电流及功率。",
+        "en": "Start with closed circuits, symbols and Ohm’s law, compare series and parallel connections, then use hierarchical reduction and back-substitution to analyze voltage, current and power in mixed circuits."
+      },
+      "groups": [
+        {
+          "id": "material-50-g1",
+          "title": {
+            "zh": "基本电路与欧姆定律",
+            "en": "Basic circuits and Ohm’s law"
+          },
+          "concepts": [
+            {
+              "id": "material-50-c1",
+              "title": {
+                "zh": "电源、负载与闭合路径",
+                "en": "Source, load and closed path"
+              },
+              "explanation": {
+                "zh": "基本电路需要能量来源、使用能量的负载，以及连接二者的闭合路径。对讲义中的单回路，任一连接断开就切断持续电流；器件存在并不等于回路完整。",
+                "en": "A basic circuit requires an energy source, an energy-using load and a closed path connecting them. In the lecture’s single loop, any open connection stops sustained current; having the components does not ensure a complete circuit."
+              },
+              "pages": [
+                3
+              ]
+            },
+            {
+              "id": "material-50-c2",
+              "title": {
+                "zh": "电流、电压与电阻",
+                "en": "Current, voltage and resistance"
+              },
+              "explanation": {
+                "zh": "电流I描述电荷流动，单位安培；电压V是两点间推动电流的电势差，单位伏特；电阻R描述对电流的阻碍，单位欧姆。三者不同，电阻不是电流量，电压也不是每秒流过的电荷。",
+                "en": "Current I describes charge flow in amperes; voltage V is the potential difference between two points that drives current, measured in volts; resistance R opposes current and is measured in ohms. Resistance is not a flow amount and voltage is not charge per second."
+              },
+              "pages": [
+                4
+              ]
+            },
+            {
+              "id": "material-50-c3",
+              "title": {
+                "zh": "电路符号与器件识别",
+                "en": "Circuit symbols and component identification"
+              },
+              "explanation": {
+                "zh": "电路图用符号表达连接与器件，不按器件照片外形接线：电池为长短极板、开关为断接触点、电阻常为锯齿、灯为圈内叉、电机为圈内M。图还列出电感、电容、继电器、二极管、LED、晶体管、蜂鸣器和IC；LED在二极管符号旁有向外光箭头。",
+                "en": "Schematics represent connections and components symbolically rather than by physical appearance: batteries use unequal plates, switches separated contacts, resistors a zigzag, lamps a crossed circle and motors a circled M. The chart also shows inductors, capacitors, relays, diodes, LEDs, transistors, buzzers and ICs; LEDs add outward light arrows to the diode symbol."
+              },
+              "pages": [
+                5
+              ]
+            },
+            {
+              "id": "material-50-c4",
+              "title": {
+                "zh": "欧姆定律及适用条件",
+                "en": "Ohm’s law and conditions"
+              },
+              "explanation": {
+                "zh": "对温度等条件保持不变的欧姆性导体，V=IR；求电流用I=V/R，求电阻用R=V/I。固定R时电流随电压成正比；固定V时电流随电阻增大而减小，不能把这两个条件混用。",
+                "en": "For an ohmic conductor under fixed conditions such as temperature, V=IR, I=V/R and R=V/I. At fixed R, current is proportional to voltage; at fixed V, increasing resistance lowers current. These conditions must not be conflated."
+              },
+              "pages": [
+                6
+              ]
+            },
+            {
+              "id": "material-50-c5",
+              "title": {
+                "zh": "单负载计算与单位",
+                "en": "Single-load calculations and units"
+              },
+              "explanation": {
+                "zh": "先确认未知量，再选公式和统一单位。图中12 V/3 Ω=4 A；36 V/4 A=9 Ω；2 A×7 Ω=14 V。乘除顺序和结果单位可互相检查，避免把求电阻仍写成I=V/R。",
+                "en": "Identify the unknown, choose the formula and align units. The examples give 12 V/3 Ω=4 A, 36 V/4 A=9 Ω and 2 A×7 Ω=14 V. Operation order and output units cross-check the calculation."
+              },
+              "pages": [
+                7,
+                8,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-50-g2",
+          "title": {
+            "zh": "串联：同电流、分电压",
+            "en": "Series: shared current and voltage division"
+          },
+          "concepts": [
+            {
+              "id": "material-50-c6",
+              "title": {
+                "zh": "单路径串联与同电流",
+                "en": "Single-path series and common current"
+              },
+              "explanation": {
+                "zh": "串联元件端对端相接，中间节点没有额外分支，因此流过每个元件的是同一电流：Itotal=I1=I2=… 。图纸上位置或方向不同不会破坏串联，判断依据是连接路径。",
+                "en": "Series components connect end to end with no extra branch at their joining nodes, so Itotal=I1=I2=… . Position or orientation in a drawing does not change series connectivity; the current path decides."
+              },
+              "pages": [
+                10,
+                14
+              ]
+            },
+            {
+              "id": "material-50-c7",
+              "title": {
+                "zh": "串联等效电阻",
+                "en": "Series equivalent resistance"
+              },
+              "explanation": {
+                "zh": "串联总电阻直接相加。9 V例中3 kΩ+10 kΩ+5 kΩ=18 kΩ，再由总电压/总电阻得到0.5 mA=500 μA；先统一kΩ与Ω避免千倍误差。",
+                "en": "Series resistance adds directly. In the 9 V example, 3 kΩ+10 kΩ+5 kΩ=18 kΩ, giving 0.5 mA=500 μA. Keep kΩ and Ω consistent to avoid a factor-of-1000 error."
+              },
+              "pages": [
+                12,
+                14
+              ]
+            },
+            {
+              "id": "material-50-c8",
+              "title": {
+                "zh": "串联电压降与总和检验",
+                "en": "Series voltage drops and sum check"
+              },
+              "explanation": {
+                "zh": "同一电流下各压降Vi=IRi，电阻越大压降越大。500 μA例中3、10、5 kΩ的压降分别1.5、5.0、2.5 V，合计9 V；不能把总电压9 V直接套给每个串联电阻。",
+                "en": "At common current, each drop is Vi=IRi, so larger resistance gives a larger drop. At 500 μA, 3, 10 and 5 kΩ drop 1.5, 5.0 and 2.5 V, summing to 9 V; the full 9 V is not across each series resistor."
+              },
+              "pages": [
+                13,
+                14
+              ]
+            },
+            {
+              "id": "material-50-c9",
+              "title": {
+                "zh": "开路故障与发热判断",
+                "en": "Open-circuit faults and heating"
+              },
+              "explanation": {
+                "zh": "单串联回路的任一处开路使整条回路电流中断，并非只影响断点后方。串联并不天然防止发热，电阻消耗P=I²R；是否过热还取决于功率额定值和散热，讲义p15的绝对安全说法不可当规律。",
+                "en": "An open anywhere in a single series loop interrupts current throughout, not only after the break. Series wiring does not inherently prevent heating: resistors dissipate P=I²R, and overheating depends on ratings and heat removal. Slide 15’s absolute safety claim is not a valid rule."
+              },
+              "pages": [
+                15,
+                16
+              ]
+            },
+            {
+              "id": "material-50-c10",
+              "title": {
+                "zh": "串联电阻的功率",
+                "en": "Power in series resistors"
+              },
+              "explanation": {
+                "zh": "24 V驱动1 Ω、2 Ω、3 Ω串联，总R=6 Ω、I=4 A；压降4、8、12 V，功率16、32、48 W。可用P=VI或I²R交叉核算，三者合计96 W等于电源24×4。",
+                "en": "With 24 V across 1, 2 and 3 Ω in series, total R=6 Ω and I=4 A. Drops are 4, 8 and 12 V, and powers 16, 32 and 48 W. P=VI and I²R agree; the total 96 W equals source power 24×4."
+              },
+              "pages": [
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-50-g3",
+          "title": {
+            "zh": "并联：同电压、分电流",
+            "en": "Parallel: shared voltage and current division"
+          },
+          "concepts": [
+            {
+              "id": "material-50-c11",
+              "title": {
+                "zh": "共节点并联与同电压",
+                "en": "Common-node parallel connection"
+              },
+              "explanation": {
+                "zh": "并联元件的两端分别接到同一对节点，因此每支路电压相同。电流在分叉处分流，电源总电流等于各支路电流和；相同电压不代表不同电阻上有相同电流。",
+                "en": "Parallel components connect across the same two nodes, so every branch has the same voltage. Current splits at junctions and source current equals the branch-current sum; equal voltage does not imply equal current through unequal resistances."
+              },
+              "pages": [
+                11,
+                17,
+                19
+              ]
+            },
+            {
+              "id": "material-50-c12",
+              "title": {
+                "zh": "并联等效电阻与数量级检查",
+                "en": "Parallel resistance and sanity checks"
+              },
+              "explanation": {
+                "zh": "正电阻并联满足1/Rtotal=1/R1+1/R2+…，总电阻小于最小支路电阻。10 kΩ、2 kΩ、1 kΩ并联得到625 Ω；把电阻直接相加或把倒数和忘记再取倒数都会出错。",
+                "en": "Positive parallel resistors satisfy 1/Rtotal=1/R1+1/R2+… and the total is below the smallest branch resistance. Parallel 10 kΩ, 2 kΩ and 1 kΩ give 625 Ω; adding resistances or failing to invert the conductance sum is wrong."
+              },
+              "pages": [
+                17,
+                19
+              ]
+            },
+            {
+              "id": "material-50-c13",
+              "title": {
+                "zh": "支路电流与电源负担",
+                "en": "Branch currents and source load"
+              },
+              "explanation": {
+                "zh": "9 V分别加在10 kΩ、2 kΩ、1 kΩ上，电流为0.9、4.5、9.0 mA，总14.4 mA。固定电压下低阻支路取更大电流；增加一个正电阻并联支路会增加总电流需求。",
+                "en": "At 9 V, 10 kΩ, 2 kΩ and 1 kΩ carry 0.9, 4.5 and 9.0 mA, totaling 14.4 mA. Lower resistance draws more current at fixed voltage; another positive-resistance parallel branch increases total current demand."
+              },
+              "pages": [
+                18,
+                19
+              ]
+            },
+            {
+              "id": "material-50-c14",
+              "title": {
+                "zh": "并联支路独立性的边界",
+                "en": "Limits of parallel-branch independence"
+              },
+              "explanation": {
+                "zh": "独立支路便于接入或断开某个负载，而其他支路仍可在相同电压下工作，但需要电源和公共接线正常。不同支路电流不必相等，接线通常更多；不能由“并联”推导所有故障都不影响其他支路。",
+                "en": "Separate branches let a load be connected or disconnected while others operate at the same voltage, provided the source and common wiring remain sound. Branch currents need not match and more wiring is usually required; parallel topology does not make every fault isolated."
+              },
+              "pages": [
+                20
+              ]
+            },
+            {
+              "id": "material-50-c15",
+              "title": {
+                "zh": "并联负载的功率",
+                "en": "Power in parallel loads"
+              },
+              "explanation": {
+                "zh": "24 V跨接1、2、3 Ω并联，支路电流24、12、8 A，功率576、288、192 W。固定电压时P=V²/R，阻值越小功耗越大；这与串联同电流时P=I²R的比较方向不同。",
+                "en": "At 24 V across parallel 1, 2 and 3 Ω, currents are 24, 12 and 8 A and powers 576, 288 and 192 W. At fixed voltage P=V²/R, so lower resistance dissipates more, unlike the fixed-current series comparison P=I²R."
+              },
+              "pages": [
+                21
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-50-g4",
+          "title": {
+            "zh": "混合电路的等效与反向展开",
+            "en": "Mixed-circuit reduction and back-substitution"
+          },
+          "concepts": [
+            {
+              "id": "material-50-c16",
+              "title": {
+                "zh": "按节点确定混合拓扑",
+                "en": "Determine mixed topology by nodes"
+              },
+              "explanation": {
+                "zh": "24 V混合例中R1=100 Ω与R2=250 Ω共两节点，R3=350 Ω与R4=200 Ω共另外两节点；两个并联等效组再串联。不能因为四个电阻画在同一页就把它们全部求串联和或全部并联。",
+                "en": "In the 24 V example, R1=100 Ω and R2=250 Ω share two nodes, as do R3=350 Ω and R4=200 Ω. The two parallel equivalents are then in series. Four resistors on one drawing are not automatically all-series or all-parallel."
+              },
+              "pages": [
+                22
+              ]
+            },
+            {
+              "id": "material-50-c17",
+              "title": {
+                "zh": "先合并局部并联组",
+                "en": "Reduce local parallel groups first"
+              },
+              "explanation": {
+                "zh": "对两个并联组各用Rparallel=RaRb/(Ra+Rb)：100∥250≈71.429 Ω，350∥200≈127.273 Ω。保留足够精度后再计算整体，可减少多步舍入误差。",
+                "en": "Use Rparallel=RaRb/(Ra+Rb) for each pair: 100∥250≈71.429 Ω and 350∥200≈127.273 Ω. Keep sufficient precision before combining them to reduce accumulated rounding error."
+              },
+              "pages": [
+                23
+              ]
+            },
+            {
+              "id": "material-50-c18",
+              "title": {
+                "zh": "等效总阻与总电流",
+                "en": "Total equivalent and current"
+              },
+              "explanation": {
+                "zh": "两个等效组串联得到约198.70 Ω，因此24/198.70≈0.12078 A=120.78 mA。这一步先在“Total”层求电流，不能直接把24 V施加到某一并联组内的每个电阻。",
+                "en": "The two equivalents add to about 198.70 Ω, giving 24/198.70≈0.12078 A=120.78 mA. Solve at the Total level first; the full 24 V is not directly across every resistor inside either group."
+              },
+              "pages": [
+                24,
+                25
+              ]
+            },
+            {
+              "id": "material-50-c19",
+              "title": {
+                "zh": "把总电流展开为组电压",
+                "en": "Expand total current into group voltages"
+              },
+              "explanation": {
+                "zh": "两并联等效组处于串联层，均流过120.78 mA，因此上组压降约8.627 V、下组约15.373 V，和为24 V。此处同电流规则用于“组”，不是说组内各支路电流也相等。",
+                "en": "Both parallel equivalents lie in a series layer and carry 120.78 mA, producing about 8.627 V across the upper group and 15.373 V across the lower, totaling 24 V. The common-current rule applies to groups, not to all branches within them."
+              },
+              "pages": [
+                26,
+                27
+              ]
+            },
+            {
+              "id": "material-50-c20",
+              "title": {
+                "zh": "由组电压恢复支路电流",
+                "en": "Recover branch currents from group voltage"
+              },
+              "explanation": {
+                "zh": "把8.627 V分别赋给R1和R2，把15.373 V分别赋给R3和R4，再各用I=V/R。得到约86.275、34.510、43.922、76.863 mA；每组支路电流和都应回到约120.78 mA。",
+                "en": "Assign 8.627 V to R1 and R2 and 15.373 V to R3 and R4, then apply I=V/R individually. Currents are about 86.275, 34.510, 43.922 and 76.863 mA; each pair should sum to about 120.78 mA."
+              },
+              "pages": [
+                28
+              ]
+            }
+          ]
+        },
+        {
+          "id": "material-50-g5",
+          "title": {
+            "zh": "综合练习与一致性检查",
+            "en": "Integrated exercises and consistency checks"
+          },
+          "concepts": [
+            {
+              "id": "material-50-c21",
+              "title": {
+                "zh": "串联电压、电流和功率表",
+                "en": "Series voltage-current-power table"
+              },
+              "explanation": {
+                "zh": "14 V例中780 Ω、1.5 kΩ、3.3 kΩ串联为5.58 kΩ，电流约2.509 mA。压降约1.957、3.763、8.280 V；功率约4.910、9.442、20.77 mW，总35.13 mW，可用电压和及功率和检查表格。",
+                "en": "At 14 V, series 780 Ω, 1.5 kΩ and 3.3 kΩ total 5.58 kΩ and carry about 2.509 mA. Drops are about 1.957, 3.763 and 8.280 V; powers about 4.910, 9.442 and 20.77 mW total 35.13 mW. Voltage and power sums check the table."
+              },
+              "pages": [
+                29
+              ]
+            },
+            {
+              "id": "material-50-c22",
+              "title": {
+                "zh": "并联多支路的电源预算",
+                "en": "Source budget for multiple parallel branches"
+              },
+              "explanation": {
+                "zh": "4 V例中1 kΩ、2.2 kΩ、6.8 kΩ、470 Ω支路电流约4、1.82、0.588、8.51 mA，总14.92 mA；等效约268.1 Ω，总功率约59.67 mW。最低阻470 Ω承担最大支路电流和功耗。",
+                "en": "At 4 V, branches of 1 kΩ, 2.2 kΩ, 6.8 kΩ and 470 Ω draw about 4, 1.82, 0.588 and 8.51 mA, totaling 14.92 mA. Equivalent resistance is about 268.1 Ω and total power 59.67 mW. The 470 Ω branch has the largest current and dissipation."
+              },
+              "pages": [
+                30
+              ]
+            },
+            {
+              "id": "material-50-c23",
+              "title": {
+                "zh": "含中间并联段的串联回路",
+                "en": "A series loop with a parallel middle segment"
+              },
+              "explanation": {
+                "zh": "图中5 Ω、(4 Ω∥12 Ω)、8 Ω串联，先把中间化为3 Ω，总16 Ω，在24 V下电流1.5 A。中间电压4.5 V，4 Ω支路1.125 A、12 Ω支路0.375 A，外侧5 Ω与8 Ω仍流1.5 A。",
+                "en": "The diagram has 5 Ω, (4 Ω∥12 Ω) and 8 Ω in series. The middle reduces to 3 Ω, giving 16 Ω and 1.5 A at 24 V. Its voltage is 4.5 V, producing 1.125 A through 4 Ω and 0.375 A through 12 Ω; the outer resistors still carry 1.5 A."
+              },
+              "pages": [
+                31,
+                32
+              ]
+            },
+            {
+              "id": "material-50-c24",
+              "title": {
+                "zh": "多级网络从右向左化简",
+                "en": "Reducing a multilevel network from right to left"
+              },
+              "explanation": {
+                "zh": "先按节点找可合并部分：R8+R10=12 Ω，与R9=6 Ω并联为4 Ω；再与R7=8 Ω串联为12 Ω，与R6=6 Ω并联为4 Ω。随后与R5=4 Ω串联为8 Ω，与R4=8 Ω并联为4 Ω；加R3=4 Ω后与R2=8 Ω并联为4 Ω，最后加R1=6 Ω得AB等效10 Ω。",
+                "en": "Use node connections to reduce from the right: R8+R10=12 Ω in parallel with R9=6 Ω gives 4 Ω; add R7=8 Ω and parallel with R6=6 Ω to obtain 4 Ω. Add R5=4 Ω and parallel with R4=8 Ω to get 4 Ω; add R3=4 Ω and parallel with R2=8 Ω for 4 Ω, then add R1=6 Ω to obtain 10 Ω across AB."
+              },
+              "pages": [
+                33
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "material-50-c1",
+          "to": "material-50-c3",
+          "relation": {
+            "zh": "用元件符号表达闭合路径",
+            "en": "Represent the closed path with symbols"
+          }
+        },
+        {
+          "from": "material-50-c2",
+          "to": "material-50-c4",
+          "relation": {
+            "zh": "三个物理量由欧姆定律联系",
+            "en": "Ohm’s law relates the three quantities"
+          }
+        },
+        {
+          "from": "material-50-c4",
+          "to": "material-50-c5",
+          "relation": {
+            "zh": "选取变形公式完成单负载计算",
+            "en": "Select a rearranged equation for a single load"
+          }
+        },
+        {
+          "from": "material-50-c6",
+          "to": "material-50-c7",
+          "relation": {
+            "zh": "同路径结构决定电阻相加",
+            "en": "A shared path gives additive resistance"
+          }
+        },
+        {
+          "from": "material-50-c7",
+          "to": "material-50-c8",
+          "relation": {
+            "zh": "先求公共电流再恢复各压降",
+            "en": "Find common current before individual drops"
+          }
+        },
+        {
+          "from": "material-50-c8",
+          "to": "material-50-c10",
+          "relation": {
+            "zh": "电压和电流共同确定功率",
+            "en": "Voltage and current determine power"
+          }
+        },
+        {
+          "from": "material-50-c10",
+          "to": "material-50-c9",
+          "relation": {
+            "zh": "功耗计算约束发热判断",
+            "en": "Dissipation constrains heating claims"
+          }
+        },
+        {
+          "from": "material-50-c11",
+          "to": "material-50-c12",
+          "relation": {
+            "zh": "共节点支路用导纳相加",
+            "en": "Common-node branches combine by conductance"
+          }
+        },
+        {
+          "from": "material-50-c12",
+          "to": "material-50-c13",
+          "relation": {
+            "zh": "等效与支路计算互相检验总电流",
+            "en": "Equivalent and branch calculations cross-check total current"
+          }
+        },
+        {
+          "from": "material-50-c13",
+          "to": "material-50-c15",
+          "relation": {
+            "zh": "同电压下支路电流决定功耗",
+            "en": "Branch current determines dissipation at shared voltage"
+          }
+        },
+        {
+          "from": "material-50-c11",
+          "to": "material-50-c14",
+          "relation": {
+            "zh": "支路结构解释有条件的独立性",
+            "en": "Branch structure explains conditional independence"
+          }
+        },
+        {
+          "from": "material-50-c16",
+          "to": "material-50-c17",
+          "relation": {
+            "zh": "按拓扑先合并局部并联组",
+            "en": "Reduce local parallel pairs according to topology"
+          }
+        },
+        {
+          "from": "material-50-c17",
+          "to": "material-50-c18",
+          "relation": {
+            "zh": "局部等效再合并到整体",
+            "en": "Combine local equivalents into the whole"
+          }
+        },
+        {
+          "from": "material-50-c18",
+          "to": "material-50-c19",
+          "relation": {
+            "zh": "从总电流反推组电压",
+            "en": "Recover group voltages from total current"
+          }
+        },
+        {
+          "from": "material-50-c19",
+          "to": "material-50-c20",
+          "relation": {
+            "zh": "将组电压还原到各支路",
+            "en": "Transfer group voltage to individual branches"
+          }
+        },
+        {
+          "from": "material-50-c8",
+          "to": "material-50-c21",
+          "relation": {
+            "zh": "用完整表格检验串联规律",
+            "en": "Check series rules through the full table"
+          }
+        },
+        {
+          "from": "material-50-c13",
+          "to": "material-50-c22",
+          "relation": {
+            "zh": "把支路电流汇总为电源需求",
+            "en": "Aggregate branch current into source demand"
+          }
+        },
+        {
+          "from": "material-50-c16",
+          "to": "material-50-c23",
+          "relation": {
+            "zh": "把嵌套规则用于另一混合结构",
+            "en": "Apply nesting rules to another mixed topology"
+          }
+        },
+        {
+          "from": "material-50-c23",
+          "to": "material-50-c24",
+          "relation": {
+            "zh": "重复局部化简处理更多层网络",
+            "en": "Repeat local reductions across more network levels"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "material-50-q1",
+          "conceptIds": [
+            "material-50-c1"
+          ],
+          "prompt": {
+            "zh": "电池与灯都正常，但单回路中开关断开，为什么灯不亮？",
+            "en": "A battery and lamp are working, but a switch in the single loop is open. Why is the lamp off?"
+          },
+          "options": [
+            {
+              "zh": "开关只调节灯的电阻，不能改变路径是否连通",
+              "en": "The switch only adjusts lamp resistance, not path continuity"
+            },
+            {
+              "zh": "只要灯与电池都有两个端子，电流就不需要返回电源的路径",
+              "en": "A lamp and battery with two terminals need no return path for current"
+            },
+            {
+              "zh": "电池电压已经沿导线全部消耗，无法到达灯",
+              "en": "Battery voltage has all been consumed along the wire before reaching the lamp"
+            },
+            {
+              "zh": "电流没有闭合路径",
+              "en": "There is no closed current path"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "开路切断电流闭合路径；电压不是沿导线被逐步消耗的物质，开关改变连通状态而非灯的电阻，回路必须有返回路径。",
+            "en": "An open breaks the closed current path; voltage is not a substance consumed along a wire, a switch changes continuity rather than lamp resistance, and a return path is necessary."
+          },
+          "pages": [
+            3
+          ]
+        },
+        {
+          "id": "material-50-q2",
+          "conceptIds": [
+            "material-50-c2"
+          ],
+          "prompt": {
+            "zh": "哪一组物理量与作用匹配正确？",
+            "en": "Which quantity-role pairing is correct?"
+          },
+          "options": [
+            {
+              "zh": "电压提供电势差；电流描述电荷流动；电阻限制流动",
+              "en": "Voltage gives potential difference; current describes charge flow; resistance opposes flow"
+            },
+            {
+              "zh": "电压与电流是同一物理量，只是单位名称不同",
+              "en": "Voltage and current are one quantity with different unit names"
+            },
+            {
+              "zh": "电阻用安培测量，电流用欧姆测量",
+              "en": "Resistance is measured in amperes and current in ohms"
+            },
+            {
+              "zh": "电流是两点电势差；电压是导体阻碍程度",
+              "en": "Current is potential difference; voltage is conductor opposition"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "V、I、R有不同定义和单位，欧姆定律联系它们但不会令它们成为同一量。",
+            "en": "V, I and R have different definitions and units; Ohm’s law relates them without making them identical."
+          },
+          "pages": [
+            4
+          ]
+        },
+        {
+          "id": "material-50-q3",
+          "conceptIds": [
+            "material-50-c3"
+          ],
+          "prompt": {
+            "zh": "图中锯齿电阻符号下误印“Diode”，学习时应识别为什么？",
+            "en": "The chart mislabels a zigzag resistor symbol as Diode. What should it be identified as?"
+          },
+          "options": [
+            {
+              "zh": "电容",
+              "en": "Capacitor"
+            },
+            {
+              "zh": "电阻",
+              "en": "Resistor"
+            },
+            {
+              "zh": "电感",
+              "en": "Inductor"
+            },
+            {
+              "zh": "二极管",
+              "en": "Diode"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "锯齿线表示电阻，不能按误印标签记成二极管；电容用极板、电感用线圈，图中二极管另有对应符号。",
+            "en": "The zigzag is a resistor and should not be memorized as a diode from the typo; capacitors use plates, inductors coils and the chart has a separate diode symbol."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-50-q4",
+          "conceptIds": [
+            "material-50-c4"
+          ],
+          "prompt": {
+            "zh": "固定电阻不变，把电压从6 V提高到12 V，理想欧姆模型下电流怎样变化？",
+            "en": "With resistance fixed, voltage rises from 6 V to 12 V. How does current change in the ideal ohmic model?"
+          },
+          "options": [
+            {
+              "zh": "变为原来的1/2",
+              "en": "It halves"
+            },
+            {
+              "zh": "变为原来的2倍",
+              "en": "It doubles"
+            },
+            {
+              "zh": "变为原来的4倍",
+              "en": "It quadruples"
+            },
+            {
+              "zh": "保持不变",
+              "en": "It stays unchanged"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "I=V/R且R固定，电流与电压同比例变化；四倍是固定电阻下功率的变化，不是电流变化。",
+            "en": "With I=V/R and fixed R, current scales with voltage; fourfold describes the power change at fixed resistance, not the current change."
+          },
+          "pages": [
+            6
+          ]
+        },
+        {
+          "id": "material-50-q5",
+          "conceptIds": [
+            "material-50-c5"
+          ],
+          "prompt": {
+            "zh": "36 V电源使负载流过4 A，负载电阻是多少？",
+            "en": "A 36 V source drives 4 A through a load. What is its resistance?"
+          },
+          "options": [
+            {
+              "zh": "9 Ω",
+              "en": "9 Ω"
+            },
+            {
+              "zh": "40 Ω",
+              "en": "40 Ω"
+            },
+            {
+              "zh": "0.111 Ω",
+              "en": "0.111 Ω"
+            },
+            {
+              "zh": "144 Ω",
+              "en": "144 Ω"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "R=V/I=36/4=9 Ω；144混用了乘法，0.111颠倒分子分母，40只是把不同量相加。",
+            "en": "R=V/I=36/4=9 Ω; 144 multiplies instead of dividing, 0.111 inverts the ratio and 40 adds unlike quantities."
+          },
+          "pages": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "id": "material-50-q6",
+          "conceptIds": [
+            "material-50-c6"
+          ],
+          "prompt": {
+            "zh": "三个不同阻值的电阻组成单回路，哪些电流关系必成立？",
+            "en": "Three unequal resistors form one loop. Which current relation must hold?"
+          },
+          "options": [
+            {
+              "zh": "I1=I2=I3=Itotal",
+              "en": "I1=I2=I3=Itotal"
+            },
+            {
+              "zh": "各电流按电阻之比分配",
+              "en": "Currents divide in proportion to resistance"
+            },
+            {
+              "zh": "阻值越大，流过该串联元件的电流越小",
+              "en": "The larger series resistor carries less current"
+            },
+            {
+              "zh": "I1+I2+I3=Itotal且各电流是独立支路",
+              "en": "I1+I2+I3=Itotal with independent branches"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "单路径没有分流位置，同一电流经过所有元件；电压才按电阻大小分配，电流求和是支路节点规律。",
+            "en": "A single path has nowhere for current to split, so the same current passes each element; voltage divides with resistance and current summation applies to branches."
+          },
+          "pages": [
+            10,
+            14
+          ]
+        },
+        {
+          "id": "material-50-q7",
+          "conceptIds": [
+            "material-50-c7"
+          ],
+          "prompt": {
+            "zh": "9 V加在3 kΩ、10 kΩ和5 kΩ串联上，总电流是多少？",
+            "en": "What total current flows through 3 kΩ, 10 kΩ and 5 kΩ in series at 9 V?"
+          },
+          "options": [
+            {
+              "zh": "0.5 A",
+              "en": "0.5 A"
+            },
+            {
+              "zh": "0.5 mA",
+              "en": "0.5 mA"
+            },
+            {
+              "zh": "2 mA",
+              "en": "2 mA"
+            },
+            {
+              "zh": "18 mA",
+              "en": "18 mA"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "总电阻18000 Ω，9/18000=0.0005 A；0.5 A遗漏k，2颠倒比值，18来自电阻和而非电流。",
+            "en": "Total resistance is 18000 Ω and 9/18000=0.0005 A; 0.5 A loses the kilo factor, 2 reverses the ratio and 18 is the resistance sum, not current."
+          },
+          "pages": [
+            12,
+            14
+          ]
+        },
+        {
+          "id": "material-50-q8",
+          "conceptIds": [
+            "material-50-c8"
+          ],
+          "prompt": {
+            "zh": "9 V加在3 kΩ、10 kΩ和5 kΩ串联电阻上，10 kΩ上的电压是多少？",
+            "en": "A 9 V source drives 3 kΩ, 10 kΩ and 5 kΩ in series. What voltage is across 10 kΩ?"
+          },
+          "options": [
+            {
+              "zh": "3 V",
+              "en": "3 V"
+            },
+            {
+              "zh": "5 V",
+              "en": "5 V"
+            },
+            {
+              "zh": "9 V",
+              "en": "9 V"
+            },
+            {
+              "zh": "0.05 V",
+              "en": "0.05 V"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "V=0.0005×10000=5 V；9 V是全回路，3 V错误假定等分，0.05 V是单位换算错误。",
+            "en": "V=0.0005×10000=5 V; 9 V belongs to the full circuit, 3 V wrongly assumes equal division and 0.05 V is a unit-conversion error."
+          },
+          "pages": [
+            13,
+            14
+          ]
+        },
+        {
+          "id": "material-50-q9",
+          "conceptIds": [
+            "material-50-c9"
+          ],
+          "prompt": {
+            "zh": "对于串联电路，哪项结论可靠？",
+            "en": "Which conclusion about a series circuit is reliable?"
+          },
+          "options": [
+            {
+              "zh": "断点前元件仍流过原电流，只有后方停电",
+              "en": "Elements before the break retain their original current"
+            },
+            {
+              "zh": "只要总电压不变，每个电阻的功耗都相同",
+              "en": "At fixed source voltage every resistor dissipates the same power"
+            },
+            {
+              "zh": "开路使整回路电流中断；发热仍需按功率判断",
+              "en": "An open stops current throughout; heating still requires power analysis"
+            },
+            {
+              "zh": "串联能保证所有元件都不发热",
+              "en": "Series wiring guarantees no component heating"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "闭合路径决定持续电流，I²R说明同电流不同R也可有不同发热；连接方式不能给出无条件安全保证。",
+            "en": "A closed path is required for sustained current and I²R gives different dissipation for unequal R at common I; topology cannot provide an unconditional safety guarantee."
+          },
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "id": "material-50-q10",
+          "conceptIds": [
+            "material-50-c10"
+          ],
+          "prompt": {
+            "zh": "24 V加在1 Ω、2 Ω、3 Ω串联电阻上，2 Ω电阻功率是多少？",
+            "en": "A 24 V source drives 1 Ω, 2 Ω and 3 Ω in series. What is the power in 2 Ω?"
+          },
+          "options": [
+            {
+              "zh": "16 W",
+              "en": "16 W"
+            },
+            {
+              "zh": "8 W",
+              "en": "8 W"
+            },
+            {
+              "zh": "32 W",
+              "en": "32 W"
+            },
+            {
+              "zh": "96 W",
+              "en": "96 W"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "P=4²×2=32 W；8是它的电压数值，16是1 Ω电阻功率，96是整个回路功率。",
+            "en": "P=4²×2=32 W; 8 is its voltage value, 16 is the 1 Ω resistor power and 96 is whole-circuit power."
+          },
+          "pages": [
+            16
+          ]
+        },
+        {
+          "id": "material-50-q11",
+          "conceptIds": [
+            "material-50-c11"
+          ],
+          "prompt": {
+            "zh": "两电阻连接到同一对节点且阻值不同，哪项正确？",
+            "en": "Two unequal resistors connect across the same pair of nodes. Which is correct?"
+          },
+          "options": [
+            {
+              "zh": "电压之和必须等于电源电压",
+              "en": "Their voltages must sum to the source voltage"
+            },
+            {
+              "zh": "电流之差等于电源总电流",
+              "en": "Their current difference equals total source current"
+            },
+            {
+              "zh": "电流相同，电压按阻值分配",
+              "en": "Equal currents with voltage divided by resistance"
+            },
+            {
+              "zh": "电压相同，支路电流通常不同",
+              "en": "Equal voltages, generally unequal branch currents"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "同节点保证同电压，I=V/R使不同R产生不同电流，总电流取和而非差。",
+            "en": "Common nodes guarantee equal voltage, I=V/R gives different currents for unequal R, and total current is their sum rather than difference."
+          },
+          "pages": [
+            11,
+            17,
+            19
+          ]
+        },
+        {
+          "id": "material-50-q12",
+          "conceptIds": [
+            "material-50-c12"
+          ],
+          "prompt": {
+            "zh": "10 kΩ、2 kΩ、1 kΩ并联的等效电阻是多少？",
+            "en": "What is the equivalent resistance of parallel 10 kΩ, 2 kΩ and 1 kΩ?"
+          },
+          "options": [
+            {
+              "zh": "625 Ω",
+              "en": "625 Ω"
+            },
+            {
+              "zh": "1 kΩ",
+              "en": "1 kΩ"
+            },
+            {
+              "zh": "13 kΩ",
+              "en": "13 kΩ"
+            },
+            {
+              "zh": "1.6 Ω",
+              "en": "1.6 Ω"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "导纳和0.0001+0.0005+0.001=0.0016 S，倒数625 Ω；13 kΩ是串联和，1 kΩ忽略其他支路，1.6混淆导纳与电阻。",
+            "en": "Conductance sums to 0.0016 S, whose reciprocal is 625 Ω; 13 kΩ is the series sum, 1 kΩ ignores branches and 1.6 confuses conductance with resistance."
+          },
+          "pages": [
+            17,
+            19
+          ]
+        },
+        {
+          "id": "material-50-q13",
+          "conceptIds": [
+            "material-50-c13"
+          ],
+          "prompt": {
+            "zh": "10 kΩ、2 kΩ、1 kΩ并联在9 V电源上，电源总电流是多少？",
+            "en": "Parallel 10 kΩ, 2 kΩ and 1 kΩ resistors connect across 9 V. What total current does the source supply?"
+          },
+          "options": [
+            {
+              "zh": "4.8 mA",
+              "en": "4.8 mA"
+            },
+            {
+              "zh": "0.692 mA",
+              "en": "0.692 mA"
+            },
+            {
+              "zh": "9.0 mA",
+              "en": "9.0 mA"
+            },
+            {
+              "zh": "14.4 mA",
+              "en": "14.4 mA"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "总电流0.9+4.5+9=14.4 mA；9只取最大支路，4.8取平均，0.692错误用串联电阻和计算。",
+            "en": "Total current is 0.9+4.5+9=14.4 mA; 9 uses only the largest branch, 4.8 averages currents and 0.692 wrongly uses series resistance."
+          },
+          "pages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "material-50-q14",
+          "conceptIds": [
+            "material-50-c14"
+          ],
+          "prompt": {
+            "zh": "一个并联支路开路，其他支路电压仍由理想电源保持，哪些负载能继续工作？",
+            "en": "One parallel branch opens while an ideal source maintains voltage. Which loads can continue?"
+          },
+          "options": [
+            {
+              "zh": "只有阻值最大的支路负载",
+              "en": "Only the highest-resistance branch"
+            },
+            {
+              "zh": "所有支路都必然无电流",
+              "en": "All branches necessarily lose current"
+            },
+            {
+              "zh": "其他接线完整的支路负载",
+              "en": "Loads in other intact branches"
+            },
+            {
+              "zh": "所有支路自动改成相同电流",
+              "en": "All branches automatically acquire equal current"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "其他支路仍有跨电源的闭合路径；本题限定开路和电源保持电压，不能推广为短路或供电故障也无影响。",
+            "en": "Other branches retain a closed path across the source; this conclusion assumes an open fault and maintained voltage and cannot be generalized to shorts or supply failures."
+          },
+          "pages": [
+            20
+          ]
+        },
+        {
+          "id": "material-50-q15",
+          "conceptIds": [
+            "material-50-c15"
+          ],
+          "prompt": {
+            "zh": "24 V并联例中，为什么1 Ω电阻功率大于3 Ω？",
+            "en": "Why does the 1 Ω resistor dissipate more power than 3 Ω in the 24 V parallel example?"
+          },
+          "options": [
+            {
+              "zh": "两者同电压，P=V²/R随R减小而增大",
+              "en": "They share voltage and P=V²/R increases as R decreases"
+            },
+            {
+              "zh": "电源总功率全部由最小电阻消耗",
+              "en": "The smallest resistor consumes all source power"
+            },
+            {
+              "zh": "两者同电流，P=I²R使小电阻功率更大",
+              "en": "They share current and P=I²R makes a smaller resistor dissipate more"
+            },
+            {
+              "zh": "1 Ω支路自动分到三倍电压",
+              "en": "The 1 Ω branch automatically gets triple voltage"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "并联控制条件是同电压；1 Ω为576 W，3 Ω为192 W，其余支路同样消耗功率。",
+            "en": "Parallel branches share voltage; 1 Ω dissipates 576 W and 3 Ω dissipates 192 W, while other branches also consume power."
+          },
+          "pages": [
+            21
+          ]
+        },
+        {
+          "id": "material-50-q16",
+          "conceptIds": [
+            "material-50-c16"
+          ],
+          "prompt": {
+            "zh": "R1与R2共一对节点，R3与R4共另一对节点，这两个组串联。哪种等效表达式正确？",
+            "en": "R1 and R2 share a pair of nodes, R3 and R4 share another pair, and the two groups are in series. Which equivalent expression is correct?"
+          },
+          "options": [
+            {
+              "zh": "R1+R2+R3+R4",
+              "en": "R1+R2+R3+R4"
+            },
+            {
+              "zh": "(R1+R2)∥(R3+R4)",
+              "en": "(R1+R2)∥(R3+R4)"
+            },
+            {
+              "zh": "R1∥R2∥R3∥R4",
+              "en": "R1∥R2∥R3∥R4"
+            },
+            {
+              "zh": "(R1∥R2)+(R3∥R4)",
+              "en": "(R1∥R2)+(R3∥R4)"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "每组内有分流路径，组间只有串联通道；表达式必须保留这一嵌套关系。",
+            "en": "Each pair has branching paths and the groups connect in series, so the expression must preserve that nesting."
+          },
+          "pages": [
+            22
+          ]
+        },
+        {
+          "id": "material-50-q17",
+          "conceptIds": [
+            "material-50-c17"
+          ],
+          "prompt": {
+            "zh": "100 Ω与250 Ω并联后约为多少？",
+            "en": "What is approximately 100 Ω in parallel with 250 Ω?"
+          },
+          "options": [
+            {
+              "zh": "175 Ω",
+              "en": "175 Ω"
+            },
+            {
+              "zh": "350 Ω",
+              "en": "350 Ω"
+            },
+            {
+              "zh": "71.429 Ω",
+              "en": "71.429 Ω"
+            },
+            {
+              "zh": "2.5 Ω",
+              "en": "2.5 Ω"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "100×250/(100+250)=71.429 Ω，小于100 Ω；350是串联和，175是算术平均，2.5只是阻值比。",
+            "en": "100×250/(100+250)=71.429 Ω, below 100 Ω; 350 is the series sum, 175 the mean and 2.5 just a ratio."
+          },
+          "pages": [
+            23
+          ]
+        },
+        {
+          "id": "material-50-q18",
+          "conceptIds": [
+            "material-50-c18"
+          ],
+          "prompt": {
+            "zh": "已得两个串联等效电阻71.429 Ω和127.273 Ω，总电流约为多少？",
+            "en": "With series equivalents of 71.429 Ω and 127.273 Ω at 24 V, what is total current?"
+          },
+          "options": [
+            {
+              "zh": "120.78 mA",
+              "en": "120.78 mA"
+            },
+            {
+              "zh": "336 mA",
+              "en": "336 mA"
+            },
+            {
+              "zh": "120.78 A",
+              "en": "120.78 A"
+            },
+            {
+              "zh": "188.57 mA",
+              "en": "188.57 mA"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "总阻约198.702 Ω，24/198.702≈0.12078 A；336和188.57分别误把全部24 V加在单个等效组，120.78 A遗漏m。",
+            "en": "Total resistance is about 198.702 Ω and current 0.12078 A; 336 and 188.57 mA wrongly place all 24 V across one group, and 120.78 A loses milli."
+          },
+          "pages": [
+            24,
+            25
+          ]
+        },
+        {
+          "id": "material-50-q19",
+          "conceptIds": [
+            "material-50-c19"
+          ],
+          "prompt": {
+            "zh": "71.429 Ω与127.273 Ω两个等效组串联接24 V，为什么127.273 Ω组的压降更大？",
+            "en": "Equivalent groups of 71.429 Ω and 127.273 Ω are in series across 24 V. Why does the 127.273 Ω group have a larger drop?"
+          },
+          "options": [
+            {
+              "zh": "两组同电流，但压降应与电阻成反比",
+              "en": "Both groups share current, but voltage should vary inversely with resistance"
+            },
+            {
+              "zh": "两组同电流，Vgroup=Itotal×Rgroup",
+              "en": "The groups share current and Vgroup=Itotal×Rgroup"
+            },
+            {
+              "zh": "组电阻更大使流过该组的电流也更大",
+              "en": "A larger group resistance creates a larger current through that group"
+            },
+            {
+              "zh": "两组同电压，总电压应同时完整加在每组上",
+              "en": "Both groups share voltage, so the full source voltage belongs to each"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "组间串联使电流相同，V=IR使压降与等效电阻成正比；同电压是并联特征，电流不是在串联组之间重新分配。",
+            "en": "The series groups share current and V=IR makes voltage proportional to equivalent resistance; equal voltage belongs to parallel groups, and current does not redistribute between series groups."
+          },
+          "pages": [
+            26,
+            27
+          ]
+        },
+        {
+          "id": "material-50-q20",
+          "conceptIds": [
+            "material-50-c20"
+          ],
+          "prompt": {
+            "zh": "100 Ω与250 Ω并联成上组，350 Ω与200 Ω并联成下组，两组串联接24 V；上组压降8.627 V、下组15.373 V。求250 Ω电流应使用哪个电压？",
+            "en": "An upper 100 Ω∥250 Ω group and lower 350 Ω∥200 Ω group are in series across 24 V. Their drops are 8.627 V and 15.373 V. Which voltage determines current through 250 Ω?"
+          },
+          "options": [
+            {
+              "zh": "它所在并联组的约8.627 V",
+              "en": "Its parallel group voltage of about 8.627 V"
+            },
+            {
+              "zh": "另一并联组的约15.373 V",
+              "en": "The other group voltage of about 15.373 V"
+            },
+            {
+              "zh": "电源全部24 V",
+              "en": "The full 24 V supply"
+            },
+            {
+              "zh": "把8.627 V再平均分成4.314 V",
+              "en": "Half of 8.627 V, or about 4.314 V"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "R1和R2共节点，均承受8.627 V，不按元件数再分压；总电压跨两个串联组而非R2单独。",
+            "en": "R1 and R2 share nodes and both see 8.627 V, without another division by component count; the supply spans both series groups, not R2 alone."
+          },
+          "pages": [
+            28
+          ]
+        },
+        {
+          "id": "material-50-q21",
+          "conceptIds": [
+            "material-50-c21"
+          ],
+          "prompt": {
+            "zh": "14 V加在780 Ω、1.5 kΩ、3.3 kΩ串联电阻上，哪组关系可检查计算表？",
+            "en": "A 14 V source drives 780 Ω, 1.5 kΩ and 3.3 kΩ in series. Which relations check the calculation table?"
+          },
+          "options": [
+            {
+              "zh": "各功率相等，电阻总和780 Ω",
+              "en": "Equal powers and total resistance 780 Ω"
+            },
+            {
+              "zh": "三个电流相加后仍等于任一支路电流",
+              "en": "Adding all three currents still equals any one current"
+            },
+            {
+              "zh": "各电流相同，分压总和14 V，总功率约35.13 mW",
+              "en": "Equal currents, voltage drops totaling 14 V and total power about 35.13 mW"
+            },
+            {
+              "zh": "各电压均14 V，电流之和2.509 mA",
+              "en": "Each voltage is 14 V and currents sum to 2.509 mA"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "串联同电流、分压相加、功率相加；并联同电压规则不适用于这里，阻值不同也不意味着功率相同。",
+            "en": "Series circuits share current and add voltage drops and powers; parallel common-voltage rules do not apply, and unequal resistors do not have equal powers here."
+          },
+          "pages": [
+            29
+          ]
+        },
+        {
+          "id": "material-50-q22",
+          "conceptIds": [
+            "material-50-c22"
+          ],
+          "prompt": {
+            "zh": "1 kΩ、2.2 kΩ、6.8 kΩ和470 Ω并联在4 V电源上，哪个支路电流最大？",
+            "en": "Parallel 1 kΩ, 2.2 kΩ, 6.8 kΩ and 470 Ω connect across 4 V. Which branch has the greatest current?"
+          },
+          "options": [
+            {
+              "zh": "6.8 kΩ",
+              "en": "6.8 kΩ"
+            },
+            {
+              "zh": "1 kΩ",
+              "en": "1 kΩ"
+            },
+            {
+              "zh": "2.2 kΩ",
+              "en": "2.2 kΩ"
+            },
+            {
+              "zh": "470 Ω",
+              "en": "470 Ω"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "各支路同4 V，I=V/R使最小电阻470 Ω电流最大约8.51 mA；选择最大阻值会把反比关系颠倒。",
+            "en": "All branches have 4 V, so I=V/R makes the smallest resistance, 470 Ω, draw the most at about 8.51 mA; choosing the largest resistance reverses the relation."
+          },
+          "pages": [
+            30
+          ]
+        },
+        {
+          "id": "material-50-q23",
+          "conceptIds": [
+            "material-50-c23"
+          ],
+          "prompt": {
+            "zh": "24 V、5 Ω+(4 Ω∥12 Ω)+8 Ω中，12 Ω支路电流是多少？",
+            "en": "What current flows through 12 Ω in 24 V across 5 Ω+(4 Ω∥12 Ω)+8 Ω?"
+          },
+          "options": [
+            {
+              "zh": "0.375 A",
+              "en": "0.375 A"
+            },
+            {
+              "zh": "1.5 A",
+              "en": "1.5 A"
+            },
+            {
+              "zh": "0.75 A",
+              "en": "0.75 A"
+            },
+            {
+              "zh": "2 A",
+              "en": "2 A"
+            }
+          ],
+          "answer": 0,
+          "explanation": {
+            "zh": "中间等效3 Ω，回路1.5 A故中间4.5 V，4.5/12=0.375 A；1.5是组电流，2误用全部24 V，0.75误按支路数量均分。",
+            "en": "The middle equivalent is 3 Ω, so 1.5 A gives 4.5 V and 4.5/12=0.375 A; 1.5 is group current, 2 wrongly uses all 24 V and 0.75 incorrectly divides current equally."
+          },
+          "pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "id": "material-50-q24",
+          "conceptIds": [
+            "material-50-c24"
+          ],
+          "prompt": {
+            "zh": "某网络中R8=10 Ω与R10=2 Ω首尾连接，中间节点无其他分支。为什么可先把两者相加？",
+            "en": "In a network, R8=10 Ω and R10=2 Ω meet end-to-end with no other branch at their joining node. Why can they be added first?"
+          },
+          "options": [
+            {
+              "zh": "只要位于图的右侧，就应忽略节点关系直接相加",
+              "en": "Right-side resistors should be added regardless of node connections"
+            },
+            {
+              "zh": "只要两电阻画得首尾相邻，即使中间节点有其他分支也能相加",
+              "en": "Two resistors may be added whenever they appear end-to-end, even with another branch at the joining node"
+            },
+            {
+              "zh": "两者中间节点没有其他分支，处于同一路径",
+              "en": "Their joining node has no other branch, so they share one path"
+            },
+            {
+              "zh": "共用一个节点就意味着它们是并联，但并联电阻也直接相加",
+              "en": "Sharing one node makes them parallel, and parallel resistances also add directly"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "串联判断依赖中间无分支，而不是数值或图形位置；共用两节点才表示并联。这一步的12 Ω随后与R9并联。",
+            "en": "Series follows from an unbranched joining node, not value or position; sharing both nodes would indicate parallel. The resulting 12 Ω is then parallel with R9."
+          },
+          "pages": [
+            33
+          ]
+        },
+        {
+          "id": "material-50-q25",
+          "conceptIds": [
+            "material-50-c3"
+          ],
+          "prompt": {
+            "zh": "符号旁增加两条向外光箭头，常用来区分哪两种器件？",
+            "en": "Outward light arrows commonly distinguish which pair of components?"
+          },
+          "options": [
+            {
+              "zh": "开关与继电器线圈",
+              "en": "Switch and relay coil"
+            },
+            {
+              "zh": "电池与电容",
+              "en": "Battery and capacitor"
+            },
+            {
+              "zh": "LED与普通二极管",
+              "en": "LED and ordinary diode"
+            },
+            {
+              "zh": "电感与电阻",
+              "en": "Inductor and resistor"
+            }
+          ],
+          "answer": 2,
+          "explanation": {
+            "zh": "LED符号在二极管基础上增加向外光箭头；其余器件依靠不同形状而非这种光箭头区分。",
+            "en": "An LED adds outward light arrows to a diode symbol; the other pairs use different shapes rather than these light arrows."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-50-q26",
+          "conceptIds": [
+            "material-50-c3"
+          ],
+          "prompt": {
+            "zh": "图中线圈形与两极板形分别对应什么？",
+            "en": "What do the coil and two-plate symbols represent respectively?"
+          },
+          "options": [
+            {
+              "zh": "电容与电感",
+              "en": "Capacitor and inductor"
+            },
+            {
+              "zh": "电感与电容",
+              "en": "Inductor and capacitor"
+            },
+            {
+              "zh": "电阻与电池",
+              "en": "Resistor and battery"
+            },
+            {
+              "zh": "二极管与开关",
+              "en": "Diode and switch"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "线圈形对应电感，两极板形对应电容；电池的长短极板和器件图可帮助区分，不能交换两个储能器件的符号。",
+            "en": "A coil denotes an inductor and two plates a capacitor; the battery’s unequal plates and component image aid distinction. The two storage-component symbols cannot be swapped."
+          },
+          "pages": [
+            5
+          ]
+        },
+        {
+          "id": "material-50-q27",
+          "conceptIds": [
+            "material-50-c5"
+          ],
+          "prompt": {
+            "zh": "12 V加在3 Ω负载上，电流是多少？",
+            "en": "What current flows through a 3 Ω load at 12 V?"
+          },
+          "options": [
+            {
+              "zh": "9 A",
+              "en": "9 A"
+            },
+            {
+              "zh": "36 A",
+              "en": "36 A"
+            },
+            {
+              "zh": "0.25 A",
+              "en": "0.25 A"
+            },
+            {
+              "zh": "4 A",
+              "en": "4 A"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "I=12/3=4 A；乘积36、倒数0.25或相减9都不符合I=V/R。",
+            "en": "I=12/3=4 A; a product of 36, inverse ratio 0.25 or subtraction 9 does not follow I=V/R."
+          },
+          "pages": [
+            7
+          ]
+        },
+        {
+          "id": "material-50-q28",
+          "conceptIds": [
+            "material-50-c5"
+          ],
+          "prompt": {
+            "zh": "7 Ω负载流过2 A，需要多大电压？",
+            "en": "What voltage is needed for 2 A through 7 Ω?"
+          },
+          "options": [
+            {
+              "zh": "9 V",
+              "en": "9 V"
+            },
+            {
+              "zh": "14 V",
+              "en": "14 V"
+            },
+            {
+              "zh": "0.286 V",
+              "en": "0.286 V"
+            },
+            {
+              "zh": "3.5 V",
+              "en": "3.5 V"
+            }
+          ],
+          "answer": 1,
+          "explanation": {
+            "zh": "V=IR=2×7=14 V；求电压用乘积而非电阻除电流或把两数相加。",
+            "en": "V=IR=2×7=14 V; finding voltage uses the product, not a ratio or sum."
+          },
+          "pages": [
+            9
+          ]
+        },
+        {
+          "id": "material-50-q29",
+          "conceptIds": [
+            "material-50-c24"
+          ],
+          "prompt": {
+            "zh": "多级电阻网络已从右向左化简为6 Ω与(8 Ω∥8 Ω)串联，A、B两端等效电阻是多少？",
+            "en": "A multilevel network has been reduced from right to left to 6 Ω in series with (8 Ω∥8 Ω). What is the equivalent resistance between A and B?"
+          },
+          "options": [
+            {
+              "zh": "6 Ω",
+              "en": "6 Ω"
+            },
+            {
+              "zh": "14 Ω",
+              "en": "14 Ω"
+            },
+            {
+              "zh": "22 Ω",
+              "en": "22 Ω"
+            },
+            {
+              "zh": "10 Ω",
+              "en": "10 Ω"
+            }
+          ],
+          "answer": 3,
+          "explanation": {
+            "zh": "两个8 Ω并联为4 Ω，再加6 Ω得10 Ω；6遗漏后部网络，14漏掉并联化简而仅取一个8 Ω，22把两个8 Ω误当串联。",
+            "en": "Two parallel 8 Ω resistors give 4 Ω, which adds to 6 Ω for 10 Ω; six omits the network, fourteen keeps only one 8 Ω without reduction, and twenty-two wrongly puts the two 8 Ω resistors in series."
+          },
+          "pages": [
+            33
+          ]
+        }
+      ],
+      "coverage": {
+        "coveredPages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "excludedPages": [
+          {
+            "pages": [
+              1,
+              2
+            ],
+            "reason": {
+              "zh": "课程封面和章节标题，没有额外电路知识。",
+              "en": "Course cover and chapter title without additional circuit content."
+            }
+          },
+          {
+            "pages": [
+              34
+            ],
+            "reason": {
+              "zh": "结束页，无新增教学内容。",
+              "en": "Closing page with no new teaching content."
+            }
+          }
+        ]
+      },
+      "sourceNote": {
+        "zh": "已视觉核对所有电路与练习图。原课件p5把电阻锯齿符号误标Diode；p12文字误写并联定义；p15“串联不易过热所以不会起火”不成立，单回路任一处开路会使整回路无电流；p17第一行倒数公式有误，以下方数值例和p19的倒数求和为准。p20的独立支路结论限于电源保持电压且其他接线正常，并不保证短路故障无影响。这里明确纠错，不把错误作为记忆结论。",
+        "en": "All circuit and exercise diagrams were visually checked. Slide 5 mislabels the zigzag resistor as Diode; slide 12 repeats the parallel definition under series; slide 15 incorrectly implies series circuits cannot overheat or cause fire, and an open anywhere in a single loop stops the whole loop current; slide 17’s first reciprocal equation is wrong, so the worked example and slide 19’s reciprocal sum are used. Slide 20’s branch independence assumes maintained source voltage and intact other wiring, not immunity to short circuits. These errors are explicitly corrected."
+      }
     }
   ]
 }
