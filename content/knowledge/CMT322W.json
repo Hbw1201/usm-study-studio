@@ -563,8 +563,8 @@
                 "en": "Part A and Part B weights"
               },
               "explanation": {
-                "zh": "报告 Part A 和 Part B 各占 5%；模拟 Part A 占 7%、Part B 占 8%。细节由相应老师进一步说明，应把该任务书与具体 rubric 一起使用。",
-                "en": "Reports Part A and Part B each contribute 5%; simulations contribute 7% for Part A and 8% for Part B. Lecturers provide the details, so use the brief together with the applicable rubric."
+                "zh": "报告 Part A 和 Part B 各占 5%；模拟 Part A 占 7%、Part B 占 8%。任务书列明 Part A 由 Dr Anusha 负责，Part B 由 Dr Sukumar 负责。细节由相应老师进一步说明，应把该任务书与具体 rubric 一起使用。",
+                "en": "Reports Part A and Part B each contribute 5%; simulations contribute 7% for Part A and 8% for Part B. The brief assigns Part A to Dr Anusha and Part B to Dr Sukumar. Lecturers provide the details, so use the brief together with the applicable rubric."
               },
               "pages": [
                 1
@@ -751,7 +751,11 @@
         ],
         "excludedPages": []
       },
-      "sourceSha256": "1e4c05f00e7f671a740247b9b93a0a78171fc17af0c465f90d2d483e5cd52ec5"
+      "sourceSha256": "1e4c05f00e7f671a740247b9b93a0a78171fc17af0c465f90d2d483e5cd52ec5",
+      "sourceNote": {
+        "zh": "2026-10-27 核对：新提交入口 57171 的附件与本资料 SHA256 完全一致，原有知识点、脉络和题目继续适用。入口显示 10 月 26 日 00:00 开放、11 月 10 日 23:59（UTC+8）截止，并要求合适的封面页；这些是网页说明，不是原 DOCX 第 1 页的内容。课程 Week 6 区块仍写 11 月 2–8 日到期，具体提交时间请核对当前入口及教师通知，不自动推广到其他提交或演示。来源：https://elearning.usm.my/sidang2627/mod/assign/view.php?id=57171",
+        "en": "Checked on 27 October 2026: the attachment in new submission entry 57171 has the same SHA256 as this material, so its concepts, connections and questions remain applicable. The entry opens on 26 October at 00:00 and is due on 10 November at 23:59 (UTC+8), with an appropriate cover page required. These details come from the webpage, not page 1 of the DOCX. The course Week 6 block still indicates 2–8 November; check the current submission entry and lecturer notices, and do not automatically apply this date to other submissions or demonstrations. Source: https://elearning.usm.my/sidang2627/mod/assign/view.php?id=57171"
+      }
     },
     {
       "resourceId": "material-23",

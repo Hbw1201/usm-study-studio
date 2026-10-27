@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26",
+  "checkedAt": "2026-10-27",
   "newResourceIds": [
     "material-48",
     "material-49",
@@ -32,6 +32,14 @@
       "dueAt": "2026-11-05T14:00:00+08:00",
       "details": "学校课程页面列出的考试时间为 2026 年 11 月 5 日 14:00–15:00。",
       "source": "https://elearning.usm.my/sidang2627/course/section.php?id=20209"
+    },
+    {
+      "id": "cmt322-57171",
+      "courseId": "CMT322W",
+      "title": "Project Report & Simulation Part A 提交",
+      "dueAt": "2026-11-10T23:59:00+08:00",
+      "details": "正式提交页面现已开放，截止 11 月 10 日 23:59（UTC+8），要求遵循作业说明并附合适的封面。附件与资料库中的 Assignment Question 完全一致，相关知识点、脉络和练习可直接沿用。原课程周计划仍写第 6 周（11 月 2–8 日）到期；此处列出提交入口的明确时间，如教师另有通知请再核实。",
+      "source": "https://elearning.usm.my/sidang2627/mod/assign/view.php?id=57171"
     },
     {
       "id": "cpc357-48524",
@@ -78,7 +86,7 @@
       "courseId": "CMT322W",
       "title": "Week 6 项目 Part A",
       "dueAt": null,
-      "details": "课程页面第 6 周（11 月 2–8 日）列出 Project Report Part A 与 Simulation Part A 到期；此处未给出具体时分，请结合教师最新通知安排。",
+      "details": "课程第 6 周（11 月 2–8 日）区块仍写 Project Report Part A 与 Simulation Part A 到期；新开放的正式提交入口明确显示 11 月 10 日 23:59（UTC+8）。两处时间表述不同，请结合最新提交页面与教师通知核实。",
       "source": "https://elearning.usm.my/sidang2627/course/section.php?id=7430"
     },
     {
