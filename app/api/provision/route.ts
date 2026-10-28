@@ -2,6 +2,7 @@ import {env} from "cloudflare:workers";
 import {eq,or} from "drizzle-orm";
 import {getDb} from "../../../db";
 import {studyUsers} from "../../../db/schema";
+import {validateNewProvisionUser} from "../../../lib/provisioning";
 import manifest from "../../../content/material-previews.json";
 import {authorizedProvisionToken,expectedPartBytes,PROVISION_PART_BYTES,provisionAssetIndex,readProvisionBody,readProvisionJson,readUploadTicket,sha256,signPartReceipt,signUploadTicket,validateDigest,validateParts,validateProvisionUsers,type ProvisionAsset} from "../../../lib/provisioning";
 
@@ -30,6 +31,14 @@ export async function POST(req:Request){
   const token=await authorize(req);if(!token)return json({error:"Not found."},404);
   try{
     const body=await readProvisionJson(req);
+    if(body.action==="createUser"){
+      const user=validateNewProvisionUser(body.user);
+      // Unique constraints protect existing IDs/usernames even under concurrent requests.
+      // No update, password reset, or workspace write is permitted by this operation.
+      const inserted=await getDb().insert(studyUsers).values({...user,username:user.displayName.toLowerCase(),createdAt:Date.now(),disabled:false}).onConflictDoNothing().returning({id:studyUsers.id,displayName:studyUsers.displayName});
+      if(!inserted.length)return json({error:"Account already exists; no changes made."},409);
+      return json({ok:true,user:inserted[0]},201);
+    }
     if(body.action==="users"){
       const users=validateProvisionUsers(body.users),db=getDb();
       for(const user of users){

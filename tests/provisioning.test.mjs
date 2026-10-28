@@ -1,8 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {validateNewProvisionUser} from '../lib/provisioning.ts';
 import {readFile} from 'node:fs/promises';
 import {authorizedProvisionToken,expectedPartBytes,PROVISION_PART_BYTES,provisionAssetIndex,readProvisionBody,readUploadTicket,signUploadTicket,signPartReceipt,validateParts,validateProvisionUsers,validateDigest} from '../lib/provisioning.ts';
 const secret='a'.repeat(64),digest='d'.repeat(64);
+test('single-account creation accepts only a normalized identity and salted hash',()=>{
+  const user={id:'test-learner',displayName:'Test Learner',passwordHash:'$pbkdf2-sha256$100000$'+'b'.repeat(32)+'$'+'c'.repeat(64)};
+  assert.deepEqual(validateNewProvisionUser(user),user);
+  for(const value of [null,[],{...user,password:'plain'},{...user,passwordHash:'plain'},{...user,id:'../other'},{...user,displayName:' Test Learner'},{...user,displayName:'Test  Learner'},{...user,displayName:'Test\u0000Learner'},{...user,workspace:{}}])assert.throws(()=>validateNewProvisionUser(value));
+});
 
 test('provisioning fails closed without a strong secret and rejects wrong bearer tokens',async()=>{
   for(const configured of [undefined,'','short'])assert.equal(await authorizedProvisionToken('Bearer '+secret,configured),false);

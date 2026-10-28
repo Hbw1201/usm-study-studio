@@ -1,6 +1,6 @@
 # 知习 · USM Study Studio
 
-为六门 USM 课程准备的学习系统，支持两位用户独立保存笔记与学习记录。
+为六门 USM 课程准备的学习系统，支持多位用户独立保存笔记与学习记录。
 
 - 正式网站：[知习学习空间](https://usm-study-studio.famous-map-1116.chatgpt.site)
 - 公开源码：[Hbw1201/usm-study-studio](https://github.com/Hbw1201/usm-study-studio)
@@ -118,3 +118,5 @@ node --experimental-strip-types tests/knowledge-api.integration.mjs
 ```
 
 The integration script takes the two login objects only through hidden stdin; optional `STUDY_TEST_URL` selects the deployed origin. It checks shared UI availability, durable quiz writes, user isolation, stale-account rejection, and preservation of existing notes/progress. It restores its test response using revision checks.
+
+管理员新增账号使用临时启用的 /api/provision 的 createUser 操作，提交单个规范化身份和带随机盐的密码哈希。该操作仅插入新账号，身份或用户名已存在时返回 409，不重设密码或写入个人工作区。完成后删除 STUDY_PROVISION_TOKEN 并重新部署，使入口恢复关闭。

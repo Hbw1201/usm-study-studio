@@ -5,6 +5,16 @@ const encoder = new TextEncoder();
 const decoder = new TextDecoder();
 export type ProvisionAsset = {key:string;bytes:number;mime:string;resourceId:string;courseId:string;sha256?:string};
 export type ProvisionUser = {id:string;displayName:string;passwordHash:string};
+/** Validates a single administrator-created account; never accepts plaintext or profile data. */
+export function validateNewProvisionUser(value:unknown):ProvisionUser{
+  if(!value||typeof value!=="object"||Array.isArray(value))throw Error("Invalid account.");
+  const item=value as Record<string,unknown>;
+  if(Object.keys(item).some(k=>!["id","displayName","passwordHash"].includes(k))||
+    typeof item.id!=="string"||!/^[a-z0-9][a-z0-9-]{0,79}$/.test(item.id)||
+    typeof item.displayName!=="string"||!item.displayName||item.displayName.length>80||item.displayName!==item.displayName.trim().replace(/\s+/g," ")||/[\u0000-\u001f\u007f]/.test(item.displayName)||
+    typeof item.passwordHash!=="string"||!/^\$pbkdf2-sha256\$100000\$[0-9a-f]{32}\$[0-9a-f]{64}$/.test(item.passwordHash))throw Error("Invalid account fields.");
+  return {id:item.id,displayName:item.displayName,passwordHash:item.passwordHash};
+}
 export type UploadTicket = {v:1;key:string;uploadId:string;sha256:string;expiresAt:number};
 export type ProvisionPart = {partNumber:number;etag:string;bytes:number;receipt:string};
 const hex = (bytes:Uint8Array) => Array.from(bytes,b=>b.toString(16).padStart(2,"0")).join("");
